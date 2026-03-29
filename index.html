@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>游戏宝库</title>
+    <title>我的游戏仓库 · 多网盘下载站</title>
     <style>
         /* 所有样式与原网站完全相同，保证界面一致 */
         * {
@@ -104,32 +104,6 @@
         .hint-bold {
             font-weight: 600;
             color: #1b6c9c;
-        }
-        .fuzzy-tag {
-            background: rgba(100, 170, 240, 0.15);
-            border-radius: 20px;
-            padding: 0.2rem 0.9rem;
-            font-size: 0.8rem;
-            color: #135d88;
-            border: 0.5px solid rgba(60, 150, 230, 0.5);
-            margin-left: auto;
-        }
-        .field-label {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            color: #174a69;
-            font-size: 1.2rem;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            margin-bottom: 0.5rem;
-        }
-        .field-label span {
-            background: rgba(170, 220, 255, 0.45);
-            padding: 0.2rem 1rem 0.2rem 1.2rem;
-            border-radius: 30px;
-            border: 1px solid rgba(70, 150, 230, 0.3);
-            backdrop-filter: blur(5px);
         }
         .input-wrapper {
             position: relative;
@@ -412,9 +386,11 @@
         }
         .modal-qr-group {
             display: flex;
-            gap: 1rem;
+            gap: 0.8rem;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         .modal-qr-item {
             display: flex;
@@ -426,6 +402,7 @@
             background: rgba(245, 250, 255, 0.6);
             padding: 0.4rem 0.8rem;
             border-radius: 1rem;
+            min-width: 70px;
         }
         .modal-qr-item:hover {
             transform: scale(1.02);
@@ -703,7 +680,7 @@
 <body>
 <div class="query-card">
     <div class="header">
-        <div class="game-house">辰辰乐游</div>
+        <div class="game-house">我的游戏仓库</div>
         <div id="authArea">
             <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
         </div>
@@ -712,7 +689,7 @@
     <input type="hidden" id="loginToken" name="loginToken" />
     <div class="publisher-line">
         <span class="publisher-icon">🎮</span>
-        <span class="publisher-name">发布人：辰辰乐游</span>
+        <span class="publisher-name">发布人：我的游戏屋</span>
     </div>
 
     <div class="search-hint">
@@ -803,65 +780,32 @@
 </div>
 
 <script>
-    // ==================== 【请修改】游戏数据库（支持多网盘） ====================
-    // 每个游戏可以包含多个网盘链接，例如：百度、夸克、迅雷等
-    const gameDB = [
-        {
-            name: "塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
-                { name: "夸克网盘", url: "https://pan.quark.cn/s/ef89c78cd126"},
-                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/xxxxxx" }
-            ]
-        },
-        {
-            name: "塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
-                { name: "夸克网盘", url: "https://pan.quark.cn/s/329db7b2c7c3"},
-                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
-            ]
-        },
-        {
-            name: "塞尔达无双：灾厄启示录（PC+安卓）双版本",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
-                { name: "夸克网盘", url: "https://pan.quark.cn/s/b09a8db902e0"},
-                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
-            ]
-        },
-        {
-            name: "塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
-                { name: "夸克网盘", url: "https://pan.quark.cn/s/2bd9762838e3"},
-                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
-            ]
-        },
-        {
-            name: "塞尔达传说 织梦岛1.1.0 附金手指",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
-                { name: "夸克网盘", url: "https://pan.quark.cn/s/d7d0631ddeed"},
-                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
-            ]
-        },
-        {
-            name: "超级马里奥 奥德赛",
-            platform: "NS",
-            links: [
-                { name: "百度网盘", url: "https://pan.baidu.com/s/zzzzzz", code: "9999" }
-            ]
-        }
-        // 您可以继续添加更多游戏，格式如上
-    ];
+    // ==================== 游戏数据将从外部 JSON 文件加载 ====================
+    let gameDB = [];          // 全局游戏数据
+    let dataLoaded = false;   // 数据是否已加载完成
 
-    // ==================== 【请修改】工具按钮内容 ====================
+    // 加载 games.json 文件
+    async function loadGameData() {
+        try {
+            const response = await fetch('games.json');
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            gameDB = await response.json();
+            dataLoaded = true;
+            console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
+            // 数据加载完成后，如果搜索框有内容，自动执行一次搜索（可选）
+            const searchInput = document.getElementById('gameSearchInput');
+            if (searchInput && searchInput.value.trim() !== '') {
+                handleSearch();
+            }
+        } catch (error) {
+            console.error('❌ 加载游戏数据失败：', error);
+            gameDB = [];
+            dataLoaded = true; // 避免一直卡在加载状态
+            alert('游戏数据加载失败，请检查网络或刷新页面重试');
+        }
+    }
+
+    // ==================== 工具按钮内容 ====================
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
@@ -876,10 +820,14 @@
     let currentMode = 'game';
     let currentGameQuery = '';
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
-    const pageSize = 5;
+    const pageSize = 4;   // 每页显示 4 个游戏
 
     // 模拟后端API（前端筛选）
     async function mockBackendAPI(query, page) {
+        if (!dataLoaded) {
+            // 数据未加载完成时返回空，并提示等待
+            return { data: [], total: 0, page: 1, totalPages: 1 };
+        }
         let filtered = gameDB.filter(g => g.name.toLowerCase().includes(query.toLowerCase()));
         const total = filtered.length;
         const totalPages = Math.ceil(total / pageSize);
@@ -969,6 +917,10 @@
     function closeResultModal() { document.getElementById('resultModal').classList.remove('show'); }
 
     async function handleSearch() {
+        if (!dataLoaded) {
+            alert('游戏数据还在加载中，请稍后再试');
+            return;
+        }
         currentMode = 'game';
         currentGameQuery = document.getElementById('gameSearchInput').value.trim();
         if(!currentGameQuery) return;
@@ -1089,8 +1041,10 @@
         });
     }
 
+    // 初始化：加载数据，绑定事件
     loadStoredUser();
     bindEvents();
+    loadGameData();
 </script>
 </body>
 </html>
