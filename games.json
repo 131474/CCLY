@@ -1,38 +1,72 @@
 [
-  {
-    "name": "塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod",
-    "platform": "NS",
-    "links": [
-      { "name": "百度网盘", "url": "https://pan.baidu.com/s/1ZeldaBOTW", "code": "8888" },
-      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1ZeldaBOTW", "code": "6666" },
-      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/1ZeldaBOTW", "code": "1234" }
-    ]
-  },
-  {
-    "name": "塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
-    "platform": "NS",
-    "links": [
-      { "name": "百度网盘", "url": "https://pan.baidu.com/s/1ZeldaTOTK", "code": "7777" },
-      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1ZeldaTOTK", "code": "5555" },
-      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/1ZeldaTOTK", "code": "4321" }
-    ]
-  },
-  {
-    "name": "塞尔达无双：灾厄启示录（PC+安卓）双版本",
-    "platform": "NS",
-    "links": [
-      { "name": "百度网盘", "url": "https://pan.baidu.com/s/1ZeldaHW", "code": "1111" },
-      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1ZeldaHW", "code": "2222" },
-      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/1ZeldaHW", "code": "3333" }
-    ]
-  },
-  {
-    "name": "塞尔达传说 天空之剑HD中文v1.0.1升补 + 金手指",
-    "platform": "NS",
-    "links": [
-      { "name": "百度网盘", "url": "https://pan.baidu.com/s/1ZeldaSS", "code": "4444" },
-      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1ZeldaSS", "code": "5555" },
-      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/1ZeldaSS", "code": "6666" }
-    ]
-  }
+        {
+            name: "塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/ef89c78cd126"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/xxxxxx" }
+            ]
+        },
+        {
+            name: "塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/329db7b2c7c3"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
+            ]
+        },
+        {
+            name: "塞尔达无双：灾厄启示录（PC+安卓）双版本",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/b09a8db902e0"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
+            ]
+        },
+        {
+            name: "塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/2bd9762838e3"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
+            ]
+        },
+        {
+            name: "塞尔达传说 织梦岛1.1.0 附金手指",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/d7d0631ddeed"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
+            ]
+        },
+        {
+            name: "塞尔达传说 智慧的再现1.1.0 附金手指 画质mod",
+            platform: "NS",
+            links: [
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/1b6892d90de1"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" },
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" }
+            ]
+        },
+        {
+            name: "（Switch）塞尔达无双 海拉鲁全明星DX 中文1.0.1",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.quark.cn/s/ef89c78cd126", code: "8888" },
+                { name: "夸克网盘", url: "https://pan.quark.cn/s/509812de97bc"},
+                { name: "迅雷网盘", url: "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" }
+            ]
+        },
+        {
+            name: "超级马里奥 奥德赛",
+            platform: "NS",
+            links: [
+                { name: "百度网盘", url: "https://pan.baidu.com/s/zzzzzz", code: "9999" }
+            ]
+        }
 ]
