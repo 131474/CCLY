@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>游戏宝库</title>
     <style>
-        /* 所有样式与原网站完全相同，保证界面一致 */
+        /* ========== 所有原有样式（完整保留）========== */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +14,10 @@
         }
         body {
             min-height: 100vh;
-            background: linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
+            /* 背景图：可替换为你的图片链接，同时保留渐变色作为 fallback */
+            background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
+            background-blend-mode: overlay;
+            background-size: auto, cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -674,6 +677,69 @@
         .simple-modal-message { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
         .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; transition: background 0.3s; }
         .simple-modal-btn:hover { background: #45a049; }
+
+        /* ========== 新增热门游戏推荐样式 ========== */
+        .hot-section {
+            margin: 1rem 0 0.5rem;
+        }
+        .hot-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a5777;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hot-title::before {
+            content: "🔥";
+            font-size: 1.2rem;
+        }
+        .hot-scroll {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scrollbar-width: thin;
+            -webkit-overflow-scrolling: touch;
+        }
+        .hot-item {
+            flex: 0 0 auto;
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .hot-item:hover {
+            transform: translateY(-3px);
+        }
+        .hot-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 16px;
+            background: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hot-item span {
+            display: block;
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+            color: #1a5777;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        @media (max-width: 640px) {
+            .hot-item {
+                width: 70px;
+            }
+            .hot-item img {
+                width: 70px;
+                height: 70px;
+            }
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
@@ -704,6 +770,12 @@
     <button class="query-btn" id="searchBtn">
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
+
+    <!-- 热门游戏推荐区域（动态生成） -->
+    <div class="hot-section" id="hotSection" style="display: none;">
+        <div class="hot-title">热门推荐</div>
+        <div class="hot-scroll" id="hotScroll"></div>
+    </div>
 
     <div class="demo-hint">
         <span style="opacity:0.9;">⚡试试查询：</span>
@@ -781,10 +853,9 @@
 
 <script>
     // ==================== 游戏数据将从外部 JSON 文件加载 ====================
-    let gameDB = [];          // 全局游戏数据
-    let dataLoaded = false;   // 数据是否已加载完成
+    let gameDB = [];
+    let dataLoaded = false;
 
-    // 加载 games.json 文件
     async function loadGameData() {
         try {
             const response = await fetch('games.json');
@@ -792,7 +863,8 @@
             gameDB = await response.json();
             dataLoaded = true;
             console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-            // 数据加载完成后，如果搜索框有内容，自动执行一次搜索（可选）
+            // 渲染热门游戏推荐
+            renderHotGames();
             const searchInput = document.getElementById('gameSearchInput');
             if (searchInput && searchInput.value.trim() !== '') {
                 handleSearch();
@@ -800,12 +872,54 @@
         } catch (error) {
             console.error('❌ 加载游戏数据失败：', error);
             gameDB = [];
-            dataLoaded = true; // 避免一直卡在加载状态
+            dataLoaded = true;
             alert('游戏数据加载失败，请检查网络或刷新页面重试');
         }
     }
 
-    // ==================== 工具按钮内容 ====================
+    // 渲染热门游戏（取前6个，如果有 cover 字段则显示，否则默认图标）
+    function renderHotGames() {
+        const hotSection = document.getElementById('hotSection');
+        const hotScroll = document.getElementById('hotScroll');
+        if (!hotSection || !hotScroll) return;
+        if (!gameDB.length) {
+            hotSection.style.display = 'none';
+            return;
+        }
+        const hotGames = gameDB.slice(0, 6);
+        hotScroll.innerHTML = hotGames.map(game => {
+            const coverUrl = game.cover ? game.cover : 'https://via.placeholder.com/80x80?text=🎮';
+            return `
+                <div class="hot-item" data-name="${escapeHtml(game.name)}">
+                    <img src="${coverUrl}" alt="${escapeHtml(game.name)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
+                    <span>${escapeHtml(game.name.length > 10 ? game.name.slice(0,8)+'…' : game.name)}</span>
+                </div>
+            `;
+        }).join('');
+        hotSection.style.display = 'block';
+        // 绑定点击事件
+        document.querySelectorAll('.hot-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const gameName = item.getAttribute('data-name');
+                if (gameName) {
+                    document.getElementById('gameSearchInput').value = gameName;
+                    document.getElementById('searchBtn').click();
+                }
+            });
+        });
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    // 工具按钮内容
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
@@ -814,20 +928,16 @@
         donateBtn: { title: '❤️ 支持我们', content: '<div class="donate-content"><h3>感谢支持</h3><p>您的支持是我们更新的动力！</p><div class="donate-qr"><div class="donate-item"><div class="qr-code-box" id="donateQr"></div><span>微信赞赏码</span></div></div></div>' }
     };
 
-    // ==================== 以下为功能代码，无需修改 ====================
+    // ==================== 以下为原有功能代码（完整保留） ====================
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
     let currentGameQuery = '';
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
-    const pageSize = 4;   // 每页显示 4 个游戏
+    const pageSize = 4;
 
-    // 模拟后端API（前端筛选）
     async function mockBackendAPI(query, page) {
-        if (!dataLoaded) {
-            // 数据未加载完成时返回空，并提示等待
-            return { data: [], total: 0, page: 1, totalPages: 1 };
-        }
+        if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
         let filtered = gameDB.filter(g => g.name.toLowerCase().includes(query.toLowerCase()));
         const total = filtered.length;
         const totalPages = Math.ceil(total / pageSize);
@@ -845,7 +955,6 @@
         const res = await mockBackendAPI(currentGameQuery, page);
         gameCurrentPage = res.page; gameTotalPages = res.totalPages; gameTotalCount = res.total;
         modalBody.innerHTML = generateGameCards(res.data);
-        // 为每个网盘生成二维码
         for(let i=0; i<res.data.length; i++) {
             const game = res.data[i];
             for(let j=0; j<game.links.length; j++) {
@@ -871,7 +980,7 @@
                         <div class="game-title-row">🎮 ${game.name} (${game.platform})</div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code}">
+                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
                             <div class="qr-code-box" id="qr-${idx}-${linkIdx}"></div>
                             <span class="qr-label">${link.name}</span>
                          </div>`;
@@ -902,19 +1011,19 @@
     }
 
     function showZoom(platform, link) {
-    const zoomBox = document.getElementById('zoomQrBox');
-    zoomBox.innerHTML = '';
-    QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
-        if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
-    });
-    document.getElementById('zoomPlatform').innerText = platform;
-    // 修改底部提示文字，根据平台动态显示
-    const pcHint = document.querySelector('.pc');
-    if (pcHint) {
-        pcHint.innerText = `${platform}APP扫码获取`;
-    }
-    document.getElementById('zoomModal').classList.add('show');
-    window.currentZoomLink = link;
+        const zoomBox = document.getElementById('zoomQrBox');
+        zoomBox.innerHTML = '';
+        QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
+            if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
+        });
+        document.getElementById('zoomPlatform').innerText = platform;
+        // 动态修改底部提示文字
+        const pcHint = document.querySelector('.pc');
+        if (pcHint) {
+            pcHint.innerText = `${platform}APP扫码获取`;
+        }
+        document.getElementById('zoomModal').classList.add('show');
+        window.currentZoomLink = link;
     }
 
     function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
@@ -922,10 +1031,7 @@
     function closeResultModal() { document.getElementById('resultModal').classList.remove('show'); }
 
     async function handleSearch() {
-        if (!dataLoaded) {
-            alert('游戏数据还在加载中，请稍后再试');
-            return;
-        }
+        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
         currentMode = 'game';
         currentGameQuery = document.getElementById('gameSearchInput').value.trim();
         if(!currentGameQuery) return;
@@ -1046,7 +1152,7 @@
         });
     }
 
-    // 初始化：加载数据，绑定事件
+    // 初始化
     loadStoredUser();
     bindEvents();
     loadGameData();
