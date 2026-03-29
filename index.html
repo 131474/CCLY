@@ -409,8 +409,8 @@
             background: rgba(200, 225, 255, 0.8);
         }
         .qr-code-box {
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
             background: white;
             display: flex;
             align-items: center;
@@ -902,14 +902,19 @@
     }
 
     function showZoom(platform, link) {
-        const zoomBox = document.getElementById('zoomQrBox');
-        zoomBox.innerHTML = '';
-        QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
-            if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
-        });
-        document.getElementById('zoomPlatform').innerText = platform;
-        document.getElementById('zoomModal').classList.add('show');
-        window.currentZoomLink = link;
+    const zoomBox = document.getElementById('zoomQrBox');
+    zoomBox.innerHTML = '';
+    QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
+        if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
+    });
+    document.getElementById('zoomPlatform').innerText = platform;
+    // 修改底部提示文字，根据平台动态显示
+    const pcHint = document.querySelector('.pc');
+    if (pcHint) {
+        pcHint.innerText = `${platform}APP扫码获取`;
+    }
+    document.getElementById('zoomModal').classList.add('show');
+    window.currentZoomLink = link;
     }
 
     function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
