@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>游戏资源库 - 类似Gamer520</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #1e2a3a;
+        }
+
+        /* 顶部导航 */
+        .header {
+            background: #0a1927;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+        .header-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #e6b422, #ff8c42);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .logo span {
+            color: #ff8c42;
+            background: none;
+            -webkit-background-clip: unset;
+        }
+        .search-area {
+            display: flex;
+            gap: 0.5rem;
+            background: #1e2f2b;
+            padding: 0.3rem 0.6rem;
+            border-radius: 60px;
+        }
+        .search-input {
+            background: transparent;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            font-size: 0.9rem;
+            width: 200px;
+            outline: none;
+        }
+        .search-input::placeholder {
+            color: #9ab3a8;
+        }
+        .search-btn {
+            background: #ff8c42;
+            border: none;
+            border-radius: 40px;
+            padding: 0.4rem 1rem;
+            color: #0a1927;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .search-btn:hover {
+            background: #e67e22;
+        }
+        /* 分类标签 */
+        .categories {
+            max-width: 1400px;
+            margin: 1.5rem auto 0;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .cat-tag {
+            background: white;
+            border-radius: 40px;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        .cat-tag.active, .cat-tag:hover {
+            background: #ff8c42;
+            color: white;
+            border-color: #ff8c42;
+        }
+        /* 游戏网格 */
+        .game-grid {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.8rem;
+        }
+        .game-card {
+            background: white;
+            border-radius: 1.2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .game-cover {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #d9e2e6;
+        }
+        .game-info {
+            padding: 1rem 1.2rem 1.2rem;
+        }
+        .game-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .game-badge {
+            background: #f0b27a;
+            color: #2c2c2c;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+        }
+        .game-desc {
+            font-size: 0.85rem;
+            color: #4a5b6e;
+            margin: 0.6rem 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .game-meta {
+            font-size: 0.75rem;
+            color: #7e8c9e;
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        /* 弹窗 */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.75);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal-card {
+            background: white;
+            max-width: 500px;
+            width: 90%;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            position: relative;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .modal-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .modal-cover {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 1rem;
+            margin: 1rem 0;
+        }
+        .download-area {
+            background: #f0f4f9;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #2c7a4d;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            margin-right: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .copy-btn {
+            background: #2c3e66;
+        }
+        .qr-img {
+            width: 150px;
+            margin-top: 0.8rem;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .close-modal {
+            background: #ccc;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c7a8e;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 680px) {
+            .header-inner { flex-direction: column; align-items: stretch; }
+            .search-area { justify-content: space-between; }
+            .search-input { width: auto; flex: 1; }
+            .game-grid { padding: 0 1rem; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="logo">🎮 GAME<span>520</span> · 游戏库</div>
+            <div class="search-area">
+                <input type="text" class="search-input" id="searchInput" placeholder="搜索游戏名称...">
+                <button class="search-btn" id="searchBtn">🔍 搜索</button>
+            </div>
+        </div>
+    </div>
+    <div class="categories" id="categoryContainer"></div>
+    <div class="game-grid" id="gameGrid"></div>
+    <footer>本站资源均来自网络收集，仅作交流学习。点击游戏卡片查看下载链接与二维码。</footer>
+
+    <!-- 弹窗 -->
+    <div id="gameModal" class="modal">
+        <div class="modal-card">
+            <h3 id="modalTitle">游戏名称</h3>
+            <img id="modalCover" class="modal-cover" src="" alt="封面">
+            <div id="modalDesc" style="color:#3e5a6b; margin:0.5rem 0;"></div>
+            <div class="download-area" id="modalDownloads">
+                <!-- 动态添加链接和二维码 -->
+            </div>
+            <button class="close-modal" id="closeModalBtn">关闭</button>
+        </div>
+    </div>
+
+    <script>
+        // ---------- 🌟 游戏数据库 (完全可自定义) ----------
+        // 结构：名称、封面图、简介、版本、类型、下载链接(可多个)、提取码、二维码API可用
+        const gamesData = [
+            {
+                id: 1,
+                name: "息风谷战略",
+                cover: "https://picsum.photos/id/104/400/200", // 请替换真实图片链接
+                desc: "豪华中文|Build.22228507-苍狼踏雪-幽冥伏虎+全DLC|解压即撸。策略角色扮演，剧情丰富，恋爱模拟。",
+                version: "Build.22228507",
+                category: "策略角色扮演",
+                downloadLinks: [
+                    { name: "百度网盘", url: "https://pan.baidu.com/s/example1", code: "6666" }
+                ],
+                qrData: "https://pan.baidu.com/s/example1"
+            },
+            {
+                id: 2,
+                name: "中土世界 战争之影",
+                cover: "https://picsum.photos/id/15/400/200",
+                desc: "豪华中文|Build.20095001-魔影称王-战影无双+全扩展部落+全DLC|解压即撸。开放世界动作角色扮演。",
+                version: "Build.20095001",
+                category: "动作角色扮演",
+                downloadLinks: [
+                    { name: "百度网盘", url: "https://pan.baidu.com/s/example2", code: "7777" }
+                ],
+                qrData: "https://pan.baidu.com/s/example2"
+            },
+            {
+                id: 3,
+                name: "浪人崛起",
+                cover: "https://picsum.photos/id/26/400/200",
+                desc: "豪华中文|V1.09.0.5Fix-誓血修罗-逆命武魂+预购特典+全DLC+修改器|解压即撸。幕末开放世界RPG。",
+                version: "V1.09.0.5Fix",
+                category: "动作RPG",
+                downloadLinks: [
+                    { name: "夸克网盘", url: "https://pan.quark.cn/s/example3", code: "8888" }
+                ],
+                qrData: "https://pan.quark.cn/s/example3"
+            },
+            {
+                id: 4,
+                name: "帝国时代2 决定版",
+                cover: "https://picsum.photos/id/96/400/200",
+                desc: "中字-国语|V170934+最后的酋长DLC+全DLC+修改器|解压即撸。经典即时战略。",
+                version: "V170934",
+                category: "即时战略",
+                downloadLinks: [
+                    { name: "百度网盘", url: "https://pan.baidu.com/s/example4", code: "1234" }
+                ],
+                qrData: "https://pan.baidu.com/s/example4"
+            },
+            {
+                id: 5,
+                name: "生灵重塑",
+                cover: "https://picsum.photos/id/42/400/200",
+                desc: "中字-国语|Build.22360123+预购特典+全DLC-支持手柄|解压即撸。恐怖冒险解谜。",
+                version: "Build.22360123",
+                category: "恐怖冒险",
+                downloadLinks: [
+                    { name: "百度网盘", url: "https://pan.baidu.com/s/example5", code: "4321" }
+                ],
+                qrData: "https://pan.baidu.com/s/example5"
+            },
+            {
+                id: 6,
+                name: "光与影 33号远征队",
+                cover: "https://picsum.photos/id/76/400/200",
+                desc: "豪华中文|V62964+预购特典+全DLC-修改器-支持手柄|解压即撸。回合制战斗，剧情丰富。",
+                version: "V62964",
+                category: "回合制RPG",
+                downloadLinks: [
+                    { name: "百度网盘", url: "https://pan.baidu.com/s/example6", code: "5678" }
+                ],
+                qrData: "https://pan.baidu.com/s/example6"
+            }
+        ];
+
+        // 提取所有分类（去重）
+        const allCategories = [...new Set(gamesData.map(g => g.category))];
+        
+        // 当前选中的分类
+        let currentCategory = '全部';
+        // 当前搜索词
+        let searchKeyword = '';
+
+        // 渲染分类标签
+        function renderCategories() {
+            const container = document.getElementById('categoryContainer');
+            let html = `<div class="cat-tag ${currentCategory === '全部' ? 'active' : ''}" data-cat="全部">全部</div>`;
+            allCategories.forEach(cat => {
+                html += `<div class="cat-tag ${currentCategory === cat ? 'active' : ''}" data-cat="${cat}">${cat}</div>`;
+            });
+            container.innerHTML = html;
+            // 绑定点击事件
+            document.querySelectorAll('.cat-tag').forEach(tag => {
+                tag.addEventListener('click', (e) => {
+                    currentCategory = tag.getAttribute('data-cat');
+                    renderCategories(); // 重新渲染高亮
+                    filterAndRenderGames();
+                });
+            });
+        }
+
+        // 筛选并渲染游戏卡片
+        function filterAndRenderGames() {
+            let filtered = gamesData;
+            // 分类筛选
+            if (currentCategory !== '全部') {
+                filtered = filtered.filter(g => g.category === currentCategory);
+            }
+            // 关键词搜索（名称+描述）
+            if (searchKeyword.trim() !== '') {
+                const kw = searchKeyword.trim().toLowerCase();
+                filtered = filtered.filter(g => 
+                    g.name.toLowerCase().includes(kw) || 
+                    g.desc.toLowerCase().includes(kw)
+                );
+            }
+            renderGameCards(filtered);
+        }
+
+        // 渲染游戏网格
+        function renderGameCards(games) {
+            const grid = document.getElementById('gameGrid');
+            if (games.length === 0) {
+                grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:3rem;">没有找到相关游戏，试试其他关键词～</div>`;
+                return;
+            }
+            let html = '';
+            games.forEach(game => {
+                html += `
+                    <div class="game-card" data-id="${game.id}">
+                        <img class="game-cover" src="${game.cover}" alt="${game.name}" onerror="this.src='https://picsum.photos/id/1/400/200'">
+                        <div class="game-info">
+                            <div class="game-title">
+                                ${game.name}
+                                <span class="game-badge">解压即撸</span>
+                            </div>
+                            <div class="game-desc">${game.desc.substring(0, 100)}${game.desc.length>100 ? '...' : ''}</div>
+                            <div class="game-meta">
+                                <span>📀 ${game.version || '最新'}</span>
+                                <span>🏷️ ${game.category}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            grid.innerHTML = html;
+            // 绑定卡片点击事件（弹窗）
+            document.querySelectorAll('.game-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = parseInt(card.getAttribute('data-id'));
+                    const game = gamesData.find(g => g.id === id);
+                    if (game) showModal(game);
+                });
+            });
+        }
+
+        // 显示弹窗（含下载链接和二维码）
+        function showModal(game) {
+            const modal = document.getElementById('gameModal');
+            document.getElementById('modalTitle').innerText = game.name;
+            document.getElementById('modalCover').src = game.cover;
+            document.getElementById('modalDesc').innerHTML = `<strong>简介：</strong> ${game.desc}<br><strong>版本：</strong> ${game.version}<br><strong>类型：</strong> ${game.category}`;
+            
+            const downloadsDiv = document.getElementById('modalDownloads');
+            let dlHtml = '<div><strong>⬇️ 下载链接：</strong></div>';
+            game.downloadLinks.forEach(link => {
+                const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(link.url)}`;
+                dlHtml += `
+                    <div style="margin: 0.8rem 0; border-bottom:1px solid #e2e8f0; padding-bottom:0.6rem;">
+                        <a href="${link.url}" target="_blank" class="link-btn">🔗 ${link.name} 跳转</a>
+                        <button class="link-btn copy-btn" data-url="${link.url}">📋 复制链接</button>
+                        <div>🔑 提取码：${link.code}</div>
+                        <img class="qr-img" src="${qrUrl}" alt="扫码下载" onclick="window.open('${qrUrl}')">
+                        <div style="font-size:0.7rem; color:#6c7a8e;">手机扫码直接跳转网盘</div>
+                    </div>
+                `;
+            });
+            downloadsDiv.innerHTML = dlHtml;
+
+            // 绑定复制按钮
+            document.querySelectorAll('.copy-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const url = btn.getAttribute('data-url');
+                    navigator.clipboard.writeText(url).then(() => {
+                        alert('链接已复制！');
+                    }).catch(() => {
+                        alert('手动复制链接：' + url);
+                    });
+                });
+            });
+
+            modal.style.display = 'flex';
+        }
+
+        // 关闭弹窗
+        function closeModal() {
+            document.getElementById('gameModal').style.display = 'none';
+        }
+
+        // 搜索事件
+        document.getElementById('searchBtn').addEventListener('click', () => {
+            searchKeyword = document.getElementById('searchInput').value;
+            filterAndRenderGames();
+        });
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchKeyword = e.target.value;
+                filterAndRenderGames();
+            }
+        });
+
+        // 关闭弹窗按钮
+        document.getElementById('closeModalBtn').addEventListener('click', closeModal);
+        window.addEventListener('click', (e) => {
+            if (e.target === document.getElementById('gameModal')) closeModal();
+        });
+
+        // 初始化
+        renderCategories();
+        filterAndRenderGames();
+    </script>
+</body>
+</html>
