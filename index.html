@@ -51,7 +51,7 @@
         .bg-slideshow .slide.active {
             opacity: 1;
         }
-        /* 卡片样式保持不变 */
+        /* 卡片样式，增加 GPU 加速防止模糊 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -62,12 +62,15 @@
             border-radius: 2.5rem;
             padding: 2.2rem 2rem 1.8rem 2rem;
             box-shadow: 0 25px 40px -20px rgba(30, 60, 90, 0.3), 0 10px 20px -5px rgba(140, 200, 255, 0.2), inset 0 1px 3px #ffffffcc;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
         }
         .query-card:hover {
             transform: scale(1.01);
             border-color: rgba(80, 160, 240, 0.6);
             box-shadow: 0 30px 45px -15px #2b4f6e40, 0 0 0 2px rgba(100, 180, 255, 0.2);
+            will-change: transform;
         }
         .header {
             display: flex;
@@ -92,7 +95,7 @@
             display: flex;
             gap: 0.8rem;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;  /* 强制不换行，确保手机端并排 */
         }
         .badge {
             background: rgba(90, 170, 240, 0.15);
@@ -833,6 +836,13 @@
                 padding: 0.3rem 0.6rem;
                 font-size: 0.75rem;
             }
+            .login-btn-header {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.75rem;
+            }
+            .header-right {
+                gap: 0.4rem;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
@@ -1337,23 +1347,39 @@
         }, 6000);
     }
 
-    // ==================== 背景音乐（首次点击播放） ====================
+    // ==================== 背景音乐（提前加载，首次点击播放，优化手机端卡顿） ====================
     function initMusic() {
         const audio = document.createElement('audio');
         audio.id = 'bgMusic';
         audio.loop = true;
         audio.preload = 'auto';
         audio.volume = 0.4;
-        // 音乐文件位于 music 文件夹下，请确保文件名与上传的一致
-        audio.src = 'music/luffy.mp3';
+        audio.src = 'music/luffy.mp3'; // 请确保路径正确
         document.body.appendChild(audio);
+        // 提前加载音频数据
+        audio.load();
         let played = false;
+        let loading = false;
         function startMusic() {
-            if (!played) {
-                audio.play().catch(e => console.log('音乐播放失败', e));
-                played = true;
-                document.removeEventListener('click', startMusic);
-                document.removeEventListener('touchstart', startMusic);
+            if (played) return;
+            if (!loading) {
+                loading = true;
+                // 如果已经加载到足够数据，直接播放
+                if (audio.readyState >= 2) {
+                    audio.play().catch(e => console.log('音乐播放失败', e));
+                    played = true;
+                    document.removeEventListener('click', startMusic);
+                    document.removeEventListener('touchstart', startMusic);
+                } else {
+                    // 等待可以播放
+                    audio.addEventListener('canplay', function onCanPlay() {
+                        audio.play().catch(e => console.log('音乐播放失败', e));
+                        played = true;
+                        audio.removeEventListener('canplay', onCanPlay);
+                        document.removeEventListener('click', startMusic);
+                        document.removeEventListener('touchstart', startMusic);
+                    });
+                }
             }
         }
         document.addEventListener('click', startMusic);
