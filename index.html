@@ -788,7 +788,7 @@
 
     <!-- 热门游戏推荐区域（动态生成，放在试试查询下方） -->
     <div class="hot-section" id="hotSection" style="display: none;">
-        <div class="hot-title">当前热门游戏推荐</div>
+        <div class="hot-title">热门推荐</div>
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
@@ -1186,6 +1186,17 @@
                 }
             });
         });
+
+        // 按 Enter 键触发搜索
+        const searchInput = document.getElementById('gameSearchInput');
+        if (searchInput) {
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    document.getElementById('searchBtn').click();
+                }
+            });
+        }
     }
 
     // 初始化
