@@ -2,7 +2,7 @@
   {
     "name": "塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod",
     "shortName": "荒野之息",
-    "cover": "https://example.com/zelda_botw.jpg",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/ef89c78cd126" },
@@ -13,7 +13,7 @@
   {
     "name": "塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
     "shortName": "王国之泪",
-    "cover": "https://example.com/zelda_totk.jpg",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20220914/1663104992_905883.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/329db7b2c7c3" },
@@ -24,7 +24,7 @@
   {
     "name": "塞尔达无双：灾厄启示录（PC+安卓）双版本",
     "shortName": "灾厄启示录",
-    "cover": "https://example.com/zelda_age_of_calamity.jpg",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20200909/1599617800_955043.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/b09a8db902e0" },
@@ -35,7 +35,7 @@
   {
     "name": "塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指",
     "shortName": "天空之剑",
-    "cover": "https://example.com/zelda_skyward_sword.jpg",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20210218/1613607140_288119.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/2bd9762838e3" },
@@ -46,7 +46,7 @@
   {
     "name": "塞尔达传说 织梦岛1.1.0 附金手指",
     "shortName": "织梦岛",
-    "cover": "https://example.com/zelda_link_s_awakening.jpg",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20200219/1582100265_645244.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/d7d0631ddeed" },
@@ -57,7 +57,7 @@
   {
     "name": "塞尔达传说 智慧的再现1.1.0 附金手指 画质mod",
     "shortName": "智慧的再现",
-    "cover": "https://example.com/zelda_echoes_of_wisdom.jpg",
+    "cover": "https://img1.dancihu.com/2024-06-24/700accdd-717e-d631-3abb-75a158d87f16.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1b6892d90de1" },
@@ -68,7 +68,7 @@
   {
     "name": "（Switch）塞尔达无双 海拉鲁全明星DX 中文1.0.1",
     "shortName": "海拉鲁全明星",
-    "cover": "https://example.com/zelda_hyrule_warriors.jpg",
+    "cover": "https://puui.qpic.cn/vpic_cover/s08989464c3/s08989464c3_hz.jpg/1280",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/509812de97bc" },
@@ -77,12 +77,34 @@
     ]
   },
   {
-    "name": "超级马里奥 奥德赛",
-    "shortName": "马里奥奥德赛",
-    "cover": "https://example.com/mario_odyssey.jpg",
+    "name": "（Switch）超级马里奥兄弟惊奇 官方中文v1.2.0",
+    "shortName": "马里奥惊奇",
+    "cover": "https://tse2.mm.bing.net/th/id/OIP.BLbLkqHWQqvjmwQRFa7S8wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
     "platform": "NS",
     "links": [
-      { "name": "夸克网盘", "url": "" },
+      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/623325f32c78" },
+      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" },
+      { "name": "百度网盘", "url": "https://pan.quark.cn/s/ef89c78cd126", "code": "8888" }
+    ]
+  },
+  {
+    "name": "超级马里奥银河1+2 中文本体v1.0.0整合版+1.3.1补丁",
+    "shortName": "马里奥银河",
+    "cover": "https://www.switch520.org/wp-content/uploads/img/3k/1d19c3b8fb1c144df.avif",
+    "platform": "NS",
+    "links": [
+      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/509812de97bc" },
+      { "name": "迅雷网盘", "url": "https://pan.xunlei.com/s/VOosvDidHK8VSE8JOW92Ga05A1?pwd=t6bs#" },
+      { "name": "百度网盘", "url": "https://pan.quark.cn/s/ef89c78cd126", "code": "8888" }
+    ]
+  },
+  {
+    "name": "马里奥 奥德赛1.4.1中文版",
+    "shortName": "马里奥奥德赛",
+    "cover": "https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png",
+    "platform": "NS",
+    "links": [
+      { "name": "夸克网盘", "url": "https://pan.quark.cn/s/dbb6c07ca9aa" },
       { "name": "迅雷网盘", "url": "" },
       { "name": "百度网盘", "url": "https://pan.baidu.com/s/zzzzzz", "code": "9999" }
     ]
