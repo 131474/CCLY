@@ -890,7 +890,7 @@
         }
         const hotGames = gameDB.slice(0, 6);
         hotScroll.innerHTML = hotGames.map(game => {
-            const coverUrl = game.cover ? game.cover : 'https://via.placeholder.com/80x80?text=🎮';
+            const coverUrl = game.cover ? game.cover : 'https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg';
             return `
                 <div class="hot-item" data-name="${escapeHtml(game.name)}">
                     <img src="${coverUrl}" alt="${escapeHtml(game.name)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
