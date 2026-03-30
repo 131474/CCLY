@@ -1,6 +1,8 @@
 [
   {
     "name": "塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod",
+    "shortName": "荒野之息",
+    "cover": "https://example.com/zelda_botw.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/ef89c78cd126" },
@@ -10,6 +12,8 @@
   },
   {
     "name": "塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
+    "shortName": "王国之泪",
+    "cover": "https://example.com/zelda_totk.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/329db7b2c7c3" },
@@ -19,6 +23,8 @@
   },
   {
     "name": "塞尔达无双：灾厄启示录（PC+安卓）双版本",
+    "shortName": "灾厄启示录",
+    "cover": "https://example.com/zelda_age_of_calamity.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/b09a8db902e0" },
@@ -28,6 +34,8 @@
   },
   {
     "name": "塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指",
+    "shortName": "天空之剑",
+    "cover": "https://example.com/zelda_skyward_sword.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/2bd9762838e3" },
@@ -37,6 +45,8 @@
   },
   {
     "name": "塞尔达传说 织梦岛1.1.0 附金手指",
+    "shortName": "织梦岛",
+    "cover": "https://example.com/zelda_link_s_awakening.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/d7d0631ddeed" },
@@ -46,6 +56,8 @@
   },
   {
     "name": "塞尔达传说 智慧的再现1.1.0 附金手指 画质mod",
+    "shortName": "智慧的再现",
+    "cover": "https://example.com/zelda_echoes_of_wisdom.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/1b6892d90de1" },
@@ -55,6 +67,8 @@
   },
   {
     "name": "（Switch）塞尔达无双 海拉鲁全明星DX 中文1.0.1",
+    "shortName": "海拉鲁全明星",
+    "cover": "https://example.com/zelda_hyrule_warriors.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "https://pan.quark.cn/s/509812de97bc" },
@@ -64,6 +78,8 @@
   },
   {
     "name": "超级马里奥 奥德赛",
+    "shortName": "马里奥奥德赛",
+    "cover": "https://example.com/mario_odyssey.jpg",
     "platform": "NS",
     "links": [
       { "name": "夸克网盘", "url": "" },
