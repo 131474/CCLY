@@ -947,7 +947,7 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 模糊匹配函数：阈值 0.5
+    // 模糊匹配函数：阈值 0.8
     function matchesQuery(gameName, query) {
         const inputChars = query.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g);
         if (!inputChars || inputChars.length === 0) return false;
@@ -957,7 +957,7 @@
             if (gameCharsSet.has(ch)) matchedCount++;
         }
         const ratio = matchedCount / inputChars.length;
-        return ratio >= 0.5;
+        return ratio >= 0.8;
     }
 
     async function mockBackendAPI(query, page) {
@@ -1053,7 +1053,7 @@
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
     function closeResultModal() { document.getElementById('resultModal').classList.remove('show'); }
 
-    // 手动搜索：使用输入框内容，搜索后清空输入框
+    // 手动搜索：使用输入框内容，搜索后保留输入框内容（不清空）
     async function handleSearch() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
         const query = document.getElementById('gameSearchInput').value.trim();
@@ -1062,8 +1062,7 @@
         currentGameQuery = query;
         openResultModal();
         await loadGamePage(1);
-        // 清空搜索框，方便下次输入
-        document.getElementById('gameSearchInput').value = '';
+        // 保留搜索框内容，不清空
     }
 
     function handlePrevPage() {
