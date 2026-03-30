@@ -14,7 +14,6 @@
         }
         body {
             min-height: 100vh;
-            /* 背景图：可替换为你的图片链接，同时保留渐变色作为 fallback */
             background: url('https://img.3dmgame.com/uploads/images/news/20231009/1696830110_989342.jpg'), linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
             background-blend-mode: overlay;
             background-size: auto, cover;
@@ -183,15 +182,14 @@
             box-shadow: 0 5px 12px -2px #16639b;
         }
         .demo-hint {
-            margin-top: 1.2rem;
+            margin-top: 1rem;
             color: #2b5b7e;
             font-size: 0.9rem;
             display: flex;
             align-items: center;
             gap: 0.8rem;
             flex-wrap: wrap;
-            border-top: 1px solid rgba(100, 170, 240, 0.3);
-            padding-top: 1rem;
+            padding-top: 0.5rem;
             margin-bottom: 0.8rem;
         }
         .mock-link {
@@ -678,7 +676,7 @@
         .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; transition: background 0.3s; }
         .simple-modal-btn:hover { background: #45a049; }
 
-        /* ========== 新增热门游戏推荐样式 ========== */
+        /* ========== 热门游戏推荐样式 ========== */
         .hot-section {
             margin: 1rem 0 0.5rem;
         }
@@ -771,19 +769,20 @@
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
 
-    <!-- 热门游戏推荐区域（动态生成） -->
-    <div class="hot-section" id="hotSection" style="display: none;">
-        <div class="hot-title">热门推荐</div>
-        <div class="hot-scroll" id="hotScroll"></div>
-    </div>
-
+    <!-- 试试查询区域（放在查询按钮下方） -->
     <div class="demo-hint">
         <span style="opacity:0.9;">⚡试试查询：</span>
         <span class="mock-link" data-demo="塞尔达">塞尔达</span>
-        <span class="mock-link" data-demo="塞尔达">宝可梦</span>
+        <span class="mock-link" data-demo="宝可梦">宝可梦</span>
         <span class="mock-link" data-demo="马里奥">马里奥</span>
         <span class="mock-link" data-demo="最终幻想">最终幻想</span>
-        <span class="mock-link" data-demo="塞尔达">战神</span>
+        <span class="mock-link" data-demo="战神">战神</span>
+    </div>
+
+    <!-- 热门游戏推荐区域（动态生成，放在试试查询下方） -->
+    <div class="hot-section" id="hotSection" style="display: none;">
+        <div class="hot-title">热门推荐</div>
+        <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
     <!-- 功能按钮 -->
@@ -800,7 +799,7 @@
     <div class="footer-note"><span>资源分享站</span></div>
 </div>
 
-<!-- 结果模态框 -->
+<!-- 结果模态框、登录模态框等（保持不变） -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -816,7 +815,6 @@
         </div>
     </div>
 </div>
-<!-- 登录/注册模态框 -->
 <div class="modal-overlay" id="authModal">
     <div class="modal-container" style="max-width: 450px;">
         <div class="modal-header">
@@ -826,7 +824,6 @@
         <div id="authFormContainer"></div>
     </div>
 </div>
-<!-- 二维码放大模态框 -->
 <div class="zoom-modal-overlay" id="zoomModal">
     <div class="zoom-modal-container" style="position: relative;">
         <div class="zoom-close" id="closeZoomBtn">✕</div>
@@ -865,7 +862,6 @@
             gameDB = await response.json();
             dataLoaded = true;
             console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-            // 渲染热门游戏推荐
             renderHotGames();
             const searchInput = document.getElementById('gameSearchInput');
             if (searchInput && searchInput.value.trim() !== '') {
@@ -879,7 +875,7 @@
         }
     }
 
-    // 渲染热门游戏（取前6个，如果有 cover 字段则显示，否则默认图标）
+    // 渲染热门游戏（取前10个，支持 shortName 和 cover）
     function renderHotGames() {
         const hotSection = document.getElementById('hotSection');
         const hotScroll = document.getElementById('hotScroll');
@@ -888,13 +884,19 @@
             hotSection.style.display = 'none';
             return;
         }
-        const hotGames = gameDB.slice(0, 6);
+        const hotGames = gameDB.slice(0, 10);
         hotScroll.innerHTML = hotGames.map(game => {
-            const coverUrl = game.cover ? game.cover : 'https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg';
+            // 显示名称：优先使用 shortName，否则截取前5个字
+            let displayName = game.shortName;
+            if (!displayName) {
+                const rawName = game.name;
+                displayName = rawName.length > 5 ? rawName.slice(0,5) + '…' : rawName;
+            }
+            const coverUrl = game.cover ? game.cover : 'https://via.placeholder.com/80x80?text=🎮';
             return `
                 <div class="hot-item" data-name="${escapeHtml(game.name)}">
-                    <img src="${coverUrl}" alt="${escapeHtml(game.name)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
-                    <span>${escapeHtml(game.name.length > 10 ? game.name.slice(0,8)+'…' : game.name)}</span>
+                    <img src="${coverUrl}" alt="${escapeHtml(displayName)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
+                    <span>${escapeHtml(displayName)}</span>
                 </div>
             `;
         }).join('');
@@ -921,7 +923,7 @@
         });
     }
 
-    // 工具按钮内容
+    // 工具按钮内容（保持不变）
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
@@ -1019,7 +1021,6 @@
             if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
         });
         document.getElementById('zoomPlatform').innerText = platform;
-        // 动态修改底部提示文字
         const pcHint = document.querySelector('.pc');
         if (pcHint) {
             pcHint.innerText = `${platform}APP扫码获取`;
