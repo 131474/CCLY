@@ -863,10 +863,6 @@
             dataLoaded = true;
             console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
             renderHotGames();
-            const searchInput = document.getElementById('gameSearchInput');
-            if (searchInput && searchInput.value.trim() !== '') {
-                handleSearch();
-            }
         } catch (error) {
             console.error('❌ 加载游戏数据失败：', error);
             gameDB = [];
@@ -886,7 +882,6 @@
         }
         const hotGames = gameDB.slice(0, 10);
         hotScroll.innerHTML = hotGames.map(game => {
-            // 显示名称：优先使用 shortName，否则截取前5个字
             let displayName = game.shortName;
             if (!displayName) {
                 const rawName = game.name;
@@ -901,16 +896,28 @@
             `;
         }).join('');
         hotSection.style.display = 'block';
-        // 绑定点击事件
+
+        // 绑定点击事件：直接搜索，不修改输入框
         document.querySelectorAll('.hot-item').forEach(item => {
             item.addEventListener('click', () => {
                 const gameName = item.getAttribute('data-name');
                 if (gameName) {
-                    document.getElementById('gameSearchInput').value = gameName;
-                    document.getElementById('searchBtn').click();
+                    searchByKeyword(gameName);
                 }
             });
         });
+    }
+
+    // 直接搜索指定关键词，不修改搜索框内容
+    async function searchByKeyword(keyword) {
+        if (!dataLoaded) {
+            alert('游戏数据还在加载中，请稍后再试');
+            return;
+        }
+        currentMode = 'game';
+        currentGameQuery = keyword;
+        openResultModal();
+        await loadGamePage(1);
     }
 
     function escapeHtml(str) {
@@ -923,7 +930,7 @@
         });
     }
 
-    // 工具按钮内容（保持不变）
+    // 工具按钮内容
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
@@ -932,7 +939,7 @@
         donateBtn: { title: '❤️ 支持我们', content: '<div class="donate-content"><h3>感谢支持</h3><p>您的支持是我们更新的动力！</p><div class="donate-qr"><div class="donate-item"><div class="qr-code-box" id="donateQr"></div><span>微信赞赏码</span></div></div></div>' }
     };
 
-    // ==================== 以下为原有功能代码（完整保留） ====================
+    // ==================== 核心功能变量 ====================
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
@@ -940,9 +947,22 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
+    // 模糊匹配函数：阈值 0.5
+    function matchesQuery(gameName, query) {
+        const inputChars = query.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g);
+        if (!inputChars || inputChars.length === 0) return false;
+        const gameCharsSet = new Set(gameName.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g) || []);
+        let matchedCount = 0;
+        for (let ch of inputChars) {
+            if (gameCharsSet.has(ch)) matchedCount++;
+        }
+        const ratio = matchedCount / inputChars.length;
+        return ratio >= 0.5;
+    }
+
     async function mockBackendAPI(query, page) {
         if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
-        let filtered = gameDB.filter(g => g.name.toLowerCase().includes(query.toLowerCase()));
+        let filtered = gameDB.filter(g => matchesQuery(g.name, query));
         const total = filtered.length;
         const totalPages = Math.ceil(total / pageSize);
         const start = (page - 1) * pageSize;
@@ -1033,13 +1053,17 @@
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
     function closeResultModal() { document.getElementById('resultModal').classList.remove('show'); }
 
+    // 手动搜索：使用输入框内容，搜索后清空输入框
     async function handleSearch() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        const query = document.getElementById('gameSearchInput').value.trim();
+        if (!query) return;
         currentMode = 'game';
-        currentGameQuery = document.getElementById('gameSearchInput').value.trim();
-        if(!currentGameQuery) return;
+        currentGameQuery = query;
         openResultModal();
         await loadGamePage(1);
+        // 清空搜索框，方便下次输入
+        document.getElementById('gameSearchInput').value = '';
     }
 
     function handlePrevPage() {
@@ -1147,10 +1171,13 @@
         for (const [btnId, config] of Object.entries(toolButtons)) {
             document.getElementById(btnId).onclick = () => openToolModal(config.title, config.content);
         }
+        // “试试查询”标签：直接搜索，不修改输入框
         document.querySelectorAll('.mock-link').forEach(el => {
             el.addEventListener('click', () => {
-                document.getElementById('gameSearchInput').value = el.innerText;
-                document.getElementById('searchBtn').click();
+                const keyword = el.innerText.trim();
+                if (keyword) {
+                    searchByKeyword(keyword);
+                }
             });
         });
     }
