@@ -737,6 +737,13 @@
                 width: 70px;
                 height: 70px;
             }
+            /* 手机版搜索框占位文字优化 */
+            .game-input {
+                padding-right: 2.8rem;
+            }
+            .game-input::placeholder {
+                font-size: 0.9rem;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
@@ -781,7 +788,7 @@
 
     <!-- 热门游戏推荐区域（动态生成，放在试试查询下方） -->
     <div class="hot-section" id="hotSection" style="display: none;">
-        <div class="hot-title">热门推荐</div>
+        <div class="hot-title">当前热门游戏推荐</div>
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
