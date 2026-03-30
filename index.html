@@ -14,7 +14,6 @@
         }
         body {
             min-height: 100vh;
-            /* 背景改为半透明，由幻灯片层接管，这里保留渐变为后备 */
             background: linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
             display: flex;
             align-items: center;
@@ -76,7 +75,7 @@
             justify-content: space-between;
             margin-bottom: 0.2rem;
             flex-wrap: wrap;
-            gap: 0.25rem 0.5rem;
+            gap: 0.5rem;
         }
         .game-house {
             font-size: 1.95rem;
@@ -88,6 +87,12 @@
             color: transparent;
             text-shadow: 0 2px 6px rgba(70, 160, 220, 0.3);
             line-height: 1.2;
+        }
+        .header-right {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            flex-wrap: wrap;
         }
         .badge {
             background: rgba(90, 170, 240, 0.15);
@@ -280,8 +285,10 @@
             background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
             border-color: #ff8c42;
             box-shadow: 0 0 8px rgba(255, 100, 0, 0.6);
-            transform: scale(1.02);
             animation: pulse 1.5s infinite;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            white-space: nowrap;
         }
         @keyframes pulse {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.7); }
@@ -365,6 +372,15 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+        .result-count {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ff6a1a;
+            background: rgba(255, 106, 26, 0.15);
+            padding: 0.1rem 0.4rem;
+            border-radius: 30px;
+            margin-left: 0.2rem;
         }
         .modal-close {
             background: rgba(200, 225, 255, 0.5);
@@ -704,8 +720,26 @@
         .wish-submit-btn:hover { transform: translateY(-2px); background: linear-gradient(115deg, #68b8f0, #4797cf); }
         .wish-empty { text-align: center; padding: 2rem; color: #6589a8; background: #e6f0fa; border-radius: 2rem; }
         .domain-tip-bar { display: none; }
-        .login-btn-header { background: rgba(90,170,240,0.25); border: 1.5px solid #4797cf; color: #1a5777; padding: 0.5rem 1.2rem; border-radius: 40px; font-size: 0.9rem; font-weight: 600; cursor: pointer; backdrop-filter: blur(4px); display: flex; align-items: center; gap: 0.4rem; white-space: nowrap; }
-        .login-btn-header:hover { background: rgba(70,150,230,0.4); transform: translateY(-2px); border-color: #2d7eb3; }
+        .login-btn-header {
+            background: rgba(90,170,240,0.25);
+            border: 1.5px solid #4797cf;
+            color: #1a5777;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            white-space: nowrap;
+        }
+        .login-btn-header:hover {
+            background: rgba(70,150,230,0.4);
+            transform: translateY(-2px);
+            border-color: #2d7eb3;
+        }
         .form-group { margin-bottom: 1rem; }
         .form-group label { display: block; margin-bottom: 0.3rem; color: #1a5777; font-weight: 500; }
         .form-group input { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; }
@@ -795,6 +829,10 @@
             .game-input::placeholder {
                 font-size: 0.9rem;
             }
+            #todayUpdateBtn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.75rem;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
@@ -806,8 +844,11 @@
 <div class="query-card">
     <div class="header">
         <div class="game-house">游戏宝库</div>
-        <div id="authArea">
-            <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
+        <div class="header-right">
+            <button class="tool-btn" id="todayUpdateBtn"><span>📅</span> 今日更新 <span style="font-size:0.7rem;">(10)</span></button>
+            <div id="authArea">
+                <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
+            </div>
         </div>
     </div>
     <input type="hidden" id="token" name="token" value="abe3d9d304cc82e310fe6d281455f91885d4db30fac9b7b9982a189a0ad49451e307f7eb3cc24cea6089180b9eea9596" />
@@ -846,9 +887,8 @@
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
-    <!-- 功能按钮 -->
+    <!-- 功能按钮（注意：今日更新按钮已移走，此处不再重复） -->
     <div class="tool-buttons">
-        <button class="tool-btn" id="todayUpdateBtn"><span>📅</span> 今日更新 <span style="font-size:0.7rem;">(10)</span></button>
         <button class="tool-btn" id="nsPcEmulatorBtn"><span>🖥️</span> PC游戏合集</button>
         <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
         <button class="tool-btn" id="atmosphereBtn"><span>🌐</span> 常用工具</button>
@@ -1026,9 +1066,14 @@
 
     async function loadGamePage(page) {
         const modalBody = document.getElementById('modalBody');
+        const modalTitle = document.getElementById('modalTitle');
         modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>加载游戏...</div>`;
         const res = await mockBackendAPI(currentGameQuery, page);
-        gameCurrentPage = res.page; gameTotalPages = res.totalPages; gameTotalCount = res.total;
+        gameCurrentPage = res.page;
+        gameTotalPages = res.totalPages;
+        gameTotalCount = res.total;
+        // 更新标题，显示实际搜索到的数量
+        modalTitle.innerHTML = `🔍查询到 <span class="result-count">${gameTotalCount}</span> 个游戏`;
         modalBody.innerHTML = generateGameCards(res.data);
         for(let i=0; i<res.data.length; i++) {
             const game = res.data[i];
@@ -1100,7 +1145,6 @@
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
     function closeResultModal() { 
         document.getElementById('resultModal').classList.remove('show');
-        // 恢复分页显示（下次打开普通搜索时会重新设置）
         document.getElementById('pagination').style.display = 'flex';
     }
 
@@ -1112,7 +1156,6 @@
         currentGameQuery = query;
         openResultModal();
         await loadGamePage(1);
-        // 不清空搜索框
     }
 
     function handlePrevPage() {
@@ -1216,11 +1259,11 @@
         // 取前10个游戏，并为每个添加更新日期
         const updateGames = gameDB.slice(0, 10).map(game => ({
             ...game,
-            updateDate: "2026.3.30"   // 你可以按需修改
+            updateDate: "2026.3.30"
         }));
         const modalTitle = document.getElementById('modalTitle');
         const modalBody = document.getElementById('modalBody');
-        modalTitle.innerHTML = '<span>📅 今日更新 (10个)</span>';
+        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">10</span>`;
         // 隐藏分页栏
         document.getElementById('pagination').style.display = 'none';
         document.getElementById('download-tip').style.display = 'flex';
@@ -1263,18 +1306,17 @@
 
     // ==================== 背景幻灯片 ====================
     function initSlideshow() {
-        // 请替换为你的10张图片链接（建议使用高清图）
         const bgImages = [
-            'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',  // 示例1
-            'https://game.portal-pokemon.com/sword_shield/sc/img/og-image.png',  // 示例2
-            'https://th.bing.com/th/id/R.500a09bdbd41865a9c5023d4feb3aa3c?rik=Lo4z4NLVWQjDbQ&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f47a5356d8376178c3c0afcf7ead3e30e134dc917.jpg&ehk=F1rTwXWA6u%2fBzFYn3BtX2tikAoiv2el6ENQJB1hNxPM%3d&risl=&pid=ImgRaw&r=0',  // 示例3
-            'https://www.3dmgame.com/uploads/images/thumbpicfirst/20190708/1562575900_513702.png',  // 示例4
-            'https://www.10wallpaper.com/wallpaper/1920x1080/1204/ascension-God_of_war_HD_Game_Wallpaper_1920x1080.jpg',  // 示例5
-            'https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png',  // 示例6
-            'https://tse1.mm.bing.net/th/id/OIP.K6TQFdaudpM47G-E2laYcAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3',  // 示例7
-            'https://th.bing.com/th/id/R.a413bf19c3bf3a5267d3a5f136f64cd8?rik=%2bghJKa%2b17v8eOQ&riu=http%3a%2f%2fblob.keylol.com%2fforum%2f201810%2f19%2f024934c03r8ov7yz87m88a.jpg&ehk=J4ogTBqxETG2ujUaPHZOhEYj3OJPQiUNe6pd%2fp%2ff7Ik%3d&risl=&pid=ImgRaw&r=0',  // 示例8
-            'https://tse3.mm.bing.net/th/id/OIP.meBnum3m7FLVN0XpFwY5hgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3',  // 示例9
-            'https://tse4.mm.bing.net/th/id/OIP.3Zu3qsBLWrvRzyxJ-qYULQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'   // 示例10
+            'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',
+            'https://game.portal-pokemon.com/sword_shield/sc/img/og-image.png',
+            'https://th.bing.com/th/id/R.500a09bdbd41865a9c5023d4feb3aa3c?rik=Lo4z4NLVWQjDbQ&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f47a5356d8376178c3c0afcf7ead3e30e134dc917.jpg&ehk=F1rTwXWA6u%2fBzFYn3BtX2tikAoiv2el6ENQJB1hNxPM%3d&risl=&pid=ImgRaw&r=0',
+            'https://www.3dmgame.com/uploads/images/thumbpicfirst/20190708/1562575900_513702.png',
+            'https://www.10wallpaper.com/wallpaper/1920x1080/1204/ascension-God_of_war_HD_Game_Wallpaper_1920x1080.jpg',
+            'https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png',
+            'https://c-ssl.duitang.com/uploads/item/201604/01/20160401223349_WzjmJ.jpeg',
+            'https://th.bing.com/th/id/R.a413bf19c3bf3a5267d3a5f136f64cd8?rik=%2bghJKa%2b17v8eOQ&riu=http%3a%2f%2fblob.keylol.com%2fforum%2f201810%2f19%2f024934c03r8ov7yz87m88a.jpg&ehk=J4ogTBqxETG2ujUaPHZOhEYj3OJPQiUNe6pd%2fp%2ff7Ik%3d&risl=&pid=ImgRaw&r=0',
+            'https://10wallpaper.com/wallpaper/1920x1080/1309/Grand_Theft_Auto_V_GTA_5_Game_HD_Wallpaper_1920x1080.jpg',
+            'https://www.10wallpaper.com/wallpaper/2560x1600/1605/Uncharted_4-Game_Posters_HD_Wallpaper_2560x1600.jpg'
         ];
         const container = document.getElementById('bgSlideshow');
         if (!container) return;
@@ -1302,8 +1344,8 @@
         audio.loop = true;
         audio.preload = 'auto';
         audio.volume = 0.4;
-        // 请替换为你的音乐文件 URL
-        audio.src = '浜口史郎-ルフィ猛攻！.mp3';  // ← 替换为实际音乐链接
+        // 音乐文件位于 music 文件夹下，请确保文件名与上传的一致
+        audio.src = 'music/luffy.mp3';
         document.body.appendChild(audio);
         let played = false;
         function startMusic() {
