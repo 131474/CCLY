@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>游戏宝库</title>
     <style>
-        /* ========== 所有原有样式（完整保留）========== */
+        /* ========== 所有原有样式 ========== */
         * {
             margin: 0;
             padding: 0;
@@ -14,9 +14,8 @@
         }
         body {
             min-height: 100vh;
-            background: url('https://img.3dmgame.com/uploads/images/news/20231009/1696830110_989342.jpg'), linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
-            background-blend-mode: overlay;
-            background-size: auto, cover;
+            /* 背景改为半透明，由幻灯片层接管，这里保留渐变为后备 */
+            background: linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,7 +25,34 @@
             user-select: none;
             flex-direction: column;
             gap: 1rem;
+            position: relative;
+            z-index: 1;
         }
+        /* 背景幻灯片容器 */
+        .bg-slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .bg-slideshow .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        .bg-slideshow .slide.active {
+            opacity: 1;
+        }
+        /* 卡片样式保持不变 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -249,6 +275,19 @@
         .tool-btn span {
             font-size: 1rem;
         }
+        /* 今日更新按钮特殊样式 */
+        #todayUpdateBtn {
+            background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
+            border-color: #ff8c42;
+            box-shadow: 0 0 8px rgba(255, 100, 0, 0.6);
+            transform: scale(1.02);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
+        }
         .loading-spinner {
             display: inline-block;
             width: 30px;
@@ -272,7 +311,7 @@
             color: #6589a8;
             margin-top: -0.1rem;
         }
-        /* 模态框样式 */
+        /* 模态框样式（保持不变） */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -384,6 +423,19 @@
             margin-bottom: 0.8rem;
             border-left: 4px solid #4797cf;
             padding-left: 0.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .update-date {
+            font-family: '宋体', SimSun;
+            color: #1e88e5;
+            font-size: 0.8rem;
+            background: rgba(30, 136, 229, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
         }
         .modal-qr-group {
             display: flex;
@@ -737,7 +789,6 @@
                 width: 70px;
                 height: 70px;
             }
-            /* 手机版搜索框占位文字优化 */
             .game-input {
                 padding-right: 2.8rem;
             }
@@ -749,6 +800,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
+<!-- 背景幻灯片容器 -->
+<div class="bg-slideshow" id="bgSlideshow"></div>
+
 <div class="query-card">
     <div class="header">
         <div class="game-house">游戏宝库</div>
@@ -776,7 +830,7 @@
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
 
-    <!-- 试试查询区域（放在查询按钮下方） -->
+    <!-- 试试查询区域 -->
     <div class="demo-hint">
         <span style="opacity:0.9;">⚡试试查询：</span>
         <span class="mock-link" data-demo="塞尔达">塞尔达</span>
@@ -786,14 +840,15 @@
         <span class="mock-link" data-demo="战神">战神</span>
     </div>
 
-    <!-- 热门游戏推荐区域（动态生成，放在试试查询下方） -->
+    <!-- 热门游戏推荐区域 -->
     <div class="hot-section" id="hotSection" style="display: none;">
-        <div class="hot-title">热门推荐</div>
+        <div class="hot-title">当前热门游戏推荐</div>
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
     <!-- 功能按钮 -->
     <div class="tool-buttons">
+        <button class="tool-btn" id="todayUpdateBtn"><span>📅</span> 今日更新 <span style="font-size:0.7rem;">(10)</span></button>
         <button class="tool-btn" id="nsPcEmulatorBtn"><span>🖥️</span> PC游戏合集</button>
         <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
         <button class="tool-btn" id="atmosphereBtn"><span>🌐</span> 常用工具</button>
@@ -806,7 +861,7 @@
     <div class="footer-note"><span>资源分享站</span></div>
 </div>
 
-<!-- 结果模态框、登录模态框等（保持不变） -->
+<!-- 结果模态框、登录模态框等 -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -858,7 +913,7 @@
 </div>
 
 <script>
-    // ==================== 游戏数据将从外部 JSON 文件加载 ====================
+    // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
 
@@ -904,23 +959,16 @@
         }).join('');
         hotSection.style.display = 'block';
 
-        // 绑定点击事件：直接搜索，不修改输入框
         document.querySelectorAll('.hot-item').forEach(item => {
             item.addEventListener('click', () => {
                 const gameName = item.getAttribute('data-name');
-                if (gameName) {
-                    searchByKeyword(gameName);
-                }
+                if (gameName) searchByKeyword(gameName);
             });
         });
     }
 
-    // 直接搜索指定关键词，不修改搜索框内容
     async function searchByKeyword(keyword) {
-        if (!dataLoaded) {
-            alert('游戏数据还在加载中，请稍后再试');
-            return;
-        }
+        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
         currentMode = 'game';
         currentGameQuery = keyword;
         openResultModal();
@@ -954,17 +1002,13 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 模糊匹配函数：阈值 0.8
     function matchesQuery(gameName, query) {
         const inputChars = query.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g);
         if (!inputChars || inputChars.length === 0) return false;
         const gameCharsSet = new Set(gameName.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g) || []);
         let matchedCount = 0;
-        for (let ch of inputChars) {
-            if (gameCharsSet.has(ch)) matchedCount++;
-        }
-        const ratio = matchedCount / inputChars.length;
-        return ratio >= 0.8;
+        for (let ch of inputChars) if (gameCharsSet.has(ch)) matchedCount++;
+        return matchedCount / inputChars.length >= 0.8;
     }
 
     async function mockBackendAPI(query, page) {
@@ -990,9 +1034,7 @@
             const game = res.data[i];
             for(let j=0; j<game.links.length; j++) {
                 const container = document.getElementById(`qr-${i}-${j}`);
-                if(container && game.links[j].url) {
-                    await generateQRCode(container, game.links[j].url);
-                }
+                if(container && game.links[j].url) await generateQRCode(container, game.links[j].url);
             }
         }
         attachQrZoom();
@@ -1049,18 +1091,19 @@
         });
         document.getElementById('zoomPlatform').innerText = platform;
         const pcHint = document.querySelector('.pc');
-        if (pcHint) {
-            pcHint.innerText = `${platform}APP扫码获取`;
-        }
+        if (pcHint) pcHint.innerText = `${platform}APP扫码获取`;
         document.getElementById('zoomModal').classList.add('show');
         window.currentZoomLink = link;
     }
 
     function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
-    function closeResultModal() { document.getElementById('resultModal').classList.remove('show'); }
+    function closeResultModal() { 
+        document.getElementById('resultModal').classList.remove('show');
+        // 恢复分页显示（下次打开普通搜索时会重新设置）
+        document.getElementById('pagination').style.display = 'flex';
+    }
 
-    // 手动搜索：使用输入框内容，搜索后保留输入框内容（不清空）
     async function handleSearch() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
         const query = document.getElementById('gameSearchInput').value.trim();
@@ -1069,7 +1112,7 @@
         currentGameQuery = query;
         openResultModal();
         await loadGamePage(1);
-        // 保留搜索框内容，不清空
+        // 不清空搜索框
     }
 
     function handlePrevPage() {
@@ -1164,6 +1207,117 @@
         }
     }
 
+    // ==================== 今日更新功能 ====================
+    async function openUpdateModal() {
+        if (!dataLoaded) {
+            alert('游戏数据还在加载中，请稍后再试');
+            return;
+        }
+        // 取前10个游戏，并为每个添加更新日期
+        const updateGames = gameDB.slice(0, 10).map(game => ({
+            ...game,
+            updateDate: "2026.3.30"   // 你可以按需修改
+        }));
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        modalTitle.innerHTML = '<span>📅 今日更新 (10个)</span>';
+        // 隐藏分页栏
+        document.getElementById('pagination').style.display = 'none';
+        document.getElementById('download-tip').style.display = 'flex';
+        // 生成卡片 HTML
+        modalBody.innerHTML = generateUpdateCards(updateGames);
+        // 为每个网盘生成二维码
+        for(let i=0; i<updateGames.length; i++) {
+            const game = updateGames[i];
+            for(let j=0; j<game.links.length; j++) {
+                const container = document.getElementById(`update-qr-${i}-${j}`);
+                if(container && game.links[j].url) {
+                    await generateQRCode(container, game.links[j].url);
+                }
+            }
+        }
+        attachQrZoom(); // 绑定二维码放大事件
+        openResultModal();
+    }
+
+    function generateUpdateCards(games) {
+        if(!games.length) return '<div class="empty-modal-msg">暂无今日更新</div>';
+        let html = '';
+        games.forEach((game, idx) => {
+            html += `<div class="modal-game-card">
+                        <div class="game-title-row">
+                            🎮 ${game.name} (${game.platform})
+                            <span class="update-date">${game.updateDate}更新</span>
+                        </div>
+                        <div class="modal-qr-group">`;
+            game.links.forEach((link, linkIdx) => {
+                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
+                            <span class="qr-label">${link.name}</span>
+                         </div>`;
+            });
+            html += `</div></div>`;
+        });
+        return html;
+    }
+
+    // ==================== 背景幻灯片 ====================
+    function initSlideshow() {
+        // 请替换为你的10张图片链接（建议使用高清图）
+        const bgImages = [
+            'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',  // 示例1
+            'https://game.portal-pokemon.com/sword_shield/sc/img/og-image.png',  // 示例2
+            'https://th.bing.com/th/id/R.500a09bdbd41865a9c5023d4feb3aa3c?rik=Lo4z4NLVWQjDbQ&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f47a5356d8376178c3c0afcf7ead3e30e134dc917.jpg&ehk=F1rTwXWA6u%2fBzFYn3BtX2tikAoiv2el6ENQJB1hNxPM%3d&risl=&pid=ImgRaw&r=0',  // 示例3
+            'https://www.3dmgame.com/uploads/images/thumbpicfirst/20190708/1562575900_513702.png',  // 示例4
+            'https://www.10wallpaper.com/wallpaper/1920x1080/1204/ascension-God_of_war_HD_Game_Wallpaper_1920x1080.jpg',  // 示例5
+            'https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png',  // 示例6
+            'https://tse1.mm.bing.net/th/id/OIP.K6TQFdaudpM47G-E2laYcAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3',  // 示例7
+            'https://th.bing.com/th/id/R.a413bf19c3bf3a5267d3a5f136f64cd8?rik=%2bghJKa%2b17v8eOQ&riu=http%3a%2f%2fblob.keylol.com%2fforum%2f201810%2f19%2f024934c03r8ov7yz87m88a.jpg&ehk=J4ogTBqxETG2ujUaPHZOhEYj3OJPQiUNe6pd%2fp%2ff7Ik%3d&risl=&pid=ImgRaw&r=0',  // 示例8
+            'https://tse3.mm.bing.net/th/id/OIP.meBnum3m7FLVN0XpFwY5hgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3',  // 示例9
+            'https://tse4.mm.bing.net/th/id/OIP.3Zu3qsBLWrvRzyxJ-qYULQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3'   // 示例10
+        ];
+        const container = document.getElementById('bgSlideshow');
+        if (!container) return;
+        bgImages.forEach((src, index) => {
+            const slide = document.createElement('div');
+            slide.className = 'slide';
+            if (index === 0) slide.classList.add('active');
+            slide.style.backgroundImage = `url(${src})`;
+            container.appendChild(slide);
+        });
+        let current = 0;
+        const slides = document.querySelectorAll('.bg-slideshow .slide');
+        if (slides.length === 0) return;
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 6000);
+    }
+
+    // ==================== 背景音乐（首次点击播放） ====================
+    function initMusic() {
+        const audio = document.createElement('audio');
+        audio.id = 'bgMusic';
+        audio.loop = true;
+        audio.preload = 'auto';
+        audio.volume = 0.4;
+        // 请替换为你的音乐文件 URL
+        audio.src = '浜口史郎-ルフィ猛攻！.mp3';  // ← 替换为实际音乐链接
+        document.body.appendChild(audio);
+        let played = false;
+        function startMusic() {
+            if (!played) {
+                audio.play().catch(e => console.log('音乐播放失败', e));
+                played = true;
+                document.removeEventListener('click', startMusic);
+                document.removeEventListener('touchstart', startMusic);
+            }
+        }
+        document.addEventListener('click', startMusic);
+        document.addEventListener('touchstart', startMusic);
+    }
+
     function bindEvents() {
         document.getElementById('searchBtn').addEventListener('click', handleSearch);
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
@@ -1177,17 +1331,16 @@
         for (const [btnId, config] of Object.entries(toolButtons)) {
             document.getElementById(btnId).onclick = () => openToolModal(config.title, config.content);
         }
-        // “试试查询”标签：直接搜索，不修改输入框
+        // “试试查询”标签
         document.querySelectorAll('.mock-link').forEach(el => {
             el.addEventListener('click', () => {
                 const keyword = el.innerText.trim();
-                if (keyword) {
-                    searchByKeyword(keyword);
-                }
+                if (keyword) searchByKeyword(keyword);
             });
         });
-
-        // 按 Enter 键触发搜索
+        // 今日更新按钮
+        document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
+        // 回车搜索
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) {
             searchInput.addEventListener('keypress', function(e) {
@@ -1203,6 +1356,8 @@
     loadStoredUser();
     bindEvents();
     loadGameData();
+    initSlideshow();
+    initMusic();
 </script>
 </body>
 </html>
