@@ -1037,22 +1037,31 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 严格连续匹配（过滤）
+    // 检查 gameName 是否包含 query 的所有字符，且顺序一致（子序列）
     function matchesQuery(gameName, query) {
-        return gameName.toLowerCase().includes(query.toLowerCase());
+        const nameLower = gameName.toLowerCase();
+        const queryLower = query.toLowerCase();
+        let pos = -1;
+        for (let i = 0; i < queryLower.length; i++) {
+            const ch = queryLower[i];
+            const nextPos = nameLower.indexOf(ch, pos + 1);
+            if (nextPos === -1) return false;
+            pos = nextPos;
+        }
+        return true;
     }
-
-    // 排序函数：根据连续子串起始位置精细打分
+    // 排序函数：根据第一个匹配字符的位置打分（位置越靠前分数越高）
     function calculateScore(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
-        const idx = nameLower.indexOf(queryLower);
-        if (idx !== -1) {
-            return 10000 - idx * 10;
+        // 找到第一个字符的位置
+        const firstIdx = nameLower.indexOf(queryLower[0]);
+        if (firstIdx !== -1) {
+            // 位置越靠前，分数越高，最高10000，每靠后一个字符减10分
+            return 10000 - firstIdx * 10;
         }
         return 0;
     }
-
     async function mockBackendAPI(query, page) {
         if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
         let filtered = gameDB.filter(g => matchesQuery(g.name, query));
@@ -1402,10 +1411,10 @@
     function initMusic() {
         const musicList = [
             'music/luffy.mp3',
-            'music/宮崎誠-Theme of ONE PUNCH MAN ～正義執行～.mp3',
-            'music/井上ジョー-CLOSER.mp3',
-            'music/菅野祐悟-高潔なる教皇1.mp3',
-            'music/WANDS-世界が終るまでは….mp3'
+            'music/2.mp3',
+            'music/3.mp3',
+            'music/4.mp3',
+            'music/5.mp3'
         ];
         let currentIndex = 0;
         const audio = document.createElement('audio');
