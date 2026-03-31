@@ -776,7 +776,8 @@
         }
         .form-group { margin-bottom: 1rem; }
         .form-group label { display: block; margin-bottom: 0.3rem; color: #1a5777; font-weight: 500; }
-        .form-group input { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; background: white; }
+        .form-group textarea { border-radius: 20px; resize: vertical; }
         .auth-btn { background: #4797cf; border: none; border-radius: 40px; padding: 0.7rem; width: 100%; color: white; font-weight: bold; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; transition: transform 0.1s; }
         .auth-btn:hover { transform: translateY(-1px); background: #57a8e0; }
         .switch-auth { text-align: center; margin-top: 1rem; color: #2b5f88; cursor: pointer; font-size: 0.9rem; }
@@ -798,6 +799,7 @@
             .header-right { gap: 0.4rem; }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
@@ -854,14 +856,14 @@
         <button class="tool-btn" id="atmosphereBtn"><span>🌐</span> 常用工具</button>
         <button class="tool-btn" id="exchangeBtn"><span>🐧</span> 交流群</button>
         <button class="tool-btn" id="wishingWellBtn"><span>⛲</span> 许愿池</button>
-        <button class="tool-btn" id="donateBtn"><span>❤️</span> 支持我们</button>
+        <button class="tool-btn" id="feedbackBtn"><span>💬</span> 反馈问题</button>
     </div>
 
     <hr>
     <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。</span></div>
 </div>
 
-<!-- 模态框结构（完全保留原功能） -->
+<!-- 模态框结构 -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -913,6 +915,21 @@
 </div>
 
 <script>
+    // ==================== Supabase 配置（带错误隔离） ====================
+    let supabaseEnabled = false;
+    let supabase = null;
+    try {
+        // 请替换为您的实际值
+        const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
+        const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
+        supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        supabaseEnabled = true;
+        console.log('✅ Supabase 初始化成功');
+    } catch (err) {
+        console.warn('⚠️ Supabase 初始化失败，反馈功能将不可用', err);
+        supabaseEnabled = false;
+    }
+
     // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -984,12 +1001,67 @@
         });
     }
 
+    // ==================== 工具按钮内容（改进） ====================
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
-        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
+        nsMobileEmulatorBtn: { 
+            title: '📱 手机游戏',
+            content: `
+                <div class="tool-content" style="text-align: center;">
+                    <h3>📱 手机游戏资源包</h3>
+                    <p>扫描下方二维码下载（安卓/iOS）</p>
+                    <div id="mobileQrCode" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                    <p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p>
+                </div>
+            `
+        },
         atmosphereBtn: { title: '🌐 常用工具', content: '<div class="tool-content"><h3>实用工具</h3><p>模拟器、存档修改器等。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 5678</p></div>' },
-        exchangeBtn: { title: '🐧 交流群', content: '<div class="tool-content"><h3>玩家交流群</h3><p>QQ群: 123456789<br>微信群: 请加好友拉群</p></div>' },
-        donateBtn: { title: '❤️ 支持我们', content: '<div class="donate-content"><h3>感谢支持</h3><p>您的支持是我们更新的动力！</p><div class="donate-qr"><div class="donate-item"><div class="qr-code-box" id="donateQr"></div><span>微信赞赏码</span></div></div></div>' }
+        exchangeBtn: { 
+            title: '🐧 交流群',
+            content: `
+                <div class="tool-content" style="text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3>
+                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 160px;">
+                            <div style="font-size: 2rem;">🐧</div>
+                            <div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div>
+                            <div style="color: #2b5f88; cursor: pointer;" id="qqNum">123456789</div>
+                            <div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div>
+                        </div>
+                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 160px;">
+                            <div style="font-size: 2rem;">💬</div>
+                            <div style="font-weight: bold; margin: 0.5rem 0;">微信群</div>
+                            <div style="color: #2b5f88;">请加好友拉群</div>
+                            <div style="font-size: 0.7rem; margin-top: 0.3rem;">扫码联系</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p>
+                </div>
+            `
+        },
+        feedbackBtn: { 
+            title: '💬 反馈问题',
+            content: `
+                <div class="tool-content">
+                    <h3>📢 链接失效反馈</h3>
+                    <p>如果您发现网盘链接失效，请填写以下信息，我们会尽快修复：</p>
+                    <div class="form-group">
+                        <label>失效的游戏名称（选填）</label>
+                        <input type="text" id="feedbackGame" placeholder="例如：战神全系列">
+                    </div>
+                    <div class="form-group">
+                        <label>具体问题描述 *</label>
+                        <textarea id="feedbackDesc" rows="3" placeholder="链接失效 / 提取码错误 / 文件损坏等"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>您的邮箱（选填，方便回复）</label>
+                        <input type="email" id="feedbackEmail" placeholder="your@email.com">
+                    </div>
+                    <button id="submitFeedbackBtn" class="auth-btn">提交反馈</button>
+                    <div id="feedbackResult" class="error-msg" style="margin-top:1rem;"></div>
+                </div>
+            `
+        }
     };
 
     let currentUser = null;
@@ -999,46 +1071,27 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 原有的匹配函数（保留用于过滤）
+    // 严格连续匹配（过滤）
     function matchesQuery(gameName, query) {
-        const inputChars = query.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g);
-        if (!inputChars || inputChars.length === 0) return false;
-        const gameCharsSet = new Set(gameName.toLowerCase().match(/[\u4e00-\u9fa5a-z0-9]/g) || []);
-        let matchedCount = 0;
-        for (let ch of inputChars) if (gameCharsSet.has(ch)) matchedCount++;
-        return matchedCount / inputChars.length >= 0.8;
+        // 只要游戏名中包含连续完整的查询词（不区分大小写）
+        return gameName.toLowerCase().includes(query.toLowerCase());
     }
 
-    // 增强的排序函数：根据连续子串起始位置精细打分
+    // 排序函数：根据连续子串起始位置精细打分
     function calculateScore(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
-        // 完全包含连续子串
         const idx = nameLower.indexOf(queryLower);
         if (idx !== -1) {
-            // 起始位置越靠前，分数越高，最高10000，每靠后一个字符减10分
             return 10000 - idx * 10;
         }
-        // 以查询词开头（上面已覆盖，但保留以防边界情况）
-        if (nameLower.startsWith(queryLower)) {
-            return 10000;
-        }
-        // 否则使用字符匹配比例
-        const inputChars = queryLower.match(/[\u4e00-\u9fa5a-z0-9]/g);
-        if (!inputChars || inputChars.length === 0) return 0;
-        const gameCharsSet = new Set(nameLower.match(/[\u4e00-\u9fa5a-z0-9]/g) || []);
-        let matchedCount = 0;
-        for (let ch of inputChars) if (gameCharsSet.has(ch)) matchedCount++;
-        const ratio = matchedCount / inputChars.length;
-        // 非连续匹配分数最高不超过1000，确保排在所有连续匹配之后
-        return ratio * 1000;
+        // 理论上经过过滤后这里不会执行到，但保留安全
+        return 0;
     }
 
     async function mockBackendAPI(query, page) {
         if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
-        // 先用原逻辑过滤
         let filtered = gameDB.filter(g => matchesQuery(g.name, query));
-        // 按相关性分数排序（高分在前）
         filtered.sort((a, b) => {
             const scoreA = calculateScore(a.name, query);
             const scoreB = calculateScore(b.name, query);
@@ -1163,6 +1216,79 @@
         document.getElementById('modalTitle').innerHTML = title;
         document.getElementById('modalBody').innerHTML = content;
         openResultModal();
+
+        // 如果是手机游戏，生成二维码
+        if (title === '📱 手机游戏') {
+            const qrContainer = document.getElementById('mobileQrCode');
+            if (qrContainer) {
+                const downloadUrl = 'https://pan.quark.cn/s/xxxx'; // 请替换为真实下载链接
+                qrContainer.innerHTML = '';
+                const canvas = document.createElement('canvas');
+                QRCode.toCanvas(canvas, downloadUrl, { width: 200 }, (err) => {
+                    if (err) {
+                        qrContainer.innerHTML = '<span style="color:red;">二维码生成失败</span>';
+                    } else {
+                        canvas.style.width = '200px';
+                        canvas.style.height = '200px';
+                        qrContainer.appendChild(canvas);
+                    }
+                });
+            }
+        }
+
+        // 如果是交流群，绑定QQ号复制功能
+        if (title === '🐧 交流群') {
+            const qqNum = document.getElementById('qqNum');
+            if (qqNum) {
+                qqNum.addEventListener('click', () => {
+                    const text = qqNum.innerText;
+                    navigator.clipboard.writeText(text).then(() => {
+                        alert('QQ群号已复制: ' + text);
+                    }).catch(() => {
+                        alert('复制失败，请手动复制');
+                    });
+                });
+            }
+        }
+
+        // 如果是反馈问题，绑定提交按钮
+        if (title === '💬 反馈问题') {
+            const submitBtn = document.getElementById('submitFeedbackBtn');
+            if (submitBtn) {
+                submitBtn.onclick = submitFeedback;
+            }
+        }
+    }
+
+    // 反馈提交函数
+    async function submitFeedback() {
+        const game = document.getElementById('feedbackGame').value.trim();
+        const desc = document.getElementById('feedbackDesc').value.trim();
+        const email = document.getElementById('feedbackEmail').value.trim();
+        const resultDiv = document.getElementById('feedbackResult');
+        if (!desc) {
+            resultDiv.innerText = '请填写问题描述';
+            return;
+        }
+        if (!supabaseEnabled) {
+            resultDiv.innerText = '当前为演示模式，反馈未保存。请稍后再试。';
+            return;
+        }
+        const content = `游戏：${game || '未填写'} | 问题：${desc}`;
+        try {
+            const { error } = await supabase
+                .from('feedbacks')
+                .insert([{ content, user_email: email || null }]);
+            if (error) throw error;
+            resultDiv.innerText = '✅ 反馈已提交，感谢您的支持！';
+            resultDiv.style.color = 'green';
+            document.getElementById('feedbackGame').value = '';
+            document.getElementById('feedbackDesc').value = '';
+            document.getElementById('feedbackEmail').value = '';
+        } catch (err) {
+            resultDiv.innerText = '提交失败：' + err.message;
+            resultDiv.style.color = 'red';
+        }
     }
 
     function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
@@ -1322,15 +1448,34 @@
         }, 6000);
     }
 
+    // 多首背景音乐循环播放（顺序）
     function initMusic() {
+        const musicList = [
+            'music/luffy.mp3',
+            'music/music2.mp3',
+            'music/music3.mp3',
+            'music/music4.mp3',
+            'music/music5.mp3'
+        ];
+        let currentIndex = 0;
         const audio = document.createElement('audio');
         audio.id = 'bgMusic';
-        audio.loop = true;
+        audio.loop = false;   // 手动控制下一首
         audio.preload = 'auto';
         audio.volume = 0.4;
-        audio.src = 'music/luffy.mp3';
         document.body.appendChild(audio);
-        audio.load();
+
+        function playCurrent() {
+            audio.src = musicList[currentIndex];
+            audio.load();
+            audio.play().catch(e => console.log('音乐播放失败', e));
+        }
+
+        audio.addEventListener('ended', () => {
+            currentIndex = (currentIndex + 1) % musicList.length;
+            playCurrent();
+        });
+
         let played = false;
         let loading = false;
         function startMusic() {
@@ -1338,13 +1483,13 @@
             if (!loading) {
                 loading = true;
                 if (audio.readyState >= 2) {
-                    audio.play().catch(e => console.log('音乐播放失败', e));
+                    playCurrent();
                     played = true;
                     document.removeEventListener('click', startMusic);
                     document.removeEventListener('touchstart', startMusic);
                 } else {
                     audio.addEventListener('canplay', function onCanPlay() {
-                        audio.play().catch(e => console.log('音乐播放失败', e));
+                        playCurrent();
                         played = true;
                         audio.removeEventListener('canplay', onCanPlay);
                         document.removeEventListener('click', startMusic);
