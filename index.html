@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>游戏宝库 - 清晰悬停版</title>
     <style>
-        /* ========== 全局防模糊优化（与原文件完全相同） ========== */
+        /* ========== 全局防模糊优化 ========== */
         * {
             margin: 0;
             padding: 0;
@@ -310,10 +310,11 @@
             margin: 0.6rem 0;
         }
         .footer-note {
-            text-align: right;
+            text-align: center;          /* 改为居中 */
             font-size: 0.7rem;
             color: #6589a8;
-            margin-top: -0.1rem;
+            margin-top: 0.2rem;
+            line-height: 1.3;
         }
         .modal-overlay {
             position: fixed;
@@ -797,6 +798,8 @@
             .header-right { gap: 0.4rem; }
         }
     </style>
+    <!-- 引入 Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
@@ -857,7 +860,7 @@
     </div>
 
     <hr>
-    <div class="footer-note"><span>资源分享站</span></div>
+    <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。</span></div>
 </div>
 
 <!-- 模态框结构（完全保留原功能） -->
@@ -912,6 +915,11 @@
 </div>
 
 <script>
+    // ==================== Supabase 配置（请替换为您自己的值） ====================
+    const SUPABASE_URL = 'https://wtwumjhcrwtxoxvuredq.supabase.co';  // 替换为您的 Project URL
+    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP'; // 替换为您的 anon key
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
     // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -1008,25 +1016,29 @@
         return matchedCount / inputChars.length >= 0.8;
     }
 
-    // 增强的排序函数：计算相关性分数
+    // 增强的排序函数：根据连续子串起始位置精细打分
     function calculateScore(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
-        // 完全包含查询词（连续子串）
-        if (nameLower.includes(queryLower)) {
+        // 完全包含连续子串
+        const idx = nameLower.indexOf(queryLower);
+        if (idx !== -1) {
+            // 起始位置越靠前，分数越高，最高10000，每靠后一个字符减10分
+            return 10000 - idx * 10;
+        }
+        // 以查询词开头（上面已覆盖，但保留以防边界情况）
+        if (nameLower.startsWith(queryLower)) {
             return 10000;
         }
-        // 以查询词开头
-        if (nameLower.startsWith(queryLower)) {
-            return 8000;
-        }
-        // 否则使用原有的字符匹配比例
+        // 否则使用字符匹配比例
         const inputChars = queryLower.match(/[\u4e00-\u9fa5a-z0-9]/g);
         if (!inputChars || inputChars.length === 0) return 0;
         const gameCharsSet = new Set(nameLower.match(/[\u4e00-\u9fa5a-z0-9]/g) || []);
         let matchedCount = 0;
         for (let ch of inputChars) if (gameCharsSet.has(ch)) matchedCount++;
-        return (matchedCount / inputChars.length) * 1000;
+        const ratio = matchedCount / inputChars.length;
+        // 非连续匹配分数最高不超过1000，确保排在所有连续匹配之后
+        return ratio * 1000;
     }
 
     async function mockBackendAPI(query, page) {
@@ -1164,22 +1176,108 @@
     function jumpToLink(link) { if(link) window.open(link, '_blank'); }
 
     function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
+
+    // ==================== 真实登录/注册（Supabase） ====================
     function showAuthModal(mode) {
         const modal = document.getElementById('authModal');
         const titleEl = document.getElementById('authModalTitle');
         const container = document.getElementById('authFormContainer');
         if(mode === 'login') {
             titleEl.innerText = '登录账号';
-            container.innerHTML = `<div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div><button class="auth-btn" id="submitLoginBtn">登录</button><div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitLoginBtn')?.addEventListener('click', () => { alert('演示模式，无需真实登录'); closeAuthModal(); });
-            document.getElementById('switchToReg')?.addEventListener('click', () => showAuthModal('register'));
+            container.innerHTML = `
+                <div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div>
+                <div class="form-group"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div>
+                <button class="auth-btn" id="submitLoginBtn">登录</button>
+                <div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div>
+                <div id="authError" class="error-msg"></div>
+            `;
+            document.getElementById('submitLoginBtn').addEventListener('click', async () => {
+                const email = document.getElementById('loginEmail').value.trim();
+                const password = document.getElementById('loginPassword').value.trim();
+                const errorDiv = document.getElementById('authError');
+                if (!email || !password) {
+                    errorDiv.innerText = '请填写邮箱和密码';
+                    return;
+                }
+                const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+                if (error) {
+                    errorDiv.innerText = error.message;
+                    return;
+                }
+                // 登录成功
+                const nickname = data.user.user_metadata?.nickname || data.user.email.split('@')[0];
+                currentUser = { email: data.user.email, nickname };
+                updateAuthUI();
+                closeAuthModal();
+                alert('登录成功！');
+            });
+            document.getElementById('switchToReg').addEventListener('click', () => showAuthModal('register'));
         } else {
             titleEl.innerText = '注册账号';
-            container.innerHTML = `<div class="form-group"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div><div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div><button class="auth-btn" id="submitRegBtn">注册</button><div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitRegBtn')?.addEventListener('click', () => { alert('演示模式，注册成功'); closeAuthModal(); });
-            document.getElementById('switchToLogin')?.addEventListener('click', () => showAuthModal('login'));
+            container.innerHTML = `
+                <div class="form-group"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div>
+                <div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div>
+                <div class="form-group"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div>
+                <button class="auth-btn" id="submitRegBtn">注册</button>
+                <div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div>
+                <div id="authError" class="error-msg"></div>
+            `;
+            document.getElementById('submitRegBtn').addEventListener('click', async () => {
+                const nickname = document.getElementById('regNickname').value.trim();
+                const email = document.getElementById('regEmail').value.trim();
+                const password = document.getElementById('regPassword').value.trim();
+                const errorDiv = document.getElementById('authError');
+                if (!nickname || !email || !password) {
+                    errorDiv.innerText = '请填写所有字段';
+                    return;
+                }
+                const { data, error } = await supabase.auth.signUp({ 
+                    email, 
+                    password,
+                    options: { data: { nickname } }
+                });
+                if (error) {
+                    errorDiv.innerText = error.message;
+                    return;
+                }
+                // 注册成功，自动登录（或提示验证邮箱）
+                if (data.user) {
+                    currentUser = { email, nickname };
+                    updateAuthUI();
+                    closeAuthModal();
+                    alert('注册成功！请检查邮箱确认账号（若需验证）。');
+                } else {
+                    errorDiv.innerText = '注册失败，请稍后再试';
+                }
+            });
+            document.getElementById('switchToLogin').addEventListener('click', () => showAuthModal('login'));
         }
         modal.classList.add('show');
+    }
+
+    // ==================== 用户状态持久化 ====================
+    async function loadUserFromSession() {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session) {
+            const nickname = session.user.user_metadata?.nickname || session.user.email.split('@')[0];
+            currentUser = { email: session.user.email, nickname };
+            updateAuthUI();
+        }
+    }
+
+    function updateAuthUI() {
+        const authArea = document.getElementById('authArea');
+        if(currentUser && currentUser.nickname) {
+            authArea.innerHTML = `<div><span>😀${currentUser.nickname}</span><button class="logout-btn" id="logoutBtn">退出</button></div>`;
+            document.getElementById('logoutBtn').addEventListener('click', async () => {
+                await supabase.auth.signOut();
+                currentUser = null;
+                updateAuthUI();
+            });
+        } else {
+            authArea.innerHTML = `<button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>`;
+            document.getElementById('openLoginModalBtn').addEventListener('click', () => showAuthModal('login'));
+        }
     }
 
     async function renderWishModal(page=1) {
@@ -1220,18 +1318,6 @@
         document.getElementById('modalTitle').innerHTML = '<span>⛲ 许愿池 · 留下你的愿望</span>';
         openResultModal();
         await renderWishModal(1);
-    }
-
-    function loadStoredUser() { currentUser = null; updateAuthUI(); }
-    function updateAuthUI() {
-        const authArea = document.getElementById('authArea');
-        if(currentUser && currentUser.nickname) {
-            authArea.innerHTML = `<div><span>😀${currentUser.nickname}</span><button class="logout-btn" id="logoutBtn">退出</button></div>`;
-            document.getElementById('logoutBtn')?.addEventListener('click', () => { currentUser=null; updateAuthUI(); });
-        } else {
-            authArea.innerHTML = `<button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>`;
-            document.getElementById('openLoginModalBtn')?.addEventListener('click', () => showAuthModal('login'));
-        }
     }
 
     async function openUpdateModal() {
@@ -1381,7 +1467,8 @@
         }
     }
 
-    loadStoredUser();
+    // 初始化
+    loadUserFromSession();   // 先加载会话
     bindEvents();
     loadGameData();
     initSlideshow();
