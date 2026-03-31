@@ -1414,8 +1414,9 @@
         }, 6000);
     }
 
-    // 多首背景音乐循环播放（顺序），增强错误处理
+    // 多首背景音乐循环播放（顺序），带健壮的错误跳过
     function initMusic() {
+        // 请根据您实际存放的音乐文件修改这里
         const musicList = [
             'music/1.mp3',
             'music/2.mp3',
@@ -1426,35 +1427,42 @@
         let currentIndex = 0;
         const audio = document.createElement('audio');
         audio.id = 'bgMusic';
-        audio.loop = false;
+        audio.loop = false;          // 手动控制下一首
         audio.preload = 'auto';
         audio.volume = 0.4;
         document.body.appendChild(audio);
 
+        // 尝试播放当前索引的音乐
         function playCurrent() {
             const src = musicList[currentIndex];
+            if (!src) {
+                console.warn('音乐列表为空，停止播放');
+                return;
+            }
             audio.src = src;
             audio.load();
-            audio.play().catch(e => {
-                console.error(`播放失败: ${src}`, e);
-                // 播放失败则尝试下一首
+            audio.play().catch(err => {
+                console.warn(`播放失败 (${src})，尝试下一首`, err);
+                // 播放失败则自动跳到下一首
                 currentIndex = (currentIndex + 1) % musicList.length;
-                setTimeout(playCurrent, 1000);
+                setTimeout(playCurrent, 500); // 延迟避免过快循环
             });
         }
 
+        // 监听播放结束，播下一首
         audio.addEventListener('ended', () => {
             currentIndex = (currentIndex + 1) % musicList.length;
             playCurrent();
         });
 
+        // 监听加载错误（如 404），自动跳过
         audio.addEventListener('error', (e) => {
-            console.error(`音频加载错误: ${audio.src}`, e);
-            // 错误时也跳到下一首
+            console.warn(`音频加载错误 (${audio.src})，跳过`, e);
             currentIndex = (currentIndex + 1) % musicList.length;
             playCurrent();
         });
 
+        // 首次播放需要用户交互
         let played = false;
         let loading = false;
         function startMusic() {
@@ -1480,7 +1488,7 @@
         document.addEventListener('click', startMusic);
         document.addEventListener('touchstart', startMusic);
     }
-
+    
     function bindEvents() {
         document.getElementById('searchBtn').addEventListener('click', handleSearch);
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
