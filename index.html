@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>游戏宝库</title>
+    <title>游戏宝库 - 清晰悬停版</title>
     <style>
-        /* ========== 全局样式 ========== */
+        /* ========== 全局防模糊优化 ========== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* 强制最高质量文字渲染 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
         }
         body {
@@ -20,7 +24,6 @@
             justify-content: center;
             padding: 1.5rem;
             -webkit-touch-callout: none;
-            -webkit-user-select: none;
             user-select: none;
             flex-direction: column;
             gap: 1rem;
@@ -51,7 +54,7 @@
         .bg-slideshow .slide.active {
             opacity: 1;
         }
-        /* 卡片容器：负责缩放和阴影，背景透明 */
+        /* 卡片容器：保留悬停放大效果，但优化缩放值 + 移除毛玻璃模糊 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -60,19 +63,19 @@
             border-radius: 2.5rem;
             padding: 2.2rem 2rem 1.8rem 2rem;
             box-shadow: 0 25px 40px -20px rgba(30, 60, 90, 0.3), 0 10px 20px -5px rgba(140, 200, 255, 0.2), inset 0 1px 3px #ffffffcc;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+            transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow 0.2s ease, border-color 0.2s ease;
             position: relative;
             z-index: 1;
             backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
+            /* 保留放大效果，但降低缩放幅度减少模糊 (1.01 → 1.005) */
+            transform: scale(1);
         }
         .query-card:hover {
-            transform: scale(1.01);
-            border-color: rgba(80, 160, 240, 0.6);
+            transform: scale(1.005);   /* 轻微放大，保留反馈但极大减少子像素模糊 */
+            border-color: rgba(80, 160, 240, 0.7);
             box-shadow: 0 30px 45px -15px #2b4f6e40, 0 0 0 2px rgba(100, 180, 255, 0.2);
-            will-change: transform;
         }
-        /* 毛玻璃背景层（绝对定位，随父级缩放） */
+        /* 毛玻璃背景层：移除 blur，改用高不透明度纯色背景（文字瞬间清晰） */
         .query-card::before {
             content: "";
             position: absolute;
@@ -80,15 +83,18 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(245, 250, 255, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(245, 250, 255, 0.92);  /* 提高不透明度，无需模糊 */
+            /* 关键：移除 backdrop-filter 模糊，彻底解决文字发虚 */
             border-radius: inherit;
             z-index: -1;
             pointer-events: none;
-            transition: inherit;
+            transition: background 0.2s;
         }
-        /* 内容层，确保文字在上面 */
+        /* 悬停时背景微调，增强反馈 */
+        .query-card:hover::before {
+            background: rgba(245, 250, 255, 0.96);
+        }
+        /* 内容层 */
         .query-card > * {
             position: relative;
             z-index: 1;
@@ -103,8 +109,7 @@
         }
         .game-house {
             font-size: 1.95rem;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-weight: 800;
             background: linear-gradient(130deg, #1f6d8f, #1b5b7a, #134b66);
             -webkit-background-clip: text;
             background-clip: text;
@@ -158,7 +163,7 @@
         }
         .game-input {
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             border: 2px solid #b3d6f0;
             border-radius: 60px;
             padding: 1.1rem 1.8rem;
@@ -168,14 +173,13 @@
             outline: none;
             transition: all 0.25s;
             box-shadow: inset 0 4px 8px rgba(0, 20, 40, 0.02), 0 2px 4px #c9e2ff;
-            font-weight: 400;
+            font-weight: 500;
         }
         .game-input::placeholder {
             color: #7096b5;
             font-size: 1.1rem;
-            font-weight: 300;
+            font-weight: 400;
             opacity: 0.8;
-            letter-spacing: 0.3px;
         }
         .game-input:focus {
             border-color: #3895d6;
@@ -191,8 +195,8 @@
             font-size: 1.3rem;
             color: #4797cf;
             opacity: 0.6;
-            text-shadow: 0 0 5px #a3d0ff;
         }
+        /* 查询按钮悬停位移保留，但降低幅度 */
         .query-btn {
             background: linear-gradient(115deg, #4797cf, #2d7eb3);
             border: none;
@@ -207,7 +211,7 @@
             text-transform: uppercase;
             cursor: pointer;
             box-shadow: 0 10px 20px -6px #236a99, 0 2px 4px #b1d6ff;
-            transition: 0.15s;
+            transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -218,12 +222,10 @@
         .query-btn:hover {
             background: linear-gradient(115deg, #57a8e0, #388ac7);
             box-shadow: 0 14px 25px -5px #1e6fa3, 0 3px 8px #9cc9ff;
-            transform: translateY(-3px);
-            color: #f0f9ff;
+            transform: translateY(-2px);  /* 降低位移量，减少动态模糊 */
         }
         .query-btn:active {
-            transform: translateY(2px);
-            box-shadow: 0 5px 12px -2px #16639b;
+            transform: translateY(1px);
         }
         .demo-hint {
             margin-top: 1rem;
@@ -238,20 +240,20 @@
         }
         .mock-link {
             color: #195477;
-            background: rgba(170, 215, 255, 0.45);
+            background: rgba(170, 215, 255, 0.6);
             padding: 0.25rem 0.9rem;
             border-radius: 30px;
             border: 1px solid rgba(70, 150, 230, 0.5);
             font-size: 0.8rem;
-            transition: 0.1s;
-            font-weight: 450;
-            backdrop-filter: blur(2px);
+            transition: all 0.1s;
+            font-weight: 500;
             cursor: pointer;
         }
         .mock-link:hover {
-            background: rgba(120, 190, 255, 0.5);
+            background: rgba(120, 190, 255, 0.7);
             border-color: #277bb5;
             color: #083952;
+            transform: translateY(-1px);  /* 保留轻微反馈 */
         }
         .tool-buttons {
             display: flex;
@@ -262,7 +264,7 @@
             width: 100%;
         }
         .tool-btn {
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.7);
             border: 1.5px solid #6ba6d9;
             border-radius: 40px;
             padding: 0.5rem 0.8rem;
@@ -271,7 +273,6 @@
             color: #134b66;
             cursor: pointer;
             transition: all 0.2s;
-            backdrop-filter: blur(4px);
             box-shadow: 0 2px 6px rgba(0, 30, 60, 0.1);
             display: flex;
             align-items: center;
@@ -282,31 +283,24 @@
             justify-content: center;
         }
         .tool-btn:hover {
-            background: rgba(100, 170, 240, 0.25);
+            background: rgba(100, 170, 240, 0.4);
             border-color: #4797cf;
             transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(30, 100, 160, 0.15);
+            box-shadow: 0 4px 8px rgba(30, 100, 160, 0.2);
         }
-        .tool-btn:active {
-            transform: translateY(0);
-        }
-        .tool-btn span {
-            font-size: 1rem;
-        }
-        /* 今日更新按钮特殊样式 */
+        /* 今日更新按钮保留脉冲动画，移除 scale 避免文字模糊，仅用 shadow 脉冲 */
         #todayUpdateBtn {
             background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
             border-color: #ff8c42;
-            box-shadow: 0 0 8px rgba(255, 100, 0, 0.6);
             animation: pulse 1.5s infinite;
             padding: 0.5rem 1rem;
             font-size: 0.9rem;
             white-space: nowrap;
         }
         @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
+            70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
         }
         .loading-spinner {
             display: inline-block;
@@ -331,7 +325,7 @@
             color: #6589a8;
             margin-top: -0.1rem;
         }
-        /* 模态框样式 */
+        /* 模态框样式（保持清晰） */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -353,8 +347,8 @@
             visibility: visible;
         }
         .modal-container {
-            background: rgba(245, 250, 255, 0.95);
-            backdrop-filter: blur(15px);
+            background: rgba(245, 250, 255, 0.98);
+            backdrop-filter: blur(8px);  /* 降低模糊 */
             width: 90%;
             max-width: 950px;
             max-height: 85vh;
@@ -379,8 +373,8 @@
             border-bottom: 2px solid rgba(70, 150, 230, 0.3);
         }
         .modal-title {
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 1.2rem;
+            font-weight: 700;
             color: #134b66;
             display: flex;
             align-items: center;
@@ -399,13 +393,13 @@
             background: rgba(200, 225, 255, 0.5);
             border: 1px solid #7bb0d9;
             color: #1f5f83;
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1rem;
+            font-size: 1.2rem;
             cursor: pointer;
             transition: 0.2s;
         }
@@ -419,18 +413,6 @@
             padding: 0.5rem 0.5rem 1.2rem 0.5rem;
             max-height: 55vh;
             scrollbar-width: thin;
-            scrollbar-color: #7bb0d9 #d9eaff;
-        }
-        .modal-body::-webkit-scrollbar {
-            width: 8px;
-        }
-        .modal-body::-webkit-scrollbar-track {
-            background: #d9eaff;
-            border-radius: 10px;
-        }
-        .modal-body::-webkit-scrollbar-thumb {
-            background: #7bb0d9;
-            border-radius: 10px;
         }
         .modal-game-card {
             background: white;
@@ -439,7 +421,7 @@
             margin-bottom: 1rem;
             border: 1px solid rgba(70, 150, 230, 0.3);
             box-shadow: 0 4px 12px rgba(0, 30, 50, 0.05);
-            transition: 0.1s;
+            transition: box-shadow 0.1s;
         }
         .modal-game-card:hover {
             border-color: #4797cf;
@@ -459,9 +441,8 @@
             gap: 0.5rem;
         }
         .update-date {
-            font-family: '宋体', SimSun;
-            color: #1e88e5;
             font-size: 0.8rem;
+            color: #1e88e5;
             background: rgba(30, 136, 229, 0.1);
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
@@ -472,7 +453,6 @@
             align-items: center;
             flex-wrap: nowrap;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
         }
         .modal-qr-item {
             display: flex;
@@ -480,14 +460,14 @@
             align-items: center;
             gap: 0.2rem;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.1s;
             background: rgba(245, 250, 255, 0.6);
             padding: 0.2rem 0.4rem;
             border-radius: 1rem;
             min-width: 55px;
         }
         .modal-qr-item:hover {
-            transform: scale(1.02);
+            transform: scale(1.02);  /* 保留放大，但轻微 */
             background: rgba(200, 225, 255, 0.8);
         }
         .qr-code-box {
@@ -542,6 +522,7 @@
             background: #4797cf;
             color: white;
             border-color: #2d7eb3;
+            transform: translateY(-1px);
         }
         .page-btn:disabled {
             opacity: 0.3;
@@ -571,7 +552,6 @@
             border-radius: 1.5rem;
             padding: 1.5rem;
             border: 1px solid rgba(70, 150, 230, 0.3);
-            box-shadow: 0 4px 12px rgba(0, 30, 50, 0.05);
         }
         .tool-content h3 {
             color: #134b66;
@@ -584,7 +564,6 @@
             color: #1f5f83;
             font-size: 1rem;
             line-height: 1.5;
-            margin-bottom: 0.8rem;
         }
         .donate-content {
             text-align: center;
@@ -603,6 +582,59 @@
             width: 120px;
             height: 120px;
             margin-bottom: 0.5rem;
+        }
+        /* 热门游戏推荐区域 - 保留悬停位移但降低幅度 + 图片清晰 */
+        .hot-section {
+            margin: 1rem 0 0.5rem;
+        }
+        .hot-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a5777;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .hot-title::before {
+            content: "🔥";
+            font-size: 1.2rem;
+        }
+        .hot-scroll {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+            scrollbar-width: thin;
+        }
+        .hot-item {
+            flex: 0 0 auto;
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s;
+        }
+        .hot-item:hover {
+            transform: translateY(-2px);  /* 降低位移，保留反馈但更清晰 */
+        }
+        .hot-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 16px;
+            background: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            image-rendering: auto;
+        }
+        .hot-item span {
+            display: block;
+            font-size: 0.75rem;
+            margin-top: 0.3rem;
+            color: #1a5777;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .Dict { display: none; }
         .pc { font-size: 0.7rem; color: #2b8dcc; margin-top: 0.2rem; }
@@ -631,8 +663,8 @@
             visibility: visible;
         }
         .zoom-modal-container {
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
             border-radius: 2rem;
             padding: 1.8rem 1.8rem 1.5rem 1.8rem;
             max-width: 400px;
@@ -642,6 +674,7 @@
             text-align: center;
             transform: scale(0.9);
             transition: transform 0.2s;
+            position: relative;
         }
         .zoom-modal-overlay.show .zoom-modal-container {
             transform: scale(1);
@@ -653,8 +686,8 @@
             font-size: 1rem;
             color: #2b5f88;
             cursor: pointer;
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -723,16 +756,15 @@
         }
         .wish-list { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1rem; }
         .wish-item { background: rgba(255,255,255,0.8); border-radius: 2rem; padding: 1rem 1.5rem; border: 1px solid #b3d6f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .wish-text { font-size: 1.1rem; color: #134b66; flex: 1; }
+        .wish-text { font-size: 1rem; color: #134b66; flex: 1; }
         .wish-time { font-size: 0.8rem; color: #6589a8; margin-left: 1rem; }
         .wish-reply { margin-top: 0.3rem; font-size: 0.85rem; color: #236a99; border-left: 3px solid #9ac9f0; padding-left: 0.8rem; }
         .wish-form { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.2rem; background: rgba(200,225,255,0.3); padding: 1.5rem; border-radius: 2rem; border: 1px dashed #6ba6d9; }
         .wish-input { flex: 3; min-width: 200px; background: white; border: 2px solid #b3d6f0; border-radius: 40px; padding: 0.8rem 1.5rem; font-size: 1rem; outline: none; }
         .wish-input:focus { border-color: #3895d6; box-shadow: 0 0 0 3px rgba(70,160,255,0.2); }
-        .wish-submit-btn { background: linear-gradient(115deg, #57a8e0, #388ac7); border: none; border-radius: 40px; padding: 0.8rem 2rem; font-weight: 600; color: white; cursor: pointer; font-size: 1rem; flex: 1; min-width: 100px; }
-        .wish-submit-btn:hover { transform: translateY(-2px); background: linear-gradient(115deg, #68b8f0, #4797cf); }
+        .wish-submit-btn { background: linear-gradient(115deg, #57a8e0, #388ac7); border: none; border-radius: 40px; padding: 0.8rem 2rem; font-weight: 600; color: white; cursor: pointer; font-size: 1rem; flex: 1; min-width: 100px; transition: transform 0.1s; }
+        .wish-submit-btn:hover { transform: translateY(-1px); background: linear-gradient(115deg, #68b8f0, #4797cf); }
         .wish-empty { text-align: center; padding: 2rem; color: #6589a8; background: #e6f0fa; border-radius: 2rem; }
-        .domain-tip-bar { display: none; }
         .login-btn-header {
             background: rgba(90,170,240,0.25);
             border: 1.5px solid #4797cf;
@@ -742,117 +774,39 @@
             font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
-            backdrop-filter: blur(4px);
             display: flex;
             align-items: center;
             gap: 0.4rem;
             white-space: nowrap;
+            transition: all 0.2s;
         }
         .login-btn-header:hover {
             background: rgba(70,150,230,0.4);
-            transform: translateY(-2px);
+            transform: translateY(-1px);
             border-color: #2d7eb3;
         }
         .form-group { margin-bottom: 1rem; }
         .form-group label { display: block; margin-bottom: 0.3rem; color: #1a5777; font-weight: 500; }
         .form-group input { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; }
-        .auth-btn { background: #4797cf; border: none; border-radius: 40px; padding: 0.7rem; width: 100%; color: white; font-weight: bold; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; }
+        .auth-btn { background: #4797cf; border: none; border-radius: 40px; padding: 0.7rem; width: 100%; color: white; font-weight: bold; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; transition: transform 0.1s; }
+        .auth-btn:hover { transform: translateY(-1px); background: #57a8e0; }
         .switch-auth { text-align: center; margin-top: 1rem; color: #2b5f88; cursor: pointer; font-size: 0.9rem; }
         .error-msg { color: #c7362b; font-size: 0.8rem; margin-top: 0.5rem; text-align: center; }
-        .logout-btn { background: #c0ddf5; border: none; padding: 0.2rem 0.8rem; border-radius: 30px; font-size: 0.75rem; cursor: pointer; color: #1a5777; }
-        .toast-message { position: fixed; bottom: 30px; right: 30px; background: #1e3a5f; color: white; padding: 12px 24px; border-radius: 50px; box-shadow: 0 10px 25px rgba(0,30,60,0.5); font-weight: 500; z-index: 1100; display: flex; align-items: center; gap: 10px; transform: translateY(100px); opacity: 0; transition: 0.3s; }
-        .toast-message.show { transform: translateY(0); opacity: 1; }
-        .toast-message.success { background: #1e6f3c; }
-        .toast-message.error { background: #a13d3d; }
+        .logout-btn { background: #c0ddf5; border: none; padding: 0.2rem 0.8rem; border-radius: 30px; font-size: 0.75rem; cursor: pointer; color: #1a5777; transition: 0.1s; }
+        .logout-btn:hover { transform: translateY(-1px); background: #b0cbe5; }
         .simple-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center; }
         .simple-modal.show { display: flex; }
-        .simple-modal-content { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15); animation: modalFadeIn 0.3s ease; }
-        @keyframes modalFadeIn {
-            from { opacity: 0; transform: scale(0.9); }
-            to { opacity: 1; transform: scale(1); }
-        }
+        .simple-modal-content { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; }
         .simple-modal-message { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
-        .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; transition: background 0.3s; }
-        .simple-modal-btn:hover { background: #45a049; }
-
-        /* ========== 热门游戏推荐样式 ========== */
-        .hot-section {
-            margin: 1rem 0 0.5rem;
-        }
-        .hot-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #1a5777;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .hot-title::before {
-            content: "🔥";
-            font-size: 1.2rem;
-        }
-        .hot-scroll {
-            display: flex;
-            gap: 1rem;
-            overflow-x: auto;
-            padding-bottom: 0.5rem;
-            scrollbar-width: thin;
-            -webkit-overflow-scrolling: touch;
-        }
-        .hot-item {
-            flex: 0 0 auto;
-            width: 80px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .hot-item:hover {
-            transform: translateY(-3px);
-        }
-        .hot-item img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 16px;
-            background: #f0f0f0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .hot-item span {
-            display: block;
-            font-size: 0.7rem;
-            margin-top: 0.3rem;
-            color: #1a5777;
-            font-weight: 500;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
+        .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; }
         @media (max-width: 640px) {
-            .hot-item {
-                width: 70px;
-            }
-            .hot-item img {
-                width: 70px;
-                height: 70px;
-            }
-            .game-input {
-                padding-right: 2.8rem;
-            }
-            .game-input::placeholder {
-                font-size: 0.9rem;
-            }
-            #todayUpdateBtn {
-                padding: 0.3rem 0.6rem;
-                font-size: 0.75rem;
-            }
-            .login-btn-header {
-                padding: 0.3rem 0.8rem;
-                font-size: 0.75rem;
-            }
-            .header-right {
-                gap: 0.4rem;
-            }
+            .hot-item { width: 70px; }
+            .hot-item img { width: 70px; height: 70px; }
+            .game-input { padding-right: 2.8rem; }
+            .game-input::placeholder { font-size: 0.9rem; }
+            #todayUpdateBtn { padding: 0.3rem 0.6rem; font-size: 0.75rem; }
+            .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
+            .header-right { gap: 0.4rem; }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
@@ -891,7 +845,6 @@
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
 
-    <!-- 试试查询区域 -->
     <div class="demo-hint">
         <span style="opacity:0.9;">⚡试试查询：</span>
         <span class="mock-link" data-demo="塞尔达">塞尔达</span>
@@ -901,13 +854,11 @@
         <span class="mock-link" data-demo="战神">战神</span>
     </div>
 
-    <!-- 热门游戏推荐区域 -->
     <div class="hot-section" id="hotSection" style="display: none;">
         <div class="hot-title">当前热门游戏推荐</div>
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
 
-    <!-- 功能按钮 -->
     <div class="tool-buttons">
         <button class="tool-btn" id="nsPcEmulatorBtn"><span>🖥️</span> PC游戏合集</button>
         <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
@@ -921,7 +872,7 @@
     <div class="footer-note"><span>资源分享站</span></div>
 </div>
 
-<!-- 结果模态框、登录模态框等 -->
+<!-- 模态框结构（完全保留原功能） -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -973,7 +924,7 @@
 </div>
 
 <script>
-    // ==================== 游戏数据加载 ====================
+    // ==================== 游戏数据加载（与原代码完全相同） ====================
     let gameDB = [];
     let dataLoaded = false;
 
@@ -993,7 +944,6 @@
         }
     }
 
-    // 渲染热门游戏（取前10个，支持 shortName 和 cover）
     function renderHotGames() {
         const hotSection = document.getElementById('hotSection');
         const hotScroll = document.getElementById('hotScroll');
@@ -1045,7 +995,6 @@
         });
     }
 
-    // 工具按钮内容
     const toolButtons = {
         nsPcEmulatorBtn: { title: '🖥️ PC游戏合集', content: '<div class="tool-content"><h3>PC游戏资源</h3><p>这里可以放你的百度网盘链接或说明。</p><p>链接: https://pan.baidu.com/s/xxxx 提取码: 1234</p></div>' },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: '<div class="tool-content"><h3>手机游戏推荐</h3><p>安卓/iOS 游戏资源包。</p><p>下载链接: https://pan.quark.cn/s/xxxx</p></div>' },
@@ -1054,7 +1003,6 @@
         donateBtn: { title: '❤️ 支持我们', content: '<div class="donate-content"><h3>感谢支持</h3><p>您的支持是我们更新的动力！</p><div class="donate-qr"><div class="donate-item"><div class="qr-code-box" id="donateQr"></div><span>微信赞赏码</span></div></div></div>' }
     };
 
-    // ==================== 核心功能变量 ====================
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
@@ -1269,7 +1217,6 @@
         }
     }
 
-    // ==================== 今日更新功能 ====================
     async function openUpdateModal() {
         if (!dataLoaded) {
             alert('游戏数据还在加载中，请稍后再试');
@@ -1319,7 +1266,6 @@
         return html;
     }
 
-    // ==================== 背景幻灯片 ====================
     function initSlideshow() {
         const bgImages = [
             'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',
@@ -1352,7 +1298,6 @@
         }, 6000);
     }
 
-    // ==================== 背景音乐（提前加载，首次点击播放，优化手机端卡顿） ====================
     function initMusic() {
         const audio = document.createElement('audio');
         audio.id = 'bgMusic';
@@ -1419,7 +1364,6 @@
         }
     }
 
-    // 初始化
     loadStoredUser();
     bindEvents();
     loadGameData();
