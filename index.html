@@ -1050,18 +1050,25 @@
         }
         return true;
     }
-    // 排序函数：根据第一个匹配字符的位置打分（位置越靠前分数越高）
+
+    // 排序函数：连续匹配优先，其次按第一个字符位置
     function calculateScore(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
-        // 找到第一个字符的位置
+        // 1. 连续匹配（完整子串）
+        const contIdx = nameLower.indexOf(queryLower);
+        if (contIdx !== -1) {
+            // 连续匹配分数极高，起始位置越靠前越高
+            return 100000 - contIdx * 10;
+        }
+        // 2. 不连续但顺序匹配：按第一个字符位置
         const firstIdx = nameLower.indexOf(queryLower[0]);
         if (firstIdx !== -1) {
-            // 位置越靠前，分数越高，最高10000，每靠后一个字符减10分
             return 10000 - firstIdx * 10;
         }
         return 0;
     }
+
     async function mockBackendAPI(query, page) {
         if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
         let filtered = gameDB.filter(g => matchesQuery(g.name, query));
@@ -1407,10 +1414,10 @@
         }, 6000);
     }
 
-    // 多首背景音乐循环播放（顺序）
+    // 多首背景音乐循环播放（顺序），增强错误处理
     function initMusic() {
         const musicList = [
-            'music/luffy.mp3',
+            'music/1.mp3',
             'music/2.mp3',
             'music/3.mp3',
             'music/4.mp3',
@@ -1425,12 +1432,25 @@
         document.body.appendChild(audio);
 
         function playCurrent() {
-            audio.src = musicList[currentIndex];
+            const src = musicList[currentIndex];
+            audio.src = src;
             audio.load();
-            audio.play().catch(e => console.log('音乐播放失败', e));
+            audio.play().catch(e => {
+                console.error(`播放失败: ${src}`, e);
+                // 播放失败则尝试下一首
+                currentIndex = (currentIndex + 1) % musicList.length;
+                setTimeout(playCurrent, 1000);
+            });
         }
 
         audio.addEventListener('ended', () => {
+            currentIndex = (currentIndex + 1) % musicList.length;
+            playCurrent();
+        });
+
+        audio.addEventListener('error', (e) => {
+            console.error(`音频加载错误: ${audio.src}`, e);
+            // 错误时也跳到下一首
             currentIndex = (currentIndex + 1) % musicList.length;
             playCurrent();
         });
