@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>游戏宝库 - 清晰悬停版</title>
     <style>
-        /* ========== 全局防模糊优化 ========== */
+        /* ========== 全局防模糊优化（与原文件完全相同） ========== */
         * {
             margin: 0;
             padding: 0;
@@ -310,7 +310,7 @@
             margin: 0.6rem 0;
         }
         .footer-note {
-            text-align: center;          /* 改为居中 */
+            text-align: center;
             font-size: 0.7rem;
             color: #6589a8;
             margin-top: 0.2rem;
@@ -916,8 +916,8 @@
 
 <script>
     // ==================== Supabase 配置（请替换为您自己的值） ====================
-    const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';  // 替换为您的 Project URL
-    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP'; // 替换为您的 anon key
+    const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';   // 您提供的正确 URL
+    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP'; // 您的 anon key
     const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     // ==================== 游戏数据加载 ====================
@@ -1191,27 +1191,13 @@
                 <div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div>
                 <div id="authError" class="error-msg"></div>
             `;
-            document.getElementById('submitLoginBtn').addEventListener('click', async () => {
-                const email = document.getElementById('loginEmail').value.trim();
-                const password = document.getElementById('loginPassword').value.trim();
-                const errorDiv = document.getElementById('authError');
-                if (!email || !password) {
-                    errorDiv.innerText = '请填写邮箱和密码';
-                    return;
-                }
-                const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-                if (error) {
-                    errorDiv.innerText = error.message;
-                    return;
-                }
-                // 登录成功
-                const nickname = data.user.user_metadata?.nickname || data.user.email.split('@')[0];
-                currentUser = { email: data.user.email, nickname };
-                updateAuthUI();
-                closeAuthModal();
-                alert('登录成功！');
-            });
-            document.getElementById('switchToReg').addEventListener('click', () => showAuthModal('register'));
+            // 注意：事件绑定需要等待元素插入后再绑定
+            setTimeout(() => {
+                const loginBtn = document.getElementById('submitLoginBtn');
+                const switchReg = document.getElementById('switchToReg');
+                if (loginBtn) loginBtn.addEventListener('click', handleLogin);
+                if (switchReg) switchReg.addEventListener('click', () => showAuthModal('register'));
+            }, 0);
         } else {
             titleEl.innerText = '注册账号';
             container.innerHTML = `
@@ -1222,37 +1208,63 @@
                 <div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div>
                 <div id="authError" class="error-msg"></div>
             `;
-            document.getElementById('submitRegBtn').addEventListener('click', async () => {
-                const nickname = document.getElementById('regNickname').value.trim();
-                const email = document.getElementById('regEmail').value.trim();
-                const password = document.getElementById('regPassword').value.trim();
-                const errorDiv = document.getElementById('authError');
-                if (!nickname || !email || !password) {
-                    errorDiv.innerText = '请填写所有字段';
-                    return;
-                }
-                const { data, error } = await supabase.auth.signUp({ 
-                    email, 
-                    password,
-                    options: { data: { nickname } }
-                });
-                if (error) {
-                    errorDiv.innerText = error.message;
-                    return;
-                }
-                // 注册成功，自动登录（或提示验证邮箱）
-                if (data.user) {
-                    currentUser = { email, nickname };
-                    updateAuthUI();
-                    closeAuthModal();
-                    alert('注册成功！请检查邮箱确认账号（若需验证）。');
-                } else {
-                    errorDiv.innerText = '注册失败，请稍后再试';
-                }
-            });
-            document.getElementById('switchToLogin').addEventListener('click', () => showAuthModal('login'));
+            setTimeout(() => {
+                const regBtn = document.getElementById('submitRegBtn');
+                const switchLogin = document.getElementById('switchToLogin');
+                if (regBtn) regBtn.addEventListener('click', handleRegister);
+                if (switchLogin) switchLogin.addEventListener('click', () => showAuthModal('login'));
+            }, 0);
         }
         modal.classList.add('show');
+    }
+
+    async function handleLogin() {
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value.trim();
+        const errorDiv = document.getElementById('authError');
+        if (!email || !password) {
+            errorDiv.innerText = '请填写邮箱和密码';
+            return;
+        }
+        const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) {
+            errorDiv.innerText = error.message;
+            return;
+        }
+        // 登录成功
+        const nickname = data.user.user_metadata?.nickname || data.user.email.split('@')[0];
+        currentUser = { email: data.user.email, nickname };
+        updateAuthUI();
+        closeAuthModal();
+        alert('登录成功！');
+    }
+
+    async function handleRegister() {
+        const nickname = document.getElementById('regNickname').value.trim();
+        const email = document.getElementById('regEmail').value.trim();
+        const password = document.getElementById('regPassword').value.trim();
+        const errorDiv = document.getElementById('authError');
+        if (!nickname || !email || !password) {
+            errorDiv.innerText = '请填写所有字段';
+            return;
+        }
+        const { data, error } = await supabase.auth.signUp({ 
+            email, 
+            password,
+            options: { data: { nickname } }
+        });
+        if (error) {
+            errorDiv.innerText = error.message;
+            return;
+        }
+        if (data.user) {
+            currentUser = { email, nickname };
+            updateAuthUI();
+            closeAuthModal();
+            alert('注册成功！请检查邮箱确认账号（若需验证）。');
+        } else {
+            errorDiv.innerText = '注册失败，请稍后再试';
+        }
     }
 
     // ==================== 用户状态持久化 ====================
@@ -1269,14 +1281,20 @@
         const authArea = document.getElementById('authArea');
         if(currentUser && currentUser.nickname) {
             authArea.innerHTML = `<div><span>😀${currentUser.nickname}</span><button class="logout-btn" id="logoutBtn">退出</button></div>`;
-            document.getElementById('logoutBtn').addEventListener('click', async () => {
-                await supabase.auth.signOut();
-                currentUser = null;
-                updateAuthUI();
-            });
+            const logoutBtn = document.getElementById('logoutBtn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', async () => {
+                    await supabase.auth.signOut();
+                    currentUser = null;
+                    updateAuthUI();
+                });
+            }
         } else {
             authArea.innerHTML = `<button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>`;
-            document.getElementById('openLoginModalBtn').addEventListener('click', () => showAuthModal('login'));
+            const loginBtn = document.getElementById('openLoginModalBtn');
+            if (loginBtn) {
+                loginBtn.addEventListener('click', () => showAuthModal('login'));
+            }
         }
     }
 
@@ -1447,7 +1465,8 @@
         document.getElementById('copyDirectBtn')?.addEventListener('click', () => copyLinkToClipboard(window.currentZoomLink));
         document.getElementById('wishingWellBtn').addEventListener('click', handleWishClickWithAuth);
         for (const [btnId, config] of Object.entries(toolButtons)) {
-            document.getElementById(btnId).onclick = () => openToolModal(config.title, config.content);
+            const btn = document.getElementById(btnId);
+            if (btn) btn.onclick = () => openToolModal(config.title, config.content);
         }
         document.querySelectorAll('.mock-link').forEach(el => {
             el.addEventListener('click', () => {
@@ -1467,12 +1486,14 @@
         }
     }
 
-    // 初始化
-    loadUserFromSession();   // 先加载会话
-    bindEvents();
-    loadGameData();
-    initSlideshow();
-    initMusic();
+    // 确保 DOM 加载完成后执行初始化
+    document.addEventListener('DOMContentLoaded', () => {
+        loadUserFromSession();
+        bindEvents();
+        loadGameData();
+        initSlideshow();
+        initMusic();
+    });
 </script>
 </body>
 </html>
