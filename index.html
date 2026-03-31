@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
     <style>
-        /* ========== 全局防模糊优化（与原文件完全相同） ========== */
+        /* ========== 全局防模糊优化 ========== */
         * {
             margin: 0;
             padding: 0;
@@ -555,24 +555,6 @@
             font-size: 1rem;
             line-height: 1.5;
         }
-        .donate-content {
-            text-align: center;
-        }
-        .donate-qr {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin: 1.5rem 0;
-            flex-wrap: wrap;
-        }
-        .donate-item {
-            text-align: center;
-        }
-        .donate-item .qr-code-box {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 0.5rem;
-        }
         .hot-section {
             margin: 1rem 0 0.5rem;
         }
@@ -799,7 +781,6 @@
             .header-right { gap: 0.4rem; }
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
@@ -915,21 +896,6 @@
 </div>
 
 <script>
-    // ==================== Supabase 配置（带错误隔离） ====================
-    let supabaseEnabled = false;
-    let supabase = null;
-    try {
-        // 请替换为您的实际值
-        const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
-        const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
-        supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        supabaseEnabled = true;
-        console.log('✅ Supabase 初始化成功');
-    } catch (err) {
-        console.warn('⚠️ Supabase 初始化失败，反馈功能将不可用', err);
-        supabaseEnabled = false;
-    }
-
     // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -1073,7 +1039,6 @@
 
     // 严格连续匹配（过滤）
     function matchesQuery(gameName, query) {
-        // 只要游戏名中包含连续完整的查询词（不区分大小写）
         return gameName.toLowerCase().includes(query.toLowerCase());
     }
 
@@ -1085,7 +1050,6 @@
         if (idx !== -1) {
             return 10000 - idx * 10;
         }
-        // 理论上经过过滤后这里不会执行到，但保留安全
         return 0;
     }
 
@@ -1251,43 +1215,29 @@
             }
         }
 
-        // 如果是反馈问题，绑定提交按钮
+        // 如果是反馈问题，绑定提交按钮（演示模式）
         if (title === '💬 反馈问题') {
             const submitBtn = document.getElementById('submitFeedbackBtn');
             if (submitBtn) {
-                submitBtn.onclick = submitFeedback;
+                submitBtn.onclick = () => {
+                    const game = document.getElementById('feedbackGame').value.trim();
+                    const desc = document.getElementById('feedbackDesc').value.trim();
+                    const email = document.getElementById('feedbackEmail').value.trim();
+                    const resultDiv = document.getElementById('feedbackResult');
+                    if (!desc) {
+                        resultDiv.innerText = '请填写问题描述';
+                        return;
+                    }
+                    // 演示模式，仅弹窗提示
+                    resultDiv.innerText = '✅ 反馈已收到，感谢您的支持！（演示模式）';
+                    resultDiv.style.color = 'green';
+                    document.getElementById('feedbackGame').value = '';
+                    document.getElementById('feedbackDesc').value = '';
+                    document.getElementById('feedbackEmail').value = '';
+                    // 可改为真实提交，见下方注释
+                    // 如需真实保存到 Supabase，请替换为真实 API 调用
+                };
             }
-        }
-    }
-
-    // 反馈提交函数
-    async function submitFeedback() {
-        const game = document.getElementById('feedbackGame').value.trim();
-        const desc = document.getElementById('feedbackDesc').value.trim();
-        const email = document.getElementById('feedbackEmail').value.trim();
-        const resultDiv = document.getElementById('feedbackResult');
-        if (!desc) {
-            resultDiv.innerText = '请填写问题描述';
-            return;
-        }
-        if (!supabaseEnabled) {
-            resultDiv.innerText = '当前为演示模式，反馈未保存。请稍后再试。';
-            return;
-        }
-        const content = `游戏：${game || '未填写'} | 问题：${desc}`;
-        try {
-            const { error } = await supabase
-                .from('feedbacks')
-                .insert([{ content, user_email: email || null }]);
-            if (error) throw error;
-            resultDiv.innerText = '✅ 反馈已提交，感谢您的支持！';
-            resultDiv.style.color = 'green';
-            document.getElementById('feedbackGame').value = '';
-            document.getElementById('feedbackDesc').value = '';
-            document.getElementById('feedbackEmail').value = '';
-        } catch (err) {
-            resultDiv.innerText = '提交失败：' + err.message;
-            resultDiv.style.color = 'red';
         }
     }
 
@@ -1452,15 +1402,15 @@
     function initMusic() {
         const musicList = [
             'music/luffy.mp3',
-            'music/music2.mp3',
-            'music/music3.mp3',
-            'music/music4.mp3',
-            'music/music5.mp3'
+            'music/宮崎誠-Theme of ONE PUNCH MAN ～正義執行～.mp3',
+            'music/井上ジョー-CLOSER.mp3',
+            'music/菅野祐悟-高潔なる教皇1.mp3',
+            'music/WANDS-世界が終るまでは….mp3'
         ];
         let currentIndex = 0;
         const audio = document.createElement('audio');
         audio.id = 'bgMusic';
-        audio.loop = false;   // 手动控制下一首
+        audio.loop = false;
         audio.preload = 'auto';
         audio.volume = 0.4;
         document.body.appendChild(audio);
