@@ -283,9 +283,12 @@
             background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
             border-color: #ff8c42;
             animation: pulse 1.5s infinite;
-            padding: 0.5rem 1rem;
-            font-size: 0.9rem;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            min-width: 130px;
             white-space: nowrap;
+            box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
         }
         @keyframes pulse {
             0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
@@ -418,15 +421,9 @@
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
         .game-title-row {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #134b66;
-            margin-bottom: 0.8rem;
-            border-left: 4px solid #4797cf;
-            padding-left: 0.8rem;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
@@ -436,6 +433,8 @@
             background: rgba(30, 136, 229, 0.1);
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
+            white-space: nowrap;
+            margin-left: auto;
         }
         .modal-qr-group {
             display: flex;
@@ -612,6 +611,17 @@
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; }
             .pc { display: none; }
+            /* Switch专区手机端一行显示三个图标 */
+            .switch-area-icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            .switch-area-icons > div {
+                flex: 1 1 30%;
+                min-width: 100px;
+            }
         }
         .zoom-modal-overlay {
             position: fixed;
@@ -776,7 +786,7 @@
             .hot-item img { width: 70px; height: 70px; }
             .game-input { padding-right: 2.8rem; }
             .game-input::placeholder { font-size: 0.9rem; }
-            #todayUpdateBtn { padding: 0.3rem 0.6rem; font-size: 0.75rem; }
+            #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
         }
@@ -801,7 +811,7 @@
     <input type="hidden" id="loginToken" name="loginToken" />
     <div class="publisher-line">
         <span class="publisher-icon">🎮</span>
-        <span class="publisher-name">发布人：辰辰乐游</span>
+        <span class="publisher-name">发布人：我不是game神</span>
     </div>
 
     <div class="search-hint">
@@ -944,10 +954,12 @@
             updateRecords.unshift(...newRecords);
             localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
 
-            newUpdateCount = newRecords.length;
+            // 计算今日更新数量（基于日期为今天的记录）
+            const today = new Date().toISOString().slice(0, 10);
+            const todayCount = updateRecords.filter(record => record.date === today).length;
             const updateBtn = document.getElementById('todayUpdateBtn');
             if (updateBtn) {
-                updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${newUpdateCount})</span>`;
+                updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayCount})</span>`;
             }
 
             localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
@@ -1022,7 +1034,7 @@
             content: `
                 <div class="tool-content" style="text-align: center;">
                     <h3>🎮 Switch 资源专区</h3>
-                    <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;">
+                    <div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;">
                         <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn">
                             <div style="font-size: 2.5rem;">🕹️</div>
                             <div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div>
@@ -1049,7 +1061,20 @@
                 <div class="tool-content" style="text-align: center;">
                     <h3>📱 手机游戏资源包</h3>
                     <p>扫描下方二维码下载（安卓/iOS）</p>
-                    <div id="mobileQrCode" style="display: flex; justify-content: center; margin: 1rem 0;"></div>
+                    <div class="modal-qr-group" style="justify-content: center;">
+                        <div class="modal-qr-item" id="quarkQr">
+                            <div class="qr-code-box" id="quarkQrCode"></div>
+                            <span class="qr-label">夸克网盘</span>
+                        </div>
+                        <div class="modal-qr-item" id="xunleiQr">
+                            <div class="qr-code-box" id="xunleiQrCode"></div>
+                            <span class="qr-label">迅雷网盘</span>
+                        </div>
+                        <div class="modal-qr-item" id="baiduQr">
+                            <div class="qr-code-box" id="baiduQrCode"></div>
+                            <span class="qr-label">百度网盘</span>
+                        </div>
+                    </div>
                     <p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p>
                 </div>
             `
@@ -1061,17 +1086,11 @@
                 <div class="tool-content" style="text-align: center;">
                     <h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3>
                     <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 160px;">
+                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox">
                             <div style="font-size: 2rem;">🐧</div>
                             <div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div>
-                            <div style="color: #2b5f88; cursor: pointer;" id="qqNum">123456789</div>
+                            <div style="color: #2b5f88;" id="qqNum">1064508042</div>
                             <div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div>
-                        </div>
-                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 160px;">
-                            <div style="font-size: 2rem;">💬</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">微信群</div>
-                            <div style="color: #2b5f88;">请加好友拉群</div>
-                            <div style="font-size: 0.7rem; margin-top: 0.3rem;">扫码联系</div>
                         </div>
                     </div>
                     <p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p>
@@ -1275,38 +1294,55 @@
         document.getElementById('modalBody').innerHTML = content;
         openResultModal();
 
-        // 如果是手机游戏，生成二维码
+        // 如果是手机游戏，生成三个二维码
         if (title === '📱 手机游戏') {
-            const qrContainer = document.getElementById('mobileQrCode');
-            if (qrContainer) {
-                const downloadUrl = 'https://pan.quark.cn/s/xxxx'; // 请替换为真实下载链接
-                qrContainer.innerHTML = '';
-                const canvas = document.createElement('canvas');
-                QRCode.toCanvas(canvas, downloadUrl, { width: 200 }, (err) => {
-                    if (err) {
-                        qrContainer.innerHTML = '<span style="color:red;">二维码生成失败</span>';
-                    } else {
-                        canvas.style.width = '200px';
-                        canvas.style.height = '200px';
-                        qrContainer.appendChild(canvas);
-                    }
-                });
-            }
+            const quarkUrl = 'https://pan.quark.cn/s/xxxx';    // 替换为真实夸克链接
+            const xunleiUrl = 'https://pan.xunlei.com/s/xxxx'; // 替换为真实迅雷链接
+            const baiduUrl = 'https://pan.baidu.com/s/xxxx';   // 替换为真实百度链接
+            const quarkContainer = document.getElementById('quarkQrCode');
+            const xunleiContainer = document.getElementById('xunleiQrCode');
+            const baiduContainer = document.getElementById('baiduQrCode');
+            if (quarkContainer) generateQRCode(quarkContainer, quarkUrl);
+            if (xunleiContainer) generateQRCode(xunleiContainer, xunleiUrl);
+            if (baiduContainer) generateQRCode(baiduContainer, baiduUrl);
+            // 为每个二维码容器添加点击放大功能
+            document.getElementById('quarkQr')?.addEventListener('click', () => showZoom('夸克网盘', quarkUrl));
+            document.getElementById('xunleiQr')?.addEventListener('click', () => showZoom('迅雷网盘', xunleiUrl));
+            document.getElementById('baiduQr')?.addEventListener('click', () => showZoom('百度网盘', baiduUrl));
         }
 
-        // 如果是交流群，绑定QQ号复制功能
+        // 如果是交流群，绑定QQ号复制功能（兼容手机）
         if (title === '🐧 交流群') {
-            const qqNum = document.getElementById('qqNum');
-            if (qqNum) {
-                qqNum.addEventListener('click', () => {
-                    const text = qqNum.innerText;
-                    navigator.clipboard.writeText(text).then(() => {
-                        alert('QQ群号已复制: ' + text);
+            const qqBox = document.getElementById('qqGroupBox');
+            const qqNumSpan = document.getElementById('qqNum');
+            const qqNum = qqNumSpan ? qqNumSpan.innerText : '1064508042';
+            const copyHandler = () => {
+                // 尝试现代复制方法
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(qqNum).then(() => {
+                        alert('QQ群号已复制: ' + qqNum);
                     }).catch(() => {
-                        alert('复制失败，请手动复制');
+                        fallbackCopy();
                     });
-                });
-            }
+                } else {
+                    fallbackCopy();
+                }
+                function fallbackCopy() {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = qqNum;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    const success = document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    if (success) {
+                        alert('QQ群号已复制: ' + qqNum);
+                    } else {
+                        alert('复制失败，请手动复制: ' + qqNum);
+                    }
+                }
+            };
+            if (qqBox) qqBox.addEventListener('click', copyHandler);
+            if (qqNumSpan) qqNumSpan.addEventListener('click', copyHandler);
         }
 
         // 如果是 Switch 专区，绑定三个子按钮的事件（搜索）
@@ -1441,7 +1477,7 @@
         }
         currentMode = 'update';
         totalUpdateCount = updateRecords.length;
-        totalUpdatePages = Math.ceil(totalUpdateCount / 10);
+        totalUpdatePages = Math.ceil(totalUpdateCount / 4);
         currentUpdatePage = 1;
         const modalTitle = document.getElementById('modalTitle');
         modalTitle.innerHTML = `📅 更新历史 <span class="result-count">${totalUpdateCount}</span>`;
@@ -1453,8 +1489,8 @@
     }
 
     async function renderUpdatePage(page) {
-        const start = (page - 1) * 10;
-        const end = start + 10;
+        const start = (page - 1) * 4;
+        const end = start + 4;
         const pageRecords = updateRecords.slice(start, end);
         const modalBody = document.getElementById('modalBody');
         modalBody.innerHTML = generateUpdateCards(pageRecords);
@@ -1481,7 +1517,7 @@
             const updateDate = record.date;
             html += `<div class="modal-game-card">
                         <div class="game-title-row">
-                            🎮 ${game.name} (${game.platform})
+                            <span>🎮 ${game.name} (${game.platform})</span>
                             <span class="update-date">${updateDate}更新</span>
                         </div>
                         <div class="modal-qr-group">`;
