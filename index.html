@@ -1414,73 +1414,49 @@
         }, 6000);
     }
 
-    // 多首背景音乐循环播放（顺序），带健壮的错误跳过
+    // 五首背景音乐循环播放（用户交互后开始）
     function initMusic() {
-        // 请根据您实际存放的音乐文件修改这里
         const musicList = [
-            'music/1.mp3'
+            'music/1.mp3',
+            'music/2.mp3',
+            'music/3.mp3',
+            'music/4.mp3',
+            'music/5.mp3'
         ];
         let currentIndex = 0;
-        const audio = document.createElement('audio');
+        const audio = new Audio();
         audio.id = 'bgMusic';
-        audio.loop = false;          // 手动控制下一首
-        audio.preload = 'auto';
         audio.volume = 0.4;
-        document.body.appendChild(audio);
+        audio.preload = 'auto';
 
-        // 尝试播放当前索引的音乐
-        function playCurrent() {
+        function playNext() {
             const src = musicList[currentIndex];
-            if (!src) {
-                console.warn('音乐列表为空，停止播放');
-                return;
-            }
             audio.src = src;
             audio.load();
-            audio.play().catch(err => {
-                console.warn(`播放失败 (${src})，尝试下一首`, err);
-                // 播放失败则自动跳到下一首
+            audio.play().catch(e => {
+                console.warn(`播放失败 (${src})，尝试下一首`, e);
                 currentIndex = (currentIndex + 1) % musicList.length;
-                setTimeout(playCurrent, 500); // 延迟避免过快循环
+                setTimeout(playNext, 500);
             });
         }
 
-        // 监听播放结束，播下一首
         audio.addEventListener('ended', () => {
             currentIndex = (currentIndex + 1) % musicList.length;
-            playCurrent();
+            playNext();
         });
 
-        // 监听加载错误（如 404），自动跳过
-        audio.addEventListener('error', (e) => {
-            console.warn(`音频加载错误 (${audio.src})，跳过`, e);
+        audio.addEventListener('error', () => {
+            console.warn(`加载错误: ${audio.src}，跳过`);
             currentIndex = (currentIndex + 1) % musicList.length;
-            playCurrent();
+            playNext();
         });
 
-        // 首次播放需要用户交互
-        let played = false;
-        let loading = false;
-        function startMusic() {
-            if (played) return;
-            if (!loading) {
-                loading = true;
-                if (audio.readyState >= 2) {
-                    playCurrent();
-                    played = true;
-                    document.removeEventListener('click', startMusic);
-                    document.removeEventListener('touchstart', startMusic);
-                } else {
-                    audio.addEventListener('canplay', function onCanPlay() {
-                        playCurrent();
-                        played = true;
-                        audio.removeEventListener('canplay', onCanPlay);
-                        document.removeEventListener('click', startMusic);
-                        document.removeEventListener('touchstart', startMusic);
-                    });
-                }
-            }
-        }
+        // 用户首次点击/触摸时开始播放
+        const startMusic = () => {
+            playNext();
+            document.removeEventListener('click', startMusic);
+            document.removeEventListener('touchstart', startMusic);
+        };
         document.addEventListener('click', startMusic);
         document.addEventListener('touchstart', startMusic);
     }
