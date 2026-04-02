@@ -29,28 +29,16 @@
             position: relative;
             z-index: 1;
         }
-        .bg-slideshow {
+        /* 静态背景（仅第一张图） */
+        .bg-static {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .bg-slideshow .slide {
-            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-        }
-        .bg-slideshow .slide.active {
-            opacity: 1;
+            z-index: -1;
         }
         .query-card {
             width: 100%;
@@ -812,7 +800,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<div class="bg-slideshow" id="bgSlideshow"></div>
+<!-- 静态背景（仅第一张图） -->
+<div class="bg-static" id="bgStatic" style="background-image: url('https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg');"></div>
 
 <div class="query-card">
     <div class="header">
@@ -923,11 +912,10 @@
 </div>
 
 <script>
-    // ==================== Supabase 配置（已填入您的值，避免重复声明） ====================
+    // ==================== Supabase 配置 ====================
     const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
     const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
     let supabaseEnabled = false;
-    // 使用 window 属性避免与全局冲突
     if (!window.supabaseClient) {
         try {
             window.supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -942,7 +930,6 @@
         console.log('✅ Supabase 客户端已存在');
     }
 
-    // 后续所有使用 supabase 的地方都改为 window.supabaseClient
     // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -952,11 +939,43 @@
     let totalUpdatePages = 1;
     let totalUpdateCount = 0;
 
+    // 自动迁移 localStorage 中的旧记录到 Supabase
+    async function migrateLocalRecordsToSupabase() {
+        if (!supabaseEnabled || !window.supabaseClient) return false;
+        // 检查云端是否已有记录
+        const { data: existing, error } = await window.supabaseClient
+            .from('update_records')
+            .select('id', { count: 'exact', head: true });
+        if (error || (existing && existing.length > 0)) return false; // 已有记录，不迁移
+
+        const localRecords = localStorage.getItem('updateRecords');
+        if (!localRecords) return false;
+        const records = JSON.parse(localRecords);
+        if (!records.length) return false;
+
+        const toInsert = records.map(r => ({
+            game_name: r.game.name,
+            platform: r.game.platform,
+            game_data: r.game,
+            update_date: r.date
+        }));
+        const { error: insertError } = await window.supabaseClient.from('update_records').insert(toInsert);
+        if (insertError) {
+            console.warn('自动迁移失败', insertError);
+            return false;
+        }
+        console.log(`✅ 成功迁移 ${toInsert.length} 条本地记录到云端`);
+        return true;
+    }
+
     async function loadGameData() {
         try {
             const response = await fetch('games.json');
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const newGameDB = await response.json();
+
+            // 先尝试迁移本地记录（仅当云端为空时）
+            await migrateLocalRecordsToSupabase();
 
             let lastSet = new Set();
             let storedRecords = [];
@@ -964,7 +983,6 @@
             // 尝试从 Supabase 读取
             if (supabaseEnabled && window.supabaseClient) {
                 try {
-                    // 读取快照
                     const { data: snapshotData, error: snapshotError } = await window.supabaseClient
                         .from('game_snapshot')
                         .select('snapshot')
@@ -973,7 +991,6 @@
                     if (!snapshotError && snapshotData && snapshotData.length > 0) {
                         lastSet = new Set(JSON.parse(snapshotData[0].snapshot));
                     }
-                    // 读取更新记录
                     const { data: recordsData, error: recordsError } = await window.supabaseClient
                         .from('update_records')
                         .select('*')
@@ -987,7 +1004,7 @@
                 }
             }
 
-            // 如果 Supabase 不可用，降级到 localStorage
+            // 降级到 localStorage
             if (!supabaseEnabled) {
                 const lastSnapshot = localStorage.getItem('gameSnapshot');
                 lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
@@ -1019,9 +1036,7 @@
             // 保存到 Supabase 或 localStorage
             if (supabaseEnabled && window.supabaseClient) {
                 try {
-                    // 保存快照
                     await window.supabaseClient.from('game_snapshot').insert({ snapshot: JSON.stringify([...currentSet]) });
-                    // 保存新记录（只插入新增的）
                     if (newRecords.length > 0) {
                         const recordsToInsert = newRecords.map(r => ({
                             game_name: r.game.name,
@@ -1645,83 +1660,11 @@
         return html;
     }
 
-    function initSlideshow() {
-        const bgImages = [
-            'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',
-            'https://game.portal-pokemon.com/sword_shield/sc/img/og-image.png',
-            'https://th.bing.com/th/id/R.500a09bdbd41865a9c5023d4feb3aa3c?rik=Lo4z4NLVWQjDbQ&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f47a5356d8376178c3c0afcf7ead3e30e134dc917.jpg&ehk=F1rTwXWA6u%2fBzFYn3BtX2tikAoiv2el6ENQJB1hNxPM%3d&risl=&pid=ImgRaw&r=0',
-            'https://www.3dmgame.com/uploads/images/thumbpicfirst/20190708/1562575900_513702.png',
-            'https://www.10wallpaper.com/wallpaper/1920x1080/1204/ascension-God_of_war_HD_Game_Wallpaper_1920x1080.jpg',
-            'https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png',
-            'https://c-ssl.duitang.com/uploads/item/201604/01/20160401223349_WzjmJ.jpeg',
-            'https://th.bing.com/th/id/R.a413bf19c3bf3a5267d3a5f136f64cd8?rik=%2bghJKa%2b17v8eOQ&riu=http%3a%2f%2fblob.keylol.com%2fforum%2f201810%2f19%2f024934c03r8ov7yz87m88a.jpg&ehk=J4ogTBqxETG2ujUaPHZOhEYj3OJPQiUNe6pd%2fp%2ff7Ik%3d&risl=&pid=ImgRaw&r=0',
-            'https://10wallpaper.com/wallpaper/1920x1080/1309/Grand_Theft_Auto_V_GTA_5_Game_HD_Wallpaper_1920x1080.jpg',
-            'https://www.10wallpaper.com/wallpaper/2560x1600/1605/Uncharted_4-Game_Posters_HD_Wallpaper_2560x1600.jpg'
-        ];
-        const container = document.getElementById('bgSlideshow');
-        if (!container) return;
-        bgImages.forEach((src, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            if (index === 0) slide.classList.add('active');
-            slide.style.backgroundImage = `url(${src})`;
-            container.appendChild(slide);
-        });
-        let current = 0;
-        const slides = document.querySelectorAll('.bg-slideshow .slide');
-        if (slides.length === 0) return;
-        setInterval(() => {
-            slides[current].classList.remove('active');
-            current = (current + 1) % slides.length;
-            slides[current].classList.add('active');
-        }, 6000);
+    // 静态背景（无需幻灯片轮播）
+    function initBackground() {
+        // 已经直接写在 div 的 style 中，无需额外代码
     }
 
-    function initMusic() {
-        const musicList = [
-            'music/1.mp3',
-            'music/2.mp3',
-            'music/3.mp3',
-            'music/4.mp3',
-            'music/5.mp3'
-        ];
-        let currentIndex = 0;
-        const audio = new Audio();
-        audio.id = 'bgMusic';
-        audio.volume = 0.4;
-        audio.preload = 'auto';
-
-        function playNext() {
-            const src = musicList[currentIndex];
-            audio.src = src;
-            audio.load();
-            audio.play().catch(e => {
-                console.warn(`播放失败 (${src})，尝试下一首`, e);
-                currentIndex = (currentIndex + 1) % musicList.length;
-                setTimeout(playNext, 500);
-            });
-        }
-
-        audio.addEventListener('ended', () => {
-            currentIndex = (currentIndex + 1) % musicList.length;
-            playNext();
-        });
-
-        audio.addEventListener('error', () => {
-            console.warn(`加载错误: ${audio.src}，跳过`);
-            currentIndex = (currentIndex + 1) % musicList.length;
-            playNext();
-        });
-
-        const startMusic = () => {
-            playNext();
-            document.removeEventListener('click', startMusic);
-            document.removeEventListener('touchstart', startMusic);
-        };
-        document.addEventListener('click', startMusic);
-        document.addEventListener('touchstart', startMusic);
-    }
-    
     function bindEvents() {
         document.getElementById('searchBtn').addEventListener('click', handleSearch);
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
@@ -1757,8 +1700,7 @@
     loadStoredUser();
     bindEvents();
     loadGameData();
-    initSlideshow();
-    initMusic();
+    initBackground();
 </script>
 </body>
 </html>
