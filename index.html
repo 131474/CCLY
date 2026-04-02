@@ -915,53 +915,91 @@
     let totalUpdateCount = 0;
 
     async function loadGameData() {
-        try {
-            // 使用 jsDelivr CDN 加速 games.json 下载
-            const response = await fetch('https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json');
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const newGameDB = await response.json();
-            const lastSnapshot = localStorage.getItem('gameSnapshot');
-            const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
-            const currentSet = new Set();
-            for (const game of newGameDB) {
-                const key = `${game.name}|${game.platform}`;
-                currentSet.add(key);
+        // 国内镜像优先，然后 jsDelivr，最后 GitHub 原始地址
+        const urls = [
+            'https://cdn.osyb.cn/gh/131474/CCLY@main/games.json',   // 国内镜像（推荐）
+            'https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json', // jsDelivr 备用
+            'https://raw.githubusercontent.com/131474/CCLY/main/games.json' // 最终回退
+        ];
+
+        async function fetchWithTimeout(url, timeout = 6000) {
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), timeout);
+            try {
+                const response = await fetch(url, { signal: controller.signal });
+                clearTimeout(id);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                clearTimeout(id);
+                throw error;
             }
-            const now = new Date().toISOString().slice(0, 10);
-            const newRecords = [];
-            if (lastSet.size > 0) {
-                for (const game of newGameDB) {
-                    const key = `${game.name}|${game.platform}`;
-                    if (!lastSet.has(key)) {
-                        newRecords.push({ game, date: now });
-                    }
-                }
+        }
+
+        let newGameDB = null;
+        let lastError = null;
+        for (const url of urls) {
+            try {
+                console.log(`尝试加载: ${url}`);
+                newGameDB = await fetchWithTimeout(url, 6000);
+                console.log(`成功从 ${url} 加载`);
+                break;
+            } catch (error) {
+                console.warn(`从 ${url} 加载失败:`, error);
+                lastError = error;
             }
-            const storedRecords = localStorage.getItem('updateRecords');
-            if (storedRecords) {
-                updateRecords = JSON.parse(storedRecords);
-            } else {
-                updateRecords = [];
-            }
-            updateRecords.unshift(...newRecords);
-            localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
-            const today = new Date().toISOString().slice(0, 10);
-            todayUpdateCount = updateRecords.filter(r => r.date === today).length;
-            const updateBtn = document.getElementById('todayUpdateBtn');
-            if (updateBtn) {
-                updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
-            }
-            localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
-            gameDB = newGameDB;
-            dataLoaded = true;
-            console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-            renderHotGames();
-        } catch (error) {
-            console.error('❌ 加载游戏数据失败：', error);
+        }
+
+        if (!newGameDB) {
+            console.error('所有数据源均加载失败', lastError);
             gameDB = [];
             dataLoaded = true;
             alert('游戏数据加载失败，请检查网络或刷新页面重试');
+            return;
         }
+
+        // 可选：缓存到 localStorage 加速二次访问
+        try {
+            localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
+        } catch(e) {}
+
+        // 以下是你的原有更新记录逻辑（完全保留，无需改动）
+        const lastSnapshot = localStorage.getItem('gameSnapshot');
+        const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
+        const currentSet = new Set();
+        for (const game of newGameDB) {
+            const key = `${game.name}|${game.platform}`;
+            currentSet.add(key);
+        }
+        const now = new Date().toISOString().slice(0, 10);
+        const newRecords = [];
+        if (lastSet.size > 0) {
+            for (const game of newGameDB) {
+                const key = `${game.name}|${game.platform}`;
+                if (!lastSet.has(key)) {
+                    newRecords.push({ game, date: now });
+                }
+            }
+        }
+        const storedRecords = localStorage.getItem('updateRecords');
+        if (storedRecords) {
+            updateRecords = JSON.parse(storedRecords);
+        } else {
+            updateRecords = [];
+        }
+        updateRecords.unshift(...newRecords);
+        localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
+        const today = new Date().toISOString().slice(0, 10);
+        todayUpdateCount = updateRecords.filter(r => r.date === today).length;
+        const updateBtn = document.getElementById('todayUpdateBtn');
+        if (updateBtn) {
+            updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
+        }
+        localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
+        gameDB = newGameDB;
+        dataLoaded = true;
+        console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
+        renderHotGames();
     }
 
     function renderHotGames() {
