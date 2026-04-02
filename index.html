@@ -800,7 +800,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<!-- 静态背景（仅第一张图） -->
 <div class="bg-static" id="bgStatic" style="background-image: url('https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg');"></div>
 
 <div class="query-card">
@@ -930,153 +929,287 @@
         console.log('✅ Supabase 客户端已存在');
     }
 
-    // ==================== 游戏数据加载 ====================
-    let gameDB = [];
-    let dataLoaded = false;
-    let updateRecords = [];
-    let todayUpdateCount = 0;
+    // ==================== 全局变量 ====================
+    let gameDB = [];               // 游戏数据，懒加载
+    let dataLoaded = false;       // 是否已加载 games.json
+    let isLoadingData = false;    // 防止重复加载
+    let todayUpdateCount = 0;     // 今日更新数量（缓存）
     let currentUpdatePage = 1;
     let totalUpdatePages = 1;
     let totalUpdateCount = 0;
 
-    // 自动迁移 localStorage 中的旧记录到 Supabase
-    async function migrateLocalRecordsToSupabase() {
-        if (!supabaseEnabled || !window.supabaseClient) return false;
-        // 检查云端是否已有记录
-        const { data: existing, error } = await window.supabaseClient
-            .from('update_records')
-            .select('id', { count: 'exact', head: true });
-        if (error || (existing && existing.length > 0)) return false; // 已有记录，不迁移
+    // 搜索相关变量
+    let currentMode = 'game';
+    let currentGameQuery = '';
+    let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
+    const pageSize = 4;
 
-        const localRecords = localStorage.getItem('updateRecords');
-        if (!localRecords) return false;
-        const records = JSON.parse(localRecords);
-        if (!records.length) return false;
+    // 许愿池相关（保留原功能）
+    let currentUser = null;
+    let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
 
-        const toInsert = records.map(r => ({
-            game_name: r.game.name,
-            platform: r.game.platform,
-            game_data: r.game,
-            update_date: r.date
-        }));
-        const { error: insertError } = await window.supabaseClient.from('update_records').insert(toInsert);
-        if (insertError) {
-            console.warn('自动迁移失败', insertError);
-            return false;
+    // ==================== 懒加载游戏数据 ====================
+    async function ensureGameDataLoaded() {
+        if (dataLoaded) return true;
+        if (isLoadingData) {
+            // 等待正在进行的加载
+            while (isLoadingData) {
+                await new Promise(r => setTimeout(r, 50));
+            }
+            return dataLoaded;
         }
-        console.log(`✅ 成功迁移 ${toInsert.length} 条本地记录到云端`);
+        isLoadingData = true;
+        try {
+            // 显示加载提示（可选）
+            const modalBody = document.getElementById('modalBody');
+            const originalHTML = modalBody.innerHTML;
+            // 不自动打开模态框，只静默加载
+            const response = await fetch('games.json');
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            gameDB = await response.json();
+            dataLoaded = true;
+            console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
+            // 加载完成后，如果有缓存的今日更新数量，更新按钮（但不主动触发对比）
+            await refreshTodayUpdateCount();
+            renderHotGames(); // 热门游戏推荐需要游戏数据
+        } catch (error) {
+            console.error('❌ 加载游戏数据失败：', error);
+            alert('游戏数据加载失败，请检查网络或刷新页面重试');
+        } finally {
+            isLoadingData = false;
+        }
+        return dataLoaded;
+    }
+
+    // 刷新今日更新数量（仅从云端获取当天记录数量，不触发对比）
+    async function refreshTodayUpdateCount() {
+        if (!supabaseEnabled || !window.supabaseClient) return;
+        try {
+            const today = new Date().toISOString().slice(0, 10);
+            const { count, error } = await window.supabaseClient
+                .from('update_records')
+                .select('*', { count: 'exact', head: true })
+                .eq('update_date', today);
+            if (!error && count !== null) {
+                todayUpdateCount = count;
+                const updateBtn = document.getElementById('todayUpdateBtn');
+                if (updateBtn) {
+                    updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
+                }
+            }
+        } catch (err) {
+            console.warn('刷新今日更新数量失败', err);
+        }
+    }
+
+    // ==================== 今日更新（只显示当天记录） ====================
+    async function openUpdateModal() {
+        // 确保游戏数据已加载（用于对比快照，但主要是为了确保有数据）
+        await ensureGameDataLoaded();
+        
+        // 显示加载中
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">加载中...</span>`;
+        modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>加载更新记录...</div>`;
+        openResultModal();
+
+        try {
+            const today = new Date().toISOString().slice(0, 10);
+            let updateRecords = [];
+
+            if (supabaseEnabled && window.supabaseClient) {
+                // 从 Supabase 获取当天的更新记录
+                const { data, error } = await window.supabaseClient
+                    .from('update_records')
+                    .select('*')
+                    .eq('update_date', today)
+                    .order('created_at', { ascending: false });
+                if (!error && data) {
+                    updateRecords = data.map(r => ({ game: r.game_data, date: r.update_date }));
+                }
+            } else {
+                // 降级：从 localStorage 读取当天记录
+                const stored = localStorage.getItem('updateRecords');
+                if (stored) {
+                    const allRecords = JSON.parse(stored);
+                    updateRecords = allRecords.filter(r => r.date === today);
+                }
+            }
+
+            totalUpdateCount = updateRecords.length;
+            totalUpdatePages = Math.ceil(totalUpdateCount / 4);
+            currentUpdatePage = 1;
+
+            modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${totalUpdateCount}</span>`;
+            await renderUpdatePage(1);
+            attachQrZoom();
+        } catch (err) {
+            console.error('加载更新记录失败', err);
+            modalBody.innerHTML = '<div class="empty-modal-msg">加载失败，请稍后再试</div>';
+        }
+    }
+
+    async function renderUpdatePage(page) {
+        const start = (page - 1) * 4;
+        const end = start + 4;
+        const today = new Date().toISOString().slice(0, 10);
+        let updateRecords = [];
+        if (supabaseEnabled && window.supabaseClient) {
+            const { data } = await window.supabaseClient
+                .from('update_records')
+                .select('*')
+                .eq('update_date', today)
+                .order('created_at', { ascending: false })
+                .range(start, end - 1);
+            if (data) updateRecords = data.map(r => ({ game: r.game_data, date: r.update_date }));
+        } else {
+            const stored = localStorage.getItem('updateRecords');
+            if (stored) {
+                const all = JSON.parse(stored).filter(r => r.date === today);
+                updateRecords = all.slice(start, end);
+            }
+        }
+        const modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = generateUpdateCards(updateRecords);
+        for (let i = 0; i < updateRecords.length; i++) {
+            const game = updateRecords[i].game;
+            for (let j = 0; j < game.links.length; j++) {
+                const container = document.getElementById(`update-qr-${i}-${j}`);
+                if (container && game.links[j].url) {
+                    await generateQRCode(container, game.links[j].url);
+                }
+            }
+        }
+        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${totalUpdateCount}条更新)`;
+        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
+        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
+    }
+
+    function generateUpdateCards(records) {
+        if (!records.length) return '<div class="empty-modal-msg">今天暂无更新记录</div>';
+        let html = '';
+        records.forEach((record, idx) => {
+            const game = record.game;
+            const updateDate = record.date;
+            html += `<div class="modal-game-card">
+                        <div class="game-title-row">
+                            <span>🎮 ${game.name}</span>
+                            <span class="update-date">${updateDate}更新</span>
+                        </div>
+                        <div class="modal-qr-group">`;
+            game.links.forEach((link, linkIdx) => {
+                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
+                            <span class="qr-label">${link.name}</span>
+                         </div>`;
+            });
+            html += `</div></div>`;
+        });
+        return html;
+    }
+
+    // ==================== 搜索功能 ====================
+    async function handleSearch() {
+        await ensureGameDataLoaded();
+        const query = document.getElementById('gameSearchInput').value.trim();
+        if (!query) return;
+        currentMode = 'game';
+        currentGameQuery = query;
+        openResultModal();
+        await loadGamePage(1);
+    }
+
+    async function loadGamePage(page) {
+        const modalBody = document.getElementById('modalBody');
+        const modalTitle = document.getElementById('modalTitle');
+        modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>搜索中...</div>`;
+        const res = await mockBackendAPI(currentGameQuery, page);
+        gameCurrentPage = res.page;
+        gameTotalPages = res.totalPages;
+        gameTotalCount = res.total;
+        modalTitle.innerHTML = `🔍查询到 <span class="result-count">${gameTotalCount}</span> 个游戏`;
+        modalBody.innerHTML = generateGameCards(res.data);
+        for(let i=0; i<res.data.length; i++) {
+            const game = res.data[i];
+            for(let j=0; j<game.links.length; j++) {
+                const container = document.getElementById(`qr-${i}-${j}`);
+                if(container && game.links[j].url) await generateQRCode(container, game.links[j].url);
+            }
+        }
+        attachQrZoom();
+        document.getElementById('pageInfo').innerText = `第 ${gameCurrentPage}/${gameTotalPages} 页 (共${gameTotalCount}个)`;
+        document.getElementById('prevPage').disabled = gameCurrentPage <= 1;
+        document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
+        document.getElementById('pagination').style.display = 'flex';
+        document.getElementById('download-tip').style.display = 'flex';
+    }
+
+    function generateGameCards(games){
+        if(!games.length) return '<div class="empty-modal-msg">🔍 未找到游戏</div>';
+        let html = '';
+        games.forEach((game, idx) => {
+            html += `<div class="modal-game-card">
+                        <div class="game-title-row">🎮 ${game.name}</div>
+                        <div class="modal-qr-group">`;
+            game.links.forEach((link, linkIdx) => {
+                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                            <div class="qr-code-box" id="qr-${idx}-${linkIdx}"></div>
+                            <span class="qr-label">${link.name}</span>
+                         </div>`;
+            });
+            html += `</div></div>`;
+        });
+        return html;
+    }
+
+    // 匹配和排序函数
+    function matchesQuery(gameName, query) {
+        const nameLower = gameName.toLowerCase();
+        const queryLower = query.toLowerCase();
+        let pos = -1;
+        for (let i = 0; i < queryLower.length; i++) {
+            const ch = queryLower[i];
+            const nextPos = nameLower.indexOf(ch, pos + 1);
+            if (nextPos === -1) return false;
+            pos = nextPos;
+        }
         return true;
     }
 
-    async function loadGameData() {
-        try {
-            const response = await fetch('games.json');
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
-            const newGameDB = await response.json();
-
-            // 先尝试迁移本地记录（仅当云端为空时）
-            await migrateLocalRecordsToSupabase();
-
-            let lastSet = new Set();
-            let storedRecords = [];
-
-            // 尝试从 Supabase 读取
-            if (supabaseEnabled && window.supabaseClient) {
-                try {
-                    const { data: snapshotData, error: snapshotError } = await window.supabaseClient
-                        .from('game_snapshot')
-                        .select('snapshot')
-                        .order('created_at', { ascending: false })
-                        .limit(1);
-                    if (!snapshotError && snapshotData && snapshotData.length > 0) {
-                        lastSet = new Set(JSON.parse(snapshotData[0].snapshot));
-                    }
-                    const { data: recordsData, error: recordsError } = await window.supabaseClient
-                        .from('update_records')
-                        .select('*')
-                        .order('update_date', { ascending: false });
-                    if (!recordsError && recordsData) {
-                        storedRecords = recordsData.map(r => ({ game: r.game_data, date: r.update_date }));
-                    }
-                } catch (err) {
-                    console.warn('Supabase 读取失败，降级到 localStorage', err);
-                    supabaseEnabled = false;
-                }
-            }
-
-            // 降级到 localStorage
-            if (!supabaseEnabled) {
-                const lastSnapshot = localStorage.getItem('gameSnapshot');
-                lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
-                const stored = localStorage.getItem('updateRecords');
-                storedRecords = stored ? JSON.parse(stored) : [];
-            }
-
-            // 构建当前快照
-            const currentSet = new Set();
-            for (const game of newGameDB) {
-                currentSet.add(`${game.name}|${game.platform}`);
-            }
-
-            const now = new Date().toISOString().slice(0, 10);
-            const newRecords = [];
-
-            if (lastSet.size > 0) {
-                for (const game of newGameDB) {
-                    const key = `${game.name}|${game.platform}`;
-                    if (!lastSet.has(key)) {
-                        newRecords.push({ game, date: now });
-                    }
-                }
-            }
-
-            // 合并新记录到最前面
-            updateRecords = [...newRecords, ...storedRecords];
-
-            // 保存到 Supabase 或 localStorage
-            if (supabaseEnabled && window.supabaseClient) {
-                try {
-                    await window.supabaseClient.from('game_snapshot').insert({ snapshot: JSON.stringify([...currentSet]) });
-                    if (newRecords.length > 0) {
-                        const recordsToInsert = newRecords.map(r => ({
-                            game_name: r.game.name,
-                            platform: r.game.platform,
-                            game_data: r.game,
-                            update_date: r.date
-                        }));
-                        await window.supabaseClient.from('update_records').insert(recordsToInsert);
-                    }
-                } catch (err) {
-                    console.warn('Supabase 保存失败，降级到 localStorage', err);
-                    supabaseEnabled = false;
-                    localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
-                    localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
-                }
-            } else {
-                localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
-                localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
-            }
-
-            // 计算今日更新数量
-            const today = new Date().toISOString().slice(0, 10);
-            todayUpdateCount = updateRecords.filter(r => r.date === today).length;
-            const updateBtn = document.getElementById('todayUpdateBtn');
-            if (updateBtn) {
-                updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
-            }
-
-            gameDB = newGameDB;
-            dataLoaded = true;
-            console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-            renderHotGames();
-        } catch (error) {
-            console.error('❌ 加载游戏数据失败：', error);
-            gameDB = [];
-            dataLoaded = true;
-            alert('游戏数据加载失败，请检查网络或刷新页面重试');
+    function calculateScore(gameName, query) {
+        let nameForScore = gameName;
+        if (gameName.startsWith('（Switch）')) {
+            nameForScore = gameName.substring(8);
         }
+        const nameLower = nameForScore.toLowerCase();
+        const queryLower = query.toLowerCase();
+        const contIdx = nameLower.indexOf(queryLower);
+        if (contIdx !== -1) {
+            return 100000 - contIdx * 10;
+        }
+        const firstIdx = nameLower.indexOf(queryLower[0]);
+        if (firstIdx !== -1) {
+            return 10000 - firstIdx * 10;
+        }
+        return 0;
     }
 
+    async function mockBackendAPI(query, page) {
+        let filtered = gameDB.filter(g => matchesQuery(g.name, query));
+        filtered.sort((a, b) => {
+            const scoreA = calculateScore(a.name, query);
+            const scoreB = calculateScore(b.name, query);
+            return scoreB - scoreA;
+        });
+        const total = filtered.length;
+        const totalPages = Math.ceil(total / pageSize);
+        const start = (page - 1) * pageSize;
+        const data = filtered.slice(start, start + pageSize);
+        return { data: data, total: total, page: page, totalPages: totalPages };
+    }
+
+    // ==================== 热门游戏推荐 ====================
     function renderHotGames() {
         const hotSection = document.getElementById('hotSection');
         const hotScroll = document.getElementById('hotScroll');
@@ -1101,7 +1234,6 @@
             `;
         }).join('');
         hotSection.style.display = 'block';
-
         document.querySelectorAll('.hot-item').forEach(item => {
             item.addEventListener('click', () => {
                 const gameName = item.getAttribute('data-name');
@@ -1111,24 +1243,58 @@
     }
 
     async function searchByKeyword(keyword) {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        await ensureGameDataLoaded();
         currentMode = 'game';
         currentGameQuery = keyword;
         openResultModal();
         await loadGamePage(1);
     }
 
-    function escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
+    // ==================== 二维码相关 ====================
+    async function generateQRCode(container, text) {
+        if (!text) { container.innerHTML = '无'; return; }
+        container.innerHTML = '';
+        const canvas = document.createElement('canvas');
+        canvas.style.width = '100%';
+        await QRCode.toCanvas(canvas, text, { width: 50 });
+        container.appendChild(canvas);
+    }
+
+    function attachQrZoom() {
+        document.querySelectorAll('.modal-qr-item').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const link = el.dataset.link;
+                let platform = el.dataset.platform;
+                if (platform && platform.includes('百度网盘')) {
+                    platform = '百度网盘（提取码8888）';
+                }
+                if (link) showZoom(platform, link);
+            });
         });
     }
 
-    // ==================== 工具按钮内容 ====================
+    function showZoom(platform, link) {
+        const zoomBox = document.getElementById('zoomQrBox');
+        zoomBox.innerHTML = '';
+        QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
+            if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
+        });
+        document.getElementById('zoomPlatform').innerText = platform;
+        const pcHint = document.querySelector('.pc');
+        if (pcHint) pcHint.innerText = `${platform}APP扫码获取`;
+        document.getElementById('zoomModal').classList.add('show');
+        window.currentZoomLink = link;
+    }
+
+    function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
+    function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
+    function closeResultModal() { 
+        document.getElementById('resultModal').classList.remove('show');
+        document.getElementById('pagination').style.display = 'flex';
+    }
+
+    // ==================== 工具按钮（Switch专区、手机游戏等） ====================
     const toolButtons = {
         switchZoneBtn: { 
             title: '🎮 Switch专区',
@@ -1230,175 +1396,6 @@
         }
     };
 
-    let currentUser = null;
-    let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
-    let currentMode = 'game';
-    let currentGameQuery = '';
-    let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
-    const pageSize = 4;
-
-    function matchesQuery(gameName, query) {
-        const nameLower = gameName.toLowerCase();
-        const queryLower = query.toLowerCase();
-        let pos = -1;
-        for (let i = 0; i < queryLower.length; i++) {
-            const ch = queryLower[i];
-            const nextPos = nameLower.indexOf(ch, pos + 1);
-            if (nextPos === -1) return false;
-            pos = nextPos;
-        }
-        return true;
-    }
-
-    function calculateScore(gameName, query) {
-        let nameForScore = gameName;
-        if (gameName.startsWith('（Switch）')) {
-            nameForScore = gameName.substring(8);
-        }
-        const nameLower = nameForScore.toLowerCase();
-        const queryLower = query.toLowerCase();
-        const contIdx = nameLower.indexOf(queryLower);
-        if (contIdx !== -1) {
-            return 100000 - contIdx * 10;
-        }
-        const firstIdx = nameLower.indexOf(queryLower[0]);
-        if (firstIdx !== -1) {
-            return 10000 - firstIdx * 10;
-        }
-        return 0;
-    }
-
-    async function mockBackendAPI(query, page) {
-        if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
-        let filtered = gameDB.filter(g => matchesQuery(g.name, query));
-        filtered.sort((a, b) => {
-            const scoreA = calculateScore(a.name, query);
-            const scoreB = calculateScore(b.name, query);
-            return scoreB - scoreA;
-        });
-        const total = filtered.length;
-        const totalPages = Math.ceil(total / pageSize);
-        const start = (page - 1) * pageSize;
-        const data = filtered.slice(start, start + pageSize);
-        return { data: data, total: total, page: page, totalPages: totalPages };
-    }
-
-    async function fetchWishes(page) { return { data: [], total: 0, page: 1, totalPages: 1 }; }
-    async function createWish(text) { return { code: 0 }; }
-
-    async function loadGamePage(page) {
-        const modalBody = document.getElementById('modalBody');
-        const modalTitle = document.getElementById('modalTitle');
-        modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>加载游戏...</div>`;
-        const res = await mockBackendAPI(currentGameQuery, page);
-        gameCurrentPage = res.page;
-        gameTotalPages = res.totalPages;
-        gameTotalCount = res.total;
-        modalTitle.innerHTML = `🔍查询到 <span class="result-count">${gameTotalCount}</span> 个游戏`;
-        modalBody.innerHTML = generateGameCards(res.data);
-        for(let i=0; i<res.data.length; i++) {
-            const game = res.data[i];
-            for(let j=0; j<game.links.length; j++) {
-                const container = document.getElementById(`qr-${i}-${j}`);
-                if(container && game.links[j].url) await generateQRCode(container, game.links[j].url);
-            }
-        }
-        attachQrZoom();
-        document.getElementById('pageInfo').innerText = `第 ${gameCurrentPage}/${gameTotalPages} 页 (共${gameTotalCount}个)`;
-        document.getElementById('prevPage').disabled = gameCurrentPage <= 1;
-        document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
-        document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
-    }
-
-    function generateGameCards(games){
-        if(!games.length) return '<div class="empty-modal-msg">🔍 未找到游戏</div>';
-        let html = '';
-        games.forEach((game, idx) => {
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">🎮 ${game.name}</div>
-                        <div class="modal-qr-group">`;
-            game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                            <div class="qr-code-box" id="qr-${idx}-${linkIdx}"></div>
-                            <span class="qr-label">${link.name}</span>
-                         </div>`;
-            });
-            html += `</div></div>`;
-        });
-        return html;
-    }
-
-    async function generateQRCode(container, text) {
-        if (!text) { container.innerHTML = '无'; return; }
-        container.innerHTML = '';
-        const canvas = document.createElement('canvas');
-        canvas.style.width = '100%';
-        await QRCode.toCanvas(canvas, text, { width: 50 });
-        container.appendChild(canvas);
-    }
-
-    function attachQrZoom() {
-        document.querySelectorAll('.modal-qr-item').forEach(el => {
-            el.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const link = el.dataset.link;
-                let platform = el.dataset.platform;
-                if (platform && platform.includes('百度网盘')) {
-                    platform = '百度网盘（提取码8888）';
-                }
-                if (link) showZoom(platform, link);
-            });
-        });
-    }
-
-    function showZoom(platform, link) {
-        const zoomBox = document.getElementById('zoomQrBox');
-        zoomBox.innerHTML = '';
-        QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
-            if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
-        });
-        document.getElementById('zoomPlatform').innerText = platform;
-        const pcHint = document.querySelector('.pc');
-        if (pcHint) pcHint.innerText = `${platform}APP扫码获取`;
-        document.getElementById('zoomModal').classList.add('show');
-        window.currentZoomLink = link;
-    }
-
-    function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
-    function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
-    function closeResultModal() { 
-        document.getElementById('resultModal').classList.remove('show');
-        document.getElementById('pagination').style.display = 'flex';
-    }
-
-    async function handleSearch() {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        const query = document.getElementById('gameSearchInput').value.trim();
-        if (!query) return;
-        currentMode = 'game';
-        currentGameQuery = query;
-        openResultModal();
-        await loadGamePage(1);
-    }
-
-    function handlePrevPage() {
-        if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
-        else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
-        else if (currentMode === 'update' && currentUpdatePage > 1) {
-            currentUpdatePage--;
-            renderUpdatePage(currentUpdatePage);
-        }
-    }
-    function handleNextPage() {
-        if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
-        else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
-        else if (currentMode === 'update' && currentUpdatePage < totalUpdatePages) {
-            currentUpdatePage++;
-            renderUpdatePage(currentUpdatePage);
-        }
-    }
-
     function openToolModal(title, content) {
         document.getElementById('pagination').style.display = 'none';
         document.getElementById('download-tip').style.display = 'none';
@@ -1499,49 +1496,47 @@
         }
 
         if (title === '🎮 Switch专区') {
-            setTimeout(() => {
+            setTimeout(async () => {
                 const emuBtn = document.getElementById('switchEmulatorBtn');
                 const keyBtn = document.getElementById('switchKeyBtn');
                 const gamesBtn = document.getElementById('switchGamesBtn');
-                if (emuBtn) emuBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('Switch模拟器'); });
-                if (keyBtn) keyBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('密钥固件'); });
-                if (gamesBtn) gamesBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('switch'); });
+                if (emuBtn) emuBtn.addEventListener('click', async () => { closeResultModal(); await ensureGameDataLoaded(); searchByKeyword('Switch模拟器'); });
+                if (keyBtn) keyBtn.addEventListener('click', async () => { closeResultModal(); await ensureGameDataLoaded(); searchByKeyword('密钥固件'); });
+                if (gamesBtn) gamesBtn.addEventListener('click', async () => { closeResultModal(); await ensureGameDataLoaded(); searchByKeyword('switch'); });
             }, 0);
         }
 
         if (title === '🌐 常用工具') {
-            setTimeout(() => {
+            setTimeout(async () => {
                 const losslessBtn = document.getElementById('losslessBtn');
                 const pkhexBtn = document.getElementById('pkhexBtn');
-                if (losslessBtn) losslessBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('小黄鸭补帧工具'); });
-                if (pkhexBtn) pkhexBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('PKHeX'); });
+                if (losslessBtn) losslessBtn.addEventListener('click', async () => { closeResultModal(); await ensureGameDataLoaded(); searchByKeyword('小黄鸭补帧工具'); });
+                if (pkhexBtn) pkhexBtn.addEventListener('click', async () => { closeResultModal(); await ensureGameDataLoaded(); searchByKeyword('PKHeX'); });
             }, 0);
         }
     }
 
-    function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
-    function jumpToLink(link) { if(link) window.open(link, '_blank'); }
-
-    function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
-
-    function showAuthModal(mode) {
-        const modal = document.getElementById('authModal');
-        const titleEl = document.getElementById('authModalTitle');
-        const container = document.getElementById('authFormContainer');
-        if(mode === 'login') {
-            titleEl.innerText = '登录账号';
-            container.innerHTML = `<div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div><button class="auth-btn" id="submitLoginBtn">登录</button><div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitLoginBtn')?.addEventListener('click', () => { alert('后续敬请期待'); closeAuthModal(); });
-            document.getElementById('switchToReg')?.addEventListener('click', () => showAuthModal('register'));
-        } else {
-            titleEl.innerText = '注册账号';
-            container.innerHTML = `<div class="form-group"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div><div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div><button class="auth-btn" id="submitRegBtn">注册</button><div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitRegBtn')?.addEventListener('click', () => { alert('注册成功'); closeAuthModal(); });
-            document.getElementById('switchToLogin')?.addEventListener('click', () => showAuthModal('login'));
+    // ==================== 分页控制 ====================
+    function handlePrevPage() {
+        if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
+        else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
+        else if (currentMode === 'update' && currentUpdatePage > 1) {
+            currentUpdatePage--;
+            renderUpdatePage(currentUpdatePage);
         }
-        modal.classList.add('show');
+    }
+    function handleNextPage() {
+        if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
+        else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
+        else if (currentMode === 'update' && currentUpdatePage < totalUpdatePages) {
+            currentUpdatePage++;
+            renderUpdatePage(currentUpdatePage);
+        }
     }
 
+    // ==================== 许愿池（保留原演示功能） ====================
+    async function fetchWishes(page) { return { data: [], total: 0, page: 1, totalPages: 1 }; }
+    async function createWish(text) { return { code: 0 }; }
     async function renderWishModal(page=1) {
         document.getElementById('download-tip').style.display = 'none';
         const modalBody = document.getElementById('modalBody');
@@ -1573,7 +1568,6 @@
         document.getElementById('nextPage').disabled = wishCurrentPage >= wishTotalPages;
         document.getElementById('pagination').style.display = 'flex';
     }
-
     async function handleWishClickWithAuth() {
         if(!currentUser) { alert('请先登录'); showAuthModal('login'); return; }
         currentMode = 'wish';
@@ -1582,6 +1576,25 @@
         await renderWishModal(1);
     }
 
+    // ==================== 登录/注册演示 ====================
+    function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
+    function showAuthModal(mode) {
+        const modal = document.getElementById('authModal');
+        const titleEl = document.getElementById('authModalTitle');
+        const container = document.getElementById('authFormContainer');
+        if(mode === 'login') {
+            titleEl.innerText = '登录账号';
+            container.innerHTML = `<div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div><button class="auth-btn" id="submitLoginBtn">登录</button><div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div><div id="authError" class="error-msg"></div>`;
+            document.getElementById('submitLoginBtn')?.addEventListener('click', () => { alert('后续敬请期待'); closeAuthModal(); });
+            document.getElementById('switchToReg')?.addEventListener('click', () => showAuthModal('register'));
+        } else {
+            titleEl.innerText = '注册账号';
+            container.innerHTML = `<div class="form-group"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div><div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div><button class="auth-btn" id="submitRegBtn">注册</button><div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div><div id="authError" class="error-msg"></div>`;
+            document.getElementById('submitRegBtn')?.addEventListener('click', () => { alert('注册成功'); closeAuthModal(); });
+            document.getElementById('switchToLogin')?.addEventListener('click', () => showAuthModal('login'));
+        }
+        modal.classList.add('show');
+    }
     function loadStoredUser() { currentUser = null; updateAuthUI(); }
     function updateAuthUI() {
         const authArea = document.getElementById('authArea');
@@ -1594,77 +1607,25 @@
         }
     }
 
-    async function openUpdateModal() {
-        if (!dataLoaded) {
-            alert('游戏数据还在加载中，请稍后再试');
-            return;
-        }
-        if (!updateRecords.length) {
-            alert('暂无更新记录');
-            return;
-        }
-        currentMode = 'update';
-        totalUpdateCount = updateRecords.length;
-        totalUpdatePages = Math.ceil(totalUpdateCount / 4);
-        currentUpdatePage = 1;
-        const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 更新历史 <span class="result-count">${totalUpdateCount}</span>`;
-        document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
-        await renderUpdatePage(1);
-        attachQrZoom();
-        openResultModal();
-    }
-
-    async function renderUpdatePage(page) {
-        const start = (page - 1) * 4;
-        const end = start + 4;
-        const pageRecords = updateRecords.slice(start, end);
-        const modalBody = document.getElementById('modalBody');
-        modalBody.innerHTML = generateUpdateCards(pageRecords);
-        for (let i = 0; i < pageRecords.length; i++) {
-            const record = pageRecords[i];
-            const game = record.game;
-            for (let j = 0; j < game.links.length; j++) {
-                const container = document.getElementById(`update-qr-${i}-${j}`);
-                if (container && game.links[j].url) {
-                    await generateQRCode(container, game.links[j].url);
-                }
-            }
-        }
-        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${totalUpdateCount}条更新)`;
-        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
-        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
-    }
-
-    function generateUpdateCards(records) {
-        if (!records.length) return '<div class="empty-modal-msg">暂无更新记录</div>';
-        let html = '';
-        records.forEach((record, idx) => {
-            const game = record.game;
-            const updateDate = record.date;
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <span>🎮 ${game.name}</span>
-                            <span class="update-date">${updateDate}更新</span>
-                        </div>
-                        <div class="modal-qr-group">`;
-            game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
-                            <span class="qr-label">${link.name}</span>
-                         </div>`;
-            });
-            html += `</div></div>`;
+    // ==================== 工具函数 ====================
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
         });
-        return html;
     }
+    function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
+    function jumpToLink(link) { if(link) window.open(link, '_blank'); }
 
-    // 静态背景（无需幻灯片轮播）
+    // ==================== 背景初始化（静态） ====================
     function initBackground() {
-        // 已经直接写在 div 的 style 中，无需额外代码
+        // 已写在 div 的 style 中
     }
 
+    // ==================== 事件绑定 ====================
     function bindEvents() {
         document.getElementById('searchBtn').addEventListener('click', handleSearch);
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
@@ -1680,9 +1641,12 @@
             if (btn) btn.onclick = () => openToolModal(config.title, config.content);
         }
         document.querySelectorAll('.mock-link').forEach(el => {
-            el.addEventListener('click', () => {
+            el.addEventListener('click', async () => {
                 const keyword = el.innerText.trim();
-                if (keyword) searchByKeyword(keyword);
+                if (keyword) {
+                    await ensureGameDataLoaded();
+                    searchByKeyword(keyword);
+                }
             });
         });
         document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
@@ -1697,10 +1661,13 @@
         }
     }
 
+    // 页面初始化（不加载游戏数据）
     loadStoredUser();
     bindEvents();
-    loadGameData();
+    // 只刷新今日更新数字（从云端快速获取，不加载游戏数据）
+    refreshTodayUpdateCount();
     initBackground();
+    // 注意：不调用 ensureGameDataLoaded()，首屏不加载 games.json
 </script>
 </body>
 </html>
