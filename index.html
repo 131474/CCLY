@@ -778,19 +778,25 @@
             #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
-            /* Switch专区和常用工具手机端强制一行 */
+            /* 手机端 Switch 专区与常用工具一行显示 */
             .switch-area-icons, .tools-area-icons {
                 display: flex;
                 flex-wrap: nowrap;
-                justify-content: center;
-                gap: 0.8rem;
                 overflow-x: auto;
-                padding-bottom: 4px;
+                justify-content: center;
+                gap: 0.6rem;
+                padding-bottom: 0.5rem;
             }
             .switch-area-icons > div, .tools-area-icons > div {
                 flex: 0 0 auto;
-                min-width: 100px;
-                width: auto;
+                width: 100px;
+                padding: 0.6rem 0.3rem;
+            }
+            .switch-area-icons > div div:first-child, .tools-area-icons > div div:first-child {
+                font-size: 1.8rem;
+            }
+            .switch-area-icons > div div:not(:first-child), .tools-area-icons > div div:not(:first-child) {
+                font-size: 0.7rem;
             }
         }
         @media (min-width: 769px) {
@@ -800,15 +806,6 @@
             .mobile-game-qr .qr-code-box {
                 width: 110px;
                 height: 110px;
-            }
-            .switch-area-icons, .tools-area-icons {
-                display: flex;
-                justify-content: center;
-                gap: 1.5rem;
-                flex-wrap: wrap;
-            }
-            .switch-area-icons > div, .tools-area-icons > div {
-                width: 180px;
             }
         }
     </style>
@@ -832,7 +829,7 @@
     <input type="hidden" id="loginToken" name="loginToken" />
     <div class="publisher-line">
         <span class="publisher-icon">🎮</span>
-        <span class="publisher-name">发布人：辰辰乐游</span>
+        <span class="publisher-name">发布人：我不是game神</span>
     </div>
 
     <div class="search-hint">
@@ -863,7 +860,7 @@
     </div>
 
     <div class="tool-buttons">
-        <button class="tool-btn" id="switchZoneBtn"><span>🕹️</span> Switch专区</button>
+        <button class="tool-btn" id="switchZoneBtn"><span>🎮</span> Switch专区</button>
         <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
         <button class="tool-btn" id="atmosphereBtn"><span>🌐</span> 常用工具</button>
         <button class="tool-btn" id="exchangeBtn"><span>🐧</span> 交流群</button>
@@ -872,7 +869,7 @@
     </div>
 
     <hr>
-    <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。</span></div>
+    <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
 </div>
 
 <!-- 模态框结构 -->
@@ -1049,7 +1046,7 @@
     // ==================== 工具按钮内容 ====================
     const toolButtons = {
         switchZoneBtn: { 
-            title: '🕹️ Switch专区',
+            title: '🎮 Switch专区',
             content: `
                 <div class="tool-content" style="text-align: center;">
                     <h3>🎮 Switch 资源专区</h3>
@@ -1141,21 +1138,8 @@
             content: `
                 <div class="tool-content">
                     <h3>📢 链接失效反馈</h3>
-                    <p>如果您发现网盘链接失效，请填写以下信息，我们会尽快修复：</p>
-                    <div class="form-group">
-                        <label>失效的游戏名称（选填）</label>
-                        <input type="text" id="feedbackGame" placeholder="例如：战神全系列">
-                    </div>
-                    <div class="form-group">
-                        <label>具体问题描述 *</label>
-                        <textarea id="feedbackDesc" rows="3" placeholder="链接失效 / 提取码错误 / 文件损坏等"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>您的邮箱（选填，方便回复）</label>
-                        <input type="email" id="feedbackEmail" placeholder="your@email.com">
-                    </div>
-                    <button id="submitFeedbackBtn" class="auth-btn">提交反馈</button>
-                    <div id="feedbackResult" class="error-msg" style="margin-top:1rem;"></div>
+                    <p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p>
+                    <div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div>
                 </div>
             `
         }
@@ -1279,7 +1263,11 @@
             el.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const link = el.dataset.link;
-                const platform = el.dataset.platform;
+                let platform = el.dataset.platform;
+                // 如果是百度网盘，显示带提取码的名称
+                if (platform && platform.includes('百度网盘')) {
+                    platform = '百度网盘（提取码8888）';
+                }
                 if (link) showZoom(platform, link);
             });
         });
@@ -1344,8 +1332,8 @@
         if (title === '📱 手机游戏') {
             const isDesktop = window.innerWidth > 768;
             const qrSize = isDesktop ? 110 : 55;
-            const quarkUrl = 'https://pan.quark.cn/s/xxxx';    // 请替换为真实夸克链接
-            const xunleiUrl = 'https://pan.xunlei.com/s/xxxx'; // 请替换为真实迅雷链接
+            const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';    // 请替换为真实夸克链接
+            const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#'; // 请替换为真实迅雷链接
             const baiduUrl = 'https://pan.baidu.com/s/xxxx';   // 请替换为真实百度链接
             const quarkContainer = document.getElementById('quarkQrCode');
             const xunleiContainer = document.getElementById('xunleiQrCode');
@@ -1415,8 +1403,40 @@
             if (qqNumSpan) qqNumSpan.addEventListener('click', copyHandler);
         }
 
-        // 如果是 Switch 专区，绑定三个子按钮的事件（全部改为搜索）
-        if (title === '🕹️ Switch专区') {
+        // 如果是反馈问题，绑定QQ号复制功能
+        if (title === '💬 反馈问题') {
+            const feedbackQQ = document.getElementById('feedbackQQ');
+            if (feedbackQQ) {
+                const qqNum = feedbackQQ.innerText;
+                feedbackQQ.addEventListener('click', () => {
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(qqNum).then(() => {
+                            alert('QQ群号已复制: ' + qqNum);
+                        }).catch(() => {
+                            fallbackCopy(qqNum);
+                        });
+                    } else {
+                        fallbackCopy(qqNum);
+                    }
+                    function fallbackCopy(text) {
+                        const textarea = document.createElement('textarea');
+                        textarea.value = text;
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        const success = document.execCommand('copy');
+                        document.body.removeChild(textarea);
+                        if (success) {
+                            alert('QQ群号已复制: ' + text);
+                        } else {
+                            alert('复制失败，请手动复制: ' + text);
+                        }
+                    }
+                });
+            }
+        }
+
+        // 如果是 Switch 专区，绑定三个子按钮的事件（全部改为搜索功能）
+        if (title === '🎮 Switch专区') {
             setTimeout(() => {
                 const emuBtn = document.getElementById('switchEmulatorBtn');
                 const keyBtn = document.getElementById('switchKeyBtn');
@@ -1436,7 +1456,7 @@
             }, 0);
         }
 
-        // 如果是常用工具，绑定两个子按钮的事件（全部改为搜索）
+        // 如果是常用工具，绑定两个子按钮的事件（全部改为搜索功能）
         if (title === '🌐 常用工具') {
             setTimeout(() => {
                 const losslessBtn = document.getElementById('losslessBtn');
@@ -1450,28 +1470,6 @@
                     searchByKeyword('PKHeX');
                 });
             }, 0);
-        }
-
-        // 如果是反馈问题，绑定提交按钮（演示模式）
-        if (title === '💬 反馈问题') {
-            const submitBtn = document.getElementById('submitFeedbackBtn');
-            if (submitBtn) {
-                submitBtn.onclick = () => {
-                    const game = document.getElementById('feedbackGame').value.trim();
-                    const desc = document.getElementById('feedbackDesc').value.trim();
-                    const email = document.getElementById('feedbackEmail').value.trim();
-                    const resultDiv = document.getElementById('feedbackResult');
-                    if (!desc) {
-                        resultDiv.innerText = '请填写问题描述';
-                        return;
-                    }
-                    resultDiv.innerText = '✅ 反馈已收到，感谢您的支持！（演示模式）';
-                    resultDiv.style.color = 'green';
-                    document.getElementById('feedbackGame').value = '';
-                    document.getElementById('feedbackDesc').value = '';
-                    document.getElementById('feedbackEmail').value = '';
-                };
-            }
         }
     }
 
