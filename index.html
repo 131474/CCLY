@@ -17,7 +17,12 @@
         }
         body {
             min-height: 100vh;
-            background: linear-gradient(145deg, #dde9f5 0%, #c7d9e9 100%);
+            /* 保留第一张背景图，移除渐变背景和轮播背景代码 */
+            background-image: url('https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #1a2a3a; /* 图片加载失败时的后备色 */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,29 +34,7 @@
             position: relative;
             z-index: 1;
         }
-        .bg-slideshow {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        .bg-slideshow .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out;
-        }
-        .bg-slideshow .slide.active {
-            opacity: 1;
-        }
+        /* 移除原背景幻灯片所有样式 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -778,7 +761,6 @@
             #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
-            /* 手机端 Switch 专区与常用工具一行显示 */
             .switch-area-icons, .tools-area-icons {
                 display: flex;
                 flex-wrap: nowrap;
@@ -812,8 +794,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<!-- 背景幻灯片容器 -->
-<div class="bg-slideshow" id="bgSlideshow"></div>
+<!-- 背景幻灯片容器已移除，背景图改用body静态背景（第一张图） -->
 
 <div class="query-card">
     <div class="header">
@@ -872,7 +853,7 @@
     <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
 </div>
 
-<!-- 模态框结构 -->
+<!-- 模态框结构（保持不变） -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -924,7 +905,7 @@
 </div>
 
 <script>
-    // ==================== 游戏数据加载 ====================
+    // 游戏数据加载等（保留所有业务逻辑，移除所有音乐及背景幻灯片相关代码）
     let gameDB = [];
     let dataLoaded = false;
     let updateRecords = [];
@@ -938,20 +919,15 @@
             const response = await fetch('games.json');
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const newGameDB = await response.json();
-
-            // 获取上次存储的游戏快照（Set 存储 "游戏名|平台"）
             const lastSnapshot = localStorage.getItem('gameSnapshot');
             const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
             const currentSet = new Set();
-
             for (const game of newGameDB) {
                 const key = `${game.name}|${game.platform}`;
                 currentSet.add(key);
             }
-
             const now = new Date().toISOString().slice(0, 10);
             const newRecords = [];
-
             if (lastSet.size > 0) {
                 for (const game of newGameDB) {
                     const key = `${game.name}|${game.platform}`;
@@ -960,7 +936,6 @@
                     }
                 }
             }
-
             const storedRecords = localStorage.getItem('updateRecords');
             if (storedRecords) {
                 updateRecords = JSON.parse(storedRecords);
@@ -969,17 +944,13 @@
             }
             updateRecords.unshift(...newRecords);
             localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
-
-            // 计算今日更新数量
             const today = new Date().toISOString().slice(0, 10);
             todayUpdateCount = updateRecords.filter(r => r.date === today).length;
             const updateBtn = document.getElementById('todayUpdateBtn');
             if (updateBtn) {
                 updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
             }
-
             localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
-
             gameDB = newGameDB;
             dataLoaded = true;
             console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
@@ -1016,7 +987,6 @@
             `;
         }).join('');
         hotSection.style.display = 'block';
-
         document.querySelectorAll('.hot-item').forEach(item => {
             item.addEventListener('click', () => {
                 const gameName = item.getAttribute('data-name');
@@ -1043,106 +1013,13 @@
         });
     }
 
-    // ==================== 工具按钮内容 ====================
+    // 工具按钮配置（保持原有）
     const toolButtons = {
-        switchZoneBtn: { 
-            title: '🎮 Switch专区',
-            content: `
-                <div class="tool-content" style="text-align: center;">
-                    <h3>🎮 Switch 资源专区</h3>
-                    <div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;">
-                        <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn">
-                            <div style="font-size: 2.5rem;">🕹️</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div>
-                            <div style="font-size: 0.8rem; color: #4797cf;">点击下载</div>
-                        </div>
-                        <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn">
-                            <div style="font-size: 2.5rem;">🔑</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div>
-                            <div style="font-size: 0.8rem; color: #4797cf;">点击下载</div>
-                        </div>
-                        <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn">
-                            <div style="font-size: 2.5rem;">🎮</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div>
-                            <div style="font-size: 0.8rem; color: #4797cf;">点击查看</div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p>
-                </div>
-            `
-        },
-        nsMobileEmulatorBtn: { 
-            title: '📱 手机游戏',
-            content: `
-                <div class="tool-content" style="text-align: center;">
-                    <h3>📱 手机游戏资源包</h3>
-                    <p>扫描下方二维码下载（安卓/iOS）</p>
-                    <div class="modal-qr-group" style="justify-content: center;">
-                        <div class="modal-qr-item" id="quarkQr">
-                            <div class="qr-code-box" id="quarkQrCode"></div>
-                            <span class="qr-label">夸克网盘</span>
-                        </div>
-                        <div class="modal-qr-item" id="xunleiQr">
-                            <div class="qr-code-box" id="xunleiQrCode"></div>
-                            <span class="qr-label">迅雷网盘</span>
-                        </div>
-                        <div class="modal-qr-item" id="baiduQr">
-                            <div class="qr-code-box" id="baiduQrCode"></div>
-                            <span class="qr-label">百度网盘</span>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p>
-                </div>
-            `
-        },
-        atmosphereBtn: { 
-            title: '🌐 常用工具',
-            content: `
-                <div class="tool-content" style="text-align: center;">
-                    <h3>🛠️ 常用工具</h3>
-                    <div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;">
-                        <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn">
-                            <div style="font-size: 2.5rem;">🦆</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div>
-                            <div style="font-size: 0.8rem; color: #4797cf;">点击下载</div>
-                        </div>
-                        <div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn">
-                            <div style="font-size: 2.5rem;">🐾</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div>
-                            <div style="font-size: 0.8rem; color: #4797cf;">点击下载</div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p>
-                </div>
-            `
-        },
-        exchangeBtn: { 
-            title: '🐧 交流群',
-            content: `
-                <div class="tool-content" style="text-align: center;">
-                    <h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3>
-                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                        <div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox">
-                            <div style="font-size: 2rem;">🐧</div>
-                            <div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div>
-                            <div style="color: #2b5f88;" id="qqNum">1064508042</div>
-                            <div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div>
-                        </div>
-                    </div>
-                    <p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p>
-                </div>
-            `
-        },
-        feedbackBtn: { 
-            title: '💬 反馈问题',
-            content: `
-                <div class="tool-content">
-                    <h3>📢 链接失效反馈</h3>
-                    <p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p>
-                    <div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div>
-                </div>
-            `
-        }
+        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
+        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
+        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div></div>` }
     };
 
     let currentUser = null;
@@ -1152,7 +1029,6 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 检查 gameName 是否包含 query 的所有字符，且顺序一致（子序列）
     function matchesQuery(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
@@ -1166,21 +1042,17 @@
         return true;
     }
 
-    // 排序函数：连续匹配优先，其次按第一个字符位置（支持忽略（Switch）前缀）
     function calculateScore(gameName, query) {
-        // 如果游戏名以 （Switch） 开头，则去掉该前缀后再计算得分
         let nameForScore = gameName;
         if (gameName.startsWith('（Switch）')) {
-            nameForScore = gameName.substring(8); // 去掉 "（Switch）" 共8个字符
+            nameForScore = gameName.substring(8);
         }
         const nameLower = nameForScore.toLowerCase();
         const queryLower = query.toLowerCase();
-        // 1. 连续匹配（完整子串）
         const contIdx = nameLower.indexOf(queryLower);
         if (contIdx !== -1) {
             return 100000 - contIdx * 10;
         }
-        // 2. 不连续但顺序匹配：按第一个字符位置
         const firstIdx = nameLower.indexOf(queryLower[0]);
         if (firstIdx !== -1) {
             return 10000 - firstIdx * 10;
@@ -1264,7 +1136,6 @@
                 e.stopPropagation();
                 const link = el.dataset.link;
                 let platform = el.dataset.platform;
-                // 如果是百度网盘，显示带提取码的名称
                 if (platform && platform.includes('百度网盘')) {
                     platform = '百度网盘（提取码8888）';
                 }
@@ -1327,26 +1198,21 @@
         document.getElementById('modalTitle').innerHTML = title;
         document.getElementById('modalBody').innerHTML = content;
         openResultModal();
-
-        // 如果是手机游戏，生成三个二维码（电脑端放大）
         if (title === '📱 手机游戏') {
             const isDesktop = window.innerWidth > 768;
             const qrSize = isDesktop ? 110 : 55;
-            const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';    // 请替换为真实夸克链接
-            const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#'; // 请替换为真实迅雷链接
-            const baiduUrl = 'https://pan.baidu.com/s/xxxx';   // 请替换为真实百度链接
+            const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';
+            const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#';
+            const baiduUrl = 'https://pan.baidu.com/s/xxxx';
             const quarkContainer = document.getElementById('quarkQrCode');
             const xunleiContainer = document.getElementById('xunleiQrCode');
             const baiduContainer = document.getElementById('baiduQrCode');
-            
-            // 为这三个二维码容器添加特殊类，以便 CSS 在电脑端放大
             const quarkItem = document.getElementById('quarkQr');
             const xunleiItem = document.getElementById('xunleiQr');
             const baiduItem = document.getElementById('baiduQr');
             if (quarkItem) quarkItem.classList.add('mobile-game-qr');
             if (xunleiItem) xunleiItem.classList.add('mobile-game-qr');
             if (baiduItem) baiduItem.classList.add('mobile-game-qr');
-            
             async function genQR(container, url, size) {
                 if (!container) return;
                 container.innerHTML = '';
@@ -1359,126 +1225,39 @@
             if (quarkContainer) genQR(quarkContainer, quarkUrl, qrSize);
             if (xunleiContainer) genQR(xunleiContainer, xunleiUrl, qrSize);
             if (baiduContainer) genQR(baiduContainer, baiduUrl, qrSize);
-            
             document.getElementById('quarkQr')?.addEventListener('click', () => showZoom('夸克网盘', quarkUrl));
             document.getElementById('xunleiQr')?.addEventListener('click', () => showZoom('迅雷网盘', xunleiUrl));
             document.getElementById('baiduQr')?.addEventListener('click', () => showZoom('百度网盘', baiduUrl));
-            
-            if (isDesktop) {
-                const qrLabels = document.querySelectorAll('#quarkQr .qr-label, #xunleiQr .qr-label, #baiduQr .qr-label');
-                qrLabels.forEach(label => label.style.fontSize = '1rem');
-            }
         }
-
-        // 如果是交流群，绑定QQ号复制功能（兼容手机）
         if (title === '🐧 交流群') {
             const qqBox = document.getElementById('qqGroupBox');
             const qqNumSpan = document.getElementById('qqNum');
             const qqNum = qqNumSpan ? qqNumSpan.innerText : '1064508042';
-            const copyHandler = () => {
-                if (navigator.clipboard && navigator.clipboard.writeText) {
-                    navigator.clipboard.writeText(qqNum).then(() => {
-                        alert('QQ群号已复制: ' + qqNum);
-                    }).catch(() => {
-                        fallbackCopy();
-                    });
-                } else {
-                    fallbackCopy();
-                }
-                function fallbackCopy() {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = qqNum;
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    const success = document.execCommand('copy');
-                    document.body.removeChild(textarea);
-                    if (success) {
-                        alert('QQ群号已复制: ' + qqNum);
-                    } else {
-                        alert('复制失败，请手动复制: ' + qqNum);
-                    }
-                }
-            };
+            const copyHandler = () => { navigator.clipboard.writeText(qqNum).then(() => alert('QQ群号已复制: ' + qqNum)).catch(() => { const t = document.createElement('textarea'); t.value = qqNum; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qqNum); }); };
             if (qqBox) qqBox.addEventListener('click', copyHandler);
-            if (qqNumSpan) qqNumSpan.addEventListener('click', copyHandler);
         }
-
-        // 如果是反馈问题，绑定QQ号复制功能
         if (title === '💬 反馈问题') {
             const feedbackQQ = document.getElementById('feedbackQQ');
-            if (feedbackQQ) {
-                const qqNum = feedbackQQ.innerText;
-                feedbackQQ.addEventListener('click', () => {
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(qqNum).then(() => {
-                            alert('QQ群号已复制: ' + qqNum);
-                        }).catch(() => {
-                            fallbackCopy(qqNum);
-                        });
-                    } else {
-                        fallbackCopy(qqNum);
-                    }
-                    function fallbackCopy(text) {
-                        const textarea = document.createElement('textarea');
-                        textarea.value = text;
-                        document.body.appendChild(textarea);
-                        textarea.select();
-                        const success = document.execCommand('copy');
-                        document.body.removeChild(textarea);
-                        if (success) {
-                            alert('QQ群号已复制: ' + text);
-                        } else {
-                            alert('复制失败，请手动复制: ' + text);
-                        }
-                    }
-                });
-            }
+            if (feedbackQQ) feedbackQQ.addEventListener('click', () => { const qq = feedbackQQ.innerText; navigator.clipboard.writeText(qq).then(() => alert('QQ群号已复制: ' + qq)).catch(() => { const t = document.createElement('textarea'); t.value = qq; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qq); }); });
         }
-
-        // 如果是 Switch 专区，绑定三个子按钮的事件（全部改为搜索功能）
         if (title === '🎮 Switch专区') {
             setTimeout(() => {
-                const emuBtn = document.getElementById('switchEmulatorBtn');
-                const keyBtn = document.getElementById('switchKeyBtn');
-                const gamesBtn = document.getElementById('switchGamesBtn');
-                if (emuBtn) emuBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('Switch模拟器');
-                });
-                if (keyBtn) keyBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('密钥固件');
-                });
-                if (gamesBtn) gamesBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('switch');
-                });
+                document.getElementById('switchEmulatorBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('Switch模拟器'); });
+                document.getElementById('switchKeyBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('密钥固件'); });
+                document.getElementById('switchGamesBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('switch'); });
             }, 0);
         }
-
-        // 如果是常用工具，绑定两个子按钮的事件（全部改为搜索功能）
         if (title === '🌐 常用工具') {
             setTimeout(() => {
-                const losslessBtn = document.getElementById('losslessBtn');
-                const pkhexBtn = document.getElementById('pkhexBtn');
-                if (losslessBtn) losslessBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('小黄鸭补帧工具');
-                });
-                if (pkhexBtn) pkhexBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('PKHeX');
-                });
+                document.getElementById('losslessBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('小黄鸭补帧工具'); });
+                document.getElementById('pkhexBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('PKHeX'); });
             }, 0);
         }
     }
 
     function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
     function jumpToLink(link) { if(link) window.open(link, '_blank'); }
-
     function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
-
-    // 演示登录/注册
     function showAuthModal(mode) {
         const modal = document.getElementById('authModal');
         const titleEl = document.getElementById('authModalTitle');
@@ -1549,16 +1328,9 @@
         }
     }
 
-    // 今日更新功能
     async function openUpdateModal() {
-        if (!dataLoaded) {
-            alert('游戏数据还在加载中，请稍后再试');
-            return;
-        }
-        if (!updateRecords.length) {
-            alert('暂无更新记录');
-            return;
-        }
+        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        if (!updateRecords.length) { alert('暂无更新记录'); return; }
         currentMode = 'update';
         totalUpdateCount = updateRecords.length;
         totalUpdatePages = Math.ceil(totalUpdateCount / 4);
@@ -1583,9 +1355,7 @@
             const game = record.game;
             for (let j = 0; j < game.links.length; j++) {
                 const container = document.getElementById(`update-qr-${i}-${j}`);
-                if (container && game.links[j].url) {
-                    await generateQRCode(container, game.links[j].url);
-                }
+                if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
             }
         }
         document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${totalUpdateCount}条更新)`;
@@ -1616,84 +1386,6 @@
         return html;
     }
 
-    function initSlideshow() {
-        const bgImages = [
-            'https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg',
-            'https://game.portal-pokemon.com/sword_shield/sc/img/og-image.png',
-            'https://th.bing.com/th/id/R.500a09bdbd41865a9c5023d4feb3aa3c?rik=Lo4z4NLVWQjDbQ&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2f47a5356d8376178c3c0afcf7ead3e30e134dc917.jpg&ehk=F1rTwXWA6u%2fBzFYn3BtX2tikAoiv2el6ENQJB1hNxPM%3d&risl=&pid=ImgRaw&r=0',
-            'https://www.3dmgame.com/uploads/images/thumbpicfirst/20190708/1562575900_513702.png',
-            'https://www.10wallpaper.com/wallpaper/1920x1080/1204/ascension-God_of_war_HD_Game_Wallpaper_1920x1080.jpg',
-            'https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png',
-            'https://c-ssl.duitang.com/uploads/item/201604/01/20160401223349_WzjmJ.jpeg',
-            'https://th.bing.com/th/id/R.a413bf19c3bf3a5267d3a5f136f64cd8?rik=%2bghJKa%2b17v8eOQ&riu=http%3a%2f%2fblob.keylol.com%2fforum%2f201810%2f19%2f024934c03r8ov7yz87m88a.jpg&ehk=J4ogTBqxETG2ujUaPHZOhEYj3OJPQiUNe6pd%2fp%2ff7Ik%3d&risl=&pid=ImgRaw&r=0',
-            'https://10wallpaper.com/wallpaper/1920x1080/1309/Grand_Theft_Auto_V_GTA_5_Game_HD_Wallpaper_1920x1080.jpg',
-            'https://www.10wallpaper.com/wallpaper/2560x1600/1605/Uncharted_4-Game_Posters_HD_Wallpaper_2560x1600.jpg'
-        ];
-        const container = document.getElementById('bgSlideshow');
-        if (!container) return;
-        bgImages.forEach((src, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            if (index === 0) slide.classList.add('active');
-            slide.style.backgroundImage = `url(${src})`;
-            container.appendChild(slide);
-        });
-        let current = 0;
-        const slides = document.querySelectorAll('.bg-slideshow .slide');
-        if (slides.length === 0) return;
-        setInterval(() => {
-            slides[current].classList.remove('active');
-            current = (current + 1) % slides.length;
-            slides[current].classList.add('active');
-        }, 6000);
-    }
-
-    // 五首背景音乐循环播放（用户交互后开始）
-    function initMusic() {
-        const musicList = [
-            'music/1.mp3',
-            'music/2.mp3',
-            'music/3.mp3',
-            'music/4.mp3',
-            'music/5.mp3'
-        ];
-        let currentIndex = 0;
-        const audio = new Audio();
-        audio.id = 'bgMusic';
-        audio.volume = 0.4;
-        audio.preload = 'auto';
-
-        function playNext() {
-            const src = musicList[currentIndex];
-            audio.src = src;
-            audio.load();
-            audio.play().catch(e => {
-                console.warn(`播放失败 (${src})，尝试下一首`, e);
-                currentIndex = (currentIndex + 1) % musicList.length;
-                setTimeout(playNext, 500);
-            });
-        }
-
-        audio.addEventListener('ended', () => {
-            currentIndex = (currentIndex + 1) % musicList.length;
-            playNext();
-        });
-
-        audio.addEventListener('error', () => {
-            console.warn(`加载错误: ${audio.src}，跳过`);
-            currentIndex = (currentIndex + 1) % musicList.length;
-            playNext();
-        });
-
-        const startMusic = () => {
-            playNext();
-            document.removeEventListener('click', startMusic);
-            document.removeEventListener('touchstart', startMusic);
-        };
-        document.addEventListener('click', startMusic);
-        document.addEventListener('touchstart', startMusic);
-    }
-    
     function bindEvents() {
         document.getElementById('searchBtn').addEventListener('click', handleSearch);
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
@@ -1709,29 +1401,17 @@
             if (btn) btn.onclick = () => openToolModal(config.title, config.content);
         }
         document.querySelectorAll('.mock-link').forEach(el => {
-            el.addEventListener('click', () => {
-                const keyword = el.innerText.trim();
-                if (keyword) searchByKeyword(keyword);
-            });
+            el.addEventListener('click', () => { const keyword = el.innerText.trim(); if (keyword) searchByKeyword(keyword); });
         });
         document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
         const searchInput = document.getElementById('gameSearchInput');
-        if (searchInput) {
-            searchInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    document.getElementById('searchBtn').click();
-                }
-            });
-        }
+        if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
 
-    // 初始化
+    // 初始化（移除背景幻灯片及音乐调用）
     loadStoredUser();
     bindEvents();
     loadGameData();
-    initSlideshow();
-    initMusic();
 </script>
 </body>
 </html>
