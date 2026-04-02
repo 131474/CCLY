@@ -778,7 +778,6 @@
             #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
-            /* 手机端 Switch 专区与常用工具一行显示 */
             .switch-area-icons, .tools-area-icons {
                 display: flex;
                 flex-wrap: nowrap;
@@ -809,10 +808,10 @@
             }
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<!-- 背景幻灯片容器 -->
 <div class="bg-slideshow" id="bgSlideshow"></div>
 
 <div class="query-card">
@@ -924,6 +923,26 @@
 </div>
 
 <script>
+    // ==================== Supabase 配置（已填入您的值，避免重复声明） ====================
+    const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
+    let supabaseEnabled = false;
+    // 使用 window 属性避免与全局冲突
+    if (!window.supabaseClient) {
+        try {
+            window.supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+            supabaseEnabled = true;
+            console.log('✅ Supabase 初始化成功');
+        } catch (err) {
+            console.warn('⚠️ Supabase 初始化失败，将使用本地存储模式', err);
+            supabaseEnabled = false;
+        }
+    } else {
+        supabaseEnabled = true;
+        console.log('✅ Supabase 客户端已存在');
+    }
+
+    // 后续所有使用 supabase 的地方都改为 window.supabaseClient
     // ==================== 游戏数据加载 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -939,14 +958,47 @@
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const newGameDB = await response.json();
 
-            // 获取上次存储的游戏快照（Set 存储 "游戏名|平台"）
-            const lastSnapshot = localStorage.getItem('gameSnapshot');
-            const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
-            const currentSet = new Set();
+            let lastSet = new Set();
+            let storedRecords = [];
 
+            // 尝试从 Supabase 读取
+            if (supabaseEnabled && window.supabaseClient) {
+                try {
+                    // 读取快照
+                    const { data: snapshotData, error: snapshotError } = await window.supabaseClient
+                        .from('game_snapshot')
+                        .select('snapshot')
+                        .order('created_at', { ascending: false })
+                        .limit(1);
+                    if (!snapshotError && snapshotData && snapshotData.length > 0) {
+                        lastSet = new Set(JSON.parse(snapshotData[0].snapshot));
+                    }
+                    // 读取更新记录
+                    const { data: recordsData, error: recordsError } = await window.supabaseClient
+                        .from('update_records')
+                        .select('*')
+                        .order('update_date', { ascending: false });
+                    if (!recordsError && recordsData) {
+                        storedRecords = recordsData.map(r => ({ game: r.game_data, date: r.update_date }));
+                    }
+                } catch (err) {
+                    console.warn('Supabase 读取失败，降级到 localStorage', err);
+                    supabaseEnabled = false;
+                }
+            }
+
+            // 如果 Supabase 不可用，降级到 localStorage
+            if (!supabaseEnabled) {
+                const lastSnapshot = localStorage.getItem('gameSnapshot');
+                lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
+                const stored = localStorage.getItem('updateRecords');
+                storedRecords = stored ? JSON.parse(stored) : [];
+            }
+
+            // 构建当前快照
+            const currentSet = new Set();
             for (const game of newGameDB) {
-                const key = `${game.name}|${game.platform}`;
-                currentSet.add(key);
+                currentSet.add(`${game.name}|${game.platform}`);
             }
 
             const now = new Date().toISOString().slice(0, 10);
@@ -961,14 +1013,34 @@
                 }
             }
 
-            const storedRecords = localStorage.getItem('updateRecords');
-            if (storedRecords) {
-                updateRecords = JSON.parse(storedRecords);
+            // 合并新记录到最前面
+            updateRecords = [...newRecords, ...storedRecords];
+
+            // 保存到 Supabase 或 localStorage
+            if (supabaseEnabled && window.supabaseClient) {
+                try {
+                    // 保存快照
+                    await window.supabaseClient.from('game_snapshot').insert({ snapshot: JSON.stringify([...currentSet]) });
+                    // 保存新记录（只插入新增的）
+                    if (newRecords.length > 0) {
+                        const recordsToInsert = newRecords.map(r => ({
+                            game_name: r.game.name,
+                            platform: r.game.platform,
+                            game_data: r.game,
+                            update_date: r.date
+                        }));
+                        await window.supabaseClient.from('update_records').insert(recordsToInsert);
+                    }
+                } catch (err) {
+                    console.warn('Supabase 保存失败，降级到 localStorage', err);
+                    supabaseEnabled = false;
+                    localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
+                    localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
+                }
             } else {
-                updateRecords = [];
+                localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
+                localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
             }
-            updateRecords.unshift(...newRecords);
-            localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
 
             // 计算今日更新数量
             const today = new Date().toISOString().slice(0, 10);
@@ -977,8 +1049,6 @@
             if (updateBtn) {
                 updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
             }
-
-            localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
 
             gameDB = newGameDB;
             dataLoaded = true;
@@ -1152,7 +1222,6 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 检查 gameName 是否包含 query 的所有字符，且顺序一致（子序列）
     function matchesQuery(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
@@ -1166,21 +1235,17 @@
         return true;
     }
 
-    // 排序函数：连续匹配优先，其次按第一个字符位置（支持忽略（Switch）前缀）
     function calculateScore(gameName, query) {
-        // 如果游戏名以 （Switch） 开头，则去掉该前缀后再计算得分
         let nameForScore = gameName;
         if (gameName.startsWith('（Switch）')) {
-            nameForScore = gameName.substring(8); // 去掉 "（Switch）" 共8个字符
+            nameForScore = gameName.substring(8);
         }
         const nameLower = nameForScore.toLowerCase();
         const queryLower = query.toLowerCase();
-        // 1. 连续匹配（完整子串）
         const contIdx = nameLower.indexOf(queryLower);
         if (contIdx !== -1) {
             return 100000 - contIdx * 10;
         }
-        // 2. 不连续但顺序匹配：按第一个字符位置
         const firstIdx = nameLower.indexOf(queryLower[0]);
         if (firstIdx !== -1) {
             return 10000 - firstIdx * 10;
@@ -1264,7 +1329,6 @@
                 e.stopPropagation();
                 const link = el.dataset.link;
                 let platform = el.dataset.platform;
-                // 如果是百度网盘，显示带提取码的名称
                 if (platform && platform.includes('百度网盘')) {
                     platform = '百度网盘（提取码8888）';
                 }
@@ -1328,18 +1392,16 @@
         document.getElementById('modalBody').innerHTML = content;
         openResultModal();
 
-        // 如果是手机游戏，生成三个二维码（电脑端放大）
         if (title === '📱 手机游戏') {
             const isDesktop = window.innerWidth > 768;
             const qrSize = isDesktop ? 110 : 55;
-            const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';    // 请替换为真实夸克链接
-            const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#'; // 请替换为真实迅雷链接
-            const baiduUrl = 'https://pan.baidu.com/s/xxxx';   // 请替换为真实百度链接
+            const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';
+            const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#';
+            const baiduUrl = 'https://pan.baidu.com/s/xxxx';
             const quarkContainer = document.getElementById('quarkQrCode');
             const xunleiContainer = document.getElementById('xunleiQrCode');
             const baiduContainer = document.getElementById('baiduQrCode');
             
-            // 为这三个二维码容器添加特殊类，以便 CSS 在电脑端放大
             const quarkItem = document.getElementById('quarkQr');
             const xunleiItem = document.getElementById('xunleiQr');
             const baiduItem = document.getElementById('baiduQr');
@@ -1370,7 +1432,6 @@
             }
         }
 
-        // 如果是交流群，绑定QQ号复制功能（兼容手机）
         if (title === '🐧 交流群') {
             const qqBox = document.getElementById('qqGroupBox');
             const qqNumSpan = document.getElementById('qqNum');
@@ -1379,9 +1440,7 @@
                 if (navigator.clipboard && navigator.clipboard.writeText) {
                     navigator.clipboard.writeText(qqNum).then(() => {
                         alert('QQ群号已复制: ' + qqNum);
-                    }).catch(() => {
-                        fallbackCopy();
-                    });
+                    }).catch(() => fallbackCopy());
                 } else {
                     fallbackCopy();
                 }
@@ -1392,18 +1451,13 @@
                     textarea.select();
                     const success = document.execCommand('copy');
                     document.body.removeChild(textarea);
-                    if (success) {
-                        alert('QQ群号已复制: ' + qqNum);
-                    } else {
-                        alert('复制失败，请手动复制: ' + qqNum);
-                    }
+                    alert(success ? 'QQ群号已复制: ' + qqNum : '复制失败，请手动复制: ' + qqNum);
                 }
             };
             if (qqBox) qqBox.addEventListener('click', copyHandler);
             if (qqNumSpan) qqNumSpan.addEventListener('click', copyHandler);
         }
 
-        // 如果是反馈问题，绑定QQ号复制功能
         if (title === '💬 反馈问题') {
             const feedbackQQ = document.getElementById('feedbackQQ');
             if (feedbackQQ) {
@@ -1412,9 +1466,7 @@
                     if (navigator.clipboard && navigator.clipboard.writeText) {
                         navigator.clipboard.writeText(qqNum).then(() => {
                             alert('QQ群号已复制: ' + qqNum);
-                        }).catch(() => {
-                            fallbackCopy(qqNum);
-                        });
+                        }).catch(() => fallbackCopy(qqNum));
                     } else {
                         fallbackCopy(qqNum);
                     }
@@ -1425,50 +1477,29 @@
                         textarea.select();
                         const success = document.execCommand('copy');
                         document.body.removeChild(textarea);
-                        if (success) {
-                            alert('QQ群号已复制: ' + text);
-                        } else {
-                            alert('复制失败，请手动复制: ' + text);
-                        }
+                        alert(success ? 'QQ群号已复制: ' + text : '复制失败，请手动复制: ' + text);
                     }
                 });
             }
         }
 
-        // 如果是 Switch 专区，绑定三个子按钮的事件（全部改为搜索功能）
         if (title === '🎮 Switch专区') {
             setTimeout(() => {
                 const emuBtn = document.getElementById('switchEmulatorBtn');
                 const keyBtn = document.getElementById('switchKeyBtn');
                 const gamesBtn = document.getElementById('switchGamesBtn');
-                if (emuBtn) emuBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('Switch模拟器');
-                });
-                if (keyBtn) keyBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('密钥固件');
-                });
-                if (gamesBtn) gamesBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('switch');
-                });
+                if (emuBtn) emuBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('Switch模拟器'); });
+                if (keyBtn) keyBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('密钥固件'); });
+                if (gamesBtn) gamesBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('switch'); });
             }, 0);
         }
 
-        // 如果是常用工具，绑定两个子按钮的事件（全部改为搜索功能）
         if (title === '🌐 常用工具') {
             setTimeout(() => {
                 const losslessBtn = document.getElementById('losslessBtn');
                 const pkhexBtn = document.getElementById('pkhexBtn');
-                if (losslessBtn) losslessBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('小黄鸭补帧工具');
-                });
-                if (pkhexBtn) pkhexBtn.addEventListener('click', () => {
-                    closeResultModal();
-                    searchByKeyword('PKHeX');
-                });
+                if (losslessBtn) losslessBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('小黄鸭补帧工具'); });
+                if (pkhexBtn) pkhexBtn.addEventListener('click', () => { closeResultModal(); searchByKeyword('PKHeX'); });
             }, 0);
         }
     }
@@ -1478,7 +1509,6 @@
 
     function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
 
-    // 演示登录/注册
     function showAuthModal(mode) {
         const modal = document.getElementById('authModal');
         const titleEl = document.getElementById('authModalTitle');
@@ -1549,7 +1579,6 @@
         }
     }
 
-    // 今日更新功能
     async function openUpdateModal() {
         if (!dataLoaded) {
             alert('游戏数据还在加载中，请稍后再试');
@@ -1648,7 +1677,6 @@
         }, 6000);
     }
 
-    // 五首背景音乐循环播放（用户交互后开始）
     function initMusic() {
         const musicList = [
             'music/1.mp3',
@@ -1726,7 +1754,6 @@
         }
     }
 
-    // 初始化
     loadStoredUser();
     bindEvents();
     loadGameData();
