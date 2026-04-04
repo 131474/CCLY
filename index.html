@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://cdn.osyb.cn">
     <link rel="dns-prefetch" href="https://cdn.osyb.cn">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preload" href="https://cdn.osyb.cn/gh/131474/CCLY@main/games.json" as="fetch" crossorigin>
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
@@ -796,8 +795,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<!-- 背景幻灯片容器已移除，背景图改用body静态背景（第一张图） -->
-
 <div class="query-card">
     <div class="header">
         <div class="game-house">游戏宝库</div>
@@ -814,20 +811,16 @@
         <span class="publisher-icon">🎮</span>
         <span class="publisher-name">发布人：我不是game神</span>
     </div>
-
     <div class="search-hint">
         <span class="hint-bold">🔍 搜索栏输入游戏名称</span> 
     </div>
-
     <div class="input-wrapper">
         <input class="game-input" type="text" id="gameSearchInput" placeholder="请输入游戏名称（至少2个字）" autocomplete="off">
         <div class="input-emoji-decoration">🎮</div>
     </div>
-
     <button class="query-btn" id="searchBtn">
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
-
     <div class="demo-hint">
         <span style="opacity:0.9;">⚡试试查询：</span>
         <span class="mock-link" data-demo="塞尔达">塞尔达</span>
@@ -836,12 +829,10 @@
         <span class="mock-link" data-demo="最终幻想">最终幻想</span>
         <span class="mock-link" data-demo="战神">战神</span>
     </div>
-
     <div class="hot-section" id="hotSection" style="display: none;">
         <div class="hot-title">当前热门游戏推荐</div>
         <div class="hot-scroll" id="hotScroll"></div>
     </div>
-
     <div class="tool-buttons">
         <button class="tool-btn" id="switchZoneBtn"><span>🎮</span> Switch专区</button>
         <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
@@ -850,12 +841,11 @@
         <button class="tool-btn" id="wishingWellBtn"><span>⛲</span> 许愿池</button>
         <button class="tool-btn" id="feedbackBtn"><span>💬</span> 反馈问题</button>
     </div>
-
     <hr>
     <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
 </div>
 
-<!-- 模态框结构（保持不变） -->
+<!-- 模态框结构 -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -910,7 +900,7 @@
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];      // 存储 [{ game, date }] 格式的更新记录（来自 localStorage）
+    let updateRecords = [];      // 存储 [{ game, date }]
     let todayUpdateCount = 0;
     let currentUpdatePage = 1;
     let totalUpdatePages = 1;
@@ -933,12 +923,21 @@
         });
     }
 
-    // ==================== 游戏数据加载（无 Supabase，仅 localStorage 快照对比）====================
+    // 获取游戏对象的唯一哈希（排除可能动态添加的字段）
+    function getGameHash(game) {
+        const { lastUpdateDate, ...core } = game;
+        return JSON.stringify(core);
+    }
+
+    // ==================== 游戏数据加载（自动时间戳，强制 CDN 回源） ====================
     async function loadGameData() {
+        // 自动生成时间戳，确保每次请求都是新 URL，强制 CDN 回源
+        const timestamp = Date.now();
+        const versionSuffix = `?t=${timestamp}`;
         const urls = [
-            'https://cdn.osyb.cn/gh/131474/CCLY@main/games.json',
-            'https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json',
-            'https://raw.githubusercontent.com/131474/CCLY/main/games.json'
+            `https://cdn.osyb.cn/gh/131474/CCLY@main/games.json${versionSuffix}`,
+            `https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json${versionSuffix}`,
+            `https://raw.githubusercontent.com/131474/CCLY/main/games.json${versionSuffix}`
         ];
 
         async function fetchWithTimeout(url, timeout = 6000) {
@@ -977,43 +976,43 @@
             return;
         }
 
-        // 缓存到 localStorage 加速二次访问
+        // 缓存到 localStorage
         try {
             localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
         } catch(e) {}
 
-        // 原有更新记录逻辑（基于 name+platform 快照对比）
+        // ===== 更新检测：使用完整对象哈希 =====
         const lastSnapshot = localStorage.getItem('gameSnapshot');
         const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
         const currentSet = new Set();
         for (const game of newGameDB) {
-            const key = `${game.name}|${game.platform}`;
-            currentSet.add(key);
+            currentSet.add(getGameHash(game));
         }
+
         const now = new Date().toISOString().slice(0, 10);
         const newRecords = [];
         if (lastSet.size > 0) {
             for (const game of newGameDB) {
-                const key = `${game.name}|${game.platform}`;
-                if (!lastSet.has(key)) {
+                const hash = getGameHash(game);
+                if (!lastSet.has(hash)) {
                     newRecords.push({ game, date: now });
                 }
             }
         }
+
         const storedRecords = localStorage.getItem('updateRecords');
-        if (storedRecords) {
-            updateRecords = JSON.parse(storedRecords);
-        } else {
-            updateRecords = [];
-        }
-        updateRecords.unshift(...newRecords);
+        let existingRecords = storedRecords ? JSON.parse(storedRecords) : [];
+        updateRecords = [...newRecords, ...existingRecords];
+        if (updateRecords.length > 1000) updateRecords = updateRecords.slice(0, 1000);
         localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
+
         const today = new Date().toISOString().slice(0, 10);
         todayUpdateCount = updateRecords.filter(r => r.date === today).length;
         const updateBtn = document.getElementById('todayUpdateBtn');
         if (updateBtn) {
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
+
         localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
 
         gameDB = newGameDB;
@@ -1169,9 +1168,11 @@
         for (let i = 0; i < pageRecords.length; i++) {
             const record = pageRecords[i];
             const game = record.game;
-            for (let j = 0; j < game.links.length; j++) {
-                const container = document.getElementById(`update-qr-${i}-${j}`);
-                if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
+            if (game && game.links) {
+                for (let j = 0; j < game.links.length; j++) {
+                    const container = document.getElementById(`update-qr-${i}-${j}`);
+                    if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
+                }
             }
         }
         attachQrZoom();
@@ -1186,18 +1187,23 @@
         records.forEach((record, idx) => {
             const game = record.game;
             const updateDate = record.date;
+            if (!game) return;
             html += `<div class="modal-game-card">
                         <div class="game-title-row">
                             <span>🎮 ${game.name}</span>
                             <span class="update-date-badge">更新于 ${updateDate}</span>
                         </div>
                         <div class="modal-qr-group">`;
-            game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
-                            <span class="qr-label">${link.name}</span>
-                         </div>`;
-            });
+            if (game.links && game.links.length) {
+                game.links.forEach((link, linkIdx) => {
+                    html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                                <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
+                                <span class="qr-label">${link.name}</span>
+                             </div>`;
+                });
+            } else {
+                html += `<span class="qr-label">无链接</span>`;
+            }
             html += `</div></div>`;
         });
         return html;
