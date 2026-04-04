@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
+    <!-- 预连接与预加载，加速首次请求 -->
+    <link rel="preconnect" href="https://cdn.osyb.cn">
+    <link rel="dns-prefetch" href="https://cdn.osyb.cn">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdn.osyb.cn/gh/131474/CCLY@main/games.json" as="fetch" crossorigin>
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
@@ -17,12 +22,11 @@
         }
         body {
             min-height: 100vh;
-            /* 保留第一张背景图，移除渐变背景和轮播背景代码 */
             background-image: url('https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            background-color: #1a2a3a; /* 图片加载失败时的后备色 */
+            background-color: #1a2a3a;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -34,7 +38,6 @@
             position: relative;
             z-index: 1;
         }
-        /* 移除原背景幻灯片所有样式 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -410,14 +413,13 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-        .update-date {
-            font-size: 0.8rem;
+        .update-date-badge {
+            font-size: 0.75rem;
             color: #1e88e5;
             background: rgba(30, 136, 229, 0.1);
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
             white-space: nowrap;
-            margin-left: auto;
         }
         .modal-qr-group {
             display: flex;
@@ -905,21 +907,38 @@
 </div>
 
 <script>
-    // 游戏数据加载等（保留所有业务逻辑，移除所有音乐及背景幻灯片相关代码）
+    // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];
+    let updateRecords = [];      // 存储 [{ game, date }] 格式的更新记录（来自 localStorage）
     let todayUpdateCount = 0;
     let currentUpdatePage = 1;
     let totalUpdatePages = 1;
     let totalUpdateCount = 0;
+    let currentUser = null;
+    let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
+    let currentMode = 'game';
+    let currentGameQuery = '';
+    let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
+    const pageSize = 4;
 
+    // ==================== 辅助函数 ====================
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    // ==================== 游戏数据加载（无 Supabase，仅 localStorage 快照对比）====================
     async function loadGameData() {
-        // 国内镜像优先，然后 jsDelivr，最后 GitHub 原始地址
         const urls = [
-            'https://cdn.osyb.cn/gh/131474/CCLY@main/games.json',   // 国内镜像（推荐）
-            'https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json', // jsDelivr 备用
-            'https://raw.githubusercontent.com/131474/CCLY/main/games.json' // 最终回退
+            'https://cdn.osyb.cn/gh/131474/CCLY@main/games.json',
+            'https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json',
+            'https://raw.githubusercontent.com/131474/CCLY/main/games.json'
         ];
 
         async function fetchWithTimeout(url, timeout = 6000) {
@@ -958,12 +977,12 @@
             return;
         }
 
-        // 可选：缓存到 localStorage 加速二次访问
+        // 缓存到 localStorage 加速二次访问
         try {
             localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
         } catch(e) {}
 
-        // 以下是你的原有更新记录逻辑（完全保留，无需改动）
+        // 原有更新记录逻辑（基于 name+platform 快照对比）
         const lastSnapshot = localStorage.getItem('gameSnapshot');
         const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
         const currentSet = new Set();
@@ -996,6 +1015,7 @@
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
         localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
+
         gameDB = newGameDB;
         dataLoaded = true;
         console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
@@ -1034,40 +1054,7 @@
         });
     }
 
-    async function searchByKeyword(keyword) {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        currentMode = 'game';
-        currentGameQuery = keyword;
-        openResultModal();
-        await loadGamePage(1);
-    }
-
-    function escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
-    }
-
-    // 工具按钮配置（保持原有）
-    const toolButtons = {
-        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
-        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
-        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div></div>` }
-    };
-
-    let currentUser = null;
-    let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
-    let currentMode = 'game';
-    let currentGameQuery = '';
-    let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
-    const pageSize = 4;
-
+    // ==================== 游戏搜索与分页 ====================
     function matchesQuery(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
@@ -1114,9 +1101,6 @@
         return { data: data, total: total, page: page, totalPages: totalPages };
     }
 
-    async function fetchWishes(page) { return { data: [], total: 0, page: 1, totalPages: 1 }; }
-    async function createWish(text) { return { code: 0 }; }
-
     async function loadGamePage(page) {
         const modalBody = document.getElementById('modalBody');
         const modalTitle = document.getElementById('modalTitle');
@@ -1160,6 +1144,66 @@
         return html;
     }
 
+    // ==================== 今日更新模态框（基于 localStorage 的 updateRecords，每页 4 个）====================
+    async function openUpdateModal() {
+        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        if (!updateRecords.length) { alert('暂无更新记录'); return; }
+        currentMode = 'update';
+        totalUpdateCount = updateRecords.length;
+        totalUpdatePages = Math.ceil(totalUpdateCount / 4);
+        currentUpdatePage = 1;
+        const modalTitle = document.getElementById('modalTitle');
+        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${todayUpdateCount}</span>`;
+        document.getElementById('pagination').style.display = 'flex';
+        document.getElementById('download-tip').style.display = 'flex';
+        await renderUpdatePage(1);
+        openResultModal();
+    }
+
+    async function renderUpdatePage(page) {
+        const start = (page - 1) * 4;
+        const end = start + 4;
+        const pageRecords = updateRecords.slice(start, end);
+        const modalBody = document.getElementById('modalBody');
+        modalBody.innerHTML = generateUpdateCards(pageRecords);
+        for (let i = 0; i < pageRecords.length; i++) {
+            const record = pageRecords[i];
+            const game = record.game;
+            for (let j = 0; j < game.links.length; j++) {
+                const container = document.getElementById(`update-qr-${i}-${j}`);
+                if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
+            }
+        }
+        attachQrZoom();
+        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${totalUpdateCount}条更新)`;
+        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
+        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
+    }
+
+    function generateUpdateCards(records) {
+        if (!records.length) return '<div class="empty-modal-msg">暂无更新记录</div>';
+        let html = '';
+        records.forEach((record, idx) => {
+            const game = record.game;
+            const updateDate = record.date;
+            html += `<div class="modal-game-card">
+                        <div class="game-title-row">
+                            <span>🎮 ${game.name}</span>
+                            <span class="update-date-badge">更新于 ${updateDate}</span>
+                        </div>
+                        <div class="modal-qr-group">`;
+            game.links.forEach((link, linkIdx) => {
+                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
+                            <span class="qr-label">${link.name}</span>
+                         </div>`;
+            });
+            html += `</div></div>`;
+        });
+        return html;
+    }
+
+    // ==================== QR 相关函数 ====================
     async function generateQRCode(container, text) {
         if (!text) { container.innerHTML = '无'; return; }
         container.innerHTML = '';
@@ -1203,16 +1247,15 @@
         document.getElementById('pagination').style.display = 'flex';
     }
 
-    async function handleSearch() {
+    async function searchByKeyword(keyword) {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        const query = document.getElementById('gameSearchInput').value.trim();
-        if (!query) return;
         currentMode = 'game';
-        currentGameQuery = query;
+        currentGameQuery = keyword;
         openResultModal();
         await loadGamePage(1);
     }
 
+    // ==================== 分页处理 ====================
     function handlePrevPage() {
         if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
         else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
@@ -1221,6 +1264,7 @@
             renderUpdatePage(currentUpdatePage);
         }
     }
+
     function handleNextPage() {
         if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
         else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
@@ -1229,6 +1273,15 @@
             renderUpdatePage(currentUpdatePage);
         }
     }
+
+    // ==================== 工具按钮 ====================
+    const toolButtons = {
+        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
+        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
+        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div></div>` }
+    };
 
     function openToolModal(title, content) {
         document.getElementById('pagination').style.display = 'none';
@@ -1297,6 +1350,7 @@
     function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
     function jumpToLink(link) { if(link) window.open(link, '_blank'); }
     function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
+
     function showAuthModal(mode) {
         const modal = document.getElementById('authModal');
         const titleEl = document.getElementById('authModalTitle');
@@ -1355,6 +1409,9 @@
         await renderWishModal(1);
     }
 
+    async function fetchWishes(page) { return { data: [], total: 0, page: 1, totalPages: 1 }; }
+    async function createWish(text) { return { code: 0 }; }
+
     function loadStoredUser() { currentUser = null; updateAuthUI(); }
     function updateAuthUI() {
         const authArea = document.getElementById('authArea');
@@ -1367,66 +1424,15 @@
         }
     }
 
-    async function openUpdateModal() {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        if (!updateRecords.length) { alert('暂无更新记录'); return; }
-        currentMode = 'update';
-        totalUpdateCount = updateRecords.length;
-        totalUpdatePages = Math.ceil(totalUpdateCount / 4);
-        currentUpdatePage = 1;
-        const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 更新历史 <span class="result-count">${totalUpdateCount}</span>`;
-        document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
-        await renderUpdatePage(1);
-        attachQrZoom();
-        openResultModal();
-    }
-
-    async function renderUpdatePage(page) {
-        const start = (page - 1) * 4;
-        const end = start + 4;
-        const pageRecords = updateRecords.slice(start, end);
-        const modalBody = document.getElementById('modalBody');
-        modalBody.innerHTML = generateUpdateCards(pageRecords);
-        for (let i = 0; i < pageRecords.length; i++) {
-            const record = pageRecords[i];
-            const game = record.game;
-            for (let j = 0; j < game.links.length; j++) {
-                const container = document.getElementById(`update-qr-${i}-${j}`);
-                if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
-            }
-        }
-        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${totalUpdateCount}条更新)`;
-        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
-        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
-    }
-
-    function generateUpdateCards(records) {
-        if (!records.length) return '<div class="empty-modal-msg">暂无更新记录</div>';
-        let html = '';
-        records.forEach((record, idx) => {
-            const game = record.game;
-            const updateDate = record.date;
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <span>🎮 ${game.name}</span>
-                            <span class="update-date">${updateDate}更新</span>
-                        </div>
-                        <div class="modal-qr-group">`;
-            game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                            <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
-                            <span class="qr-label">${link.name}</span>
-                         </div>`;
-            });
-            html += `</div></div>`;
-        });
-        return html;
-    }
-
     function bindEvents() {
-        document.getElementById('searchBtn').addEventListener('click', handleSearch);
+        document.getElementById('searchBtn').addEventListener('click', () => {
+            const query = document.getElementById('gameSearchInput').value.trim();
+            if (!query) return;
+            currentMode = 'game';
+            currentGameQuery = query;
+            openResultModal();
+            loadGamePage(1);
+        });
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
         document.getElementById('closeAuthModalBtn').addEventListener('click', closeAuthModal);
         document.getElementById('closeZoomBtn').addEventListener('click', closeZoom);
@@ -1440,14 +1446,20 @@
             if (btn) btn.onclick = () => openToolModal(config.title, config.content);
         }
         document.querySelectorAll('.mock-link').forEach(el => {
-            el.addEventListener('click', () => { const keyword = el.innerText.trim(); if (keyword) searchByKeyword(keyword); });
+            el.addEventListener('click', () => {
+                const keyword = el.innerText.trim();
+                if (keyword) {
+                    document.getElementById('gameSearchInput').value = keyword;
+                    document.getElementById('searchBtn').click();
+                }
+            });
         });
         document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
 
-    // 初始化（移除背景幻灯片及音乐调用）
+    // 初始化
     loadStoredUser();
     bindEvents();
     loadGameData();
