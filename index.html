@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
     <!-- 预连接与预加载，加速首次请求 -->
-    <link rel="preconnect" href="https://cdn.osyb.cn">
-    <link rel="dns-prefetch" href="https://cdn.osyb.cn">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
@@ -929,15 +929,14 @@
         return JSON.stringify(core);
     }
 
-    // ==================== 游戏数据加载（自动时间戳，强制 CDN 回源） ====================
+    // ==================== 游戏数据加载（优先 jsDelivr，支持 purge） ====================
     async function loadGameData() {
-        // 自动生成时间戳，确保每次请求都是新 URL，强制 CDN 回源
         const timestamp = Date.now();
-        const versionSuffix = `?t=${timestamp}`;
+        // 优先使用支持 purge 的 jsDelivr，其次国内镜像，最后 GitHub 原始地址
         const urls = [
-            `https://cdn.osyb.cn/gh/131474/CCLY@main/games.json${versionSuffix}`,
-            `https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json${versionSuffix}`,
-            `https://raw.githubusercontent.com/131474/CCLY/main/games.json${versionSuffix}`
+            `https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json?t=${timestamp}`,
+            `https://cdn.osyb.cn/gh/131474/CCLY@main/games.json?t=${timestamp}`,
+            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
         ];
 
         async function fetchWithTimeout(url, timeout = 6000) {
@@ -976,7 +975,7 @@
             return;
         }
 
-        // 缓存到 localStorage
+        // 缓存到 localStorage（二次访问加速）
         try {
             localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
         } catch(e) {}
