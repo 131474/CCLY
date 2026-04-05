@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
-    <!-- 预连接加速 -->
     <link rel="preconnect" href="https://www.steamck.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js">
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
@@ -404,11 +403,13 @@
             border-color: #4797cf;
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
-        /* 游戏标题行：名称在上，日期在下 */
+        /* 游戏标题行：名称在左，日期在右（同一行） */
         .game-title-row {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 0.3rem;
             margin-bottom: 0.8rem;
         }
@@ -425,7 +426,7 @@
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
             display: inline-block;
-            align-self: flex-start;
+            white-space: nowrap;
         }
         .modal-qr-group {
             display: flex;
@@ -946,7 +947,7 @@
         return JSON.stringify(core);
     }
 
-    // ==================== 游戏数据加载（只记录名称变更） ====================
+    // ==================== 游戏数据加载（只记录名称变更，首次加载不记录） ====================
     async function loadGameData() {
         const timestamp = Date.now();
         const urls = [
@@ -1014,51 +1015,56 @@
             }
         }
 
-        // 2. 构建旧游戏名称映射
-        const oldNameMap = new Map();
-        for (const game of oldGameDB) {
-            oldNameMap.set(game.name, game);
-        }
-
-        // 3. 找出名称变化的游戏（新增或名称改变）
-        const changedGames = [];
-        for (const newGame of newGameDB) {
-            const oldGame = oldNameMap.get(newGame.name);
-            if (!oldGame) {
-                changedGames.push(newGame);
-            } else if (oldGame.name !== newGame.name) {
-                changedGames.push(newGame);
+        // 2. 只有当存在旧快照时，才进行变更检测和记录（避免首次加载时把所有游戏当成新增）
+        if (lastSnapshotExists && oldGameDB.length > 0) {
+            // 构建旧游戏名称映射
+            const oldNameMap = new Map();
+            for (const game of oldGameDB) {
+                oldNameMap.set(game.name, game);
             }
-        }
 
-        // 4. 写入更新记录（只记录名称变化，每个游戏每天只记录一次）
-        if (changedGames.length > 0 && supabaseClient) {
-            const { data: existingRecords, error: queryError } = await supabaseClient
-                .from('update_records')
-                .select('game_name')
-                .eq('change_date', today);
-            const existingNames = new Set();
-            if (!queryError && existingRecords) {
-                existingRecords.forEach(rec => existingNames.add(rec.game_name));
+            // 找出名称变化的游戏（新增或名称改变）
+            const changedGames = [];
+            for (const newGame of newGameDB) {
+                const oldGame = oldNameMap.get(newGame.name);
+                if (!oldGame) {
+                    changedGames.push(newGame);
+                } else if (oldGame.name !== newGame.name) {
+                    changedGames.push(newGame);
+                }
             }
-            const newGames = changedGames.filter(g => !existingNames.has(g.name));
-            if (newGames.length > 0) {
-                const records = newGames.map(g => ({
-                    game_name: g.name,
-                    platform: g.platform || null,
-                    change_date: today,
-                    change_time: nowISO,
-                    game_snapshot: g
-                }));
-                const { error: insertError } = await supabaseClient
+
+            // 写入更新记录（只记录名称变化，每个游戏每天只记录一次）
+            if (changedGames.length > 0 && supabaseClient) {
+                const { data: existingRecords, error: queryError } = await supabaseClient
                     .from('update_records')
-                    .insert(records);
-                if (insertError) console.error('写入更新记录失败', insertError);
-                else console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
+                    .select('game_name')
+                    .eq('change_date', today);
+                const existingNames = new Set();
+                if (!queryError && existingRecords) {
+                    existingRecords.forEach(rec => existingNames.add(rec.game_name));
+                }
+                const newGames = changedGames.filter(g => !existingNames.has(g.name));
+                if (newGames.length > 0) {
+                    const records = newGames.map(g => ({
+                        game_name: g.name,
+                        platform: g.platform || null,
+                        change_date: today,
+                        change_time: nowISO,
+                        game_snapshot: g
+                    }));
+                    const { error: insertError } = await supabaseClient
+                        .from('update_records')
+                        .insert(records);
+                    if (insertError) console.error('写入更新记录失败', insertError);
+                    else console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
+                }
             }
+        } else {
+            console.log('首次加载或无旧快照，跳过变更检测，不记录任何更新');
         }
 
-        // 5. 保存新快照
+        // 3. 保存新快照（无论是否有旧快照，都要保存当前数据作为下一次的基准）
         if (supabaseClient) {
             const { error: insertSnapshotError } = await supabaseClient
                 .from('game_snapshot')
@@ -1066,7 +1072,7 @@
             if (insertSnapshotError) console.error('保存快照失败', insertSnapshotError);
         }
 
-        // 6. 查询今日更新数量（当天 change_date = today）
+        // 4. 查询今日更新数量（当天 change_date = today）
         let todayCount = 0;
         if (supabaseClient) {
             const { count, error: countError } = await supabaseClient
@@ -1086,7 +1092,7 @@
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
 
-        // 7. 加载最近三天的更新记录（按 change_time 倒序）
+        // 5. 加载最近三天的更新记录（按 change_time 倒序）
         if (supabaseClient) {
             const threeDaysAgo = new Date();
             threeDaysAgo.setDate(threeDaysAgo.getDate() - 2);
