@@ -927,7 +927,7 @@
         return JSON.stringify(core);
     }
 
-    // ==================== 游戏数据加载（使用 Cloudflare 加速） ====================
+    // ==================== 游戏数据加载（使用 Cloudflare 加速，持久化今日更新） ====================
     async function loadGameData() {
         const timestamp = Date.now();
         const urls = [
@@ -976,38 +976,52 @@
             localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
         } catch(e) {}
 
-        // ===== 更新检测：使用完整对象哈希 =====
-        const lastSnapshot = localStorage.getItem('gameSnapshot');
-        const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
-        const currentSet = new Set();
-        for (const game of newGameDB) {
-            currentSet.add(getGameHash(game));
-        }
-
-        const now = new Date().toISOString().slice(0, 10);
-        let newRecords = [];
-        if (lastSet.size > 0) {
+        // ===== 今日更新持久化：以日期为键，每天第一次加载时生成，后续直接读取 =====
+        const today = new Date().toISOString().slice(0, 10);
+        const todayStorageKey = `todayUpdateRecords_${today}`;
+        let storedTodayRecords = localStorage.getItem(todayStorageKey);
+        
+        if (storedTodayRecords) {
+            // 当天已有记录，直接使用
+            updateRecords = JSON.parse(storedTodayRecords);
+            console.log(`使用缓存的今日更新记录: ${updateRecords.length} 条`);
+        } else {
+            // 新的一天，重新检测变更
+            const lastSnapshot = localStorage.getItem('gameSnapshot');
+            const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
+            const currentSet = new Set();
             for (const game of newGameDB) {
-                const hash = getGameHash(game);
-                if (!lastSet.has(hash)) {
-                    newRecords.push({ game, date: now });
+                currentSet.add(getGameHash(game));
+            }
+
+            const newRecords = [];
+            if (lastSet.size > 0) {
+                for (const game of newGameDB) {
+                    const hash = getGameHash(game);
+                    if (!lastSet.has(hash)) {
+                        newRecords.push({ game, date: today });
+                    }
                 }
             }
-        } else {
-            // 首次访问，不记录任何更新，避免显示大量记录
-            newRecords = [];
+            // 首次访问无快照时，newRecords 为空，不记录
+            updateRecords = newRecords;
+            // 保存当天记录
+            localStorage.setItem(todayStorageKey, JSON.stringify(updateRecords));
+            console.log(`生成新的今日更新记录: ${updateRecords.length} 条`);
         }
 
-        // 只保留当天的更新记录，不累积历史
-        updateRecords = newRecords;
-        localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
-
+        // 更新按钮上的数字
         todayUpdateCount = updateRecords.length;
         const updateBtn = document.getElementById('todayUpdateBtn');
         if (updateBtn) {
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
 
+        // 保存快照（用于明天的对比，无论是否新的一天都要更新）
+        const currentSet = new Set();
+        for (const game of newGameDB) {
+            currentSet.add(getGameHash(game));
+        }
         localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
 
         gameDB = newGameDB;
