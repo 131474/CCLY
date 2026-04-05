@@ -404,20 +404,28 @@
             border-color: #4797cf;
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
+        /* 游戏标题行：名称在上，日期在下 */
         .game-title-row {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .game-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #134b66;
+            word-break: break-word;
         }
         .update-date-badge {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: #1e88e5;
             background: rgba(30, 136, 229, 0.1);
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
-            white-space: nowrap;
+            display: inline-block;
+            align-self: flex-start;
         }
         .modal-qr-group {
             display: flex;
@@ -911,7 +919,7 @@
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];      // 存储当天的更新记录 [{ game, date }]
+    let updateRecords = [];      // 存储近三天的更新记录 [{ game, date, change_time }]
     let todayUpdateCount = 0;
     let currentUpdatePage = 1;
     let totalUpdatePages = 1;
@@ -934,7 +942,6 @@
     }
 
     function getGameHash(game) {
-        // 用于快照对比，但这里我们只比较名称，所以保留完整哈希也可以
         const { lastUpdateDate, ...core } = game;
         return JSON.stringify(core);
     }
@@ -1001,13 +1008,13 @@
                 .order('created_at', { ascending: false })
                 .limit(1)
                 .maybeSingle();
-            if (!snapshotError && snapshotData && snapshotData.snapshot && Array.isArray(snapshotData.snapshot)) {
+            if (!snapshotError && snapshotData && snapshotData.snapshot && Array.isArray(snapshotData.snapshot) && snapshotData.snapshot.length > 0) {
                 oldGameDB = snapshotData.snapshot;
                 lastSnapshotExists = true;
             }
         }
 
-        // 2. 构建旧游戏名称映射（name -> 游戏对象）
+        // 2. 构建旧游戏名称映射
         const oldNameMap = new Map();
         for (const game of oldGameDB) {
             oldNameMap.set(game.name, game);
@@ -1018,18 +1025,14 @@
         for (const newGame of newGameDB) {
             const oldGame = oldNameMap.get(newGame.name);
             if (!oldGame) {
-                // 新增游戏
                 changedGames.push(newGame);
             } else if (oldGame.name !== newGame.name) {
-                // 名称变化（实际上 name 作为 key 不会进入这里，但保留）
                 changedGames.push(newGame);
             }
         }
-        // 注意：删除游戏不触发更新记录
 
         // 4. 写入更新记录（只记录名称变化，每个游戏每天只记录一次）
         if (changedGames.length > 0 && supabaseClient) {
-            // 查询今天已经更新过的游戏名称
             const { data: existingRecords, error: queryError } = await supabaseClient
                 .from('update_records')
                 .select('game_name')
@@ -1038,7 +1041,6 @@
             if (!queryError && existingRecords) {
                 existingRecords.forEach(rec => existingNames.add(rec.game_name));
             }
-
             const newGames = changedGames.filter(g => !existingNames.has(g.name));
             if (newGames.length > 0) {
                 const records = newGames.map(g => ({
@@ -1053,8 +1055,6 @@
                     .insert(records);
                 if (insertError) console.error('写入更新记录失败', insertError);
                 else console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
-            } else {
-                console.log('今日名称变更已全部记录，跳过重复插入');
             }
         }
 
@@ -1066,7 +1066,7 @@
             if (insertSnapshotError) console.error('保存快照失败', insertSnapshotError);
         }
 
-        // 6. 查询今日更新数量
+        // 6. 查询今日更新数量（当天 change_date = today）
         let todayCount = 0;
         if (supabaseClient) {
             const { count, error: countError } = await supabaseClient
@@ -1086,18 +1086,32 @@
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
 
-        // 7. 加载今日更新记录（按 change_time 倒序）
+        // 7. 加载最近三天的更新记录（按 change_time 倒序）
         if (supabaseClient) {
-            const { data: todayRecords, error: fetchError } = await supabaseClient
+            const threeDaysAgo = new Date();
+            threeDaysAgo.setDate(threeDaysAgo.getDate() - 2);
+            const startDate = threeDaysAgo.toISOString().slice(0, 10);
+            const { data: recentRecords, error: fetchError } = await supabaseClient
                 .from('update_records')
                 .select('game_snapshot, change_time, game_name')
-                .eq('change_date', today)
+                .gte('change_date', startDate)
                 .order('change_time', { ascending: false });
-            if (!fetchError && todayRecords) {
-                updateRecords = todayRecords.map(rec => ({
+            if (!fetchError && recentRecords) {
+                // 去重：同一游戏同一天只保留最新一条（按 change_time 已倒序，取第一次出现）
+                const uniqueMap = new Map();
+                for (const rec of recentRecords) {
+                    const key = `${rec.game_name}_${rec.change_time.slice(0,10)}`;
+                    if (!uniqueMap.has(key)) {
+                        uniqueMap.set(key, rec);
+                    }
+                }
+                updateRecords = Array.from(uniqueMap.values()).map(rec => ({
                     game: rec.game_snapshot,
-                    date: rec.change_time.slice(0, 10)  // 只取年月日用于显示
+                    date: rec.change_time.slice(0, 10),
+                    change_time: rec.change_time
                 }));
+                // 再按 change_time 倒序排序（确保顺序正确）
+                updateRecords.sort((a, b) => new Date(b.change_time) - new Date(a.change_time));
             } else {
                 updateRecords = [];
             }
@@ -1220,7 +1234,9 @@
         let html = '';
         games.forEach((game, idx) => {
             html += `<div class="modal-game-card">
-                        <div class="game-title-row">🎮 ${game.name}</div>
+                        <div class="game-title-row">
+                            <div class="game-name">🎮 ${game.name}</div>
+                        </div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
                 html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
@@ -1233,16 +1249,16 @@
         return html;
     }
 
-    // ==================== 今日更新模态框 ====================
+    // ==================== 今日更新模态框（近三天记录，每页4个） ====================
     async function openUpdateModal() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        if (!updateRecords.length) { alert('今天没有新游戏更新'); return; }
+        if (!updateRecords.length) { alert('近三天没有游戏更新'); return; }
         
         currentMode = 'update';
         currentUpdatePage = 1;
         totalUpdatePages = Math.ceil(updateRecords.length / 4);
         const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${updateRecords.length}</span>`;
+        modalTitle.innerHTML = `📅 更新历史 <span class="result-count">${updateRecords.length}</span>`;
         document.getElementById('pagination').style.display = 'flex';
         document.getElementById('download-tip').style.display = 'flex';
         await renderTodayUpdatePage(1);
@@ -1280,8 +1296,8 @@
             if (!game) return;
             html += `<div class="modal-game-card">
                         <div class="game-title-row">
-                            <span>🎮 ${game.name}</span>
-                            <span class="update-date-badge">更新于 ${updateDate}</span>
+                            <div class="game-name">🎮 ${game.name}</div>
+                            <div class="update-date-badge">更新于 ${updateDate}</div>
                         </div>
                         <div class="modal-qr-group">`;
             if (game.links && game.links.length) {
