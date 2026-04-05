@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
-    <!-- 预连接与预加载，加速首次请求 -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- 预连接加速 -->
+    <link rel="preconnect" href="https://www.steamck.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
@@ -900,21 +899,16 @@
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];      // 存储 [{ game, date }]
+    let updateRecords = [];      // 只存储当天的更新记录 [{ game, date }]
     let todayUpdateCount = 0;
     let currentUpdatePage = 1;
     let totalUpdatePages = 1;
-    let totalUpdateCount = 0;
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
     let currentGameQuery = '';
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
-
-    // 当天更新记录（用于今日更新模态框）
-    let todayUpdateRecords = [];
-    let todayTotalCount = 0;
 
     // ==================== 辅助函数 ====================
     function escapeHtml(str) {
@@ -933,13 +927,11 @@
         return JSON.stringify(core);
     }
 
-    // ==================== 游戏数据加载（优先 jsDelivr，支持 purge） ====================
+    // ==================== 游戏数据加载（使用 Cloudflare 加速） ====================
     async function loadGameData() {
         const timestamp = Date.now();
-        // 优先使用支持 purge 的 jsDelivr，其次国内镜像，最后 GitHub 原始地址
         const urls = [
-            `https://cdn.jsdelivr.net/gh/131474/CCLY@main/games.json?t=${timestamp}`,
-            `https://cdn.osyb.cn/gh/131474/CCLY@main/games.json?t=${timestamp}`,
+            `/games.json?t=${timestamp}`,
             `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
         ];
 
@@ -993,7 +985,7 @@
         }
 
         const now = new Date().toISOString().slice(0, 10);
-        const newRecords = [];
+        let newRecords = [];
         if (lastSet.size > 0) {
             for (const game of newGameDB) {
                 const hash = getGameHash(game);
@@ -1001,16 +993,16 @@
                     newRecords.push({ game, date: now });
                 }
             }
+        } else {
+            // 首次访问，不记录任何更新，避免显示大量记录
+            newRecords = [];
         }
 
-        const storedRecords = localStorage.getItem('updateRecords');
-        let existingRecords = storedRecords ? JSON.parse(storedRecords) : [];
-        updateRecords = [...newRecords, ...existingRecords];
-        if (updateRecords.length > 1000) updateRecords = updateRecords.slice(0, 1000);
+        // 只保留当天的更新记录，不累积历史
+        updateRecords = newRecords;
         localStorage.setItem('updateRecords', JSON.stringify(updateRecords));
 
-        const today = new Date().toISOString().slice(0, 10);
-        todayUpdateCount = updateRecords.filter(r => r.date === today).length;
+        todayUpdateCount = updateRecords.length;
         const updateBtn = document.getElementById('todayUpdateBtn');
         if (updateBtn) {
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
@@ -1146,25 +1138,16 @@
         return html;
     }
 
-    // ==================== 今日更新模态框（只显示当天更新，每页4个）====================
+    // ==================== 今日更新模态框（直接使用 updateRecords，每页4个）====================
     async function openUpdateModal() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        if (!updateRecords.length) { alert('暂无更新记录'); return; }
-        
-        const today = new Date().toISOString().slice(0, 10);
-        todayUpdateRecords = updateRecords.filter(r => r.date === today);
-        todayTotalCount = todayUpdateRecords.length;
-        
-        if (todayTotalCount === 0) {
-            alert('今天没有新游戏更新');
-            return;
-        }
+        if (!updateRecords.length) { alert('今天没有新游戏更新'); return; }
         
         currentMode = 'update';
         currentUpdatePage = 1;
-        totalUpdatePages = Math.ceil(todayTotalCount / 4);
+        totalUpdatePages = Math.ceil(updateRecords.length / 4);
         const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${todayTotalCount}</span>`;
+        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${updateRecords.length}</span>`;
         document.getElementById('pagination').style.display = 'flex';
         document.getElementById('download-tip').style.display = 'flex';
         await renderTodayUpdatePage(1);
@@ -1174,7 +1157,7 @@
     async function renderTodayUpdatePage(page) {
         const start = (page - 1) * 4;
         const end = start + 4;
-        const pageRecords = todayUpdateRecords.slice(start, end);
+        const pageRecords = updateRecords.slice(start, end);
         const modalBody = document.getElementById('modalBody');
         modalBody.innerHTML = generateUpdateCards(pageRecords);
         for (let i = 0; i < pageRecords.length; i++) {
@@ -1188,7 +1171,7 @@
             }
         }
         attachQrZoom();
-        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${todayTotalCount}条更新)`;
+        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${updateRecords.length}条更新)`;
         document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
         document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
     }
