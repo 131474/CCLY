@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
     <link rel="preconnect" href="https://www.steamck.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <style>
         /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
@@ -931,6 +931,173 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
+    // ==================== 缓存与哈希 ====================
+    const GAMES_HASH_KEY = 'game_library_hash';
+    const GAMES_DATA_KEY = 'game_library_data';
+    const SNAPSHOT_CACHE_KEY = 'game_snapshot_cache';
+
+    function simpleHash(str) {
+        let hash = 0;
+        for (let i = 0; i < str.length; i++) {
+            hash = ((hash << 5) - hash) + str.charCodeAt(i);
+            hash |= 0;
+        }
+        return hash.toString();
+    }
+
+    async function fetchGamesJSON() {
+        const timestamp = Date.now();
+        const urls = [
+            `/games.json?t=${timestamp}`,
+            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
+        ];
+        for (const url of urls) {
+            try {
+                const res = await fetch(url, { cache: 'no-cache' });
+                if (res.ok) return await res.json();
+            } catch (e) {}
+        }
+        return null;
+    }
+
+    // 加载近三天更新记录（合并今日计数）
+    async function loadUpdateRecords() {
+        if (!supabaseClient) return;
+        const today = new Date().toISOString().slice(0, 10);
+        const threeDaysAgo = new Date();
+        threeDaysAgo.setDate(threeDaysAgo.getDate() - 2);
+        const startDate = threeDaysAgo.toISOString().slice(0, 10);
+
+        const { data, error } = await supabaseClient
+            .from('update_records')
+            .select('game_snapshot, change_time, game_name, change_date')
+            .gte('change_date', startDate)
+            .order('change_time', { ascending: false });
+
+        if (!error && data) {
+            todayUpdateCount = data.filter(r => r.change_date === today).length;
+            const uniqueMap = new Map();
+            for (const rec of data) {
+                const key = `${rec.game_name}_${rec.change_date}`;
+                if (!uniqueMap.has(key)) uniqueMap.set(key, rec);
+            }
+            updateRecords = Array.from(uniqueMap.values()).map(rec => ({
+                game: rec.game_snapshot,
+                date: rec.change_date,
+                change_time: rec.change_time
+            }));
+            updateRecords.sort((a, b) => new Date(b.change_time) - new Date(a.change_time));
+        } else {
+            todayUpdateCount = 0;
+            updateRecords = [];
+        }
+
+        const updateBtn = document.getElementById('todayUpdateBtn');
+        if (updateBtn) {
+            updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
+        }
+    }
+
+    // 同步 Supabase（仅在数据变化时执行）
+    async function syncWithSupabase(newGameDB) {
+        const now = new Date();
+        const today = now.toISOString().slice(0, 10);
+        const nowISO = now.toISOString();
+
+        // 获取旧快照（优先使用缓存）
+        let oldGameDB = [];
+        const cachedSnapshot = localStorage.getItem(SNAPSHOT_CACHE_KEY);
+        if (cachedSnapshot) {
+            try {
+                oldGameDB = JSON.parse(cachedSnapshot);
+            } catch(e) {}
+        }
+        if (!oldGameDB.length && supabaseClient) {
+            const { data } = await supabaseClient
+                .from('game_snapshot')
+                .select('snapshot')
+                .order('created_at', { ascending: false })
+                .limit(1);
+            if (data && data[0]) oldGameDB = data[0].snapshot;
+            if (oldGameDB.length) localStorage.setItem(SNAPSHOT_CACHE_KEY, JSON.stringify(oldGameDB));
+        }
+
+        // 找出名称变化的游戏（新增或名称改变）
+        const oldNameSet = new Set(oldGameDB.map(g => g.name));
+        const changedGames = newGameDB.filter(g => !oldNameSet.has(g.name));
+        
+        if (changedGames.length && supabaseClient) {
+            const { data: existing } = await supabaseClient
+                .from('update_records')
+                .select('game_name')
+                .eq('change_date', today);
+            const existingNames = new Set(existing?.map(r => r.game_name) || []);
+            const newGames = changedGames.filter(g => !existingNames.has(g.name));
+            if (newGames.length) {
+                const records = newGames.map(g => ({
+                    game_name: g.name,
+                    platform: g.platform || null,
+                    change_date: today,
+                    change_time: nowISO,
+                    game_snapshot: g
+                }));
+                await supabaseClient.from('update_records').insert(records);
+                console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
+            }
+        }
+
+        // 保存新快照
+        if (supabaseClient) {
+            await supabaseClient.from('game_snapshot').insert({ snapshot: newGameDB });
+            localStorage.setItem(SNAPSHOT_CACHE_KEY, JSON.stringify(newGameDB));
+        }
+
+        // 刷新更新记录
+        await loadUpdateRecords();
+    }
+
+    // 主加载逻辑
+    async function loadGameData() {
+        // 1. 快速从缓存加载，让页面立即显示
+        const cachedData = localStorage.getItem(GAMES_DATA_KEY);
+        if (cachedData) {
+            try {
+                gameDB = JSON.parse(cachedData);
+                dataLoaded = true;
+                renderHotGames();
+                console.log('✅ 缓存加载完成，可立即搜索');
+            } catch(e) {}
+        }
+
+        // 2. 后台获取最新 games.json
+        const newGameDB = await fetchGamesJSON();
+        if (!newGameDB) {
+            if (!dataLoaded) alert('游戏数据加载失败');
+            return;
+        }
+
+        const newHash = simpleHash(JSON.stringify(newGameDB));
+        const oldHash = localStorage.getItem(GAMES_HASH_KEY);
+
+        if (newHash !== oldHash || !cachedData) {
+            console.log('检测到游戏数据变化，开始同步 Supabase...');
+            await syncWithSupabase(newGameDB);
+            localStorage.setItem(GAMES_DATA_KEY, JSON.stringify(newGameDB));
+            localStorage.setItem(GAMES_HASH_KEY, newHash);
+            // 更新当前游戏列表
+            gameDB = newGameDB;
+            renderHotGames();
+        } else {
+            console.log('游戏数据无变化，跳过 Supabase 更新');
+        }
+
+        if (!dataLoaded) {
+            gameDB = newGameDB;
+            dataLoaded = true;
+            renderHotGames();
+        }
+    }
+
     // ==================== 辅助函数 ====================
     function escapeHtml(str) {
         if (!str) return '';
@@ -940,195 +1107,6 @@
             if (m === '>') return '&gt;';
             return m;
         });
-    }
-
-    function getGameHash(game) {
-        const { lastUpdateDate, ...core } = game;
-        return JSON.stringify(core);
-    }
-
-    // ==================== 游戏数据加载（只记录名称变更，首次加载不记录） ====================
-    async function loadGameData() {
-        const timestamp = Date.now();
-        const urls = [
-            `/games.json?t=${timestamp}`,
-            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
-        ];
-
-        async function fetchWithTimeout(url, timeout = 10000) {
-            const controller = new AbortController();
-            const id = setTimeout(() => controller.abort(), timeout);
-            try {
-                const response = await fetch(url, { signal: controller.signal });
-                clearTimeout(id);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return await response.json();
-            } catch (error) {
-                clearTimeout(id);
-                throw error;
-            }
-        }
-
-        let newGameDB = null;
-        let lastError = null;
-        for (const url of urls) {
-            try {
-                console.log(`尝试加载: ${url}`);
-                newGameDB = await fetchWithTimeout(url, 10000);
-                console.log(`成功从 ${url} 加载`);
-                break;
-            } catch (error) {
-                console.warn(`从 ${url} 加载失败:`, error);
-                lastError = error;
-            }
-        }
-
-        if (!newGameDB) {
-            console.error('所有数据源均加载失败', lastError);
-            gameDB = [];
-            dataLoaded = true;
-            alert('游戏数据加载失败，请检查网络或刷新页面重试');
-            return;
-        }
-
-        try {
-            localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
-        } catch(e) {}
-
-        const now = new Date();
-        const today = now.toISOString().slice(0, 10);
-        const nowISO = now.toISOString();
-
-        // 1. 获取上一次快照
-        let oldGameDB = [];
-        let lastSnapshotExists = false;
-        if (supabaseClient) {
-            const { data: snapshotData, error: snapshotError } = await supabaseClient
-                .from('game_snapshot')
-                .select('snapshot')
-                .order('created_at', { ascending: false })
-                .limit(1)
-                .maybeSingle();
-            if (!snapshotError && snapshotData && snapshotData.snapshot && Array.isArray(snapshotData.snapshot) && snapshotData.snapshot.length > 0) {
-                oldGameDB = snapshotData.snapshot;
-                lastSnapshotExists = true;
-            }
-        }
-
-        // 2. 只有当存在旧快照时，才进行变更检测和记录（避免首次加载时把所有游戏当成新增）
-        if (lastSnapshotExists && oldGameDB.length > 0) {
-            // 构建旧游戏名称映射
-            const oldNameMap = new Map();
-            for (const game of oldGameDB) {
-                oldNameMap.set(game.name, game);
-            }
-
-            // 找出名称变化的游戏（新增或名称改变）
-            const changedGames = [];
-            for (const newGame of newGameDB) {
-                const oldGame = oldNameMap.get(newGame.name);
-                if (!oldGame) {
-                    changedGames.push(newGame);
-                } else if (oldGame.name !== newGame.name) {
-                    changedGames.push(newGame);
-                }
-            }
-
-            // 写入更新记录（只记录名称变化，每个游戏每天只记录一次）
-            if (changedGames.length > 0 && supabaseClient) {
-                const { data: existingRecords, error: queryError } = await supabaseClient
-                    .from('update_records')
-                    .select('game_name')
-                    .eq('change_date', today);
-                const existingNames = new Set();
-                if (!queryError && existingRecords) {
-                    existingRecords.forEach(rec => existingNames.add(rec.game_name));
-                }
-                const newGames = changedGames.filter(g => !existingNames.has(g.name));
-                if (newGames.length > 0) {
-                    const records = newGames.map(g => ({
-                        game_name: g.name,
-                        platform: g.platform || null,
-                        change_date: today,
-                        change_time: nowISO,
-                        game_snapshot: g
-                    }));
-                    const { error: insertError } = await supabaseClient
-                        .from('update_records')
-                        .insert(records);
-                    if (insertError) console.error('写入更新记录失败', insertError);
-                    else console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
-                }
-            }
-        } else {
-            console.log('首次加载或无旧快照，跳过变更检测，不记录任何更新');
-        }
-
-        // 3. 保存新快照（无论是否有旧快照，都要保存当前数据作为下一次的基准）
-        if (supabaseClient) {
-            const { error: insertSnapshotError } = await supabaseClient
-                .from('game_snapshot')
-                .insert({ snapshot: newGameDB });
-            if (insertSnapshotError) console.error('保存快照失败', insertSnapshotError);
-        }
-
-        // 4. 查询今日更新数量（当天 change_date = today）
-        let todayCount = 0;
-        if (supabaseClient) {
-            const { count, error: countError } = await supabaseClient
-                .from('update_records')
-                .select('*', { count: 'exact', head: true })
-                .eq('change_date', today);
-            if (!countError) {
-                todayCount = count || 0;
-            } else {
-                console.error('查询今日更新失败', countError);
-            }
-        }
-
-        todayUpdateCount = todayCount;
-        const updateBtn = document.getElementById('todayUpdateBtn');
-        if (updateBtn) {
-            updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
-        }
-
-        // 5. 加载最近三天的更新记录（按 change_time 倒序）
-        if (supabaseClient) {
-            const threeDaysAgo = new Date();
-            threeDaysAgo.setDate(threeDaysAgo.getDate() - 2);
-            const startDate = threeDaysAgo.toISOString().slice(0, 10);
-            const { data: recentRecords, error: fetchError } = await supabaseClient
-                .from('update_records')
-                .select('game_snapshot, change_time, game_name')
-                .gte('change_date', startDate)
-                .order('change_time', { ascending: false });
-            if (!fetchError && recentRecords) {
-                // 去重：同一游戏同一天只保留最新一条（按 change_time 已倒序，取第一次出现）
-                const uniqueMap = new Map();
-                for (const rec of recentRecords) {
-                    const key = `${rec.game_name}_${rec.change_time.slice(0,10)}`;
-                    if (!uniqueMap.has(key)) {
-                        uniqueMap.set(key, rec);
-                    }
-                }
-                updateRecords = Array.from(uniqueMap.values()).map(rec => ({
-                    game: rec.game_snapshot,
-                    date: rec.change_time.slice(0, 10),
-                    change_time: rec.change_time
-                }));
-                // 再按 change_time 倒序排序（确保顺序正确）
-                updateRecords.sort((a, b) => new Date(b.change_time) - new Date(a.change_time));
-            } else {
-                updateRecords = [];
-            }
-        } else {
-            updateRecords = [];
-        }
-
-        gameDB = newGameDB;
-        dataLoaded = true;
-        console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-        renderHotGames();
     }
 
     function renderHotGames() {
@@ -1255,7 +1233,7 @@
         return html;
     }
 
-    // ==================== 今日更新模态框（近三天记录，每页4个） ====================
+    // ==================== 今日更新模态框 ====================
     async function openUpdateModal() {
         if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
         if (!updateRecords.length) { alert('近三天没有游戏更新'); return; }
