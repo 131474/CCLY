@@ -263,22 +263,6 @@
             transform: translateY(-1px);
             box-shadow: 0 4px 8px rgba(30, 100, 160, 0.2);
         }
-        #todayUpdateBtn {
-            background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
-            border-color: #ff8c42;
-            animation: pulse 1.5s infinite;
-            padding: 0.7rem 1.2rem;
-            font-size: 1rem;
-            font-weight: 700;
-            min-width: 130px;
-            white-space: nowrap;
-            box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
-            70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
-        }
         .loading-spinner {
             display: inline-block;
             width: 30px;
@@ -410,14 +394,6 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 0.5rem;
-        }
-        .update-date-badge {
-            font-size: 0.75rem;
-            color: #1e88e5;
-            background: rgba(30, 136, 229, 0.1);
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            white-space: nowrap;
         }
         .modal-qr-group {
             display: flex;
@@ -758,7 +734,6 @@
             .hot-item img { width: 70px; height: 70px; }
             .game-input { padding-right: 2.8rem; }
             .game-input::placeholder { font-size: 0.9rem; }
-            #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
             .switch-area-icons, .tools-area-icons {
@@ -798,7 +773,6 @@
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
-            <button class="tool-btn" id="todayUpdateBtn"><span>📅</span> 今日更新 <span style="font-size:0.7rem;">(0)</span></button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
             </div>
@@ -899,10 +873,6 @@
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];      // 只存储当天的更新记录 [{ game, date }]
-    let todayUpdateCount = 0;
-    let currentUpdatePage = 1;
-    let totalUpdatePages = 1;
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
@@ -921,13 +891,7 @@
         });
     }
 
-    // 获取游戏对象的唯一哈希（排除可能动态添加的字段）
-    function getGameHash(game) {
-        const { lastUpdateDate, ...core } = game;
-        return JSON.stringify(core);
-    }
-
-    // ==================== 游戏数据加载（使用 Cloudflare 加速，持久化今日更新） ====================
+    // ==================== 游戏数据加载 ====================
     async function loadGameData() {
         const timestamp = Date.now();
         const urls = [
@@ -975,54 +939,6 @@
         try {
             localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
         } catch(e) {}
-
-        // ===== 今日更新持久化：以日期为键，每天第一次加载时生成，后续直接读取 =====
-        const today = new Date().toISOString().slice(0, 10);
-        const todayStorageKey = `todayUpdateRecords_${today}`;
-        let storedTodayRecords = localStorage.getItem(todayStorageKey);
-        
-        if (storedTodayRecords) {
-            // 当天已有记录，直接使用
-            updateRecords = JSON.parse(storedTodayRecords);
-            console.log(`使用缓存的今日更新记录: ${updateRecords.length} 条`);
-        } else {
-            // 新的一天，重新检测变更
-            const lastSnapshot = localStorage.getItem('gameSnapshot');
-            const lastSet = lastSnapshot ? new Set(JSON.parse(lastSnapshot)) : new Set();
-            const currentSet = new Set();
-            for (const game of newGameDB) {
-                currentSet.add(getGameHash(game));
-            }
-
-            const newRecords = [];
-            if (lastSet.size > 0) {
-                for (const game of newGameDB) {
-                    const hash = getGameHash(game);
-                    if (!lastSet.has(hash)) {
-                        newRecords.push({ game, date: today });
-                    }
-                }
-            }
-            // 首次访问无快照时，newRecords 为空，不记录
-            updateRecords = newRecords;
-            // 保存当天记录
-            localStorage.setItem(todayStorageKey, JSON.stringify(updateRecords));
-            console.log(`生成新的今日更新记录: ${updateRecords.length} 条`);
-        }
-
-        // 更新按钮上的数字
-        todayUpdateCount = updateRecords.length;
-        const updateBtn = document.getElementById('todayUpdateBtn');
-        if (updateBtn) {
-            updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
-        }
-
-        // 保存快照（用于明天的对比，无论是否新的一天都要更新）
-        const currentSet = new Set();
-        for (const game of newGameDB) {
-            currentSet.add(getGameHash(game));
-        }
-        localStorage.setItem('gameSnapshot', JSON.stringify([...currentSet]));
 
         gameDB = newGameDB;
         dataLoaded = true;
@@ -1152,72 +1068,6 @@
         return html;
     }
 
-    // ==================== 今日更新模态框（直接使用 updateRecords，每页4个）====================
-    async function openUpdateModal() {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        if (!updateRecords.length) { alert('今天没有新游戏更新'); return; }
-        
-        currentMode = 'update';
-        currentUpdatePage = 1;
-        totalUpdatePages = Math.ceil(updateRecords.length / 4);
-        const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 今日更新 <span class="result-count">${updateRecords.length}</span>`;
-        document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
-        await renderTodayUpdatePage(1);
-        openResultModal();
-    }
-
-    async function renderTodayUpdatePage(page) {
-        const start = (page - 1) * 4;
-        const end = start + 4;
-        const pageRecords = updateRecords.slice(start, end);
-        const modalBody = document.getElementById('modalBody');
-        modalBody.innerHTML = generateUpdateCards(pageRecords);
-        for (let i = 0; i < pageRecords.length; i++) {
-            const record = pageRecords[i];
-            const game = record.game;
-            if (game && game.links) {
-                for (let j = 0; j < game.links.length; j++) {
-                    const container = document.getElementById(`update-qr-${i}-${j}`);
-                    if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
-                }
-            }
-        }
-        attachQrZoom();
-        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${updateRecords.length}条更新)`;
-        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
-        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
-    }
-
-    function generateUpdateCards(records) {
-        if (!records.length) return '<div class="empty-modal-msg">暂无更新记录</div>';
-        let html = '';
-        records.forEach((record, idx) => {
-            const game = record.game;
-            const updateDate = record.date;
-            if (!game) return;
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <span>🎮 ${game.name}</span>
-                            <span class="update-date-badge">更新于 ${updateDate}</span>
-                        </div>
-                        <div class="modal-qr-group">`;
-            if (game.links && game.links.length) {
-                game.links.forEach((link, linkIdx) => {
-                    html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                                <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
-                                <span class="qr-label">${link.name}</span>
-                             </div>`;
-                });
-            } else {
-                html += `<span class="qr-label">无链接</span>`;
-            }
-            html += `</div></div>`;
-        });
-        return html;
-    }
-
     // ==================== QR 相关函数 ====================
     async function generateQRCode(container, text) {
         if (!text) { container.innerHTML = '无'; return; }
@@ -1270,23 +1120,14 @@
         await loadGamePage(1);
     }
 
-    // ==================== 分页处理 ====================
     function handlePrevPage() {
         if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
         else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
-        else if (currentMode === 'update' && currentUpdatePage > 1) {
-            currentUpdatePage--;
-            renderTodayUpdatePage(currentUpdatePage);
-        }
     }
 
     function handleNextPage() {
         if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
         else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
-        else if (currentMode === 'update' && currentUpdatePage < totalUpdatePages) {
-            currentUpdatePage++;
-            renderTodayUpdatePage(currentUpdatePage);
-        }
     }
 
     // ==================== 工具按钮 ====================
@@ -1469,7 +1310,6 @@
                 }
             });
         });
-        document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
