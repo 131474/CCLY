@@ -938,7 +938,7 @@
         return JSON.stringify(core);
     }
 
-    // ==================== 游戏数据加载（集成 Supabase 跨设备同步） ====================
+    // ==================== 游戏数据加载（集成 Supabase，避免重复插入） ====================
     async function loadGameData() {
         const timestamp = Date.now();
         const urls = [
@@ -990,6 +990,7 @@
         
         // 1. 获取上一次快照（Supabase）
         let oldGameDB = [];
+        let lastSnapshotExists = false;
         if (supabaseClient) {
             const { data: snapshotData, error: snapshotError } = await supabaseClient
                 .from('game_snapshot')
@@ -999,32 +1000,52 @@
                 .maybeSingle();
             if (!snapshotError && snapshotData) {
                 oldGameDB = snapshotData.snapshot;
+                lastSnapshotExists = true;
             }
         }
         
-        // 2. 对比变化
-        const oldSet = new Set(oldGameDB.map(g => getGameHash(g)));
-        const newSet = new Set(newGameDB.map(g => getGameHash(g)));
-        const changedGames = [];
-        for (const game of newGameDB) {
-            if (!oldSet.has(getGameHash(game))) {
-                changedGames.push(game);
+        // 2. 对比变更（只在已有快照时才记录）
+        let changedGames = [];
+        if (lastSnapshotExists) {
+            const oldSet = new Set(oldGameDB.map(g => getGameHash(g)));
+            for (const game of newGameDB) {
+                if (!oldSet.has(getGameHash(game))) {
+                    changedGames.push(game);
+                }
             }
         }
         
-        // 3. 写入更新记录
+        // 3. 如果有变更，写入 update_records（避免重复插入当天已记录的游戏）
         if (changedGames.length > 0 && supabaseClient) {
-            const records = changedGames.map(g => ({
-                game_name: g.name,
-                platform: g.platform || null,
-                update_date: today,
-                game_snapshot: g
-            }));
-            const { error: insertError } = await supabaseClient
+            // 先查询今天已经更新过的游戏名称集合
+            const { data: existingRecords, error: queryError } = await supabaseClient
                 .from('update_records')
-                .insert(records);
-            if (insertError) console.error('写入更新记录失败', insertError);
-            else console.log(`记录了 ${changedGames.length} 个游戏的更新`);
+                .select('game_name')
+                .eq('update_date', today);
+            
+            const existingGameNames = new Set();
+            if (!queryError && existingRecords) {
+                existingRecords.forEach(rec => existingGameNames.add(rec.game_name));
+            }
+            
+            // 过滤出今天尚未记录的游戏
+            const newGames = changedGames.filter(g => !existingGameNames.has(g.name));
+            
+            if (newGames.length > 0) {
+                const records = newGames.map(g => ({
+                    game_name: g.name,
+                    platform: g.platform || null,
+                    update_date: today,
+                    game_snapshot: g
+                }));
+                const { error: insertError } = await supabaseClient
+                    .from('update_records')
+                    .insert(records);
+                if (insertError) console.error('写入更新记录失败', insertError);
+                else console.log(`记录了 ${newGames.length} 个新游戏的更新`);
+            } else {
+                console.log('今日更新已全部记录，跳过重复插入');
+            }
         }
         
         // 4. 保存新快照
@@ -1035,35 +1056,46 @@
             if (insertSnapshotError) console.error('保存快照失败', insertSnapshotError);
         }
         
-        // 5. 查询今日更新数量
+        // 5. 查询今日更新数量（按游戏名称去重）
+        let todayCount = 0;
         if (supabaseClient) {
-            const { count: todayCount, error: countError } = await supabaseClient
+            const { data: distinctGames, error: countError } = await supabaseClient
                 .from('update_records')
-                .select('*', { count: 'exact', head: true })
+                .select('game_name')
                 .eq('update_date', today);
-            if (!countError) {
-                todayUpdateCount = todayCount || 0;
+            if (!countError && distinctGames) {
+                const uniqueNames = new Set(distinctGames.map(g => g.game_name));
+                todayCount = uniqueNames.size;
             } else {
                 console.error('查询今日更新失败', countError);
-                todayUpdateCount = 0;
+                todayCount = 0;
             }
         } else {
-            todayUpdateCount = 0;
+            todayCount = 0;
         }
         
+        todayUpdateCount = todayCount;
         const updateBtn = document.getElementById('todayUpdateBtn');
         if (updateBtn) {
             updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
         }
         
-        // 6. 加载今日更新记录（用于模态框）
+        // 6. 加载今日更新记录（用于模态框，按游戏名称去重，保留最新的一条）
         if (supabaseClient) {
             const { data: todayRecords, error: fetchError } = await supabaseClient
                 .from('update_records')
-                .select('game_snapshot, update_date')
-                .eq('update_date', today);
+                .select('game_snapshot, update_date, game_name, created_at')
+                .eq('update_date', today)
+                .order('created_at', { ascending: false });
+            
             if (!fetchError && todayRecords) {
-                updateRecords = todayRecords.map(rec => ({
+                const uniqueMap = new Map();
+                for (const rec of todayRecords) {
+                    if (!uniqueMap.has(rec.game_name)) {
+                        uniqueMap.set(rec.game_name, rec);
+                    }
+                }
+                updateRecords = Array.from(uniqueMap.values()).map(rec => ({
                     game: rec.game_snapshot,
                     date: rec.update_date
                 }));
