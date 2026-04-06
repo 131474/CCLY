@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>🎮游戏宝库🎮</title>
+    <!-- 预连接加速 -->
     <link rel="preconnect" href="https://www.steamck.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <style>
@@ -262,22 +263,6 @@
             transform: translateY(-1px);
             box-shadow: 0 4px 8px rgba(30, 100, 160, 0.2);
         }
-        #todayUpdateBtn {
-            background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
-            border-color: #ff8c42;
-            animation: pulse 1.5s infinite;
-            padding: 0.7rem 1.2rem;
-            font-size: 1rem;
-            font-weight: 700;
-            min-width: 130px;
-            white-space: nowrap;
-            box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
-        }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
-            70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
-        }
         .loading-spinner {
             display: inline-block;
             width: 30px;
@@ -403,30 +388,12 @@
             border-color: #4797cf;
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
-        /* 游戏标题行：名称在左，日期在右（同一行） */
         .game-title-row {
             display: flex;
-            flex-direction: row;
-            align-items: center;
             justify-content: space-between;
+            align-items: flex-start;
             flex-wrap: wrap;
-            gap: 0.3rem;
-            margin-bottom: 0.8rem;
-        }
-        .game-name {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #134b66;
-            word-break: break-word;
-        }
-        .update-date-badge {
-            font-size: 0.7rem;
-            color: #1e88e5;
-            background: rgba(30, 136, 229, 0.1);
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            display: inline-block;
-            white-space: nowrap;
+            gap: 0.5rem;
         }
         .modal-qr-group {
             display: flex;
@@ -767,7 +734,6 @@
             .hot-item img { width: 70px; height: 70px; }
             .game-input { padding-right: 2.8rem; }
             .game-input::placeholder { font-size: 0.9rem; }
-            #todayUpdateBtn { padding: 0.4rem 0.8rem; font-size: 0.85rem; min-width: 110px; }
             .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
             .header-right { gap: 0.4rem; }
             .switch-area-icons, .tools-area-icons {
@@ -801,14 +767,12 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <div class="query-card">
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
-            <button class="tool-btn" id="todayUpdateBtn"><span>📅</span> 今日更新 <span style="font-size:0.7rem;">(0)</span></button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
             </div>
@@ -906,197 +870,15 @@
 </div>
 
 <script>
-    // ==================== Supabase 配置 ====================
-    const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
-    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
-    let supabaseClient = null;
-    if (typeof supabase !== 'undefined' && supabase.createClient) {
-        supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        console.log('Supabase 客户端初始化成功');
-    } else {
-        console.error('Supabase 库未加载，请检查网络');
-    }
-
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
-    let updateRecords = [];      // 存储近三天的更新记录 [{ game, date, change_time }]
-    let todayUpdateCount = 0;
-    let currentUpdatePage = 1;
-    let totalUpdatePages = 1;
     let currentUser = null;
     let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
     let currentMode = 'game';
     let currentGameQuery = '';
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
-
-    // ==================== 缓存与哈希 ====================
-    const GAMES_HASH_KEY = 'game_library_hash';
-    const GAMES_DATA_KEY = 'game_library_data';
-    const SNAPSHOT_CACHE_KEY = 'game_snapshot_cache';
-
-    function simpleHash(str) {
-        let hash = 0;
-        for (let i = 0; i < str.length; i++) {
-            hash = ((hash << 5) - hash) + str.charCodeAt(i);
-            hash |= 0;
-        }
-        return hash.toString();
-    }
-
-    async function fetchGamesJSON() {
-        const timestamp = Date.now();
-        const urls = [
-            `/games.json?t=${timestamp}`,
-            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
-        ];
-        for (const url of urls) {
-            try {
-                const res = await fetch(url, { cache: 'no-cache' });
-                if (res.ok) return await res.json();
-            } catch (e) {}
-        }
-        return null;
-    }
-
-    // 加载近三天更新记录（合并今日计数）
-    async function loadUpdateRecords() {
-        if (!supabaseClient) return;
-        const today = new Date().toISOString().slice(0, 10);
-        const threeDaysAgo = new Date();
-        threeDaysAgo.setDate(threeDaysAgo.getDate() - 2);
-        const startDate = threeDaysAgo.toISOString().slice(0, 10);
-
-        const { data, error } = await supabaseClient
-            .from('update_records')
-            .select('game_snapshot, change_time, game_name, change_date')
-            .gte('change_date', startDate)
-            .order('change_time', { ascending: false });
-
-        if (!error && data) {
-            todayUpdateCount = data.filter(r => r.change_date === today).length;
-            const uniqueMap = new Map();
-            for (const rec of data) {
-                const key = `${rec.game_name}_${rec.change_date}`;
-                if (!uniqueMap.has(key)) uniqueMap.set(key, rec);
-            }
-            updateRecords = Array.from(uniqueMap.values()).map(rec => ({
-                game: rec.game_snapshot,
-                date: rec.change_date,
-                change_time: rec.change_time
-            }));
-            updateRecords.sort((a, b) => new Date(b.change_time) - new Date(a.change_time));
-        } else {
-            todayUpdateCount = 0;
-            updateRecords = [];
-        }
-
-        const updateBtn = document.getElementById('todayUpdateBtn');
-        if (updateBtn) {
-            updateBtn.innerHTML = `<span>📅</span> 今日更新 <span style="font-size:0.7rem;">(${todayUpdateCount})</span>`;
-        }
-    }
-
-    // 同步 Supabase（仅在数据变化时执行）
-    async function syncWithSupabase(newGameDB) {
-        const now = new Date();
-        const today = now.toISOString().slice(0, 10);
-        const nowISO = now.toISOString();
-
-        // 获取旧快照（优先使用缓存）
-        let oldGameDB = [];
-        const cachedSnapshot = localStorage.getItem(SNAPSHOT_CACHE_KEY);
-        if (cachedSnapshot) {
-            try {
-                oldGameDB = JSON.parse(cachedSnapshot);
-            } catch(e) {}
-        }
-        if (!oldGameDB.length && supabaseClient) {
-            const { data } = await supabaseClient
-                .from('game_snapshot')
-                .select('snapshot')
-                .order('created_at', { ascending: false })
-                .limit(1);
-            if (data && data[0]) oldGameDB = data[0].snapshot;
-            if (oldGameDB.length) localStorage.setItem(SNAPSHOT_CACHE_KEY, JSON.stringify(oldGameDB));
-        }
-
-        // 找出名称变化的游戏（新增或名称改变）
-        const oldNameSet = new Set(oldGameDB.map(g => g.name));
-        const changedGames = newGameDB.filter(g => !oldNameSet.has(g.name));
-        
-        if (changedGames.length && supabaseClient) {
-            const { data: existing } = await supabaseClient
-                .from('update_records')
-                .select('game_name')
-                .eq('change_date', today);
-            const existingNames = new Set(existing?.map(r => r.game_name) || []);
-            const newGames = changedGames.filter(g => !existingNames.has(g.name));
-            if (newGames.length) {
-                const records = newGames.map(g => ({
-                    game_name: g.name,
-                    platform: g.platform || null,
-                    change_date: today,
-                    change_time: nowISO,
-                    game_snapshot: g
-                }));
-                await supabaseClient.from('update_records').insert(records);
-                console.log(`记录了 ${newGames.length} 个游戏的名称变更`);
-            }
-        }
-
-        // 保存新快照
-        if (supabaseClient) {
-            await supabaseClient.from('game_snapshot').insert({ snapshot: newGameDB });
-            localStorage.setItem(SNAPSHOT_CACHE_KEY, JSON.stringify(newGameDB));
-        }
-
-        // 刷新更新记录
-        await loadUpdateRecords();
-    }
-
-    // 主加载逻辑
-    async function loadGameData() {
-        // 1. 快速从缓存加载，让页面立即显示
-        const cachedData = localStorage.getItem(GAMES_DATA_KEY);
-        if (cachedData) {
-            try {
-                gameDB = JSON.parse(cachedData);
-                dataLoaded = true;
-                renderHotGames();
-                console.log('✅ 缓存加载完成，可立即搜索');
-            } catch(e) {}
-        }
-
-        // 2. 后台获取最新 games.json
-        const newGameDB = await fetchGamesJSON();
-        if (!newGameDB) {
-            if (!dataLoaded) alert('游戏数据加载失败');
-            return;
-        }
-
-        const newHash = simpleHash(JSON.stringify(newGameDB));
-        const oldHash = localStorage.getItem(GAMES_HASH_KEY);
-
-        if (newHash !== oldHash || !cachedData) {
-            console.log('检测到游戏数据变化，开始同步 Supabase...');
-            await syncWithSupabase(newGameDB);
-            localStorage.setItem(GAMES_DATA_KEY, JSON.stringify(newGameDB));
-            localStorage.setItem(GAMES_HASH_KEY, newHash);
-            // 更新当前游戏列表
-            gameDB = newGameDB;
-            renderHotGames();
-        } else {
-            console.log('游戏数据无变化，跳过 Supabase 更新');
-        }
-
-        if (!dataLoaded) {
-            gameDB = newGameDB;
-            dataLoaded = true;
-            renderHotGames();
-        }
-    }
 
     // ==================== 辅助函数 ====================
     function escapeHtml(str) {
@@ -1107,6 +889,61 @@
             if (m === '>') return '&gt;';
             return m;
         });
+    }
+
+    // ==================== 游戏数据加载 ====================
+    async function loadGameData() {
+        const timestamp = Date.now();
+        const urls = [
+            `/games.json?t=${timestamp}`,
+            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
+        ];
+
+        async function fetchWithTimeout(url, timeout = 10000) {
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), timeout);
+            try {
+                const response = await fetch(url, { signal: controller.signal });
+                clearTimeout(id);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                clearTimeout(id);
+                throw error;
+            }
+        }
+
+        let newGameDB = null;
+        let lastError = null;
+        for (const url of urls) {
+            try {
+                console.log(`尝试加载: ${url}`);
+                newGameDB = await fetchWithTimeout(url, 10000);
+                console.log(`成功从 ${url} 加载`);
+                break;
+            } catch (error) {
+                console.warn(`从 ${url} 加载失败:`, error);
+                lastError = error;
+            }
+        }
+
+        if (!newGameDB) {
+            console.error('所有数据源均加载失败', lastError);
+            gameDB = [];
+            dataLoaded = true;
+            alert('游戏数据加载失败，请检查网络或刷新页面重试');
+            return;
+        }
+
+        // 缓存到 localStorage
+        try {
+            localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
+        } catch(e) {}
+
+        gameDB = newGameDB;
+        dataLoaded = true;
+        console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
+        renderHotGames();
     }
 
     function renderHotGames() {
@@ -1218,9 +1055,7 @@
         let html = '';
         games.forEach((game, idx) => {
             html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <div class="game-name">🎮 ${game.name}</div>
-                        </div>
+                        <div class="game-title-row">🎮 ${game.name}</div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
                 html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
@@ -1228,72 +1063,6 @@
                             <span class="qr-label">${link.name}</span>
                          </div>`;
             });
-            html += `</div></div>`;
-        });
-        return html;
-    }
-
-    // ==================== 今日更新模态框 ====================
-    async function openUpdateModal() {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        if (!updateRecords.length) { alert('近三天没有游戏更新'); return; }
-        
-        currentMode = 'update';
-        currentUpdatePage = 1;
-        totalUpdatePages = Math.ceil(updateRecords.length / 4);
-        const modalTitle = document.getElementById('modalTitle');
-        modalTitle.innerHTML = `📅 更新历史 <span class="result-count">${updateRecords.length}</span>`;
-        document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
-        await renderTodayUpdatePage(1);
-        openResultModal();
-    }
-
-    async function renderTodayUpdatePage(page) {
-        const start = (page - 1) * 4;
-        const end = start + 4;
-        const pageRecords = updateRecords.slice(start, end);
-        const modalBody = document.getElementById('modalBody');
-        modalBody.innerHTML = generateUpdateCards(pageRecords);
-        for (let i = 0; i < pageRecords.length; i++) {
-            const record = pageRecords[i];
-            const game = record.game;
-            if (game && game.links) {
-                for (let j = 0; j < game.links.length; j++) {
-                    const container = document.getElementById(`update-qr-${i}-${j}`);
-                    if (container && game.links[j].url) await generateQRCode(container, game.links[j].url);
-                }
-            }
-        }
-        attachQrZoom();
-        document.getElementById('pageInfo').innerText = `第 ${currentUpdatePage}/${totalUpdatePages} 页 (共${updateRecords.length}条更新)`;
-        document.getElementById('prevPage').disabled = currentUpdatePage <= 1;
-        document.getElementById('nextPage').disabled = currentUpdatePage >= totalUpdatePages;
-    }
-
-    function generateUpdateCards(records) {
-        if (!records.length) return '<div class="empty-modal-msg">暂无更新记录</div>';
-        let html = '';
-        records.forEach((record, idx) => {
-            const game = record.game;
-            const updateDate = record.date;
-            if (!game) return;
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <div class="game-name">🎮 ${game.name}</div>
-                            <div class="update-date-badge">更新于 ${updateDate}</div>
-                        </div>
-                        <div class="modal-qr-group">`;
-            if (game.links && game.links.length) {
-                game.links.forEach((link, linkIdx) => {
-                    html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                                <div class="qr-code-box" id="update-qr-${idx}-${linkIdx}"></div>
-                                <span class="qr-label">${link.name}</span>
-                             </div>`;
-                });
-            } else {
-                html += `<span class="qr-label">无链接</span>`;
-            }
             html += `</div></div>`;
         });
         return html;
@@ -1354,19 +1123,11 @@
     function handlePrevPage() {
         if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
         else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
-        else if (currentMode === 'update' && currentUpdatePage > 1) {
-            currentUpdatePage--;
-            renderTodayUpdatePage(currentUpdatePage);
-        }
     }
 
     function handleNextPage() {
         if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
         else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
-        else if (currentMode === 'update' && currentUpdatePage < totalUpdatePages) {
-            currentUpdatePage++;
-            renderTodayUpdatePage(currentUpdatePage);
-        }
     }
 
     // ==================== 工具按钮 ====================
@@ -1549,7 +1310,6 @@
                 }
             });
         });
-        document.getElementById('todayUpdateBtn').addEventListener('click', openUpdateModal);
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
