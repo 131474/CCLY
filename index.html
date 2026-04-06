@@ -8,23 +8,29 @@
     <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     
-    <!-- ==================== 版本控制（每次部署请修改下面的版本号） ==================== -->
+    <!-- ==================== 版本控制（使用外部 version.json） ==================== -->
     <script>
-        // ⭐⭐⭐ 每次更新网站时，请修改此版本号（例如递增数字或改为当前日期），用户将自动刷新页面 ⭐⭐⭐
-        const APP_VERSION = '2026.04.07.006';
-        const STORAGE_VERSION_KEY = 'app_version';
-        const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
-        if (storedVersion !== APP_VERSION) {
-            // 清除所有可能缓存的游戏数据
-            localStorage.removeItem('cached_games_data');
-            localStorage.removeItem('gamesDB');
-            localStorage.removeItem('game_old_names');
-            localStorage.removeItem('game_changes_map');
-            // 存储新版本号
-            localStorage.setItem(STORAGE_VERSION_KEY, APP_VERSION);
-            // 强制刷新，绕过缓存
-            location.reload(true);
-        }
+        (async function() {
+            const STORAGE_VERSION_KEY = 'app_version';
+            // 添加时间戳强制刷新 version.json
+            const versionUrl = 'version.json?t=' + Date.now();
+            try {
+                const response = await fetch(versionUrl, { cache: 'no-store' });
+                if (!response.ok) throw new Error('version.json 加载失败');
+                const data = await response.json();
+                const latestVersion = data.version;
+                const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
+                if (storedVersion !== latestVersion) {
+                    // 清除游戏数据缓存（可选，但推荐）
+                    localStorage.removeItem('cached_games_data');
+                    localStorage.setItem(STORAGE_VERSION_KEY, latestVersion);
+                    // 强制刷新页面，获取最新 HTML
+                    location.reload(true);
+                }
+            } catch(e) {
+                console.warn('版本检测失败，继续使用本地缓存', e);
+            }
+        })();
     </script>
     
     <link rel="preconnect" href="https://www.steamck.com">
@@ -843,7 +849,6 @@
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
-            <!-- 按钮图标已改为 🎮 -->
             <button class="tool-btn" id="gameLibraryBtn">🎮 游戏库一览</button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
@@ -856,7 +861,6 @@
         <span class="publisher-icon">🎮</span>
         <span class="publisher-name">发布人：我不是game神</span>
     </div>
-    <!-- 滚动字幕 -->
     <div class="marquee-container">
         <div class="marquee-text">⚠️ 网络可能有延迟，再次刷新本页面可看到最新游戏 ⚠️</div>
     </div>
@@ -994,16 +998,18 @@
         });
     }
 
-    // 获取游戏变更日期（基于 lastChange 字段，且仅近三天显示）
+    // 获取游戏变更日期（只返回 YYYY-MM-DD，且仅近三天显示）
     function getGameChangeDate(game) {
         if (game.lastChange) {
-            const changeDate = new Date(game.lastChange);
+            // 只取日期部分（前10个字符）
+            const dateStr = game.lastChange.slice(0, 10);
+            const changeDate = new Date(dateStr);
             const today = new Date();
             today.setHours(0,0,0,0);
             const threeDaysAgo = new Date(today);
             threeDaysAgo.setDate(today.getDate() - 2);
             if (changeDate >= threeDaysAgo) {
-                return game.lastChange;
+                return dateStr;
             }
         }
         return null;
@@ -1135,7 +1141,7 @@
             try {
                 const response = await fetch(url, { 
                     signal: controller.signal,
-                    cache: 'no-store',   // 强制不缓存
+                    cache: 'no-store',
                     headers: { 'Cache-Control': 'no-cache' }
                 });
                 clearTimeout(id);
