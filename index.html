@@ -263,6 +263,23 @@
             transform: translateY(-1px);
             box-shadow: 0 4px 8px rgba(30, 100, 160, 0.2);
         }
+        /* 游戏库一览按钮特殊样式 */
+        #gameLibraryBtn {
+            background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
+            border-color: #ff8c42;
+            animation: pulse 1.5s infinite;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            min-width: 130px;
+            white-space: nowrap;
+            box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
+            70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
+        }
         .loading-spinner {
             display: inline-block;
             width: 30px;
@@ -388,12 +405,28 @@
             border-color: #4797cf;
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
+        /* 游戏标题行：名称在左，日期在右（同一行） */
         .game-title-row {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             flex-wrap: wrap;
             gap: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .game-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #134b66;
+            word-break: break-word;
+        }
+        .update-date-badge {
+            font-size: 0.7rem;
+            color: #1e88e5;
+            background: rgba(30, 136, 229, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            white-space: nowrap;
         }
         .modal-qr-group {
             display: flex;
@@ -773,6 +806,7 @@
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
+            <button class="tool-btn" id="gameLibraryBtn">📚 游戏库一览</button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
             </div>
@@ -834,6 +868,24 @@
         </div>
     </div>
 </div>
+
+<!-- 游戏库一览模态框 -->
+<div class="modal-overlay" id="libraryModal">
+    <div class="modal-container">
+        <div class="modal-header">
+            <div class="modal-title">游戏库一览 <span class="result-count" id="libraryCount">0</span></div>
+            <div class="modal-close" id="closeLibraryModalBtn">✕</div>
+        </div>
+        <div class="download-tip">点击二维码可放大，手机端可直接跳转至下载链接</div>
+        <div class="modal-body" id="libraryBody"><div class="empty-modal-msg">加载中...</div></div>
+        <div class="pagination" id="libraryPagination">
+            <button class="page-btn" id="libPrevPage" disabled>←</button>
+            <span class="page-info" id="libPageInfo">第 1/1 页</span>
+            <button class="page-btn" id="libNextPage" disabled>→</button>
+        </div>
+    </div>
+</div>
+
 <div class="modal-overlay" id="authModal">
     <div class="modal-container" style="max-width: 450px;">
         <div class="modal-header">
@@ -880,6 +932,17 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
+    // 游戏库一览分页变量
+    let currentLibraryPage = 1;
+    let totalLibraryPages = 1;
+    let totalGames = 0;
+    let sortedGames = [];       // 按变更时间排序后的游戏数组 { game, changeTime, changeDate }
+
+    // localStorage 键名
+    const CACHE_GAMES_KEY = 'cached_games_data';
+    const STORAGE_OLD_NAMES_KEY = 'game_old_names';
+    const STORAGE_CHANGES_KEY = 'game_changes_map';   // Map: 游戏名 -> ISO时间
+
     // ==================== 辅助函数 ====================
     function escapeHtml(str) {
         if (!str) return '';
@@ -891,8 +954,122 @@
         });
     }
 
-    // ==================== 游戏数据加载 ====================
+    // 获取当前时间 ISO 字符串
+    function getNowISO() {
+        return new Date().toISOString();
+    }
+
+    // 加载变更记录 Map
+    function loadChangeMap() {
+        const stored = localStorage.getItem(STORAGE_CHANGES_KEY);
+        if (stored) {
+            try {
+                return new Map(JSON.parse(stored));
+            } catch(e) { return new Map(); }
+        }
+        return new Map();
+    }
+
+    function saveChangeMap(map) {
+        localStorage.setItem(STORAGE_CHANGES_KEY, JSON.stringify(Array.from(map.entries())));
+    }
+
+    // 检测游戏名称变化并更新变更记录
+    function detectAndUpdateChanges(newGameNames) {
+        const oldNamesStr = localStorage.getItem(STORAGE_OLD_NAMES_KEY);
+        let oldNames = [];
+        if (oldNamesStr) {
+            try { oldNames = JSON.parse(oldNamesStr); } catch(e) {}
+        }
+        if (oldNames.length === 0) {
+            // 首次加载，不记录任何变更
+            localStorage.setItem(STORAGE_OLD_NAMES_KEY, JSON.stringify(newGameNames));
+            return;
+        }
+
+        const oldSet = new Set(oldNames);
+        const newSet = new Set(newGameNames);
+        const changeMap = loadChangeMap();
+
+        // 新增的游戏（新有旧无）
+        const added = newGameNames.filter(name => !oldSet.has(name));
+        // 删除的游戏（旧有新无）
+        const removed = oldNames.filter(name => !newSet.has(name));
+
+        const nowISO = getNowISO();
+
+        // 处理新增：记录当前时间
+        for (const name of added) {
+            changeMap.set(name, nowISO);
+        }
+        // 处理删除：从记录中移除
+        for (const name of removed) {
+            changeMap.delete(name);
+        }
+
+        saveChangeMap(changeMap);
+        // 更新旧名称列表
+        localStorage.setItem(STORAGE_OLD_NAMES_KEY, JSON.stringify(newGameNames));
+    }
+
+    // 获取游戏最后变更日期（仅当在近三天内返回 YYYY-MM-DD，否则返回 null）
+    function getGameChangeDate(gameName) {
+        const changeMap = loadChangeMap();
+        const changeISO = changeMap.get(gameName);
+        if (!changeISO) return null;
+        const changeDate = new Date(changeISO);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+        const threeDaysAgo = new Date(today);
+        threeDaysAgo.setDate(today.getDate() - 2); // 包括今天、昨天、前天
+        if (changeDate >= threeDaysAgo) {
+            return changeISO.slice(0,10);
+        }
+        return null;
+    }
+
+    // 获取游戏最后变更时间戳（用于排序，没有则返回 0）
+    function getGameChangeTimestamp(gameName) {
+        const changeMap = loadChangeMap();
+        const changeISO = changeMap.get(gameName);
+        if (!changeISO) return 0;
+        return new Date(changeISO).getTime();
+    }
+
+    // 构建排序后的游戏列表（按变更时间倒序，无变更时间的排最后，再按名称排序）
+    function buildSortedGames() {
+        const gamesWithTime = [];
+        const gamesWithoutTime = [];
+        for (const game of gameDB) {
+            const ts = getGameChangeTimestamp(game.name);
+            if (ts > 0) {
+                gamesWithTime.push({ game, changeTime: ts, changeDate: getGameChangeDate(game.name) });
+            } else {
+                gamesWithoutTime.push({ game, changeTime: 0, changeDate: null });
+            }
+        }
+        gamesWithTime.sort((a,b) => b.changeTime - a.changeTime);
+        gamesWithoutTime.sort((a,b) => a.game.name.localeCompare(b.game.name));
+        return [...gamesWithTime, ...gamesWithoutTime];
+    }
+
+    // ==================== 游戏数据加载（带缓存） ====================
     async function loadGameData() {
+        // 1. 先从缓存加载，让页面立即显示
+        const cachedData = localStorage.getItem(CACHE_GAMES_KEY);
+        if (cachedData) {
+            try {
+                const parsed = JSON.parse(cachedData);
+                if (Array.isArray(parsed) && parsed.length) {
+                    gameDB = parsed;
+                    dataLoaded = true;
+                    renderHotGames();
+                    console.log('✅ 从缓存加载游戏数据，共', gameDB.length, '个游戏');
+                }
+            } catch(e) {}
+        }
+
+        // 2. 后台获取最新 games.json
         const timestamp = Date.now();
         const urls = [
             `/games.json?t=${timestamp}`,
@@ -914,7 +1091,6 @@
         }
 
         let newGameDB = null;
-        let lastError = null;
         for (const url of urls) {
             try {
                 console.log(`尝试加载: ${url}`);
@@ -923,27 +1099,43 @@
                 break;
             } catch (error) {
                 console.warn(`从 ${url} 加载失败:`, error);
-                lastError = error;
             }
         }
 
         if (!newGameDB) {
-            console.error('所有数据源均加载失败', lastError);
-            gameDB = [];
-            dataLoaded = true;
-            alert('游戏数据加载失败，请检查网络或刷新页面重试');
+            if (!dataLoaded) {
+                alert('游戏数据加载失败，请检查网络或刷新页面重试');
+            }
             return;
         }
 
-        // 缓存到 localStorage
-        try {
-            localStorage.setItem('gamesDB', JSON.stringify(newGameDB));
-        } catch(e) {}
-
-        gameDB = newGameDB;
+        // 提取游戏名称列表
+        const newGameNames = newGameDB.map(g => g.name);
+        // 检测变化并更新记录
+        detectAndUpdateChanges(newGameNames);
+        // 更新缓存
+        localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
+        
+        // 如果新数据与当前数据不同（比如名称变更或新增），则更新 gameDB 并刷新界面
+        const currentNames = gameDB.map(g => g.name);
+        const isChanged = (newGameNames.length !== currentNames.length) || 
+                          newGameNames.some((n, i) => n !== currentNames[i]);
+        if (isChanged) {
+            gameDB = newGameDB;
+            renderHotGames();
+            // 如果游戏库模态框正在打开，刷新内容
+            const libModal = document.getElementById('libraryModal');
+            if (libModal && libModal.classList.contains('show')) {
+                renderLibraryPage(currentLibraryPage);
+            }
+        } else if (!dataLoaded) {
+            // 首次加载且缓存为空的情况
+            gameDB = newGameDB;
+            renderHotGames();
+        }
+        
         dataLoaded = true;
-        console.log(`✅ 成功加载 ${gameDB.length} 个游戏`);
-        renderHotGames();
+        console.log(`✅ 最终游戏数据 ${gameDB.length} 个游戏`);
     }
 
     function renderHotGames() {
@@ -976,6 +1168,90 @@
                 if (gameName) searchByKeyword(gameName);
             });
         });
+    }
+
+    // ==================== 游戏库一览 ====================
+    async function renderLibraryPage(page) {
+        const body = document.getElementById('libraryBody');
+        const countSpan = document.getElementById('libraryCount');
+        const paginationDiv = document.getElementById('libraryPagination');
+        if (!body) return;
+
+        if (!dataLoaded) {
+            body.innerHTML = '<div class="empty-modal-msg">游戏数据加载中...</div>';
+            paginationDiv.style.display = 'none';
+            return;
+        }
+
+        const sorted = buildSortedGames();
+        sortedGames = sorted;
+        totalGames = sortedGames.length;
+        totalLibraryPages = Math.ceil(totalGames / PAGE_SIZE);
+        const start = (page-1) * PAGE_SIZE;
+        const pageGames = sortedGames.slice(start, start+PAGE_SIZE);
+        countSpan.innerText = totalGames;
+
+        if (totalGames === 0) {
+            body.innerHTML = '<div class="empty-modal-msg">暂无游戏数据</div>';
+            paginationDiv.style.display = 'none';
+            return;
+        }
+
+        let html = '';
+        for (let i = 0; i < pageGames.length; i++) {
+            const item = pageGames[i];
+            const game = item.game;
+            const displayDate = getGameChangeDate(game.name);
+            html += `<div class="modal-game-card">
+                        <div class="game-title-row">
+                            <div class="game-name">🎮 ${escapeHtml(game.name)}</div>
+                            ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
+                        </div>
+                        <div class="modal-qr-group">`;
+            if (game.links && game.links.length) {
+                for (let li=0; li<game.links.length; li++) {
+                    const link = game.links[li];
+                    html += `<div class="modal-qr-item" data-link="${escapeHtml(link.url)}" data-platform="${escapeHtml(link.name)}">
+                                <div class="qr-code-box" id="lib-qr-${i}-${li}"></div>
+                                <span class="qr-label">${escapeHtml(link.name)}</span>
+                             </div>`;
+                }
+            } else {
+                html += `<span class="qr-label">无链接</span>`;
+            }
+            html += `</div></div>`;
+        }
+        body.innerHTML = html;
+
+        // 生成二维码
+        for (let i = 0; i < pageGames.length; i++) {
+            const game = pageGames[i].game;
+            if (game.links) {
+                for (let li=0; li<game.links.length; li++) {
+                    const url = game.links[li].url;
+                    const container = document.getElementById(`lib-qr-${i}-${li}`);
+                    if (container && url) {
+                        await generateQRCode(container, url);
+                    }
+                }
+            }
+        }
+        attachQrZoom();
+
+        document.getElementById('libPageInfo').innerText = `第 ${page}/${totalLibraryPages} 页 (共${totalGames}个)`;
+        document.getElementById('libPrevPage').disabled = (page <= 1);
+        document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
+        paginationDiv.style.display = 'flex';
+    }
+
+    function openLibraryModal() {
+        currentLibraryPage = 1;
+        renderLibraryPage(1);
+        document.getElementById('libraryModal').classList.add('show');
+    }
+
+    function closeLibraryModal() {
+        document.getElementById('libraryModal').classList.remove('show');
     }
 
     // ==================== 游戏搜索与分页 ====================
@@ -1055,7 +1331,9 @@
         let html = '';
         games.forEach((game, idx) => {
             html += `<div class="modal-game-card">
-                        <div class="game-title-row">🎮 ${game.name}</div>
+                        <div class="game-title-row">
+                            <div class="game-name">🎮 ${game.name}</div>
+                        </div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
                 html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
@@ -1309,6 +1587,25 @@
                     document.getElementById('searchBtn').click();
                 }
             });
+        });
+        // 游戏库一览按钮
+        const libBtn = document.getElementById('gameLibraryBtn');
+        if (libBtn) libBtn.addEventListener('click', openLibraryModal);
+        const closeLibBtn = document.getElementById('closeLibraryModalBtn');
+        if (closeLibBtn) closeLibBtn.addEventListener('click', closeLibraryModal);
+        const libPrev = document.getElementById('libPrevPage');
+        if (libPrev) libPrev.addEventListener('click', () => {
+            if (currentLibraryPage > 1) {
+                currentLibraryPage--;
+                renderLibraryPage(currentLibraryPage);
+            }
+        });
+        const libNext = document.getElementById('libNextPage');
+        if (libNext) libNext.addEventListener('click', () => {
+            if (currentLibraryPage < totalLibraryPages) {
+                currentLibraryPage++;
+                renderLibraryPage(currentLibraryPage);
+            }
         });
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
