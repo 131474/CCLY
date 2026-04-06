@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- 强制禁止缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     <!-- 预连接加速 -->
     <link rel="preconnect" href="https://www.steamck.com">
@@ -746,6 +750,15 @@
         .simple-modal-content { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; }
         .simple-modal-message { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
         .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; }
+        /* 蓝色日期样式 */
+        .update-date-badge {
+            font-size: 0.85rem;
+            color: #0077ff;
+            background: rgba(0, 119, 255, 0.1);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
         @media (max-width: 640px) {
             .hot-item { width: 70px; }
             .hot-item img { width: 70px; height: 70px; }
@@ -790,7 +803,6 @@
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
-            <!-- 新增游戏库一览按钮 -->
             <button class="tool-btn" id="gameLibraryBtn">📚 游戏库一览</button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
@@ -854,7 +866,7 @@
     </div>
 </div>
 
-<!-- 新增游戏库一览模态框 -->
+<!-- 游戏库一览模态框 -->
 <div class="modal-overlay" id="libraryModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -907,6 +919,18 @@
 </div>
 
 <script>
+    // ==================== 版本控制：每次部署修改此版本号 ====================
+    const APP_VERSION = '2026.04.06.001';  // 每次更新时修改这里，用户会自动刷新
+    const STORAGE_VERSION_KEY = 'app_version';
+
+    // 检查版本，不一致则强制刷新页面
+    const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
+    if (storedVersion !== APP_VERSION) {
+        localStorage.setItem(STORAGE_VERSION_KEY, APP_VERSION);
+        // 刷新页面以加载最新内容
+        location.reload(true);
+    }
+
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -1042,7 +1066,7 @@
             html += `<div class="modal-game-card">
                         <div class="game-title-row">
                             <div class="game-name">🎮 ${escapeHtml(game.name)}</div>
-                            ${displayDate ? `<div style="font-size:0.70rem; color:#0077ff; background:rgba(0,119,255,0.1); padding:0.2rem 0.8rem; border-radius:20px; white-space:nowrap;">更新于 ${displayDate}</div>` : ''}
+                            ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
                         </div>
                         <div class="modal-qr-group">`;
             if (game.links && game.links.length) {
@@ -1070,7 +1094,7 @@
                 }
             }
         }
-        attachQrZoom(); // 复用原来的二维码点击放大功能
+        attachQrZoom();
         document.getElementById('libPageInfo').innerText = `第 ${page}/${totalLibraryPages} 页 (共${totalGames}个)`;
         document.getElementById('libPrevPage').disabled = (page <= 1);
         document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
