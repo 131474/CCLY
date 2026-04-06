@@ -11,11 +11,18 @@
     <!-- ==================== 版本控制（每次部署请修改下面的版本号） ==================== -->
     <script>
         // ⭐⭐⭐ 每次更新网站时，请修改此版本号（例如递增数字或改为当前日期），用户将自动刷新页面 ⭐⭐⭐
-        const APP_VERSION = '2026.04.06.004';
+        const APP_VERSION = '2026.04.07.005';
         const STORAGE_VERSION_KEY = 'app_version';
         const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
         if (storedVersion !== APP_VERSION) {
+            // 清除所有可能缓存的游戏数据
+            localStorage.removeItem('cached_games_data');
+            localStorage.removeItem('gamesDB');
+            localStorage.removeItem('game_old_names');
+            localStorage.removeItem('game_changes_map');
+            // 存储新版本号
             localStorage.setItem(STORAGE_VERSION_KEY, APP_VERSION);
+            // 强制刷新，绕过缓存
             location.reload(true);
         }
     </script>
@@ -1093,7 +1100,7 @@
             } catch(e) {}
         }
 
-        // 2. 后台获取最新 games.json
+        // 2. 后台获取最新 games.json，强制禁用缓存
         const timestamp = Date.now();
         const urls = [
             `/games.json?t=${timestamp}`,
@@ -1104,7 +1111,11 @@
             const controller = new AbortController();
             const id = setTimeout(() => controller.abort(), timeout);
             try {
-                const response = await fetch(url, { signal: controller.signal });
+                const response = await fetch(url, { 
+                    signal: controller.signal,
+                    cache: 'no-store',   // 强制不缓存
+                    headers: { 'Cache-Control': 'no-cache' }
+                });
                 clearTimeout(id);
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 return await response.json();
