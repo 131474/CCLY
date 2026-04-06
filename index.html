@@ -11,7 +11,7 @@
     <!-- ==================== 版本控制（每次部署请修改下面的版本号） ==================== -->
     <script>
         // ⭐⭐⭐ 每次更新网站时，请修改此版本号（例如递增数字或改为当前日期），用户将自动刷新页面 ⭐⭐⭐
-        const APP_VERSION = '2026.04.07.005';
+        const APP_VERSION = '2026.04.07.006';
         const STORAGE_VERSION_KEY = 'app_version';
         const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
         if (storedVersion !== APP_VERSION) {
@@ -142,19 +142,36 @@
             align-items: center;
             gap: 0.6rem;
             margin-top: 0.1rem;
-            margin-bottom: 1.8rem;
+            margin-bottom: 0.5rem;
             color: #2f5570;
             font-size: 1rem;
             border-left: 3px solid #3f9ad0;
             padding-left: 1rem;
         }
-        .publisher-icon {
-            font-size: 1.2rem;
-            filter: drop-shadow(0 0 3px #6bb0e6);
+        /* 滚动字幕样式 */
+        .marquee-container {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 40px;
+            padding: 0.5rem 0;
+            margin: 0.5rem 0 0.8rem 0;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 0 10px rgba(255, 200, 100, 0.6);
         }
-        .publisher-name {
-            font-weight: 600;
-            color: #1e4863;
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 14s linear infinite;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffdd99;
+            text-shadow: 0 0 4px #ff6600;
+            letter-spacing: 1px;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
         }
         .search-hint {
             color: #215674;
@@ -826,7 +843,8 @@
     <div class="header">
         <div class="game-house">游戏宝库</div>
         <div class="header-right">
-            <button class="tool-btn" id="gameLibraryBtn">📚 游戏库一览</button>
+            <!-- 按钮图标已改为 🎮 -->
+            <button class="tool-btn" id="gameLibraryBtn">🎮 游戏库一览</button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
             </div>
@@ -837,6 +855,10 @@
     <div class="publisher-line">
         <span class="publisher-icon">🎮</span>
         <span class="publisher-name">发布人：我不是game神</span>
+    </div>
+    <!-- 滚动字幕 -->
+    <div class="marquee-container">
+        <div class="marquee-text">⚠️ 网络可能有延迟，再次刷新本页面可看到最新游戏 ⚠️</div>
     </div>
     <div class="search-hint">
         <span class="hint-bold">🔍 搜索栏输入游戏名称</span> 
