@@ -201,8 +201,6 @@
   },
   {
     "name": "死亡搁浅2：冥滩之上 V1.1.57.0 豪华中文版  全DLC",
-    "shortName": "死亡搁浅2",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
@@ -212,7 +210,8 @@
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOpMrtldzTNcZvmv_F8UmyG-A1?pwd=b7yg#"
       }
-    ]
+    ],
+    "lastChange": "2026-04-06"
   },
   {
     "name": "恶意不息 v28175 中文版+神器",
