@@ -8,35 +8,28 @@
     <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     
-    <!-- ==================== 版本控制（使用外部 version.json） ==================== -->
     <script>
         (async function() {
-            const STORAGE_VERSION_KEY = 'app_version';
-            // 添加时间戳强制刷新 version.json
-            const versionUrl = 'version.json?t=' + Date.now();
+            const verKey = 'app_ver';
+            const verUrl = 'version.json?t=' + Date.now();
             try {
-                const response = await fetch(versionUrl, { cache: 'no-store' });
-                if (!response.ok) throw new Error('version.json 加载失败');
-                const data = await response.json();
-                const latestVersion = data.version;
-                const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
-                if (storedVersion !== latestVersion) {
-                    // 清除游戏数据缓存（可选，但推荐）
-                    localStorage.removeItem('cached_games_data');
-                    localStorage.setItem(STORAGE_VERSION_KEY, latestVersion);
-                    // 强制刷新页面，获取最新 HTML
+                const resp = await fetch(verUrl, { cache: 'no-store' });
+                if (!resp.ok) throw new Error();
+                const data = await resp.json();
+                const newVer = data.version;
+                const oldVer = localStorage.getItem(verKey);
+                if (oldVer !== newVer) {
+                    localStorage.removeItem('cached_games');
+                    localStorage.setItem(verKey, newVer);
                     location.reload(true);
                 }
-            } catch(e) {
-                console.warn('版本检测失败，继续使用本地缓存', e);
-            }
+            } catch(e) { console.warn(e); }
         })();
     </script>
     
     <link rel="preconnect" href="https://www.steamck.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <style>
-        /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
             margin: 0;
             padding: 0;
@@ -64,7 +57,7 @@
             position: relative;
             z-index: 1;
         }
-        .query-card {
+        .cardMain {
             width: 100%;
             max-width: 950px;
             background: transparent;
@@ -78,12 +71,12 @@
             backface-visibility: hidden;
             transform: scale(1);
         }
-        .query-card:hover {
+        .cardMain:hover {
             transform: scale(1.005);
             border-color: rgba(80, 160, 240, 0.7);
             box-shadow: 0 30px 45px -15px #2b4f6e40, 0 0 0 2px rgba(100, 180, 255, 0.2);
         }
-        .query-card::before {
+        .cardMain::before {
             content: "";
             position: absolute;
             top: 0;
@@ -96,14 +89,14 @@
             pointer-events: none;
             transition: background 0.2s;
         }
-        .query-card:hover::before {
+        .cardMain:hover::before {
             background: rgba(245, 250, 255, 0.96);
         }
-        .query-card > * {
+        .cardMain > * {
             position: relative;
             z-index: 1;
         }
-        .header {
+        .headerArea {
             display: flex;
             align-items: baseline;
             justify-content: space-between;
@@ -111,7 +104,7 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-        .game-house {
+        .titleLogo {
             font-size: 1.95rem;
             font-weight: 800;
             background: linear-gradient(130deg, #1f6d8f, #1b5b7a, #134b66);
@@ -121,16 +114,17 @@
             text-shadow: 0 2px 6px rgba(70, 160, 220, 0.3);
             line-height: 1.2;
         }
-        .header-right {
+        .rightTools {
             display: flex;
             gap: 0.8rem;
             align-items: center;
             flex-wrap: nowrap;
         }
-        #gameLibraryBtn {
+        /* 游戏库一览按钮 - 恢复脉冲动画 */
+        .libBtn {
             background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
             border-color: #ff8c42;
-            animation: pulse 1.5s infinite;
+            animation: pulseAnim 1.5s infinite;
             padding: 0.7rem 1.2rem;
             font-size: 1rem;
             font-weight: 700;
@@ -138,12 +132,12 @@
             white-space: nowrap;
             box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
         }
-        @keyframes pulse {
+        @keyframes pulseAnim {
             0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
             70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
             100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
         }
-        .publisher-line {
+        .publisherRow {
             display: flex;
             align-items: center;
             gap: 0.6rem;
@@ -154,8 +148,7 @@
             border-left: 3px solid #3f9ad0;
             padding-left: 1rem;
         }
-        /* 滚动字幕样式 */
-        .marquee-container {
+        .marqueeWrap {
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 40px;
@@ -165,21 +158,21 @@
             white-space: nowrap;
             box-shadow: 0 0 10px rgba(255, 200, 100, 0.6);
         }
-        .marquee-text {
+        .marqueeText {
             display: inline-block;
             padding-left: 100%;
-            animation: marquee 14s linear infinite;
+            animation: marqueeAnim 14s linear infinite;
             font-size: 1rem;
             font-weight: bold;
             color: #ffdd99;
             text-shadow: 0 0 4px #ff6600;
             letter-spacing: 1px;
         }
-        @keyframes marquee {
+        @keyframes marqueeAnim {
             0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
         }
-        .search-hint {
+        .searchHint {
             color: #215674;
             font-size: 0.95rem;
             margin-bottom: 1rem;
@@ -189,16 +182,16 @@
             align-items: center;
             gap: 0.5rem;
         }
-        .hint-bold {
+        .hintBold {
             font-weight: 600;
             color: #1b6c9c;
         }
-        .input-wrapper {
+        .inputWrap {
             position: relative;
             width: 100%;
             margin: 0.5rem 0 1rem 0;
         }
-        .game-input {
+        .searchInput {
             width: 100%;
             background: rgba(255, 255, 255, 0.98);
             border: 2px solid #b3d6f0;
@@ -212,18 +205,18 @@
             box-shadow: inset 0 4px 8px rgba(0, 20, 40, 0.02), 0 2px 4px #c9e2ff;
             font-weight: 500;
         }
-        .game-input::placeholder {
+        .searchInput::placeholder {
             color: #7096b5;
             font-size: 1.1rem;
             font-weight: 400;
             opacity: 0.8;
         }
-        .game-input:focus {
+        .searchInput:focus {
             border-color: #3895d6;
             background: #ffffff;
             box-shadow: 0 0 0 4px rgba(70, 160, 255, 0.25), inset 0 2px 5px #d9ecff;
         }
-        .input-emoji-decoration {
+        .inputEmoji {
             position: absolute;
             right: 1.8rem;
             top: 50%;
@@ -233,7 +226,7 @@
             color: #4797cf;
             opacity: 0.6;
         }
-        .query-btn {
+        .queryBtn {
             background: linear-gradient(115deg, #4797cf, #2d7eb3);
             border: none;
             border-radius: 60px;
@@ -255,15 +248,15 @@
             border: 1px solid rgba(255, 255, 255, 0.5);
             margin-top: 1.5rem;
         }
-        .query-btn:hover {
+        .queryBtn:hover {
             background: linear-gradient(115deg, #57a8e0, #388ac7);
             box-shadow: 0 14px 25px -5px #1e6fa3, 0 3px 8px #9cc9ff;
             transform: translateY(-2px);
         }
-        .query-btn:active {
+        .queryBtn:active {
             transform: translateY(1px);
         }
-        .demo-hint {
+        .demoHint {
             margin-top: 1rem;
             color: #2b5b7e;
             font-size: 0.9rem;
@@ -274,7 +267,7 @@
             padding-top: 0.5rem;
             margin-bottom: 0.8rem;
         }
-        .mock-link {
+        .demoLink {
             color: #195477;
             background: rgba(170, 215, 255, 0.6);
             padding: 0.25rem 0.9rem;
@@ -285,13 +278,13 @@
             font-weight: 500;
             cursor: pointer;
         }
-        .mock-link:hover {
+        .demoLink:hover {
             background: rgba(120, 190, 255, 0.7);
             border-color: #277bb5;
             color: #083952;
             transform: translateY(-1px);
         }
-        .tool-buttons {
+        .toolBar {
             display: flex;
             flex-wrap: wrap;
             gap: 0.6rem;
@@ -299,7 +292,7 @@
             margin: 0.5rem 0 1.2rem 0;
             width: 100%;
         }
-        .tool-btn {
+        .toolBtn {
             background: rgba(255, 255, 255, 0.7);
             border: 1.5px solid #6ba6d9;
             border-radius: 40px;
@@ -318,37 +311,34 @@
             min-width: 140px;
             justify-content: center;
         }
-        .tool-btn:hover {
+        .toolBtn:hover {
             background: rgba(100, 170, 240, 0.4);
             border-color: #4797cf;
             transform: translateY(-1px);
             box-shadow: 0 4px 8px rgba(30, 100, 160, 0.2);
         }
-        .loading-spinner {
+        .spinner {
             display: inline-block;
             width: 30px;
             height: 30px;
             border: 3px solid rgba(100, 170, 240, 0.3);
             border-radius: 50%;
             border-top-color: #4797cf;
-            animation: spin 1s ease-in-out infinite;
+            animation: spinAnim 1s ease-in-out infinite;
             margin-right: 10px;
         }
-        @keyframes spin {
+        @keyframes spinAnim {
             to { transform: rotate(360deg); }
         }
-        hr {
-            border: 0.5px solid rgba(80, 150, 220, 0.3);
-            margin: 0.6rem 0;
-        }
-        .footer-note {
+        hr { border: 0.5px solid rgba(80, 150, 220, 0.3); margin: 0.6rem 0; }
+        .footerNote {
             text-align: center;
             font-size: 0.7rem;
             color: #6589a8;
             margin-top: 0.2rem;
             line-height: 1.3;
         }
-        .modal-overlay {
+        .modalOverlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -364,11 +354,11 @@
             visibility: hidden;
             transition: all 0.3s ease;
         }
-        .modal-overlay.show {
+        .modalOverlay.show {
             opacity: 1;
             visibility: visible;
         }
-        .modal-container {
+        .modalContainer {
             background: rgba(245, 250, 255, 0.98);
             backdrop-filter: blur(8px);
             width: 90%;
@@ -383,10 +373,10 @@
             transform: scale(0.95);
             transition: transform 0.2s ease;
         }
-        .modal-overlay.show .modal-container {
+        .modalOverlay.show .modalContainer {
             transform: scale(1);
         }
-        .modal-header {
+        .modalHeader {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -394,7 +384,7 @@
             padding-bottom: 0.8rem;
             border-bottom: 2px solid rgba(70, 150, 230, 0.3);
         }
-        .modal-title {
+        .modalTitle {
             font-size: 1.2rem;
             font-weight: 700;
             color: #134b66;
@@ -402,7 +392,7 @@
             align-items: center;
             gap: 0.5rem;
         }
-        .result-count {
+        .resultCount {
             font-size: 1.3rem;
             font-weight: bold;
             color: #ff6a1a;
@@ -411,7 +401,7 @@
             border-radius: 30px;
             margin-left: 0.2rem;
         }
-        .modal-close {
+        .modalClose {
             background: rgba(200, 225, 255, 0.5);
             border: 1px solid #7bb0d9;
             color: #1f5f83;
@@ -425,18 +415,18 @@
             cursor: pointer;
             transition: 0.2s;
         }
-        .modal-close:hover {
+        .modalClose:hover {
             background: rgba(100, 170, 240, 0.5);
             color: #083952;
             transform: rotate(90deg);
         }
-        .modal-body {
+        .modalBody {
             overflow-y: auto;
             padding: 0.5rem 0.5rem 1.2rem 0.5rem;
             max-height: 55vh;
             scrollbar-width: thin;
         }
-        .modal-game-card {
+        .gameCard {
             background: white;
             border-radius: 1.8rem;
             padding: 1rem 1.5rem;
@@ -445,11 +435,11 @@
             box-shadow: 0 4px 12px rgba(0, 30, 50, 0.05);
             transition: box-shadow 0.1s;
         }
-        .modal-game-card:hover {
+        .gameCard:hover {
             border-color: #4797cf;
             box-shadow: 0 6px 14px rgba(30, 100, 160, 0.1);
         }
-        .game-title-row {
+        .gameTitleRow {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -457,13 +447,13 @@
             gap: 0.5rem;
             margin-bottom: 0.8rem;
         }
-        .game-name {
+        .gameName {
             font-weight: 600;
             font-size: 1rem;
             color: #134b66;
             word-break: break-word;
         }
-        .update-date-badge {
+        .updateBadge {
             font-size: 0.85rem;
             color: #0077ff;
             background: rgba(0, 119, 255, 0.1);
@@ -471,14 +461,14 @@
             border-radius: 20px;
             white-space: nowrap;
         }
-        .modal-qr-group {
+        .qrGroup {
             display: flex;
             gap: 0.4rem;
             align-items: center;
             flex-wrap: nowrap;
             overflow-x: auto;
         }
-        .modal-qr-item {
+        .qrItem {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -490,11 +480,11 @@
             border-radius: 1rem;
             min-width: 55px;
         }
-        .modal-qr-item:hover {
+        .qrItem:hover {
             transform: scale(1.02);
             background: rgba(200, 225, 255, 0.8);
         }
-        .qr-code-box {
+        .qrBox {
             width: 55px;
             height: 55px;
             background: white;
@@ -505,12 +495,12 @@
             border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
-        .qr-code-box canvas {
+        .qrBox canvas {
             width: 100% !important;
             height: 100% !important;
             object-fit: contain;
         }
-        .qr-label {
+        .qrLabel {
             font-size: 0.7rem;
             color: #1b5b7a;
             background: rgba(100, 170, 240, 0.1);
@@ -518,7 +508,7 @@
             border-radius: 20px;
             font-weight: 500;
         }
-        .pagination {
+        .paginationBar {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -527,7 +517,7 @@
             padding-top: 0.8rem;
             border-top: 1px solid rgba(70, 150, 230, 0.2);
         }
-        .page-btn {
+        .pageBtn {
             background: rgba(170, 215, 255, 0.7);
             border: 1px solid #6ba6d9;
             color: #1a5777;
@@ -542,18 +532,18 @@
             cursor: pointer;
             transition: 0.2s;
         }
-        .page-btn:hover:not(:disabled) {
+        .pageBtn:hover:not(:disabled) {
             background: #4797cf;
             color: white;
             border-color: #2d7eb3;
             transform: translateY(-1px);
         }
-        .page-btn:disabled {
+        .pageBtn:disabled {
             opacity: 0.3;
             cursor: not-allowed;
             background: #b0cbe5;
         }
-        .page-info {
+        .pageInfo {
             color: #1f5f83;
             font-size: 0.8rem;
             min-width: 140px;
@@ -563,7 +553,7 @@
             padding: 0.2rem 0.8rem;
             border-radius: 30px;
         }
-        .empty-modal-msg {
+        .emptyMsg {
             text-align: center;
             padding: 2.5rem;
             color: #6589a8;
@@ -571,28 +561,28 @@
             background: rgba(220, 240, 255, 0.5);
             border-radius: 2.5rem;
         }
-        .tool-content {
+        .toolContent {
             background: white;
             border-radius: 1.5rem;
             padding: 1.5rem;
             border: 1px solid rgba(70, 150, 230, 0.3);
         }
-        .tool-content h3 {
+        .toolContent h3 {
             color: #134b66;
             font-size: 1.4rem;
             margin-bottom: 0.8rem;
             border-bottom: 2px solid rgba(70, 150, 230, 0.2);
             padding-bottom: 0.4rem;
         }
-        .tool-content p {
+        .toolContent p {
             color: #1f5f83;
             font-size: 1rem;
             line-height: 1.5;
         }
-        .hot-section {
+        .hotSection {
             margin: 1rem 0 0.5rem;
         }
-        .hot-title {
+        .hotTitle {
             font-size: 1rem;
             font-weight: 700;
             color: #1a5777;
@@ -601,37 +591,36 @@
             align-items: center;
             gap: 0.5rem;
         }
-        .hot-title::before {
+        .hotTitle::before {
             content: "🔥";
             font-size: 1.2rem;
         }
-        .hot-scroll {
+        .hotScroll {
             display: flex;
             gap: 1rem;
             overflow-x: auto;
             padding-bottom: 0.5rem;
             scrollbar-width: thin;
         }
-        .hot-item {
+        .hotItem {
             flex: 0 0 auto;
             width: 80px;
             text-align: center;
             cursor: pointer;
             transition: transform 0.15s;
         }
-        .hot-item:hover {
+        .hotItem:hover {
             transform: translateY(-2px);
         }
-        .hot-item img {
+        .hotItem img {
             width: 80px;
             height: 80px;
             object-fit: cover;
             border-radius: 16px;
             background: #f0f0f0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            image-rendering: auto;
         }
-        .hot-item span {
+        .hotItem span {
             display: block;
             font-size: 0.75rem;
             margin-top: 0.3rem;
@@ -642,12 +631,12 @@
             white-space: nowrap;
         }
         .Dict { display: none; }
-        .pc { font-size: 0.7rem; color: #2b8dcc; margin-top: 0.2rem; }
+        .pcHint { font-size: 0.7rem; color: #2b8dcc; margin-top: 0.2rem; }
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; }
-            .pc { display: none; }
+            .pcHint { display: none; }
         }
-        .zoom-modal-overlay {
+        .zoomModal {
             position: fixed;
             top: 0;
             left: 0;
@@ -663,11 +652,11 @@
             visibility: hidden;
             transition: 0.25s ease;
         }
-        .zoom-modal-overlay.show {
+        .zoomModal.show {
             opacity: 1;
             visibility: visible;
         }
-        .zoom-modal-container {
+        .zoomContainer {
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             border-radius: 2rem;
@@ -681,10 +670,10 @@
             transition: transform 0.2s;
             position: relative;
         }
-        .zoom-modal-overlay.show .zoom-modal-container {
+        .zoomModal.show .zoomContainer {
             transform: scale(1);
         }
-        .zoom-close {
+        .zoomClose {
             position: absolute;
             top: 0.8rem;
             right: 1.2rem;
@@ -701,19 +690,19 @@
             transition: 0.2s;
             border: 1px solid #a0c8e8;
         }
-        .zoom-close:hover {
+        .zoomClose:hover {
             background: #4797cf;
             color: white;
             transform: rotate(90deg);
         }
-        .zoom-qr-area {
+        .zoomArea {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             margin: 0.5rem 0 1rem 0;
         }
-        .zoom-qr-box {
+        .zoomQrBox {
             width: 240px;
             height: 240px;
             background: white;
@@ -726,12 +715,12 @@
             padding: 0.5rem;
             margin-bottom: 0.8rem;
         }
-        .zoom-qr-box canvas {
+        .zoomQrBox canvas {
             width: 100% !important;
             height: 100% !important;
             object-fit: contain;
         }
-        .zoom-platform {
+        .zoomPlatform {
             font-size: 1.2rem;
             font-weight: 600;
             color: #134b66;
@@ -741,14 +730,14 @@
             border-radius: 40px;
             display: inline-block;
         }
-        .zoom-link-hint {
+        .zoomLinkHint {
             font-size: 0.75rem;
             color: #6589a8;
             margin-top: 0.5rem;
             word-break: break-all;
             max-width: 260px;
         }
-        .download-tip {
+        .downloadTip {
             font-size: 0.8rem;
             color: #2b8dcc;
             margin-top: 0.1rem;
@@ -759,18 +748,18 @@
             margin-bottom: 0.8rem;
             text-align: center;
         }
-        .wish-list { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1rem; }
-        .wish-item { background: rgba(255,255,255,0.8); border-radius: 2rem; padding: 1rem 1.5rem; border: 1px solid #b3d6f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .wish-text { font-size: 1rem; color: #134b66; flex: 1; }
-        .wish-time { font-size: 0.8rem; color: #6589a8; margin-left: 1rem; }
-        .wish-reply { margin-top: 0.3rem; font-size: 0.85rem; color: #236a99; border-left: 3px solid #9ac9f0; padding-left: 0.8rem; }
-        .wish-form { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.2rem; background: rgba(200,225,255,0.3); padding: 1.5rem; border-radius: 2rem; border: 1px dashed #6ba6d9; }
-        .wish-input { flex: 3; min-width: 200px; background: white; border: 2px solid #b3d6f0; border-radius: 40px; padding: 0.8rem 1.5rem; font-size: 1rem; outline: none; }
-        .wish-input:focus { border-color: #3895d6; box-shadow: 0 0 0 3px rgba(70,160,255,0.2); }
-        .wish-submit-btn { background: linear-gradient(115deg, #57a8e0, #388ac7); border: none; border-radius: 40px; padding: 0.8rem 2rem; font-weight: 600; color: white; cursor: pointer; font-size: 1rem; flex: 1; min-width: 100px; transition: transform 0.1s; }
-        .wish-submit-btn:hover { transform: translateY(-1px); background: linear-gradient(115deg, #68b8f0, #4797cf); }
-        .wish-empty { text-align: center; padding: 2rem; color: #6589a8; background: #e6f0fa; border-radius: 2rem; }
-        .login-btn-header {
+        .wishList { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1rem; }
+        .wishItem { background: rgba(255,255,255,0.8); border-radius: 2rem; padding: 1rem 1.5rem; border: 1px solid #b3d6f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .wishText { font-size: 1rem; color: #134b66; flex: 1; }
+        .wishTime { font-size: 0.8rem; color: #6589a8; margin-left: 1rem; }
+        .wishReply { margin-top: 0.3rem; font-size: 0.85rem; color: #236a99; border-left: 3px solid #9ac9f0; padding-left: 0.8rem; }
+        .wishForm { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.2rem; background: rgba(200,225,255,0.3); padding: 1.5rem; border-radius: 2rem; border: 1px dashed #6ba6d9; }
+        .wishInput { flex: 3; min-width: 200px; background: white; border: 2px solid #b3d6f0; border-radius: 40px; padding: 0.8rem 1.5rem; font-size: 1rem; outline: none; }
+        .wishInput:focus { border-color: #3895d6; box-shadow: 0 0 0 3px rgba(70,160,255,0.2); }
+        .wishSubmit { background: linear-gradient(115deg, #57a8e0, #388ac7); border: none; border-radius: 40px; padding: 0.8rem 2rem; font-weight: 600; color: white; cursor: pointer; font-size: 1rem; flex: 1; min-width: 100px; transition: transform 0.1s; }
+        .wishSubmit:hover { transform: translateY(-1px); background: linear-gradient(115deg, #68b8f0, #4797cf); }
+        .wishEmpty { text-align: center; padding: 2rem; color: #6589a8; background: #e6f0fa; border-radius: 2rem; }
+        .loginBtn {
             background: rgba(90,170,240,0.25);
             border: 1.5px solid #4797cf;
             color: #1a5777;
@@ -785,34 +774,34 @@
             white-space: nowrap;
             transition: all 0.2s;
         }
-        .login-btn-header:hover {
+        .loginBtn:hover {
             background: rgba(70,150,230,0.4);
             transform: translateY(-1px);
             border-color: #2d7eb3;
         }
-        .form-group { margin-bottom: 1rem; }
-        .form-group label { display: block; margin-bottom: 0.3rem; color: #1a5777; font-weight: 500; }
-        .form-group input, .form-group textarea { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; background: white; }
-        .form-group textarea { border-radius: 20px; resize: vertical; }
-        .auth-btn { background: #4797cf; border: none; border-radius: 40px; padding: 0.7rem; width: 100%; color: white; font-weight: bold; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; transition: transform 0.1s; }
-        .auth-btn:hover { transform: translateY(-1px); background: #57a8e0; }
-        .switch-auth { text-align: center; margin-top: 1rem; color: #2b5f88; cursor: pointer; font-size: 0.9rem; }
-        .error-msg { color: #c7362b; font-size: 0.8rem; margin-top: 0.5rem; text-align: center; }
-        .logout-btn { background: #c0ddf5; border: none; padding: 0.2rem 0.8rem; border-radius: 30px; font-size: 0.75rem; cursor: pointer; color: #1a5777; transition: 0.1s; }
-        .logout-btn:hover { transform: translateY(-1px); background: #b0cbe5; }
-        .simple-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center; }
-        .simple-modal.show { display: flex; }
-        .simple-modal-content { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; }
-        .simple-modal-message { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
-        .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; }
+        .formGroup { margin-bottom: 1rem; }
+        .formGroup label { display: block; margin-bottom: 0.3rem; color: #1a5777; font-weight: 500; }
+        .formGroup input, .formGroup textarea { width: 100%; padding: 0.7rem 1rem; border-radius: 40px; border: 1px solid #b3d6f0; outline: none; font-size: 1rem; background: white; }
+        .formGroup textarea { border-radius: 20px; resize: vertical; }
+        .authBtn { background: #4797cf; border: none; border-radius: 40px; padding: 0.7rem; width: 100%; color: white; font-weight: bold; font-size: 1rem; cursor: pointer; margin-top: 0.5rem; transition: transform 0.1s; }
+        .authBtn:hover { transform: translateY(-1px); background: #57a8e0; }
+        .switchAuth { text-align: center; margin-top: 1rem; color: #2b5f88; cursor: pointer; font-size: 0.9rem; }
+        .errorMsg { color: #c7362b; font-size: 0.8rem; margin-top: 0.5rem; text-align: center; }
+        .logoutBtn { background: #c0ddf5; border: none; padding: 0.2rem 0.8rem; border-radius: 30px; font-size: 0.75rem; cursor: pointer; color: #1a5777; transition: 0.1s; }
+        .logoutBtn:hover { transform: translateY(-1px); background: #b0cbe5; }
+        .simpleModal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 9999; justify-content: center; align-items: center; }
+        .simpleModal.show { display: flex; }
+        .simpleModalContent { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; }
+        .simpleModalMessage { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
+        .simpleModalBtn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; }
         @media (max-width: 640px) {
-            .hot-item { width: 70px; }
-            .hot-item img { width: 70px; height: 70px; }
-            .game-input { padding-right: 2.8rem; }
-            .game-input::placeholder { font-size: 0.9rem; }
-            .login-btn-header { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
-            .header-right { gap: 0.4rem; }
-            .switch-area-icons, .tools-area-icons {
+            .hotItem { width: 70px; }
+            .hotItem img { width: 70px; height: 70px; }
+            .searchInput { padding-right: 2.8rem; }
+            .searchInput::placeholder { font-size: 0.9rem; }
+            .loginBtn { padding: 0.3rem 0.8rem; font-size: 0.75rem; }
+            .rightTools { gap: 0.4rem; }
+            .switchArea, .toolsArea {
                 display: flex;
                 flex-wrap: nowrap;
                 overflow-x: auto;
@@ -820,135 +809,125 @@
                 gap: 0.6rem;
                 padding-bottom: 0.5rem;
             }
-            .switch-area-icons > div, .tools-area-icons > div {
+            .switchArea > div, .toolsArea > div {
                 flex: 0 0 auto;
                 width: 100px;
                 padding: 0.6rem 0.3rem;
             }
-            .switch-area-icons > div div:first-child, .tools-area-icons > div div:first-child {
-                font-size: 1.8rem;
-            }
-            .switch-area-icons > div div:not(:first-child), .tools-area-icons > div div:not(:first-child) {
-                font-size: 0.7rem;
-            }
+            .switchArea > div div:first-child, .toolsArea > div div:first-child { font-size: 1.8rem; }
+            .switchArea > div div:not(:first-child), .toolsArea > div div:not(:first-child) { font-size: 0.7rem; }
         }
         @media (min-width: 769px) {
-            .modal-qr-item {
-                min-width: 100px;
-            }
-            .mobile-game-qr .qr-code-box {
-                width: 110px;
-                height: 110px;
-            }
+            .qrItem { min-width: 100px; }
+            .mobileGameQr .qrBox { width: 110px; height: 110px; }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
-<div class="query-card">
-    <div class="header">
-        <div class="game-house">游戏宝库</div>
-        <div class="header-right">
-            <button class="tool-btn" id="gameLibraryBtn">🎮 游戏库一览</button>
+<div class="cardMain">
+    <div class="headerArea">
+        <div class="titleLogo">游戏宝库</div>
+        <div class="rightTools">
+            <button class="toolBtn libBtn" id="libBtn">🎮 游戏库一览</button>
             <div id="authArea">
-                <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
+                <button class="loginBtn" id="openAuthBtn">🔐 登录 / 注册</button>
             </div>
         </div>
     </div>
-    <input type="hidden" id="token" name="token" value="abe3d9d304cc82e310fe6d281455f91885d4db30fac9b7b9982a189a0ad49451e307f7eb3cc24cea6089180b9eea9596" />
-    <input type="hidden" id="loginToken" name="loginToken" />
-    <div class="publisher-line">
+    <input type="hidden" id="token" value="abe3d9d304cc82e310fe6d281455f91885d4db30fac9b7b9982a189a0ad49451e307f7eb3cc24cea6089180b9eea9596" />
+    <input type="hidden" id="loginToken" />
+    <div class="publisherRow">
         <span class="publisher-icon">🎮</span>
         <span class="publisher-name">发布人：我不是game神</span>
     </div>
-    <div class="marquee-container">
-        <div class="marquee-text">⚠️ 完全免费！点击上方游戏库一览按钮，即可看到近期更新的游戏 ⚠️</div>
+    <div class="marqueeWrap">
+        <div class="marqueeText">⚠️ 完全免费！点击上方游戏库一览按钮，即可看到近期更新的游戏 ⚠️</div>
     </div>
-    <div class="search-hint">
-        <span class="hint-bold">🔍 搜索栏输入游戏名称</span> 
+    <div class="searchHint">
+        <span class="hintBold">🔍 搜索栏输入游戏名称</span> 
     </div>
-    <div class="input-wrapper">
-        <input class="game-input" type="text" id="gameSearchInput" placeholder="请输入游戏名称（至少2个字）" autocomplete="off">
-        <div class="input-emoji-decoration">🎮</div>
+    <div class="inputWrap">
+        <input class="searchInput" type="text" id="searchInput" placeholder="请输入游戏名称（至少2个字）" autocomplete="off">
+        <div class="inputEmoji">🎮</div>
     </div>
-    <button class="query-btn" id="searchBtn">
+    <button class="queryBtn" id="searchBtn">
         <span>🔍</span> 查询 <span>🔍</span>
     </button>
-    <div class="demo-hint">
+    <div class="demoHint">
         <span style="opacity:0.9;">⚡试试查询：</span>
-        <span class="mock-link" data-demo="塞尔达">塞尔达</span>
-        <span class="mock-link" data-demo="宝可梦">宝可梦</span>
-        <span class="mock-link" data-demo="马里奥">马里奥</span>
-        <span class="mock-link" data-demo="最终幻想">最终幻想</span>
-        <span class="mock-link" data-demo="战神">战神</span>
+        <span class="demoLink" data-demo="塞尔达">塞尔达</span>
+        <span class="demoLink" data-demo="宝可梦">宝可梦</span>
+        <span class="demoLink" data-demo="马里奥">马里奥</span>
+        <span class="demoLink" data-demo="最终幻想">最终幻想</span>
+        <span class="demoLink" data-demo="战神">战神</span>
     </div>
-    <div class="hot-section" id="hotSection" style="display: none;">
-        <div class="hot-title">当前热门游戏推荐</div>
-        <div class="hot-scroll" id="hotScroll"></div>
+    <div class="hotSection" id="hotSection" style="display: none;">
+        <div class="hotTitle">当前热门游戏推荐</div>
+        <div class="hotScroll" id="hotScroll"></div>
     </div>
-    <div class="tool-buttons">
-        <button class="tool-btn" id="switchZoneBtn"><span>🎮</span> Switch专区</button>
-        <button class="tool-btn" id="nsMobileEmulatorBtn"><span>📱</span> 手机游戏</button>
-        <button class="tool-btn" id="atmosphereBtn"><span>🌐</span> 常用工具</button>
-        <button class="tool-btn" id="exchangeBtn"><span>🐧</span> 交流群</button>
-        <button class="tool-btn" id="wishingWellBtn"><span>⛲</span> 许愿池</button>
-        <button class="tool-btn" id="feedbackBtn"><span>💬</span> 反馈问题</button>
+    <div class="toolBar">
+        <button class="toolBtn" id="switchBtn"><span>🎮</span> Switch专区</button>
+        <button class="toolBtn" id="mobileBtn"><span>📱</span> 手机游戏</button>
+        <button class="toolBtn" id="toolsBtn"><span>🌐</span> 常用工具</button>
+        <button class="toolBtn" id="groupBtn"><span>🐧</span> 交流群</button>
+        <button class="toolBtn" id="wishBtn"><span>⛲</span> 许愿池</button>
+        <button class="toolBtn" id="feedbackBtn"><span>💬</span> 反馈问题</button>
     </div>
     <hr>
-    <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
+    <div class="footerNote"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
 </div>
 
-<!-- 原有查询结果模态框 -->
-<div class="modal-overlay" id="resultModal">
-    <div class="modal-container">
-        <div class="modal-header">
-            <div class="modal-title" id="modalTitle"><span>📋 查询结果</span></div>
-            <div class="modal-close" id="closeModalBtn">✕</div>
+<div class="modalOverlay" id="resultModal">
+    <div class="modalContainer">
+        <div class="modalHeader">
+            <div class="modalTitle" id="modalTitle"><span>📋 查询结果</span></div>
+            <div class="modalClose" id="closeModalBtn">✕</div>
         </div>
-        <div class="download-tip" id="download-tip">点击二维码可放大，手机端可直接跳转至下载链接</div>
-        <div class="modal-body" id="modalBody"><div class="empty-modal-msg"> loading... </div></div>
-        <div class="pagination" id="pagination">
-            <button class="page-btn" id="prevPage" disabled>←</button>
-            <span class="page-info" id="pageInfo">第 1/1 页</span>
-            <button class="page-btn" id="nextPage" disabled>→</button>
+        <div class="downloadTip" id="downloadTip">点击二维码可放大，手机端可直接跳转至下载链接</div>
+        <div class="modalBody" id="modalBody"><div class="emptyMsg"> loading... </div></div>
+        <div class="paginationBar" id="pagination">
+            <button class="pageBtn" id="prevPage" disabled>←</button>
+            <span class="pageInfo" id="pageInfo">第 1/1 页</span>
+            <button class="pageBtn" id="nextPage" disabled>→</button>
         </div>
     </div>
 </div>
 
-<!-- 游戏库一览模态框 -->
-<div class="modal-overlay" id="libraryModal">
-    <div class="modal-container">
-        <div class="modal-header">
-            <div class="modal-title">游戏库一览 <span class="result-count" id="libraryCount">0</span></div>
-            <div class="modal-close" id="closeLibraryModalBtn">✕</div>
+<div class="modalOverlay" id="libraryModal">
+    <div class="modalContainer">
+        <div class="modalHeader">
+            <div class="modalTitle">游戏库一览 <span class="resultCount" id="libCount">0</span></div>
+            <div class="modalClose" id="closeLibModalBtn">✕</div>
         </div>
-        <div class="download-tip">点击二维码可放大，手机端可直接跳转至下载链接</div>
-        <div class="modal-body" id="libraryBody"><div class="empty-modal-msg">加载中...</div></div>
-        <div class="pagination" id="libraryPagination">
-            <button class="page-btn" id="libPrevPage" disabled>←</button>
-            <span class="page-info" id="libPageInfo">第 1/1 页</span>
-            <button class="page-btn" id="libNextPage" disabled>→</button>
+        <div class="downloadTip">点击二维码可放大，手机端可直接跳转至下载链接</div>
+        <div class="modalBody" id="libBody"><div class="emptyMsg">加载中...</div></div>
+        <div class="paginationBar" id="libPagination">
+            <button class="pageBtn" id="libPrev" disabled>←</button>
+            <span class="pageInfo" id="libPageInfo">第 1/1 页</span>
+            <button class="pageBtn" id="libNext" disabled>→</button>
         </div>
     </div>
 </div>
 
-<div class="modal-overlay" id="authModal">
-    <div class="modal-container" style="max-width: 450px;">
-        <div class="modal-header">
-            <div class="modal-title" id="authModalTitle">登录</div>
-            <div class="modal-close" id="closeAuthModalBtn">✕</div>
+<div class="modalOverlay" id="authModal">
+    <div class="modalContainer" style="max-width: 450px;">
+        <div class="modalHeader">
+            <div class="modalTitle" id="authModalTitle">登录</div>
+            <div class="modalClose" id="closeAuthModalBtn">✕</div>
         </div>
         <div id="authFormContainer"></div>
     </div>
 </div>
-<div class="zoom-modal-overlay" id="zoomModal">
-    <div class="zoom-modal-container" style="position: relative;">
-        <div class="zoom-close" id="closeZoomBtn">✕</div>
-        <div class="zoom-qr-area">
-            <div class="zoom-qr-box" id="zoomQrBox"></div>
-            <div class="zoom-platform" id="zoomPlatform">百度网盘</div>
-            <div class="zoom-link-hint" id="zoomLink"></div>
-            <div class="pc">手机网盘APP扫码获取</div>
+
+<div class="zoomModal" id="zoomModal">
+    <div class="zoomContainer" style="position: relative;">
+        <div class="zoomClose" id="closeZoomBtn">✕</div>
+        <div class="zoomArea">
+            <div class="zoomQrBox" id="zoomQrBox"></div>
+            <div class="zoomPlatform" id="zoomPlatform">百度网盘</div>
+            <div class="zoomLinkHint" id="zoomLink"></div>
+            <div class="pcHint">手机网盘APP扫码获取</div>
             <div class="Dict">
                 <div style="margin-top: 8px; display: flex; gap: 10px; justify-content: center;" id="zoomActionRow">
                     <button id="jumpDirectBtn" style="background: #4797cf; border: none; color: white; padding: 0.3rem 1.2rem; border-radius: 30px; font-size: 0.9rem; cursor: pointer;">跳转至下载页面</button>
@@ -960,350 +939,291 @@
         </div>
     </div>
 </div>
-<div id="simpleModal" class="simple-modal">
-    <div class="simple-modal-content">
-        <p id="simpleModalMessage" class="simple-modal-message"></p>
-        <button id="simpleModalConfirm" class="simple-modal-btn">确定</button>
+
+<div id="simpleModal" class="simpleModal">
+    <div class="simpleModalContent">
+        <p id="simpleModalMessage" class="simpleModalMessage"></p>
+        <button id="simpleModalConfirm" class="simpleModalBtn">确定</button>
     </div>
 </div>
 
 <script>
     // ==================== 全局变量 ====================
-    let gameDB = [];
-    let dataLoaded = false;
-    let currentUser = null;
-    let wishCurrentPage = 1, wishTotalPages = 1, wishTotal = 0;
-    let currentMode = 'game';
-    let currentGameQuery = '';
-    let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
+    let gameData = [];
+    let dataReady = false;
+    let curUser = null;
+    let wishPage = 1, wishTotalPages = 1, wishTotal = 0;
+    let curMode = 'game';
+    let curQuery = '';
+    let gamePage = 1, gameTotalPages = 1, gameTotal = 0;
     const pageSize = 4;
 
-    // 游戏库一览分页变量
-    let currentLibraryPage = 1;
-    let totalLibraryPages = 1;
+    let libPage = 1;
+    let libTotalPages = 1;
     let totalGames = 0;
     let sortedGames = [];
 
-    // localStorage 缓存键名
-    const CACHE_GAMES_KEY = 'cached_games_data';
+    const CACHE_KEY = 'cached_games';
 
-    // ==================== 辅助函数 ====================
     function escapeHtml(str) {
         if (!str) return '';
-        return str.replace(/[&<>]/g, function(m) {
-            if (m === '&') return '&amp;';
-            if (m === '<') return '&lt;';
-            if (m === '>') return '&gt;';
-            return m;
-        });
+        return str.replace(/[&<>]/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;' }[m]));
     }
 
-    // 获取游戏变更日期（只返回 YYYY-MM-DD，且仅近三天显示）
-    function getGameChangeDate(game) {
+    function getChangeDate(game) {
         if (game.lastChange) {
-            // 只取日期部分（前10个字符）
-            const dateStr = game.lastChange.slice(0, 10);
+            const dateStr = game.lastChange.slice(0,10);
             const changeDate = new Date(dateStr);
-            const today = new Date();
-            today.setHours(0,0,0,0);
-            const threeDaysAgo = new Date(today);
-            threeDaysAgo.setDate(today.getDate() - 2);
-            if (changeDate >= threeDaysAgo) {
-                return dateStr;
-            }
+            const today = new Date(); today.setHours(0,0,0,0);
+            const threeDaysAgo = new Date(today); threeDaysAgo.setDate(today.getDate()-2);
+            if (changeDate >= threeDaysAgo) return dateStr;
         }
         return null;
     }
 
-    function getGameChangeTimestamp(game) {
-        if (game.lastChange) {
-            return new Date(game.lastChange).getTime();
-        }
-        return 0;
+    function getChangeTime(game) {
+        return game.lastChange ? new Date(game.lastChange).getTime() : 0;
     }
 
-    function buildSortedGames() {
+    function buildSorted() {
         const withTime = [], withoutTime = [];
-        for (const game of gameDB) {
-            const ts = getGameChangeTimestamp(game);
-            if (ts > 0) {
-                withTime.push({ game, changeTime: ts, changeDate: getGameChangeDate(game) });
-            } else {
-                withoutTime.push({ game, changeTime: 0, changeDate: null });
-            }
+        for (const g of gameData) {
+            const ts = getChangeTime(g);
+            if (ts > 0) withTime.push({ game: g, time: ts, date: getChangeDate(g) });
+            else withoutTime.push({ game: g, time: 0, date: null });
         }
-        withTime.sort((a,b) => b.changeTime - a.changeTime);
+        withTime.sort((a,b) => b.time - a.time);
         withoutTime.sort((a,b) => a.game.name.localeCompare(b.game.name));
         return [...withTime, ...withoutTime];
     }
 
-    // 游戏库一览渲染
-    async function renderLibraryPage(page) {
-        const body = document.getElementById('libraryBody');
-        const countSpan = document.getElementById('libraryCount');
-        const paginationDiv = document.getElementById('libraryPagination');
+    async function renderLib(page) {
+        const body = document.getElementById('libBody');
+        const countSpan = document.getElementById('libCount');
+        const pagDiv = document.getElementById('libPagination');
         if (!body) return;
-        if (!dataLoaded) {
-            body.innerHTML = '<div class="empty-modal-msg">游戏数据加载中...</div>';
-            paginationDiv.style.display = 'none';
+        if (!dataReady) {
+            body.innerHTML = '<div class="emptyMsg">游戏数据加载中...</div>';
+            pagDiv.style.display = 'none';
             return;
         }
-        const sorted = buildSortedGames();
+        const sorted = buildSorted();
         sortedGames = sorted;
         totalGames = sortedGames.length;
-        totalLibraryPages = Math.ceil(totalGames / pageSize);
+        libTotalPages = Math.ceil(totalGames / pageSize);
         const start = (page-1)*pageSize;
         const pageGames = sortedGames.slice(start, start+pageSize);
         countSpan.innerText = totalGames;
         if (totalGames === 0) {
-            body.innerHTML = '<div class="empty-modal-msg">暂无游戏数据</div>';
-            paginationDiv.style.display = 'none';
+            body.innerHTML = '<div class="emptyMsg">暂无游戏数据</div>';
+            pagDiv.style.display = 'none';
             return;
         }
         let html = '';
         for (let i=0; i<pageGames.length; i++) {
-            const item = pageGames[i];
-            const game = item.game;
-            const displayDate = getGameChangeDate(game);
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">
-                            <div class="game-name">🎮 ${escapeHtml(game.name)}</div>
-                            ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
+            const g = pageGames[i].game;
+            const dispDate = getChangeDate(g);
+            html += `<div class="gameCard">
+                        <div class="gameTitleRow">
+                            <div class="gameName">🎮 ${escapeHtml(g.name)}</div>
+                            ${dispDate ? `<div class="updateBadge">更新于 ${dispDate}</div>` : ''}
                         </div>
-                        <div class="modal-qr-group">`;
-            if (game.links && game.links.length) {
-                for (let li=0; li<game.links.length; li++) {
-                    const link = game.links[li];
-                    html += `<div class="modal-qr-item" data-link="${escapeHtml(link.url)}" data-platform="${escapeHtml(link.name)}">
-                                <div class="qr-code-box" id="lib-qr-${i}-${li}"></div>
-                                <span class="qr-label">${escapeHtml(link.name)}</span>
+                        <div class="qrGroup">`;
+            if (g.links && g.links.length) {
+                for (let li=0; li<g.links.length; li++) {
+                    const link = g.links[li];
+                    html += `<div class="qrItem" data-link="${escapeHtml(link.url)}" data-platform="${escapeHtml(link.name)}">
+                                <div class="qrBox" id="libqr-${i}-${li}"></div>
+                                <span class="qrLabel">${escapeHtml(link.name)}</span>
                              </div>`;
                 }
             } else {
-                html += `<span class="qr-label">无链接</span>`;
+                html += `<span class="qrLabel">无链接</span>`;
             }
             html += `</div></div>`;
         }
         body.innerHTML = html;
-        // 生成二维码
         for (let i=0; i<pageGames.length; i++) {
-            const game = pageGames[i].game;
-            if (game.links) {
-                for (let li=0; li<game.links.length; li++) {
-                    const url = game.links[li].url;
-                    const container = document.getElementById(`lib-qr-${i}-${li}`);
-                    if (container && url) await generateQRCode(container, url);
+            const g = pageGames[i].game;
+            if (g.links) {
+                for (let li=0; li<g.links.length; li++) {
+                    const url = g.links[li].url;
+                    const cont = document.getElementById(`libqr-${i}-${li}`);
+                    if (cont && url) await genQR(cont, url);
                 }
             }
         }
-        attachQrZoom();
-        document.getElementById('libPageInfo').innerText = `第 ${page}/${totalLibraryPages} 页 (共${totalGames}个)`;
-        document.getElementById('libPrevPage').disabled = (page <= 1);
-        document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
-        paginationDiv.style.display = 'flex';
+        attachZoom();
+        document.getElementById('libPageInfo').innerText = `第 ${page}/${libTotalPages} 页 (共${totalGames}个)`;
+        document.getElementById('libPrev').disabled = (page <= 1);
+        document.getElementById('libNext').disabled = (page >= libTotalPages);
+        pagDiv.style.display = 'flex';
     }
 
-    function openLibraryModal() {
-        currentLibraryPage = 1;
-        renderLibraryPage(1);
+    function openLibModal() {
+        libPage = 1;
+        renderLib(1);
         document.getElementById('libraryModal').classList.add('show');
     }
-    function closeLibraryModal() {
+    function closeLibModal() {
         document.getElementById('libraryModal').classList.remove('show');
     }
 
-    // ==================== 游戏数据加载 ====================
     async function loadGameData() {
-        // 1. 先从缓存加载，立即显示
-        const cachedData = localStorage.getItem(CACHE_GAMES_KEY);
-        if (cachedData) {
+        const cached = localStorage.getItem(CACHE_KEY);
+        if (cached) {
             try {
-                const parsed = JSON.parse(cachedData);
+                const parsed = JSON.parse(cached);
                 if (Array.isArray(parsed) && parsed.length) {
-                    gameDB = parsed;
-                    dataLoaded = true;
-                    renderHotGames();
-                    console.log('✅ 从缓存加载游戏数据，共', gameDB.length, '个游戏');
+                    gameData = parsed;
+                    dataReady = true;
+                    renderHot();
+                    console.log('从缓存加载，共', gameData.length);
                 }
             } catch(e) {}
         }
-
-        // 2. 后台获取最新 games.json，强制禁用缓存
-        const timestamp = Date.now();
-        const urls = [
-            `/games.json?t=${timestamp}`,
-            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
-        ];
-
-        async function fetchWithTimeout(url, timeout = 10000) {
-            const controller = new AbortController();
-            const id = setTimeout(() => controller.abort(), timeout);
+        const ts = Date.now();
+        const urls = [`/games.json?t=${ts}`, `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${ts}`];
+        async function fetchWithTimeout(url, timeout=10000) {
+            const ctrl = new AbortController();
+            const id = setTimeout(() => ctrl.abort(), timeout);
             try {
-                const response = await fetch(url, { 
-                    signal: controller.signal,
-                    cache: 'no-store',
-                    headers: { 'Cache-Control': 'no-cache' }
-                });
+                const res = await fetch(url, { signal: ctrl.signal, cache: 'no-store', headers: { 'Cache-Control': 'no-cache' } });
                 clearTimeout(id);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return await response.json();
-            } catch (error) {
+                if (!res.ok) throw new Error();
+                return await res.json();
+            } catch(e) {
                 clearTimeout(id);
-                throw error;
+                throw e;
             }
         }
-
-        let newGameDB = null;
+        let newData = null;
         for (const url of urls) {
             try {
-                console.log(`尝试加载: ${url}`);
-                newGameDB = await fetchWithTimeout(url, 10000);
-                console.log(`成功从 ${url} 加载`);
+                console.log(`尝试 ${url}`);
+                newData = await fetchWithTimeout(url, 10000);
+                console.log(`成功 ${url}`);
                 break;
-            } catch (error) {
-                console.warn(`从 ${url} 加载失败:`, error);
-            }
+            } catch(e) { console.warn(e); }
         }
-
-        if (!newGameDB) {
-            if (!dataLoaded) {
-                alert('游戏数据加载失败，请检查网络或刷新页面重试');
-            }
+        if (!newData) {
+            if (!dataReady) alert('游戏数据加载失败，请检查网络或刷新页面重试');
             return;
         }
-
-        localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
-        
-        // 如果新数据与当前数据不同，更新界面
-        if (JSON.stringify(gameDB) !== JSON.stringify(newGameDB)) {
-            gameDB = newGameDB;
-            renderHotGames();
+        localStorage.setItem(CACHE_KEY, JSON.stringify(newData));
+        if (JSON.stringify(gameData) !== JSON.stringify(newData)) {
+            gameData = newData;
+            renderHot();
             const libModal = document.getElementById('libraryModal');
-            if (libModal && libModal.classList.contains('show')) {
-                renderLibraryPage(currentLibraryPage);
-            }
-        } else if (!dataLoaded) {
-            gameDB = newGameDB;
-            renderHotGames();
+            if (libModal && libModal.classList.contains('show')) renderLib(libPage);
+        } else if (!dataReady) {
+            gameData = newData;
+            renderHot();
         }
-        dataLoaded = true;
+        dataReady = true;
     }
 
-    function renderHotGames() {
-        const hotSection = document.getElementById('hotSection');
-        const hotScroll = document.getElementById('hotScroll');
-        if (!hotSection || !hotScroll) return;
-        if (!gameDB.length) {
-            hotSection.style.display = 'none';
+    function renderHot() {
+        const hotDiv = document.getElementById('hotSection');
+        const scrollDiv = document.getElementById('hotScroll');
+        if (!hotDiv || !scrollDiv) return;
+        if (!gameData.length) {
+            hotDiv.style.display = 'none';
             return;
         }
-        const hotGames = gameDB.slice(0, 10);
-        hotScroll.innerHTML = hotGames.map(game => {
-            let displayName = game.shortName;
-            if (!displayName) {
-                const rawName = game.name;
-                displayName = rawName.length > 5 ? rawName.slice(0,5) + '…' : rawName;
+        const hotGames = gameData.slice(0,10);
+        scrollDiv.innerHTML = hotGames.map(g => {
+            let dispName = g.shortName;
+            if (!dispName) {
+                const raw = g.name;
+                dispName = raw.length > 5 ? raw.slice(0,5)+'…' : raw;
             }
-            const coverUrl = game.cover ? game.cover : 'https://via.placeholder.com/80x80?text=🎮';
-            return `
-                <div class="hot-item" data-name="${escapeHtml(game.name)}">
-                    <img src="${coverUrl}" alt="${escapeHtml(displayName)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
-                    <span>${escapeHtml(displayName)}</span>
-                </div>
-            `;
+            const cover = g.cover ? g.cover : 'https://via.placeholder.com/80x80?text=🎮';
+            return `<div class="hotItem" data-name="${escapeHtml(g.name)}">
+                        <img src="${cover}" alt="${escapeHtml(dispName)}" loading="lazy" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
+                        <span>${escapeHtml(dispName)}</span>
+                    </div>`;
         }).join('');
-        hotSection.style.display = 'block';
-        document.querySelectorAll('.hot-item').forEach(item => {
-            item.addEventListener('click', () => {
-                const gameName = item.getAttribute('data-name');
-                if (gameName) searchByKeyword(gameName);
+        hotDiv.style.display = 'block';
+        document.querySelectorAll('.hotItem').forEach(el => {
+            el.addEventListener('click', () => {
+                const name = el.getAttribute('data-name');
+                if (name) searchByName(name);
             });
         });
     }
 
-    // ==================== 游戏搜索与分页 ====================
-    function matchesQuery(gameName, query) {
-        const nameLower = gameName.toLowerCase();
-        const queryLower = query.toLowerCase();
+    function matchesQuery(name, q) {
+        const n = name.toLowerCase();
+        const ql = q.toLowerCase();
         let pos = -1;
-        for (let i = 0; i < queryLower.length; i++) {
-            const ch = queryLower[i];
-            const nextPos = nameLower.indexOf(ch, pos + 1);
-            if (nextPos === -1) return false;
-            pos = nextPos;
+        for (let i=0; i<ql.length; i++) {
+            const next = n.indexOf(ql[i], pos+1);
+            if (next === -1) return false;
+            pos = next;
         }
         return true;
     }
 
-    function calculateScore(gameName, query) {
-        let nameForScore = gameName;
-        if (gameName.startsWith('（Switch）')) {
-            nameForScore = gameName.substring(8);
-        }
-        const nameLower = nameForScore.toLowerCase();
-        const queryLower = query.toLowerCase();
-        const contIdx = nameLower.indexOf(queryLower);
-        if (contIdx !== -1) {
-            return 100000 - contIdx * 10;
-        }
-        const firstIdx = nameLower.indexOf(queryLower[0]);
-        if (firstIdx !== -1) {
-            return 10000 - firstIdx * 10;
-        }
+    function calcScore(name, q) {
+        let ns = name;
+        if (ns.startsWith('（Switch）')) ns = ns.substring(8);
+        const nl = ns.toLowerCase();
+        const ql = q.toLowerCase();
+        const idx = nl.indexOf(ql);
+        if (idx !== -1) return 100000 - idx*10;
+        const first = nl.indexOf(ql[0]);
+        if (first !== -1) return 10000 - first*10;
         return 0;
     }
 
-    async function mockBackendAPI(query, page) {
-        if (!dataLoaded) return { data: [], total: 0, page: 1, totalPages: 1 };
-        let filtered = gameDB.filter(g => matchesQuery(g.name, query));
-        filtered.sort((a, b) => {
-            const scoreA = calculateScore(a.name, query);
-            const scoreB = calculateScore(b.name, query);
-            return scoreB - scoreA;
-        });
+    async function mockApi(query, page) {
+        if (!dataReady) return { data:[], total:0, page:1, totalPages:1 };
+        let filtered = gameData.filter(g => matchesQuery(g.name, query));
+        filtered.sort((a,b) => calcScore(b.name, query) - calcScore(a.name, query));
         const total = filtered.length;
         const totalPages = Math.ceil(total / pageSize);
-        const start = (page - 1) * pageSize;
-        const data = filtered.slice(start, start + pageSize);
-        return { data: data, total: total, page: page, totalPages: totalPages };
+        const start = (page-1)*pageSize;
+        const data = filtered.slice(start, start+pageSize);
+        return { data, total, page, totalPages };
     }
 
     async function loadGamePage(page) {
-        const modalBody = document.getElementById('modalBody');
-        const modalTitle = document.getElementById('modalTitle');
-        modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>加载游戏...</div>`;
-        const res = await mockBackendAPI(currentGameQuery, page);
-        gameCurrentPage = res.page;
+        const body = document.getElementById('modalBody');
+        const title = document.getElementById('modalTitle');
+        body.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="spinner"></div>加载游戏...</div>`;
+        const res = await mockApi(curQuery, page);
+        gamePage = res.page;
         gameTotalPages = res.totalPages;
-        gameTotalCount = res.total;
-        modalTitle.innerHTML = `🔍查询到 <span class="result-count">${gameTotalCount}</span> 个游戏`;
-        modalBody.innerHTML = generateGameCards(res.data);
-        for(let i=0; i<res.data.length; i++) {
-            const game = res.data[i];
-            for(let j=0; j<game.links.length; j++) {
-                const container = document.getElementById(`qr-${i}-${j}`);
-                if(container && game.links[j].url) await generateQRCode(container, game.links[j].url);
+        gameTotal = res.total;
+        title.innerHTML = `🔍查询到 <span class="resultCount">${gameTotal}</span> 个游戏`;
+        body.innerHTML = generateCards(res.data);
+        for (let i=0; i<res.data.length; i++) {
+            const g = res.data[i];
+            for (let j=0; j<g.links.length; j++) {
+                const cont = document.getElementById(`qr-${i}-${j}`);
+                if (cont && g.links[j].url) await genQR(cont, g.links[j].url);
             }
         }
-        attachQrZoom();
-        document.getElementById('pageInfo').innerText = `第 ${gameCurrentPage}/${gameTotalPages} 页 (共${gameTotalCount}个)`;
-        document.getElementById('prevPage').disabled = gameCurrentPage <= 1;
-        document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
+        attachZoom();
+        document.getElementById('pageInfo').innerText = `第 ${gamePage}/${gameTotalPages} 页 (共${gameTotal}个)`;
+        document.getElementById('prevPage').disabled = gamePage <= 1;
+        document.getElementById('nextPage').disabled = gamePage >= gameTotalPages;
         document.getElementById('pagination').style.display = 'flex';
-        document.getElementById('download-tip').style.display = 'flex';
+        document.getElementById('downloadTip').style.display = 'flex';
     }
 
-    function generateGameCards(games){
-        if(!games.length) return '<div class="empty-modal-msg">🔍 未找到游戏</div>';
+    function generateCards(games) {
+        if (!games.length) return '<div class="emptyMsg">🔍 未找到游戏</div>';
         let html = '';
-        games.forEach((game, idx) => {
-            html += `<div class="modal-game-card">
-                        <div class="game-title-row">🎮 ${game.name}</div>
-                        <div class="modal-qr-group">`;
-            game.links.forEach((link, linkIdx) => {
-                html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
-                            <div class="qr-code-box" id="qr-${idx}-${linkIdx}"></div>
-                            <span class="qr-label">${link.name}</span>
+        games.forEach((g, idx) => {
+            html += `<div class="gameCard">
+                        <div class="gameTitleRow">🎮 ${g.name}</div>
+                        <div class="qrGroup">`;
+            g.links.forEach((link, lidx) => {
+                html += `<div class="qrItem" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
+                            <div class="qrBox" id="qr-${idx}-${lidx}"></div>
+                            <span class="qrLabel">${link.name}</span>
                          </div>`;
             });
             html += `</div></div>`;
@@ -1311,8 +1231,7 @@
         return html;
     }
 
-    // ==================== QR 相关函数 ====================
-    async function generateQRCode(container, text) {
+    async function genQR(container, text) {
         if (!text) { container.innerHTML = '无'; return; }
         container.innerHTML = '';
         const canvas = document.createElement('canvas');
@@ -1321,31 +1240,29 @@
         container.appendChild(canvas);
     }
 
-    function attachQrZoom() {
-        document.querySelectorAll('.modal-qr-item').forEach(el => {
+    function attachZoom() {
+        document.querySelectorAll('.qrItem').forEach(el => {
             el.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const link = el.dataset.link;
-                let platform = el.dataset.platform;
-                if (platform && platform.includes('百度网盘')) {
-                    platform = '百度网盘（提取码8888）';
-                }
-                if (link) showZoom(platform, link);
+                let plat = el.dataset.platform;
+                if (plat && plat.includes('百度网盘')) plat = '百度网盘（提取码8888）';
+                if (link) showZoom(plat, link);
             });
         });
     }
 
     function showZoom(platform, link) {
-        const zoomBox = document.getElementById('zoomQrBox');
-        zoomBox.innerHTML = '';
+        const box = document.getElementById('zoomQrBox');
+        box.innerHTML = '';
         QRCode.toCanvas(document.createElement('canvas'), link, { width: 200 }, (err, canvas) => {
-            if (canvas) { canvas.style.width = '100%'; zoomBox.appendChild(canvas); }
+            if (canvas) { canvas.style.width = '100%'; box.appendChild(canvas); }
         });
         document.getElementById('zoomPlatform').innerText = platform;
-        const pcHint = document.querySelector('.pc');
+        const pcHint = document.querySelector('.pcHint');
         if (pcHint) pcHint.innerText = `${platform}APP扫码获取`;
         document.getElementById('zoomModal').classList.add('show');
-        window.currentZoomLink = link;
+        window.curZoomLink = link;
     }
 
     function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
@@ -1355,37 +1272,35 @@
         document.getElementById('pagination').style.display = 'flex';
     }
 
-    async function searchByKeyword(keyword) {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
-        currentMode = 'game';
-        currentGameQuery = keyword;
+    async function searchByName(keyword) {
+        if (!dataReady) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        curMode = 'game';
+        curQuery = keyword;
         openResultModal();
         await loadGamePage(1);
     }
 
-    function handlePrevPage() {
-        if (currentMode === 'game' && gameCurrentPage > 1) loadGamePage(gameCurrentPage - 1);
-        else if (currentMode === 'wish' && wishCurrentPage > 1) renderWishModal(wishCurrentPage - 1);
+    function handlePrev() {
+        if (curMode === 'game' && gamePage > 1) loadGamePage(gamePage-1);
+        else if (curMode === 'wish' && wishPage > 1) renderWish(wishPage-1);
+    }
+    function handleNext() {
+        if (curMode === 'game' && gamePage < gameTotalPages) loadGamePage(gamePage+1);
+        else if (curMode === 'wish' && wishPage < wishTotalPages) renderWish(wishPage+1);
     }
 
-    function handleNextPage() {
-        if (currentMode === 'game' && gameCurrentPage < gameTotalPages) loadGamePage(gameCurrentPage + 1);
-        else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
-    }
-
-    // ==================== 工具按钮 ====================
-    const toolButtons = {
-        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
-        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
-        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div></div>` }
+    const toolMap = {
+        switchBtn: { title: '🎮 Switch专区', content: `<div class="toolContent" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switchArea" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmuBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        mobileBtn: { title: '📱 手机游戏', content: `<div class="toolContent" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="qrGroup" style="justify-content: center;"><div class="qrItem" id="quarkQr"><div class="qrBox" id="quarkQrCode"></div><span class="qrLabel">夸克网盘</span></div><div class="qrItem" id="xunleiQr"><div class="qrBox" id="xunleiQrCode"></div><span class="qrLabel">迅雷网盘</span></div><div class="qrItem" id="baiduQr"><div class="qrBox" id="baiduQrCode"></div><span class="qrLabel">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
+        toolsBtn: { title: '🌐 常用工具', content: `<div class="toolContent" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="toolsArea" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        groupBtn: { title: '🐧 交流群', content: `<div class="toolContent" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
+        feedbackBtn: { title: '💬 反馈问题', content: `<div class="toolContent"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="errorMsg" style="margin-top:1rem; color:green;"></div></div>` }
     };
 
-    function openToolModal(title, content) {
+    function openTool(title, content) {
         document.getElementById('pagination').style.display = 'none';
-        document.getElementById('download-tip').style.display = 'none';
-        currentMode = 'tool';
+        document.getElementById('downloadTip').style.display = 'none';
+        curMode = 'tool';
         document.getElementById('modalTitle').innerHTML = title;
         document.getElementById('modalBody').innerHTML = content;
         openResultModal();
@@ -1395,16 +1310,16 @@
             const quarkUrl = 'https://pan.quark.cn/s/8ba37e43e4c2';
             const xunleiUrl = 'https://pan.xunlei.com/s/VOpBndBIIEKl7KU23q3dVgZlA1?pwd=qqyq#';
             const baiduUrl = 'https://pan.baidu.com/s/1ROgJUWC1yohfN_f8lSI1Aw?pwd=8888';
-            const quarkContainer = document.getElementById('quarkQrCode');
-            const xunleiContainer = document.getElementById('xunleiQrCode');
-            const baiduContainer = document.getElementById('baiduQrCode');
-            const quarkItem = document.getElementById('quarkQr');
-            const xunleiItem = document.getElementById('xunleiQr');
-            const baiduItem = document.getElementById('baiduQr');
-            if (quarkItem) quarkItem.classList.add('mobile-game-qr');
-            if (xunleiItem) xunleiItem.classList.add('mobile-game-qr');
-            if (baiduItem) baiduItem.classList.add('mobile-game-qr');
-            async function genQR(container, url, size) {
+            const qc = document.getElementById('quarkQrCode');
+            const xc = document.getElementById('xunleiQrCode');
+            const bc = document.getElementById('baiduQrCode');
+            const qi = document.getElementById('quarkQr');
+            const xi = document.getElementById('xunleiQr');
+            const bi = document.getElementById('baiduQr');
+            if (qi) qi.classList.add('mobileGameQr');
+            if (xi) xi.classList.add('mobileGameQr');
+            if (bi) bi.classList.add('mobileGameQr');
+            async function gen(container, url, size) {
                 if (!container) return;
                 container.innerHTML = '';
                 const canvas = document.createElement('canvas');
@@ -1413,172 +1328,160 @@
                 await QRCode.toCanvas(canvas, url, { width: size });
                 container.appendChild(canvas);
             }
-            if (quarkContainer) genQR(quarkContainer, quarkUrl, qrSize);
-            if (xunleiContainer) genQR(xunleiContainer, xunleiUrl, qrSize);
-            if (baiduContainer) genQR(baiduContainer, baiduUrl, qrSize);
+            if (qc) gen(qc, quarkUrl, qrSize);
+            if (xc) gen(xc, xunleiUrl, qrSize);
+            if (bc) gen(bc, baiduUrl, qrSize);
             document.getElementById('quarkQr')?.addEventListener('click', () => showZoom('夸克网盘', quarkUrl));
             document.getElementById('xunleiQr')?.addEventListener('click', () => showZoom('迅雷网盘', xunleiUrl));
             document.getElementById('baiduQr')?.addEventListener('click', () => showZoom('百度网盘', baiduUrl));
         }
         if (title === '🐧 交流群') {
-            const qqBox = document.getElementById('qqGroupBox');
-            const qqNumSpan = document.getElementById('qqNum');
-            const qqNum = qqNumSpan ? qqNumSpan.innerText : '1064508042';
-            const copyHandler = () => { navigator.clipboard.writeText(qqNum).then(() => alert('QQ群号已复制: ' + qqNum)).catch(() => { const t = document.createElement('textarea'); t.value = qqNum; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qqNum); }); };
-            if (qqBox) qqBox.addEventListener('click', copyHandler);
+            const box = document.getElementById('qqGroupBox');
+            const numSpan = document.getElementById('qqNum');
+            const num = numSpan ? numSpan.innerText : '1064508042';
+            const copy = () => { navigator.clipboard.writeText(num).then(() => alert('QQ群号已复制: '+num)).catch(()=>{ const t=document.createElement('textarea'); t.value=num; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: '+num); }); };
+            if (box) box.addEventListener('click', copy);
         }
         if (title === '💬 反馈问题') {
-            const feedbackQQ = document.getElementById('feedbackQQ');
-            if (feedbackQQ) feedbackQQ.addEventListener('click', () => { const qq = feedbackQQ.innerText; navigator.clipboard.writeText(qq).then(() => alert('QQ群号已复制: ' + qq)).catch(() => { const t = document.createElement('textarea'); t.value = qq; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qq); }); });
+            const fb = document.getElementById('feedbackQQ');
+            if (fb) fb.addEventListener('click', () => { const qq = fb.innerText; navigator.clipboard.writeText(qq).then(()=>alert('QQ群号已复制: '+qq)).catch(()=>{ const t=document.createElement('textarea'); t.value=qq; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: '+qq); }); });
         }
         if (title === '🎮 Switch专区') {
             setTimeout(() => {
-                document.getElementById('switchEmulatorBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('Switch模拟器'); });
-                document.getElementById('switchKeyBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('密钥固件'); });
-                document.getElementById('switchGamesBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('switch'); });
+                document.getElementById('switchEmuBtn')?.addEventListener('click', () => { closeResultModal(); searchByName('Switch模拟器'); });
+                document.getElementById('switchKeyBtn')?.addEventListener('click', () => { closeResultModal(); searchByName('密钥固件'); });
+                document.getElementById('switchGamesBtn')?.addEventListener('click', () => { closeResultModal(); searchByName('switch'); });
             }, 0);
         }
         if (title === '🌐 常用工具') {
             setTimeout(() => {
-                document.getElementById('losslessBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('小黄鸭补帧工具'); });
-                document.getElementById('pkhexBtn')?.addEventListener('click', () => { closeResultModal(); searchByKeyword('PKHeX'); });
+                document.getElementById('losslessBtn')?.addEventListener('click', () => { closeResultModal(); searchByName('小黄鸭补帧工具'); });
+                document.getElementById('pkhexBtn')?.addEventListener('click', () => { closeResultModal(); searchByName('PKHeX'); });
             }, 0);
         }
     }
 
-    function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
-    function jumpToLink(link) { if(link) window.open(link, '_blank'); }
-    function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
+    function copyLink(link) { if(link) { navigator.clipboard.writeText(link); alert('链接已复制'); } }
+    function jumpLink(link) { if(link) window.open(link, '_blank'); }
+    function closeAuth() { document.getElementById('authModal').classList.remove('show'); }
 
-    function showAuthModal(mode) {
+    function showAuth(mode) {
         const modal = document.getElementById('authModal');
         const titleEl = document.getElementById('authModalTitle');
         const container = document.getElementById('authFormContainer');
-        if(mode === 'login') {
+        if (mode === 'login') {
             titleEl.innerText = '登录账号';
-            container.innerHTML = `<div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div><button class="auth-btn" id="submitLoginBtn">登录</button><div class="switch-auth" id="switchToReg">没有账号？ 立即注册</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitLoginBtn')?.addEventListener('click', () => { alert('后续敬请期待'); closeAuthModal(); });
-            document.getElementById('switchToReg')?.addEventListener('click', () => showAuthModal('register'));
+            container.innerHTML = `<div class="formGroup"><label>邮箱</label><input type="email" id="loginEmail" placeholder="your@email.com"></div><div class="formGroup"><label>密码</label><input type="password" id="loginPassword" placeholder="密码"></div><button class="authBtn" id="submitLoginBtn">登录</button><div class="switchAuth" id="switchToReg">没有账号？ 立即注册</div><div id="authError" class="errorMsg"></div>`;
+            document.getElementById('submitLoginBtn')?.addEventListener('click', () => { alert('后续敬请期待'); closeAuth(); });
+            document.getElementById('switchToReg')?.addEventListener('click', () => showAuth('register'));
         } else {
             titleEl.innerText = '注册账号';
-            container.innerHTML = `<div class="form-group"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div><div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div><div class="form-group"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div><button class="auth-btn" id="submitRegBtn">注册</button><div class="switch-auth" id="switchToLogin">已有账号？ 去登录</div><div id="authError" class="error-msg"></div>`;
-            document.getElementById('submitRegBtn')?.addEventListener('click', () => { alert('注册成功'); closeAuthModal(); });
-            document.getElementById('switchToLogin')?.addEventListener('click', () => showAuthModal('login'));
+            container.innerHTML = `<div class="formGroup"><label>昵称</label><input type="text" id="regNickname" placeholder="昵称"></div><div class="formGroup"><label>邮箱</label><input type="email" id="regEmail" placeholder="your@email.com"></div><div class="formGroup"><label>密码</label><input type="password" id="regPassword" placeholder="密码"></div><button class="authBtn" id="submitRegBtn">注册</button><div class="switchAuth" id="switchToLogin">已有账号？ 去登录</div><div id="authError" class="errorMsg"></div>`;
+            document.getElementById('submitRegBtn')?.addEventListener('click', () => { alert('注册成功'); closeAuth(); });
+            document.getElementById('switchToLogin')?.addEventListener('click', () => showAuth('login'));
         }
         modal.classList.add('show');
     }
 
-    async function renderWishModal(page=1) {
-        document.getElementById('download-tip').style.display = 'none';
-        const modalBody = document.getElementById('modalBody');
-        modalBody.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="loading-spinner"></div>加载愿望...</div>`;
+    async function renderWish(page=1) {
+        document.getElementById('downloadTip').style.display = 'none';
+        const body = document.getElementById('modalBody');
+        body.innerHTML = `<div style="text-align:center;padding:2rem;"><div class="spinner"></div>加载愿望...</div>`;
         const result = await fetchWishes(page);
         const wishes = result.data;
-        wishCurrentPage = result.page;
+        wishPage = result.page;
         wishTotalPages = result.totalPages;
         wishTotal = result.total;
-        let wishItems = '';
-        if(!wishes.length) wishItems = '<div class="wish-empty">✨ 还没有愿望，快许下第一个愿望吧</div>';
+        let items = '';
+        if (!wishes.length) items = '<div class="wishEmpty">✨ 还没有愿望，快许下第一个愿望吧</div>';
         else {
             wishes.forEach(w => {
-                wishItems += `<div class="wish-item"><div class="wish-text">💬 ${w.text}</div>${w.reply ? `<div class="wish-reply">📢 回复：${w.reply}</div>` : ''}<div class="wish-time">${w.time || ''}</div></div>`;
+                items += `<div class="wishItem"><div class="wishText">💬 ${w.text}</div>${w.reply ? `<div class="wishReply">📢 回复：${w.reply}</div>` : ''}<div class="wishTime">${w.time || ''}</div></div>`;
             });
         }
-        const formHtml = `<div class="wish-form"><input class="wish-input" id="newWishInput" placeholder="许下心愿，例如：求星之卡比..."><button class="wish-submit-btn" id="submitWishBtn">✨ 许愿</button></div>`;
-        modalBody.innerHTML = `${formHtml}<div class="wish-list">${wishItems}</div>`;
+        const formHtml = `<div class="wishForm"><input class="wishInput" id="newWishInput" placeholder="许下心愿，例如：求星之卡比..."><button class="wishSubmit" id="submitWishBtn">✨ 许愿</button></div>`;
+        body.innerHTML = `${formHtml}<div class="wishList">${items}</div>`;
         document.getElementById('submitWishBtn')?.addEventListener('click', async () => {
-            const input = document.getElementById('newWishInput');
-            const txt = input.value.trim();
-            if(txt.length<2) { alert('愿望至少2个字'); return; }
+            const inp = document.getElementById('newWishInput');
+            const txt = inp.value.trim();
+            if (txt.length<2) { alert('愿望至少2个字'); return; }
             const res = await createWish(txt);
-            if(res.code == 0) { alert('许愿成功！'); input.value=''; await renderWishModal(wishCurrentPage); }
+            if (res.code == 0) { alert('许愿成功！'); inp.value=''; await renderWish(wishPage); }
             else alert('许愿失败，请稍后再试');
         });
-        document.getElementById('pageInfo').innerText = `第 ${wishCurrentPage}/${wishTotalPages} 页 (共${wishTotal}条)`;
-        document.getElementById('prevPage').disabled = wishCurrentPage <= 1;
-        document.getElementById('nextPage').disabled = wishCurrentPage >= wishTotalPages;
+        document.getElementById('pageInfo').innerText = `第 ${wishPage}/${wishTotalPages} 页 (共${wishTotal}条)`;
+        document.getElementById('prevPage').disabled = wishPage <= 1;
+        document.getElementById('nextPage').disabled = wishPage >= wishTotalPages;
         document.getElementById('pagination').style.display = 'flex';
     }
 
-    async function handleWishClickWithAuth() {
-        if(!currentUser) { alert('请先登录'); showAuthModal('login'); return; }
-        currentMode = 'wish';
+    async function handleWishWithAuth() {
+        if (!curUser) { alert('请先登录'); showAuth('login'); return; }
+        curMode = 'wish';
         document.getElementById('modalTitle').innerHTML = '<span>⛲ 许愿池 · 留下你的愿望</span>';
         openResultModal();
-        await renderWishModal(1);
+        await renderWish(1);
     }
 
     async function fetchWishes(page) { return { data: [], total: 0, page: 1, totalPages: 1 }; }
     async function createWish(text) { return { code: 0 }; }
 
-    function loadStoredUser() { currentUser = null; updateAuthUI(); }
-    function updateAuthUI() {
-        const authArea = document.getElementById('authArea');
-        if(currentUser && currentUser.nickname) {
-            authArea.innerHTML = `<div><span>😀${currentUser.nickname}</span><button class="logout-btn" id="logoutBtn">退出</button></div>`;
-            document.getElementById('logoutBtn')?.addEventListener('click', () => { currentUser=null; updateAuthUI(); });
+    function loadStoredUser() { curUser = null; updateUI(); }
+    function updateUI() {
+        const area = document.getElementById('authArea');
+        if (curUser && curUser.nickname) {
+            area.innerHTML = `<div><span>😀${curUser.nickname}</span><button class="logoutBtn" id="logoutBtn">退出</button></div>`;
+            document.getElementById('logoutBtn')?.addEventListener('click', () => { curUser=null; updateUI(); });
         } else {
-            authArea.innerHTML = `<button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>`;
-            document.getElementById('openLoginModalBtn')?.addEventListener('click', () => showAuthModal('login'));
+            area.innerHTML = `<button class="loginBtn" id="openAuthBtn">🔐 登录 / 注册</button>`;
+            document.getElementById('openAuthBtn')?.addEventListener('click', () => showAuth('login'));
         }
     }
 
-    function bindEvents() {
+    function bindAll() {
         document.getElementById('searchBtn').addEventListener('click', () => {
-            const query = document.getElementById('gameSearchInput').value.trim();
-            if (!query) return;
-            currentMode = 'game';
-            currentGameQuery = query;
+            const q = document.getElementById('searchInput').value.trim();
+            if (!q) return;
+            curMode = 'game';
+            curQuery = q;
             openResultModal();
             loadGamePage(1);
         });
         document.getElementById('closeModalBtn').addEventListener('click', closeResultModal);
-        document.getElementById('closeAuthModalBtn').addEventListener('click', closeAuthModal);
+        document.getElementById('closeAuthModalBtn').addEventListener('click', closeAuth);
         document.getElementById('closeZoomBtn').addEventListener('click', closeZoom);
-        document.getElementById('prevPage').addEventListener('click', handlePrevPage);
-        document.getElementById('nextPage').addEventListener('click', handleNextPage);
-        document.getElementById('jumpDirectBtn')?.addEventListener('click', () => jumpToLink(window.currentZoomLink));
-        document.getElementById('copyDirectBtn')?.addEventListener('click', () => copyLinkToClipboard(window.currentZoomLink));
-        document.getElementById('wishingWellBtn').addEventListener('click', handleWishClickWithAuth);
-        for (const [btnId, config] of Object.entries(toolButtons)) {
-            const btn = document.getElementById(btnId);
-            if (btn) btn.onclick = () => openToolModal(config.title, config.content);
+        document.getElementById('prevPage').addEventListener('click', handlePrev);
+        document.getElementById('nextPage').addEventListener('click', handleNext);
+        document.getElementById('jumpDirectBtn')?.addEventListener('click', () => jumpLink(window.curZoomLink));
+        document.getElementById('copyDirectBtn')?.addEventListener('click', () => copyLink(window.curZoomLink));
+        document.getElementById('wishBtn').addEventListener('click', handleWishWithAuth);
+        for (const [id, cfg] of Object.entries(toolMap)) {
+            const btn = document.getElementById(id);
+            if (btn) btn.onclick = () => openTool(cfg.title, cfg.content);
         }
-        document.querySelectorAll('.mock-link').forEach(el => {
+        document.querySelectorAll('.demoLink').forEach(el => {
             el.addEventListener('click', () => {
-                const keyword = el.innerText.trim();
-                if (keyword) {
-                    document.getElementById('gameSearchInput').value = keyword;
+                const kw = el.innerText.trim();
+                if (kw) {
+                    document.getElementById('searchInput').value = kw;
                     document.getElementById('searchBtn').click();
                 }
             });
         });
-        // 游戏库一览按钮事件
-        const libBtn = document.getElementById('gameLibraryBtn');
-        if (libBtn) libBtn.addEventListener('click', openLibraryModal);
-        const closeLibBtn = document.getElementById('closeLibraryModalBtn');
-        if (closeLibBtn) closeLibBtn.addEventListener('click', closeLibraryModal);
-        const libPrev = document.getElementById('libPrevPage');
-        if (libPrev) libPrev.addEventListener('click', () => {
-            if (currentLibraryPage > 1) {
-                currentLibraryPage--;
-                renderLibraryPage(currentLibraryPage);
-            }
-        });
-        const libNext = document.getElementById('libNextPage');
-        if (libNext) libNext.addEventListener('click', () => {
-            if (currentLibraryPage < totalLibraryPages) {
-                currentLibraryPage++;
-                renderLibraryPage(currentLibraryPage);
-            }
-        });
-        const searchInput = document.getElementById('gameSearchInput');
-        if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
+        const libBtn = document.getElementById('libBtn');
+        if (libBtn) libBtn.addEventListener('click', openLibModal);
+        const closeLib = document.getElementById('closeLibModalBtn');
+        if (closeLib) closeLib.addEventListener('click', closeLibModal);
+        const libPrev = document.getElementById('libPrev');
+        if (libPrev) libPrev.addEventListener('click', () => { if (libPage > 1) { libPage--; renderLib(libPage); } });
+        const libNext = document.getElementById('libNext');
+        if (libNext) libNext.addEventListener('click', () => { if (libPage < libTotalPages) { libPage++; renderLib(libPage); } });
+        const inp = document.getElementById('searchInput');
+        if (inp) inp.addEventListener('keypress', e => { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
 
-    // 初始化
     loadStoredUser();
-    bindEvents();
+    bindAll();
     loadGameData();
 </script>
 </body>
