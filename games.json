@@ -3117,16 +3117,25 @@
     "lastChange": "2026-04-07T13:16:39.823Z"
   },
   {
-    "name": "真・三国无双 起源 v1.0.1.2 新加DLC 梦幻四英杰 豪华中文版 全DLC+神器+单独升级补丁",
+    "name": "真三国无双 起源 v1.0.1.2 新加DLC 梦幻四英杰 豪华中文版全DLC+神器+单独升级补丁",
     "shortName": "真三国无双起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/b23865e1239f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOpmQCjEd8jvAW6D0jEXTjjsA1?pwd=uvbn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1E6PlxgiWsFVN1hm6vdDZ7g?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z"
+    "lastChange": "2026-04-09T13:27:16.249Z"
   },
   {
     "name": "幻兽帕鲁 V0.7.3.90464中文全DLC 心之所归",
@@ -21064,5 +21073,24 @@
       }
     ],
     "lastChange": "2026-04-08T15:06:33.219Z"
+  },
+  {
+    "name": "超合金冲击 支持者版v0.41豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "超合金冲击 支持者版v0.41豪华中文全DLC"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOpmPYucsiWZln7-5yyUP58OA1?pwd=anva#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HjSfpL0FJsYI1v0j8aKyAw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-04-09T13:24:42.326Z"
   }
 ]
