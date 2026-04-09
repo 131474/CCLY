@@ -644,6 +644,18 @@
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; }
             .pc { display: none; }
+            /* 手机端：游戏名称和日期分行显示，避免混乱 */
+            .game-title-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .update-date-badge {
+                align-self: flex-end;
+                margin-top: 0.2rem;
+            }
+            .game-name {
+                width: 100%;
+            }
         }
         .zoom-modal-overlay {
             position: fixed;
@@ -1100,7 +1112,6 @@
         currentLibraryPage = 1;
         renderLibraryPage(1);
         document.getElementById('libraryModal').classList.add('show');
-        // 模态框打开后重置滚动位置
         setTimeout(() => {
             const body = document.getElementById('libraryBody');
             if (body) body.scrollTop = 0;
@@ -1284,7 +1295,6 @@
         document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
         document.getElementById('pagination').style.display = 'flex';
         document.getElementById('download-tip').style.display = 'flex';
-        // 滚动到顶部
         modalBody.scrollTop = 0;
     }
 
@@ -1337,11 +1347,16 @@
         });
         document.getElementById('zoomPlatform').innerText = platform;
         const pcHint = document.querySelector('.pc');
-        if (pcHint) pcHint.innerText = `${platform}APP扫码获取`;
+        if (pcHint) {
+            let tipText = `${platform}APP扫码获取`;
+            if (platform && platform.includes('百度网盘')) {
+                tipText = `百度网盘APP扫码获取`;
+            }
+            pcHint.innerText = tipText;
+        }
         document.getElementById('zoomModal').classList.add('show');
         window.currentZoomLink = link;
     }
-
     function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
     function closeResultModal() { 
@@ -1491,7 +1506,6 @@
         document.getElementById('prevPage').disabled = wishCurrentPage <= 1;
         document.getElementById('nextPage').disabled = wishCurrentPage >= wishTotalPages;
         document.getElementById('pagination').style.display = 'flex';
-        // 许愿池模态框滚动到顶部
         modalBody.scrollTop = 0;
     }
 
