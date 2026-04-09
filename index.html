@@ -8,11 +8,9 @@
     <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     
-    <!-- ==================== 版本控制（使用外部 version.json） ==================== -->
     <script>
         (async function() {
             const STORAGE_VERSION_KEY = 'app_version';
-            // 添加时间戳强制刷新 version.json
             const versionUrl = 'version.json?t=' + Date.now();
             try {
                 const response = await fetch(versionUrl, { cache: 'no-store' });
@@ -21,10 +19,8 @@
                 const latestVersion = data.version;
                 const storedVersion = localStorage.getItem(STORAGE_VERSION_KEY);
                 if (storedVersion !== latestVersion) {
-                    // 清除游戏数据缓存（可选，但推荐）
                     localStorage.removeItem('cached_games_data');
                     localStorage.setItem(STORAGE_VERSION_KEY, latestVersion);
-                    // 强制刷新页面，获取最新 HTML
                     location.reload(true);
                 }
             } catch(e) {
@@ -154,7 +150,6 @@
             border-left: 3px solid #3f9ad0;
             padding-left: 1rem;
         }
-        /* 滚动字幕样式 */
         .marquee-container {
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
@@ -462,6 +457,8 @@
             font-size: 1rem;
             color: #134b66;
             word-break: break-word;
+            flex: 1;
+            min-width: 0;
         }
         .update-date-badge {
             font-size: 0.85rem;
@@ -470,6 +467,7 @@
             padding: 0.2rem 0.8rem;
             border-radius: 20px;
             white-space: nowrap;
+            flex-shrink: 0;
         }
         .modal-qr-group {
             display: flex;
@@ -978,16 +976,13 @@
     let gameCurrentPage = 1, gameTotalPages = 1, gameTotalCount = 0;
     const pageSize = 4;
 
-    // 游戏库一览分页变量
     let currentLibraryPage = 1;
     let totalLibraryPages = 1;
     let totalGames = 0;
     let sortedGames = [];
 
-    // localStorage 缓存键名
     const CACHE_GAMES_KEY = 'cached_games_data';
 
-    // ==================== 辅助函数 ====================
     function escapeHtml(str) {
         if (!str) return '';
         return str.replace(/[&<>]/g, function(m) {
@@ -998,10 +993,8 @@
         });
     }
 
-    // 获取游戏变更日期（只返回 YYYY-MM-DD，且仅近三天显示）
     function getGameChangeDate(game) {
         if (game.lastChange) {
-            // 只取日期部分（前10个字符）
             const dateStr = game.lastChange.slice(0, 10);
             const changeDate = new Date(dateStr);
             const today = new Date();
@@ -1037,7 +1030,6 @@
         return [...withTime, ...withoutTime];
     }
 
-    // 游戏库一览渲染
     async function renderLibraryPage(page) {
         const body = document.getElementById('libraryBody');
         const countSpan = document.getElementById('libraryCount');
@@ -1085,7 +1077,6 @@
             html += `</div></div>`;
         }
         body.innerHTML = html;
-        // 生成二维码
         for (let i=0; i<pageGames.length; i++) {
             const game = pageGames[i].game;
             if (game.links) {
@@ -1101,20 +1092,25 @@
         document.getElementById('libPrevPage').disabled = (page <= 1);
         document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
         paginationDiv.style.display = 'flex';
+        // 滚动到顶部
+        body.scrollTop = 0;
     }
 
     function openLibraryModal() {
         currentLibraryPage = 1;
         renderLibraryPage(1);
         document.getElementById('libraryModal').classList.add('show');
+        // 模态框打开后重置滚动位置
+        setTimeout(() => {
+            const body = document.getElementById('libraryBody');
+            if (body) body.scrollTop = 0;
+        }, 100);
     }
     function closeLibraryModal() {
         document.getElementById('libraryModal').classList.remove('show');
     }
 
-    // ==================== 游戏数据加载 ====================
     async function loadGameData() {
-        // 1. 先从缓存加载，立即显示
         const cachedData = localStorage.getItem(CACHE_GAMES_KEY);
         if (cachedData) {
             try {
@@ -1128,7 +1124,6 @@
             } catch(e) {}
         }
 
-        // 2. 后台获取最新 games.json，强制禁用缓存
         const timestamp = Date.now();
         const urls = [
             `/games.json?t=${timestamp}`,
@@ -1174,7 +1169,6 @@
 
         localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
         
-        // 如果新数据与当前数据不同，更新界面
         if (JSON.stringify(gameDB) !== JSON.stringify(newGameDB)) {
             gameDB = newGameDB;
             renderHotGames();
@@ -1221,7 +1215,6 @@
         });
     }
 
-    // ==================== 游戏搜索与分页 ====================
     function matchesQuery(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
@@ -1291,6 +1284,8 @@
         document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
         document.getElementById('pagination').style.display = 'flex';
         document.getElementById('download-tip').style.display = 'flex';
+        // 滚动到顶部
+        modalBody.scrollTop = 0;
     }
 
     function generateGameCards(games){
@@ -1311,7 +1306,6 @@
         return html;
     }
 
-    // ==================== QR 相关函数 ====================
     async function generateQRCode(container, text) {
         if (!text) { container.innerHTML = '无'; return; }
         container.innerHTML = '';
@@ -1373,7 +1367,6 @@
         else if (currentMode === 'wish' && wishCurrentPage < wishTotalPages) renderWishModal(wishCurrentPage + 1);
     }
 
-    // ==================== 工具按钮 ====================
     const toolButtons = {
         switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
         nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
@@ -1498,6 +1491,8 @@
         document.getElementById('prevPage').disabled = wishCurrentPage <= 1;
         document.getElementById('nextPage').disabled = wishCurrentPage >= wishTotalPages;
         document.getElementById('pagination').style.display = 'flex';
+        // 许愿池模态框滚动到顶部
+        modalBody.scrollTop = 0;
     }
 
     async function handleWishClickWithAuth() {
@@ -1553,7 +1548,6 @@
                 }
             });
         });
-        // 游戏库一览按钮事件
         const libBtn = document.getElementById('gameLibraryBtn');
         if (libBtn) libBtn.addEventListener('click', openLibraryModal);
         const closeLibBtn = document.getElementById('closeLibraryModalBtn');
@@ -1576,7 +1570,6 @@
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
     }
 
-    // 初始化
     loadStoredUser();
     bindEvents();
     loadGameData();
