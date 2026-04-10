@@ -210,7 +210,7 @@
     "lastChange": "2026-04-07T13:16:39.823Z"
   },
   {
-    "name": "死亡搁浅2：冥滩之上 V1.1.57.0 豪华中文版  全DLC",
+    "name": "死亡搁浅2：冥滩之上V1.3.60.0 豪华中文版  全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -226,7 +226,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-06"
+    "lastChange": "2026-04-10T10:06:30.130Z"
   },
   {
     "name": "恶意不息 v28175 中文版+神器",
@@ -563,7 +563,7 @@
     "lastChange": "2026-04-07T13:16:39.823Z"
   },
   {
-    "name": "杀戮尖塔2  V0.102.0Beta 中文版（PC+安卓+苹果ios） 安卓移植+ios+联机+修改器+MOD合集",
+    "name": "杀戮尖塔2  V0.103.0Beta 中文版（PC+安卓+苹果ios） 安卓移植+ios+联机+修改器+MOD合集",
     "links": [
       {
         "name": "夸克网盘",
@@ -579,7 +579,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T04:31:05.421Z"
+    "lastChange": "2026-04-10T10:14:17.258Z"
   },
   {
     "name": "陨世之泪：涅槃 v1.0.0 中文版",
@@ -2940,7 +2940,7 @@
     "lastChange": "2026-04-07T13:16:39.823Z"
   },
   {
-    "name": "生化危机9安魂曲1.20（真正破解版，非虚拟机，解压即玩）",
+    "name": "生化危机9安魂曲1.20 （真正破解版，非虚拟机，解压即玩）",
     "shortName": "生化危机9",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2958,7 +2958,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-10T04:14:08.383Z"
+    "lastChange": "2026-04-10T10:15:01.570Z"
   },
   {
     "name": "剑星 v1.4.1 豪华中文版 全DLC",
@@ -20807,18 +20807,23 @@
     "lastChange": "2026-04-07T13:16:39.825Z"
   },
   {
-    "name": "（Switch）迪士尼梦幻星谷官方中文v1.21.1+3DLC整合版",
+    "name": "（Switch）迪士尼梦幻星谷官方中文v1.22.0+3DLC整合版",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/177090d831d9"
+        "url": "https://pan.quark.cn/s/cc6597761dec"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpRdsyJWUy-A8GIzdXc8JxGA1?pwd=5yyj#"
+        "url": "https://pan.xunlei.com/s/VOpqqdKxf4mA5EsWAOVW081SA1?pwd=txfv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17yU2WQGBcwk4RwoFIjbRUg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z"
+    "lastChange": "2026-04-10T10:06:08.610Z"
   },
   {
     "name": "超时空方舟官方中文1.2.2异端审判官-影落幻音-迅影绝尘+全DLC",
@@ -21092,5 +21097,24 @@
       }
     ],
     "lastChange": "2026-04-09T13:24:42.326Z"
+  },
+  {
+    "name": "喵门镖局 支持者版官方中文0.3.4疾驰护航-喵勇守护+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b8f84cedeb63"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOpqqDdHaBnzXYmCvlTVUajpA1?pwd=65pd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Zl8GnP7gQgs4AqhzFwyrgA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-04-10T10:03:54.538Z"
   }
 ]
