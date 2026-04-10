@@ -2254,16 +2254,14 @@
     "id": 153
   },
   {
-    "name": "播洛森：星原之种 v1.0.8 中文版",
-    "shortName": "播洛森星原之",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "name": "播洛森：星原之种 v1.1.13 中文版",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/27006d145c4f"
+        "url": "https://pan.quark.cn/s/6aa4421ef65a"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-10T16:29:45.715Z",
     "id": 154
   },
   {
@@ -3281,16 +3279,25 @@
     "id": 229
   },
   {
-    "name": "怪物猎人：荒野 v1.041.02.00 豪华中文版 全DLC 打包XG器",
+    "name": "怪物猎人：荒野 v1.041.03.00 豪华中文版 全DLC（个人修复手柄直连VBS一键启动版）",
     "shortName": "怪物猎人荒野",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/ee9bce5a7179"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOps4aJfj-0tmmsTBn13sSf4A1?pwd=updz#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Ry39CI0se43mTSg8gfZpwg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-10T15:51:14.757Z",
     "id": 230
   },
   {
@@ -5724,16 +5731,23 @@
     "id": 403
   },
   {
-    "name": "七日杀 v2.5.b32 豪华中文版 全DLC",
-    "shortName": "七日杀",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "name": "七日杀 v2.6.b14 豪华中文版 全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bff9fd5a64e6"
+        "url": "https://pan.quark.cn/s/4d5f01505608"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOpsCvcraBnzXYmCvlTWZqo9A1?pwd=xbzw#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ysOgmqAPWPcVRqtUgxk2PQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-10T16:27:30.522Z",
     "id": 404
   },
   {
@@ -11739,16 +11753,14 @@
     "id": 834
   },
   {
-    "name": "剑与魔法的女主角们2 v2.0 中文版",
-    "shortName": "剑与魔法的女",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "name": "剑与魔法的女主角们2 v2.253 中文版",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dc5eacabfd37"
+        "url": "https://pan.quark.cn/s/b1cd4effe91d"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-10T16:31:23.148Z",
     "id": 835
   },
   {
@@ -22768,5 +22780,206 @@
     ],
     "lastChange": "2026-04-10T10:03:54.538Z",
     "id": 1659
+  },
+  {
+    "name": "街头霸王6 v2.0201.000 豪华中文版 全DLC（VBS一键启动版）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.baidu.com/s/1tSF2M0jnZpcEcnr1MEhc0Q?pwd=8888"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOps5pBgEHnRyf-WirALjLVNA1?pwd=xauf#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tSF2M0jnZpcEcnr1MEhc0Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-04-10T16:15:18.132Z",
+    "id": 1660
+  },
+  {
+    "name": "狙击精英5 v2.41 豪华中文版 全DLC（VBS一键启动版）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/057a6c88f84c"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Ryf3aJTMdbfOWOpYm6cH9g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-04-10T16:18:45.206Z",
+    "id": 1661
+  },
+  {
+    "name": "异变金属 v19725 中文版 Steam特别好评",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cc04c55293d0"
+      }
+    ],
+    "lastChange": "2026-04-10T16:19:30.934Z",
+    "id": 1662
+  },
+  {
+    "name": "全面战争：战锤3 v7.2.0 豪华中文版 全DLC （VBS一键启动版）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ce079e8e1cfc"
+      }
+    ],
+    "lastChange": "2026-04-10T16:20:06.734Z",
+    "id": 1663
+  },
+  {
+    "name": "韩国街头美食经营模拟器 v1.0.16 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6e51c4aa49d9"
+      }
+    ],
+    "lastChange": "2026-04-10T16:20:36.847Z",
+    "id": 1664
+  },
+  {
+    "name": "微物：极简寻物 v20260407 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b956cf2c827b"
+      }
+    ],
+    "lastChange": "2026-04-10T16:21:06.072Z",
+    "id": 1665
+  },
+  {
+    "name": "牛头人迷阵 v1.0.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e02773f92e32"
+      }
+    ],
+    "lastChange": "2026-04-10T16:21:39.015Z",
+    "id": 1666
+  },
+  {
+    "name": "黑洞垂钓 v20260408 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f34de8850455"
+      }
+    ],
+    "lastChange": "2026-04-10T16:22:38.223Z",
+    "id": 1667
+  },
+  {
+    "name": "雾隐天途 v26.0408.9102 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/90902ca4e9cd"
+      }
+    ],
+    "lastChange": "2026-04-10T16:23:05.144Z",
+    "id": 1668
+  },
+  {
+    "name": "庞贝：遗产 v1.000.6 中文正式版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "庞贝：遗产 v1.000.6 中文正式版"
+      }
+    ],
+    "lastChange": "2026-04-10T16:23:39.056Z",
+    "id": 1669
+  },
+  {
+    "name": "人性末日 单机+联机 v1.03.B 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a5d08f29459e"
+      }
+    ],
+    "lastChange": "2026-04-10T16:28:00.386Z",
+    "id": 1670
+  },
+  {
+    "name": "日本田园生活冒险 v1.1.3 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bd2bf80121e4"
+      }
+    ],
+    "lastChange": "2026-04-10T16:28:28.243Z",
+    "id": 1671
+  },
+  {
+    "name": "点老救世记 v1.9.0d 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/09c9510ef414"
+      }
+    ],
+    "lastChange": "2026-04-10T16:33:04.733Z",
+    "id": 1672
+  },
+  {
+    "name": "花林物语：英语学习游戏 v1.79 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fddd51bf7d41"
+      }
+    ],
+    "lastChange": "2026-04-10T16:33:42.517Z",
+    "id": 1673
+  },
+  {
+    "name": "浣熊推币机 v1.0.12 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2ac1bd851cae"
+      }
+    ],
+    "lastChange": "2026-04-10T16:34:32.549Z",
+    "id": 1674
+  },
+  {
+    "name": "灰烬之国 v0.6.4 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0fcfe418e5a6"
+      }
+    ],
+    "lastChange": "2026-04-10T16:35:08.942Z",
+    "id": 1675
+  },
+  {
+    "name": "链枪 v1.0.4.4 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2505fe846ed5"
+      }
+    ],
+    "lastChange": "2026-04-10T16:35:42.086Z",
+    "id": 1676
   }
 ]
