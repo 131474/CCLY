@@ -31,9 +31,8 @@
     
     <link rel="preconnect" href="https://www.steamck.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <!-- Supabase JS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
+        /* ========== 全局防模糊优化（明亮风格） ========== */
         * {
             margin: 0;
             padding: 0;
@@ -461,36 +460,6 @@
             flex: 1;
             min-width: 0;
         }
-        .game-stats {
-            display: flex;
-            gap: 0.8rem;
-            align-items: center;
-            margin-top: 0.3rem;
-            font-size: 0.8rem;
-            color: #666;
-        }
-        .stat-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.2rem;
-        }
-        .like-btn {
-            cursor: pointer;
-            background: none;
-            border: none;
-            font-size: 0.8rem;
-            color: #e74c3c;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.2rem;
-            padding: 0.1rem 0.3rem;
-            border-radius: 20px;
-            transition: 0.1s;
-        }
-        .like-btn:hover {
-            transform: scale(1.05);
-            background: rgba(231, 76, 60, 0.1);
-        }
         .update-date-badge {
             font-size: 0.85rem;
             color: #0077ff;
@@ -506,7 +475,6 @@
             align-items: center;
             flex-wrap: nowrap;
             overflow-x: auto;
-            margin-top: 0.5rem;
         }
         .modal-qr-item {
             display: flex;
@@ -676,6 +644,7 @@
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; }
             .pc { display: none; }
+            /* 手机端：游戏名称和日期分行显示，避免混乱 */
             .game-title-row {
                 flex-direction: column;
                 align-items: flex-start;
@@ -686,10 +655,6 @@
             }
             .game-name {
                 width: 100%;
-            }
-            .game-stats {
-                width: 100%;
-                justify-content: flex-start;
             }
         }
         .zoom-modal-overlay {
@@ -907,7 +872,7 @@
         <span class="publisher-name">发布人：我不是game神</span>
     </div>
     <div class="marquee-container">
-        <div class="marquee-text">⚠️ 完全免费！点击上方游戏库一览按钮，即可看到近期更新的游戏 ⚠️</div>
+        <div class="marquee-text">⚠️ 完全免费！点击上方游戏库一览按钮，即可看到近期更新的游戏，手机新用户注册即可免费获取网盘1T空间 ⚠️</div>
     </div>
     <div class="search-hint">
         <span class="hint-bold">🔍 搜索栏输入游戏名称</span> 
@@ -1013,14 +978,6 @@
 </div>
 
 <script>
-    // ==================== Supabase 配置（使用 window 避免重复声明） ====================
-    const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
-    const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
-    if (!window._supabaseClient) {
-        window._supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    }
-    const supabase = window._supabaseClient;
-
     // ==================== 全局变量 ====================
     let gameDB = [];
     let dataLoaded = false;
@@ -1037,134 +994,15 @@
     let sortedGames = [];
 
     const CACHE_GAMES_KEY = 'cached_games_data';
-    const POPULARITY_CACHE_KEY = 'game_stats_cache';   // 存储 { gameName: { clicks, likes } }
 
-    // 热度点赞本地缓存
-    let localStats = {};   // 对象结构：{ gameName: { clicks, likes } }
-    let cloudStatsLoaded = false;
-
-    // 辅助函数：获取本地缓存热度
-    function loadStatsFromLocal() {
-        const stored = localStorage.getItem(POPULARITY_CACHE_KEY);
-        if (stored) {
-            try {
-                localStats = JSON.parse(stored);
-            } catch(e) {}
-        }
-        if (!localStats) localStats = {};
-    }
-
-    function saveStatsToLocal() {
-        localStorage.setItem(POPULARITY_CACHE_KEY, JSON.stringify(localStats));
-    }
-
-    // 获取某个游戏的热度（点击次数）和点赞数
-    function getGameClicks(gameName) {
-        return localStats[gameName]?.clicks || 0;
-    }
-    function getGameLikes(gameName) {
-        return localStats[gameName]?.likes || 0;
-    }
-
-    // 乐观更新：增加点击（热度）
-    async function incrementClicks(gameName) {
-        if (!localStats[gameName]) localStats[gameName] = { clicks: 0, likes: 0 };
-        localStats[gameName].clicks++;
-        saveStatsToLocal();
-        // 刷新当前显示的列表（如果按热度排序则刷新）
-        if (currentLibrarySortBy === 'popularity') {
-            renderLibraryPage(currentLibraryPage);
-        }
-        if (currentMode === 'game') {
-            // 重新加载当前搜索结果页（保持页码）
-            loadGamePage(gameCurrentPage);
-        }
-        // 异步上报 Supabase
-        try {
-            await supabase.rpc('increment_clicks', { game_name: gameName });
-        } catch(e) {
-            console.warn('上报热度失败', e);
-        }
-    }
-
-    // 乐观更新：增加点赞
-    async function incrementLikes(gameName) {
-        if (!localStats[gameName]) localStats[gameName] = { clicks: 0, likes: 0 };
-        localStats[gameName].likes++;
-        saveStatsToLocal();
-        // 刷新当前显示的列表（无论排序，点赞数需要实时更新）
-        if (document.getElementById('libraryModal').classList.contains('show')) {
-            renderLibraryPage(currentLibraryPage);
-        }
-        if (currentMode === 'game') {
-            loadGamePage(gameCurrentPage);
-        }
-        // 异步上报 Supabase
-        try {
-            await supabase.rpc('increment_likes', { game_name: gameName });
-        } catch(e) {
-            console.warn('上报点赞失败', e);
-        }
-    }
-
-    // 从 Supabase 拉取全量统计数据，合并到 localStats（云端优先）
-    async function fetchStatsFromCloud() {
-        try {
-            const { data, error } = await supabase
-                .from('game_stats')
-                .select('game_name, clicks, likes');
-            if (error) throw error;
-            if (data) {
-                for (const row of data) {
-                    const gameName = row.game_name;
-                    if (!localStats[gameName]) localStats[gameName] = { clicks: 0, likes: 0 };
-                    // 云端数据覆盖本地（因为云端是全局累计）
-                    localStats[gameName].clicks = row.clicks;
-                    localStats[gameName].likes = row.likes;
-                }
-                saveStatsToLocal();
-            }
-            cloudStatsLoaded = true;
-        } catch(e) {
-            console.warn('从 Supabase 拉取统计失败', e);
-        }
-    }
-
-    // ==================== 排序函数（中文首字母 A-Z） ====================
-    function getSortKey(gameName) {
-        let str = gameName;
-        str = str.replace(/^[（(]Switch[）)]\s*/, '');
-        str = str.replace(/\s+v[\d\.]+.*$/, '');
-        return str;
-    }
-
-    function compareByName(a, b) {
-        const keyA = getSortKey(a.name);
-        const keyB = getSortKey(b.name);
-        return keyA.localeCompare(keyB, 'zh');
-    }
-
-    let currentLibrarySortBy = 'time'; // 'time', 'popularity', 'name'
-    function buildSortedGames() {
-        const gamesWithMeta = gameDB.map(game => {
-            const ts = getGameChangeTimestamp(game);
-            const clicks = getGameClicks(game.name);
-            return { game, changeTime: ts, clicks };
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
         });
-        if (currentLibrarySortBy === 'time') {
-            gamesWithMeta.sort((a, b) => {
-                if (a.changeTime !== b.changeTime) return b.changeTime - a.changeTime;
-                return compareByName(a.game, b.game);
-            });
-        } else if (currentLibrarySortBy === 'popularity') {
-            gamesWithMeta.sort((a, b) => {
-                if (a.clicks !== b.clicks) return b.clicks - a.clicks;
-                return compareByName(a.game, b.game);
-            });
-        } else {
-            gamesWithMeta.sort((a, b) => compareByName(a.game, b.game));
-        }
-        return gamesWithMeta.map(item => item.game);
     }
 
     function getGameChangeDate(game) {
@@ -1187,6 +1025,21 @@
             return new Date(game.lastChange).getTime();
         }
         return 0;
+    }
+
+    function buildSortedGames() {
+        const withTime = [], withoutTime = [];
+        for (const game of gameDB) {
+            const ts = getGameChangeTimestamp(game);
+            if (ts > 0) {
+                withTime.push({ game, changeTime: ts, changeDate: getGameChangeDate(game) });
+            } else {
+                withoutTime.push({ game, changeTime: 0, changeDate: null });
+            }
+        }
+        withTime.sort((a,b) => b.changeTime - a.changeTime);
+        withoutTime.sort((a,b) => a.game.name.localeCompare(b.game.name));
+        return [...withTime, ...withoutTime];
     }
 
     async function renderLibraryPage(page) {
@@ -1213,18 +1066,13 @@
         }
         let html = '';
         for (let i=0; i<pageGames.length; i++) {
-            const game = pageGames[i];
+            const item = pageGames[i];
+            const game = item.game;
             const displayDate = getGameChangeDate(game);
-            const clicks = getGameClicks(game.name);
-            const likes = getGameLikes(game.name);
-            html += `<div class="modal-game-card" data-game-name="${escapeHtml(game.name)}">
+            html += `<div class="modal-game-card">
                         <div class="game-title-row">
                             <div class="game-name">🎮 ${escapeHtml(game.name)}</div>
                             ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
-                        </div>
-                        <div class="game-stats">
-                            <span class="stat-item">🔥 ${clicks}</span>
-                            <button class="like-btn stat-item" data-game="${escapeHtml(game.name)}">❤️ <span class="like-count">${likes}</span></button>
                         </div>
                         <div class="modal-qr-group">`;
             if (game.links && game.links.length) {
@@ -1242,7 +1090,7 @@
         }
         body.innerHTML = html;
         for (let i=0; i<pageGames.length; i++) {
-            const game = pageGames[i];
+            const game = pageGames[i].game;
             if (game.links) {
                 for (let li=0; li<game.links.length; li++) {
                     const url = game.links[li].url;
@@ -1252,30 +1100,12 @@
             }
         }
         attachQrZoom();
-        attachLikeEvents();
         document.getElementById('libPageInfo').innerText = `第 ${page}/${totalLibraryPages} 页 (共${totalGames}个)`;
         document.getElementById('libPrevPage').disabled = (page <= 1);
         document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
         paginationDiv.style.display = 'flex';
+        // 滚动到顶部
         body.scrollTop = 0;
-    }
-
-    function attachLikeEvents() {
-        document.querySelectorAll('.like-btn').forEach(btn => {
-            btn.removeEventListener('click', likeClickHandler);
-            btn.addEventListener('click', likeClickHandler);
-        });
-    }
-    function likeClickHandler(e) {
-        e.stopPropagation();
-        const btn = e.currentTarget;
-        const gameName = btn.getAttribute('data-game');
-        if (gameName) {
-            incrementLikes(gameName);
-            const newLikes = getGameLikes(gameName);
-            const span = btn.querySelector('.like-count');
-            if (span) span.innerText = newLikes;
-        }
     }
 
     function openLibraryModal() {
@@ -1460,7 +1290,6 @@
             }
         }
         attachQrZoom();
-        attachSearchLikeEvents();
         document.getElementById('pageInfo').innerText = `第 ${gameCurrentPage}/${gameTotalPages} 页 (共${gameTotalCount}个)`;
         document.getElementById('prevPage').disabled = gameCurrentPage <= 1;
         document.getElementById('nextPage').disabled = gameCurrentPage >= gameTotalPages;
@@ -1473,14 +1302,8 @@
         if(!games.length) return '<div class="empty-modal-msg">🔍 未找到游戏</div>';
         let html = '';
         games.forEach((game, idx) => {
-            const clicks = getGameClicks(game.name);
-            const likes = getGameLikes(game.name);
-            html += `<div class="modal-game-card" data-game-name="${escapeHtml(game.name)}">
+            html += `<div class="modal-game-card">
                         <div class="game-title-row">🎮 ${game.name}</div>
-                        <div class="game-stats">
-                            <span class="stat-item">🔥 ${clicks}</span>
-                            <button class="like-btn stat-item" data-game="${escapeHtml(game.name)}">❤️ <span class="like-count">${likes}</span></button>
-                        </div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
                 html += `<div class="modal-qr-item" data-link="${link.url}" data-platform="${link.name}" data-code="${link.code || ''}">
@@ -1491,23 +1314,6 @@
             html += `</div></div>`;
         });
         return html;
-    }
-
-    function attachSearchLikeEvents() {
-        document.querySelectorAll('#modalBody .like-btn').forEach(btn => {
-            btn.removeEventListener('click', searchLikeHandler);
-            btn.addEventListener('click', searchLikeHandler);
-        });
-    }
-    function searchLikeHandler(e) {
-        e.stopPropagation();
-        const btn = e.currentTarget;
-        const gameName = btn.getAttribute('data-game');
-        if (gameName) {
-            incrementLikes(gameName);
-            const span = btn.querySelector('.like-count');
-            if (span) span.innerText = getGameLikes(gameName);
-        }
     }
 
     async function generateQRCode(container, text) {
@@ -1521,26 +1327,14 @@
 
     function attachQrZoom() {
         document.querySelectorAll('.modal-qr-item').forEach(el => {
-            el.addEventListener('click', async (e) => {
+            el.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const link = el.dataset.link;
                 let platform = el.dataset.platform;
                 if (platform && platform.includes('百度网盘')) {
                     platform = '百度网盘（提取码8888）';
                 }
-                if (link) {
-                    const card = el.closest('.modal-game-card');
-                    let gameName = null;
-                    if (card) {
-                        gameName = card.getAttribute('data-game-name');
-                    }
-                    if (gameName) {
-                        await incrementClicks(gameName);
-                        const clicksSpan = card?.querySelector('.stat-item:first-child');
-                        if (clicksSpan) clicksSpan.innerText = `🔥 ${getGameClicks(gameName)}`;
-                    }
-                    showZoom(platform, link);
-                }
+                if (link) showZoom(platform, link);
             });
         });
     }
@@ -1788,44 +1582,11 @@
         });
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', function(e) { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
-
-        // 排序下拉菜单（在 libraryModal 头部添加）
-        const sortContainer = document.querySelector('#libraryModal .modal-header');
-        if (sortContainer && !document.getElementById('librarySortSelect')) {
-            const selectHtml = `<div style="margin-left: auto; margin-right: 1rem;">
-                <select id="librarySortSelect" style="background: rgba(200,225,255,0.8); border: 1px solid #6ba6d9; border-radius: 30px; padding: 0.3rem 0.8rem; font-size: 0.8rem;">
-                    <option value="time">按更新时间</option>
-                    <option value="popularity">按热度</option>
-                    <option value="name">按名称 A-Z</option>
-                </select>
-            </div>`;
-            const modalClose = sortContainer.querySelector('.modal-close');
-            if (modalClose) {
-                modalClose.insertAdjacentHTML('beforebegin', selectHtml);
-                document.getElementById('librarySortSelect').addEventListener('change', (e) => {
-                    currentLibrarySortBy = e.target.value;
-                    currentLibraryPage = 1;
-                    renderLibraryPage(1);
-                });
-            }
-        }
     }
 
-    // 初始化
-    loadStatsFromLocal();
     loadStoredUser();
     bindEvents();
     loadGameData();
-    setTimeout(() => {
-        fetchStatsFromCloud().then(() => {
-            if (document.getElementById('libraryModal').classList.contains('show')) {
-                renderLibraryPage(currentLibraryPage);
-            }
-            if (currentMode === 'game') {
-                loadGamePage(gameCurrentPage);
-            }
-        });
-    }, 100);
 </script>
 </body>
 </html>
