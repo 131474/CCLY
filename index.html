@@ -1013,10 +1013,13 @@
 </div>
 
 <script>
-    // ==================== Supabase 配置 ====================
+    // ==================== Supabase 配置（使用 window 避免重复声明） ====================
     const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
     const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
-    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    if (!window._supabaseClient) {
+        window._supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+    const supabase = window._supabaseClient;
 
     // ==================== 全局变量 ====================
     let gameDB = [];
@@ -1078,7 +1081,6 @@
         }
         // 异步上报 Supabase
         try {
-            // 使用 RPC 函数 increment_clicks（需提前在 supabase 创建）
             await supabase.rpc('increment_clicks', { game_name: gameName });
         } catch(e) {
             console.warn('上报热度失败', e);
@@ -1129,12 +1131,9 @@
     }
 
     // ==================== 排序函数（中文首字母 A-Z） ====================
-    // 提取用于排序的字符串：去掉前面的（Switch）等前缀，取中文/英文部分
     function getSortKey(gameName) {
         let str = gameName;
-        // 去掉常见的 Switch 标记
         str = str.replace(/^[（(]Switch[）)]\s*/, '');
-        // 去掉末尾的版本号等
         str = str.replace(/\s+v[\d\.]+.*$/, '');
         return str;
     }
@@ -1145,7 +1144,6 @@
         return keyA.localeCompare(keyB, 'zh');
     }
 
-    // 构建排序后的游戏数组（按当前排序方式）
     let currentLibrarySortBy = 'time'; // 'time', 'popularity', 'name'
     function buildSortedGames() {
         const gamesWithMeta = gameDB.map(game => {
@@ -1164,13 +1162,11 @@
                 return compareByName(a.game, b.game);
             });
         } else {
-            // 按名称 A-Z
             gamesWithMeta.sort((a, b) => compareByName(a.game, b.game));
         }
         return gamesWithMeta.map(item => item.game);
     }
 
-    // 获取游戏变更日期（只返回 YYYY-MM-DD，且仅近三天显示）
     function getGameChangeDate(game) {
         if (game.lastChange) {
             const dateStr = game.lastChange.slice(0, 10);
@@ -1245,7 +1241,6 @@
             html += `</div></div>`;
         }
         body.innerHTML = html;
-        // 生成二维码
         for (let i=0; i<pageGames.length; i++) {
             const game = pageGames[i];
             if (game.links) {
@@ -1267,7 +1262,6 @@
 
     function attachLikeEvents() {
         document.querySelectorAll('.like-btn').forEach(btn => {
-            // 移除旧监听避免重复
             btn.removeEventListener('click', likeClickHandler);
             btn.addEventListener('click', likeClickHandler);
         });
@@ -1278,7 +1272,6 @@
         const gameName = btn.getAttribute('data-game');
         if (gameName) {
             incrementLikes(gameName);
-            // 立即更新按钮上的数字（乐观更新）
             const newLikes = getGameLikes(gameName);
             const span = btn.querySelector('.like-count');
             if (span) span.innerText = newLikes;
@@ -1536,7 +1529,6 @@
                     platform = '百度网盘（提取码8888）';
                 }
                 if (link) {
-                    // 获取游戏名称（向上查找卡片）
                     const card = el.closest('.modal-game-card');
                     let gameName = null;
                     if (card) {
@@ -1544,7 +1536,6 @@
                     }
                     if (gameName) {
                         await incrementClicks(gameName);
-                        // 更新页面上的热度数字
                         const clicksSpan = card?.querySelector('.stat-item:first-child');
                         if (clicksSpan) clicksSpan.innerText = `🔥 ${getGameClicks(gameName)}`;
                     }
@@ -1820,15 +1811,13 @@
         }
     }
 
-    // 初始化：加载本地缓存，加载游戏数据，然后后台拉取云端统计数据
+    // 初始化
     loadStatsFromLocal();
     loadStoredUser();
     bindEvents();
     loadGameData();
-    // 异步拉取云端热度点赞数据（不阻塞页面）
     setTimeout(() => {
         fetchStatsFromCloud().then(() => {
-            // 云端数据加载完成后，如果游戏库或搜索结果页打开，刷新显示
             if (document.getElementById('libraryModal').classList.contains('show')) {
                 renderLibraryPage(currentLibraryPage);
             }
