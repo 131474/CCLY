@@ -8844,20 +8844,23 @@
     "id": 625
   },
   {
-    "name": "崩溃大陆2中文版V1.3.8 RC.0+全DLC",
-    "shortName": "崩溃大陆2中",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "name": "崩溃大陆2中文版V1.3.11-RC.1+全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dc8204138865"
+        "url": "https://pan.quark.cn/s/34a28e358c51"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOhhOttxLGde9lJ53oUaWU1GA1?pwd=yis6#"
+        "url": "https://pan.xunlei.com/s/VOpwTG61_t2MaTdaeSUABfiZA1?pwd=yb8d#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UqmpCLKo-IHenw3_fpYo5Q?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-11T12:16:47.946Z",
     "id": 626
   },
   {
@@ -17135,19 +17138,6 @@
     "id": 1237
   },
   {
-    "name": "三国志8 重置版 v1.0.8 追加中文语音 豪华中文版 全DLC+神器",
-    "shortName": "三国志8重置",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8016d0234d43"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1238
-  },
-  {
     "name": "腐烂国度2：巨霸版 v38.2 豪华中文联机版 全DLC 打包XG器（补档）",
     "shortName": "腐烂国度2巨",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -17237,32 +17227,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1245
-  },
-  {
-    "name": "（PC）小小梦魇3 v1.0 豪华中文版 全DLC+联机",
-    "shortName": "小小梦魇3",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bc3a696ba71b"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1246
-  },
-  {
-    "name": "（switch）小小梦魇3官方中文本体+1.0.2升补+3DLC",
-    "shortName": "小小梦魇3官",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/016a1457bfd6"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1247
   },
   {
     "name": "小小梦魇2豪华中文全DLC",
@@ -22981,5 +22945,25 @@
     ],
     "lastChange": "2026-04-10T16:35:42.086Z",
     "id": 1676
+  },
+  {
+    "name": "小小群雄官方中文26.4.11-霸业初兴-逐鹿中原",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d210bf2c75cd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOpwSF2hIE9kqy9azrw5yhPoA1?pwd=kbjj#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pXD2Y55J2GRE-LHEJkkOZg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-04-11T12:12:53.978Z",
+    "id": 1677
   }
 ]
