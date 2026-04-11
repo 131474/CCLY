@@ -1148,7 +1148,8 @@
             const clicksSpan = cardElement.querySelector('.stat-item:first-child');
             if (clicksSpan) clicksSpan.innerText = `🔥 ${localStats[gameId].clicks}`;
         }
-        window._supabaseClient.rpc('increment_clicks', { p_game_id: gameId }).catch(e => console.warn('上报热度失败', e));
+        // 修复 .catch 错误：添加 .then()
+        window._supabaseClient.rpc('increment_clicks', { p_game_id: gameId }).then(() => {}).catch(e => console.warn('上报热度失败', e));
     }
 
     async function incrementLikes(gameId, buttonElement) {
@@ -1164,7 +1165,8 @@
             if (span) span.innerText = localStats[gameId].likes;
             showLikeToastNearButton(buttonElement);
         }
-        window._supabaseClient.rpc('increment_likes', { p_game_id: gameId }).catch(e => console.warn('上报点赞失败', e));
+        // 修复 .catch 错误：添加 .then()
+        window._supabaseClient.rpc('increment_likes', { p_game_id: gameId }).then(() => {}).catch(e => console.warn('上报点赞失败', e));
         return true;
     }
 
@@ -1332,10 +1334,12 @@
         }
     }
 
-    function openLibraryModal() {
+    // 修复：改为异步，先拉取云端数据再渲染
+    async function openLibraryModal() {
         sortType = 'time';
         updateSortButtonsUI();
         currentLibraryPage = 1;
+        await fetchStatsFromCloud();
         renderLibraryPage(1);
         document.getElementById('libraryModal').classList.add('show');
     }
@@ -1848,13 +1852,13 @@
     loadLikedGames();
     loadStoredUser();
     bindEvents();
-    loadGameData();
-    setTimeout(() => {
-        fetchStatsFromCloud().then(() => {
-            if (document.getElementById('libraryModal').classList.contains('show')) renderLibraryPage(currentLibraryPage);
-            if (currentMode === 'game') loadGamePage(gameCurrentPage);
-        });
-    }, 100);
+    // 修复：移除 setTimeout，改为在 loadGameData 完成后同步云端数据，并增加定时同步
+    loadGameData().then(() => {
+        fetchStatsFromCloud();
+    });
+    setInterval(() => {
+        if (dataLoaded) fetchStatsFromCloud();
+    }, 30000);
 </script>
 </body>
 </html>
