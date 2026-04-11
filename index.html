@@ -1078,6 +1078,20 @@
 </div>
 
 <script>
+    // ==================== 嵌入的默认热门游戏数据（新用户秒开） ====================
+    window.__DEFAULT_GAMES__ = [
+        { "id": 1, "name": "（Switch）塞尔达传说：旷野之息1.8.2（PC+手机）附金手指+60帧mod", "shortName": "荒野之息", "cover": "https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/ef89c78cd126" }] },
+        { "id": 2, "name": "（Switch）塞尔达传说：王国之泪 1.4.2全DLC（PC+安卓）整合完美60帧补丁+金手指+26个amiibo", "shortName": "王国之泪", "cover": "https://img.3dmgame.com/uploads/images/news/20220914/1663104992_905883.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/329db7b2c7c3" }] },
+        { "id": 3, "name": "（Switch）塞尔达无双：灾厄启示录1.3.0+4DLC（PC+安卓）双版本", "shortName": "灾厄启示录", "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20200909/1599617800_955043.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/b09a8db902e0" }] },
+        { "id": 4, "name": "（Switch）塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指", "shortName": "天空之剑", "cover": "https://img.3dmgame.com/uploads/images/news/20210218/1613607140_288119.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/2bd9762838e3" }] },
+        { "id": 5, "name": "（Switch）塞尔达传说 织梦岛1.1.0 附金手指", "shortName": "织梦岛", "cover": "https://img.3dmgame.com/uploads/images/news/20200219/1582100265_645244.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/d7d0631ddeed" }] },
+        { "id": 6, "name": "（Switch）塞尔达传说 智慧的再现1.1.0 附金手指 画质mod", "shortName": "智慧的再现", "cover": "https://img1.dancihu.com/2024-06-24/700accdd-717e-d631-3abb-75a158d87f16.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/1b6892d90de1" }] },
+        { "id": 7, "name": "（Switch）塞尔达无双 海拉鲁全明星DX 中文1.0.1", "shortName": "海拉鲁全明星", "cover": "https://puui.qpic.cn/vpic_cover/s08989464c3/s08989464c3_hz.jpg/1280", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/509812de97bc" }] },
+        { "id": 8, "name": "（Switch）超级马里奥兄弟惊奇 官方中文v1.2.0+金手指", "shortName": "马里奥惊奇", "cover": "https://tse2.mm.bing.net/th/id/OIP.BLbLkqHWQqvjmwQRFa7S8wHaEK?rs=1&pid=ImgDetMain&o=7&rm=3", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/623325f32c78" }] },
+        { "id": 9, "name": "（Switch）超级马里奥银河1+2 中文本体v1.0.0整合版+1.3.1补丁", "shortName": "马里奥银河", "cover": "https://www.switch520.org/wp-content/uploads/img/3k/1d19c3b8fb1c144df.avif", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/509812de97bc" }] },
+        { "id": 10, "name": "（Switch）马里奥 奥德赛1.4.1中文版", "shortName": "马里奥奥德赛", "cover": "https://switch-cn.gtgres.com/global-images/69915b70-a65b-11ea-bb28-bd0c6dbc6ff0.png", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/dbb6c07ca9aa" }] }
+    ];
+
     // ==================== Supabase 配置 ====================
     const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
     const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
@@ -1148,7 +1162,6 @@
             const clicksSpan = cardElement.querySelector('.stat-item:first-child');
             if (clicksSpan) clicksSpan.innerText = `🔥 ${localStats[gameId].clicks}`;
         }
-        // 修复 .catch 错误：添加 .then()
         window._supabaseClient.rpc('increment_clicks', { p_game_id: gameId }).then(() => {}).catch(e => console.warn('上报热度失败', e));
     }
 
@@ -1165,7 +1178,6 @@
             if (span) span.innerText = localStats[gameId].likes;
             showLikeToastNearButton(buttonElement);
         }
-        // 修复 .catch 错误：添加 .then()
         window._supabaseClient.rpc('increment_likes', { p_game_id: gameId }).then(() => {}).catch(e => console.warn('上报点赞失败', e));
         return true;
     }
@@ -1194,7 +1206,6 @@
                     localStats[gid].likes = row.likes;
                 }
                 saveStatsToLocal();
-                // 如果游戏库模态框是打开的，刷新显示
                 if (document.getElementById('libraryModal').classList.contains('show')) {
                     renderLibraryPage(currentLibraryPage);
                 }
@@ -1341,19 +1352,29 @@
         }
     }
 
-    // 关键修改：移除 await，先立即渲染本地数据，再后台拉取云端数据
     function openLibraryModal() {
         sortType = 'time';
         updateSortButtonsUI();
         currentLibraryPage = 1;
         renderLibraryPage(1);
         document.getElementById('libraryModal').classList.add('show');
-        // 后台异步拉取最新云端数据，不阻塞UI
         fetchStatsFromCloud();
     }
     function closeLibraryModal() { document.getElementById('libraryModal').classList.remove('show'); }
 
+    // 显示网络提示（仅在首次无缓存且网络失败时）
+    function showNetworkWarning() {
+        const toast = document.createElement('div');
+        toast.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#ff9800;color:white;padding:8px 20px;border-radius:40px;z-index:99999;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+        toast.textContent = '⚠️ 网络不稳定，仅显示部分游戏，刷新页面可重试';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 5000);
+    }
+
+    // ==================== 优化后的 loadGameData（缓存优先 + 默认数据兜底 + 并行双源） ====================
     async function loadGameData() {
+        let usedCache = false;
+        // 1. 尝试从缓存加载
         const cachedData = localStorage.getItem(CACHE_GAMES_KEY);
         if (cachedData) {
             try {
@@ -1361,53 +1382,60 @@
                 if (Array.isArray(parsed) && parsed.length) {
                     gameDB = parsed;
                     dataLoaded = true;
+                    usedCache = true;
                     renderHotGames();
                     console.log('✅ 从缓存加载游戏数据，共', gameDB.length);
                 }
             } catch(e) {}
         }
 
+        // 2. 如果没有缓存，但嵌入了默认数据，则立即使用默认数据渲染（新用户秒开）
+        if (!dataLoaded && window.__DEFAULT_GAMES__ && window.__DEFAULT_GAMES__.length) {
+            gameDB = window.__DEFAULT_GAMES__;
+            dataLoaded = true;
+            renderHotGames();
+            console.log('⚡ 使用嵌入的默认数据渲染界面，共', gameDB.length);
+        }
+
+        // 3. 后台并行请求完整的 games.json（两个源竞争，超时5秒）
         const timestamp = Date.now();
         const urls = [
             `/games.json?t=${timestamp}`,
             `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
         ];
-        async function fetchWithTimeout(url, timeout=10000) {
+        
+        const fetchWithTimeout = (url, timeout = 5000) => {
             const controller = new AbortController();
             const id = setTimeout(() => controller.abort(), timeout);
-            try {
-                const response = await fetch(url, { signal: controller.signal, cache: 'no-store', headers: { 'Cache-Control': 'no-cache' } });
-                clearTimeout(id);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return await response.json();
-            } catch(e) {
-                clearTimeout(id);
-                throw e;
+            return fetch(url, { signal: controller.signal, cache: 'no-store' })
+                .finally(() => clearTimeout(id));
+        };
+
+        try {
+            const response = await Promise.any(urls.map(url => fetchWithTimeout(url)));
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const newGameDB = await response.json();
+            
+            if (JSON.stringify(gameDB) !== JSON.stringify(newGameDB)) {
+                gameDB = newGameDB;
+                localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
+                renderHotGames();
+                if (document.getElementById('libraryModal').classList.contains('show')) {
+                    renderLibraryPage(currentLibraryPage);
+                }
+                console.log('🔄 已更新为最新的完整游戏数据，共', gameDB.length);
+            }
+        } catch (e) {
+            console.warn('网络更新失败，继续使用当前数据', e);
+            // 如果之前没有缓存（即新用户），且网络失败，显示提示
+            if (!usedCache) {
+                showNetworkWarning();
             }
         }
-        let newGameDB = null;
-        for (const url of urls) {
-            try {
-                console.log(`尝试加载: ${url}`);
-                newGameDB = await fetchWithTimeout(url, 10000);
-                console.log(`成功从 ${url} 加载`);
-                break;
-            } catch(e) { console.warn(e); }
-        }
-        if (!newGameDB) {
-            if (!dataLoaded) alert('游戏数据加载失败，请检查网络或刷新页面重试');
-            return;
-        }
-        localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
-        if (JSON.stringify(gameDB) !== JSON.stringify(newGameDB)) {
-            gameDB = newGameDB;
-            renderHotGames();
-            if (document.getElementById('libraryModal').classList.contains('show')) renderLibraryPage(currentLibraryPage);
-        } else if (!dataLoaded) {
-            gameDB = newGameDB;
-            renderHotGames();
-        }
+
         dataLoaded = true;
+        // 加载完成后同步云端热度
+        fetchStatsFromCloud();
     }
 
     function renderHotGames() {
@@ -1427,12 +1455,10 @@
 
         hotScroll.innerHTML = hotGames.map(game => {
             let rawName = game.shortName || game.name;
-            // 处理换行标记：用 | 分隔，例如 "生化危机9|非虚拟机"
             let displayName = rawName;
             if (rawName.includes('|')) {
                 displayName = rawName.split('|').join('<br>');
             } else {
-                // 如果没有手动换行，超过5个字自动换行（可选）
                 if (rawName.length > 5) {
                     const mid = Math.ceil(rawName.length / 2);
                     displayName = rawName.slice(0, mid) + '<br>' + rawName.slice(mid);
@@ -1833,7 +1859,6 @@
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', e => { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
 
-        // 排序按钮（固定降序，不切换方向）
         const timeSortBtn = document.querySelector('.sort-btn[data-sort="time"]');
         const popSortBtn = document.querySelector('.sort-btn[data-sort="popularity"]');
         if (timeSortBtn) {
