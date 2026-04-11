@@ -1194,6 +1194,13 @@
                     localStats[gid].likes = row.likes;
                 }
                 saveStatsToLocal();
+                // 如果游戏库模态框是打开的，刷新显示
+                if (document.getElementById('libraryModal').classList.contains('show')) {
+                    renderLibraryPage(currentLibraryPage);
+                }
+                if (currentMode === 'game' && gameTotalCount > 0) {
+                    loadGamePage(gameCurrentPage);
+                }
             }
         } catch(e) { console.warn('从 Supabase 拉取统计失败', e); }
     }
@@ -1334,14 +1341,15 @@
         }
     }
 
-    // 修复：改为异步，先拉取云端数据再渲染
-    async function openLibraryModal() {
+    // 关键修改：移除 await，先立即渲染本地数据，再后台拉取云端数据
+    function openLibraryModal() {
         sortType = 'time';
         updateSortButtonsUI();
         currentLibraryPage = 1;
-        await fetchStatsFromCloud();
         renderLibraryPage(1);
         document.getElementById('libraryModal').classList.add('show');
+        // 后台异步拉取最新云端数据，不阻塞UI
+        fetchStatsFromCloud();
     }
     function closeLibraryModal() { document.getElementById('libraryModal').classList.remove('show'); }
 
@@ -1852,7 +1860,6 @@
     loadLikedGames();
     loadStoredUser();
     bindEvents();
-    // 修复：移除 setTimeout，改为在 loadGameData 完成后同步云端数据，并增加定时同步
     loadGameData().then(() => {
         fetchStatsFromCloud();
     });
