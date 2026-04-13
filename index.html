@@ -54,7 +54,6 @@
         }
         body {
             min-height: 100vh;
-            /* 先用深色渐变作为背景，瞬间渲染，背景图作为叠加 */
             background: linear-gradient(135deg, #1a2a3a 0%, #0d1b2a 100%);
             background-image: url('https://images.igdb.com/igdb/image/upload/t_1080p/scojg8.jpg');
             background-size: cover;
@@ -135,22 +134,74 @@
             align-items: center;
             flex-wrap: nowrap;
         }
+        
+        /* ========== 游戏库一览按钮 - 极简醒目风格 (呼吸光晕 + 彩虹边框) ========== */
         #gameLibraryBtn {
+            position: relative;
             background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
-            border-color: #ff8c42;
-            animation: pulse 1.5s infinite;
-            padding: 0.7rem 1.2rem;
-            font-size: 1rem;
-            font-weight: 700;
-            min-width: 130px;
+            border: 3px solid transparent;
+            padding: 0.9rem 1.8rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+            min-width: 160px;
             white-space: nowrap;
-            box-shadow: 0 0 12px rgba(255, 100, 0, 0.8);
+            color: #1a1a2e;                      /* 黑色字体 */
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+            border-radius: 60px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 120, 0, 0.8), 0 0 30px rgba(255, 80, 0, 0.5), 0 0 50px rgba(255, 200, 0, 0.3);
+            z-index: 1;
+            overflow: visible;
+            animation: breathe 2s ease-in-out infinite alternate;
+            background-clip: padding-box;
         }
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0.6); }
-            70% { box-shadow: 0 0 0 6px rgba(255, 100, 0, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 100, 0, 0); }
+        #gameLibraryBtn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 100, 0, 0.8), 0 0 70px rgba(255, 220, 0, 0.5);
         }
+        
+        /* 彩虹边框效果 (颜色更丰富，循环流动) */
+        #gameLibraryBtn::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 65px;
+            background: linear-gradient(45deg, 
+                #ff0000, #ff4000, #ff8000, #ffbf00, #ffff00, #bfff00, #80ff00, #40ff00,
+                #00ff40, #00ff80, #00ffbf, #00ffff, #00bfff, #0080ff, #0040ff, #0000ff,
+                #4000ff, #8000ff, #bf00ff, #ff00ff, #ff00bf, #ff0080, #ff0040, #ff0000);
+            background-size: 400% 400%;
+            z-index: -1;
+            opacity: 0.85;
+            filter: blur(2.5px);
+            animation: rainbowShift 8s ease infinite;
+        }
+        #gameLibraryBtn::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            border-radius: 62px;
+            background: linear-gradient(115deg, #ff9a3c, #ff6a1a);
+            z-index: -1;
+        }
+        
+        @keyframes breathe {
+            0% { box-shadow: 0 0 10px rgba(255, 120, 0, 0.6), 0 0 20px rgba(255, 80, 0, 0.4), 0 0 35px rgba(255, 200, 0, 0.2); }
+            100% { box-shadow: 0 0 20px rgba(255, 140, 0, 1), 0 0 40px rgba(255, 100, 0, 0.7), 0 0 60px rgba(255, 220, 0, 0.4); }
+        }
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .publisher-line {
             display: flex;
             align-items: center;
@@ -696,7 +747,7 @@
         .Dict { display: none; }
         .pc { font-size: 0.7rem; color: #2b8dcc; margin-top: 0.2rem; }
         
-        /* ---------- 移动端样式优化（只调整尺寸，不改变文字） ---------- */
+        /* ---------- 移动端样式修复 ---------- */
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; }
             .pc { display: none; }
@@ -720,16 +771,15 @@
                 gap: 0.5rem;
             }
             
-            /* 修复1：右上角按钮区域允许换行，并适当缩小字体和内边距，文字保持原样 */
             .header-right {
                 flex-wrap: wrap;
                 justify-content: flex-end;
                 gap: 0.4rem;
             }
             #gameLibraryBtn {
-                min-width: auto;
-                padding: 0.5rem 0.8rem;
-                font-size: 0.85rem;
+                padding: 0.7rem 1.4rem;
+                font-size: 1.1rem;
+                min-width: 140px;
                 white-space: nowrap;
             }
             .login-btn-header {
@@ -737,22 +787,21 @@
                 font-size: 0.8rem;
                 white-space: nowrap;
             }
-            /* 进一步窄屏优化 (例如宽度小于 400px) */
             @media (max-width: 400px) {
                 #gameLibraryBtn {
-                    padding: 0.4rem 0.6rem;
-                    font-size: 0.75rem;
+                    padding: 0.6rem 1rem;
+                    font-size: 1rem;
+                    min-width: 130px;
                 }
                 .login-btn-header {
                     padding: 0.3rem 0.6rem;
-                    font-size: 0.7rem;
+                    font-size: 0.75rem;
                 }
                 .header-right {
                     gap: 0.3rem;
                 }
             }
 
-            /* 修复2：搜索框 placeholder 文字完整显示，仅缩小字体和内边距 */
             .game-input {
                 font-size: 0.95rem;
                 padding: 0.9rem 2.5rem 0.9rem 1.2rem;
@@ -766,7 +815,7 @@
             }
         }
 
-        /* 电脑端热门区优化：完整显示10个，无横向滚动 */
+        /* 电脑端热门区优化 */
         @media (min-width: 769px) {
             .hot-scroll {
                 overflow-x: visible !important;
@@ -1155,7 +1204,6 @@
     const SUPABASE_URL = 'https://wtuwmjhcrwtxoxvuredq.supabase.co';
     const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
     
-    // 安全初始化 Supabase 客户端，避免重复声明
     function getSupabaseClient() {
         if (window._supabaseClient) return window._supabaseClient;
         if (typeof window.supabase !== 'undefined' && window.supabase.createClient) {
@@ -1187,8 +1235,7 @@
     let localStats = {};
     let likedGameIds = new Set();
 
-    // 排序相关（固定降序，不切换）
-    let sortType = 'time';   // 'time' 或 'popularity'
+    let sortType = 'time';
 
     // 辅助函数
     function loadLikedGames() {
@@ -1268,10 +1315,7 @@
 
     async function fetchStatsFromCloud() {
         const client = getSupabaseClient();
-        if (!client) {
-            console.warn('Supabase 不可用，跳过热度同步');
-            return;
-        }
+        if (!client) return;
         try {
             const { data, error } = await client.from('game_stats').select('game_id, clicks, likes');
             if (error) throw error;
@@ -1283,17 +1327,12 @@
                     localStats[gid].likes = row.likes;
                 }
                 saveStatsToLocal();
-                if (document.getElementById('libraryModal').classList.contains('show')) {
-                    renderLibraryPage(currentLibraryPage);
-                }
-                if (currentMode === 'game' && gameTotalCount > 0) {
-                    loadGamePage(gameCurrentPage);
-                }
+                if (document.getElementById('libraryModal').classList.contains('show')) renderLibraryPage(currentLibraryPage);
+                if (currentMode === 'game' && gameTotalCount > 0) loadGamePage(gameCurrentPage);
             }
-        } catch(e) { console.warn('从 Supabase 拉取统计失败', e); }
+        } catch(e) {}
     }
 
-    // 构建排序后的游戏数组（固定降序）
     function buildSortedGames() {
         const gamesWithMeta = gameDB.map(game => {
             const ts = getGameChangeTimestamp(game);
@@ -1302,16 +1341,12 @@
         });
         if (sortType === 'time') {
             gamesWithMeta.sort((a, b) => {
-                if (a.changeTime !== b.changeTime) {
-                    return b.changeTime - a.changeTime;   // 新到旧
-                }
+                if (a.changeTime !== b.changeTime) return b.changeTime - a.changeTime;
                 return compareByName(a.game, b.game);
             });
         } else {
             gamesWithMeta.sort((a, b) => {
-                if (a.clicks !== b.clicks) {
-                    return b.clicks - a.clicks;           // 热度从高到低
-                }
+                if (a.clicks !== b.clicks) return b.clicks - a.clicks;
                 return compareByName(a.game, b.game);
             });
         }
@@ -1411,7 +1446,6 @@
         document.getElementById('libPrevPage').disabled = (page <= 1);
         document.getElementById('libNextPage').disabled = (page >= totalLibraryPages);
         paginationDiv.style.display = 'flex';
-        // 手机端翻页后自动滚回顶部
         body.scrollTop = 0;
     }
 
@@ -1426,9 +1460,7 @@
         e.stopPropagation();
         const btn = e.currentTarget;
         const gameId = btn.getAttribute('data-game-id');
-        if (gameId && !btn.classList.contains('liked')) {
-            incrementLikes(parseInt(gameId), btn);
-        }
+        if (gameId && !btn.classList.contains('liked')) incrementLikes(parseInt(gameId), btn);
     }
 
     function openLibraryModal() {
@@ -1441,19 +1473,16 @@
     }
     function closeLibraryModal() { document.getElementById('libraryModal').classList.remove('show'); }
 
-    // 显示网络提示（仅在首次无缓存且网络失败时）
     function showNetworkWarning() {
         const toast = document.createElement('div');
-        toast.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#ff9800;color:white;padding:8px 20px;border-radius:40px;z-index:99999;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+        toast.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:#ff9800;color:white;padding:8px 20px;border-radius:40px;z-index:99999;font-size:14px;';
         toast.textContent = '⚠️ 网络不稳定，仅显示部分游戏，刷新页面可重试';
         document.body.appendChild(toast);
         setTimeout(() => toast.remove(), 5000);
     }
 
-    // ==================== 优化后的 loadGameData（缓存优先 + 默认数据兜底 + 并行双源） ====================
     async function loadGameData() {
         let usedCache = false;
-        // 1. 尝试从缓存加载
         const cachedData = localStorage.getItem(CACHE_GAMES_KEY);
         if (cachedData) {
             try {
@@ -1463,57 +1492,35 @@
                     dataLoaded = true;
                     usedCache = true;
                     renderHotGames();
-                    console.log('✅ 从缓存加载游戏数据，共', gameDB.length);
                 }
             } catch(e) {}
         }
-
-        // 2. 如果没有缓存，但嵌入了默认数据，则立即使用默认数据渲染（新用户秒开）
         if (!dataLoaded && window.__DEFAULT_GAMES__ && window.__DEFAULT_GAMES__.length) {
             gameDB = window.__DEFAULT_GAMES__;
             dataLoaded = true;
             renderHotGames();
-            console.log('⚡ 使用嵌入的默认数据渲染界面，共', gameDB.length);
         }
-
-        // 3. 后台并行请求完整的 games.json（两个源竞争，超时5秒）
         const timestamp = Date.now();
-        const urls = [
-            `/games.json?t=${timestamp}`,
-            `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`
-        ];
-        
+        const urls = [`/games.json?t=${timestamp}`, `https://raw.githubusercontent.com/131474/CCLY/main/games.json?t=${timestamp}`];
         const fetchWithTimeout = (url, timeout = 5000) => {
             const controller = new AbortController();
             const id = setTimeout(() => controller.abort(), timeout);
-            return fetch(url, { signal: controller.signal, cache: 'no-store' })
-                .finally(() => clearTimeout(id));
+            return fetch(url, { signal: controller.signal, cache: 'no-store' }).finally(() => clearTimeout(id));
         };
-
         try {
             const response = await Promise.any(urls.map(url => fetchWithTimeout(url)));
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const newGameDB = await response.json();
-            
             if (JSON.stringify(gameDB) !== JSON.stringify(newGameDB)) {
                 gameDB = newGameDB;
                 localStorage.setItem(CACHE_GAMES_KEY, JSON.stringify(newGameDB));
                 renderHotGames();
-                if (document.getElementById('libraryModal').classList.contains('show')) {
-                    renderLibraryPage(currentLibraryPage);
-                }
-                console.log('🔄 已更新为最新的完整游戏数据，共', gameDB.length);
+                if (document.getElementById('libraryModal').classList.contains('show')) renderLibraryPage(currentLibraryPage);
             }
         } catch (e) {
-            console.warn('网络更新失败，继续使用当前数据', e);
-            // 如果之前没有缓存（即新用户），且网络失败，显示提示
-            if (!usedCache) {
-                showNetworkWarning();
-            }
+            if (!usedCache) showNetworkWarning();
         }
-
         dataLoaded = true;
-        // 加载完成后同步云端热度
         fetchStatsFromCloud();
     }
 
@@ -1521,37 +1528,24 @@
         const hotSection = document.getElementById('hotSection');
         const hotScroll = document.getElementById('hotScroll');
         if (!hotSection || !hotScroll) return;
-        if (!gameDB.length) {
-            hotSection.style.display = 'none';
-            return;
-        }
-
+        if (!gameDB.length) { hotSection.style.display = 'none'; return; }
         const hotGames = gameDB.slice(0, 10);
-        if (!hotGames.length) {
-            hotSection.style.display = 'none';
-            return;
-        }
-
+        if (!hotGames.length) { hotSection.style.display = 'none'; return; }
         hotScroll.innerHTML = hotGames.map((game, idx) => {
             let rawName = game.shortName || game.name;
             let displayName = rawName;
-            if (rawName.includes('|')) {
-                displayName = rawName.split('|').join('<br>');
-            } else {
-                if (rawName.length > 5) {
-                    const mid = Math.ceil(rawName.length / 2);
-                    displayName = rawName.slice(0, mid) + '<br>' + rawName.slice(mid);
-                }
+            if (rawName.includes('|')) displayName = rawName.split('|').join('<br>');
+            else if (rawName.length > 5) {
+                const mid = Math.ceil(rawName.length / 2);
+                displayName = rawName.slice(0, mid) + '<br>' + rawName.slice(mid);
             }
             const coverUrl = game.cover || 'https://via.placeholder.com/80x80?text=🎮';
-            // 前3张图优先加载，其余懒加载 + 异步解码
             const loadingAttr = idx < 3 ? 'eager' : 'lazy';
             return `<div class="hot-item" data-name="${escapeHtml(game.name)}">
                         <img src="${coverUrl}" alt="${escapeHtml(rawName)}" loading="${loadingAttr}" decoding="async" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
                         <span>${displayName}</span>
                     </div>`;
         }).join('');
-        
         hotSection.style.display = 'block';
         document.querySelectorAll('.hot-item').forEach(item => {
             item.addEventListener('click', () => {
@@ -1561,7 +1555,6 @@
         });
     }
 
-    // 搜索相关函数
     function matchesQuery(gameName, query) {
         const nameLower = gameName.toLowerCase();
         const queryLower = query.toLowerCase();
@@ -1655,9 +1648,7 @@
         e.stopPropagation();
         const btn = e.currentTarget;
         const gameId = btn.getAttribute('data-game-id');
-        if (gameId && !btn.classList.contains('liked')) {
-            incrementLikes(parseInt(gameId), btn);
-        }
+        if (gameId && !btn.classList.contains('liked')) incrementLikes(parseInt(gameId), btn);
     }
 
     async function generateQRCode(container, text) {
@@ -1682,13 +1673,10 @@
         let platform = el.dataset.platform;
         if (platform && platform.includes('百度网盘')) platform = '百度网盘（提取码8888）';
         if (!link) return;
-
         const card = el.closest('.modal-game-card');
         let gameId = null;
         if (card) gameId = parseInt(card.dataset.gameId);
-        if (gameId) {
-            incrementClicks(gameId, card);
-        }
+        if (gameId) incrementClicks(gameId, card);
         showZoom(platform, link);
     }
 
@@ -1708,24 +1696,20 @@
         const pcHint = document.querySelector('.pc');
         if (pcHint) {
             let tipText = `${platform}APP扫码获取`;
-            if (platform && platform.includes('百度网盘')) tipText = `百度网盘APP扫码获取`;
+            if (platform.includes('百度网盘')) tipText = `百度网盘APP扫码获取`;
             pcHint.innerText = tipText;
         }
         window.currentZoomLink = link;
     }
 
-    function closeZoom() {
-        const modal = document.getElementById('zoomModal');
-        if (modal) modal.classList.remove('show');
-    }
-
+    function closeZoom() { document.getElementById('zoomModal').classList.remove('show'); }
     function openResultModal() { document.getElementById('resultModal').classList.add('show'); }
     function closeResultModal() { 
         document.getElementById('resultModal').classList.remove('show');
         document.getElementById('pagination').style.display = 'flex';
     }
     async function searchByKeyword(keyword) {
-        if (!dataLoaded) { alert('游戏数据还在加载中，请稍后再试'); return; }
+        if (!dataLoaded) { alert('游戏数据还在加载中'); return; }
         currentMode = 'game';
         currentGameQuery = keyword;
         openResultModal();
@@ -1741,11 +1725,11 @@
     }
 
     const toolButtons = {
-        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align: center;"><h3>🎮 Switch 资源专区</h3><div class="switch-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchEmulatorBtn"><div style="font-size: 2.5rem;">🕹️</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch模拟器</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchKeyBtn"><div style="font-size: 2.5rem;">🔑</div><div style="font-weight: bold; margin: 0.5rem 0;">密钥固件</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="switchGamesBtn"><div style="font-size: 2.5rem;">🎮</div><div style="font-weight: bold; margin: 0.5rem 0;">Switch游戏合集</div><div style="font-size: 0.8rem; color: #4797cf;">点击查看</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align: center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content: center;"><div class="modal-qr-item mobile-game-qr" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item mobile-game-qr" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item mobile-game-qr" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size: 0.8rem; color: #6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
-        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align: center;"><h3>🛠️ 常用工具</h3><div class="tools-area-icons" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 1.5rem 0;"><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="losslessBtn"><div style="font-size: 2.5rem;">🦆</div><div style="font-weight: bold; margin: 0.5rem 0;">小黄鸭补帧工具</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div><div style="background: #f0f6ff; border-radius: 1.5rem; padding: 1.2rem; width: 180px; cursor: pointer;" id="pkhexBtn"><div style="font-size: 2.5rem;">🐾</div><div style="font-weight: bold; margin: 0.5rem 0;">PKHeX</div><div style="font-size: 0.8rem; color: #4797cf;">点击下载</div></div></div><p style="font-size: 0.8rem; color: #6589a8;">点击按钮自动搜索相关资源</p></div>` },
-        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align: center;"><h3 style="margin-bottom: 1rem;">📢 玩家交流群</h3><div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;"><div style="background: #f0f6ff; border-radius: 20px; padding: 1rem; width: 200px; cursor: pointer;" id="qqGroupBox"><div style="font-size: 2rem;">🐧</div><div style="font-weight: bold; margin: 0.5rem 0;">QQ群</div><div style="color: #2b5f88;" id="qqNum">1064508042</div><div style="font-size: 0.7rem; margin-top: 0.3rem;">点击复制</div></div></div><p style="margin-top: 1rem; font-size: 0.8rem; color: #6589a8;">欢迎各位玩家加入交流~</p></div>` },
-        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88; cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p><div id="feedbackResult" class="error-msg" style="margin-top:1rem; color:green;"></div></div>` }
+        switchZoneBtn: { title: '🎮 Switch专区', content: `<div class="tool-content" style="text-align:center;"><h3>🎮 Switch 资源专区</h3><div style="display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin:1.5rem 0;"><div style="background:#f0f6ff;border-radius:1.5rem;padding:1.2rem;width:180px;cursor:pointer;" id="switchEmulatorBtn"><div style="font-size:2.5rem;">🕹️</div><div style="font-weight:bold;margin:0.5rem 0;">Switch模拟器</div><div style="font-size:0.8rem;color:#4797cf;">点击下载</div></div><div style="background:#f0f6ff;border-radius:1.5rem;padding:1.2rem;width:180px;cursor:pointer;" id="switchKeyBtn"><div style="font-size:2.5rem;">🔑</div><div style="font-weight:bold;margin:0.5rem 0;">密钥固件</div><div style="font-size:0.8rem;color:#4797cf;">点击下载</div></div><div style="background:#f0f6ff;border-radius:1.5rem;padding:1.2rem;width:180px;cursor:pointer;" id="switchGamesBtn"><div style="font-size:2.5rem;">🎮</div><div style="font-weight:bold;margin:0.5rem 0;">Switch游戏合集</div><div style="font-size:0.8rem;color:#4797cf;">点击查看</div></div></div><p style="font-size:0.8rem;color:#6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        nsMobileEmulatorBtn: { title: '📱 手机游戏', content: `<div class="tool-content" style="text-align:center;"><h3>📱 手机游戏资源包</h3><p>扫描下方二维码下载（安卓/iOS）</p><div class="modal-qr-group" style="justify-content:center;"><div class="modal-qr-item mobile-game-qr" id="quarkQr"><div class="qr-code-box" id="quarkQrCode"></div><span class="qr-label">夸克网盘</span></div><div class="modal-qr-item mobile-game-qr" id="xunleiQr"><div class="qr-code-box" id="xunleiQrCode"></div><span class="qr-label">迅雷网盘</span></div><div class="modal-qr-item mobile-game-qr" id="baiduQr"><div class="qr-code-box" id="baiduQrCode"></div><span class="qr-label">百度网盘</span></div></div><p style="font-size:0.8rem;color:#6589a8;">如果扫码无效，请联系我们更新链接</p></div>` },
+        atmosphereBtn: { title: '🌐 常用工具', content: `<div class="tool-content" style="text-align:center;"><h3>🛠️ 常用工具</h3><div style="display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin:1.5rem 0;"><div style="background:#f0f6ff;border-radius:1.5rem;padding:1.2rem;width:180px;cursor:pointer;" id="losslessBtn"><div style="font-size:2.5rem;">🦆</div><div style="font-weight:bold;margin:0.5rem 0;">小黄鸭补帧工具</div><div style="font-size:0.8rem;color:#4797cf;">点击下载</div></div><div style="background:#f0f6ff;border-radius:1.5rem;padding:1.2rem;width:180px;cursor:pointer;" id="pkhexBtn"><div style="font-size:2.5rem;">🐾</div><div style="font-weight:bold;margin:0.5rem 0;">PKHeX</div><div style="font-size:0.8rem;color:#4797cf;">点击下载</div></div></div><p style="font-size:0.8rem;color:#6589a8;">点击按钮自动搜索相关资源</p></div>` },
+        exchangeBtn: { title: '🐧 交流群', content: `<div class="tool-content" style="text-align:center;"><h3 style="margin-bottom:1rem;">📢 玩家交流群</h3><div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;"><div style="background:#f0f6ff;border-radius:20px;padding:1rem;width:200px;cursor:pointer;" id="qqGroupBox"><div style="font-size:2rem;">🐧</div><div style="font-weight:bold;margin:0.5rem 0;">QQ群</div><div style="color:#2b5f88;" id="qqNum">1064508042</div><div style="font-size:0.7rem;margin-top:0.3rem;">点击复制</div></div></div><p style="margin-top:1rem;font-size:0.8rem;color:#6589a8;">欢迎各位玩家加入交流~</p></div>` },
+        feedbackBtn: { title: '💬 反馈问题', content: `<div class="tool-content"><h3>📢 链接失效反馈</h3><p>要是发现链接失效，请联系QQ群 <strong style="color:#2b5f88;cursor:pointer;" id="feedbackQQ">1064508042</strong> 告知，我们会尽快修复。</p></div>` }
     };
 
     function openToolModal(title, content) {
@@ -1782,14 +1766,13 @@
         }
         if (title === '🐧 交流群') {
             const qqBox = document.getElementById('qqGroupBox');
-            const qqNumSpan = document.getElementById('qqNum');
-            const qqNum = qqNumSpan ? qqNumSpan.innerText : '1064508042';
-            const copyHandler = () => { navigator.clipboard.writeText(qqNum).then(() => alert('QQ群号已复制: ' + qqNum)).catch(() => { const t = document.createElement('textarea'); t.value = qqNum; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qqNum); }); };
+            const qqNum = document.getElementById('qqNum')?.innerText || '1064508042';
+            const copyHandler = () => { navigator.clipboard.writeText(qqNum).then(() => alert('QQ群号已复制: ' + qqNum)).catch(() => alert('复制失败')); };
             if (qqBox) qqBox.addEventListener('click', copyHandler);
         }
         if (title === '💬 反馈问题') {
             const feedbackQQ = document.getElementById('feedbackQQ');
-            if (feedbackQQ) feedbackQQ.addEventListener('click', () => { const qq = feedbackQQ.innerText; navigator.clipboard.writeText(qq).then(() => alert('QQ群号已复制: ' + qq)).catch(() => { const t = document.createElement('textarea'); t.value = qq; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); alert('QQ群号已复制: ' + qq); }); });
+            if (feedbackQQ) feedbackQQ.addEventListener('click', () => { navigator.clipboard.writeText('1064508042').then(() => alert('QQ群号已复制')).catch(() => alert('复制失败')); });
         }
         if (title === '🎮 Switch专区') {
             setTimeout(() => {
@@ -1806,7 +1789,7 @@
         }
     }
 
-    function copyLinkToClipboard(link) { if(link){ navigator.clipboard.writeText(link); alert('链接已复制'); } }
+    function copyLinkToClipboard(link) { if(link) navigator.clipboard.writeText(link).then(() => alert('链接已复制')).catch(() => alert('复制失败')); }
     function jumpToLink(link) { if(link) window.open(link, '_blank'); }
     function closeAuthModal() { document.getElementById('authModal').classList.remove('show'); }
 
@@ -1887,12 +1870,8 @@
     function updateSortButtonsUI() {
         const timeBtn = document.querySelector('.sort-btn[data-sort="time"]');
         const popBtn = document.querySelector('.sort-btn[data-sort="popularity"]');
-        if (timeBtn) {
-            timeBtn.classList.toggle('active', sortType === 'time');
-        }
-        if (popBtn) {
-            popBtn.classList.toggle('active', sortType === 'popularity');
-        }
+        if (timeBtn) timeBtn.classList.toggle('active', sortType === 'time');
+        if (popBtn) popBtn.classList.toggle('active', sortType === 'popularity');
     }
 
     function bindEvents() {
@@ -1930,33 +1909,19 @@
         const closeLibBtn = document.getElementById('closeLibraryModalBtn');
         if (closeLibBtn) closeLibBtn.addEventListener('click', closeLibraryModal);
         const libPrev = document.getElementById('libPrevPage');
-        if (libPrev) libPrev.addEventListener('click', () => {
-            if (currentLibraryPage > 1) { currentLibraryPage--; renderLibraryPage(currentLibraryPage); }
-        });
+        if (libPrev) libPrev.addEventListener('click', () => { if (currentLibraryPage > 1) { currentLibraryPage--; renderLibraryPage(currentLibraryPage); } });
         const libNext = document.getElementById('libNextPage');
-        if (libNext) libNext.addEventListener('click', () => {
-            if (currentLibraryPage < totalLibraryPages) { currentLibraryPage++; renderLibraryPage(currentLibraryPage); }
-        });
+        if (libNext) libNext.addEventListener('click', () => { if (currentLibraryPage < totalLibraryPages) { currentLibraryPage++; renderLibraryPage(currentLibraryPage); } });
         const searchInput = document.getElementById('gameSearchInput');
         if (searchInput) searchInput.addEventListener('keypress', e => { if (e.key === 'Enter') { e.preventDefault(); document.getElementById('searchBtn').click(); } });
 
         const timeSortBtn = document.querySelector('.sort-btn[data-sort="time"]');
         const popSortBtn = document.querySelector('.sort-btn[data-sort="popularity"]');
         if (timeSortBtn) {
-            timeSortBtn.addEventListener('click', () => {
-                sortType = 'time';
-                updateSortButtonsUI();
-                currentLibraryPage = 1;
-                renderLibraryPage(1);
-            });
+            timeSortBtn.addEventListener('click', () => { sortType = 'time'; updateSortButtonsUI(); currentLibraryPage = 1; renderLibraryPage(1); });
         }
         if (popSortBtn) {
-            popSortBtn.addEventListener('click', () => {
-                sortType = 'popularity';
-                updateSortButtonsUI();
-                currentLibraryPage = 1;
-                renderLibraryPage(1);
-            });
+            popSortBtn.addEventListener('click', () => { sortType = 'popularity'; updateSortButtonsUI(); currentLibraryPage = 1; renderLibraryPage(1); });
         }
         updateSortButtonsUI();
     }
@@ -1966,24 +1931,12 @@
     loadLikedGames();
     loadStoredUser();
     bindEvents();
-    
-    // 根据是否有缓存决定是否立即加载热度数据
     loadGameData().then(() => {
         const hasCachedGames = localStorage.getItem(CACHE_GAMES_KEY);
-        if (hasCachedGames) {
-            // 有缓存：立即加载热度数据
-            fetchStatsFromCloud();
-        } else {
-            // 无缓存：延迟 2 秒加载，让首页先完整呈现
-            setTimeout(() => {
-                fetchStatsFromCloud();
-            }, 2000);
-        }
+        if (hasCachedGames) fetchStatsFromCloud();
+        else setTimeout(() => fetchStatsFromCloud(), 2000);
     });
-    
-    setInterval(() => {
-        if (dataLoaded) fetchStatsFromCloud();
-    }, 30000);
+    setInterval(() => { if (dataLoaded) fetchStatsFromCloud(); }, 30000);
 </script>
 </body>
 </html>
