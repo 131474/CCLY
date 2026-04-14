@@ -12969,16 +12969,14 @@
     "id": 930
   },
   {
-    "name": "都市：天际线2 v1.4.2f1 重大更新 自行车 豪华中文版 全DLC",
-    "shortName": "都市天际线2",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "name": "都市：天际线2 v1.5.6F1 豪华中文版 全DLC 打包XG器",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8a6efac977af"
+        "url": "https://pan.quark.cn/s/fc31b086ea32"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-14T12:56:01.680Z",
     "id": 931
   },
   {
@@ -23000,5 +22998,73 @@
     ],
     "lastChange": "2026-04-13T16:01:49.946Z",
     "id": 1688
+  },
+  {
+    "name": "纪元 117：罗马和平 v1.4.1.1629710黄金中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/36ca7cf6299d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqB3Kk8dw8PnN9cSBhWN7n_A1?pwd=9gh9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1q0KYj_XinMjsBVH4cultOA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-14T12:57:38.832Z",
+    "id": 1689
+  },
+  {
+    "name": "(Switch)小飞船大冒险美区中文v1.0.5",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/58a28a779ad7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1M-0aWQG85Xeot39Smi2iKw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-14T12:58:46.879Z",
+    "id": 1690
+  },
+  {
+    "name": "(Switch)告别回忆 恋恋花札大战 日区中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7f5d555fd78f"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ZPqAPm_VKjCXui1bl6Xw0w?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-14T12:59:14.719Z",
+    "id": 1691
+  },
+  {
+    "name": "NBA 2K26全DLC（vbs一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c0a79ef91a3d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqB3xpWgrny_zCYjUdTpo6qA1?pwd=6uvj#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1p-xcAZnu5XXntaEq0KpSsg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-14T13:00:09.695Z",
+    "id": 1692
   }
 ]
