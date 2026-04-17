@@ -33,6 +33,10 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOo9XLbmgNDQ26U2YdoCT0NoA1?pwd=3gmy#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1TJ3oATCWn-OKNjdvwd9tJQ?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.823Z",
@@ -546,16 +550,16 @@
     "id": 27
   },
   {
-    "name": "模拟农场25 v1.17.0.0 豪华中文版 全DLC+联机补丁",
+    "name": "模拟农场25 v1.18.0.0 豪华中文版 全DLC+联机补丁",
     "shortName": "模拟农场25",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/245f5ba6d10b"
+        "url": "https://pan.quark.cn/s/4b2c514418ac"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-17T15:00:47.411Z",
     "id": 28
   },
   {
@@ -4270,23 +4274,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 297
-  },
-  {
-    "name": "（Switch）超级马里奥银河1+2 中文v1.3.1",
-    "shortName": "超级马里奥银",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ba3d3421ee62"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOkq1nXjderebwyTCOeRdPGhA1?pwd=b7cq#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 298
   },
   {
     "name": "（Switch）喷射战士3官方中文v11.0.1+3DLC",
@@ -11114,16 +11101,24 @@
     "id": 803
   },
   {
-    "name": "泰坦之旅2 v0.3.0 中文版",
+    "name": "泰坦之旅2 v0.5.0.125062 中文版",
     "shortName": "泰坦之旅2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ea415052d2fc"
+        "url": "https://pan.quark.cn/s/b559f2fa46ff"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqQp8bTV2vRn91Mo6W3C_mXA1?pwd=iuri#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12xBY_Q3JPvfYAvHqLWptOA?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-17T14:25:01.483Z",
     "id": 804
   },
   {
@@ -13807,16 +13802,24 @@
     "id": 1009
   },
   {
-    "name": "哈迪斯2 v1.133066 中文版+神器",
+    "name": "哈迪斯2 v1.137536 中文版",
     "shortName": "哈迪斯2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f6892dfba4fc"
+        "url": "https://pan.quark.cn/s/b50151e91992"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqQq2RiKNJlB6ewSQ2soHXtA1?pwd=26kp#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1s1KpqpMkgt6-KBK8y-3f9g?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-17T14:29:18.403Z",
     "id": 1010
   },
   {
@@ -14705,19 +14708,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1081
-  },
-  {
-    "name": "哈迪斯2 Hades II 美区中文v1.0.132876",
-    "shortName": "哈迪斯2Ha",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/0343eae2984d"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1082
   },
   {
     "name": "忍者外传 怒之羁绊 港区中文本体+v1.0.5",
@@ -16382,6 +16372,14 @@
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/179525b5ba64"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqR4-V6UX4zKfaIUIs4tBYTA1?pwd=akap#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Nd3n1slK-4Mad20UQb06ug?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
@@ -17393,23 +17391,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1295
-  },
-  {
-    "name": "超级马里奥银河1+2 中文本体v1.0.0整合版+1.2.0补丁",
-    "shortName": "超级马里奥银",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2d0b4316cbb4"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOadUz6KSWxQy8Lk8daFYtySA1?pwd=rs6t#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1296
   },
   {
     "name": "战锤40K：战区 v1.5.320 豪华中文版 全DLC",
@@ -20192,19 +20173,6 @@
     "id": 1509
   },
   {
-    "name": "超级马里奥派对 空前盛会（PC+安卓）双端可玩内附教程",
-    "shortName": "超级马里奥派",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f9580290f545"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1510
-  },
-  {
     "name": "虐杀原形1+2合集",
     "shortName": "虐杀原形12",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -20443,32 +20411,6 @@
     "id": 1529
   },
   {
-    "name": "马里奥&路易吉RPG yuzu模拟器整合版 新游提前开玩",
-    "shortName": "马里奥路易吉",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3df3b3560d44"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1530
-  },
-  {
-    "name": "纸片马里奥RPG 千年之门 中文V1.0.0-模拟器整合版",
-    "shortName": "纸片马里奥R",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dda4d6f3be46"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1531
-  },
-  {
     "name": "马里奥vs.咚奇刚官方中文V1.0.1需要加模拟器yuzu使用",
     "shortName": "马里奥vs咚",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -20545,13 +20487,17 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOgN3vV5BhSCUgK6A_Abm6QUA1?pwd=sr86#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nwk8A8MHW_P6YTQwoNGBGw?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
     "id": 1537
   },
   {
-    "name": "（Switch）精灵宝可梦去吧皮卡丘 Let's Go  中文整合版",
+    "name": "（Switch）精灵宝可梦 Let's Go 皮卡丘1.0.2 中文整合版",
     "shortName": "精灵宝可梦去",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -20562,35 +20508,34 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOgN41MAnrGTp9BPl3HB0f8gA1?pwd=gwwc#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XDfBCjkQMNd2bhjC0AJUzA?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-04-17T15:31:40.564Z",
     "id": 1538
   },
   {
-    "name": "（Switch）精灵宝可梦 晶灿钻石 官方中文1.30整合版 带金手指 存档修改",
-    "shortName": "精灵宝可梦晶",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ce19f66b1d75"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1539
-  },
-  {
-    "name": "（Switch）精灵宝可梦 明亮珍珠 官方中文v1.30",
+    "name": "（Switch）宝可梦 明亮珍珠+晶灿钻石 1.30整合版带金手指",
     "shortName": "精灵宝可梦明",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6870eaefb1c8"
+        "url": "https://pan.quark.cn/s/c927bee8c55c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqR2fH-ziLwqyDuuwrQZW_JA1?pwd=wj33#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13HHZ0TFtDI0VaFSqRXllig?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-04-17T15:29:05.676Z",
     "id": 1540
   },
   {
@@ -21220,6 +21165,10 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOa8BKvUhO5gpMnrIKtf3QgyA1?pwd=8g2g#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ZKzWCJkS8UAOTl8voiQDvg?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
@@ -21237,6 +21186,10 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOa8LC7BQD5152QkNmO4Mx6PA1?pwd=s7h5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dZZy8EYX_el2Lf6XD3IlYg?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
@@ -21250,6 +21203,14 @@
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/d94341634177"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqR1OYY7V-blgE5pyJhhgu-A1?pwd=fun7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uH4k9dyZX2tR_yr9UeiQdg?pwd=8888"
       }
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
@@ -21887,18 +21848,22 @@
     "id": 1637
   },
   {
-    "name": "鬼灭之刃 火之神血风谭2豪华中文Build.22175057全DLC 绕过D加密 steam版",
+    "name": "鬼灭之刃：火之神血风谭2 v1.61 豪华中文版 全DLC（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1045bce60c79"
+        "url": "https://pan.quark.cn/s/4d2a17c15f5c"
       },
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOpTHc4F7-s1yi4nSBezWfuYA1?pwd=zhkv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CEzS9wyPdmqGBohU-LOoRA?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-04-17T13:27:18.180Z",
     "id": 1638
   },
   {
@@ -24853,14 +24818,14 @@
     "id": 1888
   },
   {
-    "name": "风启之旅 v0.10.0.0.277 中文版",
+    "name": "风启之旅 v0.10.0.1.6 单机+联机 中文版",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bab465051404"
+        "url": "https://pan.quark.cn/s/b87c629bbb1f"
       }
     ],
-    "lastChange": "2026-04-15T13:48:47.068Z",
+    "lastChange": "2026-04-17T15:13:49.404Z",
     "id": 1889
   },
   {
@@ -25089,5 +25054,178 @@
     ],
     "lastChange": "2026-04-17T06:25:58.648Z",
     "id": 1906
+  },
+  {
+    "name": "神探杰克鼠 v1.0.1 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "神探杰克鼠 v1.0.1 豪华中文版 全DLC"
+      }
+    ],
+    "lastChange": "2026-04-17T13:20:06.511Z",
+    "id": 1907
+  },
+  {
+    "name": "诡岛灵探 v1.0.1.2 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4e1d1373989c"
+      }
+    ],
+    "lastChange": "2026-04-17T13:21:11.630Z",
+    "id": 1908
+  },
+  {
+    "name": "双点博物馆 v8.0 豪华中文版 全DLC 打包XG器",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9e39a5ee6ffb"
+      }
+    ],
+    "lastChange": "2026-04-17T13:21:37.910Z",
+    "id": 1909
+  },
+  {
+    "name": "壁虎之神 v2719 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5629184740ae"
+      }
+    ],
+    "lastChange": "2026-04-17T13:28:22.956Z",
+    "id": 1910
+  },
+  {
+    "name": "香缇小镇  v1.0.03 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8ff11f3bd8f5"
+      }
+    ],
+    "lastChange": "2026-04-17T13:30:08.747Z",
+    "id": 1911
+  },
+  {
+    "name": "克苏鲁：恐怖深渊 v1.8326.29819 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/87cc6572f4b2"
+      }
+    ],
+    "lastChange": "2026-04-17T13:31:16.387Z",
+    "id": 1912
+  },
+  {
+    "name": "洗衣模拟器2026 v0.1.2 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a8159744a6ef"
+      }
+    ],
+    "lastChange": "2026-04-17T13:33:21.459Z",
+    "id": 1913
+  },
+  {
+    "name": "极限叉车3 v0.7.120 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/71afe227348b"
+      }
+    ],
+    "lastChange": "2026-04-17T13:34:22.930Z",
+    "id": 1914
+  },
+  {
+    "name": "埃斯玛尔探险家 v0.11.0.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/062a0683ef52"
+      }
+    ],
+    "lastChange": "2026-04-17T13:34:56.346Z",
+    "id": 1915
+  },
+  {
+    "name": "咖啡店经营经理 v0.6.2 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/95ed62dd8aae"
+      }
+    ],
+    "lastChange": "2026-04-17T13:35:36.665Z",
+    "id": 1916
+  },
+  {
+    "name": "钓鱼公司 v2.5.1 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/298037abc269"
+      }
+    ],
+    "lastChange": "2026-04-17T13:36:14.634Z",
+    "id": 1917
+  },
+  {
+    "name": "深渊之印 v2.2.1 新加DLC 诅咒试炼 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3dd67fe8564d"
+      }
+    ],
+    "lastChange": "2026-04-17T13:42:14.296Z",
+    "id": 1918
+  },
+  {
+    "name": "（Switch）哈迪斯2美区中文v1.0.137380+金手指+存档",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fac1540e034d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqQwrJXiLA22ttc-1pTD4U_A1?pwd=zb3u#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1M4n-Ce6XQI3tvzROalKjoQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-17T14:59:33.035Z",
+    "id": 1919
+  },
+  {
+    "name": "战争召唤——地狱之门：东线 v1.062.0 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6321e2992f74"
+      }
+    ],
+    "lastChange": "2026-04-17T15:05:02.931Z",
+    "id": 1920
+  },
+  {
+    "name": "罪托邦 v1.0.2.519 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6321e2992f74"
+      }
+    ],
+    "lastChange": "2026-04-17T15:10:33.475Z",
+    "id": 1921
   }
 ]
