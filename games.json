@@ -1,6 +1,6 @@
 [
   {
-    "name": "生化危机9安魂曲1.20 （真正破解版，非虚拟机，解压即玩）",
+    "name": "生化危机9安魂曲1.20  （真正破解版，非虚拟机，解压即玩）",
     "shortName": "生化危机9非虚拟机",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260128/1769571537_941093.webp",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-15T14:40:07.703Z",
+    "lastChange": "2026-04-18T09:23:40.808Z",
     "id": 223
   },
   {
@@ -25235,5 +25235,46 @@
     ],
     "lastChange": "2026-04-17T15:10:33.475Z",
     "id": 1921
+  },
+  {
+    "name": "原子之心 v2026.4.16  新加DLC 血染水晶 豪华中文版 全DLC+神器（VBS一键启动版）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a4838ed13626"
+      }
+    ],
+    "lastChange": "2026-04-18T09:13:35.888Z",
+    "id": 1922
+  },
+  {
+    "name": "（Switch）卡片战斗先导者DD2 官方中文v1.7.1+39DLC升补整合版 带存档",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0a218f1b49d4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ZbtAyLVVird5DsHubxPPPQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-18T09:22:58.976Z",
+    "id": 1923
+  },
+  {
+    "name": "（Switch）哆啦A梦的铜锣烧店物语 官方中文v1.2.6整合版+金手指",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e842b4161ccb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pwFGHsDScxpSO_AViCfaDQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-18T09:23:31.993Z",
+    "id": 1924
   }
 ]
