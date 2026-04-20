@@ -24783,14 +24783,22 @@
     "id": 1888
   },
   {
-    "name": "风启之旅 v0.10.0.1.6 单机+联机 中文版",
+    "name": "风启之旅 v0.10.0.2.54 中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/b87c629bbb1f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqdZCO5yeNiT33wA2zqzPGWA1?pwd=afce#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-XSzlZ4gJToNPRB-uCYheQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-17T15:13:49.404Z",
+    "lastChange": "2026-04-20T06:25:52.568Z",
     "id": 1889
   },
   {
@@ -25318,5 +25326,80 @@
     ],
     "lastChange": "2026-04-19T12:59:54.940Z",
     "id": 1931
+  },
+  {
+    "name": "（Switch）神风无人机美区中文v1.0.0整合版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d5e1257c6734"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PjoqHLiKXGEXGq_AtLl13A?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T06:20:40.552Z",
+    "id": 1932
+  },
+  {
+    "name": "（Switch）2026年世嘉MD新作 ZPF本体+v1.2升级补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d822f86b0127"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wZY9vCqM4BIJAU3oIq7LnQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T06:21:15.591Z",
+    "id": 1933
+  },
+  {
+    "name": "（Switch）皮罗与全息之书 美区中文v1.2.2",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/405c1dd6c980"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Oz4XDhsecV4i9s5ucfvFTQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T06:22:13.701Z",
+    "id": 1934
+  },
+  {
+    "name": "（Switch）异星探险家美区中文v1.39.5.0+金手指",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b0650952843b"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1S5We28u0mgHVLKt3km3HkA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T06:23:35.987Z",
+    "id": 1935
+  },
+  {
+    "name": "（Switch）终极幸运之塔 美区中文v1.0.35s",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ad9bdb312e5b"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rsIvmhuh0WRIrSWi8uRZyw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T06:24:59.713Z",
+    "id": 1936
   }
 ]
