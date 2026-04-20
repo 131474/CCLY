@@ -1959,7 +1959,7 @@
     "id": 131
   },
   {
-    "name": "（Switch）鬼灭之刃火之神血风谭2 v1.61（PC+安卓）+10DLC+60帧mod 新增无限城富冈义勇",
+    "name": "（Switch）鬼灭之刃火之神血风谭2 v1.7.0（PC+安卓）+10DLC+60帧mod",
     "shortName": "鬼灭之刃火之",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1976,7 +1976,7 @@
         "url": "https://pan.baidu.com/s/1Hwqp7AfVtxLVfXkUpJYblw?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-17T06:19:52.312Z",
+    "lastChange": "2026-04-20T12:45:10.010Z",
     "id": 132
   },
   {
@@ -25401,5 +25401,24 @@
     ],
     "lastChange": "2026-04-20T06:24:59.713Z",
     "id": 1936
+  },
+  {
+    "name": "背包伙伴官方中文Build.22812734+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/29268f3f1549"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqeuvFbnM4pgfIPKkPBlsUVA1?pwd=889h#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jaGZXZIAePB2FAX4eJ80XA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-20T12:44:49.491Z",
+    "id": 1937
   }
 ]
