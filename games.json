@@ -9431,23 +9431,6 @@
     "id": 671
   },
   {
-    "name": "生化危机8 村庄 黄金版v 1.1.0.4  豪华中文 全DLC",
-    "shortName": "生化危机8村",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1b00dfc689f5"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOh3Bq-ifGDGyKXvf5rO75aAA1?pwd=586k#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 672
-  },
-  {
     "name": "辐射4周年纪念版 v1.11.191.0.1 官方中文+全DLC+升级补丁",
     "shortName": "辐射4周年纪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -18296,29 +18279,24 @@
     "id": 1366
   },
   {
-    "name": "暗黑血统3 豪华中文版",
-    "shortName": "暗黑血统3",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9479db9beb59"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1367
-  },
-  {
-    "name": "暗黑血统：战神版 豪华中文",
+    "name": "暗黑血统：战神版 v1.0.2679 官方中文+修改器+原声乐+存档",
     "shortName": "暗黑血统战神",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/560235989ee3"
+        "url": "https://pan.quark.cn/s/bbabc228127b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqi3jOwdwxg5-dYH9_ZEkCpA1?pwd=wr9w#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ZavNfS6dUjAR2cmk3eNuyg?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-21T03:26:48.663Z",
     "id": 1368
   },
   {
@@ -20892,19 +20870,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
     "id": 1571
-  },
-  {
-    "name": "生化危机8",
-    "shortName": "生化危机8",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8aea302c32d5"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1572
   },
   {
     "name": "生化危机7",
