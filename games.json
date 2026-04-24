@@ -131,7 +131,7 @@
     "id": 490
   },
   {
-    "name": "（Switch）朋友收集 梦想生活 官方中文正式版v1.0.0+金手指",
+    "name": "（Switch）朋友收集 梦想生活 官方中文正式版v1.0.1+金手指",
     "links": [
       {
         "name": "夸克网盘",
@@ -146,10 +146,10 @@
         "url": "https://pan.baidu.com/s/1FZmf3ISLK42RM8aTRJQ8kg?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-17T05:54:13.653Z",
+    "lastChange": "2026-04-24T09:19:09.712Z",
     "id": 1904,
     "shortName": "朋友收集|梦想生活",
-    "cover": "https://bkimg.cdn.bcebos.com/pic/a8ec8a13632762d0f703cc2916b01ffa513d279768aa?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080"
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20250331/1743409337_685481.jpg"
   },
   {
     "name": "超级机器人大战Y豪华版 v1.3.0 全DLC+拓展包DLC3（解压即玩，已去除D加密，无需虚拟机）",
@@ -25525,14 +25525,22 @@
     "id": 1950
   },
   {
-    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者 v1.4.0 中文版",
+    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者  v1.4.0 中文版",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3e1d9812e781"
+        "url": "https://pan.quark.cn/s/fed7713d170a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqylhxiESXeTzhkc4vWDASLA1?pwd=we9i#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1meFp4ZrjnFpWv2sd8Y0l7Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-22T15:19:19.485Z",
+    "lastChange": "2026-04-24T09:16:58.424Z",
     "id": 1952
   },
   {
@@ -25688,5 +25696,24 @@
     ],
     "lastChange": "2026-04-23T13:07:23.216Z",
     "id": 1966
+  },
+  {
+    "name": "（Switch）吸血鬼爬行者 官方中文+v1.4.0升补整合版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f9294d660b50"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOqyltejpFAGDf3yrkBasmWnA1?pwd=98kw#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GqU9APERqQvAEqrUfEgdOQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-24T09:17:46.000Z",
+    "id": 1967
   }
 ]
