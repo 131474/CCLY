@@ -575,20 +575,24 @@
     "id": 26
   },
   {
-    "name": "刮个爽 v1.0.30d（PC+安卓）双端可运行",
+    "name": "刮个爽 v1.0.30d （PC+安卓）双端可运行",
     "shortName": "刮个爽",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/19c47e8ed691"
+        "url": "https://pan.quark.cn/s/ead0ce564fec"
       },
       {
-        "name": "夸克网盘",
-        "url": "https://pan.xunlei.com/s/VOpReF7GgDhR3jPLRW_2tVDmA1?pwd=xum2#"
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOrCil0tncWnWGLKX5nOBfXRA1?pwd=dge5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1upUp94mvBc_NXFzzGJI4Yg?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-27T06:58:20.941Z",
     "id": 27
   },
   {
@@ -22260,14 +22264,22 @@
     "id": 1673
   },
   {
-    "name": "浣熊推币机 v1.0.21（PC+安卓）双端可运行",
+    "name": "浣熊推币机 v1.0.21中文全DLC（PC+安卓）双端可运行",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6e5e8bb5793f"
+        "url": "https://pan.quark.cn/s/6663c4700442"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.quark.cn/s/6663c4700442"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1EU4-woHuN7EPFGmaXkNNPw?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-26T11:58:03.597Z",
+    "lastChange": "2026-04-27T07:02:40.485Z",
     "id": 1674
   },
   {
@@ -25965,5 +25977,24 @@
     ],
     "lastChange": "2026-04-26T12:40:29.141Z",
     "id": 1988
+  },
+  {
+    "name": "EA SPORTS FC 26 v1.0.133.58379 豪华中文全DLC+支持手柄 绕过D加密",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7e16dc0ba533"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOrClZpI9KUnyhay7I5UQYzpA1?pwd=ujrq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1k3cKxgwd55wG8nq0IbQ4uA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-27T07:18:02.971Z",
+    "id": 1989
   }
 ]
