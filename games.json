@@ -3485,7 +3485,7 @@
     "id": 236
   },
   {
-    "name": "禁闭求生2 单机+联机 v0.4.0.1 中文版",
+    "name": "禁闭求生2 单机+联机 v0.4.0.2 中文版",
     "shortName": "禁闭求生2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -3503,7 +3503,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-19T13:07:58.205Z",
+    "lastChange": "2026-04-30T01:24:57.547Z",
     "id": 237
   },
   {
@@ -20861,16 +20861,24 @@
     "id": 1566
   },
   {
-    "name": "怪物猎人世界 v15.21.00豪华中文联机版 全DLC",
+    "name": "怪物猎人：世界 冰原 v15.23.00 官方中文+全DLC+原声原画集",
     "shortName": "怪物猎人世界",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c6ed818c75a7"
+        "url": "https://pan.quark.cn/s/d806307b7610"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOrQv_JKpu5dOFWuvdKJae2yA1?pwd=3hgi#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1DTkPAWFk_eYnXxrzSnVIrw?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-04-30T01:09:27.328Z",
     "id": 1567
   },
   {
