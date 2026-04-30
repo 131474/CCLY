@@ -1741,7 +1741,7 @@
     "id": 110
   },
   {
-    "name": "维多利亚3 v1.12.5 新加DLC 战舰 豪华中文版 全DLC",
+    "name": "维多利亚3 v1.13 新加DLC 滔天巨浪 豪华中文版 全DLC+单独DLC补丁",
     "shortName": "维多利亚3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1750,7 +1750,7 @@
         "url": "https://pan.quark.cn/s/28f12f8e46f8"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-30T14:40:55.111Z",
     "id": 111
   },
   {
@@ -1835,7 +1835,7 @@
     "id": 116
   },
   {
-    "name": "贪婪之秋2：垂死世界 v1.0 正式版 豪华中文 全DLC",
+    "name": "贪婪之秋2：垂死世界 v1.2 豪华中文版 全DLC",
     "shortName": "贪婪之秋2垂",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1844,7 +1844,7 @@
         "url": "https://pan.quark.cn/s/87d938d4a3b7"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-04-30T15:14:32.645Z",
     "id": 118
   },
   {
@@ -9512,7 +9512,7 @@
     "id": 674
   },
   {
-    "name": "心之眼 v6073305 豪华中文版 全DLC",
+    "name": "心之眼 v7241880 豪华中文版 全DLC",
     "shortName": "心之眼",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -9521,7 +9521,7 @@
         "url": "https://pan.quark.cn/s/01ae0a77bf01"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-30T15:16:55.910Z",
     "id": 677
   },
   {
@@ -10323,16 +10323,16 @@
     "id": 736
   },
   {
-    "name": "盟军敢死队：起源 v1.5.1.90861 豪华中文版 全DLC",
+    "name": "暗黑地牢2 v2.04.85095 豪华中文版 全DLC 打包XG器",
     "shortName": "盟军敢死队起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a8be8a7a64dd"
+        "url": "https://pan.quark.cn/s/6010df8104ad"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-04-30T15:10:40.093Z",
     "id": 737
   },
   {
@@ -14541,19 +14541,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1067
-  },
-  {
-    "name": "暗黑地牢2 v2.04.84350 豪华中文版 全DLC",
-    "shortName": "暗黑地牢2",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/0564dfce6774"
-      }
-    ],
-    "lastChange": "2026-04-19T12:54:26.748Z",
-    "id": 1068
   },
   {
     "name": "魔犬大骚乱 v29.2 中文版",
@@ -20744,16 +20731,16 @@
     "id": 1556
   },
   {
-    "name": "失落之魂 v20250829 豪华中文版 全DLC",
+    "name": "失落之魂 v1.103 豪华中文版 全DLC+神器",
     "shortName": "失落之魂",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b2a00761c56d"
+        "url": "https://pan.quark.cn/s/6a8f06d64776"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-04-30T14:41:55.431Z",
     "id": 1557
   },
   {
@@ -22171,14 +22158,14 @@
     "id": 1662
   },
   {
-    "name": "全面战争：战锤3 v7.2.0 豪华中文版 全DLC （VBS一键启动版）",
+    "name": "全面战争：战锤3 v7.2.1 豪华中文版 全DLC +神器",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/ce079e8e1cfc"
       }
     ],
-    "lastChange": "2026-04-10T16:20:06.734Z",
+    "lastChange": "2026-04-30T14:40:00.446Z",
     "id": 1663
   },
   {
@@ -26164,5 +26151,178 @@
     ],
     "lastChange": "2026-04-29T11:30:45.898Z",
     "id": 2002
+  },
+  {
+    "name": "梦幻魔法公主 v1.0.1 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/500812f71db0"
+      }
+    ],
+    "lastChange": "2026-04-30T14:39:12.046Z",
+    "id": 2003
+  },
+  {
+    "name": "王国循环 v1.0.4 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ac6f69126410"
+      }
+    ],
+    "lastChange": "2026-04-30T14:42:24.935Z",
+    "id": 2004
+  },
+  {
+    "name": "这是我的宝藏 v0.3.26 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/83cd7cf2bc48"
+      }
+    ],
+    "lastChange": "2026-04-30T14:42:52.647Z",
+    "id": 2005
+  },
+  {
+    "name": "记忆石：被光遗弃 v1.0.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a4661c02f2a0"
+      }
+    ],
+    "lastChange": "2026-04-30T14:58:54.770Z",
+    "id": 2006
+  },
+  {
+    "name": "灵兽江湖 v2026.4.24 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/70dc34b0d799"
+      }
+    ],
+    "lastChange": "2026-04-30T15:02:42.795Z",
+    "id": 2007
+  },
+  {
+    "name": "妖谈2：九尾异闻 v1.0.068 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bdb6dcb857be"
+      }
+    ],
+    "lastChange": "2026-04-30T15:03:21.491Z",
+    "id": 2008
+  },
+  {
+    "name": "不良兄弟 v1.0.1 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/00615ca4d03c"
+      }
+    ],
+    "lastChange": "2026-04-30T15:07:27.012Z",
+    "id": 2009
+  },
+  {
+    "name": "蟾蜍灵魂跳跃者 v1.1.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/93a5bba19b42"
+      }
+    ],
+    "lastChange": "2026-04-30T15:07:56.484Z",
+    "id": 2010
+  },
+  {
+    "name": "八号窗口：千禧年 v1.01 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1eed52626d0f"
+      }
+    ],
+    "lastChange": "2026-04-30T15:09:38.341Z",
+    "id": 2011
+  },
+  {
+    "name": "盟军敢死队：起源 v1.6.0.96933 豪华中文版 全DLC 新增不弃袍泽DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6ab621bdd383"
+      }
+    ],
+    "lastChange": "2026-04-30T15:12:47.029Z",
+    "id": 2012
+  },
+  {
+    "name": "王国保卫战：复仇 v1.16.4.0 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/87951a31c250"
+      }
+    ],
+    "lastChange": "2026-04-30T15:13:25.053Z",
+    "id": 2013
+  },
+  {
+    "name": "钻核公司 v1.249.6 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7659eeffbb9c"
+      }
+    ],
+    "lastChange": "2026-04-30T15:15:01.206Z",
+    "id": 2014
+  },
+  {
+    "name": "DVD商店模拟器 v0.1.10 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7136c86ecf3f"
+      }
+    ],
+    "lastChange": "2026-04-30T15:15:24.942Z",
+    "id": 2015
+  },
+  {
+    "name": "人生公司 v0.2.2 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4929a7c1df82"
+      }
+    ],
+    "lastChange": "2026-04-30T15:15:57.974Z",
+    "id": 2016
+  },
+  {
+    "name": "卡片魔王：只剩个头！ v260429 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c03c20505090"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOrTyaFRcKjS8cldc_oXTSCxA1?pwd=cagw#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1cUIcd6mfB8F3WNGH75UjhQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-04-30T15:21:01.463Z",
+    "id": 2017
   }
 ]
