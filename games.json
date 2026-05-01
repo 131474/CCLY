@@ -26153,14 +26153,22 @@
     "id": 2002
   },
   {
-    "name": "梦幻魔法公主 v1.0.1 中文版",
+    "name": "梦幻魔法公主 v1.0.1 豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/500812f71db0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOrU5Dv--DIG9UQXMUDwsq0DA1?pwd=m292#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1s2IlJ3KdPB1CWpGR-2eK5A?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-30T14:39:12.046Z",
+    "lastChange": "2026-05-01T02:23:35.804Z",
     "id": 2003
   },
   {
@@ -26343,20 +26351,5 @@
     ],
     "lastChange": "2026-04-30T15:52:36.389Z",
     "id": 2018
-  },
-  {
-    "name": "梦幻魔法公主豪华中文Build.22979590-沙盒-美少女养成+全DLC",
-    "links": [
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOrU5Dv--DIG9UQXMUDwsq0DA1?pwd=m292#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1s2IlJ3KdPB1CWpGR-2eK5A?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-04-30T16:07:04.184Z",
-    "id": 2019
   }
 ]
