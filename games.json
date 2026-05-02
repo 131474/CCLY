@@ -1067,7 +1067,7 @@
     "id": 61
   },
   {
-    "name": "钢铁雄心4  v1.18.0 豪华中文版 全DLC 打包XG器 新增我们的和平时代DLC",
+    "name": "钢铁雄心4  v1.18.1 豪华中文版 全DLC 打包XG器 新增我们的和平时代DLC",
     "shortName": "钢铁雄心4豪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1084,7 +1084,7 @@
         "url": "https://pan.baidu.com/s/1ATW0p4SdV6Ud3oOPPmQjsA?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-23T13:50:17.837Z",
+    "lastChange": "2026-05-02T03:56:15.116Z",
     "id": 62
   },
   {
@@ -3308,7 +3308,7 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1a_8d0uVYD-BwE96aGfA2sQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1GDTH7etfXPAU6Do5UxPPgw?pwd=8888",
         "code": "8888"
       }
     ],
@@ -14785,16 +14785,16 @@
     "id": 1088
   },
   {
-    "name": "天际线2 v1.3.6F1 豪华中文版 全DLC+神器+桥梁与港口DLC",
+    "name": "天际线2 v1.5.7f1 豪华中文版 全DLC",
     "shortName": "天际线2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ef0e2a0b69c7"
+        "url": "https://pan.quark.cn/s/2a69c8fdf01b"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-02T03:55:00.408Z",
     "id": 1089
   },
   {
@@ -25571,7 +25571,7 @@
     "id": 1950
   },
   {
-    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者  v1.4.0 中文版",
+    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者 v1.4.1中文版",
     "links": [
       {
         "name": "夸克网盘",
@@ -25586,7 +25586,7 @@
         "url": "https://pan.baidu.com/s/1meFp4ZrjnFpWv2sd8Y0l7Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-24T09:16:58.424Z",
+    "lastChange": "2026-05-02T03:50:43.135Z",
     "id": 1952
   },
   {
@@ -26370,5 +26370,38 @@
     ],
     "lastChange": "2026-05-01T03:42:33.466Z",
     "id": 2019
+  },
+  {
+    "name": "深红誓言 v20260430 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/85e84f189301"
+      }
+    ],
+    "lastChange": "2026-05-02T03:53:28.879Z",
+    "id": 2020
+  },
+  {
+    "name": "魔法司书阿莉艾娜 七英杰之书 v1.0.0 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bbb910b67f64"
+      }
+    ],
+    "lastChange": "2026-05-02T03:56:54.396Z",
+    "id": 2021
+  },
+  {
+    "name": "橡木塔 v0.3.3 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dcce9cb90793"
+      }
+    ],
+    "lastChange": "2026-05-02T03:57:22.232Z",
+    "id": 2022
   }
 ]
