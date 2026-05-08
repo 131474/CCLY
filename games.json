@@ -47,7 +47,7 @@
     "id": 223
   },
   {
-    "name": "剑星 v1.4.1Fix 豪华中文版 全DLC （VBS最新一键启动版）",
+    "name": "剑星 v1.4.1Fix 豪华中文版 全DLC  （VBS最新一键启动版）",
     "shortName": "剑星|VBS一键启动",
     "cover": "https://ts4.tc.mm.bing.net/th/id/OIP-C.15yD-X-Ui5U9frL01BrmBQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
@@ -62,9 +62,13 @@
       {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/18_i2FWE7sOYbQvQT5jl4IQ?pwd=8888"
+      },
+      {
+        "name": "UC网盘",
+        "url": "https://drive.uc.cn/s/ef0c4b5c24484"
       }
     ],
-    "lastChange": "2026-04-23T03:32:47.855Z",
+    "lastChange": "2026-05-08T08:48:12.481Z",
     "id": 224
   },
   {
@@ -206,15 +210,19 @@
       {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1FZmf3ISLK42RM8aTRJQ8kg?pwd=8888"
+      },
+      {
+        "name": "UC网盘",
+        "url": "https://drive.uc.cn/s/db7e79d298644"
       }
     ],
-    "lastChange": "2026-04-24T09:19:09.712Z",
+    "lastChange": "2026-05-08T08:38:58.593Z",
     "id": 1904,
     "shortName": "朋友收集|梦想生活",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20250331/1743409337_685481.jpg"
   },
   {
-    "name": "超级机器人大战Y豪华版 v1.3.0 全DLC+拓展包DLC3（解压即玩，已去除D加密，无需虚拟机）",
+    "name": "超级机器人大战Y豪华版 v1.3.0 全DLC+拓展包DLC3 （解压即玩，已去除D加密，无需虚拟机）",
     "links": [
       {
         "name": "夸克网盘",
@@ -227,9 +235,13 @@
       {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1Allz8egiZxc043R-20tSQw?pwd=8888"
+      },
+      {
+        "name": "UC网盘",
+        "url": "https://drive.uc.cn/s/6e7d574f22d14"
       }
     ],
-    "lastChange": "2026-04-23T03:33:24.949Z",
+    "lastChange": "2026-05-08T08:47:57.457Z",
     "id": 1951,
     "shortName": "超级机器人大战Y|非虚拟机",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg"
@@ -705,7 +717,7 @@
     "id": 30
   },
   {
-    "name": "红色沙漠 v1.03.1 豪华中文版 全DLC（VBS一键启动版）",
+    "name": "红色沙漠 V1.04.02 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
@@ -721,7 +733,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-17T12:28:18.678Z",
+    "lastChange": "2026-05-08T08:48:36.577Z",
     "id": 31
   },
   {
@@ -26665,5 +26677,24 @@
     ],
     "lastChange": "2026-05-07T07:47:42.266Z",
     "id": 2040
+  },
+  {
+    "name": "流放者柯南 虚幻5增强版Build.23106389豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3645fbdd98fb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOs5QT_FYFk8F2mz15h6fMDlA1?pwd=cmdq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1eA6pnlHipJgkJpV_NsYOZg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-08T08:50:37.325Z",
+    "id": 2041
   }
 ]
