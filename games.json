@@ -72,7 +72,7 @@
     "id": 224
   },
   {
-    "name": "（Switch）宝可梦传说Z-A 2.0.2+2DLC+新DLC超次元爆涌",
+    "name": "（Switch） 宝可梦传说Z-A 2.0.2+2DLC+新DLC超次元爆涌",
     "shortName": "宝可梦传说|Z-A",
     "cover": "https://img.3dmgame.com/uploads/images/news/20250820/1755657743_231030.jpg",
     "links": [
@@ -87,9 +87,13 @@
       {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1TJ3oATCWn-OKNjdvwd9tJQ?pwd=8888"
+      },
+      {
+        "name": "UC网盘",
+        "url": "https://drive.uc.cn/s/ca513b7d416d4"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-08T15:54:36.076Z",
     "id": 35
   },
   {
@@ -423,7 +427,7 @@
     "id": 10
   },
   {
-    "name": "死亡搁浅2：冥滩之上V1.6.72.0 豪华中文版  全DLC 国语配音+单独升级补丁",
+    "name": "死亡搁浅2：冥滩之上V1.7.76 豪华中文版   全DLC 国语配音+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -439,7 +443,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-30T11:56:15.326Z",
+    "lastChange": "2026-05-08T15:53:37.316Z",
     "id": 11
   },
   {
@@ -593,7 +597,7 @@
     "id": 22
   },
   {
-    "name": "寂静之歌 v1.8.0 豪华中文版 全DLC",
+    "name": "寂静之歌 v1.9.0 新加DLC 无冕之王 豪华中文版 全DLC",
     "shortName": "寂静之歌",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -602,7 +606,7 @@
         "url": "https://pan.quark.cn/s/4869d7c49013"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-08T15:42:48.482Z",
     "id": 23
   },
   {
@@ -935,7 +939,7 @@
     "id": 47
   },
   {
-    "name": "欧陆风云5 v1.1.10 豪华中文版 全DLC+联机补丁",
+    "name": "欧陆风云5 v1.2 新加DLC凤凰的命运 豪华中文版 全DLC",
     "shortName": "欧陆风云5",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -944,7 +948,7 @@
         "url": "https://pan.quark.cn/s/05ad71ab567a"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-08T15:50:55.148Z",
     "id": 48
   },
   {
@@ -2082,7 +2086,7 @@
     "id": 130
   },
   {
-    "name": "十字军之王3 v1.19.0.4 豪华中文DLC+溥天之下DLC+联机补丁+mod合集+漫画集",
+    "name": "十字军之王3 v1.19.0.5 豪华中文DLC+溥天之下DLC+联机补丁+mod合集+漫画集",
     "shortName": "十字军之王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2099,7 +2103,7 @@
         "url": "https://pan.baidu.com/s/1hmIJBJnJmHBw913VrpcdXg?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-28T07:49:58.464Z",
+    "lastChange": "2026-05-08T15:53:52.060Z",
     "id": 131
   },
   {
@@ -2215,7 +2219,7 @@
     "id": 139
   },
   {
-    "name": "卡牌修仙传 v2.1.0.8 中文版",
+    "name": "卡牌修仙传 v2.1.0.51 中文版",
     "shortName": "卡牌修仙传",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2224,7 +2228,7 @@
         "url": "https://pan.quark.cn/s/c93d463561a2"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-08T15:37:51.632Z",
     "id": 140
   },
   {
@@ -2254,7 +2258,7 @@
     "id": 142
   },
   {
-    "name": "帝国时代4：周年纪念版 v15.4.8719 豪华中文版 全DLC",
+    "name": "帝国时代4 v16.1.9737 新加DLC 岳飞传 豪华中文版 全DLC",
     "shortName": "帝国时代4周",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2263,7 +2267,7 @@
         "url": "https://pan.quark.cn/s/82fcf6dd9d0e"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-08T15:52:44.308Z",
     "id": 143
   },
   {
@@ -6676,7 +6680,7 @@
     "id": 463
   },
   {
-    "name": "火湖 v0.14.12 中文版",
+    "name": "火湖 v0.16.8 中文版",
     "shortName": "火湖",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -6685,7 +6689,7 @@
         "url": "https://pan.quark.cn/s/2bdde08b2c48"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-08T15:39:24.689Z",
     "id": 464
   },
   {
@@ -11281,7 +11285,7 @@
     "id": 812
   },
   {
-    "name": "露玛岛 v1.1.5.25799 中文版+联机补丁",
+    "name": "露玛岛 v1.1.9.26376 中文版+联机",
     "shortName": "露玛岛",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -11290,7 +11294,7 @@
         "url": "https://pan.quark.cn/s/f73103cf2e51"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-08T15:43:39.890Z",
     "id": 813
   },
   {
@@ -12049,7 +12053,7 @@
     "id": 870
   },
   {
-    "name": "欧洲卡车模拟2 v1.57.2.2s 新加DLC 北欧地平线 豪华中文版 全DLC",
+    "name": "欧洲卡车模拟2 v1.59.1.0S 豪华中文版 全DLC",
     "shortName": "欧洲卡车模拟",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -12058,7 +12062,7 @@
         "url": "https://pan.quark.cn/s/504ee83f3bc0"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-08T15:44:35.874Z",
     "id": 872
   },
   {
@@ -12844,14 +12848,14 @@
     "id": 930
   },
   {
-    "name": "都市：天际线2 v1.5.6F1 豪华中文版 全DLC 打包XG器",
+    "name": "都市：天际线2 v1.5.8F1 豪华中文版 全DLC 打包XG器",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/fc31b086ea32"
       }
     ],
-    "lastChange": "2026-04-14T12:56:01.680Z",
+    "lastChange": "2026-05-08T15:51:48.820Z",
     "id": 931
   },
   {
@@ -16031,7 +16035,7 @@
     "id": 1182
   },
   {
-    "name": "深岩银河：幸存者 v1.0.97P 豪华中文版 全DLC",
+    "name": "深岩银河：幸存者 v1.0.250P 新加DLC 重型作业 豪华中文版 全DLC",
     "shortName": "深岩银河幸存",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -16040,7 +16044,7 @@
         "url": "https://pan.quark.cn/s/7f127eef6239"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-08T15:41:31.809Z",
     "id": 1183
   },
   {
@@ -26696,5 +26700,115 @@
     ],
     "lastChange": "2026-05-08T08:50:37.325Z",
     "id": 2041
+  },
+  {
+    "id": 2042,
+    "name": "华夏史诗：战国 v0.261.044.2917 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fa383d2c2d2d"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2043,
+    "name": "波波萌宠大作战 v2026.4.30 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f642b5227695"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2044,
+    "name": "明镜江湖行：朔风起 v1.0.03 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/75141f61ac5e"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2045,
+    "name": "无限卡牌 v1.0.4 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6850b3134b91"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2046,
+    "name": "废土履迹 v20260504 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2d78725d1784"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2047,
+    "name": "星际空间站 v1.0.0.0 中文正式版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/40f5a7b357e3"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2048,
+    "name": "废都电锯姬 v2.74 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/de616d52f2cb"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2049,
+    "name": "非生物因素 v1.3.0.25766 中文联机版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1700fa2435a1"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2050,
+    "name": "威尔：追随光明 v20260507 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8c00444a0580"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
+  },
+  {
+    "id": 2051,
+    "name": "觉醒者：战斗之潮 v1.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e01a453217f2"
+      }
+    ],
+    "lastChange": "2026-05-08T15:36:55.520Z"
   }
 ]
