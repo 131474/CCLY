@@ -1,6 +1,8 @@
 [
   {
     "name": "剑星 v1.4.1Fix2  voice38版 豪华中文全DLC （解压即玩版，非虚拟机，解除D加密）",
+    "shortName": "剑星|非虚拟机",
+    "cover": "https://ts4.tc.mm.bing.net/th/id/OIP-C.15yD-X-Ui5U9frL01BrmBQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
         "name": "夸克网盘",
@@ -20,9 +22,7 @@
       }
     ],
     "lastChange": "2026-05-09T13:36:48.031Z",
-    "id": 2019,
-    "shortName": "剑星|非虚拟机",
-    "cover": "https://ts4.tc.mm.bing.net/th/id/OIP-C.15yD-X-Ui5U9frL01BrmBQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    "id": 2019
   },
   {
     "name": "生化危机9安魂曲1.20  （真正破解版，非虚拟机，解压即玩）",
@@ -98,6 +98,8 @@
   },
   {
     "name": "杀戮尖塔2  V0.104 中文版（PC+安卓+苹果ios）安卓移植+ios+联机+修改器+MOD合集",
+    "shortName": "杀戮尖塔2",
+    "cover": "https://doc-fd.zol-img.com.cn/t_s2000x2000/g7/M00/0B/02/ChMkLGdbjCiILbNIAAMf7UEMSokAAmsfQD2f2UAAyAF841.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -118,9 +120,7 @@
       }
     ],
     "lastChange": "2026-05-06T12:30:14.098Z",
-    "id": 36,
-    "shortName": "杀戮尖塔2",
-    "cover": "https://doc-fd.zol-img.com.cn/t_s2000x2000/g7/M00/0B/02/ChMkLGdbjCiILbNIAAMf7UEMSokAAmsfQD2f2UAAyAF841.jpg"
+    "id": 36
   },
   {
     "name": "（Switch）塞尔达传说：旷野之息1.9.0+2DLC （PC+手机）附金手指+60帧mod+32个amiibo",
@@ -202,6 +202,8 @@
   },
   {
     "name": "（Switch）朋友收集 梦想生活 官方中文正式版v1.0.1+金手指",
+    "shortName": "朋友收集|梦想生活",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20250331/1743409337_685481.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -221,12 +223,12 @@
       }
     ],
     "lastChange": "2026-05-08T08:38:58.593Z",
-    "id": 1904,
-    "shortName": "朋友收集|梦想生活",
-    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20250331/1743409337_685481.jpg"
+    "id": 1904
   },
   {
     "name": "超级机器人大战Y豪华版 v1.3.0 全DLC+拓展包DLC3 （解压即玩，已去除D加密，无需虚拟机）",
+    "shortName": "超级机器人大战Y|非虚拟机",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -246,9 +248,7 @@
       }
     ],
     "lastChange": "2026-05-08T08:47:57.457Z",
-    "id": 1951,
-    "shortName": "超级机器人大战Y|非虚拟机",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg"
+    "id": 1951
   },
   {
     "name": "（Switch）塞尔达传说 织梦岛1.1.0 附金手指",
@@ -26702,7 +26702,6 @@
     "id": 2041
   },
   {
-    "id": 2042,
     "name": "华夏史诗：战国 v0.261.044.2917 中文版",
     "links": [
       {
@@ -26710,10 +26709,10 @@
         "url": "https://pan.quark.cn/s/fa383d2c2d2d"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2042
   },
   {
-    "id": 2043,
     "name": "波波萌宠大作战 v2026.4.30 中文版",
     "links": [
       {
@@ -26721,10 +26720,10 @@
         "url": "https://pan.quark.cn/s/f642b5227695"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2043
   },
   {
-    "id": 2044,
     "name": "明镜江湖行：朔风起 v1.0.03 中文版",
     "links": [
       {
@@ -26732,10 +26731,10 @@
         "url": "https://pan.quark.cn/s/75141f61ac5e"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2044
   },
   {
-    "id": 2045,
     "name": "无限卡牌 v1.0.4 中文版",
     "links": [
       {
@@ -26743,10 +26742,10 @@
         "url": "https://pan.quark.cn/s/6850b3134b91"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2045
   },
   {
-    "id": 2046,
     "name": "废土履迹 v20260504 中文版",
     "links": [
       {
@@ -26754,10 +26753,10 @@
         "url": "https://pan.quark.cn/s/2d78725d1784"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2046
   },
   {
-    "id": 2047,
     "name": "星际空间站 v1.0.0.0 中文正式版",
     "links": [
       {
@@ -26765,10 +26764,10 @@
         "url": "https://pan.quark.cn/s/40f5a7b357e3"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2047
   },
   {
-    "id": 2048,
     "name": "废都电锯姬 v2.74 中文版",
     "links": [
       {
@@ -26776,10 +26775,10 @@
         "url": "https://pan.quark.cn/s/de616d52f2cb"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2048
   },
   {
-    "id": 2049,
     "name": "非生物因素 v1.3.0.25766 中文联机版",
     "links": [
       {
@@ -26787,10 +26786,10 @@
         "url": "https://pan.quark.cn/s/1700fa2435a1"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2049
   },
   {
-    "id": 2050,
     "name": "威尔：追随光明 v20260507 中文版",
     "links": [
       {
@@ -26798,10 +26797,10 @@
         "url": "https://pan.quark.cn/s/8c00444a0580"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2050
   },
   {
-    "id": 2051,
     "name": "觉醒者：战斗之潮 v1.0 中文版",
     "links": [
       {
@@ -26809,7 +26808,8 @@
         "url": "https://pan.quark.cn/s/e01a453217f2"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z"
+    "lastChange": "2026-05-08T15:36:55.520Z",
+    "id": 2051
   },
   {
     "name": "万物皆可蟹：动物进化1.0.08074豪华中文全DLC",
