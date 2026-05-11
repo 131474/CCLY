@@ -1,6 +1,6 @@
 [
   {
-    "name": "极限竞速：地平线6中文全DLC 155G完整版",
+    "name": "极限竞速：地平线6中文全DLC+v3版防闪退补丁 155G完整版",
     "shortName": "极限竞速|地平线6",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -9,11 +9,15 @@
         "url": "https://pan.quark.cn/s/5239a2ba2f90"
       },
       {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsM2-DdgZrTSGF-N47IaGOwA1?pwd=d9w2#"
+      },
+      {
         "name": "百度网盘",
         "url": "https://pan.baidu.com/s/1TIUTZNOoyhxB9r922nry-Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-11T03:41:22.480Z",
+    "lastChange": "2026-05-11T12:44:16.598Z",
     "id": 2060
   },
   {
@@ -26927,5 +26931,16 @@
     ],
     "lastChange": "2026-05-10T15:33:32.073Z",
     "id": 2059
+  },
+  {
+    "name": "8020号指令 黑相集 v202605011 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fcd5fc666a6b"
+      }
+    ],
+    "lastChange": "2026-05-11T12:43:09.339Z",
+    "id": 2061
   }
 ]
