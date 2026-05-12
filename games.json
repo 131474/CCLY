@@ -1,6 +1,6 @@
 [
   {
-    "name": "深海迷航2 偷跑版Build.23057982豪华中文全DLC",
+    "name": "深海迷航2 偷跑版Build.23057982豪华中文全DLC 14.6G完整版",
     "shortName": "深海迷航2|偷跑版",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
@@ -13,11 +13,11 @@
         "url": "https://pan.baidu.com/s/1pfGKrVkypB1jKNTFhRKJrQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-12T12:21:28.741Z",
+    "lastChange": "2026-05-12T12:47:04.706Z",
     "id": 2062
   },
   {
-    "name": "极限竞速：地平线6中文全DLC+v3版防闪退补丁 155G完整版",
+    "name": "极限竞速：地平线6中文全DLC+v3版防闪退补丁  155G完整版",
     "shortName": "极限竞速|地平线6",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -34,7 +34,7 @@
         "url": "https://pan.baidu.com/s/1TIUTZNOoyhxB9r922nry-Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-11T12:44:16.598Z",
+    "lastChange": "2026-05-12T12:46:43.410Z",
     "id": 2060
   },
   {
@@ -26955,9 +26955,36 @@
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/fcd5fc666a6b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsRD4F9NYmMUsI8ulK_UN07A1?pwd=693z#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ESSwmn6MEsHoEp8zQjaOVA?pwd=8888"
       }
     ],
     "lastChange": "2026-05-11T12:43:09.339Z",
     "id": 2061
+  },
+  {
+    "name": "Farever官方中文v0.1.2.25450+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0daaea5676b1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsRCuC8hrqO5JxFHxtWhjQeA1?pwd=q6ab#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19zD51RqYJclLaKie53ZsdQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-12T12:44:59.945Z",
+    "id": 2063
   }
 ]
