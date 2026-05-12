@@ -1,12 +1,12 @@
 [
   {
-    "name": "极限竞速：地平线6中文全DLC+v3版防闪退补丁 155G完整版",
+    "name": "极限竞速：地平线6中文全DLC+v3版防闪退补丁+序章闪退补丁 155G完整版",
     "shortName": "极限竞速|地平线6",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5239a2ba2f90"
+        "url": "https://pan.quark.cn/s/41906a78e214"
       },
       {
         "name": "迅雷网盘",
@@ -17,7 +17,7 @@
         "url": "https://pan.baidu.com/s/1TIUTZNOoyhxB9r922nry-Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-11T12:44:16.598Z",
+    "lastChange": "2026-05-12T06:50:16.715Z",
     "id": 2060
   },
   {
@@ -26937,10 +26937,37 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fcd5fc666a6b"
+        "url": "https://pan.quark.cn/s/3b8baaf91130"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsPwXLp1xq8jg6pMDBiDh-5A1?pwd=d5yy#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1v1Xp4qANzxIg8LiqPmMVLQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-11T12:43:09.339Z",
+    "lastChange": "2026-05-12T06:49:24.146Z",
     "id": 2061
+  },
+  {
+    "name": "Farever官方中文v0.1.2.25450+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b7809eaa34f5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsPvf-G1qHQuK8w9K4IUOjpA1?pwd=vie7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UmEoXlImgerYTpmD0V3Bbw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-12T06:45:44.488Z",
+    "id": 2062
   }
 ]
