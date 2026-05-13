@@ -42,11 +42,84 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
-        body { min-height: 100vh; background: linear-gradient(135deg, #1a2a3a 0%, #0d1b2a 100%); background-image: url('https://file.moyubuluo.com/free_wallpapers_files/4ldhpa1owyun3ri7.jpg?attname=%E3%80%8A%E7%94%9F%E5%8C%96%E5%8D%B1%E6%9C%BA9%EF%BC%8C%E5%AE%89%E9%AD%82%E6%9B%B2%E3%80%8B%E9%AB%98%E6%B8%85%E6%B8%B8%E6%88%8F%E5%A3%81%E7%BA%B8%20%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%20%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8-%E5%A2%A8%E9%B1%BC%E9%83%A8%E8%90%BD%E6%A0%BC.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-color: #1a2a3a; display: flex; align-items: center; justify-content: center; padding: 1.5rem; -webkit-touch-callout: none; user-select: none; flex-direction: column; gap: 1rem; position: relative; z-index: 1; }
-        .query-card { width: 100%; max-width: 950px; background: transparent; border: 1px solid rgba(160, 200, 240, 0.4); border-radius: 2.5rem; padding: 2.2rem 2rem 1.8rem 2rem; box-shadow: 0 25px 40px -20px rgba(30, 60, 90, 0.3), 0 10px 20px -5px rgba(140, 200, 255, 0.2), inset 0 1px 3px #ffffffcc; transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow 0.2s ease, border-color 0.2s ease; position: relative; z-index: 1; backface-visibility: hidden; transform: scale(1); }
-        .query-card:hover { transform: scale(1.005); border-color: rgba(80, 160, 240, 0.7); box-shadow: 0 30px 45px -15px #2b4f6e40, 0 0 0 2px rgba(100, 180, 255, 0.2); }
-        .query-card::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(245, 250, 255, 0.92); border-radius: inherit; z-index: -1; pointer-events: none; transition: background 0.2s; }
-        .query-card:hover::before { background: rgba(245, 250, 255, 0.96); }
+        
+        /* 移动端默认：单张背景图铺满 */
+        body {
+            min-height: 100vh;
+            background-color: #1a2a3a;
+            background-image: url('https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            -webkit-touch-callout: none;
+            user-select: none;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* 电脑端：四等分布局背景 */
+        @media (min-width: 769px) {
+            body {
+                background-image: 
+                    url('https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg'),
+                    url('https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png'),
+                    url('https://pics.mgwyx.com/mgwyx/imgfile/20240510/10095129oin2.jpg'),
+                    url('https://img.3dmgame.com/uploads/images/news/20260121/1768962185_218117.jpg');
+                background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                background-position: 
+                    left top, 
+                    right top, 
+                    left bottom, 
+                    right bottom;
+                background-attachment: fixed, fixed, fixed, fixed;
+            }
+        }
+        
+        .query-card {
+            width: 100%;
+            max-width: 950px;
+            background: transparent;
+            border: 1px solid rgba(160, 200, 240, 0.4);
+            border-radius: 2.5rem;
+            padding: 2.2rem 2rem 1.8rem 2rem;
+            box-shadow: 0 25px 40px -20px rgba(30, 60, 90, 0.3), 0 10px 20px -5px rgba(140, 200, 255, 0.2), inset 0 1px 3px #ffffffcc;
+            transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow 0.2s ease, border-color 0.2s ease;
+            position: relative;
+            z-index: 1;
+            backface-visibility: hidden;
+            transform: scale(1);
+        }
+        .query-card:hover {
+            transform: scale(1.005);
+            border-color: rgba(80, 160, 240, 0.7);
+            box-shadow: 0 30px 45px -15px #2b4f6e40, 0 0 0 2px rgba(100, 180, 255, 0.2);
+        }
+        
+        .query-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(245, 250, 255, 0.92);
+            border-radius: inherit;
+            z-index: -1;
+            pointer-events: none;
+            transition: background 0.2s;
+        }
+        .query-card:hover::before {
+            background: rgba(245, 250, 255, 0.96);
+        }
+        
         .query-card > * { position: relative; z-index: 1; }
         .header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 0.2rem; flex-wrap: wrap; gap: 0.5rem; }
         .game-house { font-size: 1.95rem; font-weight: 800; background: linear-gradient(130deg, #1f6d8f, #1b5b7a, #134b66); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 2px 6px rgba(70, 160, 220, 0.3); line-height: 1.2; }
@@ -132,6 +205,26 @@
         .hot-item span { display: block; font-size: 0.7rem; margin-top: 0.3rem; color: #1a5777; font-weight: 500; line-height: 1.3; white-space: normal; word-break: break-word; max-width: 85px; }
         .Dict { display: none; }
         .pc { font-size: 0.7rem; color: #2b8dcc; margin-top: 0.2rem; }
+        
+        /* 二维码放大弹窗底部红色提醒 */
+        .zoom-red-notice {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-top: 12px;
+            padding: 4px 16px;
+            background: rgba(255,255,255,0.85);
+            border-radius: 20px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        @media (max-width: 768px) {
+            .zoom-red-notice {
+                font-size: 0.75rem;
+                padding: 4px 10px;
+            }
+        }
+        
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; } .pc { display: none; }
             .game-title-row { flex-direction: column; align-items: flex-start; }
@@ -315,6 +408,8 @@
         <div id="authFormContainer"></div>
     </div>
 </div>
+
+<!-- 二维码放大弹窗：底部新增红色提示文字 -->
 <div class="zoom-modal-overlay" id="zoomModal">
     <div class="zoom-modal-container" style="position: relative;">
         <div class="zoom-close" id="closeZoomBtn">✕</div>
@@ -331,9 +426,12 @@
                     <button id="copyDirectBtn" style="background: #4797cf; border: none; color: white; padding: 0.3rem 1.2rem; border-radius: 30px; font-size: 0.9rem; cursor: pointer;">复制链接至剪切板</button>
                 </div>
             </div>
+            <!-- 红色提示文字 -->
+            <div class="zoom-red-notice">任意网盘使用新手机号（没注册过的）注册并转存可以免费扩容，并且当天下载不限速</div>
         </div>
     </div>
 </div>
+
 <div id="simpleModal" class="simple-modal">
     <div class="simple-modal-content">
         <p id="simpleModalMessage" class="simple-modal-message"></p>
