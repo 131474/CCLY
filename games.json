@@ -763,7 +763,7 @@
     "id": 30
   },
   {
-    "name": "红色沙漠 V1.04.02 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
+    "name": "红色沙漠 V1.06.00 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
@@ -779,7 +779,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-08T08:48:36.577Z",
+    "lastChange": "2026-05-14T05:35:04.513Z",
     "id": 31
   },
   {
@@ -26628,7 +26628,7 @@
     "id": 2038
   },
   {
-    "name": "死亡迪斯科豪华中文Build.23060593+全DLC",
+    "name": "死亡迪斯科豪华中文v0.1.71+全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -26643,7 +26643,7 @@
         "url": "https://pan.baidu.com/s/1EPVq86sypGbIHGBBglzZFw?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-06T05:45:52.580Z",
+    "lastChange": "2026-05-14T05:30:21.225Z",
     "id": 2039
   },
   {
@@ -27113,5 +27113,54 @@
     ],
     "lastChange": "2026-05-13T16:23:01.393Z",
     "id": 2077
+  },
+  {
+    "name": "（Switch）深海迷航中文本体+v1.21.71113升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d9cafae46283"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10a1AjtfryOjzjmwfwOd-Ag?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-14T05:12:38.904Z",
+    "id": 2078
+  },
+  {
+    "name": "（Switch）深海迷航 冰点之下中文本体+v1.21.49397升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/eb2e955ff1e4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1C56eZ2Vu2JVdWyREzPyONA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-14T05:24:05.689Z",
+    "id": 2079
+  },
+  {
+    "name": "疫区档案官方中文v1.0.0+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4098fbf1e692"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsZkLZbhgF2fABoxMkEcnAAA1?pwd=bajb#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16ZMa057Al9LKCeUja60Dyw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-14T05:31:29.257Z",
+    "id": 2080
   }
 ]
