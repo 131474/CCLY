@@ -1,23 +1,44 @@
 [
   {
-    "name": "深海迷航2 偷跑版Build.23057982 豪华中文全DLC 14.6G完整版",
-    "shortName": "深海迷航2|偷跑版",
+    "name": "识质存在 voice38版 Build.22358810全DLC（解压即玩，非虚拟机，去除D加密）",
+    "shortName": "识质存在|非虚拟机",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20251212/1765510521_329169.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c474e800c90e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsdkW8x6FtzyWJ744XQR6RqA1?pwd=76bt#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UTQG-fuNGrT59JODxwRZGA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-15T04:01:14.282Z",
+    "id": 1901
+  },
+  {
+    "name": "深海迷航2：异星水域 v0.10.0-113109 中文联机版 +神器",
+    "shortName": "深海迷航2|中文联机版",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/69a620bef09a"
+        "url": "https://pan.quark.cn/s/61fb54b8354b"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOsRXIdZGS3aqknqUA6UJKNIA1?pwd=q246#"
+        "url": "https://pan.xunlei.com/s/VOsdnn236qfMqIinuIG4XjVDA1?pwd=76x2#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1pfGKrVkypB1jKNTFhRKJrQ?pwd=8888"
+        "url": "https://pan.baidu.com/s/1-Gs3ovALB2C5DlTocvLERA?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-14T14:13:47.093Z",
+    "lastChange": "2026-05-15T04:05:25.338Z",
     "id": 2062
   },
   {
@@ -24991,25 +25012,6 @@
     ],
     "lastChange": "2026-04-15T14:11:44.805Z",
     "id": 1900
-  },
-  {
-    "name": "识质存在豪华中文版 （VBS一键启动版）",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7f6161be7a76"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqJxl-WKNJlB6ewSQ2oob4pA1?pwd=6z35#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1cLzHv66t2poNwPE1_h3P3A?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-04-16T06:25:33.992Z",
-    "id": 1901
   },
   {
     "name": "（Switch）阿里克与废墟王国 美区中文v1.3.37",
