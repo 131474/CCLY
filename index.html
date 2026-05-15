@@ -47,7 +47,7 @@
         body {
             min-height: 100vh;
             background-color: #1a2a3a;
-            background-image: url('https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg');
+            background-image: url('https://img.3dmgame.com/uploads/images/news/20251212/1765510521_329169.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -68,10 +68,10 @@
         @media (min-width: 769px) {
             body {
                 background-image: 
+                    url('https://img.3dmgame.com/uploads/images/news/20251212/1765510521_329169.png'),
                     url('https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg'),
-                    url('https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png'),
-                    url('https://ts1.tc.mm.bing.net/th/id/R-C.876bef2a201e922bab7e0175cef56720?rik=bnKtDRIjW4VVpw&riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20240218ac%2f400%2fw1280h720%2f20240218%2ff3a1-894ff03c0d96023c7aaff39f516bfb96.jpg&ehk=38dvKohaTaMlWln5u7XAGCJt9RL6uSWhvdmrEzL2QOQ%3d&risl=&pid=ImgRaw&r=0'),
-                    url('https://img.3dmgame.com/uploads/images/news/20260128/1769571537_941093.webp');
+                    url('https://ts4.tc.mm.bing.net/th/id/OIP-C._Q7XnmzoYKeo0Yr59vrmMAHaEH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3'),
+                    url('https://tse1-mm.cn.bing.net/th/id/OIP-C.h2vvKiAekiurfgF1zvVnIAHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3');
                 background-size: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
                 background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
                 background-position: 
@@ -614,6 +614,17 @@
         } catch(e) { console.warn('☁️ 获取云端热度失败:', e); }
     }
 
+    function getGameChangeDate(game) {
+        if (game.lastChange) {
+            const dateStr = game.lastChange.slice(0,10);
+            const changeDate = new Date(dateStr);
+            const today = new Date(); today.setHours(0,0,0,0);
+            const threeDaysAgo = new Date(today); threeDaysAgo.setDate(today.getDate()-2);
+            if (changeDate >= threeDaysAgo) return dateStr;
+        }
+        return null;
+    }
+
     function getGameChangeTimestamp(game) {
         return game.lastChange ? new Date(game.lastChange).getTime() : 0;
     }
@@ -997,12 +1008,14 @@
         let html = '';
         for (let i=0; i<pageGames.length; i++) {
             const game = pageGames[i];
+            const displayDate = getGameChangeDate(game);
             const clicks = getGameClicks(game.id);
             const likes = getGameLikes(game.id);
             const liked = isLiked(game.id);
             html += `<div class="modal-game-card" data-game-id="${game.id}" data-game-name="${escapeHtml(game.name)}">
                         <div class="game-title-row">
                             <div class="game-name">🎮 ${escapeHtml(game.name)}</div>
+                            ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
                         </div>
                         <div class="game-stats">
                             <span class="stat-item">🔥 ${clicks}</span>
