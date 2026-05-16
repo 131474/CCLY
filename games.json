@@ -1,6 +1,6 @@
 [
   {
-    "name": "极限竞速：地平线6中文v354.221  全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁",
+    "name": "极限竞速：地平线6中文v354.221 全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁",
     "shortName": "极限竞速|地平线6|免登录+联机",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -17,7 +17,7 @@
         "url": "https://pan.baidu.com/s/1fYHXLl3Q2JzbF7bptNPHsQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-16T10:21:08.290Z",
+    "lastChange": "2026-05-16T15:59:28.181Z",
     "id": 2060
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "name": "魔法门之英雄无敌：上古纪元v0.80.15官方中文+全DLC+联机补丁",
-    "shortName": "魔法门之英雄无敌|上古纪元|0.8.15",
+    "shortName": "魔法门英雄无敌|上古纪元|0.8.15",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -27263,5 +27263,25 @@
     ],
     "lastChange": "2026-05-16T09:28:07.616Z",
     "id": 2088
+  },
+  {
+    "name": "今古群侠传豪华中文v1.0全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/43aa769aceca"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOslRGuKXNSTo1KgrR9xyP28A1?pwd=28kh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QtneNbYO2cfLrIiUjK0-Rw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-16T15:58:31.245Z",
+    "id": 2089
   }
 ]
