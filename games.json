@@ -17,7 +17,7 @@
         "url": "https://pan.baidu.com/s/1fYHXLl3Q2JzbF7bptNPHsQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-17T16:41:24.123Z",
+    "lastChange": "2026-05-18T10:34:27.203Z",
     "id": 2060
   },
   {
@@ -38,7 +38,7 @@
         "url": "https://pan.baidu.com/s/1-Gs3ovALB2C5DlTocvLERA?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-17T16:41:15.619Z",
+    "lastChange": "2026-05-18T10:34:22.900Z",
     "id": 2062
   },
   {
@@ -5101,6 +5101,14 @@
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/25509b863bc8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOstMa09t9Jxq5XolVRnbihlA1?pwd=e4tq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1M_r7mxgeM5AbaDCXD0dPSQ?pwd=8888"
       }
     ],
     "lastChange": "2026-05-17T16:36:24.057Z",
@@ -27380,5 +27388,45 @@
     ],
     "lastChange": "2026-05-17T15:38:23.458Z",
     "id": 2099
+  },
+  {
+    "name": "战场兄弟v1.5.1.8豪华中文全DLC 内置豪华简体中文 内置神器+Mod合集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c15893c7fe97"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsuFukD06wwYdBDNZ5FjrCBA1?pwd=squv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Mn6P7LcsnUPqa0VzPFmWVQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-18T10:31:17.613Z",
+    "id": 2100
+  },
+  {
+    "name": "《战神5：诸神黄昏（God of War Ragnarok）》豪华版 v1.0.668.5700 官方中文+全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9b6dd4d84df9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOsqh1fpZXqL9Bu_unnJyFxPA1?pwd=i4sn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GTbiFw5aqpl9QplvIN1f5g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-18T10:34:08.813Z",
+    "id": 2101
   }
 ]
