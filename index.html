@@ -195,6 +195,18 @@
         .hot-section { margin: 1rem 0 0.5rem; }
         .hot-title { font-size: 1rem; font-weight: 700; color: #1a5777; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
         .hot-title::before { content: "🔥"; font-size: 1.2rem; }
+        
+        /* 手机端热门推荐标题添加提示文字 */
+        @media (max-width: 768px) {
+            .hot-title::after {
+                content: "（左滑显示更多）";
+                margin-left: 8px;
+                font-size: 0.75rem;
+                font-weight: normal;
+                color: #ff5722;
+            }
+        }
+        
         .hot-scroll { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: thin; }
         .hot-item { flex: 0 0 auto; width: 85px; text-align: center; cursor: pointer; transition: transform 0.15s; }
         .hot-item:hover { transform: translateY(-2px); }
@@ -442,6 +454,20 @@
 </div>
 
 <script>
+    // ==================== 热度数字格式化函数 ====================
+    function formatNumber(num) {
+        if (num === undefined || num === null) {
+            return '0';
+        }
+        if (num >= 10000) {
+            return (num / 10000).toFixed(2) + 'W';
+        } else if (num >= 1000) {
+            return (num / 1000).toFixed(2) + 'K';
+        } else {
+            return num.toString();
+        }
+    }
+
     // ==================== 默认热门游戏数据 ====================
     window.__DEFAULT_GAMES__ = [
         { "id": 1, "name": "极限竞速：地平线6中文v354.221 全DLC+免登录离线补丁+ v3版防闪退补丁+序章闪退补丁+联机补丁", "shortName": "极限竞速|地平线6|免登录+联机", "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg", "links": [{ "name": "夸克网盘", "url": "https://pan.quark.cn/s/1979ab102806" }] },
@@ -538,7 +564,7 @@
         saveStatsToLocal();
         if (cardElement) {
             const clicksSpan = cardElement.querySelector('.stat-item:first-child');
-            if (clicksSpan) clicksSpan.innerText = `🔥 ${localStats[gameId].clicks}`;
+            if (clicksSpan) clicksSpan.innerText = `🔥 ${formatNumber(localStats[gameId].clicks)}`;
         }
         const client = getSupabaseClient();
         if (client && supabaseReady) {
@@ -556,7 +582,7 @@
         if (buttonElement) {
             buttonElement.classList.add('liked'); buttonElement.disabled = true;
             const span = buttonElement.querySelector('.like-count');
-            if (span) span.innerText = localStats[gameId].likes;
+            if (span) span.innerText = formatNumber(localStats[gameId].likes);
             showLikeToastNearButton(buttonElement);
         }
         const client = getSupabaseClient();
@@ -719,8 +745,8 @@
             html += `<div class="modal-game-card" data-game-id="${game.id}" data-game-name="${escapeHtml(game.name)}">
                         <div class="game-title-row">🎮 ${escapeHtml(game.name)}</div>
                         <div class="game-stats">
-                            <span class="stat-item">🔥 ${clicks}</span>
-                            <button class="like-btn stat-item ${liked ? 'liked' : ''}" data-game-id="${game.id}" ${liked ? 'disabled' : ''}>👍 <span class="like-count">${likes}</span></button>
+                            <span class="stat-item">🔥 ${formatNumber(clicks)}</span>
+                            <button class="like-btn stat-item ${liked ? 'liked' : ''}" data-game-id="${game.id}" ${liked ? 'disabled' : ''}>👍 <span class="like-count">${formatNumber(likes)}</span></button>
                         </div>
                         <div class="modal-qr-group">`;
             game.links.forEach((link, linkIdx) => {
@@ -1018,8 +1044,8 @@
                             ${displayDate ? `<div class="update-date-badge">更新于 ${displayDate}</div>` : ''}
                         </div>
                         <div class="game-stats">
-                            <span class="stat-item">🔥 ${clicks}</span>
-                            <button class="like-btn stat-item ${liked ? 'liked' : ''}" data-game-id="${game.id}" ${liked ? 'disabled' : ''}>👍 <span class="like-count">${likes}</span></button>
+                            <span class="stat-item">🔥 ${formatNumber(clicks)}</span>
+                            <button class="like-btn stat-item ${liked ? 'liked' : ''}" data-game-id="${game.id}" ${liked ? 'disabled' : ''}>👍 <span class="like-count">${formatNumber(likes)}</span></button>
                         </div>
                         <div class="modal-qr-group">`;
             if (game.links && game.links.length) {
