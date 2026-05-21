@@ -1,6 +1,6 @@
 [
   {
-    "name": "极限竞速：地平线6尊享版  v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
+    "name": "极限竞速：地平线6尊享版 v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
     "shortName": "极限竞速|地平线6|v360.259",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -17,7 +17,7 @@
         "url": "https://pan.baidu.com/s/1bQBGxfFNinYaRtmZwoNaIQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-20T16:25:00.574Z",
+    "lastChange": "2026-05-21T11:07:57.857Z",
     "id": 2060
   },
   {
@@ -10501,20 +10501,25 @@
     "id": 740
   },
   {
-    "name": "最终幻想7重生豪华中文版 全DLC v1.004 新加dlss4帧生成功能 +神器",
+    "name": "最终幻想7： 重生 v1.004 Fix2 豪华中文全DLC",
     "shortName": "最终幻想7重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/93f6beac2447"
+        "url": "https://pan.quark.cn/s/be64574906c7"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgWUu8oZaJkeFwFpOD3P-ntA1?pwd=9t9p#"
+        "url": "https://pan.xunlei.com/s/VOt828OdnxFni5NyBsc0n6V8A1?pwd=ukdt#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JL71V-UsE0_JUCK7TVoVOQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-21T11:06:00.017Z",
     "id": 741
   },
   {
@@ -13429,19 +13434,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 973
-  },
-  {
-    "name": "圣杯誓约 单机+联机 v1.0.3.0.1111 中文版",
-    "shortName": "圣杯誓约单机",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c9a5ddd36e6a"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 974
   },
   {
     "name": "苍翼：混沌效应 v1.0.9.141388.0 豪华中文版 全DLC+黑铁直人DLC",
@@ -21652,23 +21644,6 @@
     "id": 1621
   },
   {
-    "name": "最终幻想7：重生 v1.003 豪华中文版 全DLC 附单独升级补丁 打包XG器",
-    "shortName": "最终幻想7重",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/44c484b5e0d1"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOiM2_rRUNtdljz42oV6S-LEA1?pwd=jqe8#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1622
-  },
-  {
     "name": "最终幻想15 v1261414 豪华中文收藏版 全DLC+满级全通关存档+修改器",
     "shortName": "最终幻想15",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -27597,5 +27572,65 @@
     ],
     "lastChange": "2026-05-20T04:16:50.404Z",
     "id": 2114
+  },
+  {
+    "name": "《冒险家艾略特的千年奇谭》中文demo 史克威尔新作",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/046998648318"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOt9A9k5h2TwftEt54kkEb1jA1?pwd=8wtj#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13Zs-UhMgF04msmrnziC1Lw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-21T11:02:38.282Z",
+    "id": 2115
+  },
+  {
+    "name": "（Switch）圣杯誓约 官方中文本体+1.0.4升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e6914f4b2a57"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOt8vcwfkZZ1xSYd-HMWg6MZA1?pwd=twj4#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Gy9z3I8GW_ChWHifdatjvg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-21T11:04:07.513Z",
+    "id": 2116
+  },
+  {
+    "name": "（Switch）异形战机 维度3 本体+1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f7fc50b42fc4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOt7hC61C2t7X7a2rqypUHyoA1?pwd=icd4#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JaUR4kAxgvx_p4qf6v2oNg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-21T11:07:04.201Z",
+    "id": 2117
   }
 ]
