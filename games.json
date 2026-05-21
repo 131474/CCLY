@@ -1,6 +1,6 @@
 [
   {
-    "name": "极限竞速：地平线6尊享版 v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
+    "name": "极限竞速：地平线6尊享版  v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
     "shortName": "极限竞速|地平线6|v360.259",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -17,11 +17,11 @@
         "url": "https://pan.baidu.com/s/1bQBGxfFNinYaRtmZwoNaIQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-21T11:07:57.857Z",
+    "lastChange": "2026-05-21T15:59:08.508Z",
     "id": 2060
   },
   {
-    "name": "深海迷航2：异星水域 v0.10.0-113109 中文联机版 +单独联机补丁+mod+风灵月影22项修改器",
+    "name": "深海迷航2：异星水域  v0.10.0-113109 中文联机版 +单独联机补丁+mod+风灵月影22项修改器",
     "shortName": "深海迷航2|中文联机版|v0.10.0",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
@@ -38,7 +38,7 @@
         "url": "https://pan.baidu.com/s/1-Gs3ovALB2C5DlTocvLERA?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-20T16:24:55.294Z",
+    "lastChange": "2026-05-21T15:59:03.133Z",
     "id": 2062
   },
   {
@@ -27632,5 +27632,45 @@
     ],
     "lastChange": "2026-05-21T11:07:04.201Z",
     "id": 2117
+  },
+  {
+    "name": "重返德军总部·写实版 诅咒沙地全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e546f09544ce"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOt9twb04sK_rrqnINu-1dTqA1?pwd=ab22#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1I_GRLMgHVTh_v73oM7JGWA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-21T15:57:35.333Z",
+    "id": 2118
+  },
+  {
+    "name": "深岩银河 异动核心 支持者版 豪华中文Build23309537+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b3401b8a7e9f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtA-U9jVriPXz8ut1ErrRUAA1?pwd=uce3#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KwQ3Bye_yeVW4Hky0cBYIg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-21T15:58:53.341Z",
+    "id": 2119
   }
 ]
