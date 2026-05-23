@@ -1,6 +1,6 @@
 [
   {
-    "name": "乐高蝙蝠侠 黑暗骑士之遗  非虚拟机voice38版 豪华中文Build.23232657全DLC+黑暗骑士归来蝙蝠套装（已解除D加密，解压即玩）",
+    "name": "乐高蝙蝠侠 黑暗骑士之遗 非虚拟机voice38版 豪华中文Build.23232657全DLC+黑暗骑士归来蝙蝠套装（已解除D加密，解压即玩）",
     "shortName": "乐高蝙蝠侠|黑暗骑士之遗|非虚拟机",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251212/7/23/44446f65ca1754ded985604eb3979040.jpg",
     "links": [
@@ -18,11 +18,11 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-23T08:36:06.522Z",
+    "lastChange": "2026-05-23T11:10:41.461Z",
     "id": 2114
   },
   {
-    "name": "四海兄弟 故乡 非虚拟机voice38版  豪华中文Build.20960235全DLC（已解除D加密，解压即玩）",
+    "name": "四海兄弟 故乡  非虚拟机voice38版  豪华中文Build.20960235全DLC（已解除D加密，解压即玩）",
     "shortName": "四海兄弟 故乡|非虚拟机",
     "cover": "https://img1.wywyx.com/uploads/allimg/250611/38-250611102Z0.jpg",
     "links": [
@@ -39,11 +39,11 @@
         "url": "https://pan.baidu.com/s/1Sqe99swuVmowdXZUp3PmZQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-23T08:36:01.866Z",
+    "lastChange": "2026-05-23T11:10:36.965Z",
     "id": 1637
   },
   {
-    "name": "极限竞速：地平线6尊享版  v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
+    "name": "极限竞速：地平线6尊享版 v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
     "shortName": "极限竞速|地平线6|v360.259",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -60,12 +60,12 @@
         "url": "https://pan.baidu.com/s/1bQBGxfFNinYaRtmZwoNaIQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-22T14:19:21.858Z",
+    "lastChange": "2026-05-23T11:10:30.756Z",
     "id": 2060
   },
   {
-    "name": "深海迷航2：异星水域  v0.10.1.113933 中文联机版 +神器+教程",
-    "shortName": "深海迷航2|中文联机版|v0.10.0",
+    "name": "深海迷航2：异星水域   v0.10.1.113933 中文联机版 +神器+教程",
+    "shortName": "深海迷航2|中文联机版|v0.10.1",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
       {
@@ -82,7 +82,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-23T08:31:49.562Z",
+    "lastChange": "2026-05-23T11:10:25.108Z",
     "id": 2062
   },
   {
@@ -11857,16 +11857,24 @@
     "id": 847
   },
   {
-    "name": "（Switch）星之卡比 新星同盟 中文版v4.0.0.a+60帧mod",
+    "name": "（Switch）星之卡比 新星同盟 中文版v4.0.0.a+60帧mod+金手指",
     "shortName": "星之卡比新星",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3fd30cba79a5"
+        "url": "https://pan.quark.cn/s/d54571cd91db"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtJRe6CB5goYd0N4w1EttAzA1?pwd=bsa9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MdvZiIy-2u9IhNtSrFKtng?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-23T11:05:55.110Z",
     "id": 848
   },
   {
@@ -27890,5 +27898,24 @@
     ],
     "lastChange": "2026-05-23T08:35:56.634Z",
     "id": 2134
+  },
+  {
+    "name": "【安卓游戏】乐高蝙蝠侠：飞跃哥谭市 高清高帧优化版apk直装",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c68301c9eebb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtJWJEf05Lf0q_HEpwEMaufA1?pwd=k58z#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wqWknZiU50CbY4nQ-SbObA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-05-23T11:10:15.780Z",
+    "id": 2135
   }
 ]
