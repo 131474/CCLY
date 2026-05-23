@@ -1,6 +1,6 @@
 [
   {
-    "name": "乐高蝙蝠侠 黑暗骑士之遗 非虚拟机voice38版 豪华中文Build.23232657全DLC+黑暗骑士归来蝙蝠套装（已解除D加密，解压即玩）",
+    "name": "乐高蝙蝠侠 黑暗骑士之遗  非虚拟机voice38版 豪华中文Build.23232657全DLC+黑暗骑士归来蝙蝠套装（已解除D加密，解压即玩）",
     "shortName": "乐高蝙蝠侠|黑暗骑士之遗|非虚拟机",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251212/7/23/44446f65ca1754ded985604eb3979040.jpg",
     "links": [
@@ -18,11 +18,11 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-23T05:48:33.526Z",
+    "lastChange": "2026-05-23T08:36:06.522Z",
     "id": 2114
   },
   {
-    "name": "四海兄弟 故乡 非虚拟机voice38版 豪华中文Build.20960235全DLC（已解除D加密，解压即玩）",
+    "name": "四海兄弟 故乡 非虚拟机voice38版  豪华中文Build.20960235全DLC（已解除D加密，解压即玩）",
     "shortName": "四海兄弟 故乡|非虚拟机",
     "cover": "https://img1.wywyx.com/uploads/allimg/250611/38-250611102Z0.jpg",
     "links": [
@@ -39,7 +39,7 @@
         "url": "https://pan.baidu.com/s/1Sqe99swuVmowdXZUp3PmZQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-23T05:55:23.798Z",
+    "lastChange": "2026-05-23T08:36:01.866Z",
     "id": 1637
   },
   {
@@ -64,24 +64,25 @@
     "id": 2060
   },
   {
-    "name": "深海迷航2：异星水域  v0.10.0-113109 中文联机版 +单独联机补丁+mod+风灵月影22项修改器",
+    "name": "深海迷航2：异星水域  v0.10.1.113933 中文联机版 +神器+教程",
     "shortName": "深海迷航2|中文联机版|v0.10.0",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/61fb54b8354b"
+        "url": "https://pan.quark.cn/s/19e48ae3f72c"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOsdnn236qfMqIinuIG4XjVDA1?pwd=76x2#"
+        "url": "https://pan.xunlei.com/s/VOtIw6hYjF6B-cTY3Gs5ki-XA1?pwd=nivk#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1-Gs3ovALB2C5DlTocvLERA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1Dg4LSJ46LF9i8dvhpp-yGw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-21T15:59:03.133Z",
+    "lastChange": "2026-05-23T08:31:49.562Z",
     "id": 2062
   },
   {
@@ -27869,5 +27870,25 @@
     ],
     "lastChange": "2026-05-22T13:58:52.976Z",
     "id": 2133
+  },
+  {
+    "name": "金子一马的月读 官方中文本体+1.0.3升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b1fe66d30a2a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtIyB8hfu7UlQwMnQiNXYi1A1?pwd=6uh9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1peWp_OdzJ3_v1D1fgP0I1w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-23T08:35:56.634Z",
+    "id": 2134
   }
 ]
