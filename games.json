@@ -743,7 +743,7 @@
     "id": 25
   },
   {
-    "name": "喵喵的结合v1.1.21035 中文汉化1.4版+全DLC",
+    "name": "喵喵的结合v1.1.21039 中文汉化1.4版+全DLC",
     "shortName": "喵喵的结合",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -761,7 +761,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-20T12:36:30.437Z",
+    "lastChange": "2026-05-25T08:32:59.923Z",
     "id": 26
   },
   {
@@ -4617,23 +4617,23 @@
     "id": 305
   },
   {
-    "name": "GTA5侠盗猎车手5增强版 v1.0.1013.34 豪华中文版 全DLC",
+    "name": "GTA5侠盗猎车手5 增强版 v1.0.1013.34 豪华中文全DLC+单独升级补丁+200多个MOD大合集",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8a0f09717722"
+        "url": "https://pan.quark.cn/s/d30ece537f93"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOprpLCo3Zx4YZ7Eeuvu-GKnA1?pwd=ytkp#"
+        "url": "https://pan.xunlei.com/s/VOtSxg4NcVkI2LC_qwCcVuB8A1?pwd=7qsr#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1NWfR_FGINVRXQm9jSng4Og?pwd=8888",
+        "url": "https://pan.baidu.com/s/1JED0bawANO3HF_RxKgo09A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-10T14:39:42.897Z",
+    "lastChange": "2026-05-25T08:32:07.147Z",
     "id": 306
   },
   {
@@ -19848,33 +19848,25 @@
     "id": 1477
   },
   {
-    "name": "文明7 v1.0.2（PC+手机）双端 （注意电脑要用龙神模拟器运行）",
-    "shortName": "文明7",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/021888081b4b"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1478
-  },
-  {
-    "name": "文明6 v1.0.12.58 豪华中文版 全DLC+MOD大合集",
+    "name": "文明6 官方中文 v1.0.12.68 全DLC+原声+修改器+联机补丁",
     "shortName": "文明6",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f3ae7ed58a76"
+        "url": "https://pan.quark.cn/s/9592bfa8bfa7"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOa5_PnnifmWiDsmMwcVB6VRA1?pwd=yctk#"
+        "url": "https://pan.xunlei.com/s/VOtTMRe98n5T8yrQpDHkx3fsA1?pwd=h3xg#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17RRvVZ83zRosByzRirSsOQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-25T09:12:53.734Z",
     "id": 1479
   },
   {
@@ -21992,14 +21984,23 @@
     "id": 1642
   },
   {
-    "name": "文明7 v1.3.2 豪华中文版 全DLC+神器（VBS一键启动断网版）",
+    "name": "文明7豪华中文 v1.3.2.40 全DLC+修改器 绕过D加密（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3def47bfb156"
+        "url": "https://pan.quark.cn/s/c740c1c6ed20"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtT2Cgj90lATHylXptNGbj8A1?pwd=wz4r#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Rlp5lb4jxSYEd4baKbkhBg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-06T15:20:25.240Z",
+    "lastChange": "2026-05-25T08:31:18.083Z",
     "id": 1643
   },
   {
@@ -28169,5 +28170,45 @@
     ],
     "lastChange": "2026-05-25T06:24:34.787Z",
     "id": 2152
+  },
+  {
+    "name": "（Switch）文明7官方中文 本体+1.4.0升补+30DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3543a7247948"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtT9MX0cr0U92PbAr5apGOmA1?pwd=v5tf#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17SMIELS_8GW9od_n4EKuAQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-25T08:30:07.404Z",
+    "id": 2153
+  },
+  {
+    "name": "文明6豪华中文本体+1.2.19升补+18DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/970947ed7a00"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtTPtkmN6g9LalbwiknkG_QA1?pwd=epq3#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rE5lJqVSL2vNPmbMBuO39w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-25T09:18:19.870Z",
+    "id": 2154
   }
 ]
