@@ -43,7 +43,7 @@
     "id": 1637
   },
   {
-    "name": "极限竞速：地平线6尊享版   v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
+    "name": "极限竞速：地平线6尊享版  v360.259全DLC +免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档",
     "shortName": "极限竞速|地平线6|v360.259",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -60,7 +60,7 @@
         "url": "https://pan.baidu.com/s/1bQBGxfFNinYaRtmZwoNaIQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-24T14:44:32.694Z",
+    "lastChange": "2026-05-25T14:23:13.964Z",
     "id": 2060
   },
   {
@@ -11234,7 +11234,7 @@
     "id": 797
   },
   {
-    "name": "土豆兄弟官方中文V1.1.14.6-张牙舞爪-深海魔怪DLC+本地合作模式+全DLC",
+    "name": "土豆兄弟v1.1.15.3 豪华中文全DLC+深海魔怪DLC+本地合作模式",
     "shortName": "土豆兄弟官方",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -11251,7 +11251,7 @@
         "url": "https://pan.baidu.com/s/1n7cOkN7v4pCgEhr-4U3JwQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-13T16:04:33.228Z",
+    "lastChange": "2026-05-25T12:14:13.784Z",
     "id": 800
   },
   {
@@ -28210,5 +28210,45 @@
     ],
     "lastChange": "2026-05-25T09:23:32.365Z",
     "id": 2154
+  },
+  {
+    "name": "挂机升级打怪兽官方中文Build.23391035+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/03e9bf6f600e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtU7ZRDlyFBLdYtY1nIN4t3A1?pwd=kmbs#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JO6Xgu3ZHDku1QQh-Ji1cA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-25T12:59:35.014Z",
+    "id": 2155
+  },
+  {
+    "name": "红警合集全系列中文版合集 含红警1+2+3代所有版本（1000地图+1000任务+中文语音+尤复共辉）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b7353b7663ce"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtUUvm1eUSU7PBJh5JmHu3MA1?pwd=2p44#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fRuOAQxSykUwocECmoOxEQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-25T14:23:06.572Z",
+    "id": 2156
   }
 ]
