@@ -853,24 +853,25 @@
     "id": 31
   },
   {
-    "name": "仁王3  v1.05豪华中文版 全DLC+联机补丁+单独升级补丁",
+    "name": "仁王3豪华版 v1.06.00中文全DLC+联机补丁+单独升级补丁",
     "shortName": "仁王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fcfdda8671e7"
+        "url": "https://pan.quark.cn/s/c0d23e127e68"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqzojfjg7XKEvO3FfT_tKMoA1?pwd=35pz#"
+        "url": "https://pan.xunlei.com/s/VOtXyMZaudfKR2OAZcvHK58PA1?pwd=j8zi#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1tnaqCCP-LjJgNFdP_NPLBA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1rK_vRfBxBLXLJ1Vn1w904w?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-28T08:30:10.839Z",
+    "lastChange": "2026-05-26T06:37:04.381Z",
     "id": 32
   },
   {
@@ -5152,7 +5153,7 @@
     "id": 343
   },
   {
-    "name": "英雄连3 v2.4.0.46121新加DLC敢战&敢毁 豪华中文版 全DLC",
+    "name": "英雄连3豪华中文v2.4.1.46468全DLC 新加DLC敢战&敢毁+战壕残歌+单独升级补丁",
     "shortName": "英雄连3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5169,7 +5170,7 @@
         "url": "https://pan.baidu.com/s/1M_r7mxgeM5AbaDCXD0dPSQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-17T16:36:24.057Z",
+    "lastChange": "2026-05-26T06:36:13.637Z",
     "id": 344
   },
   {
@@ -11285,24 +11286,25 @@
     "id": 802
   },
   {
-    "name": "泰坦之旅2 v0.5.0.125982中文版+修改器",
+    "name": "泰坦之旅2豪华中文v0.5.0.126509全DLC+第三章+1.4汉化补丁+mod合集",
     "shortName": "泰坦之旅2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b559f2fa46ff"
+        "url": "https://pan.quark.cn/s/1fa18b8c1352"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqQp8bTV2vRn91Mo6W3C_mXA1?pwd=iuri#"
+        "url": "https://pan.xunlei.com/s/VOtXVcFYjb7I6z3QFKGgrBwWA1?pwd=zw7i#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/12xBY_Q3JPvfYAvHqLWptOA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1GwQ13F4OyEiXiq0_6xJ74A?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-26T03:59:49.914Z",
+    "lastChange": "2026-05-26T04:23:47.157Z",
     "id": 804
   },
   {
@@ -26695,7 +26697,7 @@
     "id": 2040
   },
   {
-    "name": "流放者柯南 虚幻5增强版Build.23106389豪华中文全DLC",
+    "name": "流放者柯南 虚幻5增强版v363.009豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -26710,7 +26712,7 @@
         "url": "https://pan.baidu.com/s/1eA6pnlHipJgkJpV_NsYOZg?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-08T08:50:37.325Z",
+    "lastChange": "2026-05-26T06:36:53.221Z",
     "id": 2041
   },
   {
@@ -28259,5 +28261,25 @@
     ],
     "lastChange": "2026-05-25T14:23:06.572Z",
     "id": 2156
+  },
+  {
+    "name": "平行人生v0.1.1官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d3e9108e03b9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtY2EgRq9e1H7q5gtoPCjJPA1?pwd=w9ay#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HkwN4itLsNSE4xK6vn3mmg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-26T06:55:59.398Z",
+    "id": 2157
   }
 ]
