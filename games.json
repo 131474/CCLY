@@ -155,7 +155,7 @@
   },
   {
     "name": "魔法门之英雄无敌：上古纪元v0.80.16官方中文+全DLC+联机补丁",
-    "shortName": "魔法门英雄无敌|上古纪元|0.8.15",
+    "shortName": "魔法门英雄无敌|上古纪元|0.8.16",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -21475,16 +21475,24 @@
     "id": 1604
   },
   {
-    "name": "魔兽争霸3 重置版 v2.0.3.22988 +局域网联机 豪华中文版 全DLC",
+    "name": "魔兽争霸3：冰封王座重制版v2.0.4.23452豪华中文全DLC +局域网联机+国语配音",
     "shortName": "魔兽争霸3重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d7687a2d92ce"
+        "url": "https://pan.quark.cn/s/0e25d1ca0c12"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtYl_f4hm9aUqpSXrKCjms0A1?pwd=i8fk#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-L7-WY1YxrTw-4cPVs-oTw?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-05-26T10:21:19.491Z",
     "id": 1605
   },
   {
