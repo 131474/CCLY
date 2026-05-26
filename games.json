@@ -2199,7 +2199,7 @@
     "id": 130
   },
   {
-    "name": "十字军之王3 v1.19.0.5 豪华中文DLC+溥天之下DLC+联机补丁+mod合集+漫画集",
+    "name": "十字军之王3 v1.19.0.6 豪华中文DLC+溥天之下DLC+联机补丁+mod",
     "shortName": "十字军之王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2216,7 +2216,7 @@
         "url": "https://pan.baidu.com/s/1hmIJBJnJmHBw913VrpcdXg?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-08T15:53:52.060Z",
+    "lastChange": "2026-05-26T14:27:36.249Z",
     "id": 131
   },
   {
@@ -3577,20 +3577,25 @@
     "id": 231
   },
   {
-    "name": "（Switch）绯夜传奇 重制版 港区中文v1.0.2+9DLC",
+    "name": "（Switch）绯夜传奇 重制版 港区中文v1.0.5+9DLC",
     "shortName": "绯夜传奇重制",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9516ef9fee77"
+        "url": "https://pan.quark.cn/s/179d16d5caa5"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOnCWjtIfW9BP1aa5I0aAu3EA1?pwd=4ak2#"
+        "url": "https://pan.xunlei.com/s/VOtZOdZmuh7pq6Iyw_eBj8EqA1?pwd=wjbr#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_zCKsepVzXMyMbRkabG4lA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-26T13:15:57.277Z",
     "id": 232
   },
   {
@@ -20939,16 +20944,25 @@
     "id": 1565
   },
   {
-    "name": "怪物猎人：崛起 v16.0.2.0豪华中文版全DLC 附xg器",
+    "name": "怪物猎人崛起 曙光豪华中文v16.0.2Fix+预购特典+全DLC",
     "shortName": "怪物猎人崛起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9568995a52c7"
+        "url": "https://pan.quark.cn/s/dbeee5360bf1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtZYNylJJgYWdK4m3Le8jjJA1?pwd=ekpn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WkKSpfJwg3LRxtuwpc4VJQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-05-26T13:57:53.567Z",
     "id": 1566
   },
   {
