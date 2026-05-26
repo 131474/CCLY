@@ -8,28 +8,29 @@
     <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     
-    <!-- 缓存自救脚本：检测页面是否正常，若异常则强制刷新 -->
+    <!-- 强制清除错误缓存的终极脚本（仅当页面是正常HTML时才执行） -->
     <script>
         (function() {
-            // 正常页面中一定存在的元素（.query-card 是主卡片容器）
-            var hasNormalElement = !!document.querySelector('.query-card');
-            if (!hasNormalElement) {
-                // 避免无限循环刷新（只强制刷新一次）
-                if (!sessionStorage.getItem('forceReloadedForCache')) {
-                    sessionStorage.setItem('forceReloadedForCache', 'true');
-                    // 去掉可能存在的旧参数，加上新的时间戳参数
-                    var url = window.location.href.split('?')[0] + '?t=' + Date.now();
-                    window.location.href = url;
-                } else {
-                    console.warn('页面结构仍不正常，但已尝试刷新一次，请手动清除缓存');
+            // 正常页面特有的元素
+            var hasNormal = !!document.querySelector('.query-card');
+            if (!hasNormal) {
+                // 如果正常元素不存在，说明当前显示的是错误页面（纯文本），此时无法执行JS，
+                // 所以我们无法自动修复。但我们可以尝试使用 sessionStorage 记录状态，然后强制跳转（带时间戳）。
+                // 为了让用户URL不变，我们只刷新一次，刷新后如果还是错误，则放弃。
+                if (!sessionStorage.getItem('_forceReloadAttempt')) {
+                    sessionStorage.setItem('_forceReloadAttempt', '1');
+                    location.reload(true);
                 }
             } else {
-                // 页面正常，清除标志，以便下次出错时还能触发
-                sessionStorage.removeItem('forceReloadedForCache');
+                // 页面正常，清除尝试标志
+                sessionStorage.removeItem('_forceReloadAttempt');
+                // 额外清理可能存在的旧缓存标志
+                localStorage.removeItem('cached_error_page');
             }
         })();
     </script>
     
+    <!-- 版本检测和游戏数据缓存管理（保持不变） -->
     <script>
         (async function() {
             const STORAGE_VERSION_KEY = 'app_version';
@@ -103,6 +104,31 @@
                     right bottom;
                 background-attachment: fixed, fixed, fixed, fixed;
             }
+        }
+        
+        /* 缓存修复提示条（显示在顶部） */
+        .cache-fix-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            z-index: 10001;
+            transform: translateY(-100%);
+            transition: transform 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .cache-fix-banner.show {
+            transform: translateY(0);
+        }
+        .cache-fix-banner span {
+            font-weight: bold;
+            text-decoration: underline;
         }
         
         .query-card {
@@ -340,6 +366,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
 <body>
+<!-- 缓存修复提示横幅（仅在检测到可能的缓存问题时显示） -->
+<div id="cacheFixBanner" class="cache-fix-banner">
+    ⚠️ 网站已更新，如页面显示异常（纯代码），请 <span id="refreshBtn">点击此处</span> 强制刷新
+</div>
+
 <div class="query-card">
     <div class="header">
         <div class="game-house">游戏宝库</div>
@@ -396,7 +427,7 @@
     <div class="footer-note"><span>资源均来源于网络，仅供学习交流，请于24小时内删除。如有侵权，请联系我们处理。如果您喜欢该游戏内容，请支持正版</span></div>
 </div>
 
-<!-- 搜索结果模态框（新增排序按钮） -->
+<!-- 搜索结果模态框 -->
 <div class="modal-overlay" id="resultModal">
     <div class="modal-container">
         <div class="modal-header">
@@ -489,6 +520,39 @@
             return num.toString();
         }
     }
+
+    // ==================== 缓存修复横幅控制 ====================
+    (function() {
+        // 如果 sessionStorage 中有标记表示刚刚刷新过，就不再显示横幅
+        if (sessionStorage.getItem('cacheBannerShown')) return;
+        // 正常页面，延迟显示横幅，引导用户手动刷新（针对那些仍然看到纯文本的用户，但纯文本页面不会显示该横幅）
+        setTimeout(function() {
+            var banner = document.getElementById('cacheFixBanner');
+            if (banner) {
+                banner.classList.add('show');
+                sessionStorage.setItem('cacheBannerShown', '1');
+                // 5秒后自动隐藏
+                setTimeout(function() {
+                    banner.classList.remove('show');
+                }, 8000);
+            }
+        }, 1000);
+        // 绑定刷新按钮
+        var refreshSpan = document.getElementById('refreshBtn');
+        if (refreshSpan) {
+            refreshSpan.addEventListener('click', function() {
+                location.reload(true);
+            });
+        }
+        // 点击横幅也可以刷新
+        var bannerDiv = document.getElementById('cacheFixBanner');
+        if (bannerDiv) {
+            bannerDiv.addEventListener('click', function(e) {
+                if (e.target === refreshSpan) return;
+                location.reload(true);
+            });
+        }
+    })();
 
     // ==================== 默认热门游戏数据 ====================
     window.__DEFAULT_GAMES__ = [
