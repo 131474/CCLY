@@ -8,6 +8,28 @@
     <meta http-equiv="Expires" content="0">
     <title>🎮游戏宝库🎮</title>
     
+    <!-- 缓存自救脚本：检测页面是否正常，若异常则强制刷新 -->
+    <script>
+        (function() {
+            // 正常页面中一定存在的元素（.query-card 是主卡片容器）
+            var hasNormalElement = !!document.querySelector('.query-card');
+            if (!hasNormalElement) {
+                // 避免无限循环刷新（只强制刷新一次）
+                if (!sessionStorage.getItem('forceReloadedForCache')) {
+                    sessionStorage.setItem('forceReloadedForCache', 'true');
+                    // 去掉可能存在的旧参数，加上新的时间戳参数
+                    var url = window.location.href.split('?')[0] + '?t=' + Date.now();
+                    window.location.href = url;
+                } else {
+                    console.warn('页面结构仍不正常，但已尝试刷新一次，请手动清除缓存');
+                }
+            } else {
+                // 页面正常，清除标志，以便下次出错时还能触发
+                sessionStorage.removeItem('forceReloadedForCache');
+            }
+        })();
+    </script>
+    
     <script>
         (async function() {
             const STORAGE_VERSION_KEY = 'app_version';
