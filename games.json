@@ -1,6 +1,6 @@
 [
   {
-    "name": "极限竞速：地平线6尊享版 v364.933全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
+    "name": "极限竞速：地平线6尊享版  v364.933全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
     "shortName": "极限竞速|地平线6|v360.259",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-28T05:12:43.543Z",
+    "lastChange": "2026-05-28T13:56:00.503Z",
     "id": 2060
   },
   {
@@ -28535,6 +28535,10 @@
     "name": "传颂之物 循白之证v1.04.81402豪华中文+预购特典+全DLC",
     "links": [
       {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/108e07798815"
+      },
+      {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOtgytig9076r1WJGbkf32_kA1?pwd=zbg5#"
       },
@@ -28546,5 +28550,105 @@
     ],
     "lastChange": "2026-05-28T05:12:36.471Z",
     "id": 2175
+  },
+  {
+    "name": "（Switch）西瓜游戏 合成大西瓜 官方中文本体+2.3.5升补+29DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3d60510e46d9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtheASU1bFzAnD0LUHDSAepA1?pwd=7shy#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1q5_NGWtr30ieaXLfowRl7A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-28T09:07:59.446Z",
+    "id": 2176
+  },
+  {
+    "name": "最后的神迹 终极版豪华中文Build.20001717+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/53782db253a6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtiU-DFzJFBUYGRJLCC1S1UA1?pwd=7ggi#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Xf8xIdkB_7WUQEv2WfbziA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-28T12:55:44.845Z",
+    "id": 2177
+  },
+  {
+    "name": "（Switch）最后的神迹 复刻版 汉化中文本体+1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6d9d1c20c3f7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtieBs499xNQ-XD-0vngjDfA1?pwd=v73b#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uDjl4wzLWQWvLi9Xho7TRQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-28T12:57:25.556Z",
+    "id": 2178
+  },
+  {
+    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d914dfe13de9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtiivxkQH7HpHLZ7VNM6hQyA1?pwd=2emd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PUf_iGaBUZhby3Mo5O-Gqw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-28T13:18:13.300Z",
+    "id": 2179
+  },
+  {
+    "name": "墨境v1.0正式版豪华中文+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e230f5a2d3bf"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtiqrQHUH9SpDqb9vBxzojGA1?pwd=hg9h#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1g0puyEiUm2nCvk8ufZmymw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-28T13:55:53.191Z",
+    "id": 2180
   }
 ]
