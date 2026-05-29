@@ -936,20 +936,25 @@
     "id": 33
   },
   {
-    "name": "铁拳8豪华中文V3.00.00全DLC",
+    "name": "铁拳8终极版豪华中文V3.01.01全DLC+预购特典+单独升级补丁",
     "shortName": "铁拳8",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/22e8f9268604"
+        "url": "https://pan.quark.cn/s/5cc13a55ed79"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOoDdtjEtqp1u6rcVK1z-oA4A1?pwd=5hcb#"
+        "url": "https://pan.xunlei.com/s/VOtmBkDq-8KNRGMelBVQoNXDA1?pwd=552c#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UES8IH3e6IOPyZmgdIUmcg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-05-29T06:09:45.818Z",
     "id": 34
   },
   {
@@ -8417,20 +8422,25 @@
     "id": 580
   },
   {
-    "name": "(Switch)困兽之国 被遗弃的血亲 官方中文v1.3.4",
+    "name": "(Switch)困兽之国 被遗弃的血亲 官方中文v1.3.4全DLC",
     "shortName": "困兽之国被遗",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f2cac80e3245"
+        "url": "https://pan.quark.cn/s/5fa9e5917b28"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOiRLIqCkri-zOJOcRQsv2tMA1?pwd=wbgm#"
+        "url": "https://pan.xunlei.com/s/VOtljS22vhebztiqyKgxUoPeA1?pwd=4uuf#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GTKg9oFdPfUYXtF8m2xYgQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-29T05:40:59.907Z",
     "id": 581
   },
   {
@@ -13045,16 +13055,25 @@
     "id": 933
   },
   {
-    "name": "困兽之国 v1.3.4 中文版",
+    "name": "困兽之国 v1.3.4.2 官方中文全DLC",
     "shortName": "困兽之国",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/449c6bf19486"
+        "url": "https://pan.quark.cn/s/21383d7c9fb4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtm2fJ38mbSCy-4u9SWFsj6A1?pwd=hhj9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IgpblHOeWJ21tZYJpguXKg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-29T05:41:37.827Z",
     "id": 934
   },
   {
@@ -28582,5 +28601,25 @@
     ],
     "lastChange": "2026-05-28T14:56:17.629Z",
     "id": 2181
+  },
+  {
+    "name": "（Switch）符文之骰v1.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c933e4c5f602"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtlG-PPjxKetxbzflVC6GM7A1?pwd=fah5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JuBvLbqadumUJOG4eZZrbA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-29T05:40:15.139Z",
+    "id": 2182
   }
 ]
