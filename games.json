@@ -3460,16 +3460,25 @@
     "id": 218
   },
   {
-    "name": "无人深空 v6.30 豪华中文版 全DLC",
+    "name": "无人深空v6.36 豪华中文全DLC+XG器 免安装解压即玩",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e0f244890d78"
+        "url": "https://pan.quark.cn/s/9bda2248d5fd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtmmGGBD72tNi61-XhPZvF-A1?pwd=ysyq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1csuUD6UD3-dYp6riiSl6IQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-15T14:22:40.342Z",
+    "lastChange": "2026-05-29T12:14:07.027Z",
     "id": 219
   },
   {
@@ -6757,20 +6766,25 @@
     "id": 455
   },
   {
-    "name": "纪元1800 v18.4.1412158 最终收藏纪念版 豪华中文 全DLC",
+    "name": "纪元1800（Anno 1800）豪华中文 v18.4.1412158 最终收藏纪念版 +全DLC",
     "shortName": "纪元1800",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/97895caeaa2f"
+        "url": "https://pan.quark.cn/s/3762f274a0f0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOjLOqxR-WkVkMcDGub6an6GA1?pwd=3uxn#"
+        "url": "https://pan.xunlei.com/s/VOtmcnOmywq1_AX3JO9i2xX1A1?pwd=rf4c#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11XoeQFnltO62jbucKjXCdA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-05-29T12:13:38.531Z",
     "id": 456
   },
   {
@@ -28621,5 +28635,85 @@
     ],
     "lastChange": "2026-05-29T05:40:15.139Z",
     "id": 2182
+  },
+  {
+    "name": "恐怖黎明 决定版官方中文v1.3.0.0 +全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6d4d11ac8f89"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtmsELpx3oLKcX0Z7q8yyLaA1?pwd=7gbx#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ILq2irgNeoiv0zl627h59A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-29T12:14:34.288Z",
+    "id": 2183
+  },
+  {
+    "name": "星尘轨迹 魔女之愿豪华中文Build.23458033+预购特典+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e6292dc30cb9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtn6kbazlwfpvRvocqYYG9nA1?pwd=3pya#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XIzsFX44Cmw_ScyV_6H1Wg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-29T12:15:32.989Z",
+    "id": 2184
+  },
+  {
+    "name": "（Switch）挖掘者米娜Mina the Hollower美区中文本体+1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5b1ff28ffb47"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtnEmlKKYqlFe2oEwCwURgsA1?pwd=eabg#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1N2bqEwnlKMumkaWxOBe7dQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-29T12:15:52.181Z",
+    "id": 2185
+  },
+  {
+    "name": "挖掘者米娜(Mina the Hollower) v1.0.4 最高评分新游戏",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b851d95a23ce"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtn_NfjFEkunCyKddZx4_HiA1?pwd=4uqb#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HByTX7-hVDNk54FVzg4sCw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-29T12:16:17.972Z",
+    "id": 2186
   }
 ]
