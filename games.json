@@ -1,7 +1,7 @@
 [
   {
     "name": "极限竞速：地平线6尊享版  v364.933全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
-    "shortName": "极限竞速|地平线6|v360.259",
+    "shortName": "极限竞速|地平线6|v364.933",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
       {
@@ -151,8 +151,8 @@
     "id": 1901
   },
   {
-    "name": "剑星 v1.4.1Fix2  voice38版  豪华中文全DLC （解压即玩版，非虚拟机，解除D加密）",
-    "shortName": "剑星|非虚拟机|v1.4.1Fix2",
+    "name": "剑星 v1.4.1Fix3  voice38版 豪华中文全DLC+MOD合集（解压即玩版，非虚拟机，解除D加密）",
+    "shortName": "剑星|非虚拟机|v1.4.1Fix3",
     "cover": "https://ts4.tc.mm.bing.net/th/id/OIP-C.15yD-X-Ui5U9frL01BrmBQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -172,7 +172,7 @@
         "url": "https://drive.uc.cn/s/ef0c4b5c24484"
       }
     ],
-    "lastChange": "2026-05-13T16:25:09.306Z",
+    "lastChange": "2026-05-30T15:10:28.094Z",
     "id": 2019
   },
   {
@@ -21700,20 +21700,25 @@
     "id": 1620
   },
   {
-    "name": "最后生还者2：重制版 v1.6.10721.0105 豪华中文版 全DLC+神器",
+    "name": "最后生还者2重制版v1.6.10721.0105官方中文全DLC+单独升级补丁+预购特典",
     "shortName": "最后生还者2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fbcb13c4cc9f"
+        "url": "https://pan.quark.cn/s/c6d6567642ac"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOht8ZM2lJK4AKD0AUhy4xCAA1?pwd=kex5#"
+        "url": "https://pan.xunlei.com/s/VOtsbJdWdrgYFdWV1idHKfUqA1?pwd=h5h9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CO78_Xhy-2ChAHsFikYZew?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-05-30T11:33:05.778Z",
     "id": 1621
   },
   {
@@ -28858,5 +28863,25 @@
     ],
     "lastChange": "2026-05-29T16:30:08.971Z",
     "id": 2198
+  },
+  {
+    "name": "BS塞尔达传说 卫星广播版 中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d29bca67e50c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtsv3xIopL0SSvn1-1W1fOCA1?pwd=xeya#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1T2ZTVdiykUJ6_zzcTbVlTw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-30T15:09:00.125Z",
+    "id": 2199
   }
 ]
