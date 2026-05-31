@@ -1,7 +1,7 @@
 [
   {
-    "name": "007初露锋芒v1.0.1官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
-    "shortName": "007|初露锋芒",
+    "name": "007初露锋芒 v1.0.1官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
+    "shortName": "007|初露锋芒|v1.0.1",
     "cover": "https://pic2.52pk.com/files/allimg/202601/07/2601072B38846DEC654C029A3371CAC6F192E6.jpg",
     "links": [
       {
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-31T04:04:34.298Z",
+    "lastChange": "2026-05-31T11:09:12.859Z",
     "id": 2158
   },
   {
@@ -28341,14 +28341,23 @@
     "id": 2161
   },
   {
-    "name": "流明物语：特雷的回忆 v1.0.0.0.1281 中文版",
+    "name": "流明物语 特雷的回忆v1.0.0.0.1281官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2a880a41deef"
+        "url": "https://pan.quark.cn/s/a743ccec0a22"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtxb4sdzJFBUYGRJLCIYKelA1?pwd=3st5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12Q83OlzBVpoZ9951EN46cQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-27T16:16:01.007Z",
+    "lastChange": "2026-05-31T11:08:48.259Z",
     "id": 2162
   },
   {
@@ -28912,5 +28921,65 @@
     ],
     "lastChange": "2026-05-30T16:12:25.633Z",
     "id": 2200
+  },
+  {
+    "name": "农庄牌v1.0.8 rc2官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/82b2e6732aa9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtwzSrWJoscOslZMKt3gO75A1?pwd=994v#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1W0lbWQXPGfaxijvUgtkPBw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T07:51:21.667Z",
+    "id": 2201
+  },
+  {
+    "name": "团队对战经理2官方中文v0.4.5全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9e2bc0b2f693"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtx0Of-D72tNi61-XhU58BeA1?pwd=2rjs#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1J-hboA2USGgaBNhCJFCpDQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T08:16:26.741Z",
+    "id": 2202
+  },
+  {
+    "name": "（Switch）流明物语 特雷的回忆官方中文本体+1.0.01升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9a0b3b26f133"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtxULekXeTPKjoQ38Sk9MvwA1?pwd=g5e5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/14KNbRlvfxr2AjufSi26W4Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T10:17:25.031Z",
+    "id": 2203
   }
 ]
