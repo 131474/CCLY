@@ -1,6 +1,6 @@
 [
   {
-    "name": "007初露锋芒 v1.0.1官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
+    "name": "007初露锋芒 v1.0.1 官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
     "shortName": "007|初露锋芒|v1.0.1",
     "cover": "https://pic2.52pk.com/files/allimg/202601/07/2601072B38846DEC654C029A3371CAC6F192E6.jpg",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-31T11:09:12.859Z",
+    "lastChange": "2026-05-31T14:55:25.753Z",
     "id": 2158
   },
   {
@@ -28943,7 +28943,7 @@
     "id": 2201
   },
   {
-    "name": "团队对战经理2官方中文v0.4.5全DLC",
+    "name": "团队对战经理2官方中文v0.4.6全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -28959,7 +28959,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-31T08:16:26.741Z",
+    "lastChange": "2026-05-31T14:54:59.313Z",
     "id": 2202
   },
   {
@@ -28981,5 +28981,65 @@
     ],
     "lastChange": "2026-05-31T10:17:25.031Z",
     "id": 2203
+  },
+  {
+    "name": "（Switch）星之海洋v1.0.0官方中文+国语配音完整版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3930199057cf"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtyPUJAFpGi9yGD4Al-vDevA1?pwd=mrnx#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-ViVGhA201yDlLF7iAQRFA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T14:52:33.066Z",
+    "id": 2204
+  },
+  {
+    "name": "魂斗罗3D版经典怀旧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d28fabc93310"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtxH7F6dRqZAClf1vZeGI38A1?pwd=gve5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1g_VCit_h-wOu--h4tM9ijA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T14:54:15.833Z",
+    "id": 2205
+  },
+  {
+    "name": "恐龙快打3D沙雕版-V1.5中文版 经典怀旧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5ee9eb3f0036"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOtxJhNhzJFBUYGRJLCIQ94IA1?pwd=n7h6#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1bcFPlsDZQhnzxJcbytKarg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-05-31T14:54:35.137Z",
+    "id": 2206
   }
 ]
