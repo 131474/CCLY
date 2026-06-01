@@ -877,7 +877,7 @@
     "id": 30
   },
   {
-    "name": "红色沙漠 V1.09.00 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
+    "name": "红色沙漠 V1.09.00Fix 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
@@ -893,7 +893,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-30T07:18:19.574Z",
+    "lastChange": "2026-06-01T10:42:13.649Z",
     "id": 31
   },
   {
@@ -28602,23 +28602,23 @@
     "id": 2179
   },
   {
-    "name": "墨境v1.0正式版豪华中文+全DLC",
+    "name": "墨境v0.18.049正式版官方中文+全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e230f5a2d3bf"
+        "url": "https://pan.quark.cn/s/4794b265f5bf"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtiqrQHUH9SpDqb9vBxzojGA1?pwd=hg9h#"
+        "url": "https://pan.xunlei.com/s/VOu0uxDQzwzJshGA4ZRaSng4A1?pwd=zufd#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1g0puyEiUm2nCvk8ufZmymw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1WwAMfH1vJkaLN9kcejXesQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-28T13:55:53.191Z",
+    "lastChange": "2026-06-01T06:47:35.327Z",
     "id": 2180
   },
   {
@@ -29041,5 +29041,100 @@
     ],
     "lastChange": "2026-05-31T14:54:35.137Z",
     "id": 2206
+  },
+  {
+    "name": "（Switch）忍者龙剑传西格玛1中文+国语配音完整版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c1ff8a2fe249"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu0ZvQtA96J8WSPF2rtfNCwA1?pwd=gck4#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jYcakn-fCSzyjOpXpTvPAw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-01T05:33:31.429Z",
+    "id": 2207
+  },
+  {
+    "name": "（Switch）电锯甜心 重制版(RePOP)官方中文本体+1.19升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/573a61b3ac60"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu1kU4CsG1sn-Hhjnma7pWjA1?pwd=u7yk#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1S0KgmNw_91jJ7SzGfufcgQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-01T10:41:19.762Z",
+    "id": 2208
+  },
+  {
+    "name": "（Switch）兔兔秘密花园2官方中文 本体+1.0.4升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/98d79ab2a0df"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu137PC_27smle-2mzFaRrTA1?pwd=am5c#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1OecIVVjKtxoa-jvJrrjamQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-01T10:42:35.953Z",
+    "id": 2209
+  },
+  {
+    "name": "兔兔秘密花园2豪华中文Build.23301264+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0ecf2e0e871c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu1BdCuQqLR0IsFoc_jtvqZA1?pwd=saqb#"
+      }
+    ],
+    "lastChange": "2026-06-01T10:43:06.121Z",
+    "id": 2210
+  },
+  {
+    "name": "电锯甜心 重制版（LOLLIPOP CHAINSAW RePOP）V1.18 官方中文全DLC+服装MOD",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7379b0fea9a8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu1onkVu50pEhOgMzaxG9x1A1?pwd=gsj5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15ItE0153qq6N4EKMrUEPIg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-01T11:05:45.720Z",
+    "id": 2211
   }
 ]
