@@ -622,23 +622,23 @@
     "id": 10
   },
   {
-    "name": "死亡搁浅2：冥滩之上V1.7.76 豪华中文版   全DLC 国语配音+单独升级补丁",
+    "name": "死亡搁浅2：冥滩之上v1.8.81.0 豪华中文版  全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e151c95325db"
+        "url": "https://pan.quark.cn/s/a5f3a17d1ba2"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOrTBlYPOYiY56eikUqA5Yo6A1?pwd=kgg9#"
+        "url": "https://pan.xunlei.com/s/VOu7p54FyLSK5XE9KuSx-UR-A1?pwd=qmkv#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1pmOIImqrczUYIMWOqlGiAg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1c1T_c9YOqB6wM9i8etwLgA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-08T15:53:37.316Z",
+    "lastChange": "2026-06-02T15:14:39.315Z",
     "id": 11
   },
   {
@@ -3854,16 +3854,25 @@
     "id": 240
   },
   {
-    "name": "辐射4：周年纪念版 v1.11.191 豪华中文版 全DLC",
+    "name": "辐射4：周年纪念版(fallout) v1.11.221.0豪华中文全DLC+季票+XG器",
     "shortName": "辐射4周年纪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/14d4e767d337"
+        "url": "https://pan.quark.cn/s/a2cd5753bc46"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu6NkoYjPYF-ReCvaAyZDnAA1?pwd=vs9h#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GDdZRjnn1tPb6qoJiJ6QLQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-02T08:17:01.119Z",
     "id": 241
   },
   {
@@ -7523,16 +7532,25 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫 v1.0.5.1781 豪华中文版 全DLC",
+    "name": "潜水员戴夫v1.0.5.1791Fix+豪华中文全DLC",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ddc029a39e89"
+        "url": "https://pan.quark.cn/s/febd4b3adc5b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu7LAS9Y2oSOuH93xJbS4vvA1?pwd=qapg#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JcsuMspDbJkgUH7pqg49yw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-02T12:47:51.234Z",
     "id": 508
   },
   {
@@ -8914,14 +8932,19 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bb2e4509adb6"
+        "url": "https://pan.quark.cn/s/31cc7a30d863"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpTIwdyB2DV9IqL79oMmrRtA1?pwd=xfy8#"
+        "url": "https://pan.xunlei.com/s/VOu71LkE6h_8fRwwBrhHveuXA1?pwd=gj2y#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_Nk2YwTx9UmV12qwjvsDUQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-02T11:15:03.940Z",
     "id": 611
   },
   {
@@ -9805,23 +9828,6 @@
     ],
     "lastChange": "2026-05-06T13:04:18.517Z",
     "id": 671
-  },
-  {
-    "name": "辐射4周年纪念版 v1.11.191.0.1 官方中文+全DLC+升级补丁",
-    "shortName": "辐射4周年纪",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f29507cff8ec"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgyq1qgMHh5VZJFPGFDqAprA1?pwd=6kke#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 673
   },
   {
     "name": "漫威宇宙入侵 v1.0.0.13170 新加DLC 镭射眼与石头人 豪华中文版 全DLC",
@@ -20627,19 +20633,6 @@
     "id": 1534
   },
   {
-    "name": "辐射4 v1.10.114 绅士威力加强版 终极整合144G绅士MOD版",
-    "shortName": "辐射4",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/92009b25f16e"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1535
-  },
-  {
     "name": "（同人游戏）宝可梦+口袋妖怪改版大合集（PC+手机）双端可玩",
     "shortName": "宝可梦口袋妖",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -29348,5 +29341,41 @@
     ],
     "lastChange": "2026-06-02T05:08:23.171Z",
     "id": 2225
+  },
+  {
+    "name": "（Switch）鸭鸭侦探 露营鬼影官方中文本体+2.3.24.2补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1c59ba554d41"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu6d2So1K_7VeniOU8HvWyVA1?pwd=uwpa#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uIH_CAyTZ_-njwzYgiNJnQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-02T11:01:21.301Z",
+    "id": 2226
+  },
+  {
+    "name": "（Switch）蝙蝠侠：阿卡姆骑士汉化正式完整版本体+1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1c59ba554d41"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uIH_CAyTZ_-njwzYgiNJnQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-02T15:55:51.903Z",
+    "id": 2227
   }
 ]
