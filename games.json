@@ -152,25 +152,25 @@
     "id": 1639
   },
   {
-    "name": "深海迷航2：异星水域  v0.10.1.113933 中文联机版 +神器+教程",
+    "name": "深海迷航2：异星水域  v0.10.3.115506 中文联机版 +风灵月影修改器+mod合集",
     "shortName": "深海迷航2|中文联机版|v0.10.1",
     "cover": "https://cms-static.58game.com/267/20250717143408/25eae1ab978d41b3a3059a1a1792f2c9.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/19e48ae3f72c"
+        "url": "https://pan.quark.cn/s/66b1b3680ca3"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtIw6hYjF6B-cTY3Gs5ki-XA1?pwd=nivk#"
+        "url": "https://pan.xunlei.com/s/VOuCEFSo_tqSnMY6_IV9nDJQA1?pwd=y936#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Dg4LSJ46LF9i8dvhpp-yGw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1uogf_XA6MGmwZF0GuPqpQw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-24T05:09:31.665Z",
+    "lastChange": "2026-06-03T11:32:20.019Z",
     "id": 2062
   },
   {
@@ -29442,5 +29442,45 @@
     ],
     "lastChange": "2026-06-03T10:03:28.685Z",
     "id": 2230
+  },
+  {
+    "name": "（Switch）小猫咪大城市官方中文本体+1.25.5.22-6878补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4be81553e4bd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuC2uFm7LYWwvabcG3Yfq6CA1?pwd=ipkd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1P_X15k_BUmZTpGpRxHcI0Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-03T10:48:52.984Z",
+    "id": 2231
+  },
+  {
+    "name": "明末 欲火重生V1.2.34官方中文全DLC+国语配音",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cd172207d129"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuCGQb1o82qnot_wzOjoofkA1?pwd=iwdn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1A-dt02UctbZQpyBiLbNpdw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-03T11:39:54.276Z",
+    "id": 2232
   }
 ]
