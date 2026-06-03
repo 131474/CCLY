@@ -12981,16 +12981,25 @@
     "id": 922
   },
   {
-    "name": "明末：渊虚之羽 v1.7 重大更新 新加武器+防具套装+重生挑战 豪华中文版 全DLC",
+    "name": "明末：渊虚之羽  v179951 新加武器衣服装备包 豪华中文版 全DLC 打包XG器",
     "shortName": "明末渊虚之羽",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/205cb16e31f8"
+        "url": "https://pan.quark.cn/s/4a6aa374d8d5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuCn9HRvoBS4BKTEHtE7IVRA1?pwd=am8c#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KNfApbsj0cWJya69NGdU5A?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-03T14:06:57.653Z",
     "id": 923
   },
   {
@@ -25197,22 +25206,23 @@
     "id": 1906
   },
   {
-    "name": "神探杰克鼠v1.0.6.8232 豪华中文版 全DLC+原声音乐+电子书",
+    "name": "神探杰克鼠v1.1.0.8432 豪华中文版 全DLC+原声音乐+电子书",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/22d93ff64252"
+        "url": "https://pan.quark.cn/s/20903f912037"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOq_sUFSftGyi0swM9_SmCXIA1?pwd=7v6p#"
+        "url": "https://pan.xunlei.com/s/VOuDD7tbKPCQWdzeLx53LqpQA1?pwd=9i65#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1qpRBWMZKbnJzIA8JvUQqqw?pwd=8888"
+        "url": "https://pan.baidu.com/s/1W1B1pC2dn5qA0feVxqV0mw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-26T03:34:35.550Z",
+    "lastChange": "2026-06-03T16:08:38.374Z",
     "id": 1907
   },
   {
@@ -28840,14 +28850,23 @@
     "id": 2191
   },
   {
-    "name": "薛定谔的电话 v1.0.0 中文版",
+    "name": "薛定谔的电话 v1.0.0 官方中文+全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/46e392d3474d"
+        "url": "https://pan.quark.cn/s/c314ca44ed01"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuCwNHx8QEbIZuY00l4rHi6A1?pwd=9wya#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ptks8SzQPMPTotT4AHKFtw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-29T16:14:04.724Z",
+    "lastChange": "2026-06-03T14:48:32.744Z",
     "id": 2192
   },
   {
@@ -29482,5 +29501,45 @@
     ],
     "lastChange": "2026-06-03T11:39:54.276Z",
     "id": 2232
+  },
+  {
+    "name": "（Switch）薛定谔的电话 Schrödinger’s Call 官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ae7454cf263a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuCuBM2ehHMdTDz5TxpxpHAA1?pwd=rj3f#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1SlX8WQI-pm28h3mHrdyk2A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-03T14:37:34.655Z",
+    "id": 2233
+  },
+  {
+    "name": "（Switch）EA SPORTS FC 26官方中文本体+1.88.131e升补+1DLC+国语配音",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f4044608f055"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuD6itIBfie4m7hP2UkO66iA1?pwd=tjbw#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1DCvp_z8UXVJBn41opMMeMA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-03T15:36:29.484Z",
+    "id": 2234
   }
 ]
