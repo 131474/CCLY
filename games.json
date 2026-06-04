@@ -28363,7 +28363,7 @@
     "id": 2156
   },
   {
-    "name": "平行人生v0.1.1官方中文全DLC",
+    "name": "平行人生v0.1.2b.19972官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -28379,7 +28379,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-26T06:55:59.398Z",
+    "lastChange": "2026-06-04T04:12:39.639Z",
     "id": 2157
   },
   {
@@ -29541,5 +29541,61 @@
     ],
     "lastChange": "2026-06-03T15:36:29.484Z",
     "id": 2234
+  },
+  {
+    "name": "（Switch）热血西游记 天竺奇谭v1.0.0 港版中文",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/357c08d2b7a8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuFe5szdziwqM1mQ8MMBggEA1?pwd=5wwr#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1re6us0Ldwh7iwWSU5kEESQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-04T03:36:16.827Z",
+    "id": 2235
+  },
+  {
+    "name": "热血西游记 天竺奇谭 v1.0.2官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b2850ca056db"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuFl8yLZV9jl_tx0tKpZdgUA1?pwd=av8v#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1aKCWI2AciHNBCGb82w9MFA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-04T04:07:05.592Z",
+    "id": 2236
+  },
+  {
+    "name": "命运守护者（Fatekeeper）官方中文全DLC",
+    "links": [
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuDD7tbKPCQWdzeLx53LqpQA1?pwd=9i65#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1W1B1pC2dn5qA0feVxqV0mw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-04T04:07:25.912Z",
+    "id": 2237
   }
 ]
