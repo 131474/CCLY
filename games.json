@@ -4993,7 +4993,7 @@
     "id": 321
   },
   {
-    "name": "（Switch）超级马里奥派对 空前盛会 中文v2.3.0",
+    "name": "（Switch）超级马里奥派对 空前盛会 中文本体+v2.3.0升补",
     "shortName": "超级马里奥派",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5004,9 +5004,13 @@
       {
         "name": "迅雷网盘",
         "url": "https://pan.xunlei.com/s/VOkfvwYH-EYOX6sJhHQJFE6eA1?pwd=tnc8#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tjgBy46aPsBEgeiltgHCgQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-04T11:22:45.672Z",
     "id": 322
   },
   {
@@ -28655,7 +28659,7 @@
     "id": 2178
   },
   {
-    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.1升补",
+    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.2升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -28671,7 +28675,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-28T13:18:13.300Z",
+    "lastChange": "2026-06-04T11:20:43.584Z",
     "id": 2179
   },
   {
@@ -29597,5 +29601,25 @@
     ],
     "lastChange": "2026-06-04T04:07:25.912Z",
     "id": 2237
+  },
+  {
+    "name": "使命召唤16：现代战争 v8.67终极版 官方中文全DLC 整合最新V2补丁 单机战役剧情+多人含机器人",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c0afeca77796"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuGlP1S9oK1AUes_KPxCbt_A1?pwd=bt9q#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uk6YxhSf2ZvRKoS9unoTSA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-04T08:46:21.567Z",
+    "id": 2238
   }
 ]
