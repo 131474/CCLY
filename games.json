@@ -823,7 +823,7 @@
     "id": 23
   },
   {
-    "name": "征服之歌 v1.9.3 豪华中文版 全DLC",
+    "name": "征服之歌 v1.10.0 新加DLC 玉岚 豪华中文版 全DLC",
     "shortName": "征服之歌",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -832,7 +832,7 @@
         "url": "https://pan.quark.cn/s/c24522f9b41a"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-05T15:56:56.461Z",
     "id": 24
   },
   {
@@ -1033,7 +1033,7 @@
     "id": 37
   },
   {
-    "name": "风屿奇航 v0.4.404 豪华中文版 全DLC",
+    "name": "风屿奇航 v0.4.658 中文版",
     "shortName": "风屿奇航",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1042,7 +1042,7 @@
         "url": "https://pan.quark.cn/s/f0f32062b343"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-05T16:18:06.316Z",
     "id": 38
   },
   {
@@ -1202,7 +1202,7 @@
     "id": 50
   },
   {
-    "name": "勇闯死人谷：暗黑之日 v0.13.1 中文版",
+    "name": "勇闯死人谷：暗黑之日 v0.14.19563 中文版",
     "shortName": "勇闯死人谷暗",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1220,7 +1220,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-10T15:43:35.859Z",
+    "lastChange": "2026-06-05T16:10:28.293Z",
     "id": 51
   },
   {
@@ -1307,19 +1307,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.823Z",
     "id": 57
-  },
-  {
-    "name": "城市：天际线2 v1.5.6 F1 新加DLC 办公进化 城市车站 豪华中文版 全DLC",
-    "shortName": "城市天际线2",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bb4f84620712"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
-    "id": 58
   },
   {
     "name": "怪物猎人物语3：命运双龙 v1.0.03 豪华中文版 （VBS一键启动版）",
@@ -1613,16 +1600,25 @@
     "id": 77
   },
   {
-    "name": "零：红蝶重制版 v1.03.04 豪华中文版 全DLC",
+    "name": "零：红蝶重制版 v1.03.04 官方中文全DLC+预购特典",
     "shortName": "零红蝶重制版",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b5faf87b2ee5"
+        "url": "https://pan.quark.cn/s/483bc54da646"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuNLyT7vdkf3OfVcix1xnwVA1?pwd=c4vv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13a6RlNwLUtbaGGbKdLytHA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-19T13:13:56.717Z",
+    "lastChange": "2026-06-05T15:20:02.143Z",
     "id": 78
   },
   {
@@ -2492,7 +2488,7 @@
     "id": 142
   },
   {
-    "name": "帝国时代4：年度版 v16.1.10056+岳飞传DLC 豪华中文版 全DLC",
+    "name": "帝国时代4：年度版 v16.2.10604+岳飞传DLC 豪华中文版 全DLC",
     "shortName": "帝国时代4周",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -2501,7 +2497,7 @@
         "url": "https://pan.quark.cn/s/82fcf6dd9d0e"
       }
     ],
-    "lastChange": "2026-05-17T16:39:35.586Z",
+    "lastChange": "2026-06-05T16:21:15.877Z",
     "id": 143
   },
   {
@@ -5494,7 +5490,7 @@
     "id": 355
   },
   {
-    "name": "机器人角斗场 v1.11.2 中文版",
+    "name": "机器人角斗场 v1.9.0.116 中文版",
     "shortName": "机器人角斗场",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5503,7 +5499,7 @@
         "url": "https://pan.quark.cn/s/ccdc68c380d3"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-05T16:19:20.229Z",
     "id": 356
   },
   {
@@ -8098,7 +8094,7 @@
     "id": 548
   },
   {
-    "name": "汽车经销商模拟器 v20260108 中文版",
+    "name": "汽车经销商模拟器 v0.1.0.0.5272 新加DLC 由你做主 豪华中文版 全DLC",
     "shortName": "汽车经销商模",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -8107,7 +8103,7 @@
         "url": "https://pan.quark.cn/s/514990693914"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-05T16:04:06.302Z",
     "id": 549
   },
   {
@@ -10941,7 +10937,7 @@
     "id": 756
   },
   {
-    "name": "酒馆带老板 v0.75.4 中文版",
+    "name": "酒馆带老板 v0.75.9 中文版",
     "shortName": "酒馆带老板",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -10950,7 +10946,7 @@
         "url": "https://pan.quark.cn/s/eb299c6c8d52"
       }
     ],
-    "lastChange": "2026-05-27T16:32:15.888Z",
+    "lastChange": "2026-06-05T16:08:22.621Z",
     "id": 757
   },
   {
@@ -13053,14 +13049,14 @@
     "id": 925
   },
   {
-    "name": "迪士尼梦幻星谷 v1.22.0.7998 豪华中文版 全DLC",
+    "name": "迪士尼梦幻星谷 v1.23.1.6 豪华中文版 全DLC",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/43d95a723da9"
       }
     ],
-    "lastChange": "2026-04-15T14:11:19.133Z",
+    "lastChange": "2026-06-05T16:06:35.981Z",
     "id": 926
   },
   {
@@ -13276,7 +13272,7 @@
     "id": 940
   },
   {
-    "name": "怪物来袭：滚滚征途 v1.0.4.1 中文版",
+    "name": "怪物来袭：滚滚征途 v1.4.9.0 中文版",
     "shortName": "怪物来袭滚滚",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -13285,7 +13281,7 @@
         "url": "https://pan.quark.cn/s/e5dc81eb60e7"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-05T16:20:21.973Z",
     "id": 941
   },
   {
@@ -14032,7 +14028,7 @@
     "id": 1001
   },
   {
-    "name": "九王 v0.8.5.52 中文版",
+    "name": "九王 v0.9.1.3 中文版",
     "shortName": "九王",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -14041,7 +14037,7 @@
         "url": "https://pan.quark.cn/s/81e091054a97"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-05T16:07:21.229Z",
     "id": 1002
   },
   {
@@ -14134,7 +14130,7 @@
     "id": 1009
   },
   {
-    "name": "哈迪斯2 v1.137792 中文版",
+    "name": "哈迪斯2 v1.138464 中文版",
     "shortName": "哈迪斯2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -14151,7 +14147,7 @@
         "url": "https://pan.baidu.com/s/1s1KpqpMkgt6-KBK8y-3f9g?pwd=8888"
       }
     ],
-    "lastChange": "2026-04-26T12:22:12.434Z",
+    "lastChange": "2026-06-05T15:56:16.366Z",
     "id": 1010
   },
   {
@@ -15093,7 +15089,7 @@
     "id": 1088
   },
   {
-    "name": "天际线2 v1.5.7f1 豪华中文版 全DLC",
+    "name": "天际线2 v1.15.10f1 豪华中文版 全DLC",
     "shortName": "天际线2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -15102,7 +15098,7 @@
         "url": "https://pan.quark.cn/s/2a69c8fdf01b"
       }
     ],
-    "lastChange": "2026-05-02T03:55:00.408Z",
+    "lastChange": "2026-06-05T16:22:36.388Z",
     "id": 1089
   },
   {
@@ -22508,7 +22504,7 @@
     "id": 1673
   },
   {
-    "name": "浣熊推币机 v1.0.23 中文版",
+    "name": "浣熊推币机 v1.0.24 中文版",
     "links": [
       {
         "name": "夸克网盘",
@@ -22523,7 +22519,7 @@
         "url": "https://pan.baidu.com/s/1EU4-woHuN7EPFGmaXkNNPw?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-19T16:34:20.936Z",
+    "lastChange": "2026-06-05T16:11:19.917Z",
     "id": 1674
   },
   {
@@ -25160,14 +25156,14 @@
     "id": 1899
   },
   {
-    "name": "百日战纪 -最终防卫学园 v1.2.0 豪华中文版 全DLC",
+    "name": "百日战纪 -最终防卫学园 v1.2.2.0 豪华中文版 全DLC",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/6afec3c89b5a"
       }
     ],
-    "lastChange": "2026-04-15T14:11:44.805Z",
+    "lastChange": "2026-06-05T16:12:08.629Z",
     "id": 1900
   },
   {
@@ -26830,7 +26826,7 @@
     "id": 2040
   },
   {
-    "name": "流放者柯南 虚幻5增强版v363.009豪华中文全DLC",
+    "name": "流放者柯南 虚幻5增强版v363.861豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -26845,7 +26841,7 @@
         "url": "https://pan.baidu.com/s/1eA6pnlHipJgkJpV_NsYOZg?pwd=8888"
       }
     ],
-    "lastChange": "2026-05-26T06:36:53.221Z",
+    "lastChange": "2026-06-05T15:51:40.549Z",
     "id": 2041
   },
   {
@@ -27108,14 +27104,14 @@
     "id": 2064
   },
   {
-    "name": "拾光旅人 v1.0.11 中文联机版",
+    "name": "拾光旅人 v1.0.14 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/ddeb8244c1a6"
       }
     ],
-    "lastChange": "2026-05-24T14:17:02.970Z",
+    "lastChange": "2026-06-05T16:13:29.981Z",
     "id": 2065
   },
   {
@@ -29670,5 +29666,188 @@
     ],
     "lastChange": "2026-06-05T13:07:45.731Z",
     "id": 2240
+  },
+  {
+    "name": "（Switch）猎人X：代号T官方中文本体+1.1.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/29013b5a1bbd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuN1IkbGggdohMCGwGRxuqrA1?pwd=kanm#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KoQ5E2gQYfLnD8jASMl8-A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-05T13:48:57.610Z",
+    "id": 2241
+  },
+  {
+    "name": "（Switch）新美妙世界汉化中文v1.03+国语配音完整版+金手指",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5c4d34d937d1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuNJYUDaYw_c4XnuIfgAyv_A1?pwd=dk5b#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rrJULLLX4zeLLPnTVZt0eQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-05T15:31:29.774Z",
+    "id": 2242
+  },
+  {
+    "name": "叛乱：沙漠风暴 v1.21 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c8646a1b9f3f"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2243
+  },
+  {
+    "name": "财富磨坊 v20260603 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bed612ee89ba"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2244
+  },
+  {
+    "name": "禁酒兽影 v0.9.075  中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/08d96745e414"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2245
+  },
+  {
+    "name": "极乐迪斯科 - 最终剪辑版 v20260514 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ee790a67a65b"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2246
+  },
+  {
+    "name": "神秘商人 v20260601 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8ff81c444c34"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2247
+  },
+  {
+    "name": "骑士的诞生 v20260602 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f18f6be2773f"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2248
+  },
+  {
+    "name": "魔界战记4 v6150765 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4024f79bd801"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2249
+  },
+  {
+    "name": "热血物语：地下世界 v15 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/09141d86d4eb"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2250
+  },
+  {
+    "name": "圣物深渊 v0.5.20 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0960832bce88"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2251
+  },
+  {
+    "name": "族人 v0.640 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a422403d9090"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2252
+  },
+  {
+    "name": "厨师骑士 v0.8.8 中文版（PC+安卓+整合包）双端可运行",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/71025a3d12ad"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2253
+  },
+  {
+    "name": "营地大亨：露营经营模拟器 v0.1.1.4 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9c66624820b6"
+      }
+    ],
+    "lastChange": "2026-06-05T15:55:14.653Z",
+    "id": 2254
+  },
+  {
+    "name": "紫色晶石 v0.9.4.22 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c326859254c6"
+      }
+    ],
+    "lastChange": "2026-06-05T16:17:13.869Z",
+    "id": 2255
   }
 ]
