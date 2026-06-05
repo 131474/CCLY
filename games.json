@@ -3301,7 +3301,7 @@
     "id": 200
   },
   {
-    "name": "骑马与砍杀2：霸主v1.45.114896 加战帆DLC 豪华中文全DLC+单独升级补丁+MOD合集",
+    "name": "骑马与砍杀2：霸主v1.4.5.115026 加战帆DLC 豪华中文全DLC+单独升级补丁+MOD合集",
     "shortName": "骑马与砍杀2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -3319,7 +3319,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-22T14:17:53.265Z",
+    "lastChange": "2026-06-05T05:52:31.888Z",
     "id": 201
   },
   {
@@ -6662,20 +6662,25 @@
     "id": 440
   },
   {
-    "name": "最终幻想7核心危机重聚1.0.3全DLC官方中文",
+    "name": "最终幻想7：核心危机重聚1.0.3官方中文全DLC",
     "shortName": "最终幻想7核",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f39345a643c4"
+        "url": "https://pan.quark.cn/s/7fefe9300b31"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOjTd39Rs6pMPzDcCzlkDFj0A1?pwd=ctze#"
+        "url": "https://pan.xunlei.com/s/VOuL5R9KM7tN_5NCudHzRaHMA1?pwd=4mh7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1vXdLtF7KXgxiCUwyhFOqUQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-05T04:52:28.802Z",
     "id": 441
   },
   {
@@ -21904,16 +21909,25 @@
     "id": 1627
   },
   {
-    "name": "【switch】最终幻想 7：核心危机 重聚中文本体+v1.04升补+1DLC整合版",
+    "name": "（Switch）最终幻想 7：核心危机 重聚中文本体+v1.04升补+1DLC+金手指",
     "shortName": "switch",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7e5dd0f11650"
+        "url": "https://pan.quark.cn/s/5bb98cd6eb00"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuLCv7Op65N8sRF30EL8mi9A1?pwd=s6fv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RTX11UhHxJojBFtlGzE8rA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-06-05T05:26:03.257Z",
     "id": 1628
   },
   {
@@ -29623,5 +29637,25 @@
     ],
     "lastChange": "2026-06-04T08:46:21.567Z",
     "id": 2238
+  },
+  {
+    "name": "（Switch）俄罗斯方块大师4官方中文v2.1.2",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7c7577673f8a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuL0Sjn-YwafG4fMsvuP7UFA1?pwd=w2ut#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11dz-lXO0hPiXx_JRnFQKJA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-05T04:27:24.835Z",
+    "id": 2239
   }
 ]
