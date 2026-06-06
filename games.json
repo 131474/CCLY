@@ -7285,24 +7285,25 @@
     "id": 485
   },
   {
-    "name": "艾尔登法环 黑夜君临v1.03.5豪华中文全DLC+见弃空洞者DLC+联机补丁+单独升级补丁",
+    "name": "艾尔登法环 黑夜君临v1.03.5Fix 豪华中文全DLC+见弃空洞者DLC+联机补丁+单独升级补丁",
     "shortName": "艾尔登法环",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/cdcf22b631aa"
+        "url": "https://pan.quark.cn/s/13074933ce02"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqtRkG3C-ogcqfzvlZkzQsUA1?pwd=d93a#"
+        "url": "https://pan.xunlei.com/s/VOuRARQCdI8PoMA2HLensB30A1?pwd=nrnm#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/12ZVerTZ8MAXixgkoigNEwA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1VME91hXA5WjivB4xfoQd6Q?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-23T08:57:26.412Z",
+    "lastChange": "2026-06-06T09:23:52.510Z",
     "id": 486
   },
   {
@@ -28735,7 +28736,7 @@
     "id": 2179
   },
   {
-    "name": "墨境v1.03正式版官方中文+全DLC 修复成就解锁",
+    "name": "墨境v1.04正式版官方中文+全DLC 修复成就解锁",
     "links": [
       {
         "name": "夸克网盘",
@@ -28751,7 +28752,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-03T05:49:11.818Z",
+    "lastChange": "2026-06-06T11:38:29.152Z",
     "id": 2180
   },
   {
@@ -29065,7 +29066,7 @@
     "id": 2201
   },
   {
-    "name": "团战经理2官方中文v0.4.9全DLC",
+    "name": "团战经理2官方中文v0.4.10全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -29081,7 +29082,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-05T10:48:24.519Z",
+    "lastChange": "2026-06-06T11:46:33.216Z",
     "id": 2202
   },
   {
@@ -29623,19 +29624,23 @@
     "id": 2235
   },
   {
-    "name": "命运守护者（Fatekeeper）官方中文全DLC",
+    "name": "命运守护者（Fatekeeper）v23487官方中文全DLC",
     "links": [
       {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/26ed57140d74"
+      },
+      {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuDD7tbKPCQWdzeLx53LqpQA1?pwd=9i65#"
+        "url": "https://pan.xunlei.com/s/VOuRZVO46vVhz5Dzn0sfGt-qA1?pwd=m8ak#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1W1B1pC2dn5qA0feVxqV0mw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1r9aMYPzRyMCZnod6VdVOZQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-04T04:07:25.912Z",
+    "lastChange": "2026-06-06T10:59:58.298Z",
     "id": 2237
   },
   {
