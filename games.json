@@ -1,5 +1,27 @@
 [
   {
+    "name": "极限竞速：地平线6尊享版v364.933Fix 中文全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
+    "shortName": "极限竞速|地平线6|v364.933Fix",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/df4db8486673"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuR2c5Qdxg4rTswJy3CpUVPA1?pwd=57u8#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JlmgtEDDNN59mB8tywbsjw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-06T08:31:48.181Z",
+    "id": 2060
+  },
+  {
     "name": "哥特王朝：重制版v168089官方中文全DLC+原声+单独补丁 解压即玩",
     "shortName": "哥特王朝重制版|v168089",
     "cover": "https://img.3dmgame.com/uploads/images/news/20241202/1733104733_669960.jpg",
@@ -20,28 +42,6 @@
     ],
     "lastChange": "2026-06-06T05:12:29.379Z",
     "id": 2256
-  },
-  {
-    "name": "热血西游记 天竺奇谭 v1.0.2官方中文全DLC",
-    "shortName": "热血西游记|天竺奇谭|v1.0.2",
-    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260528/1779952944_415165.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b2850ca056db"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuFl8yLZV9jl_tx0tKpZdgUA1?pwd=av8v#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1aKCWI2AciHNBCGb82w9MFA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-06-04T04:07:05.592Z",
-    "id": 2236
   },
   {
     "name": "007初露锋芒 v1.0.1 官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
@@ -66,26 +66,26 @@
     "id": 2158
   },
   {
-    "name": "极限竞速：地平线6尊享版  v364.933全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
-    "shortName": "极限竞速|地平线6|v364.933",
-    "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
+    "name": "热血西游记 天竺奇谭 v1.0.2官方中文全DLC",
+    "shortName": "热血西游记|天竺奇谭|v1.0.2",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260528/1779952944_415165.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e074505006dc"
+        "url": "https://pan.quark.cn/s/b2850ca056db"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtgnSGYY8eoY8Ak287IqnZrA1?pwd=v3jh#"
+        "url": "https://pan.xunlei.com/s/VOuFl8yLZV9jl_tx0tKpZdgUA1?pwd=av8v#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1o1x_zqb9kkqvsX5kpvy8bw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1aKCWI2AciHNBCGb82w9MFA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-28T13:56:00.503Z",
-    "id": 2060
+    "lastChange": "2026-06-04T04:07:05.592Z",
+    "id": 2236
   },
   {
     "name": "罗马拓荒录v0.25.1.10官方中文全DLC",
@@ -18881,16 +18881,25 @@
     "id": 1390
   },
   {
-    "name": "鬼谷八荒 v1.2.110.259 豪华中文版 全DLC 打包XG器",
+    "name": "鬼谷八荒v1.2.113.259官方中文全DLC",
     "shortName": "鬼谷八荒",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6b92d5fbe4be"
+        "url": "https://pan.quark.cn/s/5c502fbe62d6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuQx-zQOl1DiImoWhElHyIiA1?pwd=ahix#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1y5NK95hmkTtZ9h-izc4dLQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-06T08:19:33.085Z",
     "id": 1391
   },
   {
