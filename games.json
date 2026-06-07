@@ -22,6 +22,28 @@
     "id": 2060
   },
   {
+    "name": "007初露锋芒v1.0.3官方中文全DLC+单独升级补丁（VBS1.72一键启动）",
+    "shortName": "007|初露锋芒|v1.0.3",
+    "cover": "https://pic2.52pk.com/files/allimg/202601/07/2601072B38846DEC654C029A3371CAC6F192E6.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b8792cfd54e9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuVHhubOl1DiImoWhEnAG4_A1?pwd=nzai#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11LcLmTbYn5pqlLeHOLkZQA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-07T04:24:20.332Z",
+    "id": 2158
+  },
+  {
     "name": "哥特王朝：重制版v168089官方中文全DLC+原声+单独补丁 解压即玩",
     "shortName": "哥特王朝重制版|v168089",
     "cover": "https://img.3dmgame.com/uploads/images/news/20241202/1733104733_669960.jpg",
@@ -42,28 +64,6 @@
     ],
     "lastChange": "2026-06-06T05:12:29.379Z",
     "id": 2256
-  },
-  {
-    "name": "007初露锋芒 v1.0.1 官方中文全DLC+单独升级补丁（VBS1.7一键启动）",
-    "shortName": "007|初露锋芒|v1.0.1",
-    "cover": "https://pic2.52pk.com/files/allimg/202601/07/2601072B38846DEC654C029A3371CAC6F192E6.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b1edee0d674a"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtwBHd6MG6-WKGctJjd9Ek3A1?pwd=yj4i#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1VJXMcHJ1eH4XMk1OqeTulg?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-05-31T14:55:25.753Z",
-    "id": 2158
   },
   {
     "name": "热血西游记 天竺奇谭 v1.0.2官方中文全DLC",
@@ -961,23 +961,23 @@
     "id": 30
   },
   {
-    "name": "红色沙漠 V1.09.00Fix 豪华中文版 全DLC 绕过D加密（VBS一键启动版）",
+    "name": "红色沙漠 v1.10.01 豪华中文全DLC+单独升级补丁+mod+修改器 绕过D加密（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f3aed245c5ed"
+        "url": "https://pan.quark.cn/s/dfed21b77ddb"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtrhhR5DG8h4TU2ngVCKdxLA1?pwd=etas#"
+        "url": "https://pan.xunlei.com/s/VOuVO0TofvH9s3fcVHUCpgARA1?pwd=w5hq#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17H4rbKX_Yx4IKEtA5Di60A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1JMwus4LrnlRwlRsmtAA0fw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-01T10:42:13.649Z",
+    "lastChange": "2026-06-07T04:46:44.436Z",
     "id": 31
   },
   {
@@ -29886,5 +29886,25 @@
     ],
     "lastChange": "2026-06-05T16:17:13.869Z",
     "id": 2255
+  },
+  {
+    "name": "Switch）我的小柯基 My Little Puppy官方中文v1.2.2605.130594全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a78a84ce9b40"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuSeRLNiPrs-ZIXFewmk7tPA1?pwd=8xkj#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xJASNV9vhTK4DBSNAAXakg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-06T16:05:47.137Z",
+    "id": 2257
   }
 ]
