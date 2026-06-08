@@ -10260,20 +10260,25 @@
     "id": 706
   },
   {
-    "name": "对马岛之魂导演剪辑版V1053.8.1212.1408全DLC FSR帧生成+联机版本+集成天照烈火+支持手柄",
+    "name": "对马岛之魂导演剪辑版V1053.8.1212.1408Fix 官方中文全DLC+FSR帧生成+联机补丁+集成天照烈火全DLC+支持手柄",
     "shortName": "对马岛之魂",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4c13946e6030"
+        "url": "https://pan.quark.cn/s/41f0b97bd858"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgeQ6qP5l9VRHKyHcY02GRQA1?pwd=ud2n#"
+        "url": "https://pan.xunlei.com/s/VOuXf3k69N5weeDPVP-9I28eA1?pwd=83np#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KwcqXA-WAjn5UyPG_2Wvew?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-08T04:56:57.945Z",
     "id": 707
   },
   {
@@ -29456,23 +29461,23 @@
     "id": 2226
   },
   {
-    "name": "（Switch）蝙蝠侠：阿卡姆骑士 汉化正式完整版本体+1.0.3升补",
+    "name": "（Switch）蝙蝠侠第一部：阿卡姆骑士汉化完整版本体+1.0.3升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e9122226a62f"
+        "url": "https://pan.quark.cn/s/4d603247a990"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuBYVllnPLMBAFhBajNefsIA1?pwd=57pk#"
+        "url": "https://pan.xunlei.com/s/VOuaCo7xYcYVOi96kE0ROCyrA1?pwd=yput#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/10g5S-3gZ6IYiD9ODPJMtVw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1HHHRUKBlV6FEaplKUI44hQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-04T02:55:03.438Z",
+    "lastChange": "2026-06-08T08:01:11.240Z",
     "id": 2227
   },
   {
@@ -29957,5 +29962,65 @@
     ],
     "lastChange": "2026-06-07T13:08:02.675Z",
     "id": 2259
+  },
+  {
+    "name": "（Switch）舒适森林官方中文本体+5.2.4升补+2DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/70290a1b33c4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOu__acCnMTCOjMDZ5qq6vtiA1?pwd=fet8#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UHNSCdSMFHcVdo2c28Ma_w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-08T05:03:46.505Z",
+    "id": 2260
+  },
+  {
+    "name": "（Switch）蝙蝠侠第三部 阿卡姆之城v1.0.1+汉化补丁完整版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1c8e2cd85165"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOua9R2O_DDUAOZmwHj-sj6GA1?pwd=yxrp#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gLCBVegIADSp2BwM8Zy7wg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-08T07:44:14.849Z",
+    "id": 2261
+  },
+  {
+    "name": "（Switch）蝙蝠侠第二部 阿卡姆疯人院v1.0.0+汉化补丁完整版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9351633f1eeb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOua6mfNqDnHkJuDBH1Y1Y1tA1?pwd=un57#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16quI1Kh8V6XT-qUvbhT5uw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-08T07:45:02.384Z",
+    "id": 2262
   }
 ]
