@@ -131,6 +131,57 @@
         #gameLibraryBtn::after { content: ''; position: absolute; top: -3px; left: -3px; right: -3px; bottom: -3px; border-radius: 62px; background: linear-gradient(115deg, #ff9a3c, #ff6a1a); z-index: -1; }
         @keyframes blinkGlow { 0% { box-shadow: 0 0 8px 2px rgba(255, 100, 0, 0.3); } 50% { box-shadow: 0 0 25px 10px rgba(255, 140, 0, 0.9); } 100% { box-shadow: 0 0 8px 2px rgba(255, 100, 0, 0.3); } }
         @keyframes rainbowShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        
+        /* 千问推广按钮样式 - 清新奶茶色 */
+        .qwen-promo-btn {
+            position: relative;
+            background: linear-gradient(135deg, #f5b042, #e07c2c);
+            border: none;
+            padding: 0.9rem 1.8rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+            min-width: 160px;
+            white-space: nowrap;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 1;
+            overflow: visible;
+            animation: pulseOrange 1.2s ease-in-out infinite;
+            box-shadow: 0 4px 15px rgba(245,176,66,0.4);
+        }
+        .qwen-promo-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px 5px rgba(245,176,66,0.8);
+            background: linear-gradient(135deg, #ffc15e, #f09b3e);
+        }
+        @keyframes pulseOrange {
+            0% { box-shadow: 0 0 0 0 rgba(245,176,66,0.4); }
+            70% { box-shadow: 0 0 0 12px rgba(245,176,66,0); }
+            100% { box-shadow: 0 0 0 0 rgba(245,176,66,0); }
+        }
+        .qwen-promo-btn::after {
+            content: "NEW";
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ff3b00;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 30px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            animation: blinkNew 1s infinite;
+        }
+        @keyframes blinkNew {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
         .today-update-badge { font-size: 0.85rem; font-weight: 700; color: #ffffff; background: #ff5722; padding: 0.15rem 0.9rem; border-radius: 30px; text-shadow: 0 1px 2px #00000040; box-shadow: 0 2px 8px rgba(255, 87, 34, 0.5); white-space: nowrap; }
         .publisher-line { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.1rem; margin-bottom: 0.5rem; color: #2f5570; font-size: 1rem; border-left: 3px solid #3f9ad0; padding-left: 1rem; }
         .marquee-container { width: 100%; background: rgba(0, 0, 0, 0.7); border-radius: 40px; padding: 0.5rem 0; margin: 0.5rem 0 0.8rem 0; overflow: hidden; white-space: nowrap; box-shadow: 0 0 10px rgba(255, 200, 100, 0.6); }
@@ -237,6 +288,34 @@
             }
         }
         
+        /* 二维码放大弹窗底部小按钮（缩小版，位于红色提醒下方） */
+        .zoom-support-btn {
+            margin-top: 8px;
+            background: linear-gradient(135deg, #f5b042, #e07c2c);
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.75rem;
+            padding: 5px 12px;
+            border-radius: 40px;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.2s;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            line-height: 1.2;
+            white-space: nowrap;
+            width: auto;
+            display: inline-block;
+        }
+        .zoom-support-btn:hover {
+            transform: scale(1.02);
+            background: linear-gradient(135deg, #ffc15e, #f09b3e);
+        }
+        .zoom-support-btn-wrapper {
+            text-align: center;
+            margin-top: 5px;
+        }
+        
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; } .pc { display: none; }
             .game-title-row { flex-direction: column; align-items: flex-start; }
@@ -246,10 +325,12 @@
             .header-right { flex-direction: column; width: 100%; gap: 0.5rem; }
             .library-btn-group { width: 100%; }
             #gameLibraryBtn { width: 100%; justify-content: center; padding: 0.7rem 1.4rem; font-size: 1.1rem; min-width: 140px; }
+            .qwen-promo-btn { width: 100%; justify-content: center; padding: 0.7rem 1.4rem; font-size: 1.1rem; min-width: 140px; }
             .today-update-badge { font-size: 0.7rem; padding: 0.1rem 0.6rem; }
             .login-btn-header { padding: 0.4rem 0.8rem; font-size: 0.8rem; width: 100%; text-align: center; }
             @media (max-width: 400px) {
                 #gameLibraryBtn { padding: 0.6rem 1rem; font-size: 1rem; min-width: 130px; }
+                .qwen-promo-btn { padding: 0.6rem 1rem; font-size: 1rem; min-width: 130px; }
                 .login-btn-header { padding: 0.3rem 0.6rem; font-size: 0.75rem; }
                 .header-right { gap: 0.3rem; }
             }
@@ -314,6 +395,120 @@
         .simple-modal-content { background: white; border-radius: 8px; padding: 20px 30px; min-width: 280px; max-width: 400px; text-align: center; }
         .simple-modal-message { margin: 0 0 20px 0; font-size: 16px; color: #333; line-height: 1.5; }
         .simple-modal-btn { background: #2b5f88; color: white; border: none; padding: 8px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; }
+        
+        /* 千问推广弹窗专用样式 */
+        .qwen-steps {
+            padding: 0.5rem;
+        }
+        .qwen-step-item {
+            display: flex;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+            gap: 1rem;
+            background: rgba(0,200,80,0.08);
+            padding: 0.8rem;
+            border-radius: 1.5rem;
+        }
+        .step-num {
+            width: 30px;
+            height: 30px;
+            background: #00c853;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .step-text {
+            flex: 1;
+            font-size: 0.95rem;
+            color: #134b66;
+        }
+        .copy-code-btn {
+            background: #00c853;
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .step-img {
+            margin-top: 12px;
+            text-align: center;
+        }
+        .step-img img {
+            max-width: 100%;
+            border-radius: 1rem;
+            background: #f5f5f5;
+        }
+        .double-img {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        .double-img img {
+            width: calc(50% - 6px);
+            border-radius: 1rem;
+            background: #f5f5f5;
+        }
+        @media (max-width: 480px) {
+            .double-img {
+                flex-direction: column;
+            }
+            .double-img img {
+                width: 100%;
+            }
+        }
+        .intro-text {
+            background: #fff3e0;
+            padding: 12px;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #b85e00;
+            text-align: center;
+        }
+        
+        /* 复制成功浮层 */
+        .copy-toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.8);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            z-index: 10002;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            animation: fadeInOut 2s ease forwards;
+            pointer-events: none;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+            15% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            85% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); visibility: hidden; }
+        }
+        
+        /* 模态框内热度显示 */
+        .qwen-modal-hot {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9a3c, #ff6a1a);
+            border-radius: 40px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            margin-left: 12px;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js"></script>
 </head>
@@ -326,6 +521,8 @@
                 <button class="tool-btn" id="gameLibraryBtn">🎮 游戏库一览</button>
                 <div class="today-update-badge" id="todayUpdateBadge">今日更新：0</div>
             </div>
+            <!-- 千问推广按钮 - 不再显示热度 -->
+            <button class="qwen-promo-btn" id="qwenPromoBtn">🍵 0元喝奶茶</button>
             <div id="authArea">
                 <button class="login-btn-header" id="openLoginModalBtn">🔐 登录 / 注册</button>
             </div>
@@ -425,6 +622,57 @@
     </div>
 </div>
 
+<!-- 千问推广专用模态框 -->
+<div class="modal-overlay" id="qwenModal">
+    <div class="modal-container" style="max-width: 500px;">
+        <div class="modal-header">
+            <div class="modal-title">
+                🍵 0元喝奶茶 · 千问新人福利
+                <span class="qwen-modal-hot" id="modalHotCountDisplay">🔥 0</span>
+            </div>
+            <div class="modal-close" id="closeQwenModalBtn">✕</div>
+        </div>
+        <div class="modal-body">
+            <div class="intro-text">
+                🎁 给大家找到一个薅羊毛的福利，可以免费喝一杯奶茶🧋，最近千问app搞活动，每个新用户都能获取8💰的优惠券，步骤如下:
+            </div>
+            <div class="qwen-steps">
+                <!-- 步骤1 -->
+                <div class="qwen-step-item">
+                    <span class="step-num">1</span>
+                    <span class="step-text">📲 ①用手机在应用商店下载「千问」APP</span>
+                </div>
+                <div class="step-img">
+                    <img src="https://www.steamck.com/images/1.jpg" alt="步骤1图片">
+                </div>
+                <!-- 步骤2 -->
+                <div class="qwen-step-item">
+                    <span class="step-num">2</span>
+                    <span class="step-text">📱 使用<strong>新手机号</strong>（没注册过的）注册登录（需要新手机号和新设置才能生效哦）</span>
+                </div>
+                <!-- 步骤3 -->
+                <div class="qwen-step-item">
+                    <span class="step-num">3</span>
+                    <span class="step-text">🔑 在输入框输入 <code style="background:#eee;padding:4px 8px;border-radius:12px;font-size:0.9rem;">千问新用户专属581252</code> <button class="copy-code-btn" id="copyQwenCodeBtn">一键点击复制</button></span>
+                </div>
+                <div class="step-img">
+                    <img src="https://www.steamck.com/images/2.png" alt="步骤2图片">
+                </div>
+                <!-- 步骤4 -->
+                <div class="qwen-step-item">
+                    <span class="step-num">4</span>
+                    <span class="step-text">🎉 立即领取8元通用优惠券 → 去淘宝闪购0元买奶茶/小商品</span>
+                </div>
+                <div class="double-img">
+                    <img src="https://www.steamck.com/images/3.jpg" alt="步骤3图片">
+                    <img src="https://www.steamck.com/images/4.jpg" alt="步骤4图片">
+                </div>
+            </div>
+            <p style="font-size:0.7rem;color:#888;text-align:center;margin-top:0.5rem;">※ 优惠券数量有限，领完即止。本活动最终解释权归千问所有。</p>
+        </div>
+    </div>
+</div>
+
 <div class="zoom-modal-overlay" id="zoomModal">
     <div class="zoom-modal-container" style="position: relative;">
         <div class="zoom-close" id="closeZoomBtn">✕</div>
@@ -442,6 +690,10 @@
                 </div>
             </div>
             <div class="zoom-red-notice">任意网盘使用新手机号（没注册过的）注册并转存可以免费扩容1TB，并且当天下载不限速</div>
+            <!-- 小按钮放在红色提醒下方，点击后关闭放大图并打开千问弹窗 -->
+            <div class="zoom-support-btn-wrapper">
+                <button id="zoomSupportBtn" class="zoom-support-btn">好哥哥<br>来支持一下~</button>
+            </div>
         </div>
     </div>
 </div>
@@ -486,11 +738,13 @@
     const SUPABASE_ANON_KEY = 'sb_publishable_R3HIL4q-fCemZ3hQ2Gtl5g_-pzpJ0YP';
     
     let supabaseReady = false;
+    let supabaseClient = null;
     function getSupabaseClient() {
         if (window._supabaseClient) return window._supabaseClient;
         if (typeof window.supabase !== 'undefined' && window.supabase.createClient) {
             try {
                 window._supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+                supabaseClient = window._supabaseClient;
                 supabaseReady = true;
                 console.log('✅ Supabase 客户端初始化成功');
                 return window._supabaseClient;
@@ -638,6 +892,46 @@
             if (document.getElementById('libraryModal').classList.contains('show')) renderLibraryPage(currentLibraryPage);
             if (currentMode === 'game' && gameTotalCount > 0) loadGamePage(gameCurrentPage);
         } catch(e) { console.warn('☁️ 获取云端热度失败:', e); }
+    }
+
+    // ========== 千问推广热度统计 ==========
+    let promoTotalClicks = 0;
+    async function fetchPromoClicks() {
+        if (!supabaseReady && !getSupabaseClient()) return;
+        try {
+            const { data, error } = await supabaseClient
+                .from('promo_stats')
+                .select('total_clicks')
+                .eq('id', 1)
+                .single();
+            if (error) throw error;
+            promoTotalClicks = data.total_clicks || 0;
+            updateModalHotCount();
+        } catch(e) {
+            console.warn('获取千问热度失败', e);
+            promoTotalClicks = 0;
+            updateModalHotCount();
+        }
+    }
+    async function incrementPromoClicks() {
+        if (!supabaseReady && !getSupabaseClient()) return;
+        try {
+            const { data, error } = await supabaseClient.rpc('increment_promo_clicks');
+            if (error) throw error;
+            promoTotalClicks = data;
+            updateModalHotCount();
+        } catch(e) {
+            console.warn('千问点击记录失败', e);
+            // fallback 本地更新显示
+            promoTotalClicks++;
+            updateModalHotCount();
+        }
+    }
+    function updateModalHotCount() {
+        const hotSpan = document.getElementById('modalHotCountDisplay');
+        if (hotSpan) {
+            hotSpan.innerHTML = `🔥 ${formatNumber(promoTotalClicks)}`;
+        }
     }
 
     function getGameChangeDate(game) {
@@ -1212,6 +1506,50 @@
         }
     }
 
+    // 千问推广相关函数
+    function openQwenModal() {
+        const modal = document.getElementById('qwenModal');
+        if (modal) modal.classList.add('show');
+    }
+    function closeQwenModal() {
+        const modal = document.getElementById('qwenModal');
+        if (modal) modal.classList.remove('show');
+    }
+    
+    // 显示短暂复制成功提示
+    function showCopyToast() {
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.textContent = '✅ 复制成功！';
+        document.body.appendChild(toast);
+        setTimeout(() => {
+            if (toast.parentNode) toast.parentNode.removeChild(toast);
+        }, 2000);
+    }
+    
+    // 改进复制口令，不再使用 alert
+    function copyQwenCode() {
+        const code = '千问新用户专属581252';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(code).then(() => {
+                showCopyToast();
+            }).catch(() => {
+                fallbackCopyCode(code);
+            });
+        } else {
+            fallbackCopyCode(code);
+        }
+    }
+    function fallbackCopyCode(code) {
+        const textarea = document.createElement('textarea');
+        textarea.value = code;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showCopyToast();
+    }
+
     function bindEvents() {
         // 搜索按钮
         document.getElementById('searchBtn').addEventListener('click', () => {
@@ -1272,6 +1610,33 @@
         if (searchTimeBtn) { searchTimeBtn.addEventListener('click', () => { currentSearchSort = 'time'; loadGamePage(1); }); }
         if (searchPopBtn) { searchPopBtn.addEventListener('click', () => { currentSearchSort = 'popularity'; loadGamePage(1); }); }
 
+        // 千问推广相关事件
+        const qwenBtn = document.getElementById('qwenPromoBtn');
+        if (qwenBtn) qwenBtn.addEventListener('click', () => {
+            incrementPromoClicks();   // 记录点击
+            openQwenModal();
+        });
+        const closeQwen = document.getElementById('closeQwenModalBtn');
+        if (closeQwen) closeQwen.addEventListener('click', closeQwenModal);
+        const copyQwen = document.getElementById('copyQwenCodeBtn');
+        if (copyQwen) copyQwen.addEventListener('click', copyQwenCode);
+        
+        // 二维码放大弹窗底部支持按钮 - 先关闭放大图再打开千问弹窗，并记录点击
+        const zoomSupport = document.getElementById('zoomSupportBtn');
+        if (zoomSupport) {
+            zoomSupport.addEventListener('click', () => {
+                incrementPromoClicks();   // 记录点击
+                closeZoom();            // 关闭二维码放大弹窗
+                setTimeout(() => {
+                    openQwenModal();   // 延迟一点点打开千问弹窗，确保关闭动画完成
+                }, 150);
+            });
+        }
+        
+        // 点击模态框背景关闭
+        const qwenModal = document.getElementById('qwenModal');
+        if (qwenModal) qwenModal.addEventListener('click', (e) => { if (e.target === qwenModal) closeQwenModal(); });
+
         updateSortButtonsUI();
     }
 
@@ -1285,6 +1650,17 @@
         if (dataLoaded) fetchStatsFromCloud();
     });
     setInterval(() => { if (dataLoaded) fetchStatsFromCloud(); }, 30000);
+    
+    // 初始化千问热度统计
+    getSupabaseClient();
+    if (supabaseReady) {
+        fetchPromoClicks();
+    } else {
+        // 延迟重试
+        setTimeout(() => {
+            if (supabaseReady) fetchPromoClicks();
+        }, 2000);
+    }
 </script>
 </body>
 </html>
