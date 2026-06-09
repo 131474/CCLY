@@ -110,7 +110,7 @@
     "id": 2163
   },
   {
-    "name": "挖掘者米娜 (Mina the Hollower) v1.0.5 最高评分新游戏",
+    "name": "挖掘者米娜 (Mina the Hollower) v1.0.6 最高评分新游戏",
     "shortName": "挖掘者米娜| v1.0.5",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260213/1770952395_122532.jpg",
     "links": [
@@ -128,7 +128,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-02T07:36:15.522Z",
+    "lastChange": "2026-06-09T07:23:12.879Z",
     "id": 2186
   },
   {
@@ -2698,20 +2698,25 @@
     "id": 156
   },
   {
-    "name": "勇者斗恶龙I&II HD-2D重制版官方中文v1.0.2.0（已移除D加密）",
+    "name": "勇者斗恶龙1+2 HD-2D 重制版v1.0.2.0Fix 官方中文全DLC",
     "shortName": "勇者斗恶龙I",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5fd05b801219"
+        "url": "https://pan.quark.cn/s/031e0ec84c28"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOnKMKbHHRssQZSsdk_RnpQAA1?pwd=8nqa#"
+        "url": "https://pan.xunlei.com/s/VOug6LJeD5TJYEJ0GB9OwCwHA1?pwd=idkq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QZpXf6FdXOisDJHS30hZdw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-09T12:28:58.699Z",
     "id": 157
   },
   {
@@ -16844,16 +16849,25 @@
     "id": 1224
   },
   {
-    "name": "星之海 v2.0.59021 豪华中文版 全DLC",
+    "name": "星之海 v2.0.59021 官方中文全DLC",
     "shortName": "星之海",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ecab9351acf0"
+        "url": "https://pan.quark.cn/s/33b83bec382b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOufSi5MeZJPv7NMiqnEr4NlA1?pwd=pycu#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1NRmieXqnOutYSxZUh5WTTw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-09T08:21:32.923Z",
     "id": 1225
   },
   {
@@ -28447,7 +28461,7 @@
     "id": 2156
   },
   {
-    "name": "平行人生v0.1.2b.19972官方中文全DLC",
+    "name": "平行人生v0.1.3.20031官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -28463,7 +28477,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-04T04:12:39.639Z",
+    "lastChange": "2026-06-09T07:23:04.160Z",
     "id": 2157
   },
   {
@@ -30213,5 +30227,45 @@
     ],
     "lastChange": "2026-06-09T05:26:53.119Z",
     "id": 2278
+  },
+  {
+    "name": "（Switch）星之海官方中文本体+3.0.60151升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/18955ba91899"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOufPB6x9xlNiPx55SIIkMsyA1?pwd=3yxh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jUEBX0XGHVjAo1tRngTz5w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-09T08:10:02.476Z",
+    "id": 2279
+  },
+  {
+    "name": "太阳朋克 浮岛家园v1.0.0-299719官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f1df0ee336ec"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOufalBOYbQa8qJBmPs3G6ndA1?pwd=zrtp#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Sjy11qFRGekBumxAiXSXQg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-09T09:05:18.416Z",
+    "id": 2280
   }
 ]
