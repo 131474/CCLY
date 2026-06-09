@@ -8508,20 +8508,25 @@
     "id": 575
   },
   {
-    "name": "（Switch）无人深空官方中文v6.18.0+金手指",
+    "name": "（Switch）无人深空官方中文本体+6.40.0升补",
     "shortName": "无人深空官方",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dc02cdcf1761"
+        "url": "https://pan.quark.cn/s/8a54d5433a3c"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOiRw9OeXLcV2fIMoNZzyrRDA1?pwd=htuh#"
+        "url": "https://pan.xunlei.com/s/VOuhHx_BHtKiaIJcroj-t1CcA1?pwd=qfrs#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_40q1kp8DxQkBQpmajsEcg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-09T17:04:24.816Z",
     "id": 576
   },
   {
@@ -30300,5 +30305,25 @@
     ],
     "lastChange": "2026-06-09T16:28:41.889Z",
     "id": 2282
+  },
+  {
+    "name": "（Switch）数码宝贝物语 时空异客 体验版 官方中文",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/900279d204e1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuhM8jAKrQpolOq1ik7tFeEA1?pwd=dxw5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11d-uTivgY-BUSs3liU9XCg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-09T17:11:28.238Z",
+    "id": 2283
   }
 ]
