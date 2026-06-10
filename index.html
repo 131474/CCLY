@@ -645,15 +645,18 @@
                 <div class="step-img">
                     <img src="https://www.steamck.com/images/1.jpg" alt="步骤1图片">
                 </div>
-                <!-- 步骤2 -->
+                <!-- 步骤2（已修改） -->
                 <div class="qwen-step-item">
                     <span class="step-num">2</span>
-                    <span class="step-text">📱 使用<strong>新手机号</strong>（没注册过的）注册登录（需要新手机号和新设置才能生效哦）</span>
+                    <span class="step-text">📱 使用<strong>新手机号</strong>（没注册过的）注册登录（需要新手机号和新设备才能生效哦）</span>
                 </div>
-                <!-- 步骤3 -->
+                <!-- 步骤3（保持不变） -->
                 <div class="qwen-step-item">
                     <span class="step-num">3</span>
-                    <span class="step-text">🔑 在输入框输入 <code style="background:#eee;padding:4px 8px;border-radius:12px;font-size:0.9rem;">千问新用户专属581252</code> <button class="copy-code-btn" id="copyQwenCodeBtn">一键点击复制</button></span>
+                    <span class="step-text">🔑 在设备上打开千问APP，进入「我的」→「口令红包」，输入下方口令（可一键复制）<br>
+                        <code style="background:#eee;padding:4px 8px;border-radius:12px;font-size:0.9rem;display:inline-block;margin:8px 0;">千问新用户专属581252</code>
+                        <button class="copy-code-btn" id="copyQwenCodeBtn">一键复制口令</button>
+                    </span>
                 </div>
                 <div class="step-img">
                     <img src="https://www.steamck.com/images/2.png" alt="步骤2图片">
@@ -1527,27 +1530,38 @@
         }, 2000);
     }
     
-    // 改进复制口令，不再使用 alert
+    // 改进复制口令（手机端兼容，同步执行）
     function copyQwenCode() {
         const code = '千问新用户专属581252';
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(code).then(() => {
-                showCopyToast();
-            }).catch(() => {
-                fallbackCopyCode(code);
-            });
-        } else {
-            fallbackCopyCode(code);
+        // 方法1：使用传统 execCommand（同步，兼容性最佳）
+        let success = false;
+        try {
+            const textarea = document.createElement('textarea');
+            textarea.value = code;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); // 针对移动端
+            success = document.execCommand('copy');
+            document.body.removeChild(textarea);
+        } catch(e) {
+            console.warn('execCommand 复制失败', e);
         }
-    }
-    function fallbackCopyCode(code) {
-        const textarea = document.createElement('textarea');
-        textarea.value = code;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        showCopyToast();
+        if (success) {
+            showCopyToast();
+        } else {
+            // 降级：尝试 Clipboard API（异步）
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).then(() => {
+                    showCopyToast();
+                }).catch(() => {
+                    alert('复制失败，请手动复制');
+                });
+            } else {
+                alert('复制失败，请手动复制');
+            }
+        }
     }
 
     function bindEvents() {
