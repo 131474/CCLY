@@ -13076,7 +13076,7 @@
     "id": 927
   },
   {
-    "name": "闪电十一人 英雄们的胜利之路 v5.0.1 新加DLC友情巨浪  羁绊崛起 豪华中文全DLC+单独升级补丁",
+    "name": "闪电十一人 英雄们的胜利之路 v6.0.1豪华中文全DLC+DLC友情巨浪+单独升级补丁",
     "shortName": "PC闪电十一",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -13090,10 +13090,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1U3g9AqBeRpsii13QjQ0Eqw?pwd=8888"
+        "url": "https://pan.baidu.com/s/1U3g9AqBeRpsii13QjQ0Eqw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-20T08:43:08.492Z",
+    "lastChange": "2026-06-12T05:00:09.708Z",
     "id": 928
   },
   {
@@ -30354,5 +30355,45 @@
     ],
     "lastChange": "2026-06-12T02:20:43.443Z",
     "id": 2288
+  },
+  {
+    "name": "（Switch）圣女战旗官方中文本体+2.2.2升补+2DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7eab165ba370"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOutozDei-N7OAjmpyQV4IB_A1?pwd=cish#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15jvfXz_lQ483wdlTPyEkUA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-12T03:19:26.349Z",
+    "id": 2289
+  },
+  {
+    "name": "团战经理（Teamfight Manager）v1.5.2官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/24c9594b1541"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuu5yh56p4ox4mhEaA3ievxA1?pwd=ginz#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PG0Baycb07eogeXe4VAMsw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-12T04:38:34.311Z",
+    "id": 2290
   }
 ]
