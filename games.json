@@ -986,25 +986,25 @@
     "id": 31
   },
   {
-    "name": "仁王3豪华版 v1.06.00中文全DLC+联机补丁+单独升级补丁",
+    "name": "仁王3豪华版 v1.07.00中文全DLC+联机补丁+单独升级补丁",
     "shortName": "仁王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c0d23e127e68"
+        "url": "https://pan.quark.cn/s/d92385b55162"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtXyMZaudfKR2OAZcvHK58PA1?pwd=j8zi#"
+        "url": "https://pan.xunlei.com/s/VOuvYb7mqJ9P_ihBdGrfcsPJA1?pwd=ujec#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1rK_vRfBxBLXLJ1Vn1w904w?pwd=8888",
+        "url": "https://pan.baidu.com/s/184UNVasjNdW6llh8I5Pwkw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-26T06:37:04.381Z",
+    "lastChange": "2026-06-12T11:20:56.028Z",
     "id": 32
   },
   {
@@ -3724,20 +3724,25 @@
     "id": 230
   },
   {
-    "name": "（switch）闪电十一人 英雄们的胜利之路 官方中文v5.0.0+2DLC 新加DLC友情巨浪  羁绊崛起",
+    "name": "（Switch）闪电十一人 英雄们的胜利之路 官方中文v6.0.0+2DLC+DLC友情巨浪",
     "shortName": "闪电十一人英",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b776cb93cf7d"
+        "url": "https://pan.quark.cn/s/6a1fd41870b1"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpR1FfM7-s1yi4nSBexptPaA1?pwd=eebs#"
+        "url": "https://pan.xunlei.com/s/VOuvS_ePZE9AWF5hNg5qJma6A1?pwd=xba2#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Zjk_nEZPsK148LmvVoAeXg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-12T11:04:34.036Z",
     "id": 231
   },
   {
@@ -30341,22 +30346,6 @@
     "id": 2287
   },
   {
-    "name": "（PS5）最终幻想7：重生 PPSA08666数字豪华版v01.080.000",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/00c8211d7d1c"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1W59ACWPGS0PV998_TMBPhQ?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-06-12T02:20:43.443Z",
-    "id": 2288
-  },
-  {
     "name": "（Switch）圣女战旗官方中文本体+2.2.2升补+2DLC",
     "links": [
       {
@@ -30395,5 +30384,45 @@
     ],
     "lastChange": "2026-06-12T04:38:34.311Z",
     "id": 2290
+  },
+  {
+    "name": "（Switch）深空梦里人 Citizen Sleeper官方中文本体+1.4.13升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/edd3f7e67396"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuvMBuX0vO2lTttnjZk7fYUA1?pwd=a3wt#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1L_DO5WuBc_c9Kj3Ifs0ieA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-12T10:28:56.176Z",
+    "id": 2291
+  },
+  {
+    "name": "（Switch）深空梦里人2 逐星之旅 Citizen Sleeper 2 官方中文本体+1.2.25升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/99da4e5066bc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOuvP7JdL2da1kzT3zyI-otIA1?pwd=wmca#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1z4MCv76qyf9zFeKZWvwqSg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-12T10:47:00.214Z",
+    "id": 2292
   }
 ]
