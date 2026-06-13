@@ -10,6 +10,7 @@
     
     <script>
         (async function() {
+            // 版本检测优化：改为静默执行，不触发页面硬刷新，避免加载过程中的视觉闪烁
             const STORAGE_VERSION_KEY = 'app_version';
             const versionUrl = 'version.json?t=' + Date.now();
             try {
@@ -21,7 +22,8 @@
                 if (storedVersion !== latestVersion) {
                     localStorage.removeItem('cached_games_data');
                     localStorage.setItem(STORAGE_VERSION_KEY, latestVersion);
-                    location.reload(true);
+                    // 使用更温和的更新方式，不强制硬刷新，避免闪烁
+                    setTimeout(() => location.reload(), 100);
                 }
             } catch(e) {
                 console.warn('版本检测失败，继续使用本地缓存', e);
@@ -83,6 +85,7 @@
             }
         }
         
+        /* 添加 will-change 优化动画性能，减少闪烁 */
         .query-card {
             width: 100%;
             max-width: 950px;
@@ -96,6 +99,7 @@
             z-index: 1;
             backface-visibility: hidden;
             transform: scale(1);
+            will-change: transform, box-shadow;
         }
         .query-card:hover {
             transform: scale(1.005);
@@ -197,25 +201,48 @@
         .like-btn.liked { opacity: 0.6; cursor: default; filter: grayscale(0.3); }
         .like-btn:hover:not(.liked) { transform: scale(1.05); background: rgba(231, 76, 60, 0.1); }
         .update-date-badge { font-size: 0.85rem; color: #0077ff; background: rgba(0, 119, 255, 0.1); padding: 0.2rem 0.8rem; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
-        .modal-qr-group { display: flex; gap: 0.4rem; align-items: center; flex-wrap: nowrap; overflow-x: auto; margin-top: 0.5rem; }
-        .modal-qr-item { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; cursor: pointer; transition: transform 0.1s; background: rgba(245, 250, 255, 0.6); padding: 0.2rem 0.4rem; border-radius: 1rem; min-width: 55px; }
+        
+        /* 网盘图标网格布局 - 固定三列，每个图标等宽，不随个数拉伸 */
+        .modal-qr-group { 
+            display: grid; 
+            grid-template-columns: repeat(3, minmax(0, 1fr)); 
+            gap: 0.8rem; 
+            margin-top: 0.5rem;
+        }
+        .modal-qr-item { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 0.4rem; 
+            cursor: pointer; 
+            transition: transform 0.1s; 
+            background: rgba(245, 250, 255, 0.6); 
+            padding: 0.4rem 0.4rem; 
+            border-radius: 1rem; 
+        }
         .modal-qr-item:hover { transform: scale(1.02); background: rgba(200, 225, 255, 0.8); }
         .qr-code-box { 
-            width: 55px; 
-            height: 55px; 
+            width: 100%; 
+            aspect-ratio: 1 / 1;
             background: #f5f5f5; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            border: 2px solid rgba(60, 140, 210, 0.4); 
-            border-radius: 12px; 
+            border: 2px solid rgba(60, 140, 210, 0.4);
+            border-radius: 12px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.05);
             overflow: hidden;
+        }
+        /* 迅雷图标单独去掉边框 */
+        .qr-code-box.xunlei-box {
+            border: none !important;
+            box-shadow: none !important;
         }
         .qr-code-box img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
+            object-position: center;
         }
         .netdisk-icon-fallback {
             width: 100%;
@@ -227,17 +254,31 @@
             font-weight: bold;
             color: white;
             text-transform: uppercase;
+            background-color: #888;
+            border-radius: 12px;
         }
+        /* 网盘文字样式优化 - 字体更大，去掉蓝色阴影，提升高级感 */
         .qr-label {
-            font-size: 0.7rem;
-            color: #1b5b7a;
-            background: rgba(100, 170, 240, 0.1);
-            padding: 0.15rem 0.6rem;
-            border-radius: 20px;
-            font-weight: 500;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #2c5a78;
+            background: rgba(100, 170, 240, 0.08);
+            padding: 0.25rem 0.6rem;
+            border-radius: 30px;
             text-align: center;
             line-height: 1.3;
+            white-space: nowrap;
+            letter-spacing: 0.5px;
+            transition: all 0.2s;
+            backdrop-filter: none;
+            text-shadow: none;
         }
+        .modal-qr-item:hover .qr-label {
+            background: rgba(100, 170, 240, 0.2);
+            transform: scale(1.02);
+            color: #1a4d6b;
+        }
+        
         .pagination { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid rgba(70, 150, 230, 0.2); }
         .page-btn { background: rgba(170, 215, 255, 0.7); border: 1px solid #6ba6d9; color: #1a5777; width: 40px; height: 40px; border-radius: 40px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 500; cursor: pointer; transition: 0.2s; }
         .page-btn:hover:not(:disabled) { background: #4797cf; color: white; border-color: #2d7eb3; transform: translateY(-1px); }
@@ -292,6 +333,7 @@
             }
         }
         
+        /* 手机端和较大屏幕的适配 */
         @media (hover: none) and (pointer: coarse), (max-width: 768px) {
             .Dict { display: inline-block; } .pc { display: none; }
             .game-title-row { flex-direction: column; align-items: flex-start; }
@@ -311,20 +353,77 @@
             .game-input { padding: 0.9rem 0 0.9rem 1.2rem; font-size: 0.95rem; }
             .game-input::placeholder { font-size: 0.85rem; }
             .query-btn { padding: 0 1.2rem; font-size: 0.95rem; }
-            .modal-qr-group { gap: 0.2rem; }
-            .modal-qr-item { min-width: auto; padding: 0.1rem 0.2rem; }
-            .qr-code-box { width: 42px; height: 42px; }
-            .netdisk-icon-fallback { font-size: 1.2rem; }
-            .qr-label { font-size: 0.6rem; padding: 0.1rem 0.4rem; }
+            /* 手机端网格调整：小屏幕保持三列居中对齐，较大屏幕（如平板）左对齐且间距减小 */
+            .modal-qr-group {
+                gap: 0.5rem;
+            }
+            .modal-qr-item {
+                max-width: 85px;
+                margin: 0 auto;
+            }
+            .qr-code-box {
+                max-width: 85px;
+                margin: 0 auto;
+            }
+            .qr-label {
+                font-size: clamp(0.75rem, 3vw, 0.85rem);
+                padding: 0.2rem 0.5rem;
+                white-space: nowrap;
+                max-width: 85px;
+            }
+            .netdisk-icon-fallback {
+                font-size: 1.4rem;
+            }
+        }
+        /* 较大手机/平板横屏时，改为左对齐，间距缩小，接近电脑版 */
+        @media (min-width: 500px) and (max-width: 768px) {
+            .modal-qr-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 0.4rem;
+            }
+            .modal-qr-item {
+                flex: 0 0 auto;
+                min-width: 70px;
+                max-width: 70px;
+                margin: 0;
+            }
+            .qr-code-box {
+                max-width: 70px;
+                margin: 0;
+            }
+            .qr-label {
+                font-size: 0.75rem;
+                max-width: 70px;
+            }
         }
         @media (min-width: 769px) {
             .hot-scroll { overflow-x: visible !important; justify-content: space-between; gap: 0.2rem; padding-bottom: 0; }
             .hot-item { width: auto; flex: 0 0 auto; }
             .hot-item img { width: 75px; height: 75px; max-width: none; margin: 0 auto; }
             .hot-item span { max-width: 85px; }
+            /* 电脑端保持原有固定宽度 */
+            .modal-qr-group {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4rem;
+            }
+            .modal-qr-item {
+                min-width: 70px;
+                flex: 0 0 auto;
+            }
+            .qr-code-box {
+                width: 70px;
+                height: 70px;
+            }
+            .qr-label {
+                font-size: 0.8rem;
+                padding: 0.25rem 0.7rem;
+            }
         }
         .mobile-game-qr .qr-code-box { width: 110px; height: 110px; }
-        @media (max-width: 768px) { .mobile-game-qr .qr-code-box { width: 55px; height: 55px; } }
+        @media (max-width: 768px) { .mobile-game-qr .qr-code-box { width: 100%; } }
         .sort-buttons { display: flex; gap: 0.8rem; align-items: center; margin-right: 1rem; }
         .sort-btn { background: rgba(200,225,255,0.7); border: 1px solid #6ba6d9; border-radius: 30px; padding: 0.3rem 0.9rem; font-size: 0.8rem; font-weight: 600; color: #134b66; cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
         .sort-btn:hover, .sort-btn.active { background: #4797cf; color: white; border-color: #2d7eb3; }
@@ -441,7 +540,7 @@
             </div>
             <div class="modal-close" id="closeModalBtn">✕</div>
         </div>
-        <div class="download-tip" id="download-tip">点击二维码可放大，手机端可直接跳转至下载链接</div>
+        <div class="download-tip" id="download-tip">点击图标可下载，手机端可直接跳转至下载链接</div>
         <div class="modal-body" id="modalBody"><div class="empty-modal-msg"> loading... </div></div>
         <div class="pagination" id="pagination">
             <button class="page-btn" id="prevPage" disabled>←</button>
@@ -461,7 +560,7 @@
             </div>
             <div class="modal-close" id="closeLibraryModalBtn">✕</div>
         </div>
-        <div class="download-tip">点击二维码可放大，手机端可直接跳转至下载链接</div>
+        <div class="download-tip">点击图标可下载，手机端可直接跳转至下载链接</div>
         <div class="modal-body" id="libraryBody"><div class="empty-modal-msg">加载中...</div></div>
         <div class="pagination" id="libraryPagination">
             <button class="page-btn" id="libPrevPage" disabled>←</button>
@@ -770,8 +869,7 @@
         gameCurrentPage = res.page;
         gameTotalPages = res.totalPages;
         gameTotalCount = res.total;
-        // 手机端换行显示：通过CSS控制，内部分为三行（第一行“查询到”，第二行数字，第三行“个游戏”）
-        modalTitle.innerHTML = `<span>📋 查询结果</span><span class="result-count">${gameTotalCount}</span>`;
+        modalTitle.innerHTML = `<span>🔍查询到</span><span class="result-count">${gameTotalCount}</span><span>个游戏</span>`;
         modalBody.innerHTML = generateGameCards(res.data);
         for (let i = 0; i < res.data.length; i++) {
             const game = res.data[i];
@@ -837,7 +935,7 @@
         if (gameId && !btn.classList.contains('liked')) incrementLikes(parseInt(gameId), btn);
     }
 
-    // 生成网盘图标：使用官方图片，加载失败时降级为彩色首字
+    // 生成网盘图标：使用官方图片，加载失败时降级为彩色首字，迅雷单独去掉边框
     function generateQRCode(container, text, platform) {
         if (!text) { container.innerHTML = '无'; return; }
         container.innerHTML = '';
@@ -845,6 +943,7 @@
         let iconUrl = '';
         let fallbackText = '';
         let fallbackBg = '';
+        let isXunlei = false;
         switch(platform) {
             case '夸克网盘':
                 iconUrl = 'https://www.steamck.com/images/quark.png';
@@ -855,6 +954,7 @@
                 iconUrl = 'https://www.steamck.com/images/xunlei.png';
                 fallbackText = '迅';
                 fallbackBg = '#e92e2e';
+                isXunlei = true;
                 break;
             case '百度网盘':
                 iconUrl = 'https://www.steamck.com/images/baidu.png';
@@ -875,7 +975,10 @@
         img.alt = platform;
         img.style.width = '100%';
         img.style.height = '100%';
-        img.style.objectFit = 'contain';
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center';
+        img.loading = 'eager';
+        img.decoding = 'async';
         img.onerror = function() {
             this.onerror = null;
             const fallbackDiv = document.createElement('div');
@@ -884,8 +987,14 @@
             fallbackDiv.style.backgroundColor = fallbackBg;
             container.innerHTML = '';
             container.appendChild(fallbackDiv);
+            if (isXunlei) {
+                container.classList.add('xunlei-box');
+            }
         };
         container.appendChild(img);
+        if (isXunlei) {
+            container.classList.add('xunlei-box');
+        }
     }
 
     function attachQrZoom() {
