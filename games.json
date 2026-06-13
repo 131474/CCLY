@@ -9057,20 +9057,25 @@
     "id": 618
   },
   {
-    "name": "失落城堡2官方中文0.9.2.3.4全DLC",
+    "name": "失落城堡2官方中文v1.0.0.3正式版全DLC",
     "shortName": "失落城堡2官",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fab9054b4d6b"
+        "url": "https://pan.quark.cn/s/17ed35a062be"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOhrz9c_hFCHe-2P9wOxi-7RA1?pwd=x4h4#"
+        "url": "https://pan.xunlei.com/s/VOv-0GLP1tBQ_pJD9P9Jc_3tA1?pwd=pwtq#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Xh6SItHk8eUGuGmVTl_fPA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-13T08:17:21.113Z",
     "id": 619
   },
   {
@@ -30387,23 +30392,55 @@
     "id": 2292
   },
   {
-    "name": "（Switch）美好旧时光 四宝冒险团大冒险v1.0.4官方中文全DLC",
+    "name": "（Switch）咖啡心语 东京官方中文本体+1.0.3b升补+1DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/29e803614f8e"
+        "url": "https://pan.quark.cn/s/3bee5db0e9c6"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuwcITTiQfmcxwfRhqYJHtrA1?pwd=isw9#"
+        "url": "https://pan.xunlei.com/s/VOv-5d9qXRqKqPVGD4QI3rkeA1?pwd=6vyn#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1kSaT-KnGV-BFTycpw6IKfQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1mVUhetansOw_4OXYkEDRtw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-12T16:20:52.939Z",
+    "lastChange": "2026-06-13T08:35:32.073Z",
     "id": 2293
+  },
+  {
+    "name": "（PS5）宇宙机器人.Astro Bot  PPSA21567+1.18 4.xx系统+降级补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/959dc170967b"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1VBEynpY0Tb0AjImf5UKUgA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-13T08:57:06.336Z",
+    "id": 2294
+  },
+  {
+    "name": "（PS5）羊蹄山之魂 官方中文 PPSA26344 (1.008.000)+降级补丁 4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c6732c8c8ec5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GUmZo62ebzBHGYlMQUE3ZQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-13T09:23:04.463Z",
+    "id": 2295
   }
 ]
