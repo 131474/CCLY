@@ -1,24 +1,24 @@
 [
   {
-    "name": "极限竞速：地平线6尊享版v364.933Fix 中文全DLC+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
+    "name": "极限竞速：地平线6尊享版v375.327 全DLC+单独升级补丁+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
     "shortName": "极限竞速|地平线6|v364.933Fix",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/df4db8486673"
+        "url": "https://pan.quark.cn/s/5afdaa7a3725"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuR2c5Qdxg4rTswJy3CpUVPA1?pwd=57u8#"
+        "url": "https://pan.xunlei.com/s/VOvFiJJ4jV84d3bBvmbOInpYA1?pwd=6m3u#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1JlmgtEDDNN59mB8tywbsjw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1CdEfCXxNigsACr0CNLH7SA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-06T08:31:48.181Z",
+    "lastChange": "2026-06-16T14:01:29.682Z",
     "id": 2060
   },
   {
@@ -31097,5 +31097,37 @@
     ],
     "lastChange": "2026-06-16T11:04:06.557Z",
     "id": 2344
+  },
+  {
+    "name": "（PS5）孤岛惊魂6黄金版官方中文 PPSA01870（v01.000.013）4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6087804014b6"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Fe1qDZSif0v3zhd3RSawiw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-16T12:39:45.495Z",
+    "id": 2345
+  },
+  {
+    "name": "（PS5）幻想生活ｉ 转圈圈的龙和偷取时间的少女中文PPSA27625（v01.000.000）5.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f4f1820f2bf7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MvrHdwJIlOnfwdrbyM3-_g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-16T12:43:46.764Z",
+    "id": 2346
   }
 ]
