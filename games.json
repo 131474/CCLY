@@ -1360,7 +1360,7 @@
     "id": 61
   },
   {
-    "name": "钢铁雄心4  v1.19.0.1 豪华中文联机版 全DLC+XG器",
+    "name": "钢铁雄心4  v1.19.0.1Fix 豪华中文联机版 全DLC+XG器",
     "shortName": "钢铁雄心4豪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1378,7 +1378,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-15T16:04:12.447Z",
+    "lastChange": "2026-06-17T09:16:09.042Z",
     "id": 62
   },
   {
@@ -10720,25 +10720,25 @@
     "id": 740
   },
   {
-    "name": "最终幻想7： 重生 v1.005 豪华中文全DLC+单独升级补丁",
+    "name": "最终幻想7： 重生 v1.005 豪华中文全DLC+单独升级补丁+国语配音mod",
     "shortName": "最终幻想7重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/02268c075fb6"
+        "url": "https://pan.quark.cn/s/ac5337526e8c"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuFsiXbZ-KZ4-HWy8YoNdMqA1?pwd=m483#"
+        "url": "https://pan.xunlei.com/s/VOvKZqfS-IN7zeKavailXit3A1?pwd=jyzv#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1bRvazPnnHudsRqp2gEv-PQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1jR8LZhNCtTVjO8831tSLLA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-04T04:30:36.230Z",
+    "lastChange": "2026-06-17T12:41:20.006Z",
     "id": 741
   },
   {
@@ -31165,5 +31165,157 @@
     ],
     "lastChange": "2026-06-16T16:45:12.259Z",
     "id": 2348
+  },
+  {
+    "name": "（PS5）仁王 3 Nioh 3  PPSA32785（v01.040.020）新增10.xx系统+降级补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/894ca8121654"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1k9usikSJWSi7OpGREXZBBQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T04:43:18.755Z",
+    "id": 2349
+  },
+  {
+    "name": "奇迹时代4 高级版v1.015.002.122980豪华中文全DLC+大法师的秘辛DLC-全扩展+全季票+修改器",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/63cb538bcff7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvIsZ6Fcf1Jpb911Le3E5BRA1?pwd=87gd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1c0AexkDuu7xN1S4Ph5hzSA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T05:03:12.960Z",
+    "id": 2350
+  },
+  {
+    "name": "（PS5）死亡搁浅 2冥滩之上官方中文PPSA02015（v01.013）5.05.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b8be28e0d786"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xeoaCHnqK1juwd3B3osR2w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T07:21:09.103Z",
+    "id": 2351
+  },
+  {
+    "name": "（PS5）歧路旅人0：数字豪华版中文PPSA28495（v01.000.000）10.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1cf3453d17f7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jxfo2v3He3xYSOHVzl4yoQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T07:23:18.807Z",
+    "id": 2352
+  },
+  {
+    "name": "（PS5）装甲核心6：境界天火官方中文PPSA06774（v01.009）5.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7bc32139209e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ROoUBsI3JFnNrubmOzM_6A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T08:38:13.510Z",
+    "id": 2353
+  },
+  {
+    "name": "（PS5）自杀小队：消灭正义联盟官方中文PPSA02182（v01.024.000）9.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8cfba735a9a3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15stQcfACj6JeQpcc3OGxBQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T08:53:04.533Z",
+    "id": 2354
+  },
+  {
+    "name": "（PS5）GTA5侠盗猎车手5增强版官方中文PPSA04264（v1.005.000）4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f509c0afef0c"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1K0uLhhU38uHONuTFqw3Qzw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T10:18:21.444Z",
+    "id": 2355
+  },
+  {
+    "name": "（Switch）法医检验协议官方中文本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1a486ea42308"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvKFkliJ_vbI3d9bCOMnpA5A1?pwd=i6wv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-PJ4fNdLlJy7Jb-CtJNJ7A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T11:25:02.509Z",
+    "id": 2356
+  },
+  {
+    "name": "（PS5）寂静岭 f 官方中文 PPSA21159（v01.001.000）4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7afb4fd4bc3c"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RwtqDohtCuI5KGYXy9JiIg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-17T13:00:31.603Z",
+    "id": 2357
   }
 ]
