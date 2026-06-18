@@ -8934,25 +8934,25 @@
     "id": 610
   },
   {
-    "name": "（Switch）潜水员戴夫中文v1.0.5.1111+5DLC+金手指",
+    "name": "（Switch）潜水员戴夫官方中文1.0.6.1161+6DLC+丛林DLC",
     "shortName": "潜水员戴夫中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/31cc7a30d863"
+        "url": "https://pan.quark.cn/s/fc42d56cc3d4"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOu71LkE6h_8fRwwBrhHveuXA1?pwd=gj2y#"
+        "url": "https://pan.xunlei.com/s/VOvPKqIGmQgBXG5z3nVEDs8CA1?pwd=bbmz#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1_Nk2YwTx9UmV12qwjvsDUQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1qlLfHl2rR2NqIgn164n-Gw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-02T11:15:03.940Z",
+    "lastChange": "2026-06-18T10:50:18.069Z",
     "id": 611
   },
   {
@@ -31592,5 +31592,25 @@
     ],
     "lastChange": "2026-06-18T09:50:25.389Z",
     "id": 2379
+  },
+  {
+    "name": "（Switch）超英派遣中心官方中文本体+1.0.17397升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/faea88518d6d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvPO3G0uL2N90fs3MQ0Wvw2A1?pwd=fz9r#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1w4v1vqaw-hu7Uye4blBkvw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-18T11:01:50.340Z",
+    "id": 2380
   }
 ]
