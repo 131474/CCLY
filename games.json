@@ -347,8 +347,8 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.20官方中文+全DLC+联机补丁",
-    "shortName": "魔法门英雄无敌|上古纪元|0.8.19",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.24官方中文+全DLC+联机补丁",
+    "shortName": "魔法门英雄无敌|上古纪元|0.80.24",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -364,7 +364,7 @@
         "url": "https://pan.baidu.com/s/1w7aX2r-zHSd9wMuGJTCUFg?pwd=8888"
       }
     ],
-    "lastChange": "2026-06-05T08:06:40.925Z",
+    "lastChange": "2026-06-19T10:51:34.471Z",
     "id": 224
   },
   {
@@ -31617,5 +31617,25 @@
     ],
     "lastChange": "2026-06-19T07:58:06.499Z",
     "id": 2381
+  },
+  {
+    "name": "007 初露锋芒v1.0.5官方中文全DLC 虚拟机绕D版 (VBS一键启动)",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c60727372af9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvU_SDUBNvkj1UfaW7SUJ2tA1?pwd=4hwn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1SoeNWPvCIW6aDdAZwlHcdQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-19T11:15:56.530Z",
+    "id": 2382
   }
 ]
