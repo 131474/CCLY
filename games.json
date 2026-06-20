@@ -7539,7 +7539,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2018豪华中文全DLC+丛林DLC",
+    "name": "潜水员戴夫v1.0.6.2025豪华中文全DLC+丛林DLC",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7557,7 +7557,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-18T10:14:49.837Z",
+    "lastChange": "2026-06-20T05:42:48.174Z",
     "id": 508
   },
   {
@@ -31637,5 +31637,25 @@
     ],
     "lastChange": "2026-06-19T11:15:56.530Z",
     "id": 2382
+  },
+  {
+    "name": "（Switch）最终幻想战略版 伊瓦利斯编年史官方中文本体+1.5.0升补+2DLC+金手指",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/44ba222f1765"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvYYACSeFiSg6XtJ6uvAxJsA1?pwd=t7jd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WdqWGTgr62Fn4-8BCFjmQA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-20T05:42:53.590Z",
+    "id": 2383
   }
 ]
