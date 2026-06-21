@@ -1658,16 +1658,20 @@
     "id": 81
   },
   {
-    "name": "极限国度 v1.30.0 中文版",
+    "name": "极限国度 v1.31.0 官方中文全DLC",
     "shortName": "极限国度",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/ddf2bbdcc8ae"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvevHJ2qSYbCAVyIpF0UrMLA1?pwd=x4xa#"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-06-21T16:05:27.767Z",
     "id": 82
   },
   {
@@ -6733,7 +6737,7 @@
     "id": 445
   },
   {
-    "name": "巫火 v0.8.5 中文汉化版",
+    "name": "巫火 v0.9.0 中文版",
     "shortName": "巫火",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -6742,7 +6746,7 @@
         "url": "https://pan.quark.cn/s/f6156bd5ec08"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-21T16:23:14.182Z",
     "id": 446
   },
   {
@@ -12360,7 +12364,7 @@
     "id": 870
   },
   {
-    "name": "欧洲卡车模拟2 v1.59.1.0S 豪华中文版 全DLC",
+    "name": "欧洲卡车模拟2 v1.59.1.3s 豪华中文版 全DLC",
     "shortName": "欧洲卡车模拟",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -12369,7 +12373,7 @@
         "url": "https://pan.quark.cn/s/504ee83f3bc0"
       }
     ],
-    "lastChange": "2026-05-08T15:44:35.874Z",
+    "lastChange": "2026-06-21T16:28:30.693Z",
     "id": 872
   },
   {
@@ -14128,14 +14132,14 @@
     "id": 1006
   },
   {
-    "name": "烹饪模拟器2  v1.4.6717 单机+联机 中文版",
+    "name": "烹饪模拟器2 v1.16 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/584878a06c58"
       }
     ],
-    "lastChange": "2026-04-06T15:27:12.993Z",
+    "lastChange": "2026-06-21T16:19:36.550Z",
     "id": 1007
   },
   {
@@ -26631,14 +26635,14 @@
     "id": 2025
   },
   {
-    "name": "焕家物语 v1.01 中文版",
+    "name": "焕家物语 v1.2 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/bf13a04335e4"
       }
     ],
-    "lastChange": "2026-05-03T12:56:51.863Z",
+    "lastChange": "2026-06-21T16:18:38.622Z",
     "id": 2026
   },
   {
@@ -29042,7 +29046,7 @@
     "id": 2202
   },
   {
-    "name": "（Switch）流明物语 特雷的回忆官方中文本体+1.0.01升补+1DLC",
+    "name": "（Switch）流明物语 特雷的回忆官方中文本体+1.0.0.2升补+1DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -29058,7 +29062,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-31T10:17:25.031Z",
+    "lastChange": "2026-06-21T13:05:03.688Z",
     "id": 2203
   },
   {
@@ -29810,25 +29814,25 @@
     "id": 2253
   },
   {
-    "name": "营地大亨：露营经营模拟器 v0.1.1.4 中文版",
+    "name": "营地大亨：露营经营模拟器 v0.2.0 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/9c66624820b6"
       }
     ],
-    "lastChange": "2026-06-05T15:55:14.653Z",
+    "lastChange": "2026-06-21T16:07:04.239Z",
     "id": 2254
   },
   {
-    "name": "紫色晶石 v0.9.4.22 中文版",
+    "name": "紫色晶石 v0.9.4.24 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/c326859254c6"
       }
     ],
-    "lastChange": "2026-06-05T16:17:13.869Z",
+    "lastChange": "2026-06-21T16:20:39.454Z",
     "id": 2255
   },
   {
@@ -30539,14 +30543,14 @@
     "id": 2304
   },
   {
-    "name": "纹身清除模拟器 v20260610 中文版",
+    "name": "纹身清除模拟器 v1.0.008 中文版",
     "links": [
       {
         "name": "夸克网盘",
         "url": "https://pan.quark.cn/s/76bef6fdf252"
       }
     ],
-    "lastChange": "2026-06-13T13:09:19.294Z",
+    "lastChange": "2026-06-21T16:21:47.727Z",
     "id": 2305
   },
   {
@@ -31708,5 +31712,100 @@
     ],
     "lastChange": "2026-06-21T07:12:50.733Z",
     "id": 2385
+  },
+  {
+    "name": "（Switch）超时空之轮2 穿越时空2 中文v1.0.2+汉化补丁+金手指",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dd3ab6e20d49"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvdu1SC1C4mru4__EXdyoOmA1?pwd=keaf#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1I6iPfQfYGJmtP1H3CmnLmg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-21T11:21:45.170Z",
+    "id": 2386
+  },
+  {
+    "name": "以撒的结合：重生v1.9.7.15 中文汉化+全DLC+修改器",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b267cc1a1b9f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvek15GlK237rpAIy6UYfU8A1?pwd=nr8v#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Ch6Eune7Kk298r91xVD41Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-21T15:22:56.837Z",
+    "id": 2387
+  },
+  {
+    "name": "梦境搁浅 v1.0.2 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e22a359f9e79"
+      }
+    ],
+    "lastChange": "2026-06-21T15:29:49.651Z",
+    "id": 2388
+  },
+  {
+    "name": "感谢你的投递 v1.0.1 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d694ac958ad2"
+      }
+    ],
+    "lastChange": "2026-06-21T15:29:49.651Z",
+    "id": 2389
+  },
+  {
+    "name": "展翅翱翔 v1.8.1156 新加DLC 英国鸟类 豪华中文版 全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c06f0bcc370a"
+      }
+    ],
+    "lastChange": "2026-06-21T15:29:49.651Z",
+    "id": 2390
+  },
+  {
+    "name": "马塞利亚：过去的回响 v20260619 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/42992a22acb8"
+      }
+    ],
+    "lastChange": "2026-06-21T15:29:49.651Z",
+    "id": 2391
+  },
+  {
+    "name": "以太术士 v0.6.1.0 中文版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ea9ea368d1f7"
+      }
+    ],
+    "lastChange": "2026-06-21T15:29:49.651Z",
+    "id": 2392
   }
 ]
