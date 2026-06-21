@@ -1,7 +1,7 @@
 [
   {
     "name": "极限竞速：地平线6尊享版v379.933 全DLC+单独升级补丁+免登录离线补丁+v3版防闪退补丁+序章闪退补丁+联机补丁+完美614存档+修改器",
-    "shortName": "极限竞速|地平线6|v375.327",
+    "shortName": "极限竞速|地平线6|v379.933",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
       {
@@ -44,24 +44,25 @@
     "id": 2158
   },
   {
-    "name": "剑星 v1.4.1Fix3  voice38版 豪华中文全DLC+MOD合集（解压即玩版，非虚拟机，解除D加密）",
-    "shortName": "剑星|非虚拟机|v1.4.1Fix3",
+    "name": "剑星 v1.4.1 Fix5 voice38版 豪华中文全DLC+MOD合集（解压即玩版，非虚拟机，解除D加密）",
+    "shortName": "剑星|非虚拟机|v1.4.1Fix5",
     "cover": "https://ts4.tc.mm.bing.net/th/id/OIP-C.15yD-X-Ui5U9frL01BrmBQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3533676829bf"
+        "url": "https://pan.quark.cn/s/d432eb899da4"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOmwcGL9V_yaUatTkDiOivGgA1?pwd=724g#"
+        "url": "https://pan.xunlei.com/s/VOvdMlaD3hhBGVno5GEs6bimA1?pwd=rfd8#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/18_i2FWE7sOYbQvQT5jl4IQ?pwd=8888"
+        "url": "https://pan.baidu.com/s/1G4bnJ_oxDHSbITr1EM7rQw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-30T15:10:28.094Z",
+    "lastChange": "2026-06-21T08:51:40.876Z",
     "id": 2019
   },
   {
@@ -31666,5 +31667,37 @@
     ],
     "lastChange": "2026-06-20T05:42:53.590Z",
     "id": 2383
+  },
+  {
+    "name": "（PS5）死亡搁浅：导演剪辑版PPSA01968（v01.004）2.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fc918b917966"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1BxyA7jf-rrS0mPJKK-Og8g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-21T04:56:31.895Z",
+    "id": 2384
+  },
+  {
+    "name": "（PS5）人中之龙0：誓约的场所导演剪辑版PPSA31327（v01.015.000）10.xx降级补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5819b7669693"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IQyIaIgjbkhsVNUIqTxFHA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-21T07:12:50.733Z",
+    "id": 2385
   }
 ]
