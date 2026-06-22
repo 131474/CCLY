@@ -175,7 +175,7 @@
     "id": 35
   },
   {
-    "name": "哥特王朝：重制版v168781官方中文全DLC+原声+单独补丁 解压即玩",
+    "name": "哥特王朝：重制版v169494官方中文全DLC+原声+单独补丁 解压即玩",
     "shortName": "哥特王朝重制版|v168089",
     "cover": "https://img.3dmgame.com/uploads/images/news/20241202/1733104733_669960.jpg",
     "links": [
@@ -193,7 +193,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-13T12:15:14.664Z",
+    "lastChange": "2026-06-22T14:56:12.982Z",
     "id": 2256
   },
   {
@@ -31807,5 +31807,77 @@
     ],
     "lastChange": "2026-06-21T15:29:49.651Z",
     "id": 2392
+  },
+  {
+    "name": "（PS5）刺客信条：英灵殿PPSA01490（v01.070）4.xx系统 新增全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d0cd02c9eeda"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CFdDHiS1Vtq7iS8AgRsZZw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-22T10:35:32.989Z",
+    "id": 2393
+  },
+  {
+    "name": "（Switch）圣兽之王官方中文本体+1.0.5升补+2DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/eb88eccc6732"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvjJ2uGq2-n7XvXusE_5mYuA1?pwd=zx39#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10Wf7Y56WYwkvLDKqaQ7PbA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-22T12:32:51.154Z",
+    "id": 2394
+  },
+  {
+    "name": "（PS5）狙击精英：抵抗豪华版PPSA17232（v01.010.000）4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1a657564dc05"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1J968BXpIedHd_nmPGXg-ug?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-22T13:42:26.941Z",
+    "id": 2395
+  },
+  {
+    "name": "超级变色龙v1.6.1 联机版 官方中文 休闲派对游戏",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d1261f8172fc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvjsbq9XIWA_lDLrb45fEN8A1?pwd=3pyh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MNewepx3FxKhFWh_Bw9CDg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-22T15:14:57.492Z",
+    "id": 2396
   }
 ]
