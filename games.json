@@ -10328,16 +10328,25 @@
     "id": 711
   },
   {
-    "name": "冰汽时代2 v1.5.1 加破碎国度DLC 豪华中文版 全DLC",
+    "name": "冰汽时代2官方中文v1.6.0全DLC+灰烬誓约DLC",
     "shortName": "冰汽时代2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/22907840cd78"
+        "url": "https://pan.quark.cn/s/620452297670"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvsi2qMPVOoIiSJ8fn_Vf_3A1?pwd=sq8b#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/114emEYOLMR9keoxExlVrKQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-24T08:24:00.897Z",
     "id": 712
   },
   {
@@ -25804,23 +25813,23 @@
     "id": 1950
   },
   {
-    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者 v1.4.1官方中文（PC+手机直装版）",
+    "name": "吸血鬼爬行者：屠戮地牢的吸血鬼幸存者v1.5.1官方中文（PC+手机直装版）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ba2d022fe7f6"
+        "url": "https://pan.quark.cn/s/6e49f7feb645"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuWcQO_Fxc1cDGCs3u2rThQA1?pwd=k7q4#"
+        "url": "https://pan.xunlei.com/s/VOvsd0wXQliM3s2hcNmmEk21A1?pwd=bxa9#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1VxaUSOLgrXAqEj2PJZIziw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1DMSUfui2JsznPp41rRbfjA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-07T11:02:15.788Z",
+    "lastChange": "2026-06-24T08:04:30.986Z",
     "id": 1952
   },
   {
@@ -31150,19 +31159,19 @@
     "id": 2348
   },
   {
-    "name": "（PS5）仁王 3 Nioh 3  PPSA32786（v01.040.020）10.xx系统+汉化补丁",
+    "name": "（PS5）仁王 3 Nioh 3  PPSA32786（v01.040.020）5.xx系统+降级补丁",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/894ca8121654"
+        "url": "https://pan.quark.cn/s/b6b61ea81452"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1k9usikSJWSi7OpGREXZBBQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Sa4KFCO5L50oKTkvj7hf7A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-22T05:24:36.457Z",
+    "lastChange": "2026-06-24T09:02:26.528Z",
     "id": 2349
   },
   {
@@ -32031,5 +32040,41 @@
     ],
     "lastChange": "2026-06-23T16:32:55.866Z",
     "id": 2405
+  },
+  {
+    "name": "（PS5）狙击精英5：豪华版PPSA01685（01.004）4.xx系统 新增全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/718aa851c308"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12kS99ZMrAHI_m2VrgYi8lQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-24T06:11:23.368Z",
+    "id": 2406
+  },
+  {
+    "name": "符文世界：龙之荒野v214835官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/95b6ea42982e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvspD5nmfSyTlSGWYMv9l2vA1?pwd=vuxr#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10MWDqQnnUzyymt3WR-y8kw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-24T08:55:09.664Z",
+    "id": 2407
   }
 ]
