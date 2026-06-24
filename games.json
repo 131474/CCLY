@@ -7553,7 +7553,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2031豪华中文全DLC+丛林DLC",
+    "name": "潜水员戴夫v1.0.6.2032豪华中文全DLC+丛林DLC",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7571,7 +7571,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-22T05:33:55.359Z",
+    "lastChange": "2026-06-24T16:10:15.423Z",
     "id": 508
   },
   {
@@ -32076,5 +32076,41 @@
     ],
     "lastChange": "2026-06-24T08:55:09.664Z",
     "id": 2407
+  },
+  {
+    "name": "（PS5）JOJO 的奇妙冒险：群星之战重制版PPSA04220（v2.330.000 DLC）4.xx系统",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6b5f7b6e81a2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Oh3V8v6LIp6-cRjfffryPw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-24T11:11:17.689Z",
+    "id": 2408
+  },
+  {
+    "name": "霍格沃茨之遗Voices38 豪华版 v1613387 官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/246b2a9cca39"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOvuHk8K3ZMlp8eNOYFnOjPFA1?pwd=hwzr#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-Bj-MoWC8eN1unMGrD_LRQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-24T15:42:19.332Z",
+    "id": 2409
   }
 ]
