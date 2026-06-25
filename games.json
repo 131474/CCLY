@@ -7553,7 +7553,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2032豪华中文全DLC+丛林DLC",
+    "name": "潜水员戴夫v1.0.6.2037豪华中文全DLC+丛林DLC",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7571,7 +7571,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-24T16:10:15.423Z",
+    "lastChange": "2026-06-25T10:15:05.290Z",
     "id": 508
   },
   {
@@ -32128,5 +32128,37 @@
     ],
     "lastChange": "2026-06-25T04:31:31.746Z",
     "id": 2410
+  },
+  {
+    "name": "（PS5）哈迪斯 Hades PPSA03355（v01.003）2.xx系统以上",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fb1d88d78330"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1y4qSNeCNkdThBYt8bIUusg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-25T07:48:48.991Z",
+    "id": 2411
+  },
+  {
+    "name": "（PS5）恐龙猎人三部曲 Turok Trilogy Bundle",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/71447dd6cbc2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1kRrcrGpMbjObB7luwASB7A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-25T08:01:06.071Z",
+    "id": 2412
   }
 ]
