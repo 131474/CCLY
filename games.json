@@ -9314,20 +9314,25 @@
     "id": 631
   },
   {
-    "name": "逃离鸭科夫v1.3.13官方中文（手机+电脑）+mod大合集+修改器+联机补丁",
+    "name": "逃离鸭科夫v2.3.20官方中文（手机+电脑）+mod大合集+修改器+联机补丁",
     "shortName": "逃离鸭科夫v",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fc7d04d58158"
+        "url": "https://pan.quark.cn/s/08cde7d82cac"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOh_AoqXTBQpcyt7Lae3Qct4A1?pwd=dvvt#"
+        "url": "https://pan.xunlei.com/s/VOw7IPy4vnvGZv65DbxUcH81A1?pwd=8xey#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WppZrKbMYSKMgA42Vxx1vw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-27T09:00:21.287Z",
     "id": 632
   },
   {
@@ -25638,18 +25643,23 @@
     "id": 1935
   },
   {
-    "name": "（Switch）终极幸运之塔 美区中文v1.0.35s",
+    "name": "（Switch）终极幸运之塔 官方中文本体+v1.0.14升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ad9bdb312e5b"
+        "url": "https://pan.quark.cn/s/99b796d13f4d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOw2c_NzgK9k1Gj-Oo5NECEcA1?pwd=nr9y#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1rsIvmhuh0WRIrSWi8uRZyw?pwd=8888"
+        "url": "https://pan.baidu.com/s/1oEVSVNscfymWx0BdI2wwuw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-20T06:24:59.713Z",
+    "lastChange": "2026-06-26T11:16:46.523Z",
     "id": 1936
   },
   {
@@ -32350,5 +32360,57 @@
     ],
     "lastChange": "2026-06-26T10:35:51.753Z",
     "id": 2424
+  },
+  {
+    "name": "魔法门之阿卡迪亚守护者v1.9官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/95c62c5023b5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOw7KHtzOEN87lKsN8B39Wr5A1?pwd=jixi#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Y331Ld1cnXpgvTHyjSH9jw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T09:07:46.591Z",
+    "id": 2425
+  },
+  {
+    "name": "（PS5）漫威蜘蛛侠 复刻版PPSA01467（v01.008.001）4.xx系统以上",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/117d04c59a35"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dybLl6Wii10beqvV7EkpGA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T09:17:53.768Z",
+    "id": 2426
+  },
+  {
+    "name": "（PS5）地平线：零之曙光重制版PPSA13428（v01.008.001）4.xx系统以上",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/480b4b796611"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WKHwRjeU7HLLZQD25gHe4Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T09:43:51.654Z",
+    "id": 2427
   }
 ]
