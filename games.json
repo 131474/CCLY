@@ -8948,7 +8948,7 @@
     "id": 610
   },
   {
-    "name": "（Switch）潜水员戴夫官方中文1.0.6.1161+6DLC+丛林DLC",
+    "name": "（Switch）潜水员戴夫官方中文v1.0.6.1182+6DLC+丛林DLC+金手指",
     "shortName": "潜水员戴夫中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -8966,7 +8966,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-18T10:50:18.069Z",
+    "lastChange": "2026-06-27T11:24:15.665Z",
     "id": 611
   },
   {
@@ -22374,23 +22374,23 @@
     "id": 1659
   },
   {
-    "name": "街头霸王6 v2.0201.000 豪华中文版 全DLC（VBS一键启动版）",
+    "name": "街头霸王6 第4年战士版官方中文 v2.0301.000 全DLC（VBS一键启动版）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/bfba9dacbbae"
+        "url": "https://pan.quark.cn/s/795fa77057a3"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOps5pBgEHnRyf-WirALjLVNA1?pwd=xauf#"
+        "url": "https://pan.xunlei.com/s/VOw83rZxVSjBheiZuQnAewzzA1?pwd=mzrp#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1tSF2M0jnZpcEcnr1MEhc0Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1bHAnOHNzP6HJcGRnuq-s3Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-10T16:15:18.132Z",
+    "lastChange": "2026-06-27T12:35:59.430Z",
     "id": 1660
   },
   {
@@ -28414,7 +28414,7 @@
     "id": 2156
   },
   {
-    "name": "平行人生v0.1.3b.20057官方中文全DLC",
+    "name": "平行人生 v0.1.4b.20189 官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -28430,7 +28430,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-15T15:56:20.007Z",
+    "lastChange": "2026-06-27T16:33:44.563Z",
     "id": 2157
   },
   {
@@ -32412,5 +32412,61 @@
     ],
     "lastChange": "2026-06-27T09:43:51.654Z",
     "id": 2427
+  },
+  {
+    "name": "（PS5）战锤西格玛时代：毁灭之境PPSA06927（v01.007）7.xx系统以上",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/56103bd51e6f"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1NsRe_cyD86m1_NTfJ1D5wA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T10:29:55.883Z",
+    "id": 2428
+  },
+  {
+    "name": "（Switch）优米雅的炼金工房 追忆之炼金术士与幻创之地港版中文本体+1.6.0升补+29DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/20e0e40d28de"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOw8JdmuHqYFsm49n2taylvrA1?pwd=eqv6#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/14XXd5Je8gy297SbyfPgJNQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T14:00:56.298Z",
+    "id": 2429
+  },
+  {
+    "name": "（Switch）恶魔学校官方中文本体+1.10.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cf3331d123bf"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOw8Sn1b0PX7D-20T6S_KrNWA1?pwd=ffy7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IiMWDHZAiVfjSr4B8_pSGA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-27T14:35:10.497Z",
+    "id": 2430
   }
 ]
