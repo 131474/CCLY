@@ -6163,23 +6163,23 @@
     "id": 403
   },
   {
-    "name": "七日杀 v2.6.b14 豪华中文版 全DLC",
+    "name": "七日杀 v3.0.0 豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4d5f01505608"
+        "url": "https://pan.quark.cn/s/a1165b4ccdb9"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpsCvcraBnzXYmCvlTWZqo9A1?pwd=xbzw#"
+        "url": "https://pan.xunlei.com/s/VOwO0M_qFqdbkv9kokwMp5X1A1?pwd=puie#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ysOgmqAPWPcVRqtUgxk2PQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1YRXEYj-LGEDdYycE_9JzqA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-10T16:27:30.522Z",
+    "lastChange": "2026-06-30T14:53:57.052Z",
     "id": 404
   },
   {
@@ -32728,5 +32728,25 @@
     ],
     "lastChange": "2026-06-30T11:32:49.929Z",
     "id": 2440
+  },
+  {
+    "name": "（Switch）屋顶与小巷 跑酷游戏官方中文本体+1.09升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ac488612125e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwNtP5wsuyjNbxA3u4S1b23A1?pwd=9xnh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qz1wnnkawS9un5oxSn9ZLQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-30T14:19:11.456Z",
+    "id": 2441
   }
 ]
