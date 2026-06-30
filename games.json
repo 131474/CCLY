@@ -19889,16 +19889,25 @@
     "id": 1464
   },
   {
-    "name": "马里奥赛车8 豪华中文+v3.0.5+1DLC+20个amiibo+全解锁存档",
+    "name": "（Switch）马里奥赛车8 官方中文+v3.0.5+1DLC+20个amiibo+全解锁存档",
     "shortName": "马里奥赛车8",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f33fd5e6757f"
+        "url": "https://pan.quark.cn/s/f81fce491e44"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwMd88rgAscuRalY5xra5CyA1?pwd=enzm#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1bxDSU2bVACs4HhgKIzsUIg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-06-30T09:40:39.861Z",
     "id": 1465
   },
   {
@@ -28748,23 +28757,23 @@
     "id": 2178
   },
   {
-    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.3升补",
+    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.4升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d914dfe13de9"
+        "url": "https://pan.quark.cn/s/25d6eee0db0c"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtiivxkQH7HpHLZ7VNM6hQyA1?pwd=2emd#"
+        "url": "https://pan.xunlei.com/s/VOwN-OFRYappwAuFQPbEFw2GA1?pwd=5wgn#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1PUf_iGaBUZhby3Mo5O-Gqw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Xl1akty-XzwZNcssseAGeA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-16T06:01:17.887Z",
+    "lastChange": "2026-06-30T10:10:14.355Z",
     "id": 2179
   },
   {
@@ -32650,5 +32659,65 @@
     ],
     "lastChange": "2026-06-29T10:05:20.732Z",
     "id": 2437
+  },
+  {
+    "name": "（Switch）姆明 暖心冬日官方中文本体+1.0.5升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f128d12c470e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwLu4scZaiuPw_7faUE2is1A1?pwd=3spn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UfhXyg3Ep2uCxIDFQT-m6A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-30T05:08:54.278Z",
+    "id": 2438
+  },
+  {
+    "name": "（Switch）东方夜雀食堂官方中文本体+1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/55998a0a88b5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwN5OlKHI1PwTs3lAC_ZR-VA1?pwd=s8jh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1N4nKUnUaTHsa09-HBM9qFQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-30T10:36:38.945Z",
+    "id": 2439
+  },
+  {
+    "name": "（Switch）咩咩启示录官方中文本体+1.5.27升补+6DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/27d124de90b0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwNE4q2wdW-IYI0AyYKRDX4A1?pwd=immn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CwGNrDVqwXzFPEIIb8KodA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-06-30T11:32:49.929Z",
+    "id": 2440
   }
 ]
