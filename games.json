@@ -10249,24 +10249,25 @@
     "id": 704
   },
   {
-    "name": "(Switch)漫威宇宙入侵官方中文本体+1.0.6升补+1DLC+解锁中文MOD",
+    "name": "(Switch)漫威宇宙入侵官方中文本体+1.0.7升补+1DLC",
     "shortName": "漫威宇宙入侵",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9c96b8460bbb"
+        "url": "https://pan.quark.cn/s/7ff0e7b31578"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOt59722Ge6ObNigmOdhPc6bA1?pwd=e9zm#"
+        "url": "https://pan.xunlei.com/s/VOwWnmXzTZX27I_2RZr6uaW-A1?pwd=emes#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HmL6PXZAjOzhn7Nl8h4aRg?pwd=8888"
+        "url": "https://pan.baidu.com/s/15DMcQZOvh3LovosM-r-ngQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-20T16:20:48.070Z",
+    "lastChange": "2026-07-02T07:51:49.009Z",
     "id": 705
   },
   {
@@ -29737,23 +29738,23 @@
     "id": 2238
   },
   {
-    "name": "（Switch）俄罗斯方块大师4官方中文v2.1.2",
+    "name": "（Switch）俄罗斯方块大师4官方中文v2.2.0.1",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7c7577673f8a"
+        "url": "https://pan.quark.cn/s/d5cbb6ce4a52"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuL0Sjn-YwafG4fMsvuP7UFA1?pwd=w2ut#"
+        "url": "https://pan.xunlei.com/s/VOwW4_SRZh9-7zHxtEJ8yTVoA1?pwd=iesc"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/11dz-lXO0hPiXx_JRnFQKJA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Y-2dJ9GBcBdVhT8XreT_8Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-05T04:27:24.835Z",
+    "lastChange": "2026-07-02T04:34:19.119Z",
     "id": 2239
   },
   {
@@ -32827,5 +32828,45 @@
     ],
     "lastChange": "2026-07-01T08:47:29.469Z",
     "id": 2444
+  },
+  {
+    "name": "地产大亨 星球大战 正邪交锋Build.23705706官方中文全DLC 绕D版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a33da114f4de"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwXClTYItvrjtoIuRcYteKSA1?pwd=emp6#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GcIfbC8zEx2EbufylR5bCg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-02T09:44:43.391Z",
+    "id": 2445
+  },
+  {
+    "name": "（Switch）可爱特攻队 自由前线官方中文本体+1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1fe0900b61eb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwXJeyylTh_0yp4MZDh6s6GA1?pwd=54g2#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13HMu72--83zNqvwDA2HxVQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-02T10:22:23.870Z",
+    "id": 2446
   }
 ]
