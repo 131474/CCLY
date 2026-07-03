@@ -2656,16 +2656,25 @@
     "id": 154
   },
   {
-    "name": "星砂岛 v1.0.0.10246 豪华中文版 全DLC",
+    "name": "星砂岛 v1.0.0.12112.207575 豪华中文全DLC",
     "shortName": "星砂岛",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/0a7af53351ec"
+        "url": "https://pan.quark.cn/s/487bd9125418"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwccCyLJcM_-Cbr4_sPrHosA1?pwd=5x7y#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iMY1176FHjdAgbhcNJxGHg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-27T16:20:14.014Z",
+    "lastChange": "2026-07-03T15:49:45.424Z",
     "id": 155
   },
   {
@@ -32930,5 +32939,45 @@
     ],
     "lastChange": "2026-07-03T08:39:56.686Z",
     "id": 2449
+  },
+  {
+    "name": "（Switch）圣铠 冰魂官方中文本体+v1.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6655e30db250"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwcJrISlTh_0yp4MZDjn-7HA1?pwd=pf9t#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1h7MrA-JG7C5wDoWftRc98Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-03T14:13:49.029Z",
+    "id": 2450
+  },
+  {
+    "name": "（Switch）全民高尔夫 环球之旅 官方中文v1.1.10+2DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d659ccf97065"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwcWWT1JcM_-Cbr4_sPmcD_A1?pwd=zg5j#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jnMZk3aczphD7q3OmTRfUA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-03T15:09:39.539Z",
+    "id": 2451
   }
 ]
