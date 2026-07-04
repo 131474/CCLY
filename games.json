@@ -7591,7 +7591,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2044豪华中文全DLC+丛林DLC",
+    "name": "潜水员戴夫v1.0.6.2048豪华中文全DLC+丛林DLC",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7609,7 +7609,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-01T16:05:19.050Z",
+    "lastChange": "2026-07-04T05:59:34.917Z",
     "id": 508
   },
   {
@@ -32979,5 +32979,25 @@
     ],
     "lastChange": "2026-07-03T15:09:39.539Z",
     "id": 2451
+  },
+  {
+    "name": "（Switch）地产大亨 星球大战正邪交锋官方中文本体+v1.0.2升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/230f9ba1231e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwfPaftGELMukwoQve-s97RA1?pwd=4af9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fx0V8fhO4_1tzCp7AZlehQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-04T04:38:17.185Z",
+    "id": 2452
   }
 ]
