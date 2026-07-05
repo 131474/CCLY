@@ -15314,16 +15314,25 @@
     "id": 1095
   },
   {
-    "name": "骑马与砍杀：战团 v2.069 豪华中文收藏版 全DLC",
+    "name": "骑马与砍杀 战团v2.072官方中文全DLC免安装版+GOG安装版",
     "shortName": "骑马与砍杀战",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/87410a130e3b"
+        "url": "https://pan.quark.cn/s/f6f2d4a0149a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwlCrB3pRUAX3pVvJi6FjbvA1?pwd=r3yz#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dk1-VHAm60W2UccFk4WkXg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-05T07:39:44.331Z",
     "id": 1096
   },
   {
@@ -25569,14 +25578,23 @@
     "id": 1921
   },
   {
-    "name": "原子之心 v2026.4.16  新加DLC 血染水晶 豪华中文版 全DLC+神器（VBS一键启动版）",
+    "name": "原子之心voice38版 非虚拟机Build.23009721+水晶之血DLC 解压即玩",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a4838ed13626"
+        "url": "https://pan.quark.cn/s/149a11891e4f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwlFC3XVLqCz_21nMH1bhrKA1?pwd=igd8#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Zi57RZe9YSTbzS-8r8BBWA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-18T09:13:35.888Z",
+    "lastChange": "2026-07-05T07:50:43.147Z",
     "id": 1922
   },
   {
@@ -29180,23 +29198,23 @@
     "id": 2202
   },
   {
-    "name": "（Switch）流明物语 特雷的回忆官方中文本体+1.0.0.2升补+1DLC",
+    "name": "（Switch）流明物语 特雷的回忆官方中文本体+1.0.0.3升补+1DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9a0b3b26f133"
+        "url": "https://pan.quark.cn/s/a78c35e13fc3"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtxULekXeTPKjoQ38Sk9MvwA1?pwd=g5e5#"
+        "url": "https://pan.xunlei.com/s/VOwk_WeURPkAZUZmp24GTwsNA1?pwd=tftd#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/14KNbRlvfxr2AjufSi26W4Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ucMZcZ7b_4PbofRLdLrBkw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-21T13:05:03.688Z",
+    "lastChange": "2026-07-05T04:43:29.288Z",
     "id": 2203
   },
   {
@@ -33048,5 +33066,45 @@
     ],
     "lastChange": "2026-07-04T16:27:53.049Z",
     "id": 2454
+  },
+  {
+    "name": "（Switch）幻想少女大战 流浪者之梦原汁日文版本体+1.2.5升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/82d1c2a21264"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwkgpXQCjUwP0MzbNWHq6vJA1?pwd=5s84#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12Mm6VAB2l4mvSRN5K6scWw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-05T05:15:56.191Z",
+    "id": 2455
+  },
+  {
+    "name": "（Switch）三角符文1-5章v1.06 Deltarune Chap. 1-5章中文汉化版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e4f80ea7f0f5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwkqzu2bRZX5ytmeoEkCmKfA1?pwd=pv5t#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1v9cLDgaDHYLJpeXij32-Sg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-05T06:01:27.429Z",
+    "id": 2456
   }
 ]
