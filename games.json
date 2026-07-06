@@ -10312,20 +10312,25 @@
     "id": 705
   },
   {
-    "name": "（Switch）双截龙 再临中文+N1.30",
+    "name": "（Switch）双截龙 再临官方中文+N1.50升补",
     "shortName": "双截龙再临中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c379dab63cdf"
+        "url": "https://pan.quark.cn/s/ca0647642840"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgz4TO2JYMWIdc4c14IpEwxA1?pwd=5g2e#"
+        "url": "https://pan.xunlei.com/s/VOwrIAS9QJKj7u-NHrWoWk4uA1?pwd=nkfm#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1n8BsFNIEwK4Y1Hxme6gHSg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-06T12:01:01.870Z",
     "id": 706
   },
   {
@@ -22488,23 +22493,23 @@
     "id": 1657
   },
   {
-    "name": "超合金冲击 v0.43 中文版 支持者DLC",
+    "name": "超合金冲击 支持者版v0.52 官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/de72c2f9a655"
+        "url": "https://pan.quark.cn/s/f714206cc99d"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpmPYucsiWZln7-5yyUP58OA1?pwd=anva#"
+        "url": "https://pan.xunlei.com/s/VOws6lzqPoWvwwKlOfwJsaEOA1?pwd=ghxf#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HjSfpL0FJsYI1v0j8aKyAw?pwd=8888",
+        "url": "https://pan.baidu.com/s/17C3l5ETfJtvOnQfN141f6Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-24T15:10:09.603Z",
+    "lastChange": "2026-07-06T15:50:35.088Z",
     "id": 1658
   },
   {
@@ -33136,5 +33141,25 @@
     ],
     "lastChange": "2026-07-05T06:01:27.429Z",
     "id": 2456
+  },
+  {
+    "name": "终结者2D 无命运Build.24040403豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8b2d412356d4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwrUH2JjgZrrcOkV4qrXTKhA1?pwd=kwxn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1EJACzhWXgohN-zjkXYZIdA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-06T12:55:43.381Z",
+    "id": 2457
   }
 ]
