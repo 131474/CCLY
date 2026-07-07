@@ -370,24 +370,25 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.24官方中文+全DLC+联机补丁",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.31官方中文全DLC+联机补丁",
     "shortName": "魔法门英雄无敌|上古纪元|0.80.24",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/355c72d331a5"
+        "url": "https://pan.quark.cn/s/45a008d11aa0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOs9ufhsyDLaKkFqXdEXpz4ZA1?pwd=i7gr#"
+        "url": "https://pan.xunlei.com/s/VOwvIiCig8VLX80X6gzQTgxYA1?pwd=6sqi#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1w7aX2r-zHSd9wMuGJTCUFg?pwd=8888"
+        "url": "https://pan.baidu.com/s/1008faOK3tCq6XkioSdLodw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-19T10:51:34.471Z",
+    "lastChange": "2026-07-07T06:41:11.262Z",
     "id": 224
   },
   {
@@ -3743,25 +3744,25 @@
     "id": 230
   },
   {
-    "name": "（Switch）闪电十一人 英雄们的胜利之路 官方中文v6.0.0+2DLC+DLC友情巨浪",
+    "name": "（Switch）闪电十一人 英雄们的胜利之路 官方中文本体+v7.0.0+2DLC",
     "shortName": "闪电十一人英",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6a1fd41870b1"
+        "url": "https://pan.quark.cn/s/437fe0f4900b"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuvS_ePZE9AWF5hNg5qJma6A1?pwd=xba2#"
+        "url": "https://pan.xunlei.com/s/VOwvNfTnDUEska2K1qYaeIIDA1?pwd=t42y#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Zjk_nEZPsK148LmvVoAeXg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1chgKsu7FUiHRNNTWOVhisQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-12T11:04:34.036Z",
+    "lastChange": "2026-07-07T07:03:28.429Z",
     "id": 231
   },
   {
@@ -33161,5 +33162,25 @@
     ],
     "lastChange": "2026-07-06T12:55:43.381Z",
     "id": 2457
+  },
+  {
+    "name": "（Switch）斩妖除魔 黄泉1984 日文版本体+v1.4.0升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fe09582f549b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwv91j-ELzjvewOnaPgxwGEA1?pwd=nw7d#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mEdghJyTpvVkfrnibey9kA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-07T05:59:30.608Z",
+    "id": 2458
   }
 ]
