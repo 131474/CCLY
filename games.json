@@ -17985,16 +17985,25 @@
     "id": 1310
   },
   {
-    "name": "龙之信条2 v3.002.000 豪华中文版 全DLC （VBS一键启动版）",
+    "name": "龙之信条2豪华中文v3.1.1.0全DLC+预购特典 绕D版",
     "shortName": "龙之信条2中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/60f8402cd3e3"
+        "url": "https://pan.quark.cn/s/d55e5552f56f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwwa2eE4QHbvMruJL1JyxfGA1?pwd=yg8q#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QDU8uwLi-BOQZNCwdJuJJw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-26T11:56:39.715Z",
+    "lastChange": "2026-07-07T12:55:52.235Z",
     "id": 1311
   },
   {
@@ -33182,5 +33191,45 @@
     ],
     "lastChange": "2026-07-07T05:59:30.608Z",
     "id": 2458
+  },
+  {
+    "name": "符文工厂3（Rune Factory 3 Special）豪华中文v1.0.4全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/db0c586c10a4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwx5U6mk4yZCvApmoWrZplhA1?pwd=722x#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jxPgqoBLsKWYB3hzDngnqg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-07T15:08:43.092Z",
+    "id": 2459
+  },
+  {
+    "name": "（Switch）完蛋!我被美女包围了2官方中文本体+1.16.0.233升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/718a18c90a4c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOwxCtCroiSc3FR3izc9hHsZA1?pwd=fvyh#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1H0eAer-M1kWAy0HvxE-BfA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-07T15:35:02.219Z",
+    "id": 2460
   }
 ]
