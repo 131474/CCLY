@@ -13250,25 +13250,25 @@
     "id": 927
   },
   {
-    "name": "闪电十一人 英雄们的胜利之路 v6.0.1豪华中文全DLC+DLC友情巨浪+单独升级补丁",
+    "name": "闪电十一人 英雄们的胜利之路 v7.0.1豪华中文全DLC+迈向荣耀的挑战者们DLC+单独升级补丁",
     "shortName": "PC闪电十一",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4ec2498998c4"
+        "url": "https://pan.quark.cn/s/697eca0d4d74"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOt3YJKy-jp18U3Qsc_fAZOpA1?pwd=udnz#"
+        "url": "https://pan.xunlei.com/s/VOx0AEc-0UDakDZUCd7hlg6kA1?pwd=ut3w#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1U3g9AqBeRpsii13QjQ0Eqw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1JD5q195fJGY5p7ZUmYhHCw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-12T05:00:09.708Z",
+    "lastChange": "2026-07-08T10:01:55.575Z",
     "id": 928
   },
   {
@@ -21793,16 +21793,25 @@
     "id": 1602
   },
   {
-    "name": "龙珠：超宇宙2 v1.24.01 新加DLC包DAIMA  豪华中文版 全DLC",
+    "name": "龙珠：超宇宙2豪华中文 v1.26.00全DLC+未来之歌第4章DLC+联机补丁+XG器",
     "shortName": "龙珠超宇宙2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f5b1c56cec06"
+        "url": "https://pan.quark.cn/s/4b092876656b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx040DY_So08vWJfiyc8m23A1?pwd=pyr4#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15hhJzFHAbhckxDv7Wi7eug?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-07-08T09:34:50.213Z",
     "id": 1603
   },
   {
@@ -29784,23 +29793,23 @@
     "id": 2234
   },
   {
-    "name": "（Switch）热血西游记 天竺奇谭v1.0.2 港版中文",
+    "name": "（Switch）热血西游记 天竺奇谭官方中文本体+v1.0.3升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/357c08d2b7a8"
+        "url": "https://pan.quark.cn/s/753b0bcc40eb"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuFe5szdziwqM1mQ8MMBggEA1?pwd=5wwr#"
+        "url": "https://pan.xunlei.com/s/VOx0Jff4dcjBCiK_P20Rl0NgA1?pwd=45nf#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1re6us0Ldwh7iwWSU5kEESQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1L32kTyq7e4fQs0FMvipSHQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-04T15:01:54.372Z",
+    "lastChange": "2026-07-08T10:43:13.042Z",
     "id": 2235
   },
   {
@@ -33294,5 +33303,25 @@
     ],
     "lastChange": "2026-07-08T07:48:55.995Z",
     "id": 2462
+  },
+  {
+    "name": "怒之铁拳2名将版 经典怀旧游戏",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4adc3519e7f7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx0HvqMlCz6vt25hzchRhH0A1?pwd=veph#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KNyvju7EjwediBUHeGPatw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-08T10:36:31.306Z",
+    "id": 2464
   }
 ]
