@@ -1,5 +1,27 @@
 [
   {
+    "name": "（Switch）数码宝贝物语 时空异客官方中文 数位终极版v1.2.1+11DLC",
+    "shortName": "数码宝贝物语|时空异客|NS终极版",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251107/10/26/45404d342cbd01ce421889563d229a10.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e654fcba9225"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx1_xv10wgMo_64jgN0E5UVA1?pwd=git6#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1hPxZK4WVWZfY6URknu5mLA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-08T17:06:21.369Z",
+    "id": 2283
+  },
+  {
     "name": "刺客信条 黑旗 记忆重置v7.01豪华中文全DLC+预购特典 绕D版",
     "shortName": "刺客信条黑旗|记忆重置|v7.01",
     "cover": "https://img.3dmgame.com/uploads/images/thumbztfirst/2026/0424/1776992422942.jpg",
@@ -30428,26 +30450,6 @@
     ],
     "lastChange": "2026-06-09T15:12:07.976Z",
     "id": 2281
-  },
-  {
-    "name": "（Switch）数码宝贝物语 时空异客 体验版 官方中文",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/900279d204e1"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuhM8jAKrQpolOq1ik7tFeEA1?pwd=dxw5#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/11d-uTivgY-BUSs3liU9XCg?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-06-09T17:11:28.238Z",
-    "id": 2283
   },
   {
     "name": "（Switch）星之海洋2 第二次故事v1.1.0+5DLC+国语配音完整版",
