@@ -20888,16 +20888,25 @@
     "id": 1533
   },
   {
-    "name": "漫威蜘蛛侠 重制版官方中文V2.1012.0.0+预购奖励+全DLC",
+    "name": "漫威蜘蛛侠：重制版 v4.630.0.0官方中文全DLC 支持最新FSR帧生成",
     "shortName": "漫威蜘蛛侠重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/03a8947c76a1"
+        "url": "https://pan.quark.cn/s/f9194e0333e7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx6h4J-Qu1Ce1T_-Fp00wifA1?pwd=effu#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1L5aPdAomJBEpstwjf_hY7g?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-07-09T16:27:31.871Z",
     "id": 1534
   },
   {
@@ -21864,25 +21873,25 @@
     "id": 1605
   },
   {
-    "name": "漫威蜘蛛侠2官方中文V1.526.0.0Fix+全DLC+预购奖励+多国语言包+单独升级补丁+完美存档+XG器",
+    "name": "漫威蜘蛛侠2官方中文v2.629.0.0+全DLC+预购奖励+多国语言包+单独升级补丁+完美存档+XG器",
     "shortName": "漫威蜘蛛侠2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8b7ead1dee22"
+        "url": "https://pan.quark.cn/s/4580909a3275"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOub30eERkl21JldrNxSJcMtA1?pwd=6akn#"
+        "url": "https://pan.xunlei.com/s/VOx6NE6K_fjHBdXmvrVcvYgYA1?pwd=n6jq#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1u09xzcB5i4pieXU_apEWiQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1g4NYTrDtBPQ46xuyORAmmA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-08T12:44:51.050Z",
+    "lastChange": "2026-07-09T14:57:22.661Z",
     "id": 1606
   },
   {
@@ -33359,5 +33368,25 @@
     ],
     "lastChange": "2026-07-09T09:46:11.525Z",
     "id": 2467
+  },
+  {
+    "name": "（Switch）月光岭物语官方中文本体+1.1.30补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ad02b4a3e95c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx6iNAr2zREw7pkB8aTkTHNA1?pwd=u5u7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1OwenqAFwCwzxdqvwGSB0vQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-09T16:33:49.048Z",
+    "id": 2469
   }
 ]
