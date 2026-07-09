@@ -1,5 +1,27 @@
 [
   {
+    "name": "碧蓝幻想 Relink 特别版v2.0.2官方中文全DLC+无尽黄昏DLC",
+    "shortName": "碧蓝幻想|Relink|v2.0.2",
+    "cover": "https://img1.dancihu.com/2024-02-20/29a11b89-fe8f-e794-1369-d2a49d172bb6.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5ecffef60707"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx5KBLIdgTCPIXSqUEPP1hnA1?pwd=f2i5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1eL0Ao7R4FtyJ9aM63JHXCg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-09T10:04:24.293Z",
+    "id": 2468
+  },
+  {
     "name": "数码宝贝物语 时空异客终极版v20260709 非虚拟机 豪华中文全DLC 移除D加密 解压即玩",
     "shortName": "数码宝贝物语|时空异客|去除D加密",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251005/13/29/d43385b3bdaa1141294c50418dd83d54.jpg",
@@ -15274,23 +15296,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1087
-  },
-  {
-    "name": "龙珠超宇宙2豪华中文版 v1.25.01 新加DLC未来之歌第三章 全DLC+联机补丁+神器",
-    "shortName": "龙珠超宇宙2",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e0a9a2350587"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgb2P0qQ-07FrkXJ5Xer4IJA1?pwd=888u#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1088
   },
   {
     "name": "天际线2 v1.15.10f1 豪华中文版 全DLC",
@@ -33334,5 +33339,25 @@
     ],
     "lastChange": "2026-07-09T07:59:57.662Z",
     "id": 2466
+  },
+  {
+    "name": "（Switch）银白钢铁伊克斯1+2双重收藏辑v1.0.0官方中文",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/da6c7d416443"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx5FvbmmWaEE6x1m86NUIwdA1?pwd=wbmd#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1i53eMrHSsA-cF904HB4FBg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-09T09:46:11.525Z",
+    "id": 2467
   }
 ]
