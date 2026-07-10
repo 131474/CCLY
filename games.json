@@ -1,5 +1,27 @@
 [
   {
+    "name": "幻兽帕鲁Palworld豪华版 v1.0.0.100427正式版 官方中文全DLC",
+    "shortName": "幻兽帕鲁正式版|v1.0.0.100427",
+    "cover": "https://www.yxila.com/data/attachment/portal/202410/09/17284336734358.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8863601c1295"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx9qodf0UOB3EevYgJt6z6SA1?pwd=9k5x#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mVug5r_ISMUiRoh0YEAmXA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T07:13:34.187Z",
+    "id": 236
+  },
+  {
     "name": "碧蓝幻想 Relink 特别版v2.0.2官方中文全DLC+无尽黄昏DLC",
     "shortName": "碧蓝幻想|Relink|v2.0.2",
     "cover": "https://img1.dancihu.com/2024-02-20/29a11b89-fe8f-e794-1369-d2a49d172bb6.png",
@@ -3927,28 +3949,6 @@
     ],
     "lastChange": "2026-04-09T13:27:16.249Z",
     "id": 235
-  },
-  {
-    "name": "幻兽帕鲁 V0.7.3.90464中文全DLC 心之所归",
-    "shortName": "幻兽帕鲁",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5fc8afd679df"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpbZ_c7LCq2kPe_icY7V1fhA1?pwd=weru#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1AmMihVnSPAOBFf82xDFbnw?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-04-07T13:49:56.082Z",
-    "id": 236
   },
   {
     "name": "禁闭求生2官方中文v0.4.2.1全DLC+联机补丁",
@@ -33388,5 +33388,44 @@
     ],
     "lastChange": "2026-07-09T16:33:49.048Z",
     "id": 2469
+  },
+  {
+    "name": "（Switch）魔法少女的魔女审判官方中文本体+v2.0.1b升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ce2cfaafcd8d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx9QQHxvY5EMUV19opiWragA1?pwd=8tz9#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QtUyMEWnduuousBQFe_CVw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-07-10T05:11:47.472Z",
+    "id": 2470
+  },
+  {
+    "name": "（Switch）死神公主与异书馆的怪物 数位豪华版 官方中文v1.0.1+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7f6da8f2fcce"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOx9nLbb61KotFrxOlHu4-7UA1?pwd=ffwa#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1127i51up6Bxb6SmxPWLjeg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T06:54:22.884Z",
+    "id": 2471
   }
 ]
