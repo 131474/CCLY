@@ -1,6 +1,6 @@
 [
   {
-    "name": "幻兽帕鲁Palworld豪华版 v1.0.0.100427正式版 官方中文全DLC",
+    "name": "幻兽帕鲁Palworld豪华版 v1.0.0.100427正式版 官方中文全DLC+联机补丁",
     "shortName": "幻兽帕鲁正式版|v1.0.0.100427",
     "cover": "https://www.yxila.com/data/attachment/portal/202410/09/17284336734358.jpg",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-10T07:13:34.187Z",
+    "lastChange": "2026-07-10T09:28:22.357Z",
     "id": 236
   },
   {
@@ -66,7 +66,7 @@
     "id": 2077
   },
   {
-    "name": "（Switch）数码宝贝物语 时空异客官方中文 数位终极版v1.2.1+11DLC",
+    "name": "（Switch）数码宝贝物语 时空异客官方中文 数位终极版v1.2.1+11DLC+魔改版+降级补丁（低系统也可玩）",
     "shortName": "数码宝贝物语|时空异客|NS终极版",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251107/10/26/45404d342cbd01ce421889563d229a10.png",
     "links": [
@@ -84,7 +84,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-08T17:06:21.369Z",
+    "lastChange": "2026-07-10T09:28:52.206Z",
     "id": 2283
   },
   {
@@ -33427,5 +33427,105 @@
     ],
     "lastChange": "2026-07-10T06:54:22.884Z",
     "id": 2471
+  },
+  {
+    "name": "（Switch）鸦卫奇旅 官方中文本体+1.15.0升补+9DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/85f29e2d63c4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxALhlXZXr-Y7akOAsCe81fA1?pwd=k8vt#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1FifOG-gQHcEXJ9-FWjNBoQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T09:28:56.925Z",
+    "id": 2472
+  },
+  {
+    "name": "（Switch）离奇发现官方中文本体+1.0.6升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/df2aeddcdc10"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxAYbXL2wvWGQuT637waAsFA1?pwd=fxdi#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1R7xIxiRp_6nYHxy5BKWWyQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T10:28:48.563Z",
+    "id": 2473
+  },
+  {
+    "name": "（Switch）生死寓言 BEFORE I GO官方中文本体+v1.1.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/76684b5d403f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxAbdiE61KotFrxOlHuOu95A1?pwd=h2a2#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1C2w45T7NE4Y_-ybS2nfquw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T10:44:44.299Z",
+    "id": 2474
+  },
+  {
+    "name": "（Switch）光夜 LumineNight 官方中文本体+v1.3.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5d00d4b1b170"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxAeoaWeVt1PcLn-SAMPYl7A1?pwd=uvg7#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1e3Ioze4Q3QY98tNY_Ozotg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T10:56:25.721Z",
+    "id": 2475
+  },
+  {
+    "name": "艾恩葛朗特 回荡新声 v1.0官方中文全DLC 绕D版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/61f17796af26"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxAhR0O_J7Q6cxfJy1K56frA1?pwd=nn4h#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10_rV3X_UNti2uaBCwJYMdw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-10T11:07:29.896Z",
+    "id": 2476
   }
 ]
