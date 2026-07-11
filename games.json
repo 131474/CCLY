@@ -329,7 +329,7 @@
     "id": 35
   },
   {
-    "name": "哥特王朝：重制版v1.0.3官方中文全DLC+原声",
+    "name": "哥特王朝：重制版v170775官方中文全DLC+原声音乐集",
     "shortName": "哥特王朝重制版|v169494",
     "cover": "https://img.3dmgame.com/uploads/images/news/20241202/1733104733_669960.jpg",
     "links": [
@@ -347,7 +347,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-05T14:19:14.586Z",
+    "lastChange": "2026-07-11T14:07:11.476Z",
     "id": 2256
   },
   {
@@ -502,7 +502,7 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.33官方中文全DLC+联机补丁",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.34官方中文全DLC+联机补丁",
     "shortName": "魔法门英雄无敌|上古纪元|0.80.33",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
@@ -520,7 +520,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-07T09:19:15.830Z",
+    "lastChange": "2026-07-11T13:11:04.660Z",
     "id": 224
   },
   {
@@ -14076,25 +14076,25 @@
     "id": 987
   },
   {
-    "name": "（Switch）我的世界基岩版 Minecraft 官方中文本体+v1.26.31升补",
+    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.33升补",
     "shortName": "我的世界Mi",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/98a43166f8ef"
+        "url": "https://pan.quark.cn/s/c66aaf64383f"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwC7g28KAQqgbjUod1K0_6mA1?pwd=v972#"
+        "url": "https://pan.xunlei.com/s/VOxF7fTW1yYiK63AgTqRla6hA1?pwd=wjbm#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/162AGqJXb7KOl2ARQunFsIA?pwd=8888",
+        "url": "https://pan.baidu.com/s/17CncYJu6BBxZ1uSDd23xkw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-28T07:34:01.034Z",
+    "lastChange": "2026-07-11T07:45:28.247Z",
     "id": 988
   },
   {
@@ -31836,23 +31836,23 @@
     "id": 2380
   },
   {
-    "name": "冒险家艾略特的千年奇谭 数字豪华版v1.0官方中文全DLC 绕过D加密+国语配音",
+    "name": "冒险家艾略特的千年奇谭 数字豪华版v1.1.0官方中文全DLC 绕过D加密+国语配音（VBS1.7一键启动）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/366b467aac94"
+        "url": "https://pan.quark.cn/s/e5baa754f6c0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOviZL4C36vhA00gsFk44PN8A1?pwd=5jy6#"
+        "url": "https://pan.xunlei.com/s/VOxG7u44d6WAA5TkDp8K8JC7A1?pwd=5yu2#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1DX_mfmHAOVpngAuX5bkvNg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1lwdJcXD7J_NRuqgmMNIfFQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-22T09:04:21.581Z",
+    "lastChange": "2026-07-11T12:25:35.676Z",
     "id": 2381
   },
   {
@@ -33645,5 +33645,45 @@
     ],
     "lastChange": "2026-07-10T16:37:33.403Z",
     "id": 2482
+  },
+  {
+    "name": "（Switch）死亡庄园Dead Estate英文版本体+v1.0.10s升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/15608314559c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxE_optAicwcaIwNJjxlZYTA1?pwd=ub4k#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ENGuR306o3ef3Mdm0qGDLg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-11T05:18:51.642Z",
+    "id": 2483
+  },
+  {
+    "name": "（Switch）完蛋!我被美女包围了 官方中文本体+1.13.0.73升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/11adb4860a75"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxGbRbFt6y5zfDvHU8nEIiiA1?pwd=pmvs#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HpIDiPxj3HTaBDv5zRykqw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-11T14:39:49.180Z",
+    "id": 2484
   }
 ]
