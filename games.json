@@ -10425,25 +10425,25 @@
     "id": 706
   },
   {
-    "name": "对马岛之魂导演剪辑版V1053.8.1212.1408Fix 官方中文全DLC+FSR帧生成+联机补丁+集成天照烈火全DLC+支持手柄",
+    "name": "对马岛之魂导演剪辑版v1053.9.0623.1807官方中文全DLC+FSR帧生成+联机补丁+集成天照烈火全DLC+支持手柄",
     "shortName": "对马岛之魂",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/41f0b97bd858"
+        "url": "https://pan.quark.cn/s/5ac2948b3232"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuXf3k69N5weeDPVP-9I28eA1?pwd=83np#"
+        "url": "https://pan.xunlei.com/s/VOxKTL7KK7ejRbGGwL0sAE1eA1?pwd=tnjt#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1KwcqXA-WAjn5UyPG_2Wvew?pwd=8888",
+        "url": "https://pan.baidu.com/s/1pXhnCE82wVCplIHSAVwd3Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-08T04:56:57.945Z",
+    "lastChange": "2026-07-12T08:37:59.396Z",
     "id": 707
   },
   {
@@ -33707,5 +33707,45 @@
     ],
     "lastChange": "2026-07-12T07:19:55.108Z",
     "id": 2485
+  },
+  {
+    "name": "GTA罪恶都市中文国语配音版switch",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9f8d4b59af90"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxKXoHLJbNbQjSe6oq-J6QEA1?pwd=dqpp#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/118HXJSU7V1pZCLiAUu3UOg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-12T08:59:06.434Z",
+    "id": 2486
+  },
+  {
+    "name": "瑞奇与叮当 时空跳转v3.630.1.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fc9fd9d86311"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxKh5SJ6CajFQH4vzq36_NlA1?pwd=nmb4#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Dok0z5Tmqzh1jwNRgjxPGQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-12T09:42:15.373Z",
+    "id": 2487
   }
 ]
