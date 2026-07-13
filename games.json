@@ -656,25 +656,25 @@
     "id": 6
   },
   {
-    "name": "（Switch）塞尔达传说 天空之剑HD中文v1.0.1升补 +金手指",
+    "name": "（Switch）塞尔达传说 天空之剑HD官方中文本体+v1.0.1升补 +金手指",
     "shortName": "天空之剑",
     "cover": "https://img.3dmgame.com/uploads/images/news/20210218/1613607140_288119.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2bd9762838e3"
+        "url": "https://pan.quark.cn/s/091985084352"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpl29gnjxTFmgIfMJTO3H4OA1?pwd=fbsg#"
+        "url": "https://pan.xunlei.com/s/VOxQNPzrmw596fKvRDn6tIJRA1?pwd=wyiw#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1v772W5X8Td2OBIFMp012uw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1z3YjCmJlZsIYsuf7dc6iTA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-07-13T12:09:53.275Z",
     "id": 4
   },
   {
@@ -5177,7 +5177,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/06669ffbed1d"
+        "url": "https://pan.quark.cn/s/94968a91a96d"
       },
       {
         "name": "迅雷网盘",
@@ -5185,7 +5185,7 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1tjgBy46aPsBEgeiltgHCgQ?pwd=8888"
+        "url": "https://pan.baidu.com/s/1pspKJYOJEihzUMUIZ9exqA?pwd=8888"
       }
     ],
     "lastChange": "2026-06-04T11:22:45.672Z",
@@ -32625,7 +32625,7 @@
     "id": 2428
   },
   {
-    "name": "（Switch）优米雅的炼金工房 追忆之炼金术士与幻创之地港版中文本体+1.6.0升补+29DLC",
+    "name": "（Switch）优米雅的炼金工房 追忆之炼金术士与幻创之地官方中文本体+1.6.1升补+32DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -32641,7 +32641,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-27T14:00:56.298Z",
+    "lastChange": "2026-07-13T14:56:50.471Z",
     "id": 2429
   },
   {
@@ -32705,7 +32705,7 @@
     "id": 2432
   },
   {
-    "name": "（Switch）刀剑神域 碎梦边境港版中文本体+1.7.0.0升补+9DLC",
+    "name": "（Switch）刀剑神域 碎梦边境官方中文本体+1.7.1.0升补+9DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -32721,7 +32721,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-28T10:13:17.069Z",
+    "lastChange": "2026-07-13T15:29:17.792Z",
     "id": 2433
   },
   {
@@ -33856,5 +33856,45 @@
     ],
     "lastChange": "2026-07-13T08:13:56.575Z",
     "id": 2492
+  },
+  {
+    "name": "折翼天使v1.0.772.9033全DLC 最新爽游",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0a753aca0f8d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxQPC_mdRnqaY3v8omnjtNtA1?pwd=bw8z#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qGuG6rs_PCtMlRqRa23rmQ?pwd=888",
+        "code": "888"
+      }
+    ],
+    "lastChange": "2026-07-13T12:17:52.883Z",
+    "id": 2493
+  },
+  {
+    "name": "零秒 时光的归途v1.0.4.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/188c6e7377a3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxQ_LRa61KotFrxOlI08v_pA1?pwd=tmjn#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19KQdlKaQcth76_L1XS61Uw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-13T13:06:15.020Z",
+    "id": 2494
   }
 ]
