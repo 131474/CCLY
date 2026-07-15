@@ -700,25 +700,25 @@
     "id": 8
   },
   {
-    "name": "（Switch）塞尔达无双：灾厄启示录1.3.0+4DLC（PC+安卓）双版本",
+    "name": "（Switch）塞尔达无双 灾厄启示录官方中文v1.3.0+4DLC+60帧mod",
     "shortName": "灾厄启示录",
     "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20200909/1599617800_955043.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b09a8db902e0"
+        "url": "https://pan.quark.cn/s/e7d724f34a86"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpl1xOwGKOMuVfRn0_4RYICA1?pwd=zr5y#"
+        "url": "https://pan.xunlei.com/s/VOxa1y2Ode9jug6-I1-ir9bTA1?pwd=7pu7#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1FUQxYTaTw-29cYeEM2IkPA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1dCqkG15yx88gxjs1cVnNcQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-09T06:39:48.806Z",
+    "lastChange": "2026-07-15T13:51:52.382Z",
     "id": 3
   },
   {
@@ -9401,14 +9401,19 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/99a176be80b6"
+        "url": "https://pan.quark.cn/s/fd5c572d6f54"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOhhM3HynRgZjoaaSEcFYA0wA1?pwd=nxzs#"
+        "url": "https://pan.xunlei.com/s/VOxaAsf1b7060ZUf3AJZBbEiA1?pwd=wkm5#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15zDCc1JkTcNFl7PbNd3pEw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-15T14:31:01.167Z",
     "id": 627
   },
   {
@@ -10639,7 +10644,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/13d5c6ba83ff"
+        "url": "https://pan.quark.cn/s/77c5665572d9"
       },
       {
         "name": "迅雷网盘",
@@ -15531,16 +15536,25 @@
     "id": 1104
   },
   {
-    "name": "超级马里奥3D全明星 官方中文v1.1.4",
+    "name": "（Switch）超级马里奥3D全明星 官方中文本体+v1.1.4升补",
     "shortName": "超级马里奥3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/505c41c5ad6a"
+        "url": "https://pan.quark.cn/s/8e76e31453b1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxa96XWb7060ZUf3AJZASgWA1?pwd=fy47#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1EzId8f0GzURxi75Fq5Kexg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-15T14:25:34.847Z",
     "id": 1105
   },
   {
@@ -15940,19 +15954,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1137
-  },
-  {
-    "name": "马里奥网球官方中文本体+v3.1.0",
-    "shortName": "马里奥网球官",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/cdcf5c74a242"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1138
   },
   {
     "name": "荒野大镖客：救赎 v42 不死梦魇 中文版 打包XG器",
@@ -34131,5 +34132,25 @@
     ],
     "lastChange": "2026-07-15T09:31:06.162Z",
     "id": 2505
+  },
+  {
+    "name": "隐名三国v0.5.1官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8a79fe581b4b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxaQ6OBjZOGK-WplZaoOdfjA1?pwd=365y#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1U8dHII8yLpak5gID6cj24A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-15T15:48:40.470Z",
+    "id": 2506
   }
 ]
