@@ -7490,20 +7490,25 @@
     "id": 488
   },
   {
-    "name": "检疫区：最后一站 v1.1.13.1645 新加 死亡岛2联动 中文版",
+    "name": "检疫区：最后一站 v1.1.13.1892 官方中文全DLC",
     "shortName": "检疫区最后一",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/57574b64a40b"
+        "url": "https://pan.quark.cn/s/653708f85c8f"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOj60jR4Dr9NtpjDfz3k-CTKA1?pwd=63wz#"
+        "url": "https://pan.xunlei.com/s/VOxe2Rj9EvSwlE86aYZcNjvzA1?pwd=w2i6#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1LKmiqfVtEBPTlOMtkhpz0w?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-23T12:45:09.090Z",
+    "lastChange": "2026-07-16T08:36:20.401Z",
     "id": 489
   },
   {
@@ -25869,18 +25874,23 @@
     "id": 1934
   },
   {
-    "name": "（Switch）异星探险家美区中文v1.39.5.0+金手指",
+    "name": "（Switch）异星探险家官方中文本体+v1.42.3.0升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b0650952843b"
+        "url": "https://pan.quark.cn/s/9465f670eb39"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxdLazVfqi6nfTTOnCbJmcrA1?pwd=mjr9#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1S5We28u0mgHVLKt3km3HkA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1JV26oGo9JvZ7SIJ03HJT7w?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-20T06:23:35.987Z",
+    "lastChange": "2026-07-16T05:16:40.607Z",
     "id": 1935
   },
   {
@@ -34172,5 +34182,65 @@
     ],
     "lastChange": "2026-07-16T03:52:38.421Z",
     "id": 2507
+  },
+  {
+    "name": "（Switch）神之天平 ASTLIBRA Revision官方中文本体+v1.1.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0d6219aafa02"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxdoAUGBDAL9LVq0s0nGDktA1?pwd=tvpu#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1hubqur8COpbEeRg-svgumA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-16T07:26:26.335Z",
+    "id": 2508
+  },
+  {
+    "name": "（Switch）神之天平外传 幻雾之洞窟官方中文本体+1.0.6升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b1c43289d2db"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxdrOX7eJQKtgcGdlol7advA1?pwd=utra#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/175zdWUQ8AOMGsNgU9RB70g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-16T07:40:24.157Z",
+    "id": 2509
+  },
+  {
+    "name": "亰都幻都 樱花幻舞v1.03.2豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/43d0c2737d4c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxfMq0r3juBchS6Fux7MrKtA1?pwd=tg7z#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1NHbQ0-f2mgxDyzsN21KK2A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-16T14:41:23.987Z",
+    "id": 2510
   }
 ]
