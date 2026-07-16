@@ -66,25 +66,25 @@
     "id": 2077
   },
   {
-    "name": "（Switch）数码宝贝物语 时空异客官方中文 数位终极版v1.2.1+11DLC+魔改版+降级补丁（低系统也可玩）",
+    "name": "（Switch）数码宝贝物语 时空异客官方中文 数位终极版v1.2.1+12DLC+魔改版+降级补丁（低系统也可玩）",
     "shortName": "数码宝贝物语|时空异客|NS终极版",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251107/10/26/45404d342cbd01ce421889563d229a10.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e654fcba9225"
+        "url": "https://pan.quark.cn/s/b7de19f0b63f"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOx1_xv10wgMo_64jgN0E5UVA1?pwd=git6#"
+        "url": "https://pan.xunlei.com/s/VOxcvAZZTPLBXe5CjYeYtTSxA1?pwd=q7b4#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1hPxZK4WVWZfY6URknu5mLA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Wx5uuhsVA9yOJOfeJoaxmg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-10T09:28:52.206Z",
+    "lastChange": "2026-07-16T03:26:09.671Z",
     "id": 2283
   },
   {
@@ -34152,5 +34152,25 @@
     ],
     "lastChange": "2026-07-15T15:48:40.470Z",
     "id": 2506
+  },
+  {
+    "name": "女巫之火 Witchfire V0.9.6官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5e203100b37e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxd2RHQ0b0q0-71QHCxO6roA1?pwd=smiw#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wlixArogNk17LDywymV6KQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-16T03:52:38.421Z",
+    "id": 2507
   }
 ]
