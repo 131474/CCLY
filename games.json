@@ -10261,19 +10261,6 @@
     "id": 695
   },
   {
-    "name": "非生物因素 v1.2.0.22916 重大更新 假日冰冻圈 中文版+联机补丁",
-    "shortName": "非生物因素",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a36cd50fd45e"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 696
-  },
-  {
     "name": "超英派遣中心v1.0.17470豪华中文全DLC+重大变更+原生音乐",
     "shortName": "超英派遣中心",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -27216,14 +27203,23 @@
     "id": 2048
   },
   {
-    "name": "非生物因素 v1.3.0.25766 中文联机版",
+    "name": "非生物因素 v1.4.0.27939 官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1700fa2435a1"
+        "url": "https://pan.quark.cn/s/8aca095f40b6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxtR4wCVdqYrAFhOLet4SRtA1?pwd=9s6d#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1so3r0p774sjhK35PKHotAA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-08T15:36:55.520Z",
+    "lastChange": "2026-07-19T08:14:21.253Z",
     "id": 2049
   },
   {
@@ -34569,5 +34565,65 @@
     ],
     "lastChange": "2026-07-18T15:14:07.484Z",
     "id": 2527
+  },
+  {
+    "name": "（Switch）异度之刃3 官方中文v2.2.1+4DLC+国语配音mod",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e6f704d5c620"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxsgRWUlM9gcOPxktFn6hWXA1?pwd=smpg#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MG4WrJD6Jzoyqp5E7bYPkg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-19T04:46:09.515Z",
+    "id": 2528
+  },
+  {
+    "name": "（Switch）星之海洋 初次启程R 中文汉化版v1.0.0+国语配音mod",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/530562c48025"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxtBFqn7I1RGo1K1qMKg2-kA1?pwd=hary#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XFkLG7e3CxroEuduKE-i2g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-19T07:06:31.215Z",
+    "id": 2529
+  },
+  {
+    "name": "韩流偶像故事 出道之路v1.0.7官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4a575beedfcb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOxuPbqN-G_YX6gJ3XgNvPbQA1?pwd=5hut#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/18olc8DIR1IEcnuRHifrUcw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-19T12:55:37.003Z",
+    "id": 2530
   }
 ]
