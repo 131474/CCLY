@@ -11636,25 +11636,25 @@
     "id": 800
   },
   {
-    "name": "我独自升级：起立·觉醒 v1.1.92官方中文全DLC+齐州岛攻略队特别篇DLC",
+    "name": "我独自升级：起立·觉醒 v1.1.93官方中文全DLC+齐州岛攻略队特别篇DLC",
     "shortName": "我独自升级起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ddc3f054d515"
+        "url": "https://pan.quark.cn/s/41763dee12e6"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwTJWOwdqXJQrd3InnQ8e6IA1?pwd=pgzt"
+        "url": "https://pan.xunlei.com/s/VOxzgjLej6ztrpu78NacHo5rA1?pwd=twaj#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1_M0pVC1Cs9Nvmuj8noa17g?pwd=8888",
+        "url": "https://pan.baidu.com/s/17RkoQdRrTYo48-uWFqUwZQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-01T15:35:53.924Z",
+    "lastChange": "2026-07-20T13:31:58.855Z",
     "id": 801
   },
   {
@@ -34625,5 +34625,65 @@
     ],
     "lastChange": "2026-07-19T12:55:37.003Z",
     "id": 2530
+  },
+  {
+    "name": "主角 Build.24166526 官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d7b018859b6a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy-91Lwm4e8FE7GI3oMEWzrA1?pwd=s2kc#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1r13AXYDO9NxTKJJ2-fGtSQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-20T15:32:51.832Z",
+    "id": 2531
+  },
+  {
+    "name": "（Switch）超级马里奥3D世界 酷霸王之怒 官方中文本体+v1.2.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4a4659884846"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy-HKtVad1Sge9SLA4-9E5WA1?pwd=nmtv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1FC-VsXN-HEl6iGF9_CVJLQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-20T16:09:14.795Z",
+    "id": 2532
+  },
+  {
+    "name": "泽罗斯 Zheros 新一代3D横版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/17de4fe4be78"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy-P7GI-G_YX6gJ3XgQaCOtA1?pwd=whwu#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1sPNaMxgPUGSq7tSJwBjtIw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-20T16:46:07.309Z",
+    "id": 2533
   }
 ]
