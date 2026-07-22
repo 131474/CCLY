@@ -4918,20 +4918,25 @@
     "id": 302
   },
   {
-    "name": "（switch）小小梦魇3官方中文本体+1.0.5升补+5DLC",
+    "name": "（Switch）小小梦魇3官方中文本体+1.1.1升补+5DLC",
     "shortName": "小小梦魇3官",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/08b858d84d90"
+        "url": "https://pan.quark.cn/s/4c24de8ba243"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOknnkqQByHd4PwHlkSq_C94A1?pwd=56eh#"
+        "url": "https://pan.xunlei.com/s/VOy84EEUIfq9Ocpnq1wB0s56A1?pwd=ahhm#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13_eerkelfNtKxavnfjr1ng?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-22T09:10:18.464Z",
     "id": 303
   },
   {
@@ -12738,16 +12743,25 @@
     "id": 884
   },
   {
-    "name": "冥狱战术 v1.1.21 中文版",
+    "name": "冥狱战术 Hadean Tactics 官方中文 v2.1.18 官方中文全DLC",
     "shortName": "冥狱战术",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/323c199f056b"
+        "url": "https://pan.quark.cn/s/25dc305933ea"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy93Cq51k4fpntVsLtghF_5A1?pwd=48qs#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MUqyKNMypz-2wAsWkUT1Rg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-22T13:43:49.921Z",
     "id": 885
   },
   {
@@ -27572,18 +27586,23 @@
     "id": 2078
   },
   {
-    "name": "（Switch）深海迷航 冰点之下中文本体+v1.21.49397升补",
+    "name": "（Switch）深海迷航 冰点之下官方中文本体+v1.23.55063升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/eb2e955ff1e4"
+        "url": "https://pan.quark.cn/s/36fac13d46ec"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy9D8Kbsg3O4rRRWzhQJmP8A1?pwd=rwaf#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1C56eZ2Vu2JVdWyREzPyONA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1qB15IOR4K8J-v9QPBwB2Gw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-14T05:24:05.689Z",
+    "lastChange": "2026-07-22T14:32:01.538Z",
     "id": 2079
   },
   {
@@ -34245,23 +34264,23 @@
     "id": 2509
   },
   {
-    "name": "京都幻都 樱花幻舞v1.03.2豪华中文全DLC",
+    "name": "京都幻都 樱花幻舞v1.03.2Fix豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/43d0c2737d4c"
+        "url": "https://pan.quark.cn/s/a4a74465ad6a"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOxfMq0r3juBchS6Fux7MrKtA1?pwd=tg7z#"
+        "url": "https://pan.xunlei.com/s/VOy9SyAlUHeXQMXwguw-levKA1?pwd=tjyw#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1NHbQ0-f2mgxDyzsN21KK2A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1zDIdyJqmEsBeEm5NQEyeZA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-16T16:11:25.159Z",
+    "lastChange": "2026-07-22T15:42:42.226Z",
     "id": 2510
   },
   {
@@ -34703,5 +34722,45 @@
     ],
     "lastChange": "2026-07-20T16:46:07.309Z",
     "id": 2533
+  },
+  {
+    "name": "（Switch）inKONBINI 一家小店 故事多多官方中文本体+v1.0.208.0补丁",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3802da0de219"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy8ndhTZwqxHfzjDPfboumBA1?pwd=m3ez#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1O5mTtVIJh3MDQplUzxw-IA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-22T12:43:11.945Z",
+    "id": 2534
+  },
+  {
+    "name": "地府有点忙 正式版v1.0072102豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/10cee62a0f9c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOy9P_Ll-RCdRvBhMiWPl3CAA1?pwd=gr9s#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13TEEF91vdXDJMvtXv1rVtg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-22T15:21:37.666Z",
+    "id": 2535
   }
 ]
