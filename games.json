@@ -14194,25 +14194,25 @@
     "id": 987
   },
   {
-    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.33升补",
+    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.34升补",
     "shortName": "我的世界Mi",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c66aaf64383f"
+        "url": "https://pan.quark.cn/s/a9a222577a18"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOxF7fTW1yYiK63AgTqRla6hA1?pwd=wjbm#"
+        "url": "https://pan.xunlei.com/s/VOyOBlJJQLNfV3z_D2Gdg8h8A1?pwd=wgk9#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17CncYJu6BBxZ1uSDd23xkw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xsL5gCWEEVTnsV7CmFAhLw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-11T07:45:28.247Z",
+    "lastChange": "2026-07-25T12:16:31.538Z",
     "id": 988
   },
   {
@@ -35064,5 +35064,25 @@
     ],
     "lastChange": "2026-07-24T16:31:51.076Z",
     "id": 2551
+  },
+  {
+    "name": "（Switch）8号入口 Entrance8 官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/086ead912c30"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyOd4-o3wECMmppKldDkN31A1?pwd=2d9s#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10jp2_8DuZT3g2ldjU24HIg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-25T14:19:47.997Z",
+    "id": 2552
   }
 ]
