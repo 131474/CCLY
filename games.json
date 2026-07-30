@@ -330,13 +330,13 @@
     "id": 2062
   },
   {
-    "name": "（Switch）塞尔达传说：王国之泪 1.4.3全DLC （PC+安卓）整合完美60帧补丁+金手指+26个amiibo",
+    "name": "（Switch）塞尔达传说：王国之泪 v1.4.3+完美60帧补丁+金手指+26个amiibo",
     "shortName": "塞尔达传说|王国之泪|1.4.3",
     "cover": "https://img.3dmgame.com/uploads/images/news/20220914/1663104992_905883.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/724149678a76"
+        "url": "https://pan.quark.cn/s/19a90908ad5b"
       },
       {
         "name": "迅雷网盘",
@@ -344,21 +344,21 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1MfoHUMErhz-fZTxQe0TTag?pwd=8888",
+        "url": "https://pan.baidu.com/s/1cPww-DVAqOWKIKw0qIf9Lw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-06T12:56:58.524Z",
+    "lastChange": "2026-07-30T15:53:40.939Z",
     "id": 2
   },
   {
-    "name": "（Switch）塞尔达传说：旷野之息1.9.0+2DLC （PC+手机）附金手指+60帧mod+32个amiibo",
+    "name": "（Switch）塞尔达传说：旷野之息1.9.0+2DLC+金手指+60帧mod+32个amiibo",
     "shortName": "塞尔达传说|旷野之息|1.9.0",
     "cover": "https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3d7156de9f84"
+        "url": "https://pan.quark.cn/s/6401da5c9c5d"
       },
       {
         "name": "迅雷网盘",
@@ -366,11 +366,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1XbKUROri6rWWk9lF5BxWRg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1V7tzLbcrmis9Y7dCmog3vQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-07T08:15:13.635Z",
+    "lastChange": "2026-07-30T15:49:53.790Z",
     "id": 1
   },
   {
@@ -22399,23 +22399,23 @@
     "id": 1634
   },
   {
-    "name": "（Switch）迪士尼梦幻星谷官方中文v1.22.0+3DLC整合版",
+    "name": "（Switch）迪士尼梦幻星谷官方中文1.24.11+3DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/cc6597761dec"
+        "url": "https://pan.quark.cn/s/57f6039b2aa2"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpqqdKxf4mA5EsWAOVW081SA1?pwd=txfv#"
+        "url": "https://pan.xunlei.com/s/VOyn_eMWh8OpDLkVusTwAD_6A1?pwd=qqb5"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17yU2WQGBcwk4RwoFIjbRUg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Jo-8m6yrv-4aAJdCfHn9wA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-04-10T10:06:08.610Z",
+    "lastChange": "2026-07-30T15:15:24.428Z",
     "id": 1635
   },
   {
@@ -35453,5 +35453,25 @@
     ],
     "lastChange": "2026-07-30T12:32:42.800Z",
     "id": 2570
+  },
+  {
+    "name": "（Switch）康斯坦丝 Constance官方中文本体+v1.1.2.18259升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d2507f514458"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOynemy44irZFIrL-h37AQNDA1?pwd=zykc"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1i5Rn8gS2e3g9WOGqB8Wyuw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-30T15:37:36.993Z",
+    "id": 2571
   }
 ]
