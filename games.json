@@ -66,25 +66,25 @@
     "id": 2548
   },
   {
-    "name": "龙之剑：觉醒 v1.0.3官方中文全DLC+单独升级补丁",
+    "name": "龙之剑：觉醒 v1.0.5官方中文全DLC+单独升级补丁",
     "shortName": "龙之剑：觉醒|v1.0.3",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e4032818dec7"
+        "url": "https://pan.quark.cn/s/83d94451207e"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOyDB7HF3wECMmppKld8vegaA1?pwd=r9yh#"
+        "url": "https://pan.xunlei.com/s/VOynNIjee9SUCw-LeTNokLjtA1?pwd=xedb"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1hiIo9GLxzkHsuR72wkcFog?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ek0nP9tOFWYdKw8kk_g-FA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-25T08:58:47.847Z",
+    "lastChange": "2026-07-30T14:19:33.138Z",
     "id": 2537
   },
   {
@@ -29158,23 +29158,23 @@
     "id": 2184
   },
   {
-    "name": "（Switch） 挖掘者米娜Mina the Hollower美区中文本体+1.0.2升补",
+    "name": "（Switch版）挖掘者米娜Mina the Hollower官方中文本体+1.0.6升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5b1ff28ffb47"
+        "url": "https://pan.quark.cn/s/7bdf24bf3da9"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtnEmlKKYqlFe2oEwCwURgsA1?pwd=eabg#"
+        "url": "https://pan.xunlei.com/s/VOyn7a2tXTfWxD3K7B144rcOA1?pwd=vjnb"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1N2bqEwnlKMumkaWxOBe7dQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1PfX3OeNcMYWmzaitXfbOBg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-05-29T16:30:19.636Z",
+    "lastChange": "2026-07-30T13:09:01.418Z",
     "id": 2185
   },
   {
@@ -33478,23 +33478,23 @@
     "id": 2467
   },
   {
-    "name": "（Switch）月光岭物语官方中文本体+1.1.30补丁",
+    "name": "（Switch）月光岭物语官方中文本体+1.1.46补丁",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ad02b4a3e95c"
+        "url": "https://pan.quark.cn/s/d110e964f4d0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOx6iNAr2zREw7pkB8aTkTHNA1?pwd=u5u7#"
+        "url": "https://pan.xunlei.com/s/VOynT0EpcX2wWbfZn7RG3okcA1?pwd=thme"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1OwenqAFwCwzxdqvwGSB0vQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ljNd6jyN5me0svP7uYRbJA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-09T16:33:49.048Z",
+    "lastChange": "2026-07-30T14:43:41.562Z",
     "id": 2469
   },
   {
@@ -35433,5 +35433,25 @@
     ],
     "lastChange": "2026-07-30T09:16:30.159Z",
     "id": 2569
+  },
+  {
+    "name": "蓝色反射 少女们的奇迹Build23444832豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b6d28c8eff10"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOymzwk-FdohkovpnOvJhmbAA1?pwd=py5e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RzwvSQkX6pAQb0MrDQir9Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-30T12:32:42.800Z",
+    "id": 2570
   }
 ]
