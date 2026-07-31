@@ -7461,16 +7461,25 @@
     "id": 478
   },
   {
-    "name": "帝国时代3：决定版 v100.15.5907 豪华中文版 全DLC",
+    "name": "帝国时代3：决定版 v100.19.17293.0 豪华中文全DLC",
     "shortName": "帝国时代3决",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9ae668de34b0"
+        "url": "https://pan.quark.cn/s/30dab5653197"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOysnmGzxYjML7abuK7t_X98A1?pwd=g2kg"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1YYV_GSUsZsqJ7aS4T85CYQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-07-31T15:35:10.946Z",
     "id": 479
   },
   {
@@ -34782,23 +34791,23 @@
     "id": 2534
   },
   {
-    "name": "地府有点忙 正式版v1.0072102豪华中文全DLC",
+    "name": "地府有点忙 正式版v1.0072903豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/10cee62a0f9c"
+        "url": "https://pan.quark.cn/s/25924fe76a97"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOy9P_Ll-RCdRvBhMiWPl3CAA1?pwd=gr9s#"
+        "url": "https://pan.xunlei.com/s/VOysF1SMPlI7itRWyjVXb9z9A1?pwd=tpaa"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/13TEEF91vdXDJMvtXv1rVtg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xdiGpgKpgr0apImSt0x_eQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-22T15:21:37.666Z",
+    "lastChange": "2026-07-31T12:59:15.384Z",
     "id": 2535
   },
   {
@@ -35520,5 +35529,45 @@
     ],
     "lastChange": "2026-07-31T07:45:47.381Z",
     "id": 2573
+  },
+  {
+    "name": "多少兄弟v1.0.5.rc3官方中文全DLC 崩溃大陆团队新游戏",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f9eb4f7a9517"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOysXO18_ggxefwM34GfxS_nA1?pwd=uzfi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GGDbOzxXnXYR-hiDjnh57Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-31T14:18:50.951Z",
+    "id": 2574
+  },
+  {
+    "name": "（Switch）乐高派对LEGO Party官方中文本体+v1.6.46升补+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/123d57f56ead"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyseqnja6dAAuaLI9ExJYHnA1?pwd=jqzm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tjUU0kM1NOTOERwEp9RNdg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-31T15:03:39.388Z",
+    "id": 2575
   }
 ]
