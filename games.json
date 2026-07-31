@@ -1,5 +1,27 @@
 [
   {
+    "name": "勇者斗恶龙7重制版非虚拟机 伊甸的战士们v1.1.1豪华版 中文全DLC 移除D加密 解压即玩",
+    "shortName": "勇者斗恶龙7重制版|移除D加密|非虚拟机",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdlist/20260206/1770340424_522155.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/43b6dd3196c2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyr_2TdPlI7itRWyjVXIdd6A1?pwd=v9x4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/18Zuw37aMNjatIWI3HCQl_w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-31T09:58:00.932Z",
+    "id": 1640
+  },
+  {
     "name": "第一狂战士：卡赞 非虚拟机voice38版 v565386 豪华中文全DLC",
     "shortName": "第一狂战士：卡赞|非虚拟机",
     "cover": "https://img.3dmgame.com/uploads/images/news/20240823/1724397458_767861.jpg",
@@ -22455,21 +22477,6 @@
     "id": 1638
   },
   {
-    "name": "勇者斗恶龙7伊甸的战士们豪华中文V1.1.0 steam版 绕过D加密",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/605a6c530035"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpTIIH3OBkMq22tYXgWfsKgA1?pwd=wuhv#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
-    "id": 1640
-  },
-  {
     "name": "双点校园 （d加密已经移除）豪华中文版 全DLC",
     "links": [
       {
@@ -26744,23 +26751,23 @@
     "id": 2002
   },
   {
-    "name": "梦幻魔法公主 v1.1.1 官方中文全DLC 沙盒 美少女养成",
+    "name": "梦幻魔法公主 v1.3.0 官方中文全DLC 沙盒 美少女养成",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c982dfe344ac"
+        "url": "https://pan.quark.cn/s/6edcd50b7c2d"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuWWjAsnMTCOjMDZ5qoTdZBA1?pwd=wejd#"
+        "url": "https://pan.xunlei.com/s/VOyqsTS2ctGP4nlcTpMc2RlBA1?pwd=2n9j"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1cOmmWiTevkiolZFFF-Z1fw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1V8kcucmZrw7QFDOz0rl0XQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-07T10:05:54.956Z",
+    "lastChange": "2026-07-31T06:45:16.557Z",
     "id": 2003
   },
   {
@@ -35473,5 +35480,45 @@
     ],
     "lastChange": "2026-07-30T15:37:36.993Z",
     "id": 2571
+  },
+  {
+    "name": "（Switch）蔚蓝反射 Quartet 少女们的奇迹v1.0.0+3DLC 原版日文",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/04dca2bb763c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyqoV_6lY8Vipb3IS8VMQGZA1?pwd=napa"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1111icaN8x7nEBRUYiU8vAA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-31T06:19:15.750Z",
+    "id": 2572
+  },
+  {
+    "name": "（Switch）韩流偶像故事 出道之路官方中文本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/05c373dd58c0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyr2-fCIy6FIwMRmYo6RvqVA1?pwd=m6du"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WxAeVD7_GhPQHEVVsZo5XQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-07-31T07:45:47.381Z",
+    "id": 2573
   }
 ]
