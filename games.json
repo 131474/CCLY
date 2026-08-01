@@ -750,7 +750,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e6e8e0c086ce"
+        "url": "https://pan.quark.cn/s/a2d3b4b91c22"
       },
       {
         "name": "迅雷网盘",
@@ -758,7 +758,7 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1wlcf_HQyF77-YiBlKHNdlw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Eq_gsBMYwvhMfSv0OAhEyw?pwd=8888",
         "code": "8888"
       }
     ],
@@ -35491,23 +35491,23 @@
     "id": 2571
   },
   {
-    "name": "（Switch）蔚蓝反射 Quartet 少女们的奇迹v1.0.0+3DLC 原版日文",
+    "name": "（Switch）蔚蓝反射 Quartet 少女们的奇迹v1.0.0+3DLC 港版中文",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/04dca2bb763c"
+        "url": "https://pan.quark.cn/s/f5ef73786da6"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOyqoV_6lY8Vipb3IS8VMQGZA1?pwd=napa"
+        "url": "https://pan.xunlei.com/s/VOyvuo4MvOZZvXaKezzbJFB1A1?pwd=5fkd"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1111icaN8x7nEBRUYiU8vAA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1pxaOdQ26Qk4xcx8k1dxNKg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-31T06:19:15.750Z",
+    "lastChange": "2026-08-01T06:06:58.030Z",
     "id": 2572
   },
   {
@@ -35569,5 +35569,65 @@
     ],
     "lastChange": "2026-07-31T15:03:39.388Z",
     "id": 2575
+  },
+  {
+    "name": "纵横秘湾v1.1.1.241035官方中文全DLC+预购特典",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2bb14db8c250"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOywHniiXessTmpP5U3KdU1YA1?pwd=gd7c"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ViyASldFYZCguf27zT4lCA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-01T07:48:36.653Z",
+    "id": 2576
+  },
+  {
+    "name": "心之眼 MindsEye 数字豪华版v8112796官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4ae61bf112f0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOywewS9yJShggD7-pvK5MgvA1?pwd=u3h9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/144Ffg9WiXY7NKLPTcHHJJg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-01T09:39:09.573Z",
+    "id": 2577
+  },
+  {
+    "name": "异常形态v1.0.560s正式版 官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/845927f926cc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOyx3l9X5BTPh2YC3TeKcSKVA1?pwd=snht"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ylBuNdkizhJxJNAc1meFAw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-01T11:27:30.741Z",
+    "id": 2578
   }
 ]
