@@ -1,5 +1,27 @@
 [
   {
+    "name": "轮回之兽 偷跑版v1.0.5豪华中文全DLC+预购特典",
+    "shortName": "轮回之兽偷跑版|v1.0.5",
+    "cover": "https://p.sda1.dev/24/baf69c147c9850490f14904e5c1edd5c/Beast-of-Reincarnation_2025_06-08-25_007.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e23a2f221935"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOz-7j00JUsklpp_tOKuH0HGA1?pwd=5b4m"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1u3VWo4i86XiF3_I3PVOdNg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-02T01:43:08.109Z",
+    "id": 2580
+  },
+  {
     "name": "勇者斗恶龙7重制版非虚拟机 伊甸的战士们v1.1.1豪华版 中文全DLC 移除D加密 解压即玩",
     "shortName": "勇者斗恶龙7重制版|移除D加密|非虚拟机",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdlist/20260206/1770340424_522155.jpg",
@@ -35649,5 +35671,25 @@
     ],
     "lastChange": "2026-08-01T12:40:49.226Z",
     "id": 2579
+  },
+  {
+    "name": "卡牌家园v1.0.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6dc6b10296c5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOz-EdtK-TUaCjaVeeW4eMMqA1?pwd=bnnv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1vToWzG4Dv3OCw-WeaBs28g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-02T02:14:24.157Z",
+    "id": 2581
   }
 ]
