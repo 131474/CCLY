@@ -22,25 +22,47 @@
     "id": 31
   },
   {
-    "name": "轮回之兽 偷跑版v1.0.5豪华中文全DLC+预购特典",
-    "shortName": "轮回之兽偷跑版|v1.0.5",
+    "name": "阿凡达潘多拉边境v2.7 非虚拟机voice38版 豪华中文全DLC 解压即玩",
+    "shortName": "阿凡达潘多拉边境|非虚拟机|解压即玩",
+    "cover": "https://x0.ifengimg.com/ucms/2023_38/0605E08C9F2169CA99E92573852B170DCB54FCC2_size44_w539_h303.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/21bf5968d36b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOz9yS1viknGBnQdewP4PiLBA1?pwd=3fhy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XmuWkcMpX0IrsU_Gxnz9ZQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-04T04:44:25.182Z",
+    "id": 203
+  },
+  {
+    "name": "轮回之兽v1.0.6豪华中文全DLC+单独升级补丁",
+    "shortName": "轮回之兽偷跑版|v1.0.6",
     "cover": "https://p.sda1.dev/24/baf69c147c9850490f14904e5c1edd5c/Beast-of-Reincarnation_2025_06-08-25_007.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e23a2f221935"
+        "url": "https://pan.quark.cn/s/fd0047a559e0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOz-7j00JUsklpp_tOKuH0HGA1?pwd=5b4m"
+        "url": "https://pan.xunlei.com/s/VOzA6pTWg3k6FHzZdcHRYXZsA1?pwd=eby5"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1u3VWo4i86XiF3_I3PVOdNg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1b8JaxZB9SfwQV48DaUSWQg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-02T01:43:08.109Z",
+    "lastChange": "2026-08-04T04:57:10.412Z",
     "id": 2580
   },
   {
@@ -3640,23 +3662,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.823Z",
     "id": 202
-  },
-  {
-    "name": "阿凡达 潘多拉边境豪华中文全DLC",
-    "shortName": "阿凡达潘多拉",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4c4937c8593d"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOmwd7hvrc-PkCx1f61IV-8IA1?pwd=e8qc#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
-    "id": 203
   },
   {
     "name": "忍者龙剑传4 v1.0.4.0 新加DLC超忍双雄 豪华中文版 全DLC+神器",
