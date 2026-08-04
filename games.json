@@ -330,7 +330,7 @@
     "id": 112
   },
   {
-    "name": "原子之心voice38版 非虚拟机v1.16.3.0终极版+水晶之血DLC  解压即玩",
+    "name": "原子之心 去除D加密版Build24534183官方中文全DLC+单独升级补丁",
     "shortName": "原子之心|非虚拟机|v1.16.3.0",
     "cover": "https://img.te5.com/uploads/allimg/230309/240-230309142137.png",
     "links": [
@@ -348,7 +348,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-05T10:37:38.951Z",
+    "lastChange": "2026-08-04T10:01:50.427Z",
     "id": 1922
   },
   {
@@ -701,25 +701,25 @@
     "id": 224
   },
   {
-    "name": "杀戮尖塔2 v0.109.0 官方中文（PC+安卓+苹果ios） 联机+修改器+MOD合集",
+    "name": "杀戮尖塔2 v0.110.1 官方中文（PC+安卓+苹果ios） 联机+修改器+MOD合集",
     "shortName": "杀戮尖塔2|0.109.0",
     "cover": "https://doc-fd.zol-img.com.cn/t_s2000x2000/g7/M00/0B/02/ChMkLGdbjCiILbNIAAMf7UEMSokAAmsfQD2f2UAAyAF841.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7aaa2e6f1adb"
+        "url": "https://pan.quark.cn/s/f49469f05a3b"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOxpvoI8Ut8S1GWo1EOUJHKBA1?pwd=vvqi#"
+        "url": "https://pan.xunlei.com/s/VOzBvm8qRYj7jrdqdIwz-HwgA1?pwd=c6v9"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1nht1W3ScSRcLhVzI_0DkzQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1vUm4MY0or81bOgA62NmLuQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-18T15:56:46.154Z",
+    "lastChange": "2026-08-04T13:24:31.458Z",
     "id": 36
   },
   {
@@ -35560,23 +35560,23 @@
     "id": 2573
   },
   {
-    "name": "多少兄弟v1.0.5.rc3官方中文全DLC 崩溃大陆团队新游戏",
+    "name": "多少兄弟v1.0.5.rc9官方中文全DLC 崩溃大陆团队新游戏",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f9eb4f7a9517"
+        "url": "https://pan.quark.cn/s/09061ed166a5"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOysXO18_ggxefwM34GfxS_nA1?pwd=uzfi"
+        "url": "https://pan.xunlei.com/s/VOzAi0BJgt0Nl-cSgRVanqpQA1?pwd=73gx"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1GGDbOzxXnXYR-hiDjnh57Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/19neNQ0bozIGs12s9plTbKg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-31T14:18:50.951Z",
+    "lastChange": "2026-08-04T07:43:19.530Z",
     "id": 2574
   },
   {
@@ -35778,5 +35778,25 @@
     ],
     "lastChange": "2026-08-03T11:24:51.136Z",
     "id": 2585
+  },
+  {
+    "name": "侠影录豪华版v1.1.6官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dafb8fe76b8d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzBjM0XqCI97DS88Lpy_xr_A1?pwd=znke"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1i5a_VVPiqbakVYBMrt_p2A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-04T12:30:05.581Z",
+    "id": 2586
   }
 ]
