@@ -1,5 +1,27 @@
 [
   {
+    "name": "超级机器人大战Y豪华版 v1.4.0 官方中文全DLC+集成周年纪念扩充组合包",
+    "shortName": "超级机器人大战Y|v1.4.0|集成周年纪念包",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/044efe301776"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzFX_xLEVjzUKjqhHj92rnIA1?pwd=vgcn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1si_iAwk5P3hoMbhGiY4zmQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-05T06:10:45.702Z",
+    "id": 1951
+  },
+  {
     "name": "红色沙漠 v1.14.00非虚拟机voice38版 豪华中文全DLC+单独补丁 解压即玩",
     "shortName": "红色沙漠|非虚拟机|解压即玩",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260319/1773889078_911049.jpg",
@@ -765,27 +787,6 @@
     ],
     "lastChange": "2026-07-23T10:41:18.258Z",
     "id": 1904
-  },
-  {
-    "name": "超级机器人大战Y豪华版 v1.3.0 全DLC+拓展包DLC3 （解压即玩，已去除D加密，无需虚拟机）",
-    "shortName": "超级机器人大战Y|非虚拟机",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a0ee4cfd0245"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqnHOhANaSZJ_52MyiAdvltA1?pwd=7vcc#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Allz8egiZxc043R-20tSQw?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-05-08T08:47:57.457Z",
-    "id": 1951
   },
   {
     "name": "（Switch）塞尔达传说 织梦岛官方中文本体+v1.1.0 升补",
@@ -5246,24 +5247,25 @@
     "id": 318
   },
   {
-    "name": "（Switch）超级机器人大战Y中文1.3.0+9DLC+金手指（PC+安卓）",
+    "name": "（Switch）超级机器人大战Y官方中文1.4.0+10DLC+金手指",
     "shortName": "超级机器人大",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fb0bb98777eb"
+        "url": "https://pan.quark.cn/s/4e4da275987b"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqtYyFDv8NzspwJIMosqUGEA1?pwd=jqgf#"
+        "url": "https://pan.xunlei.com/s/VOzFbtkd7PhuGt6-xafPOqKdA1?pwd=8pgq"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1PUR9jXATWpbpp1vah7WrPw?pwd=8888"
+        "url": "https://pan.baidu.com/s/1xJ-qCJMiwaBAIV_y1kjdsQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-23T08:59:03.260Z",
+    "lastChange": "2026-08-05T06:33:27.957Z",
     "id": 319
   },
   {
@@ -35798,25 +35800,5 @@
     ],
     "lastChange": "2026-08-04T12:30:05.581Z",
     "id": 2586
-  },
-  {
-    "name": "（Switch）沙罗曼蛇 起源 GRADIUS ORIGINS官方中文本体+1.4.0升补",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5193174aa3e3"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOzCLQE4adKJU5xrKF3klNO5A1?pwd=5jtx"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1YI_Kb92RpyV7lKBhKLM11g?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-08-04T15:18:52.340Z",
-    "id": 2587
   }
 ]
