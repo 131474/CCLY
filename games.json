@@ -177,7 +177,7 @@
   },
   {
     "name": "龙之剑：觉醒 v1.0.7官方中文全DLC+单独升级补丁",
-    "shortName": "龙之剑：觉醒|v1.0.3",
+    "shortName": "龙之剑：觉醒|v1.0.7",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
       {
@@ -35811,5 +35811,25 @@
     ],
     "lastChange": "2026-08-06T05:01:31.823Z",
     "id": 2586
+  },
+  {
+    "name": "赤鸟 Akatori官方中文v1.0.00全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/84125bc5b3b9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzLZxf_nKSKAGZ-dNLSdO9GA1?pwd=reqf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1p9OaniYGMb_BrkkWg9zuvw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-06T14:13:50.178Z",
+    "id": 2587
   }
 ]
