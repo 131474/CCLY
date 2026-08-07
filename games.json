@@ -1,6 +1,6 @@
 [
   {
-    "name": "超级机器人大战Y豪华版  v1.4.0 官方中文全DLC+集成周年纪念扩充组合包",
+    "name": "超级机器人大战Y豪华版 v1.4.0 官方中文全DLC+集成周年纪念扩充组合包",
     "shortName": "超级机器人大战Y|v1.4.0|集成周年纪念包",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg",
     "links": [
@@ -22,7 +22,7 @@
     "id": 1951
   },
   {
-    "name": "红色沙漠 v1.14.00非虚拟机 voice38版 豪华中文全DLC+单独补丁 解压即玩",
+    "name": "红色沙漠 v1.14.00非虚拟机voice38版 豪华中文全DLC+单独补丁 解压即玩",
     "shortName": "红色沙漠|非虚拟机|去除D加密",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260319/1773889078_911049.jpg",
     "links": [
@@ -7891,25 +7891,25 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2055 豪华中文全DLC+丛林DLC+原声原画集",
+    "name": "潜水员戴夫v1.0.6.2084豪华中文全DLC+丛林DLC+原声原画集",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/be528f0dbe17"
+        "url": "https://pan.quark.cn/s/acbb2bc68148"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwvzVaFKK5t0VorEUZ4pQXpA1?pwd=fm2w#"
+        "url": "https://pan.xunlei.com/s/VOzPkrqBR4e_wmmwaKDzatTYA1?pwd=kb28"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1UtahnQqGATNvy8K0LBpQvw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1N1Tx1hMAkm9irK_Jm_uY9Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-07T09:53:08.340Z",
+    "lastChange": "2026-08-07T05:51:56.831Z",
     "id": 508
   },
   {
@@ -35831,5 +35831,25 @@
     ],
     "lastChange": "2026-08-06T14:13:50.178Z",
     "id": 2587
+  },
+  {
+    "name": "仙途放置 无尽天梯和完美装备Build.24575296官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2ca0b418ca17"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzMq4c7PEwFm7F0Mb7pVfUvA1?pwd=5rcj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GWOyLR3VW8T0kTLOxfMfCg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-06T16:13:48.397Z",
+    "id": 2588
   }
 ]
