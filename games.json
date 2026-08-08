@@ -1291,20 +1291,25 @@
     "id": 32
   },
   {
-    "name": "生灵重塑 单机+联机 v360676 中文版",
+    "name": "生灵重塑v367303官方中文全DLC+囚徒DLC",
     "shortName": "生灵重塑中文",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8636d7a911ff"
+        "url": "https://pan.quark.cn/s/6ab219c764d1"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOoDdV_Vp0r6zv55i6vlYIZVA1?pwd=x9rd#"
+        "url": "https://pan.xunlei.com/s/VOzVAGeEfDHKTc2C3wYO7-3lA1?pwd=357e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pQeC-3lEsqiTY7NrJi2scQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-19T13:09:49.677Z",
+    "lastChange": "2026-08-08T07:06:44.272Z",
     "id": 33
   },
   {
@@ -14275,25 +14280,25 @@
     "id": 987
   },
   {
-    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.40升补",
+    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.41升补",
     "shortName": "我的世界Mi",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ee2807f2d775"
+        "url": "https://pan.quark.cn/s/de759246589b"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOzH9pASkn0P_OKjYZ72FWfPA1?pwd=gnuk"
+        "url": "https://pan.xunlei.com/s/VOzUtyctR4e_wmmwaKE1NoeLA1?pwd=3ky6"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1F87F6x6yFgDNs7PKK75IxA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1j2lBsJF6Ghn5nfKNFcWvGA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-05T13:46:15.152Z",
+    "lastChange": "2026-08-08T05:53:12.998Z",
     "id": 988
   },
   {
@@ -35932,5 +35937,25 @@
     ],
     "lastChange": "2026-08-07T16:28:53.643Z",
     "id": 2592
+  },
+  {
+    "name": "（Switch）动物园合并Zoo Merge官方中文v1.0.8",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d7bc648d1ec2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzV1gbSmuVMSAU93Ph1KKI4A1?pwd=hnps"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rrh2RSsEBzub4T-9zPmSAw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-08T06:24:45.476Z",
+    "id": 2593
   }
 ]
