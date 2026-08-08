@@ -242,25 +242,25 @@
     "id": 236
   },
   {
-    "name": "碧蓝幻想 Relink 特别版v2.0.3官方中文全DLC+无尽黄昏DLC+单独升级补丁",
+    "name": "碧蓝幻想 Relink 特别版v2.0.4官方中文全DLC+无尽黄昏DLC+单独升级补丁",
     "shortName": "碧蓝幻想|Relink|v2.0.2",
     "cover": "https://img1.dancihu.com/2024-02-20/29a11b89-fe8f-e794-1369-d2a49d172bb6.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/51cb7f3f1d98"
+        "url": "https://pan.quark.cn/s/c744993a52cd"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOz-irs-fiR1KvQ0qvxTLub3A1?pwd=tzq7"
+        "url": "https://pan.xunlei.com/s/VOzVucNVC1wsernrJ70MtOMJA1?pwd=ka33"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/199GymyGuzzZayV8c3DJbOg?pwd=8888",
+        "url": "https://pan.baidu.com/s/15uTpQI_fWIeZKe-qCcdM3A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-02T04:32:24.266Z",
+    "lastChange": "2026-08-08T10:29:48.105Z",
     "id": 2468
   },
   {
@@ -4109,25 +4109,25 @@
     "id": 237
   },
   {
-    "name": "消逝的光芒2：重装上阵版v1.29.0终极版 豪华中文全DLC+国语配音",
+    "name": "消逝的光芒2：重装上阵版v1.29.1终极版 豪华中文全DLC+国语配音+单独升级补丁",
     "shortName": "消逝的光芒2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e1735322db6e"
+        "url": "https://pan.quark.cn/s/a035dcc713a0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOzGKfZilkhYV3kyJ5tyC6-RA1?pwd=m6gk"
+        "url": "https://pan.xunlei.com/s/VOzW-NITC1wsernrJ70MwXYHA1?pwd=4bdi"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1BsK2RlRtE-uk4mksyBloKw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1zxRHtDXhHnetGcleVGtiXA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-05T09:55:08.940Z",
+    "lastChange": "2026-08-08T10:54:57.270Z",
     "id": 238
   },
   {
@@ -35957,5 +35957,25 @@
     ],
     "lastChange": "2026-08-08T06:24:45.476Z",
     "id": 2593
+  },
+  {
+    "name": "（Switch）家庭国际象棋Family Chess官方中文本体+v1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/77cbc14714fe"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzVcoJNECCzjwEZdjKZnlnqA1?pwd=izzf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RJf0xWa8yM7GmbRcGrabmA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-08T09:11:12.166Z",
+    "id": 2594
   }
 ]
