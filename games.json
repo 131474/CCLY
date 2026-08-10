@@ -5618,25 +5618,25 @@
     "id": 343
   },
   {
-    "name": "英雄连3 最终防线v2.5.2.48837官方中文全DLC",
+    "name": "英雄连3 最终防线v2.5.3.49048官方中文全DLC",
     "shortName": "英雄连3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7b6fd9699419"
+        "url": "https://pan.quark.cn/s/8be2f2df8bd0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOz5NHyGWmxEUfHGHKC7m-bgA1?pwd=nwkg"
+        "url": "https://pan.xunlei.com/s/VOzeO-mM4uZwlx3BbOW96cvcA1?pwd=8ru8"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HqIklplekoCmO5wp2MZozQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Uav3wybW7BVePeqtVamZLg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-03T06:50:04.991Z",
+    "lastChange": "2026-08-10T06:45:10.956Z",
     "id": 344
   },
   {
@@ -36102,5 +36102,45 @@
     ],
     "lastChange": "2026-08-09T16:32:30.132Z",
     "id": 2600
+  },
+  {
+    "name": "黑夜轮回ReNight官方中文Build.24645943+全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/794ba9891d12"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzfyG9cF-vLzCB0AIH-XTurA1?pwd=psy9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Yu6OCN7DLSF_Eitwguckgg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-10T14:06:23.071Z",
+    "id": 2601
+  },
+  {
+    "name": "杀死影子Build.24631176官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/38353acc4af6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzgFK-2BNa2RTtdEx3GyY31A1?pwd=umcj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RWL7cKK368hPnOQdheFvTQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-10T15:21:16.941Z",
+    "id": 2602
   }
 ]
