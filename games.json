@@ -7901,7 +7901,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2084豪华中文全DLC+丛林DLC+原声原画集",
+    "name": "潜水员戴夫v1.0.6.2087豪华中文全DLC+丛林DLC+原声原画集",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7915,11 +7915,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1N1Tx1hMAkm9irK_Jm_uY9Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/19IOVEfMjisGKnwwjgCOhKw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-07T05:51:56.831Z",
+    "lastChange": "2026-08-11T14:22:02.301Z",
     "id": 508
   },
   {
@@ -36142,5 +36142,85 @@
     ],
     "lastChange": "2026-08-10T15:21:16.941Z",
     "id": 2602
+  },
+  {
+    "name": "（Switch）一个存在主义平台游戏PEPPERED官方中文本体+v1.1.39升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/22875eb0ad13"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzkvywdUpqeSt4W6Q1d6tQ9A1?pwd=zjhe"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1VVt1azO49gxU58bSyox1UQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-11T13:09:31.840Z",
+    "id": 2603
+  },
+  {
+    "name": "吸吸弹弹大乱斗Jelly Bubble v1.0.1.11633官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7b2565ca5b4d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzlTaFDzbDBnFYnV8vQznhJA1?pwd=csyu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AnX0CW1NA80nFIgiskFO8w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-11T15:41:05.463Z",
+    "id": 2604
+  },
+  {
+    "name": "暗星铁律v0.195.0.201228官方中文全DLC 解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f1fa9ec933d0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzlVOYLOzPWaxbpDZ8FGF1JA1?pwd=3re4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-sNF4RFRcLYUxWOdwGEzfA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-11T15:54:11.549Z",
+    "id": 2605
+  },
+  {
+    "name": "（Switch）尼克通与命运之骰Nicktoons & The Dice of Destiny 英文版本体+v1.4.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a6e6069919e6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzl_goM8x5YqRe0nOYEdjXdA1?pwd=twuz"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1njQHZkTVwFx-Ck_oZRLjng?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-11T16:11:03.925Z",
+    "id": 2606
   }
 ]
