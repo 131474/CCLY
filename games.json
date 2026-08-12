@@ -220,25 +220,25 @@
     "id": 226
   },
   {
-    "name": "幻兽帕鲁Palworld正式版 v1.0.2.101103 官方中文全DLC+单独升级补丁+联机补丁",
+    "name": "幻兽帕鲁Palworld正式版 v1.0.3.101283 官方中文全DLC+单独升级补丁+联机补丁",
     "shortName": "幻兽帕鲁正式版|v1.0.2.100933",
     "cover": "https://www.yxila.com/data/attachment/portal/202410/09/17284336734358.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dfdf0ef16d95"
+        "url": "https://pan.quark.cn/s/c88e77002cd4"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOz1y2s2TVbJPPO0LgfUl41NA1?pwd=epzn"
+        "url": "https://pan.xunlei.com/s/VOzp20bBwtVcJtFjT3ncn7PgA1?pwd=8g3d"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Zvgr5ZwrRHz_7ahmQMi1kg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1iC-iWZcjf3k-x_lULAT0_Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-02T14:57:39.576Z",
+    "lastChange": "2026-08-12T08:36:25.483Z",
     "id": 236
   },
   {
@@ -36262,5 +36262,25 @@
     ],
     "lastChange": "2026-08-12T05:07:30.819Z",
     "id": 2608
+  },
+  {
+    "name": "（Switch）阿喀琉斯 幸存者 Achilles Survivor官方中文本体+v1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4a9d3f6f907b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzovf5TFHnOHBoF5kXr0GjOA1?pwd=k4au"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1aPmLVWf-sP2LXU_cdjiATg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-12T08:05:53.260Z",
+    "id": 2609
   }
 ]
