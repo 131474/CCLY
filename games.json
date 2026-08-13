@@ -26030,7 +26030,7 @@
     "id": 1934
   },
   {
-    "name": "（Switch）异星探险家官方中文本体+v1.42.3.0升补",
+    "name": "（Switch）异星探险家官方中文本体+v1.43.2.0升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -26042,11 +26042,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1JV26oGo9JvZ7SIJ03HJT7w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1V18hO7SwMjWn6rPhXJrqUw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-16T05:16:40.607Z",
+    "lastChange": "2026-08-13T08:43:03.874Z",
     "id": 1935
   },
   {
@@ -36322,5 +36322,45 @@
     ],
     "lastChange": "2026-08-13T04:51:44.361Z",
     "id": 2611
+  },
+  {
+    "name": "（Switch）肖帕：营救对手Choppa Rescue Rivals官方中文本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e2a3e4dfdbc4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzu65WLeMcuiP3EabadzNwHA1?pwd=7jz9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PByiL8zB1TYYQ9yos2HtSQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-13T07:54:35.801Z",
+    "id": 2612
+  },
+  {
+    "name": "（Switch）塔之统治Tower Dominion官方中文本体+v1.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d7db60fbaa15"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOzvqeaT05nq69AH1-6quNiiA1?pwd=cfs4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1LeKXYCbQJh1BDQvRkq0ixA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-13T16:06:31.728Z",
+    "id": 2613
   }
 ]
