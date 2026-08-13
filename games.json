@@ -22486,19 +22486,19 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/57f6039b2aa2"
+        "url": "https://pan.quark.cn/s/61447c70c7f7"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOyn_eMWh8OpDLkVusTwAD_6A1?pwd=qqb5"
+        "url": "https://pan.xunlei.com/s/VOztkfEN4nXyVrg_upVCvKtvA1?pwd=8j3i"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Jo-8m6yrv-4aAJdCfHn9wA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1yn4jLB7qGIe1sInySaYMaw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-30T15:15:24.428Z",
+    "lastChange": "2026-08-13T06:24:39.095Z",
     "id": 1635
   },
   {
@@ -28806,23 +28806,23 @@
     "id": 2156
   },
   {
-    "name": "平行人生 v0.1.4b.20189 官方中文全DLC",
+    "name": "平行人生（Paralives） v0.1.7c.20609 官方中文全DLC 解压即玩",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d3e9108e03b9"
+        "url": "https://pan.quark.cn/s/f48bee694552"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtY2EgRq9e1H7q5gtoPCjJPA1?pwd=w9ay#"
+        "url": "https://pan.xunlei.com/s/VOztMKcFkpHQAugB4c0kJEstA1?pwd=f3s7"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HkwN4itLsNSE4xK6vn3mmg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1jyuVtg3K19-Y7xpGglJmwg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-27T16:33:44.563Z",
+    "lastChange": "2026-08-13T04:46:24.944Z",
     "id": 2157
   },
   {
@@ -36282,5 +36282,45 @@
     ],
     "lastChange": "2026-08-12T08:05:53.260Z",
     "id": 2609
+  },
+  {
+    "name": "（Switch）无休仙途Idle Immortal官方中文本体+v1.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1d21e11ec72c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOztBJ2ocUxzxWEmP2u9R0n4A1?pwd=am2b"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JCdjUlwEBQ_70jovPip9UA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-13T03:38:50.299Z",
+    "id": 2610
+  },
+  {
+    "name": "（Switch）东方弹幕神乐 失落幻想Touhou Danmaku官方中文本体+v1.16.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fe1ccce1420f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VOztS9FOPuUps0eo3vzBuY2EA1?pwd=cw9g"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gJL6CfGMVFt3cRhYB_HXMg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-13T04:51:44.361Z",
+    "id": 2611
   }
 ]
