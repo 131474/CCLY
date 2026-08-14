@@ -701,7 +701,7 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.34官方中文全DLC+联机补丁",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.35官方中文全DLC+联机补丁",
     "shortName": "魔法门英雄无敌|上古纪元|0.80.33",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
@@ -715,11 +715,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1008faOK3tCq6XkioSdLodw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1kJ4-VXnaIDAmCrMG4SMJJg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-11T13:11:04.660Z",
+    "lastChange": "2026-08-14T16:25:53.320Z",
     "id": 224
   },
   {
@@ -36402,5 +36402,25 @@
     ],
     "lastChange": "2026-08-14T11:13:22.668Z",
     "id": 2615
+  },
+  {
+    "name": "（Switch）回忆房间 Momento官方中文本体+1.0.6升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cc9e0410f7c1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP--uRV2SuksuuhgeIn7eb_QA1?pwd=gp8m"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1srROAqdQQYo-YszVXXRC5Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-14T15:38:13.472Z",
+    "id": 2616
   }
 ]
