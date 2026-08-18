@@ -8295,25 +8295,25 @@
     "id": 531
   },
   {
-    "name": "空之轨迹 the 1st v1.06.4中文全DLC+国语配音完整版",
+    "name": "空之轨迹 the 1st v1.07官方中文全DLC+单独升级补丁+国语配音完整版",
     "shortName": "空之轨迹th",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/820eb9816b70"
+        "url": "https://pan.quark.cn/s/e9652479c455"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOxELRS53L0IYNEkZOeLOm33A1?pwd=3exi#"
+        "url": "https://pan.xunlei.com/s/VP-J9LxyDbbnhoZn0blvCSFVA1?pwd=nyu8"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1VyX6b5tZEzFGjoF6ZM-jRA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ctBasGc5k1uZ1GugBsRvDQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-11T04:06:07.402Z",
+    "lastChange": "2026-08-18T09:20:09.747Z",
     "id": 532
   },
   {
@@ -35452,7 +35452,7 @@
     "id": 2563
   },
   {
-    "name": "（Switch）展翅翱翔 Wingspan官方中文v1.8.793+7DLC",
+    "name": "（Switch）展翅翱翔 Wingspan官方中文v1.8.795+7DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -35464,11 +35464,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ExmLeHZz2E3P9CzGuSNZAg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1fZ7XSWqDjZLUmWQ1zdVB2w?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-29T05:59:30.064Z",
+    "lastChange": "2026-08-18T09:14:51.123Z",
     "id": 2564
   },
   {
@@ -36650,5 +36650,45 @@
     ],
     "lastChange": "2026-08-17T15:57:30.046Z",
     "id": 2626
+  },
+  {
+    "name": "（Switch）只有形状和节奏Just Shapes & Beats官方中文本体+v1.6.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d0bc83a7b9f8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-IjFnpK8DH0P4YPYElyK_JA1?pwd=yfi9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mC7Nz8rqrNwLYNvQ5AJgjg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-18T07:20:28.811Z",
+    "id": 2628
+  },
+  {
+    "name": "幽灵行动：荒野终极版 v9820855 豪华中文全DLC VBS一键启动",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8269df764ed0[/hide]"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-JH2TSG8bpipR1QM2AU6TJA1?pwd=jtih[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12iQY5TfpcZbRRDZ6Nw21dA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-18T10:18:17.594Z",
+    "id": 2629
   }
 ]
