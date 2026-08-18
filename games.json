@@ -1,7 +1,7 @@
 [
   {
-    "name": "致命躯壳2豪华版v92086官方中文全DLC+预购特典",
-    "shortName": "致命躯壳2|豪华版|v92086",
+    "name": "致命躯壳2豪华版v92120官方中文全DLC+单独升级补丁",
+    "shortName": "致命躯壳2|豪华版|v92120",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2584270/87e53a9dd9d5a32f3d3cfc011aaccbc6ef6c4eed/header_schinese.jpg?t=1786999199",
     "links": [
       {
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-18T06:31:09.089Z",
+    "lastChange": "2026-08-18T15:00:15.613Z",
     "id": 2627
   },
   {
@@ -242,25 +242,25 @@
     "id": 2158
   },
   {
-    "name": "光环：战役进化重制版高级版v20260729官方中文全DLC",
+    "name": "光环：战役进化重制版高级版v1121610官方中文全DLC",
     "shortName": "光环：战役进化|v20260729",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260408/8/24/95d8c2627b0223bbe2eb2be608799416.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/763199c497f4"
+        "url": "https://pan.quark.cn/s/a63b87b545b0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOymiw1aWTxF-xcKUQ4g8xW5A1?pwd=vv2b"
+        "url": "https://pan.xunlei.com/s/VP-KGYYK9rOwaxiczxDLuRM_A1?pwd=ipqb"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HucBUGvWpc8y89GOm_N8sw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1eMg-1g-VG59U_5ZrYCYmUA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-30T11:18:28.057Z",
+    "lastChange": "2026-08-18T14:31:59.200Z",
     "id": 2548
   },
   {
@@ -11872,25 +11872,25 @@
     "id": 800
   },
   {
-    "name": "我独自升级：起立·觉醒 v1.1.93官方中文全DLC+齐州岛攻略队特别篇DLC",
+    "name": "我独自升级：起立·觉醒v1.1.100 豪华中文全DLC+齐州岛攻略队特别篇DLC",
     "shortName": "我独自升级起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/41763dee12e6"
+        "url": "https://pan.quark.cn/s/f725a4ef1865"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOxzgjLej6ztrpu78NacHo5rA1?pwd=twaj#"
+        "url": "https://pan.xunlei.com/s/VP-JmqEEu2wyyxR--c6PsxEAA1?pwd=hgyn"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17RkoQdRrTYo48-uWFqUwZQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xG9dFnIHFxPi4Bvko8ZUZA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-20T13:31:58.855Z",
+    "lastChange": "2026-08-18T12:56:29.717Z",
     "id": 801
   },
   {
@@ -36690,5 +36690,45 @@
     ],
     "lastChange": "2026-08-18T10:18:17.594Z",
     "id": 2629
+  },
+  {
+    "name": "（Switch）异能追忆Staffer Retro  A 官方中文本体+v1.1.4升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/281c25b6251c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-K5DJlLM92fg6LOHY2O-otA1?pwd=5wjs"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1B0Bu0w0fQnWRDuM1pYLCcQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-18T13:41:00.290Z",
+    "id": 2630
+  },
+  {
+    "name": "（Switch）餐车厨师烹饪 - 完整课程版Food Truck Chef官方中文本体+v1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/95325b08cb9c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-K_N9Rc_3eNT_vJGh3rhkoA1?pwd=9keg"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qPfRjDS4ADffLaIEFwVkOw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-18T16:01:41.823Z",
+    "id": 2631
   }
 ]
