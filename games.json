@@ -1,7 +1,7 @@
 [
   {
-    "name": "致命躯壳2豪华版v92120官方中文全DLC+单独升级补丁",
-    "shortName": "致命躯壳2|豪华版|v92120",
+    "name": "致命躯壳2豪华版v92163官方中文全DLC+单独升级补丁",
+    "shortName": "致命躯壳2|豪华版|v92163",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2584270/87e53a9dd9d5a32f3d3cfc011aaccbc6ef6c4eed/header_schinese.jpg?t=1786999199",
     "links": [
       {
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-18T15:00:15.613Z",
+    "lastChange": "2026-08-19T06:35:36.182Z",
     "id": 2627
   },
   {
@@ -1335,25 +1335,25 @@
     "id": 30
   },
   {
-    "name": "仁王3豪华版 v1.07.00中文全DLC+联机补丁+单独升级补丁",
+    "name": "仁王3豪华版v2.00.01中文全DLC+联机补丁+单独升级补丁",
     "shortName": "仁王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d92385b55162"
+        "url": "https://pan.quark.cn/s/9c56a2e5fc44"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuvYb7mqJ9P_ihBdGrfcsPJA1?pwd=ujec#"
+        "url": "https://pan.xunlei.com/s/VP-OObEEAY9X53miIEn9qi80A1?pwd=pf2b"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/184UNVasjNdW6llh8I5Pwkw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1f_sgDfjRn0L9CE0eP98xfw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-12T11:20:56.028Z",
+    "lastChange": "2026-08-19T09:47:12.721Z",
     "id": 32
   },
   {
@@ -13905,16 +13905,25 @@
     "id": 953
   },
   {
-    "name": "忍者神龟：破碎命运 v1.12.0 豪华中文版 全DLC",
+    "name": "忍者神龟：破碎命运v2.0.1.260677豪华中文全DLC+斯莱士角色DLC+原声原画集",
     "shortName": "忍者神龟破碎",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ddb92257ef5d"
+        "url": "https://pan.quark.cn/s/79e086d2a6dc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-O4Cdv0GHG77ekEy3Mv9uRA1?pwd=wm72"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iaKH1T_VEjtg0vnnt6a05Q?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-19T08:29:37.544Z",
     "id": 954
   },
   {
