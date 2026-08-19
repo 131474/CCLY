@@ -4236,25 +4236,25 @@
     "id": 240
   },
   {
-    "name": "辐射4：周年纪念版(fallout) v1.11.221.0豪华中文全DLC+季票+XG器",
+    "name": "辐射4：周年纪念版 v1.11.224.0豪华中文全DLC+单独升级补丁",
     "shortName": "辐射4周年纪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a2cd5753bc46"
+        "url": "https://pan.quark.cn/s/0965dd641661"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOu6NkoYjPYF-ReCvaAyZDnAA1?pwd=vs9h#"
+        "url": "https://pan.xunlei.com/s/VP-PgOeAEWCptXEP067w6AlZA1?pwd=auyv"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1GDdZRjnn1tPb6qoJiJ6QLQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1KFJlKC1J6ky8chnRzH14Wg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-02T08:17:01.119Z",
+    "lastChange": "2026-08-19T15:49:14.938Z",
     "id": 241
   },
   {
@@ -35881,7 +35881,7 @@
     "id": 2585
   },
   {
-    "name": "侠影录豪华版v1.1.12官方中文全DLC",
+    "name": "侠影录豪华版v1.1.15官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -35897,7 +35897,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-12T13:38:25.066Z",
+    "lastChange": "2026-08-19T16:21:14.936Z",
     "id": 2586
   },
   {
@@ -36799,5 +36799,25 @@
     ],
     "lastChange": "2026-08-19T05:29:57.901Z",
     "id": 2634
+  },
+  {
+    "name": "暗黑地牢豪华版v27760官方中文全DLC+火之边缘DLC+原生音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/be4c53bc9d60"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-PCx5S9OFw9u9ams4zsYukA1?pwd=6aya"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Ra7IoP1mDxXo382aAOykpQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-19T13:41:08.639Z",
+    "id": 2635
   }
 ]
