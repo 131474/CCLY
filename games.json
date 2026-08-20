@@ -1313,25 +1313,25 @@
     "id": 29
   },
   {
-    "name": "（Switch）喷射战士3 斯普拉遁3 官方中文本体+v11.2.0升补+3DLC",
+    "name": "（Switch）喷射战士3 Splatoon3官方中文本体+v11.3.0升补+3DLC",
     "shortName": "喷射战士3官",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/990917fb6161"
+        "url": "https://pan.quark.cn/s/8fe45f431207"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuqNCgd1X-xL3DaEe-oc53FA1?pwd=inxr#"
+        "url": "https://pan.xunlei.com/s/VP-T4sb3_UqpIDMxFl-1SXChA1?pwd=rfvk"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16jv_wIjunf9zWLq-tCtN-g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Zz_-CCjFJFMFbtqAt051gg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-11T11:17:10.404Z",
+    "lastChange": "2026-08-20T07:35:50.602Z",
     "id": 30
   },
   {
@@ -5061,20 +5061,25 @@
     "id": 297
   },
   {
-    "name": "（Switch）幻想生活ｉ 转圈圈的龙和偷取时间的少女 中文v2.1.0+3DLC",
+    "name": "（Switch）幻想生活ｉ 转圈圈的龙和偷取时间的少女 官方中文v2.2.0+3DLC",
     "shortName": "幻想生活ｉ转",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ccc41654cdbd"
+        "url": "https://pan.quark.cn/s/ca6c1d3bbca5"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOkqHG3sAj-8_CdFg66xKkxCA1?pwd=s5rn#"
+        "url": "https://pan.xunlei.com/s/VP-SpCx64lIltrCcB-OqZbgIA1?pwd=wbtb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wW8JYD1VJDS17vFkq6ic8w?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-20T06:30:27.968Z",
     "id": 300
   },
   {
@@ -7770,19 +7775,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 491
-  },
-  {
-    "name": "（Switch）幻想生活ｉ 转圈圈的龙和偷取时间的少女 中文v2.0.4+3DLC",
-    "shortName": "幻想生活ｉ转",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/babbefcbced5"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 492
   },
   {
     "name": "黑暗之魂六部曲 原版加MOD大合集 豪华中文版 全DLC（特别推荐翅佬的灰烬+血源MOD）",
@@ -36819,5 +36811,45 @@
     ],
     "lastChange": "2026-08-19T13:41:08.639Z",
     "id": 2635
+  },
+  {
+    "name": "（Switch）玩具军团模拟器Toy Tactics官方中文0.95w",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e4c707ebff5f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-SPZ4j2rJ3uxRqlpMWYIaVA1?pwd=zqf5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RIzxI0uZAR53j-G0ONrCLw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-20T04:27:36.437Z",
+    "id": 2636
+  },
+  {
+    "name": "（Switch）泡泡龙交响曲BUBBLE SYMPHONY官方中文本体+v1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4ed9b49b7f18"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-T2CAzDtGyXrb1QwIAeY9sA1?pwd=64gq"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1oJNemdd3d_HcZ0QJ0W_zIg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-20T07:24:35.882Z",
+    "id": 2637
   }
 ]
