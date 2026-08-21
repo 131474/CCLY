@@ -4273,16 +4273,25 @@
     "id": 238
   },
   {
-    "name": "幻想生活i 转圈圈的龙和偷取时间的少女 v2.1.2 豪华中文版 全DLC",
+    "name": "幻想生活ｉ转圈圈的龙和偷取时间的少女v2.2.0 豪华中文全DLC",
     "shortName": "幻想生活i转",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/755648b9500f"
+        "url": "https://pan.quark.cn/s/4ae3ea177c56"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-Z_5wzzBgBtNKKhXODfHpTA1?pwd=umex"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1n8Fyv5XXfhzS1kO-RN_f2w?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-08-21T13:53:15.382Z",
     "id": 239
   },
   {
@@ -36992,5 +37001,45 @@
     ],
     "lastChange": "2026-08-21T12:58:22.340Z",
     "id": 2643
+  },
+  {
+    "name": "又一个僵尸幸存者正式版v1.0.0a官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/859892e0c5bd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ZuRHXowu4QSSNi0x0IBJ4A1?pwd=xpdx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/18us_h_8wHmUNLaAmCMYSIw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-21T15:26:38.950Z",
+    "id": 2644
+  },
+  {
+    "name": "（Switch）古墓丽影1-3 复刻版Tomb Raider I-III官方中文本体+v1.1.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f73928879453"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ZxtfPLvkgymUvV4y5N6OoA1?pwd=y5p3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PjHtZ6d3angWPlm6qHu9lQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-21T15:37:56.309Z",
+    "id": 2645
   }
 ]
