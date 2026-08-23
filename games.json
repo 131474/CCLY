@@ -110,8 +110,8 @@
     "id": 2463
   },
   {
-    "name": "漫威斗魂v1.2.2Fix 豪华中文全DLC 免安装亲测可玩 无需安装EAC",
-    "shortName": "漫威斗魂|v1.2.2Fix|无需安装EAC",
+    "name": "漫威斗魂v1.2.3豪华中文全DLC 免安装亲测可玩 无需安装EAC",
+    "shortName": "漫威斗魂|v1.2.3|无需安装EAC",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3787240/82b30184ef30af41cf3c6eb93b5b3423f8f1c2c5/header_schinese.jpg?t=1786097849",
     "links": [
       {
@@ -124,11 +124,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1cAzdTQ5pzEyXn_0v5iNL-w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1XRLfD-i98wW8OogtgSsoVw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-17T05:03:53.810Z",
+    "lastChange": "2026-08-23T03:56:08.924Z",
     "id": 2618
   },
   {
@@ -12335,16 +12335,25 @@
     "id": 829
   },
   {
-    "name": "横跨方尖碑 v1.7.0 新加DLC 诅咒冥都 豪华中文版 全DLC",
+    "name": "横跨方尖碑 v1.7.6.3豪华中文全DLC 免安装解压即玩",
     "shortName": "横跨方尖碑",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5277d64ce222"
+        "url": "https://pan.quark.cn/s/b04f6f65f2d6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-h9UCI9TWDwm1v8P3WrsOnA1?pwd=ymhn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iCFPw9XpyhDs2C44REp-qg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-23T05:51:47.522Z",
     "id": 830
   },
   {
@@ -20770,16 +20779,25 @@
     "id": 1493
   },
   {
-    "name": "上古卷轴5天际周年纪念版+全DLC",
+    "name": "上古卷轴5：天际周年纪念特别版v1.7.99.0.8豪华中文全DLC",
     "shortName": "上古卷轴5天",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/cefecb119edf"
+        "url": "https://pan.quark.cn/s/6a98efb867d4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-gv0PmUscodBE5XkFudvy-A1?pwd=y9f7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yTlxs7kJakXKLWgYUIL9Lg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-23T04:44:01.336Z",
     "id": 1494
   },
   {
@@ -37089,5 +37107,25 @@
     ],
     "lastChange": "2026-08-22T13:17:32.090Z",
     "id": 2648
+  },
+  {
+    "name": "静谧田园v1.06官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/70b8066e65ea"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-h0lKRdTLgA8q0_-xqW4FLA1?pwd=4i3a"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Bq_Kq5GxBBSl4wMlU5csUA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-23T05:13:00.381Z",
+    "id": 2649
   }
 ]
