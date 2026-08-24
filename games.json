@@ -20293,16 +20293,25 @@
     "id": 1458
   },
   {
-    "name": "刺客信条奥德赛",
+    "name": "刺客信条：奥德赛终极版v1.5.3 豪华中文全DLC 免安装解压即玩",
     "shortName": "刺客信条奥德",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/04b8398f6c09"
+        "url": "https://pan.quark.cn/s/00cbf8fa7e96"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-nQEfLqygEwWjrXV-JFGt8A1?pwd=a8f8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Fk3VZMOQqLt2EQ_KMO-eCQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-24T11:09:10.028Z",
     "id": 1459
   },
   {
@@ -35609,7 +35618,7 @@
     "id": 2566
   },
   {
-    "name": "（Switch）赫利克斯 下坠与攀升 Helix Descent N Ascent官方中文本体+v1.0.7.2升补",
+    "name": "（Switch）赫利克斯 下坠与攀升 Helix Descent N Ascent官方中文本体+v1.0.9.5升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -35621,11 +35630,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1NkEY7mbyXoizFP_9gXuvuQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1XWk1vCpjEIsTxOn_NungHw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-29T11:34:23.894Z",
+    "lastChange": "2026-08-24T09:35:15.119Z",
     "id": 2567
   },
   {
@@ -37329,7 +37338,7 @@
     "id": 2659
   },
   {
-    "name": "渔力全开（How to Fish）v1.0.6官方中文全DLC 免安装解压即玩",
+    "name": "渔力全开（How to Fish）v1.0.8官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -37345,7 +37354,67 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-24T08:24:57.170Z",
+    "lastChange": "2026-08-24T13:33:22.200Z",
     "id": 2660
+  },
+  {
+    "name": "尼克卡通与命运骰子Buide.22242179全DLC+齐姆的末日之塔",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/daad71727ae0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ns4TZyKjfkN6oNadN-0EZA1?pwd=9dwc"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1kuduLw3cjXTDXYymqDMH4Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T13:12:41.873Z",
+    "id": 2661
+  },
+  {
+    "name": "（Switch）爆旋陀螺X 进化对决BEYBLADE X EVOBATTLE日文版v1.1.3+21DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/be5f7a72c69f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-oGr2o52L628wIIu0FOKAOA1?pwd=jfv3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nozbMBt4OvVnDtrpSTwSKg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T15:00:44.550Z",
+    "id": 2662
+  },
+  {
+    "name": "（Switch）太空行星入侵者：宇宙力量Space Planet Invader英文版本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/eb9675b5347e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-oUebxpMOvjp6Ka_lPgArhA1?pwd=it8k"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11vxu6cB6iCMItOKRFzOMYg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T16:00:57.988Z",
+    "id": 2663
   }
 ]
