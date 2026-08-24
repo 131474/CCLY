@@ -3157,7 +3157,7 @@
     "id": 157
   },
   {
-    "name": "泰拉瑞亚V1.4.5.7豪华中文全DLC",
+    "name": "泰拉瑞亚V1.4.5.8豪华中文全DLC",
     "shortName": "泰拉瑞亚豪华",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -3175,7 +3175,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-21T13:11:25.056Z",
+    "lastChange": "2026-08-24T07:51:03.298Z",
     "id": 158
   },
   {
@@ -37187,5 +37187,165 @@
     ],
     "lastChange": "2026-08-23T16:13:29.991Z",
     "id": 2652
+  },
+  {
+    "name": "泰坦之旅 十周年纪念版v2.10.21415终极版 豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d5936bfa1329"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-jXg-GdKk0jts129nIU9-jA1?pwd=u35i"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1oged6_97UnUO3jt_JNRreg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-23T16:57:18.052Z",
+    "id": 2653
+  },
+  {
+    "name": "神探夏洛克：暗夜追踪者v1.1.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a4b07d0f49e5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-jdU788MvSDRnNg-bFhzPLA1?pwd=mick"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gHU57if8ytidVa8mdVw4iw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-23T17:26:02.057Z",
+    "id": 2654
+  },
+  {
+    "name": "（Switch）小虫Little Bug 英文版v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/60812c03ead7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ln1ZYI3K2Mo1C6W2wpAgNA1?pwd=8eh3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QNIaNtRrmZNBcL3Pau7jvw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T03:25:19.955Z",
+    "id": 2655
+  },
+  {
+    "name": "（Switch）疫变隔离区Outbreak Compound英文版v1.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c63f99cd1e45"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-loXcyDcwSxi5kB6uuVqGJA1?pwd=ax5k"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10Xo5OXlH3zKdtUxQKgV_9g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T03:33:08.090Z",
+    "id": 2656
+  },
+  {
+    "name": "（Switch）伊苏 VS 空之轨迹 抉择传奇Ys vs.Trails in the Sky英文版+v1.0.8升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ba915151face"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ltMZ3zHeiFVokU33zRWy5A1?pwd=cz84"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/18bBCbQQnktrvQewd90RkIA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T03:52:59.274Z",
+    "id": 2657
+  },
+  {
+    "name": "（Switch）先觉斗牌2 Yomi 2官方中文本体+v1.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ef308fb03b06"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-m0yFZAZ1Yp8A68Tenl09rA1?pwd=syfi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WxdUKmcTphUgMYh9FVimOg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T04:31:15.128Z",
+    "id": 2658
+  },
+  {
+    "name": "饥荒单机版Build.12527201终极版 官方中文全DLC 巨人+海滩+猪镇",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ea6dec1f5418"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-mBT20ObKdnkKqdduk8mMGA1?pwd=yj4g"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1J6HkgMuFCaOpxgCLowOIlQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T05:19:49.807Z",
+    "id": 2659
+  },
+  {
+    "name": "渔力全开（How to Fish）v1.0.6官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cbaef8337bf8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-mqCGakc6AWiM8Wt-4A0wBA1?pwd=rjwd"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1OyBKNkMTsOsMo93FYgZrcg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-24T08:24:57.170Z",
+    "id": 2660
   }
 ]
