@@ -833,8 +833,8 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.45官方中文全DLC+联机补丁",
-    "shortName": "魔法门英雄无敌|上古纪元|0.80.33",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.47官方中文全DLC+联机补丁",
+    "shortName": "魔法门英雄无敌|上古纪元|0.80.47",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -851,7 +851,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-21T13:29:56.659Z",
+    "lastChange": "2026-08-26T16:05:48.855Z",
     "id": 224
   },
   {
@@ -4738,16 +4738,25 @@
     "id": 269
   },
   {
-    "name": "人渣 v1.3.0.2.119181 豪华中文版 全DLC",
+    "name": "人渣v1.3.3.0.144566 豪华中文全DLC+单独升级补丁+原画集",
     "shortName": "人渣",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5760a329df16"
+        "url": "https://pan.quark.cn/s/b60b37ed28f0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-y8dqiGPeruYg3Ow5UlumyA1?pwd=wbvv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RU4Wv1RGotY6sYF7S2vwrw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-13T14:39:34.866Z",
+    "lastChange": "2026-08-26T13:07:04.590Z",
     "id": 270
   },
   {
@@ -11511,16 +11520,25 @@
     "id": 759
   },
   {
-    "name": "潜行者2：切尔诺贝利之心 v1.7.1.h1 豪华中文版 全DLC",
+    "name": "潜行者2：切尔诺贝利之心 v2.0.3 豪华中文全DLC+单独升级补丁+希望的代价DLC",
     "shortName": "潜行者2切尔",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2f357b6fa890"
+        "url": "https://pan.quark.cn/s/a534190e847f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-xJ_VTe4YVk-HhkW3XDpuEA1?pwd=p7p5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1TiKSwdnngH4SzxtWAc-AGA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-26T09:08:30.874Z",
     "id": 763
   },
   {
@@ -13813,16 +13831,25 @@
     "id": 939
   },
   {
-    "name": "致命利爪 v0.9.81 中文版",
+    "name": "致命利爪正式版 v1.0.1 官方中文全DLC 免安装解压即玩",
     "shortName": "致命利爪",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/227d9368ea7e"
+        "url": "https://pan.quark.cn/s/cd4ec766cac0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-xVzkMzNuOU1rIASQfNEC4A1?pwd=hx5h[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19ExhTKdDu68JPLH_dpQw3Q?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-08-26T10:05:10.888Z",
     "id": 940
   },
   {
@@ -28981,7 +29008,7 @@
     "id": 2156
   },
   {
-    "name": "平行人生（Paralives） v0.1.7c.20609 官方中文全DLC 解压即玩",
+    "name": "平行人生（Paralives）v0.1.8.20665 官方中文全DLC 解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -28997,7 +29024,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-13T04:46:24.944Z",
+    "lastChange": "2026-08-26T14:36:05.148Z",
     "id": 2157
   },
   {
@@ -37597,5 +37624,85 @@
     ],
     "lastChange": "2026-08-26T03:34:01.399Z",
     "id": 2672
+  },
+  {
+    "name": "异形：火力精英2官方中文v1.0.0全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/67c9a0b9a119"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-wSeB4MeckAsEaOHtWts9nA1?pwd=dm52"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RZ_3veRVtwvTUS5-y3d20Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-26T05:38:01.060Z",
+    "id": 2673
+  },
+  {
+    "name": "（Switch）星穹遗迹 Voidwrought官方中文本体+v1.1.90升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3a46484d3a3a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-x_ZdoikHwVHBrjJcxKs-aA1?pwd=uc4a"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1DLU8Ln-tvx5GhrJCo01r3w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-26T10:22:19.111Z",
+    "id": 2674
+  },
+  {
+    "name": "（Switch）魔忌 穷鼠啮狸Magin The Rat Project Stories官方中文本体+v1.3.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/131673b5409b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-yksQck02dGZkzE5-VmdccA1?pwd=the3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1truXCdeIkJT8ZBJOpfzYdw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-26T15:51:27.280Z",
+    "id": 2675
+  },
+  {
+    "name": "（Switch）异形战机决战2 R-Type Final 2官方中文v2.0.6+15DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d8a7b7bc9d9a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-ynWClZiI1UVS17Ucvk8gCA1?pwd=5ay5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GaFY_5qMKiwPbLyqZEtFuQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-26T16:03:25.767Z",
+    "id": 2676
   }
 ]
