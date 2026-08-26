@@ -5252,7 +5252,7 @@
     "id": 306
   },
   {
-    "name": "要塞十字军东征 决定版v2.8.1中文全DLC+内置简体中文+外科医生与拜巴尔斯DLC",
+    "name": "要塞十字军东征 决定版v2.8.2中文全DLC+内置简体中文+外科医生与拜巴尔斯DLC",
     "shortName": "要塞十字军东",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5266,11 +5266,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17QVlVgSgfDG-I14tyjWa1Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Dkox9OvMCIxRNwKBIclYag?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-12T15:35:33.119Z",
+    "lastChange": "2026-08-26T03:33:18.223Z",
     "id": 307
   },
   {
@@ -25654,22 +25654,23 @@
     "id": 1888
   },
   {
-    "name": "风启之旅  v0.10.0.4.268 中文全DLC",
+    "name": "风启之旅v0.10.0.9.32 豪华中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b87c629bbb1f"
+        "url": "https://pan.quark.cn/s/0c5a54d512ec"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOqdZCO5yeNiT33wA2zqzPGWA1?pwd=afce#"
+        "url": "https://pan.xunlei.com/s/VP-vmRVR5A3xccICDM8PKvoHA1?pwd=mrzz"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1-XSzlZ4gJToNPRB-uCYheQ?pwd=8888"
+        "url": "https://pan.baidu.com/s/134pysBFNlW9TPRUIuVbOwg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-02T08:40:58.772Z",
+    "lastChange": "2026-08-26T02:15:05.857Z",
     "id": 1889
   },
   {
@@ -36898,7 +36899,7 @@
     "id": 2634
   },
   {
-    "name": "暗黑地牢豪华版v27850官方中文全DLC+火之边缘DLC+原生音乐集",
+    "name": "暗黑地牢豪华版v27868官方中文全DLC+火之边缘DLC+原生音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -36910,11 +36911,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1de3yubHoftjQS02_WYhXzg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1mObY955WvmrlPiOXQ17aXA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-23T08:00:37.527Z",
+    "lastChange": "2026-08-26T04:13:05.382Z",
     "id": 2635
   },
   {
@@ -37556,5 +37557,45 @@
     ],
     "lastChange": "2026-08-25T16:14:02.410Z",
     "id": 2670
+  },
+  {
+    "name": "（Switch）南梦宫传奇山脉NAMCO LEGENDARY Mountains官方中文本体+v1.2.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6423ba8bd1b0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-tnA-BiQIfstkHjFn_yauZA1?pwd=8kj3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qRSRBpSw_cwqqe_5RJsFKA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-25T16:43:07.332Z",
+    "id": 2671
+  },
+  {
+    "name": "1666：阿姆斯特丹v0.2.0.156575.89 官方中文全DLC 免安装",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/195b2af9edc9[/hide]"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP-vt-S3Z4hnw2R2OFhury6SA1?pwd=skdy[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1lfPw9H5zEMWvpCNSilNGNQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-26T03:34:01.399Z",
+    "id": 2672
   }
 ]
