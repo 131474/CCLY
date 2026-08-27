@@ -27427,18 +27427,23 @@
     "id": 2036
   },
   {
-    "name": "（Switch）抓抓地牢  美区中文v1.0.5升补整合版",
+    "name": "（Switch）抓抓地牢 Dungeon Clawler 官方中文本体+v1.1.1升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/79504f8864ea"
+        "url": "https://pan.quark.cn/s/5f1ffbbea4ca"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP03-3zrueRQx9YeTwWvjkP8A1?pwd=zxgu"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/5jFfkjAQTooHIeSX9yIrEZg"
+        "url": "https://pan.baidu.com/s/1jplplMKQB36aTWBXE7GhPw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-04T09:06:21.938Z",
+    "lastChange": "2026-08-27T16:17:34.383Z",
     "id": 2037
   },
   {
@@ -37748,5 +37753,105 @@
     ],
     "lastChange": "2026-08-26T16:03:25.767Z",
     "id": 2676
+  },
+  {
+    "name": "暗影地牢 正式版v1.0.0官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d209286ff279"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP01Ze7CcMjjW79mheWlpUdXA1?pwd=te6m"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1q09CVEV2RoBWjle1vBFy5w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-27T10:45:22.377Z",
+    "id": 2679
+  },
+  {
+    "name": "（Switch）队长小翼2 世界群星CAPTAIN TSUBASA 2 官方中文v1.0.2+5DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/75969f8379dd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP02rcTV7eMtQd8eMzGTK2FnA1?pwd=2dk7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17k1cGNNw_culPPfedpI_8w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-27T15:40:29.848Z",
+    "id": 2680
+  },
+  {
+    "name": "合金装备4：爱国者之枪v1.4.0大师合集版全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/46663fc476e2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP039rGmEaiFqOuDFqh0h9MyA1?pwd=t74j[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PrXgi2VFXSHLt_wdTLgehg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-27T17:07:38.163Z",
+    "id": 2681
+  },
+  {
+    "name": "合金装备：和平行者v1.3.0大师合集版全DLC 免安装",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7ddd01be2c99[/hide]"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP03F26ArVUPWpxIWUc8iiGvA1?pwd=pjjq[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1W9LkvKucEJBz0380VT-pyA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-27T17:40:25.339Z",
+    "id": 2682
+  },
+  {
+    "name": "星球大战：零号连队Buide.24874058官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bf9afc97ea5e[/hide]"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP03U9WdsrS1AQwFA7IawyZwA1?pwd=7pea[/hide]"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1aRZ4ogDfKYwefZ_C17wUXA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-27T18:34:52.810Z",
+    "id": 2683
   }
 ]
