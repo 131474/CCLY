@@ -4514,25 +4514,25 @@
     "id": 241
   },
   {
-    "name": "杀手3官方中文v3.270.1全DLC+单独升级补丁+季票+完美存档+XG器",
+    "name": "杀手3：暗杀世界v3.280.0豪华中文全DLC+单独升级补丁+原声原画集",
     "shortName": "杀手3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4cadc3451185"
+        "url": "https://pan.quark.cn/s/5ff4e87a2fb0"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOvdiMN1ozf5YNgSUxOIppHrA1?pwd=5iw8#"
+        "url": "https://pan.xunlei.com/s/VP0Al36R8IBgeQvXw9DVrlTFA1?pwd=2q53"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1vJObDJ1hMW2xgCQsnilv-w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1JoVwM-SWA5epWzvt_ujV4g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-21T10:29:10.836Z",
+    "lastChange": "2026-08-29T04:52:04.628Z",
     "id": 242
   },
   {
@@ -7362,23 +7362,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 442
-  },
-  {
-    "name": "杀手3豪华版 v3.250.0 豪华中文版 全DLC",
-    "shortName": "杀手3豪华版",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3f75a5174e3f"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOjQpzchZPfOcf9G-KCR7VpWA1?pwd=wbfp#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 443
   },
   {
     "name": "切尔诺贝利人2：禁区 v83274 豪华中文版 全DLC",
@@ -37721,7 +37704,7 @@
     "id": 2671
   },
   {
-    "name": "1666：阿姆斯特丹v0.2.0.156575.89 官方中文全DLC 免安装",
+    "name": "1666：阿姆斯特丹v0.2.0.156876.92 官方中文全DLC 免安装",
     "links": [
       {
         "name": "夸克网盘",
@@ -37737,7 +37720,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-26T03:34:01.399Z",
+    "lastChange": "2026-08-29T10:56:08.228Z",
     "id": 2672
   },
   {
@@ -37979,5 +37962,65 @@
     ],
     "lastChange": "2026-08-28T16:57:33.712Z",
     "id": 2690
+  },
+  {
+    "name": "合金装备+合金装备2 实心蛇 v2.0.2全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ea6c6219dd52"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0Azrrco_xCZtLtwgdUPU-4A1?pwd=brbm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16tT3vS__OuL9hckjc0MK2A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-29T05:39:42.508Z",
+    "id": 2691
+  },
+  {
+    "name": "合金装备大师合集版v3.0.0全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/309be3a12024"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0BFAIN68ueKmzJRKxoQjFuA1?pwd=kvsj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dlHHGnwN-cs9amlAwJ9gVQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-29T07:44:35.916Z",
+    "id": 2692
+  },
+  {
+    "name": "合金装备3：食蛇者大师合集版v3.0.0全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2ef4e10afd0c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0BiT4T3gWObI25ySThNLinA1?pwd=4ikp"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nhU7xuS5YZoq08SKG7qIrg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-29T09:09:55.564Z",
+    "id": 2693
   }
 ]
