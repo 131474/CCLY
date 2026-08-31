@@ -22369,25 +22369,25 @@
     "id": 1602
   },
   {
-    "name": "龙珠：超宇宙2豪华中文 v1.26.00全DLC+未来之歌第4章DLC+联机补丁+XG器",
+    "name": "龙珠：超宇宙2豪华中文 v1.26.01全DLC+未来之歌第4章DLC+单独升级补丁+联机补丁",
     "shortName": "龙珠超宇宙2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4b092876656b"
+        "url": "https://pan.quark.cn/s/7496f2492f5d"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOx040DY_So08vWJfiyc8m23A1?pwd=pyr4#"
+        "url": "https://pan.xunlei.com/s/VP0NPoFfF62T1pt984rfoeuRA1?pwd=9ieh"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/15hhJzFHAbhckxDv7Wi7eug?pwd=8888",
+        "url": "https://pan.baidu.com/s/1sCANC9pS6ul-gglGqqiIqg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-08T09:34:50.213Z",
+    "lastChange": "2026-08-31T15:29:04.691Z",
     "id": 1603
   },
   {
@@ -38132,5 +38132,45 @@
     ],
     "lastChange": "2026-08-30T14:00:10.200Z",
     "id": 2698
+  },
+  {
+    "name": "（Switch）埃尔登 遗忘之旅Elden Path of the Forgotten官方中文本体+v1.0.4升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/393eeed6859d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0NV2JA9nioXhL9NBjFj9d0A1?pwd=aa3t"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uzwy6x0Qc1F-okzSd3eA-Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-31T15:49:15.256Z",
+    "id": 2699
+  },
+  {
+    "name": "（Switch）1000xRESIST官方中文本体+v1.0.8升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/46de48f5a15c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0N_ai2PPQVsjjPJQ9dsfXkA1?pwd=m42s"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-9oHG8GSF16XQl5m9LyNGw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-08-31T16:11:43.901Z",
+    "id": 2700
   }
 ]
