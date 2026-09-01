@@ -14174,7 +14174,7 @@
     "id": 953
   },
   {
-    "name": "忍者神龟：破碎命运v2.0.2.261173豪华中文全DLC+斯莱士角色DLC+原声原画集",
+    "name": "忍者神龟：破碎命运v2.0.3.261302豪华中文全DLC+斯莱士角色DLC+原声原画集",
     "shortName": "忍者神龟破碎",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -14188,11 +14188,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1JeUYheoyM9dhB-PxGT4nkA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1NTj9Y4Jibu-9YL-1A7-mVA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-23T07:34:01.169Z",
+    "lastChange": "2026-09-01T15:53:54.812Z",
     "id": 954
   },
   {
@@ -38272,5 +38272,65 @@
     ],
     "lastChange": "2026-09-01T10:16:37.967Z",
     "id": 2705
+  },
+  {
+    "name": "英雄萨姆：破碎宇宙Build.24825466官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/236cfd2f2f38"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0SBBXghMlyX5jtC6GfqaWWA1?pwd=wsyk"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-V6D7Wrereb3Ldta5lakvQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T13:52:21.281Z",
+    "id": 2706
+  },
+  {
+    "name": "（Switch）巫师猫头鹰：魔法传递wizards owl magic deliver英文版+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/612284959eed"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0SqRVGd-jyaAjjG_NBSS5TA1?pwd=4f4q"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dZwKPGQT7KngKdA9vxKa7g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T16:43:15.572Z",
+    "id": 2707
+  },
+  {
+    "name": "（Switch）狂飙：高速公路赛车模拟器Grand Rush Highway Car英文版+v1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a156690101e3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0Sw-cfl3duKGSs_NI-REO_A1?pwd=s4hv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mY_3CZNNb7PfKUGU9vKlVA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T17:10:41.151Z",
+    "id": 2708
   }
 ]
