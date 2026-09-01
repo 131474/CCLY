@@ -396,7 +396,7 @@
     "id": 203
   },
   {
-    "name": "轮回之兽v1.0.9豪华中文全DLC+单独升级补丁",
+    "name": "轮回之兽v1.0.10.0豪华中文全DLC+单独升级补丁",
     "shortName": "轮回之兽偷跑版|v1.0.7",
     "cover": "https://p.sda1.dev/24/baf69c147c9850490f14904e5c1edd5c/Beast-of-Reincarnation_2025_06-08-25_007.jpg",
     "links": [
@@ -410,11 +410,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/13Vg3e1k871E8j0riCPHVDg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1f7L_UsxHHUcsn0yeJb4-Bw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-25T04:35:41.281Z",
+    "lastChange": "2026-09-01T07:06:57.474Z",
     "id": 2580
   },
   {
@@ -37014,7 +37014,7 @@
     "id": 2632
   },
   {
-    "name": "（Switch）忍者神龟 斯普林特的命运Teenage Mutant官方中文v2.0.1+4DLC",
+    "name": "（Switch）忍者神龟 斯普林特的命运Teenage Mutant官方中文v2.0.3+4DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -37026,11 +37026,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Nx5_9uDVJAG2WjO0r4rE0A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1wPhYewUcCOOfTDFUHZhKPg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-19T04:16:13.900Z",
+    "lastChange": "2026-09-01T04:53:10.975Z",
     "id": 2633
   },
   {
@@ -38172,5 +38172,85 @@
     ],
     "lastChange": "2026-08-31T16:11:43.901Z",
     "id": 2700
+  },
+  {
+    "name": "（Switch）阿斯特赖亚 六面神谕Astrea：Six-Sided Oracles官方中文本体+1.0.6b升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/799a03d004c1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0QOGKqcfbF1edC_l9TJcNJA1?pwd=s6h9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1lfKwzM0x5wMgDUNjr-ex7w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T05:17:12.647Z",
+    "id": 2701
+  },
+  {
+    "name": "（Switch）皮克敏3豪华版 Pikmin 3 Deluxe官方中文本体+v1.2.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a73d902908dc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0QQuuAhMlyX5jtC6GeNLbfA1?pwd=nh9e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1H6Ac_MyitH73HSD8Y8zlFw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T05:28:18.768Z",
+    "id": 2702
+  },
+  {
+    "name": "（Switch）火箭联盟 Rocket League 英文版v2.2.9+24DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c631b81b2ba7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0QUcyT18NLjsHXgT3v3LhdA1?pwd=dbtf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ctP74RQJd3X-vzejc_sCSA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T05:44:46.784Z",
+    "id": 2703
+  },
+  {
+    "name": "（Switch）蒙面怪手 Mostroscopy英文版本体+v2.4升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/612580596778"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0QhYQvElHZ23oTMB0U317dA1?pwd=cnxg"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nQ8GuNUQENezDAJ_-w_O7A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-01T06:45:15.170Z",
+    "id": 2704
   }
 ]
