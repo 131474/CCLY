@@ -1,24 +1,90 @@
 [
   {
-    "name": "渔力全开（How to Fish）v1.0.10官方中文全DLC+联机版 免安装解压即玩",
+    "name": "龙之信条2豪华中文v3.2.0.0全DLC 去除D加密 免安装解压即玩",
+    "shortName": "龙之信条2|去除D加密|v3.2.0.0",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2054970/header.jpg?t=1788308490",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/95e8b0a43be0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0WDEO5Qt6vW4GDvBXBzb6dA1?pwd=sprn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Me0jnhzPLQLY5vn2N3M_7g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-02T08:31:45.818Z",
+    "id": 1311
+  },
+  {
+    "name": "（Switch）任天堂明星大乱斗特别版 美版中文v13.0.5+99DLC+金手指",
+    "shortName": "任天堂明星大乱斗|特别版|v13.0.5",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20180918/1537262151_333362.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ec5304a6d62e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0VcPvaZqgLovO3NK99_zKQA1?pwd=wic2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1XvsS8hNF9ChcKtLHIaRv9Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-02T05:43:10.760Z",
+    "id": 1489
+  },
+  {
+    "name": "（Switch）马里奥赛车8 官方中文+v4.0.0+1DLC+20个amiibo+全解锁存档",
+    "shortName": "马里奥赛车8|v4.0.0",
+    "cover": "https://img.3dmgame.com/uploads/allimg/171213/382_171213102716_1_lit.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7f51b4556117"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0VaHtVQt6vW4GDvBXBPJwnA1?pwd=7zz2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fcBbeEuEk-yaZ4d8NOgQGg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-02T05:32:13.344Z",
+    "id": 1465
+  },
+  {
+    "name": "渔力全开（How to Fish）v1.0.11官方中文全DLC+联机版 免安装解压即玩",
     "shortName": "渔力全开|v1.0.10",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/cbaef8337bf8"
+        "url": "https://pan.quark.cn/s/ac0141b49bfe"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP-mqCGakc6AWiM8Wt-4A0wBA1?pwd=rjwd"
+        "url": "https://pan.xunlei.com/s/VP0VYCnLJsDSCJW01ZyiLUrfA1?pwd=ywbc"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1OyBKNkMTsOsMo93FYgZrcg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1V08NdLb--mTw1AuqkooDSA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T06:18:09.317Z",
+    "lastChange": "2026-09-02T05:20:16.504Z",
     "id": 2660
   },
   {
@@ -44,7 +110,7 @@
     "id": 1693
   },
   {
-    "name": "队长小翼2 世界群星v1.03官方中文全DLC 免安装解压即玩",
+    "name": "队长小翼2 世界群星v1.04官方中文全DLC+单独升级补丁",
     "shortName": "队长小翼2|世界群星|v1.03",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2172910/805b6f4f3293ce549141b60d45d4e0c8ea6c8791/header_schinese.jpg?t=1787868212",
     "links": [
@@ -58,11 +124,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1dsYSR_u9S-p0t8Eh37TTpw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1D9KGKyQfn4ltjARLdTgQkw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T04:08:46.469Z",
+    "lastChange": "2026-09-02T08:00:16.386Z",
     "id": 2684
   },
   {
@@ -18569,28 +18635,6 @@
     "id": 1310
   },
   {
-    "name": "龙之信条2豪华中文v3.1.1.0全DLC+预购特典 绕D版",
-    "shortName": "龙之信条2中",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d55e5552f56f"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwwa2eE4QHbvMruJL1JyxfGA1?pwd=yg8q#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1QDU8uwLi-BOQZNCwdJuJJw?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-07-07T12:55:52.235Z",
-    "id": 1311
-  },
-  {
     "name": "龙之信条黑暗崛起  v1.0.0.18",
     "shortName": "龙之信条黑暗",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -20576,28 +20620,6 @@
     "id": 1464
   },
   {
-    "name": "（Switch）马里奥赛车8 官方中文+v3.0.5+1DLC+20个amiibo+全解锁存档",
-    "shortName": "马里奥赛车8",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/0d6371f36331"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwMd88rgAscuRalY5xra5CyA1?pwd=enzm#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1PW6-izU7S33p0cGqgkVewg?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-06-30T09:40:39.861Z",
-    "id": 1465
-  },
-  {
     "name": "（同人游戏）宝可梦：新生 v4.0（PC+安卓）内置金手指+全世代千只宝可梦+全新角色全新剧情",
     "shortName": "宝可梦新生",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -20908,28 +20930,6 @@
     ],
     "lastChange": "2026-07-01T14:49:43.193Z",
     "id": 1488
-  },
-  {
-    "name": "（Switch）任天堂全明星大乱斗13.0.4+99DLC+金手指",
-    "shortName": "任天堂全明星",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/27204b5ac819"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtj1xRS4Mi35LaSioVqE-jvA1?pwd=kj66#"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1arA6oB6luZyOhRE3TqH0XA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-06-01T15:02:03.226Z",
-    "id": 1489
   },
   {
     "name": "龙腾世纪：影障守护者v2025.1.23 豪华中文版 附单独升级补丁+神器",
