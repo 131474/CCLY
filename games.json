@@ -594,25 +594,25 @@
     "id": 2548
   },
   {
-    "name": "龙之剑：觉醒 v1.0.10官方中文全DLC+单独升级补丁+原声原画集",
+    "name": "龙之剑：觉醒 v1.0.11官方中文全DLC+单独升级补丁+原声原画集",
     "shortName": "龙之剑：觉醒|v1.0.9",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a1b8e9bad77c"
+        "url": "https://pan.quark.cn/s/e3f6eb8a91fd"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOzM5cy54nkZ-2DPEQSAcQIcA1?pwd=z92d"
+        "url": "https://pan.xunlei.com/s/VP0a4_cEDc3fFsyEI1LWV-QdA1?pwd=94zi"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1EVMkbbYe7eLgyRRZz6J8AQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1asEZVcIV9V4YktH0dDA81A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-20T09:41:22.861Z",
+    "lastChange": "2026-09-03T07:30:59.136Z",
     "id": 2537
   },
   {
@@ -38408,5 +38408,85 @@
     ],
     "lastChange": "2026-09-02T14:58:54.951Z",
     "id": 2710
+  },
+  {
+    "name": "（Switch）美国职业棒球大联盟 26 MLB® The Show™ 26英文版本体+v1.0.17升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/480e2f342b86"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0_aNEXJsDSCJW01Zym93aNA1?pwd=86tn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tY4sPCu8Bp96BdaoDVWRLg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-03T04:52:08.239Z",
+    "id": 2712
+  },
+  {
+    "name": "（Switch）幻灵降世录 女巫的面纱Veil of the Witch官方中文v1.3.18+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/20d1731b1e8e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0_bZI3FfXHbuo64JaDJbryA1?pwd=ze2c"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1BaxJpFFvmPWJVtCmUkgWZw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-03T04:55:56.318Z",
+    "id": 2713
+  },
+  {
+    "name": "（Switch）隐锋Veiled Edge官方中文v0.1",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7aa290dee810"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0_mOLPql6Y36FlTfb6tO57A1?pwd=f6uu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1UkWyPccKNpR7p3ZrZrqNIQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-03T05:43:16.002Z",
+    "id": 2714
+  },
+  {
+    "name": "（Switch）维京人弹珠台Vikings Pinball英文版v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7a9f3051bd3a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0aTgNDwU8unbBSXABfasu2A1?pwd=mnv3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pbbCSTjaNOXzEnsobBTcbg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-03T08:56:14.495Z",
+    "id": 2715
   }
 ]
