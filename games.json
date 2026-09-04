@@ -1,6 +1,6 @@
 [
   {
-    "name": "黎明行者之血 日蝕版 v1.01 官方中文全DLC 免安装解压即玩",
+    "name": "黎明行者之血 日蝕版 v1.0.2 官方中文全DLC+单独升级补丁",
     "shortName": "黎明行者之血|日蝕版|v1.01",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/3751260/7b0c1860c7c2fca069ae53c049b737176dbfb8d4/header_schinese.jpg?t=1788387095",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-03T04:36:00.016Z",
+    "lastChange": "2026-09-04T04:54:33.340Z",
     "id": 2711
   },
   {
@@ -1097,7 +1097,7 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.80.48官方中文全DLC+联机补丁",
+    "name": "魔法门之英雄无敌：上古纪元v0.80.49官方中文全DLC+联机补丁",
     "shortName": "魔法门英雄无敌|上古纪元|0.80.47",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
@@ -1111,11 +1111,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1qmXtESLe34yNT6URizqHQw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1robuNEyD1UEZp5zjZ8xEDw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T15:49:35.131Z",
+    "lastChange": "2026-09-04T05:11:59.059Z",
     "id": 224
   },
   {
@@ -38588,5 +38588,45 @@
     ],
     "lastChange": "2026-09-03T17:09:13.712Z",
     "id": 2720
+  },
+  {
+    "name": "呼吸边缘2官方中文v0.8.6全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/99e5d5992d96"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0esZnylRMxDIIi3PYI4qFDA1?pwd=fhk9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Yc-oSxcTyYF46CZFZopw5w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-04T05:44:52.227Z",
+    "id": 2721
+  },
+  {
+    "name": "（Switch）最终幻想共鸣第一章试玩版FINAL FANTASY RESONANCE DEMO官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/38284ee5fbb3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0ezTc7lRMxDIIi3PYIApVrA1?pwd=fy2p"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/18dPx8D3hL86y7LU3kW9toA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-04T05:58:14.019Z",
+    "id": 2722
   }
 ]
