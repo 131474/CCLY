@@ -22,8 +22,8 @@
     "id": 2723
   },
   {
-    "name": "黎明行者之血 日蝕版 v1.0.2 官方中文全DLC+单独升级补丁",
-    "shortName": "黎明行者之血|日蝕版|v1.0.2",
+    "name": "黎明行者之血 日蝕版 v1.0.3 官方中文全DLC+单独升级补丁",
+    "shortName": "黎明行者之血|日蝕版|v1.0.3",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/3751260/7b0c1860c7c2fca069ae53c049b737176dbfb8d4/header_schinese.jpg?t=1788387095",
     "links": [
       {
@@ -40,7 +40,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-04T04:54:33.340Z",
+    "lastChange": "2026-09-05T07:26:09.091Z",
     "id": 2711
   },
   {
@@ -9731,7 +9731,7 @@
     "id": 610
   },
   {
-    "name": "（Switch）潜水员戴夫官方中文v1.0.6.1256+6DLC+丛林DLC",
+    "name": "（Switch）潜水员戴夫官方中文v1.0.6.1259+6DLC+丛林DLC",
     "shortName": "潜水员戴夫中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -9745,11 +9745,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/19s6aUAdHS-AmUDoV25Jq2g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ccpQC1tZkXFwGWpncvZJDA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T08:15:41.878Z",
+    "lastChange": "2026-09-05T05:20:47.472Z",
     "id": 611
   },
   {
@@ -36252,7 +36252,7 @@
     "id": 2588
   },
   {
-    "name": "（Switch）梦塔比Montabimb官方中文+v1.02升补",
+    "name": "（Switch）梦塔比Montabimb官方中文+v1.1.1升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -36264,11 +36264,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/13oqas949JltWeZlUSRQvRQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xCYL32NZglMlE6R-n8rcNg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-07T13:23:46.955Z",
+    "lastChange": "2026-09-05T06:52:28.756Z",
     "id": 2589
   },
   {
@@ -38650,5 +38650,25 @@
     ],
     "lastChange": "2026-09-04T05:58:14.019Z",
     "id": 2722
+  },
+  {
+    "name": "（Switch）小丑阿尤Ayo the Clown官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7a4ae151e1ee"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0kN8zjomi5Vk-z_5TKlWiVA1?pwd=4hwi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qHsOFI7V4l6jQpDbixyj9Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-05T07:03:57.348Z",
+    "id": 2724
   }
 ]
