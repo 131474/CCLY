@@ -1,5 +1,49 @@
 [
   {
+    "name": "星球大战：亡命之徒v1.7 非虚拟机voices38豪华中文全DLC 免安装解压即玩",
+    "shortName": "星球大战|亡命之徒|非虚拟机",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2842040/header.jpg?t=1773407100",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fdd436098317"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0qT6KFQtIjEP9r3lm2sRIZA1?pwd=pqqi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/177tnGaLP4oxUSXP2SuFWeA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-06T11:33:07.983Z",
+    "id": 2730
+  },
+  {
+    "name": "波斯王子：失落王冠v1.4.3 非虚拟机voices38 豪华中文全DLC",
+    "shortName": "波斯王子|失落王冠|非虚拟机",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2751000/header.jpg?t=1777993930",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9d9e9d8da694"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0rLkuOGQaDbkDXFrVn6GUcA1?pwd=z5jk"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mRLOfMGy5bAprxeMgylUew?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-06T15:46:04.197Z",
+    "id": 2731
+  },
+  {
     "name": "女神异闻录３重装 Reload v1.0.7 非虚拟机voices38 豪华中文全DLC",
     "shortName": "女神异闻录３|Reload |非虚拟机",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2161700/header.jpg?t=1764776430",
@@ -38728,5 +38772,25 @@
     ],
     "lastChange": "2026-09-05T16:16:12.056Z",
     "id": 2726
+  },
+  {
+    "name": "红色沙漠增强版v2.01.00豪华中文全DLC+单独升级补丁（VBS1.9一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9b0d80eab491"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0qHi9X0K2igf0cvE2WxFaPA1?pwd=bkgm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/14e6SzHckIWQS4XjXqKR9Zw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-06T10:39:10.247Z",
+    "id": 2729
   }
 ]
