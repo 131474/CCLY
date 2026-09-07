@@ -11409,20 +11409,25 @@
     "id": 724
   },
   {
-    "name": "八方旅人2  中文 v1.1.0 HF免安装",
+    "name": "八方旅人2 歧路旅人2 豪华中文 v1.1.0 全DLC+国语配音mod",
     "shortName": "八方旅人2中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e79f2bc05a8f"
+        "url": "https://pan.quark.cn/s/0e1657090ae2"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgb9v6ONnv9wityv-vIemT4A1?pwd=pv7a#"
+        "url": "https://pan.xunlei.com/s/VP0wN2kmvjW7_0LzyUlTX1gpA1?pwd=z2mh"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1z4WC_0FO_7d04c8BaImx8g?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-07T15:04:45.183Z",
     "id": 725
   },
   {
@@ -36883,7 +36888,7 @@
     "id": 2616
   },
   {
-    "name": "IGS经典街机合集v1.0.39.2官方中文全DLC 免安装解压即玩",
+    "name": "IGS经典街机合集v1.0.40.0官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -36895,11 +36900,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1qR4_YjYyfbJ7snc-J2TPRQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1yno-MBNA2rnt4ZItEZOFXg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-15T07:53:24.353Z",
+    "lastChange": "2026-09-07T14:51:48.414Z",
     "id": 2617
   },
   {
@@ -37123,7 +37128,7 @@
     "id": 2631
   },
   {
-    "name": "（Switch）妖怪捉迷藏2 OBAKEIDORO 2 Chase & Seek官方中文本体+v2.0.20升补",
+    "name": "（Switch）妖怪捉迷藏2 OBAKEIDORO 2 Chase & Seek官方中文本体+v2.0.21升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -37135,11 +37140,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1lfvQHn64G0yZH_euM_rdQg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1EFh7rseED7B_zYWfdg2TGA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-18T16:34:14.848Z",
+    "lastChange": "2026-09-07T14:52:07.807Z",
     "id": 2632
   },
   {
@@ -38861,5 +38866,25 @@
     ],
     "lastChange": "2026-09-07T08:54:11.808Z",
     "id": 2735
+  },
+  {
+    "name": "（Switch）泡姆泡姆 POPUCOM官方中文本体+v1.2.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ffce25c4c384"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0w-gjUGFOh6k2blfEI-CTxA1?pwd=hjx7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CUGokyp7mwoK3geOPZXcSQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-07T14:52:24.583Z",
+    "id": 2736
   }
 ]
