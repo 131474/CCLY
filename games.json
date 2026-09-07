@@ -462,7 +462,7 @@
     "id": 2640
   },
   {
-    "name": "致命躯壳2豪华版v92935官方中文全DLC+单独升级补丁",
+    "name": "致命躯壳2豪华版v93241官方中文全DLC+单独升级补丁",
     "shortName": "致命躯壳2|豪华版|v92163",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2584270/87e53a9dd9d5a32f3d3cfc011aaccbc6ef6c4eed/header_schinese.jpg?t=1786999199",
     "links": [
@@ -476,11 +476,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1siXkHXtCFAYgmuIjVHTXug?pwd=8888",
+        "url": "https://pan.baidu.com/s/14aAFokDa-GHb0KG3njzlng?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-30T11:15:20.397Z",
+    "lastChange": "2026-09-07T08:21:08.893Z",
     "id": 2627
   },
   {
@@ -770,8 +770,8 @@
     "id": 226
   },
   {
-    "name": "幻兽帕鲁Palworld正式版 v1.0.3.101283 官方中文全DLC+单独升级补丁+联机补丁",
-    "shortName": "幻兽帕鲁正式版|v1.0.2.100933",
+    "name": "幻兽帕鲁Palworld正式版 v1.0.4.102642 官方中文全DLC+单独升级补丁+联机补丁",
+    "shortName": "幻兽帕鲁正式版|v1.0.4.102642",
     "cover": "https://www.yxila.com/data/attachment/portal/202410/09/17284336734358.jpg",
     "links": [
       {
@@ -784,11 +784,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1iC-iWZcjf3k-x_lULAT0_Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1hljALEZS63RBXQubVobF3Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-12T08:36:25.483Z",
+    "lastChange": "2026-09-07T09:57:28.081Z",
     "id": 236
   },
   {
@@ -16197,19 +16197,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1097
-  },
-  {
-    "name": "孤岛惊魂5豪华中文V1.011+全DLC",
-    "shortName": "孤岛惊魂5豪",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6a51e1d45d5e"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1098
   },
   {
     "name": "孤岛惊魂4豪华中文最终版",
@@ -38834,5 +38821,45 @@
     ],
     "lastChange": "2026-09-06T16:40:12.136Z",
     "id": 2732
+  },
+  {
+    "name": "无狐之季Build.24532517官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bd4c97a25a7c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0uhs9PWjZwHpfGi0qgzvz1A1?pwd=medn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_DHF500nMyz0FGV2PtertA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-07T07:23:05.579Z",
+    "id": 2734
+  },
+  {
+    "name": "孤岛惊魂5黄金版 v1.016豪华中文全DLC+单独升级补丁+高清材质包+原声原画集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2542d1342a6b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0v204UX6wPGIIxAQ693aMCA1?pwd=agnb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AYT6gwHx5zLEPGN_XmmdTw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-07T08:54:11.808Z",
+    "id": 2735
   }
 ]
