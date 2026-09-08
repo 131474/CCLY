@@ -902,7 +902,7 @@
     "id": 1922
   },
   {
-    "name": "极限竞速：地平线6尊享版v430.771全DLC+单独升级补丁+联机补丁+完美614存档+修改器",
+    "name": "极限竞速：地平线6尊享版v440.853全DLC+单独升级补丁+联机补丁+完美614存档+修改器",
     "shortName": "极限竞速|地平线6|v382.893",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
@@ -916,11 +916,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1UzVJ4ObMzXcGOpHVnRla1g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1vwirbHq3itNaSUMDL4It6A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-25T04:38:16.432Z",
+    "lastChange": "2026-09-08T10:17:42.818Z",
     "id": 2060
   },
   {
@@ -11493,19 +11493,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 729
-  },
-  {
-    "name": "火星求生：重制版 v1.0.4.384011 豪华中文版 全DLC",
-    "shortName": "火星求生重制",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/15ec317e3197"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 730
   },
   {
     "name": "冬日幸存者 v50986S 中文版",
@@ -37413,7 +37400,7 @@
     "id": 2648
   },
   {
-    "name": "静谧田园v1.06官方中文全DLC 免安装解压即玩",
+    "name": "静谧田园v1.09官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -37425,11 +37412,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Bq_Kq5GxBBSl4wMlU5csUA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1pRsFmmrtAQ-1aLe6cWOAnQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-23T05:13:00.381Z",
+    "lastChange": "2026-09-08T09:49:41.289Z",
     "id": 2649
   },
   {
@@ -38931,5 +38918,45 @@
     ],
     "lastChange": "2026-09-08T06:08:22.022Z",
     "id": 2738
+  },
+  {
+    "name": "火星求生：重启版v1.1.0.403908官方中文全DLC+喂养未来DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a7c73a651638"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1-T1ood2-ePBowzaYr4ZiMA1?pwd=a884"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gnrMHhOB-FpErS96V70caw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-08T10:09:49.818Z",
+    "id": 2739
+  },
+  {
+    "name": "执法记录仪v0.8.8.18290官方中文全DLC+联机补丁 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ab2f5b2c18ba"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1-YIBelRMxDIIi3PYYzy_jA1?pwd=99nu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1khJd7j7sH6GCFmc9XQJXYA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-08T10:30:51.291Z",
+    "id": 2740
   }
 ]
