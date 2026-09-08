@@ -22937,18 +22937,23 @@
     "id": 1633
   },
   {
-    "name": "（Switch）尼奥宠物 超级迷你游戏合集 美区中文v1.1.0升补",
+    "name": "（Switch）尼奥宠物 超级迷你游戏合集Neopets 官方中文本体+v1.1.6升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/fcad120c84d5"
+        "url": "https://pan.quark.cn/s/146b9d32ae44"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOpRd7twB2DV9IqL79oLVrKpA1?pwd=jpzj#"
+        "url": "https://pan.xunlei.com/s/VP0zyhgWIkK_RSfuGIdnoZm9A1?pwd=k894"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1C0wfiHYTc2v4c-bVhSa_uQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-09-08T07:48:05.050Z",
     "id": 1634
   },
   {
@@ -35848,7 +35853,7 @@
     "id": 2563
   },
   {
-    "name": "（Switch）展翅翱翔 Wingspan官方中文v1.8.795+7DLC",
+    "name": "（Switch）展翅翱翔 Wingspan官方中文v1.8.798+7DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -35860,11 +35865,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1fZ7XSWqDjZLUmWQ1zdVB2w?pwd=8888",
+        "url": "https://pan.baidu.com/s/16umRFiB-OxCvHlaJBjQWCQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-18T09:14:51.123Z",
+    "lastChange": "2026-09-08T07:16:51.537Z",
     "id": 2564
   },
   {
@@ -38886,5 +38891,45 @@
     ],
     "lastChange": "2026-09-07T14:52:24.583Z",
     "id": 2736
+  },
+  {
+    "name": "（Switch）战争巨人War Titans英文版v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/29dfd5f055ba"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0zW-7jX6wPGIIxAQ6CN5grA1?pwd=4zr8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mArcWstibhJbBMan04zaXQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-08T05:37:39.708Z",
+    "id": 2737
+  },
+  {
+    "name": "（Switch）焕然异星 Terraformers官方中文本体+v1.7.90升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8c220698b674"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP0zc5G_ezpieztQ5VPox0V-A1?pwd=eav9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1FQTqtvG-Ze32mICDsrIpQw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-08T06:08:22.022Z",
+    "id": 2738
   }
 ]
