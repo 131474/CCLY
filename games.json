@@ -616,7 +616,7 @@
     "id": 203
   },
   {
-    "name": "轮回之兽v1.0.10.0豪华中文全DLC+单独升级补丁",
+    "name": "轮回之兽v1.0.11.0豪华中文全DLC+单独升级补丁",
     "shortName": "轮回之兽偷跑版|v1.0.7",
     "cover": "https://p.sda1.dev/24/baf69c147c9850490f14904e5c1edd5c/Beast-of-Reincarnation_2025_06-08-25_007.jpg",
     "links": [
@@ -630,11 +630,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1f7L_UsxHHUcsn0yeJb4-Bw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ehEI4IBbhSbI1c-hluOX7g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-01T07:06:57.474Z",
+    "lastChange": "2026-09-09T07:39:21.392Z",
     "id": 2580
   },
   {
@@ -39007,5 +39007,45 @@
     ],
     "lastChange": "2026-09-08T12:58:49.931Z",
     "id": 2742
+  },
+  {
+    "name": "噬血代码2终极版v2.0.1.0豪华中文全DLC 去除D加密+原声原画集 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/09edbce943c7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP13IQT3UBtD_oklR_ysf_1XA1?pwd=94c6"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1F6zUEmaoVGMRXPxFnYqxoQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-09T04:01:40.802Z",
+    "id": 2743
+  },
+  {
+    "name": "（Switch）东京之王 - 理查德·加菲尔德King of Tokyo英文版v1.1.5p1",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b3956ebc2e1c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP14-bETuOqGkO8daGvpTCzPA1?pwd=wypg"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HMWgieIT2h2GoqlOTKrgBg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-09T07:24:21.529Z",
+    "id": 2744
   }
 ]
