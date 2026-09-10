@@ -1,5 +1,27 @@
 [
   {
+    "name": "幻世录 重制版v2.1.2官方中文全DLC 免安装解压即玩",
+    "shortName": "幻世录|重制版|v2.1.2",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4030150/96f3c10eeb4e5aa7671448cb437d3fd354fa8683/header_schinese.jpg?t=1788968730",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dfd38ff190d1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP19KFZTKaJpZVL2wu0UqQEvA1?pwd=ruy5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1cmNdxUF8uouMao69_S9dVA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-10T08:03:08.813Z",
+    "id": 2759
+  },
+  {
     "name": "真人快打 1豪华中文 v0.308全DLC 非虚拟机voices38 免安装解压即玩",
     "shortName": "真人快打 1|非虚拟机",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/1971870/capsule_616x353.jpg?t=1778795130",
@@ -726,7 +748,7 @@
     "id": 2548
   },
   {
-    "name": "龙之剑：觉醒 v1.0.11官方中文全DLC+单独升级补丁+原声原画集",
+    "name": "龙之剑：觉醒 v1.0.12官方中文全DLC+单独升级补丁+原声原画集",
     "shortName": "龙之剑：觉醒|v1.0.9",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
@@ -740,11 +762,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1asEZVcIV9V4YktH0dDA81A?pwd=8888",
+        "url": "https://pan.baidu.com/s/11PrZlrhcu-LoCI8yxNA4Dw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-03T07:30:59.136Z",
+    "lastChange": "2026-09-10T11:13:38.447Z",
     "id": 2537
   },
   {
@@ -4408,25 +4430,25 @@
     "id": 218
   },
   {
-    "name": "无人深空v6.44 豪华中文全DLC+XG器 免安装解压即玩",
+    "name": "无人深空：宇宙v7.0-178763 豪华中文全DLC+联机补丁",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9bda2248d5fd"
+        "url": "https://pan.quark.cn/s/09d966d30554"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtmmGGBD72tNi61-XhPZvF-A1?pwd=ysyq#"
+        "url": "https://pan.xunlei.com/s/VP19iatxEkOWFZIu4vT4TrpNA1?pwd=7imp"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1csuUD6UD3-dYp6riiSl6IQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/15E2N-zSmV-Ra0b4wtB1-aw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-09T04:49:33.425Z",
+    "lastChange": "2026-09-10T09:56:17.401Z",
     "id": 219
   },
   {
@@ -6119,16 +6141,25 @@
     "id": 336
   },
   {
-    "name": "吸血鬼：避世血族2 v53085 新加DLC 花与焰 豪华中文版 全DLC",
+    "name": "吸血鬼：避世血族2豪华中文v53301全DLC+花与焰DLC",
     "shortName": "吸血鬼避世血",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/a902fb9c1143"
+        "url": "https://pan.quark.cn/s/9853cfa5d8f8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP19MKB0EywlNemfoo_bGHXeA1?pwd=a3dp"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RWMz4ddpGXwJ9IH0y_PZBg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-13T14:57:27.506Z",
+    "lastChange": "2026-09-10T08:13:39.102Z",
     "id": 337
   },
   {
@@ -27129,7 +27160,7 @@
     "id": 1988
   },
   {
-    "name": "EA SPORTS FC 26  v1.6.5 豪华中文全DLC+中文解说+世界杯赛模式（VBS1.9一键启动）",
+    "name": "EA SPORTS FC 26  v1.6.6 豪华中文全DLC+中文解说+世界杯赛模式+多国语言包（VBS1.9一键启动）",
     "links": [
       {
         "name": "夸克网盘",
@@ -27141,11 +27172,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/11bXkdfqWN4tijx27qw-IGQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Khpii_VCor3iMJ06vPAhlQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-17T12:33:09.389Z",
+    "lastChange": "2026-09-10T10:46:50.331Z",
     "id": 1989
   },
   {
@@ -39345,5 +39376,45 @@
     ],
     "lastChange": "2026-09-09T18:23:54.206Z",
     "id": 2758
+  },
+  {
+    "name": "（Switch）EX棱镜骑士EXSTETRA官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9fb6d6a63785"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP19dsHnSUMFlMLaMgbSuy_mA1?pwd=tgkv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1w0y4sTMtScnCgmcVHj__Eg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-10T09:31:27.304Z",
+    "id": 2760
+  },
+  {
+    "name": "嘉豪Jiahao Build.25227320官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3c604273abe6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1AGIk-Al3BRDnO-rgi7ykXA1?pwd=2xfy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16Y5-G81EFL2Re_PAOpV1TQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-10T12:25:37.242Z",
+    "id": 2761
   }
 ]
