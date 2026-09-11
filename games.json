@@ -11960,7 +11960,7 @@
     "id": 759
   },
   {
-    "name": "潜行者2：切尔诺贝利之心 v2.0.3 豪华中文全DLC+单独升级补丁+希望的代价DLC",
+    "name": "潜行者2：切尔诺贝利之心 v2.0.5 豪华中文全DLC+单独升级补丁+希望的代价DLC",
     "shortName": "潜行者2切尔",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -11974,11 +11974,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1TiKSwdnngH4SzxtWAc-AGA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1HbvI9nfrwRztnx6xu90XfA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-26T09:08:30.874Z",
+    "lastChange": "2026-09-11T17:09:33.009Z",
     "id": 763
   },
   {
@@ -22583,24 +22583,25 @@
     "id": 1604
   },
   {
-    "name": "魔兽争霸3：冰封王座重制版v2.0.4.23452豪华中文全DLC +局域网联机+国语配音",
+    "name": "魔兽争霸3：冰封王座 重制版v2.0.4.23745豪华中文全DLC",
     "shortName": "魔兽争霸3重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/0e25d1ca0c12"
+        "url": "https://pan.quark.cn/s/098abb5e7ce2"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOtYl_f4hm9aUqpSXrKCjms0A1?pwd=i8fk#"
+        "url": "https://pan.xunlei.com/s/VP1FvTW1EkOWFZIu4vT9E1DdA1?pwd=i8xu"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1-L7-WY1YxrTw-4cPVs-oTw?pwd=8888"
+        "url": "https://pan.baidu.com/s/1svMGly9ae6kL_nCp4B83xQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-26T10:21:19.491Z",
+    "lastChange": "2026-09-11T14:49:03.279Z",
     "id": 1605
   },
   {
@@ -39716,5 +39717,65 @@
     ],
     "lastChange": "2026-09-11T13:13:49.854Z",
     "id": 2776
+  },
+  {
+    "name": "（Switch）阿凡达传奇：格斗游戏Avatar Legends英文版本体+v1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c3d553ac44b5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1G3OuULaHXkUtKPKV-9EwoA1?pwd=3iyr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/14XDUAO-Oda4GhSIbvusqeA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-11T15:39:57.448Z",
+    "id": 2777
+  },
+  {
+    "name": "不存在的你，和我v2.333.2.8官方中文全DLC+原声音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ef667e77065a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1G8t6yh8_DWcfZQ8IkEUdGA1?pwd=2pci"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Knxd3_acbi-nvZIscyjJLQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-11T15:54:01.824Z",
+    "id": 2778
+  },
+  {
+    "name": "刺客信条影 v1.1.12Fix 豪华中文全DLC 免安装（VBS1.9一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e9866cd9e846"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1GNUUNQm7GzOnShQdBMlYlA1?pwd=t6k8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HVsHAA5-g3kgbJig-OeRKg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-11T17:01:26.450Z",
+    "id": 2779
   }
 ]
