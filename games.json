@@ -18007,16 +18007,25 @@
     "id": 1237
   },
   {
-    "name": "腐烂国度2：巨霸版 v38.2 豪华中文联机版 全DLC 打包XG器（补档）",
+    "name": "腐烂国度2主宰巨霸版v38.2终极版 豪华中文全DLC",
     "shortName": "腐烂国度2巨",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2e240c9512e2"
+        "url": "https://pan.quark.cn/s/cd5bb4a9b228"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1LUqSrjiIwyOo_vBnxRwNvA1?pwd=ir2j"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Mtv8uCl0dhveyk4jcrg4Sw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-12T16:48:00.095Z",
     "id": 1239
   },
   {
@@ -39804,23 +39813,23 @@
     "id": 2780
   },
   {
-    "name": "（Switch）三国志14威力加强版传承版パワーアップキット日文版v1.1.1 +1DLC",
+    "name": "（Switch）三国志14 with 威力加强传承版官方中文本体+v1.1.1升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d6b25cafaa73"
+        "url": "https://pan.quark.cn/s/45786cc93809"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP1JECPXGoKU9I525VwIuD83A1?pwd=3mmz"
+        "url": "https://pan.xunlei.com/s/VP1L9rAj0SJW7ixOupYWd81cA1?pwd=jcks"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/181eLmrx4Dp1vYpDjui_J-A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xhLpV-68Z4U8Yj3gmXN8TA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-12T06:13:03.452Z",
+    "lastChange": "2026-09-12T15:12:52.314Z",
     "id": 2781
   },
   {
@@ -39882,5 +39891,25 @@
     ],
     "lastChange": "2026-09-12T13:47:35.629Z",
     "id": 2784
+  },
+  {
+    "name": "动漫商店模拟器v0.1.1官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/143a17768476"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1L8EdJHVQ1fnqD5KgR8mpeA1?pwd=aieq"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1NksFijPmLai8cbhe-QKbuQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-12T15:20:37.439Z",
+    "id": 2785
   }
 ]
