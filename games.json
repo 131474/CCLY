@@ -1,6 +1,6 @@
 [
   {
-    "name": "幻世录 重制版v2.1.2官方中文全DLC 免安装解压即玩",
+    "name": "幻世录 重制版v2.1.3官方中文全DLC 免安装解压即玩",
     "shortName": "幻世录|重制版|v2.1.2",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4030150/96f3c10eeb4e5aa7671448cb437d3fd354fa8683/header_schinese.jpg?t=1788968730",
     "links": [
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-10T08:03:08.813Z",
+    "lastChange": "2026-09-13T10:00:18.777Z",
     "id": 2759
   },
   {
@@ -31472,14 +31472,23 @@
     "id": 2303
   },
   {
-    "name": "专注森林 v1.0.13 中文版",
+    "name": "专注森林v1.1.21官方中文全DLC+集成养蜂人",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/278026abbc52"
+        "url": "https://pan.quark.cn/s/8e262fb7c7fc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1O5Vrb_B0wGca46l0ccie4A1?pwd=3wp7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xOCWufgiqN6rt7kv9GF8Mg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-13T13:09:19.294Z",
+    "lastChange": "2026-09-13T04:57:40.557Z",
     "id": 2304
   },
   {
@@ -39793,7 +39802,7 @@
     "id": 2779
   },
   {
-    "name": "吞吞堡垒v0.9.9官方中文全DLC 免安装解压即玩",
+    "name": "吞吞堡垒v0.9.11官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -39809,7 +39818,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-12T04:05:38.487Z",
+    "lastChange": "2026-09-13T16:11:26.910Z",
     "id": 2780
   },
   {
@@ -39911,5 +39920,45 @@
     ],
     "lastChange": "2026-09-12T15:20:37.439Z",
     "id": 2785
+  },
+  {
+    "name": "战神4终极版v1.0.13简体中文全DLC+国语配音MOD",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6dbcb962e9f6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1P-pG6sRF2d2Az_pC4LZ2tA1?pwd=zf8j"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17bK6vA1-N_ZlbXlHo0akGA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-13T09:10:34.579Z",
+    "id": 2786
+  },
+  {
+    "name": "黑活v1.0.9.26官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b58cce45e871"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1QYytiQXhbsYLASYVeSVSoA1?pwd=mswx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1cJsIAFqXsXpu4GXQ98I2uQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-13T16:23:57.069Z",
+    "id": 2787
   }
 ]
