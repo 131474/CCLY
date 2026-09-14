@@ -1,5 +1,27 @@
 [
   {
+    "name": "魔兽争霸3：冰封王座 重制版v2.0.4.23745豪华中文全DLC+国语配音",
+    "shortName": "魔兽争霸3重制版|v2.0.4.23745",
+    "cover": "https://s1.imagehub.cc/images/2025/08/03/37f79840122673ba2da8c93d69888cd3.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/098abb5e7ce2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1FvTW1EkOWFZIu4vT9E1DdA1?pwd=i8xu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1svMGly9ae6kL_nCp4B83xQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-14T04:44:05.121Z",
+    "id": 1605
+  },
+  {
     "name": "幻世录 重制版v2.1.3官方中文全DLC 免安装解压即玩",
     "shortName": "幻世录|重制版|v2.1.2",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4030150/96f3c10eeb4e5aa7671448cb437d3fd354fa8683/header_schinese.jpg?t=1788968730",
@@ -1828,7 +1850,7 @@
     "id": 30
   },
   {
-    "name": "仁王3豪华版v2.00.02中文全DLC+联机补丁+单独升级补丁",
+    "name": "仁王3豪华版v2.01.00中文全DLC+联机补丁+单独升级补丁",
     "shortName": "仁王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1842,11 +1864,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1xyYqhyUoNYT3p8YTwP6yFQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1RVmasJVV8ojhttlZ4ldV2A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-22T10:03:05.559Z",
+    "lastChange": "2026-09-14T04:43:00.314Z",
     "id": 32
   },
   {
@@ -4521,16 +4543,25 @@
     "id": 227
   },
   {
-    "name": "无主之地4 v1.3.0 豪华中文版 全DLC",
+    "name": "无主之地4超级豪华版 v1.9.1Fix 中文全DLC+国语配音（VBS1.9一键启动）",
     "shortName": "无主之地4",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/67bcfce08ee9"
+        "url": "https://pan.quark.cn/s/b0222e7ee402"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1QiDFdIZa04F_tQfVBhMCiA1?pwd=z2yv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1vAoKp0Bdx2EwuL6q1r6pTA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-09-13T17:09:31.471Z",
     "id": 228
   },
   {
@@ -22595,28 +22626,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.825Z",
     "id": 1604
-  },
-  {
-    "name": "魔兽争霸3：冰封王座 重制版v2.0.4.23745豪华中文全DLC",
-    "shortName": "魔兽争霸3重",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/098abb5e7ce2"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP1FvTW1EkOWFZIu4vT9E1DdA1?pwd=i8xu"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1svMGly9ae6kL_nCp4B83xQ?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-09-11T14:49:03.279Z",
-    "id": 1605
   },
   {
     "name": "漫威蜘蛛侠2官方中文v2.810.0.0全DLC",
