@@ -2484,19 +2484,6 @@
     "id": 76
   },
   {
-    "name": "星际争霸重制版1+2合集 1是重制 2是离线版+中文语音",
-    "shortName": "星际争霸重制",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6b4ea7bcf83e"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
-    "id": 77
-  },
-  {
     "name": "零：红蝶重制版 v1.03.04 官方中文全DLC+预购特典",
     "shortName": "零红蝶重制版",
     "cover": "https://via.placeholder.com/80x80?text=Game",
@@ -16662,16 +16649,25 @@
     "id": 1127
   },
   {
-    "name": "星际争霸2 世纪珍藏整合版三部曲 官方中文",
+    "name": "星际争霸2世纪珍藏整合版三部曲 v3.1.4.41219官方中文全DLC 自由之翼+虫群之心+虚空之遗+国语配音",
     "shortName": "星际争霸2世",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3de3064ed34b"
+        "url": "https://pan.quark.cn/s/0d76cb8cd9b3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1a0HeEqk8FZY5Zkw-lG8nCA1?pwd=ackn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WuCpmNI1Q-JJWXI6NVpHDg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-15T17:10:31.257Z",
     "id": 1129
   },
   {
@@ -19744,19 +19740,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 1377
-  },
-  {
-    "name": "星际争霸 重制版 集成全DLC官方中文v1.23.10.12409版",
-    "shortName": "星际争霸重制",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5e822f08c096"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 1378
   },
   {
     "name": "世界摩托大奖赛25 v20250918 豪华中文版 全DLC",
@@ -40138,5 +40121,45 @@
     ],
     "lastChange": "2026-09-15T15:51:23.907Z",
     "id": 2795
+  },
+  {
+    "name": "奈布里斯：未知之地v1.0.00官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3e53e0a4c257"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1_tNIQYPzHB8MrVqfsY3kCA1?pwd=gyyj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ujh8SVQpFCcNDDbfFI2V0w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-15T16:32:40.019Z",
+    "id": 2796
+  },
+  {
+    "name": "使命召唤21：黑色行动6 终极版v11.1Fix豪华中文全DLC 完整版+精简战役版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3954def75590"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1_waI1EaO4T0oLkno95WkvA1?pwd=8xzh"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1U_qBW5fMvmR9EetPXiWloQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-15T16:48:49.210Z",
+    "id": 2797
   }
 ]
