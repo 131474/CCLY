@@ -814,7 +814,7 @@
     "id": 226
   },
   {
-    "name": "幻兽帕鲁Palworld正式版 v1.0.4.102642 官方中文全DLC+单独升级补丁+联机补丁",
+    "name": "幻兽帕鲁Palworld正式版 v1.0.5.102999联机版 官方中文全DLC+单独升级补丁+联机补丁",
     "shortName": "幻兽帕鲁正式版|v1.0.4.102642",
     "cover": "https://www.yxila.com/data/attachment/portal/202410/09/17284336734358.jpg",
     "links": [
@@ -828,11 +828,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1hljALEZS63RBXQubVobF3Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1XTgpcdngnnZuz-X79E_7VA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-07T09:57:28.081Z",
+    "lastChange": "2026-09-15T09:26:44.545Z",
     "id": 236
   },
   {
@@ -32871,7 +32871,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b1528c2aaf0a"
+        "url": "https://pan.quark.cn/s/06879877ca0f"
       },
       {
         "name": "迅雷网盘",
@@ -32879,11 +32879,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Rnx10GFpuuH12YmGQGxAjA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1FhctU1Tv4opO66MKQWLAFQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-01T05:34:17.061Z",
+    "lastChange": "2026-09-15T09:13:54.738Z",
     "id": 2400
   },
   {
@@ -40049,5 +40049,45 @@
     ],
     "lastChange": "2026-09-14T15:03:50.003Z",
     "id": 2791
+  },
+  {
+    "name": "幸存者笔记 官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a3754c270316"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1YwklJbBNtlT5H1zQK2x1tA1?pwd=q367"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1j3VCd4LV99gLlfwDF-4iAg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-15T07:26:10.683Z",
+    "id": 2792
+  },
+  {
+    "name": "魔界战记：凶乱终极版 v1.01 官方中文全DLC+原声原画集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/423fa7b98574"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1Z2qv6AnHw1AxGQoxwoqx2A1?pwd=e39e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_6qmzy8EG3CIa-HX41y0gA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-15T08:04:43.400Z",
+    "id": 2793
   }
 ]
