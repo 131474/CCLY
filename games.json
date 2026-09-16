@@ -902,25 +902,25 @@
     "id": 2283
   },
   {
-    "name": "毁灭战士 黑暗时代v20260708官方中文全DLC+启示录DLC 解除D加密",
+    "name": "毁灭战士 黑暗时代v20260914官方中文全DLC+启示录DLC 解除D加密",
     "shortName": "毁灭战士|黑暗时代|解除D加密",
     "cover": "https://img.3dmgame.com/uploads/images/news/20250222/1740232817_644506_jpg_r.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1628adb2dd98"
+        "url": "https://pan.quark.cn/s/5b1f87056a97"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOx-jyuYaLFLOE0SR7WhqUFOA1?pwd=a6ak#"
+        "url": "https://pan.xunlei.com/s/VOysbauXZspBs88sEvIkIou0A1?pwd=hywp"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1LZMuXsE-qMhKACpwTig17A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1V2eKd-M2UCEcwBm_pG5jrQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-08T08:04:43.485Z",
+    "lastChange": "2026-09-16T14:58:56.294Z",
     "id": 112
   },
   {
@@ -13840,16 +13840,25 @@
     "id": 906
   },
   {
-    "name": "断箭 v1.0.11.2 豪华中文版 全DLC",
+    "name": "断箭v1.2.0.3 豪华中文全DLC 免安装解压即玩",
     "shortName": "断箭",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6044234c32da"
+        "url": "https://pan.quark.cn/s/7d4b04c3492d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1er27Ho0N8fs1qbHyb6GOhA1?pwd=9f5v"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1K0zChMAWELTLiNLZoB2KgQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-16T15:39:24.986Z",
     "id": 907
   },
   {
@@ -31878,14 +31887,23 @@
     "id": 2331
   },
   {
-    "name": "绯红战术：白旗之黎明 v2.0.1.0 重大更新 新加官方中文",
+    "name": "绯红战术：白旗之黎明v2.2.0.0官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e43e7ff0e6f1"
+        "url": "https://pan.quark.cn/s/66e051765e44"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1eHSvk2JHQtRfwT5tBiBTBA1?pwd=t5bx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yaGdfdPTAoVtkreTr-bsPw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-15T15:09:58.690Z",
+    "lastChange": "2026-09-16T12:59:49.751Z",
     "id": 2332
   },
   {
@@ -40219,5 +40237,25 @@
     ],
     "lastChange": "2026-09-16T07:18:18.616Z",
     "id": 2799
+  },
+  {
+    "name": "队长小翼 新秀崛起终极版v1.46.1豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/23c398b9ac46"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1eQ-lE93ICB5LYeZM_CNimA1?pwd=ghbi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1h6tkzBVfGV9M5hqE99dN2A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-16T14:04:40.169Z",
+    "id": 2800
   }
 ]
