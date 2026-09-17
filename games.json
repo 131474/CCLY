@@ -5894,7 +5894,7 @@
     "id": 316
   },
   {
-    "name": "英灵神殿v1.0.12官方中文全DLC+原声音乐集 免安装解压即玩",
+    "name": "英灵神殿v1.0.14官方中文全DLC+原声音乐集 免安装解压即玩",
     "shortName": "英灵神殿",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5908,11 +5908,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1u3Lnb7Wg-s0EidezDyUhvg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1gWvWa2MOWcRbuC6RZA4XRQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-12T04:43:09.604Z",
+    "lastChange": "2026-09-17T14:42:15.006Z",
     "id": 317
   },
   {
@@ -12579,16 +12579,25 @@
     "id": 807
   },
   {
-    "name": "碧蓝幻想Versus：崛起 v2.51 豪华中文版 全DLC",
+    "name": "碧蓝幻想Versus对战：崛起v2.61官方中文全DLC 免安装解压即玩",
     "shortName": "碧蓝幻想Ve",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c4b12b73c335"
+        "url": "https://pan.quark.cn/s/01cbdb743d1b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1isxB9QPlfDc1E3dKdGr85A1?pwd=8tr7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QKGApz2ywWE4GOnisFYSTg?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-15T16:05:37.431Z",
+    "lastChange": "2026-09-17T10:24:35.645Z",
     "id": 808
   },
   {
@@ -38552,7 +38561,7 @@
     "id": 2704
   },
   {
-    "name": "雄心壮志正式版v1.0 Build3675 官方中文全DLC 免安装解压即玩",
+    "name": "雄心壮志正式版v1.0.3680 官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -38564,11 +38573,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1aBI9wptWEDpAJy79vczX-Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1iYgV6ITa9ZFbxw6lLugIxQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-12T13:14:41.703Z",
+    "lastChange": "2026-09-17T13:57:20.692Z",
     "id": 2705
   },
   {
@@ -40350,5 +40359,25 @@
     ],
     "lastChange": "2026-09-17T09:22:58.122Z",
     "id": 2804
+  },
+  {
+    "name": "（Switch）胡闹魔坊The Artifactory 官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6bf6a14855d2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1juVu1CtTAOHzG5fMa21r4A1?pwd=phpw"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1zqZtzEXwbRd3AobdP7u4mQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-17T15:11:23.087Z",
+    "id": 2805
   }
 ]
