@@ -880,7 +880,7 @@
     "id": 236
   },
   {
-    "name": "碧蓝幻想 Relink 特别版v2.0.5官方中文全DLC+无尽黄昏DLC+单独升级补丁",
+    "name": "碧蓝幻想 Relink 特别版v2.0.6官方中文全DLC+无尽黄昏DLC+单独升级补丁",
     "shortName": "碧蓝幻想|Relink|v2.0.2",
     "cover": "https://img1.dancihu.com/2024-02-20/29a11b89-fe8f-e794-1369-d2a49d172bb6.png",
     "links": [
@@ -894,11 +894,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ndIl3rZyGt330OvKYNT41w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1O4RZoR1ayVgm0pCSM_8Vkg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-29T11:10:12.644Z",
+    "lastChange": "2026-09-17T09:51:42.351Z",
     "id": 2468
   },
   {
@@ -40310,5 +40310,45 @@
     ],
     "lastChange": "2026-09-16T14:04:40.169Z",
     "id": 2800
+  },
+  {
+    "name": "另一个伊甸：起源Build.25296903官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6c456b6929e6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1iKNgJrcdtjOc8rVkt70K4A1?pwd=wksj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1W-SJqDEfIOeeObDszM-i4Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-17T07:51:17.833Z",
+    "id": 2803
+  },
+  {
+    "name": "巴士模拟器 27官方中文v1.14.53243全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c9c071f5eb87"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1iWrzSkwuMFjxL0G-kRYa6A1?pwd=ekt3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1w9jONF0mJ7jWlBTDLZMSzg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-17T09:22:58.122Z",
+    "id": 2804
   }
 ]
