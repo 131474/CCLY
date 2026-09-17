@@ -4483,7 +4483,7 @@
     "id": 218
   },
   {
-    "name": "无人深空：宇宙v7.02-178994 豪华中文全DLC+联机补丁",
+    "name": "无人深空：宇宙v7.03.1-179292 豪华中文全DLC+联机补丁",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -4501,7 +4501,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-15T14:06:16.532Z",
+    "lastChange": "2026-09-17T17:17:07.210Z",
     "id": 219
   },
   {
@@ -40377,7 +40377,27 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-17T15:11:23.087Z",
+    "lastChange": "2026-09-17T17:17:26.091Z",
     "id": 2805
+  },
+  {
+    "name": "（Switch）另一个伊甸：起源Another Eden Begins官方中文+v1.1.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3788a97275a2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1kESG7HnGGVDQzLtTNbgPGA1?pwd=ixnw"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gD6EYYLNeAq9Ica_1uqhRg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-17T17:16:23.883Z",
+    "id": 2806
   }
 ]
