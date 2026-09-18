@@ -704,7 +704,7 @@
     "id": 203
   },
   {
-    "name": "轮回之兽v1.0.11.0豪华中文全DLC+单独升级补丁",
+    "name": "轮回之兽v1.0.12.0豪华中文全DLC+单独升级补丁",
     "shortName": "轮回之兽偷跑版|v1.0.7",
     "cover": "https://p.sda1.dev/24/baf69c147c9850490f14904e5c1edd5c/Beast-of-Reincarnation_2025_06-08-25_007.jpg",
     "links": [
@@ -718,11 +718,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ehEI4IBbhSbI1c-hluOX7g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1QRFg5VaqEl1v-yeyK6xldg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-09T07:39:21.392Z",
+    "lastChange": "2026-09-18T16:02:44.652Z",
     "id": 2580
   },
   {
@@ -38041,7 +38041,7 @@
     "id": 2672
   },
   {
-    "name": "异形：火力精英2官方中文v1.0.2b全DLC+单独升级补丁",
+    "name": "异形：火力精英2官方中文v1.0.3全DLC+单独升级补丁+联机补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -38053,11 +38053,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1KqjGOaaBV-Q8LdA0L7NrLw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1VXp5IQO9R06E9qsVmOkMfQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-03T14:54:47.284Z",
+    "lastChange": "2026-09-18T15:35:44.060Z",
     "id": 2673
   },
   {
@@ -40439,5 +40439,45 @@
     ],
     "lastChange": "2026-09-18T09:00:07.215Z",
     "id": 2808
+  },
+  {
+    "name": "沙丘：觉醒v1.5.3.0官方中文全DLC+原声原画集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/78fcccb42d6f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1owALzn5uCmT4qV8nrku9aA1?pwd=4cdd"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nnPSZetImn1i-wYCHtgxSQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-18T14:38:58.158Z",
+    "id": 2809
+  },
+  {
+    "name": "宇宙恐惧v1.1官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/03b3b46818ce"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1p3zVrBwvJ3tFEke5KAtXFA1?pwd=agze"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1vfd7-A_UBs6rOf8EUX9nhA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-18T15:24:48.908Z",
+    "id": 2810
   }
 ]
