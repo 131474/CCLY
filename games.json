@@ -5894,7 +5894,7 @@
     "id": 316
   },
   {
-    "name": "英灵神殿v1.0.14官方中文全DLC+原声音乐集 免安装解压即玩",
+    "name": "英灵神殿v1.0.15官方中文全DLC+原声音乐集 免安装解压即玩",
     "shortName": "英灵神殿",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5912,7 +5912,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-17T14:42:15.006Z",
+    "lastChange": "2026-09-19T06:31:29.928Z",
     "id": 317
   },
   {
@@ -7326,16 +7326,25 @@
     "id": 416
   },
   {
-    "name": "造物主 2 v1.11.0 新加DLC 草原 豪华中文版 全DLC",
+    "name": "造物主 2官方中文v1.12.0全DLC+侏罗纪DLC",
     "shortName": "造物主",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/4b8488d9e95e"
+        "url": "https://pan.quark.cn/s/c670283de5d6"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1sArd3bQGsQ1CbGPeg2utiA1?pwd=k9d2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17n-2yLDTgTrFvEWtgVVLsA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-19T06:05:53.010Z",
     "id": 417
   },
   {
@@ -33077,7 +33086,7 @@
     "id": 2406
   },
   {
-    "name": "符文世界：龙之荒野v1.0正式版官方中文全DLC",
+    "name": "符文世界：龙之荒野v1.0.0.4正式版官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -33093,7 +33102,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-15T15:00:09.274Z",
+    "lastChange": "2026-09-19T06:46:21.022Z",
     "id": 2407
   },
   {
@@ -36261,7 +36270,7 @@
     "id": 2575
   },
   {
-    "name": "纵横秘湾v1.1.5.244734官方中文全DLC+单独升级补丁",
+    "name": "纵横秘湾v1.1.7.246856官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -36273,11 +36282,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/140mW01lUyB-U32ye7zRQrA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1MkdyENexDpBrUcgn3z002w?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-04T08:02:20.113Z",
+    "lastChange": "2026-09-19T05:53:38.124Z",
     "id": 2576
   },
   {
@@ -37481,7 +37490,7 @@
     "id": 2643
   },
   {
-    "name": "又一个僵尸幸存者 正式版v1.0.1 官方中文全DLC+单独升级补丁",
+    "name": "又一个僵尸幸存者 正式版v1.0.1a 官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -37493,11 +37502,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1FghiPRy6qdUJ2yiPaDLLTA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Yq6tUPvBgLmoGUOSXjX6Pw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-10T03:07:38.068Z",
+    "lastChange": "2026-09-19T07:11:54.243Z",
     "id": 2644
   },
   {
@@ -40479,5 +40488,25 @@
     ],
     "lastChange": "2026-09-18T15:24:48.908Z",
     "id": 2810
+  },
+  {
+    "name": "（Switch）千銃士Rhodoknight 日文版v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9dc8ece9049a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1sBc3hw3cYB24N5bv2sWAkA1?pwd=3633"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JOpsAJHtlI3JwcG1Ub9ijA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-19T05:48:28.341Z",
+    "id": 2811
   }
 ]
