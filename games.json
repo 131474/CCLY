@@ -2129,16 +2129,25 @@
     "id": 49
   },
   {
-    "name": "消防模拟：火苗燃动 v1.0040 豪华中文版 全DLC",
+    "name": "消防模拟：火苗燃动v1.0070.35427.105922官方中文全DLC",
     "shortName": "消防模拟火苗",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c50f5bed5a8d"
+        "url": "https://pan.quark.cn/s/0846c19cbc09"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1zKrd6UTL-FgLa3ZDig9WlA1?pwd=t3p8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1L5ieGEgJI_YIFSDDQ7dyuQ?pwd=2ie8",
+        "code": "2ie8"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-09-20T15:47:06.946Z",
     "id": 50
   },
   {
@@ -6183,23 +6192,23 @@
     "id": 335
   },
   {
-    "name": "星际裂变 v0.2.0 豪华中文版 全DLC+联机补丁",
+    "name": "星际裂变v0.3.4.126119S 豪华中文全DLC+联机补丁",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7fc0f1693f43"
+        "url": "https://pan.quark.cn/s/2dfc00f35e6e"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOq1HQ1AvNOQNIsGFNfCvlYfA1?pwd=57dc#"
+        "url": "https://pan.xunlei.com/s/VP1z-1Bz_z2sVcVfnf_ilOIpA1?pwd=mew3"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1egPQrDDdLoAwdx71RvI6gg?pwd=8888",
-        "code": "8888"
+        "url": "https://pan.baidu.com/s/1kls7YMCeJYdyqpUEPwK41g?pwd=q9rw",
+        "code": "q9rw"
       }
     ],
-    "lastChange": "2026-04-12T15:22:45.405Z",
+    "lastChange": "2026-09-20T13:32:54.850Z",
     "id": 336
   },
   {
@@ -6431,19 +6440,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.824Z",
     "id": 353
-  },
-  {
-    "name": "消防模拟 v20260129 豪华中文版 全DLC",
-    "shortName": "消防模拟",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/edc3aa725b9f"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
-    "id": 354
   },
   {
     "name": "海参大作战 v20260130 中文版",
@@ -40688,5 +40684,125 @@
     ],
     "lastChange": "2026-09-20T08:50:33.904Z",
     "id": 2820
+  },
+  {
+    "name": "狙击手·丹：一击解决的多面能手v.40官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9b5667c05c9c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1y2bjFAgXh8awtYRR5NUZ-A1?pwd=w5b2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WjCQwlpW2TEbyuDb-9e25g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-20T09:05:39.375Z",
+    "id": 2821
+  },
+  {
+    "name": "（Switch）造物主2 Reus 2 官方中文v1.5.5c",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/26d2ab89013a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1yJX6O_8kPghjfJJmobdXEA1?pwd=cvex"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19iVlJVfyW8fOgbud-OVPOg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-20T10:20:07.330Z",
+    "id": 2822
+  },
+  {
+    "name": "（Switch）TCG卡牌店模拟器TCG Card Shop Simulator官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e52c08722a04"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1yM0gNMviwWhhXOIrz0Nz_A1?pwd=zygs"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13rfFfihYM2TkCUK5c1HtMA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-20T10:30:19.594Z",
+    "id": 2823
+  },
+  {
+    "name": "绽放守护者v1.0.1官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ae8573e22933"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1z8LU1doNP1Rl5mkt1IEemA1?pwd=3kcj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1YCZ3UGLibSMBzqq4bKQV0Q?pwd=a2jh",
+        "code": "a2jh"
+      }
+    ],
+    "lastChange": "2026-09-20T14:19:50.159Z",
+    "id": 2824
+  },
+  {
+    "name": "（Switch）艾尔米纳奇原版～暗之巫女与诸神的戒指～日文版本体+v1.1.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/994b83f8c934"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1zVnK7zxJcl_bxr-rfUoArA1?pwd=sv8u"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1cqGh4bNlCgNxSaGiEaaPlg?pwd=xdw4",
+        "code": "xdw4"
+      }
+    ],
+    "lastChange": "2026-09-20T15:51:32.648Z",
+    "id": 2825
+  },
+  {
+    "name": "孤岛惊魂6终极版v1.8.0豪华中文全DLC（VBS一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c83abe3a4c35"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1zYYj-p2N7CQBUU4qU59qUA1?pwd=7jv5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wDYz1VWCqJuihHxTClWKHQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-20T16:08:05.188Z",
+    "id": 2826
   }
 ]
