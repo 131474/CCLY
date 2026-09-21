@@ -1894,7 +1894,7 @@
     "id": 30
   },
   {
-    "name": "仁王3豪华版v2.01.00中文全DLC+联机补丁+单独升级补丁",
+    "name": "仁王3豪华版v2.02.00中文全DLC+联机补丁+单独升级补丁",
     "shortName": "仁王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -1908,11 +1908,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1RVmasJVV8ojhttlZ4ldV2A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1flMjPCj55AM7747O_ys1Dg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-14T04:43:00.314Z",
+    "lastChange": "2026-09-21T10:52:11.477Z",
     "id": 32
   },
   {
@@ -13968,16 +13968,25 @@
     "id": 910
   },
   {
-    "name": "终极幸运之塔 v0.5.2 中文版",
+    "name": "终极幸运之塔 v1.1.4 官方中文全DLC 免安装解压即玩",
     "shortName": "终极幸运之塔",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2b1c12def3e3"
+        "url": "https://pan.quark.cn/s/cadb02cc1634"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP23bllexqyzGGxmqPQUWF1mA1?pwd=gzse"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mocNg0F_cjItNatcMV98Ew?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-21T15:48:37.873Z",
     "id": 911
   },
   {
@@ -29751,7 +29760,7 @@
     "id": 2179
   },
   {
-    "name": "墨境v1.06正式版官方中文+全DLC",
+    "name": "墨境v1.1正式版官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -29763,11 +29772,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1DttmWW_lcQ9ea9iDHRYXSA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Ufnz9LWx-YzSDer-d440qg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-26T05:51:50.877Z",
+    "lastChange": "2026-09-21T04:27:52.957Z",
     "id": 2180
   },
   {
@@ -40804,5 +40813,45 @@
     ],
     "lastChange": "2026-09-20T16:08:05.188Z",
     "id": 2826
+  },
+  {
+    "name": "心之眼数字豪华版v8332038官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/afb9649c79ac"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP227c0KfrrsfkellSm4H50AA1?pwd=t8c2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19RTCYtTKWKEw0Ly7YesGCw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-21T09:35:23.260Z",
+    "id": 2827
+  },
+  {
+    "name": "绝命狂奔66官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/604964c764f2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP23RoLzfrrsfkellSm5NimBA1?pwd=t4fa"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pTlSBCParBHBSdaYEUfysg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-21T14:59:52.881Z",
+    "id": 2828
   }
 ]
