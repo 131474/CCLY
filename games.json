@@ -1,5 +1,27 @@
 [
   {
+    "name": "寂静岭：小镇陷落v1.4.153521官方中文全DLC 免安装解压即玩",
+    "shortName": "寂静岭|小镇陷落|v1.4.153521",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1636440/0ed1cb4bc30631f95b92f7f13bb06c15d49b4afa/header.jpg?t=1789974011",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6f3821358696"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP26kVgzjx1WCrNW904sRU1lA1?pwd=q6yu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1T_JN40RkeEt6tY3kZA3qCg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-22T06:31:42.609Z",
+    "id": 2833
+  },
+  {
     "name": "空之轨迹 the 2nd官方中文v1.03.2全DLC+国语配音MOD",
     "shortName": "空之轨迹|the 2nd|v1.03.2",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4225980/7e2f29dcf817ea28698ed1e27f4b86c98ebf1aa3/header_schinese.jpg?t=1789409245",
@@ -4492,7 +4514,7 @@
     "id": 218
   },
   {
-    "name": "无人深空：宇宙v7.03.1-179292 豪华中文全DLC+联机补丁",
+    "name": "无人深空：宇宙v7.04-179666豪华中文全DLC+单独升级补丁+联机补丁",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -4506,11 +4528,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/15E2N-zSmV-Ra0b4wtB1-aw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1E52s8etuyGNMf9u-j_p54g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-17T17:17:07.210Z",
+    "lastChange": "2026-09-22T03:58:47.919Z",
     "id": 219
   },
   {
@@ -9494,25 +9516,25 @@
     "id": 575
   },
   {
-    "name": "（Switch）无人深空官方中文本体+6.40.0升补",
+    "name": "（Switch）无人深空No Man's Sky官方中文本体+v7.0.0升补",
     "shortName": "无人深空官方",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/8a54d5433a3c"
+        "url": "https://pan.quark.cn/s/49238594d83c"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOuhHx_BHtKiaIJcroj-t1CcA1?pwd=qfrs#"
+        "url": "https://pan.xunlei.com/s/VP26KGNq-H7QCv5p3VntILe2A1?pwd=avmz"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1_40q1kp8DxQkBQpmajsEcg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1YU_ejZ0PTHcUs-2nyVQnLw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-09T17:04:24.816Z",
+    "lastChange": "2026-09-22T04:18:37.840Z",
     "id": 576
   },
   {
@@ -29749,23 +29771,23 @@
     "id": 2178
   },
   {
-    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.5升补",
+    "name": "（Switch）墨境 Realm of Ink官方中文本体+1.0.7升补",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/25d6eee0db0c"
+        "url": "https://pan.quark.cn/s/d914dfe13de9"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOwN-OFRYappwAuFQPbEFw2GA1?pwd=5wgn#"
+        "url": "https://pan.xunlei.com/s/VOtiivxkQH7HpHLZ7VNM6hQyA1?pwd=2emd#"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1xUVHNMP-lDOiGe_zwU2hOA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1nBNIpplZmEOuqHku5Ygw_g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-14T10:32:53.238Z",
+    "lastChange": "2026-09-22T03:34:21.213Z",
     "id": 2179
   },
   {
@@ -40922,5 +40944,25 @@
     ],
     "lastChange": "2026-09-21T18:34:34.182Z",
     "id": 2831
+  },
+  {
+    "name": "（Switch）王国 双冠 Kingdom Two Crowns官方中文本体+v2.4.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/73c3a0e71525"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP26_g8Biw5M1zNC1ue9V67WA1?pwd=c4c2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1K-VbWbavexVJvIA3LMY7hA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-22T05:30:22.333Z",
+    "id": 2832
   }
 ]
