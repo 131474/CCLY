@@ -6921,25 +6921,25 @@
     "id": 384
   },
   {
-    "name": "群星 银河版v4.4.2官方中文全DLC+新DLC游牧民族+XG器",
+    "name": "群星 银河版v4.5.0豪华中文全DLC+原声原画集+超清壁纸",
     "shortName": "群星",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/e5456b208691"
+        "url": "https://pan.quark.cn/s/260be1d6c98a"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOvOXDelfM1JHvh1edBioXuEA1?pwd=rceb#"
+        "url": "https://pan.xunlei.com/s/VP292v93wO4DDH7UjOSk4fF1A1?pwd=f2mz"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1RDv55SpW_dldWdNV0L9LTw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1I4o7y2lU2C392Q0JndfizQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-18T07:08:13.327Z",
+    "lastChange": "2026-09-22T17:04:16.209Z",
     "id": 386
   },
   {
@@ -39946,7 +39946,7 @@
     "id": 2779
   },
   {
-    "name": "吞吞堡垒v0.9.13官方中文全DLC 免安装解压即玩",
+    "name": "吞吞堡垒v0.9.14.1官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -39962,7 +39962,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-19T15:03:02.470Z",
+    "lastChange": "2026-09-22T16:33:06.222Z",
     "id": 2780
   },
   {
@@ -41044,5 +41044,25 @@
     ],
     "lastChange": "2026-09-22T15:37:56.647Z",
     "id": 2837
+  },
+  {
+    "name": "勒芒终极版v1.4.2官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fd100e1c1c03"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP28yuW_7q0GmazKlU52GmotA1?pwd=867x"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CLshV8IyYk7SNJ6eR1XWGQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-22T16:43:22.679Z",
+    "id": 2838
   }
 ]
