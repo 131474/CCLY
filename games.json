@@ -2010,7 +2010,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5060a178ade3"
+        "url": "https://pan.quark.cn/s/a577c3f1f2ab"
       },
       {
         "name": "迅雷网盘",
@@ -2465,16 +2465,25 @@
     "id": 66
   },
   {
-    "name": "无尽猎杀 v4214 中文版",
+    "name": "无尽猎杀v4480官方中文全DLC 免安装解压即玩",
     "shortName": "无尽猎杀",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/934e33857b58"
+        "url": "https://pan.quark.cn/s/5add26d810f8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2H4W3_0yCevYHQyFrO_sTeA1?pwd=snsp"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mgWSQXVlDryriY3j4o4J0Q?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-17T16:44:33.832Z",
+    "lastChange": "2026-09-24T06:30:41.532Z",
     "id": 67
   },
   {
@@ -5465,7 +5474,7 @@
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1ee305885328"
+        "url": "https://pan.quark.cn/s/38769b07831a"
       },
       {
         "name": "迅雷网盘",
@@ -37446,7 +37455,7 @@
     "id": 2634
   },
   {
-    "name": "暗黑地牢豪华版v27890官方中文全DLC+火之边缘DLC+原生音乐集",
+    "name": "暗黑地牢豪华版v28063官方中文全DLC+火之边缘DLC+原生音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -37458,11 +37467,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1mObY955WvmrlPiOXQ17aXA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1d1qXjDB9i4moLz13SPXdaQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T14:00:00.019Z",
+    "lastChange": "2026-09-24T07:48:32.097Z",
     "id": 2635
   },
   {
@@ -37566,7 +37575,7 @@
     "id": 2643
   },
   {
-    "name": "又一个僵尸幸存者 正式版v1.0.1a 官方中文全DLC+单独升级补丁",
+    "name": "又一个僵尸幸存者 正式版v1.0.1b 官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -37582,7 +37591,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-19T07:11:54.243Z",
+    "lastChange": "2026-09-24T05:22:20.084Z",
     "id": 2644
   },
   {
@@ -38646,7 +38655,7 @@
     "id": 2704
   },
   {
-    "name": "雄心壮志正式版v1.0.3680 官方中文全DLC 免安装解压即玩",
+    "name": "雄心壮志正式版v1.0.3682 官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -38658,11 +38667,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1iYgV6ITa9ZFbxw6lLugIxQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1n7I9GIpgWgBN7VMyvf--Kw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-17T13:57:20.692Z",
+    "lastChange": "2026-09-24T09:17:10.787Z",
     "id": 2705
   },
   {
@@ -41304,5 +41313,25 @@
     ],
     "lastChange": "2026-09-23T17:11:15.284Z",
     "id": 2850
+  },
+  {
+    "name": "神貌之树逆卡巴拉v1.0.3官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/107e4da20e64"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2Gb5L4j7QU7cAsrJXOAvFsA1?pwd=xcgx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1456kFi8Z60q20qFcfezCOQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-24T05:00:49.324Z",
+    "id": 2851
   }
 ]
