@@ -44,8 +44,8 @@
     "id": 2844
   },
   {
-    "name": "守墓人2官方中文v1.004.3全DLC 免安装解压即玩",
-    "shortName": "守墓人2|v1.004.3",
+    "name": "守墓人2官方中文v1.005 全DLC 免安装解压即玩",
+    "shortName": "守墓人2|v1.005",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/8bfd6d4cd1ae84a26860992c4aac8c05458b123c/header_alt_assets_1_schinese.jpg?t=1790131843",
     "links": [
       {
@@ -62,7 +62,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-23T07:52:45.374Z",
+    "lastChange": "2026-09-24T17:54:50.352Z",
     "id": 2839
   },
   {
@@ -22404,16 +22404,25 @@
     "id": 1575
   },
   {
-    "name": "生化危机3 重制版",
+    "name": "生化危机3：重制版v20260924 豪华中文全DLC+国语配音",
     "shortName": "生化危机3重",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/120e0b8f078a"
+        "url": "https://pan.quark.cn/s/86787898bedf"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2JMWMLACQaRubQFeB01FgKA1?pwd=bkwm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xMw0-s4rjmmJXl0BJ8Lm9A?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-09-24T17:08:41.314Z",
     "id": 1576
   },
   {
@@ -39297,7 +39306,7 @@
     "id": 2742
   },
   {
-    "name": "噬血代码2终极版v2.0.2.0豪华中文全DLC 去除D加密+原声原画集 免安装解压即玩",
+    "name": "噬血代码2终极版v2.0.3.0豪华中文全DLC 去除D加密+原声原画集 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -39309,11 +39318,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/170mncPYbs_bdsa4pJaQqAg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1cQzxkfr3erKJt6EtJFyv7g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-14T13:12:38.792Z",
+    "lastChange": "2026-09-24T17:12:13.767Z",
     "id": 2743
   },
   {
