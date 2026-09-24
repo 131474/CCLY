@@ -1,5 +1,27 @@
 [
   {
+    "name": "王国保卫战6：新启程v1.00.038官方中文全DLC 免安装解压即玩",
+    "shortName": "王国保卫战6|新启程",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/947f69b33555"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2IyOfoyI6FLUGXOZ5juSI0A1?pwd=v5f8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ckWLISlyPtkN0FCL2OF6cA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-24T15:21:01.611Z",
+    "id": 2852
+  },
+  {
     "name": "控制：共振v1.0.0官方中文全DLC 免安装解压即玩",
     "shortName": "控制：共振|偷跑版",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3669870/918498496cb30b36cec93ebad589b132ddac8379/header_schinese.jpg?t=1789653825",
@@ -132,8 +154,8 @@
     "id": 1605
   },
   {
-    "name": "幻世录 重制版v2.1.3官方中文全DLC 免安装解压即玩",
-    "shortName": "幻世录|重制版|v2.1.2",
+    "name": "幻世录 重制版v2.2.0官方中文全DLC 免安装解压即玩",
+    "shortName": "幻世录|重制版|v2.2.0",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4030150/96f3c10eeb4e5aa7671448cb437d3fd354fa8683/header_schinese.jpg?t=1788968730",
     "links": [
       {
@@ -146,11 +168,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1cmNdxUF8uouMao69_S9dVA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1aU1oyyuuaCMvUNh6p2qxCg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-13T10:00:18.777Z",
+    "lastChange": "2026-09-24T09:27:18.758Z",
     "id": 2759
   },
   {
@@ -462,7 +484,7 @@
     "id": 2683
   },
   {
-    "name": "合金装备：和平行者v1.3.0大师合集版全DLC+汉化补丁",
+    "name": "合金装备：和平行者v1.3.2大师合集版 中文汉化全DLC+单独升级补丁+日语配音",
     "shortName": "合金装备|和平行者|v1.3.0",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2492660/10e02aa27ee50aadd8be3e0fbd45badf17ce5234/header.jpg?t=1787835726",
     "links": [
@@ -476,11 +498,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1W9LkvKucEJBz0380VT-pyA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Zo_ZoClfJ9LhwwP9heIdng?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-29T12:57:45.223Z",
+    "lastChange": "2026-09-24T14:32:10.762Z",
     "id": 2682
   },
   {
@@ -40695,7 +40717,7 @@
     "id": 2816
   },
   {
-    "name": "无尽帝国 2正式版v1.0.125官方中文全DLC+单独升级补丁",
+    "name": "无尽帝国 2正式版v1.0.133官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -40711,7 +40733,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-23T05:30:41.338Z",
+    "lastChange": "2026-09-24T13:22:10.480Z",
     "id": 2817
   },
   {
