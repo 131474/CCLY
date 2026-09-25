@@ -1,7 +1,7 @@
 [
   {
-    "name": "王国保卫战6：新启程v1.00.038官方中文全DLC 免安装解压即玩",
-    "shortName": "王国保卫战6|新启程",
+    "name": "王国保卫战6：新启程v1.00.044官方中文全DLC 免安装解压即玩",
+    "shortName": "王国保卫战6|新启程|v1.00.044",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
     "links": [
       {
@@ -18,8 +18,29 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-24T15:21:01.611Z",
+    "lastChange": "2026-09-25T03:03:03.688Z",
     "id": 2852
+  },
+  {
+    "name": "王国保卫战6：新启程apk安卓版全解锁完整版",
+    "shortName": "王国保卫战6|新启程|安卓版",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790279936",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dd7d25b8300c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2LaoVskPO-si3lsr770QNgA1?pwd=ewu9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/192YxhhpAK7WDzHcqBBokbA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-09-25T03:29:04.103Z",
+    "id": 2853
   },
   {
     "name": "控制：共振v1.0.0官方中文全DLC 免安装解压即玩",
