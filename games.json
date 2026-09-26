@@ -1,7 +1,7 @@
 [
   {
-    "name": "王国保卫战6：新启程v1.00.044官方中文全DLC 免安装解压即玩",
-    "shortName": "王国保卫战6|新启程|v1.00.044",
+    "name": "王国保卫战6：新启程v1.00.052官方中文全DLC 免安装解压即玩",
+    "shortName": "王国保卫战6|新启程|v1.00.052",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
     "links": [
       {
@@ -18,7 +18,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-25T03:03:03.688Z",
+    "lastChange": "2026-09-26T04:25:49.155Z",
     "id": 2852
   },
   {
@@ -43,8 +43,29 @@
     "id": 2853
   },
   {
+    "name": "王国保卫战1-6全系列合集官方中文全DLC（PC+安卓）",
+    "shortName": "王国保卫战1-6|全系列|PC+安卓",
+    "cover": "https://via.placeholder.com/80x80?text=Game",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/431f6fd5b61f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2R3ynCPkDYXwGdEVMGsXkkA1?pwd=fhnn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CZtsgzE5V8bYZuuUfNzXgw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-09-26T04:58:36.282Z",
+    "id": 2859
+  },
+  {
     "name": "控制：共振 豪华版v20260924官方中文全DLC+单独升级补丁",
-    "shortName": "控制：共振|偷跑版",
+    "shortName": "控制：共振|豪华版",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3669870/918498496cb30b36cec93ebad589b132ddac8379/header_schinese.jpg?t=1789653825",
     "links": [
       {
@@ -65,8 +86,8 @@
     "id": 2844
   },
   {
-    "name": "守墓人2官方中文v1.005 全DLC 免安装解压即玩",
-    "shortName": "守墓人2|v1.005",
+    "name": "守墓人2官方中文v1.006 全DLC 免安装解压即玩",
+    "shortName": "守墓人2|v1.006",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/8bfd6d4cd1ae84a26860992c4aac8c05458b123c/header_alt_assets_1_schinese.jpg?t=1790131843",
     "links": [
       {
@@ -83,7 +104,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-24T17:54:50.352Z",
+    "lastChange": "2026-09-26T04:56:46.299Z",
     "id": 2839
   },
   {
@@ -4176,23 +4197,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.823Z",
     "id": 185
-  },
-  {
-    "name": "王国保卫战1-5系列（PC+安卓）",
-    "shortName": "王国保卫战1",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/17e580e88c75"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOn0W1MqS2j9palRFE8bwrQxA1?pwd=mqqw#"
-      }
-    ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
-    "id": 186
   },
   {
     "name": "怪物猎人：荒野高级版 v1.041.03.00 豪华中文版 全DLC +神器 绕过D加密（VBS一键启动）",
