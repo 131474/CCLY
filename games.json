@@ -460,7 +460,7 @@
     "id": 1465
   },
   {
-    "name": "渔力全开（How to Fish）v1.0.12官方中文全DLC+联机版 免安装解压即玩",
+    "name": "渔力全开（How to Fish）v1.1.0官方中文全DLC+联机版 免安装解压即玩",
     "shortName": "渔力全开|v1.0.12",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
     "links": [
@@ -474,11 +474,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1V08NdLb--mTw1AuqkooDSA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1bmWa3TMgielf_n5NZrOZWQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-04T18:03:00.638Z",
+    "lastChange": "2026-09-28T16:28:59.031Z",
     "id": 2660
   },
   {
@@ -22608,16 +22608,25 @@
     "id": 1585
   },
   {
-    "name": "鬼泣1+2+3高清重制版",
+    "name": "鬼泣高清HD合集1+2+3重制版v20260928豪华中文全DLC",
     "shortName": "鬼泣123高",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/1c50e14aba8f"
+        "url": "https://pan.quark.cn/s/b1ed6b94ed28"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2c4d9KP5LYvfTXWNeaPW2qA1?pwd=4f29"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mnqVKA8TD4ps4jAbh3o-6g?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-09-28T13:01:00.070Z",
     "id": 1586
   },
   {
@@ -36443,7 +36452,7 @@
     "id": 2575
   },
   {
-    "name": "纵横秘湾v1.1.7.246856官方中文全DLC+单独升级补丁",
+    "name": "纵横秘湾v1.1.9.247137官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -36459,7 +36468,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-19T05:53:38.124Z",
+    "lastChange": "2026-09-28T16:08:16.430Z",
     "id": 2576
   },
   {
@@ -41641,5 +41650,25 @@
     ],
     "lastChange": "2026-09-28T04:17:30.600Z",
     "id": 2865
+  },
+  {
+    "name": "卡德洞窟v1.0.5全DLC+原声音乐集 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0971e0760ae4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2cvYocn9cZar7sGGf-hL__A1?pwd=ey9u"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1cimYeLMFCP-XVmKUHXapcA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-28T17:01:30.108Z",
+    "id": 2867
   }
 ]
