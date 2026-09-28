@@ -1,5 +1,27 @@
 [
   {
+    "name": "EA SPORTS FC™ 27官方中文v1.0.1全DLC（VBS1.9一键启动）",
+    "shortName": "EA SPORTS|FC 27|VBS一键启动",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1790357926",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5642c4b08be9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2b9-FbXoC-KIE_Mpq6C5gaA1?pwd=hgkf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1SZHMF8-ipJtC_YIlwtsOBQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-28T08:38:15.448Z",
+    "id": 2866
+  },
+  {
     "name": "王国保卫战6：新启程v1.00.052官方中文全DLC 免安装解压即玩",
     "shortName": "王国保卫战6|新启程|v1.00.052",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
@@ -14299,14 +14321,23 @@
     "id": 925
   },
   {
-    "name": "迪士尼梦幻星谷 v1.23.1.6 豪华中文版 全DLC",
+    "name": "迪士尼梦幻星谷v1.25.0.8687 豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/43d95a723da9"
+        "url": "https://pan.quark.cn/s/1cb00731bdc3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2an6VEyI6FLUGXOZ5y_n1tA1?pwd=rhea"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1HqE2xKB_nHF6jwLAkgq8Ug?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-05T16:06:35.981Z",
+    "lastChange": "2026-09-28T07:06:33.201Z",
     "id": 926
   },
   {
@@ -41590,5 +41621,25 @@
     ],
     "lastChange": "2026-09-27T14:07:21.165Z",
     "id": 2864
+  },
+  {
+    "name": "幽灵行动：荒野v4792145 豪华中文全DLC+win11修复补丁 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6015a6cfb2e2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2aBF-3Xkws470Y8MsEw5CQA1?pwd=pj3x"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1A84zXCjh-9Ylp8D8qBi3wA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-28T04:17:30.600Z",
+    "id": 2865
   }
 ]
