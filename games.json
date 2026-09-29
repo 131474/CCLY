@@ -548,7 +548,7 @@
     "id": 2684
   },
   {
-    "name": "星球大战：零号连队v1.1官方中文全DLC+单独升级补丁",
+    "name": "星球大战：零号连队v20260928官方中文全DLC+单独升级补丁",
     "shortName": "星球大战|零号连队",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2075800/2c7d5dad080c4888faaa03c4a955136c50f5bfae/header.jpg?t=1787848803",
     "links": [
@@ -566,7 +566,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-10T02:04:15.906Z",
+    "lastChange": "2026-09-29T17:44:33.765Z",
     "id": 2683
   },
   {
@@ -27629,23 +27629,22 @@
     "id": 2002
   },
   {
-    "name": "梦幻魔法公主 v1.3.0 官方中文全DLC 沙盒 美少女养成",
+    "name": "梦幻魔法公主v1.5.1 官方中文全DLC 免安装",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6edcd50b7c2d"
+        "url": "https://pan.quark.cn/s/8cbf14de97db"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOyqsTS2ctGP4nlcTpMc2RlBA1?pwd=2n9j"
+        "url": "https://pan.xunlei.com/s/VP2hSRk2njsoc8r9NyA7_7oGA1?pwd=iyx7"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1V8kcucmZrw7QFDOz0rl0XQ?pwd=8888",
-        "code": "8888"
+        "url": "https://pan.baidu.com/s/5pT_wU2_owWaP_9-5zhV6Lw"
       }
     ],
-    "lastChange": "2026-07-31T06:45:16.557Z",
+    "lastChange": "2026-09-29T16:25:38.846Z",
     "id": 2003
   },
   {
@@ -41712,5 +41711,45 @@
     ],
     "lastChange": "2026-09-29T09:31:45.795Z",
     "id": 2868
+  },
+  {
+    "name": "我的世界：地下城2联机版v1.1.1.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9e066c866fe2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2iJr5XNnISQ_OHwHaHXtpsA1?pwd=md2f"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_kfyT87qNFBla1C92a7E2w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-29T18:07:19.572Z",
+    "id": 2870
+  },
+  {
+    "name": "尼瓦利斯之夜官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6c3d6afeb938"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2iOhUdCbscUHKAM_hSBcE9A1?pwd=ptzh"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1noW117vDrL55DYQ-7x1BrQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-29T18:27:52.823Z",
+    "id": 2871
   }
 ]
