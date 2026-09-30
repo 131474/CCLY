@@ -1,5 +1,71 @@
 [
   {
+    "name": "我的世界：地下城2联机版v1.1.1.0官方中文全DLC 闪退修复",
+    "shortName": "我的世界|地下城2|v1.1.1.0",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1790755009",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9e066c866fe2"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2iJr5XNnISQ_OHwHaHXtpsA1?pwd=md2f"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_kfyT87qNFBla1C92a7E2w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T08:53:08.167Z",
+    "id": 2870
+  },
+  {
+    "name": "（Switch）我的世界 地下城2 Minecraft Dungeons II官方中文v1.1.1.0+1DLC",
+    "shortName": "我的世界|地下城2|Switch",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1790755009",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7a31bd5073b1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2kvjfNsO8T6ywR4Q7IrlimA1?pwd=4emg"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1utLU8gcfOTLUmnc60WohlA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T08:53:48.565Z",
+    "id": 2872
+  },
+  {
+    "name": "皇牌空战8：希孚之翼官方中文全DLC（VBS1.9一键启动）",
+    "shortName": "皇牌空战8|希孚之翼|VBS一键启动",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/2288340/13dea8084135fd130605b78189c82e39bf944c35/header.jpg?t=1790752756",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/58b504f860f5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2fPLeTJd6DmyBr1lBo1ZQEA1?pwd=7imr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yhevXMz8rEBWHzbB9zh77A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T08:20:13.064Z",
+    "id": 2873
+  },
+  {
     "name": "巫师3：狂猎 重制版 v5.00b豪华中文全DLC+原声原画集",
     "shortName": "巫师3：狂猎|重制版|v5.00b",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/292030/4f75dfb90f593deac48d83b6393828c1b5a3a777/header_alt_assets_1_schinese.jpg?t=1790678872",
@@ -130,8 +196,8 @@
     "id": 2844
   },
   {
-    "name": "守墓人2官方中文v1.007 全DLC 免安装解压即玩",
-    "shortName": "守墓人2|v1.007",
+    "name": "守墓人2官方中文v1.007.1 全DLC 免安装解压即玩",
+    "shortName": "守墓人2|v1.007.1",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/8bfd6d4cd1ae84a26860992c4aac8c05458b123c/header_alt_assets_1_schinese.jpg?t=1790131843",
     "links": [
       {
@@ -148,7 +214,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-29T03:26:56.724Z",
+    "lastChange": "2026-09-29T18:59:43.241Z",
     "id": 2839
   },
   {
@@ -482,7 +548,7 @@
     "id": 1465
   },
   {
-    "name": "渔力全开（How to Fish）v1.1.0官方中文全DLC+联机版 免安装解压即玩",
+    "name": "渔力全开（How to Fish）v1.1.3Fix 官方中文全DLC+联机版 免安装解压即玩",
     "shortName": "渔力全开|v1.0.12",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4001890/45c4ddff4901e32c4b8b643e1b97d0d01898d299/header.jpg?t=1787234618",
     "links": [
@@ -500,7 +566,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-28T16:28:59.031Z",
+    "lastChange": "2026-09-30T05:49:00.058Z",
     "id": 2660
   },
   {
@@ -11556,16 +11622,25 @@
     "id": 713
   },
   {
-    "name": "风暴崛起 v1.6.0.53613 豪华中文版 全DLC",
+    "name": "风暴崛起v2.0.0.60710官方中文全DLC+维提之怒DLC",
     "shortName": "风暴崛起",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/df63c86c54d5"
+        "url": "https://pan.quark.cn/s/d69daa234a9f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2lCPKoXkws470Y8MsNEiGTA1?pwd=s749"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PXFHol15OuAspUV3BMf0yA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-09-30T07:47:36.857Z",
     "id": 714
   },
   {
@@ -15188,7 +15263,7 @@
     "id": 987
   },
   {
-    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.50升补",
+    "name": "（Switch）我的世界 Minecraft 官方中文本体+v1.26.52升补",
     "shortName": "我的世界Mi",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -15202,11 +15277,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1hVNugULFbmwU-XN2Nw8Nbg?pwd=8888",
+        "url": "https://pan.baidu.com/s/14lszFBw3L91GUa8RqW3i7Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-21T18:15:46.622Z",
+    "lastChange": "2026-09-30T06:46:14.588Z",
     "id": 988
   },
   {
@@ -41713,26 +41788,6 @@
     "id": 2868
   },
   {
-    "name": "我的世界：地下城2联机版v1.1.1.0官方中文全DLC",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9e066c866fe2"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP2iJr5XNnISQ_OHwHaHXtpsA1?pwd=md2f"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1_kfyT87qNFBla1C92a7E2w?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-09-29T18:07:19.572Z",
-    "id": 2870
-  },
-  {
     "name": "尼瓦利斯之夜官方中文全DLC 免安装解压即玩",
     "links": [
       {
@@ -41751,5 +41806,45 @@
     ],
     "lastChange": "2026-09-29T18:27:52.823Z",
     "id": 2871
+  },
+  {
+    "name": "（Switch）萌萌小人大乱斗Gang Beasts官方中文本体+v1.28.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7bd706d088b8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2liKUqOmHtTQK1hs7BkjHmA1?pwd=zrpv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/11oOYYpgk9gL6OVTtU8UoBg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T09:51:29.052Z",
+    "id": 2874
+  },
+  {
+    "name": "（Switch）守墓人2 Graveyard Keeper 2 官方中文本体+v1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dea5534aded4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2llMdECbscUHKAM_hUUaamA1?pwd=mkj8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1eLF1nelD6WLUg8EznZhrfQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T10:08:34.784Z",
+    "id": 2875
   }
 ]
