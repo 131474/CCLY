@@ -4724,7 +4724,7 @@
     "id": 218
   },
   {
-    "name": "无人深空：宇宙v7.04-179666豪华中文全DLC+单独升级补丁+联机补丁",
+    "name": "无人深空：宇宙v7.05-180383豪华中文全DLC+单独升级补丁+联机补丁",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -4738,11 +4738,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1E52s8etuyGNMf9u-j_p54g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Lhon_mjnqeMsCl6yjV1R1A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-22T03:58:47.919Z",
+    "lastChange": "2026-09-30T18:15:48.399Z",
     "id": 219
   },
   {
@@ -41866,5 +41866,45 @@
     ],
     "lastChange": "2026-09-30T10:25:01.613Z",
     "id": 2876
+  },
+  {
+    "name": "（Switch）小黑鹂The Merlies官方中文本体+1.0.224升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/390c847b5e26"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2nA5hnOblLdovUMeAw6WZTA1?pwd=qa3w"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1botTgS0sExvlxeMgEMVMXA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T16:36:45.493Z",
+    "id": 2877
+  },
+  {
+    "name": "星之海洋6：神圣力量v01.01.23063官方中文全DLC+原声音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2922576c44aa"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2nYg7RT4yPToifBdeazprQA1?pwd=6bs7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1uLytKIumBlPRoc9nC4A2eg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-09-30T18:28:17.694Z",
+    "id": 2878
   }
 ]
