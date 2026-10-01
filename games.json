@@ -1,5 +1,27 @@
 [
   {
+    "name": "真三国无双２ with 猛将传 重制版官方中文全DLC+国语配音",
+    "shortName": "真三国无双2|猛将传|重制版",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3841510/78b59986938202a50113def292c1bff6052c6862/header_schinese.jpg?t=1790817204",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d20b6a1cbf7d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2rh47d__paCDs8k7Xm3QE7A1?pwd=g8bb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GG_yJxDnt9CTdohob5TJTQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-01T13:51:09.294Z",
+    "id": 2879
+  },
+  {
     "name": "我的世界：地下城2联机版v1.1.1.0官方中文全DLC 闪退修复",
     "shortName": "我的世界|地下城2|v1.1.1.0",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1790755009",
@@ -7382,7 +7404,7 @@
     "id": 403
   },
   {
-    "name": "七日杀 v3.2.0B9 豪华中文全DLC 免安装解压即玩",
+    "name": "七日杀 v3.3.0B17豪华中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -7394,11 +7416,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1bRjbcQ-DJNGA5ptmI1CpNA?pwd=8888",
+        "url": "https://pan.baidu.com/s/18IDQk0h1dJVZx6TGvnPgOw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-28T14:01:48.483Z",
+    "lastChange": "2026-10-01T13:21:08.147Z",
     "id": 404
   },
   {
