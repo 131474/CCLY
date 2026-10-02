@@ -2378,16 +2378,25 @@
     "id": 48
   },
   {
-    "name": "最后纪元 v1.4.7 豪华中文版 全DLC",
+    "name": "最后纪元v1.5.0.1豪华中文全DLC+霜裔之怒升级+原声音乐集",
     "shortName": "最后纪元",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/2d820628ddb8"
+        "url": "https://pan.quark.cn/s/1b0f4889e6ec"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2vLGNuPFV0i_Btc55ZAfSiA1?pwd=x7w4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KT0lTsXwcdz8P96eoxLp9A?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-15T16:09:31.759Z",
+    "lastChange": "2026-10-02T08:30:50.427Z",
     "id": 49
   },
   {
@@ -10212,7 +10221,7 @@
     "id": 610
   },
   {
-    "name": "（Switch）潜水员戴夫官方中文v1.0.6.1259+6DLC+丛林DLC",
+    "name": "（Switch）潜水员戴夫官方中文v1.0.6.1267+6DLC+丛林DLC+金手指",
     "shortName": "潜水员戴夫中",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -10226,11 +10235,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ccpQC1tZkXFwGWpncvZJDA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ioTJ6DAnmVghc4zXoYfUaQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-05T05:20:47.472Z",
+    "lastChange": "2026-10-02T07:24:16.298Z",
     "id": 611
   },
   {
@@ -40210,7 +40219,7 @@
     "id": 2779
   },
   {
-    "name": "吞吞堡垒v0.9.14.1官方中文全DLC 免安装解压即玩",
+    "name": "吞吞堡垒v0.9.14.2官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -40226,7 +40235,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-22T16:33:06.222Z",
+    "lastChange": "2026-10-02T06:55:15.477Z",
     "id": 2780
   },
   {
@@ -41988,5 +41997,45 @@
     ],
     "lastChange": "2026-10-01T18:25:59.949Z",
     "id": 2882
+  },
+  {
+    "name": "异域镇魂曲：增强版v3.2.2.0官方中文全DLC+原画集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d47305e2e221"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2v1yZjoml32u08hZ4-l1GEA1?pwd=4225"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wdjgXOPrx8H6Xw7iyuwcNA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-02T05:33:27.592Z",
+    "id": 2883
+  },
+  {
+    "name": "（Switch）汪汪队立大功 恐龙世界PAW Patrol Dino World官方中文本体+v1.0.3升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0675fe7965f5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP2vRwnAXkws470Y8MsVA6rhA1?pwd=t4as"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mS8NBtgUtUKJSHr0H_saeQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-02T07:13:02.644Z",
+    "id": 2884
   }
 ]
