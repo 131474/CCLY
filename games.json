@@ -1,5 +1,27 @@
 [
   {
+    "name": "战争机器：事变日v20261006官方中文全DLC 免安装解压即玩",
+    "shortName": "战争机器：事变日|v20261006",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/917e5c789009"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3Gi4gugIoPqXsgDEYg0o3TA1?pwd=ukpq"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/14lzTium3Q_SzdvLQhqWTuQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-06T15:09:20.896Z",
+    "id": 2890
+  },
+  {
     "name": "真三国无双２ with 猛将传 重制版官方中文全DLC+国语配音",
     "shortName": "真三国无双2|猛将传|重制版",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3841510/78b59986938202a50113def292c1bff6052c6862/header_schinese.jpg?t=1790817204",
@@ -6863,7 +6885,7 @@
     "id": 364
   },
   {
-    "name": "僵尸世界大战：劫后余生v2.49豪华中文全DLC+行尸走肉联动DLC",
+    "name": "僵尸世界大战：劫后余生v20261005豪华中文全DLC+行尸走肉联动DLC",
     "shortName": "僵尸世界大战",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -6877,11 +6899,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1DJ8z9gbeuTAIZWJlLjvz5w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1TvPROX6Aeh79eD9H2pn60A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-30T13:16:17.138Z",
+    "lastChange": "2026-10-06T12:06:34.590Z",
     "id": 365
   },
   {
@@ -14848,7 +14870,7 @@
     "id": 953
   },
   {
-    "name": "忍者神龟：破碎命运v2.0.5.261522豪华中文全DLC+斯莱士角色DLC+原声原画集",
+    "name": "忍者神龟：破碎命运v2.0.7.262979豪华中文全DLC+斯莱士角色DLC+原声原画集",
     "shortName": "忍者神龟破碎",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -14862,11 +14884,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1r6ei3tR6Na3GfBQi95TxdA?pwd=8888",
+        "url": "https://pan.baidu.com/s/10l3e_3BFIJ2iXsE-PXB8ZA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-03T15:42:24.589Z",
+    "lastChange": "2026-10-06T11:54:28.216Z",
     "id": 954
   },
   {
@@ -42155,5 +42177,25 @@
     ],
     "lastChange": "2026-10-05T16:46:39.350Z",
     "id": 2889
+  },
+  {
+    "name": "（Switch）你好，路易吉！hello luigi官方中文本体+v2.0.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c625b72ae3cc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3Gxt1JyI6FLUGXOZ6VN2BXA1?pwd=mkh8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1WmKEIUIXFRgb1VDXGSRtgA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-06T16:10:07.952Z",
+    "id": 2891
   }
 ]
