@@ -154,8 +154,8 @@
     "id": 2866
   },
   {
-    "name": "王国保卫战6：新启程v1.00.072官方中文全DLC 免安装解压即玩",
-    "shortName": "王国保卫战6|新启程|v1.00.072",
+    "name": "王国保卫战6：新启程v1.01.008官方中文全DLC 免安装解压即玩",
+    "shortName": "王国保卫战6|新启程|v1.01.008",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
     "links": [
       {
@@ -168,11 +168,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ckWLISlyPtkN0FCL2OF6cA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1iXIEbMSY2-hQ8BAOgOSc2g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-02T17:20:58.716Z",
+    "lastChange": "2026-10-07T01:40:26.541Z",
     "id": 2852
   },
   {
@@ -240,8 +240,8 @@
     "id": 2844
   },
   {
-    "name": "守墓人2官方中文v1.009全DLC 免安装解压即玩",
-    "shortName": "守墓人2|v1.008",
+    "name": "守墓人2官方中文v1.009.1全DLC 免安装解压即玩",
+    "shortName": "守墓人2|v1.009.1",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/8bfd6d4cd1ae84a26860992c4aac8c05458b123c/header_alt_assets_1_schinese.jpg?t=1790131843",
     "links": [
       {
@@ -258,7 +258,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-06T10:53:22.983Z",
+    "lastChange": "2026-10-07T01:42:42.070Z",
     "id": 2839
   },
   {
@@ -6197,7 +6197,7 @@
     "id": 316
   },
   {
-    "name": "英灵神殿v1.0.16官方中文全DLC+原声音乐集 免安装解压即玩",
+    "name": "英灵神殿v1.0.17官方中文全DLC+原声音乐集 免安装解压即玩",
     "shortName": "英灵神殿",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -6211,11 +6211,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1rLK4aqlHL4et1PTwNXnXNg?pwd=8888",
+        "url": "https://pan.baidu.com/s/10VlVaNjX3d-YTOmipzc45g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-25T17:12:23.626Z",
+    "lastChange": "2026-10-07T03:41:12.411Z",
     "id": 317
   },
   {
@@ -21703,16 +21703,25 @@
     "id": 1500
   },
   {
-    "name": "机甲战士5：雇佣兵 v1.10.370 豪华中文版 全DLC",
+    "name": "机甲战士5：雇佣兵v1.15.398简体中文全DLC+灰烬与升天DLC+原声原画集",
     "shortName": "机甲战士5雇",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b7f42f729a40"
+        "url": "https://pan.quark.cn/s/8addca6491ff"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3Jsf4gPkB_C3_S5-P-uFR3A1?pwd=dqvz"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1oSON2_v-cYIHUyNTnrI4LQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-10-07T05:49:10.286Z",
     "id": 1501
   },
   {
@@ -42197,5 +42206,65 @@
     ],
     "lastChange": "2026-10-06T16:10:07.952Z",
     "id": 2891
+  },
+  {
+    "name": "（Switch）你好，碧姬！Hello, Peach!官方中文本体+v2.0.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/99c5d1338f0a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3HVs7T5q9Db88hOf7zSyWoA1?pwd=bvxi"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1daZ5QkVMcYvtg_biAQgmag?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-06T18:40:30.349Z",
+    "id": 2892
+  },
+  {
+    "name": "（Switch）你好，马里奥Hello, Mario!官方中文本体+v2.0.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/35b7af44cb69"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3J2ZC6j7QU7cAsrJYBgf6lA1?pwd=zaqx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1FsKdo0B9y3nyZ7k1jJyrGA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-07T01:51:19.623Z",
+    "id": 2893
+  },
+  {
+    "name": "（Switch）你好，耀西！Hello, Yoshi!官方中文本体+v2.0.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d046c2715a76"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3J4eYV0yCevYHQyFoCetSdA1?pwd=dek6"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tj8tcDAIkql8papFqVdWCA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-07T02:00:38.382Z",
+    "id": 2894
   }
 ]
