@@ -88,8 +88,8 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日v20261006官方中文全DLC 免安装解压即玩",
-    "shortName": "战争机器：事变日|v20261006",
+    "name": "战争机器：事变日v20261006官方中文全DLC+联机补丁",
+    "shortName": "战争机器：事变日|v20261006|联机版",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
       {
@@ -106,7 +106,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-06T15:09:20.896Z",
+    "lastChange": "2026-10-09T07:38:26.069Z",
     "id": 2890
   },
   {
@@ -30240,23 +30240,23 @@
     "id": 2182
   },
   {
-    "name": "恐怖黎明 决定版v1.3.0.8官方中文全DLC+单独补丁",
+    "name": "恐怖黎明 完全版v1.3.1.1官方中文全DLC+单独补丁+阿斯特卡恩之牙DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f7a813392be8"
+        "url": "https://pan.quark.cn/s/5cc073dc6156"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOzWr86FiGP3pHAXU-op-oaWA1?pwd=evts"
+        "url": "https://pan.xunlei.com/s/VP3U2oew__paCDs8k7YFygBCA1?pwd=ewza"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1L35Aa322lCOTUBCFTDINPQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1MvCwEoyHOlLPVWUZnTGhQQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-21T13:01:01.907Z",
+    "lastChange": "2026-10-09T05:15:35.995Z",
     "id": 2183
   },
   {
@@ -42393,5 +42393,25 @@
     ],
     "lastChange": "2026-10-08T18:03:14.548Z",
     "id": 2899
+  },
+  {
+    "name": "银松镇v20261008官方中文全DLC+原声原画集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/721828b9dfed"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3UJ3WesAmmL7ca-wTWzhZWA1?pwd=g8r6"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1hcO0IP8T7FgyWS1KQPY2Eg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-09T07:41:05.256Z",
+    "id": 2901
   }
 ]
