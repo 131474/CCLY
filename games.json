@@ -33491,7 +33491,7 @@
     "id": 2406
   },
   {
-    "name": "符文世界：龙之荒野v1.0.0.6联机版 正式版官方中文全DLC+单独升级补丁",
+    "name": "符文世界：龙之荒野v1.0.0.8联机+单机 正式版官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -33503,11 +33503,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1zDOKJJfHIxSAsva0reteaA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1liLdxevZPdPYv-nC_gsj1A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-01T15:51:27.760Z",
+    "lastChange": "2026-10-10T17:40:36.297Z",
     "id": 2407
   },
   {
@@ -42215,7 +42215,7 @@
     "id": 2888
   },
   {
-    "name": "英雄立志传：三国志v1.0.7官方中文全DLC",
+    "name": "英雄立志传：三国志 正式版v1.0.10官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -42227,11 +42227,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1LHWzUAAilELAoCMAh-59AQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1CXCF8qtbI2JiP3kYRxzosA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-05T16:46:39.350Z",
+    "lastChange": "2026-10-10T17:35:45.021Z",
     "id": 2889
   },
   {
@@ -42493,5 +42493,25 @@
     ],
     "lastChange": "2026-10-10T07:59:40.075Z",
     "id": 2905
+  },
+  {
+    "name": "塔民v1.00官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f8873588ea2f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3aTzQxpllNJwIblbIDNpf9A1?pwd=wttq"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QsycdpHYo1HxNRlobeChDw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-10T15:48:30.544Z",
+    "id": 2906
   }
 ]
