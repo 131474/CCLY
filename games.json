@@ -1560,8 +1560,8 @@
     "id": 2236
   },
   {
-    "name": "罗马拓荒录v0.26.2_3 联机+单机 官方中文全DLC+联机补丁",
-    "shortName": "罗马拓荒录|v0.25.1.12",
+    "name": "罗马拓荒录v0.26.2_4 联机+单机 官方中文全DLC+联机补丁",
+    "shortName": "罗马拓荒录|v0.26.2_4",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdlist/20260225/1772000672_445584.jpg",
     "links": [
       {
@@ -1578,7 +1578,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-04T10:43:59.810Z",
+    "lastChange": "2026-10-11T15:10:27.016Z",
     "id": 2163
   },
   {
@@ -11936,20 +11936,25 @@
     "id": 725
   },
   {
-    "name": "八方旅人 V5272616 官方中文+原声BGM+修改器+支线攻略书+原画设定集",
+    "name": "八方旅人/歧路旅人Build.5272616 官方中文全DLC+原声原画集+支线攻略书",
     "shortName": "八方旅人V5",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/243aa94b8a99"
+        "url": "https://pan.quark.cn/s/ba7e9e8c23f3"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOgbAptmzdrA2TzzB85LQ13SA1?pwd=4efh#"
+        "url": "https://pan.xunlei.com/s/VP3dwo0f7k1FicfrwDTEjkPTA1?pwd=5f6e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1basrYPYa2cntkm2W9eMtKQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-10-11T08:08:23.434Z",
     "id": 726
   },
   {
@@ -42513,5 +42518,105 @@
     ],
     "lastChange": "2026-10-10T15:48:30.544Z",
     "id": 2906
+  },
+  {
+    "name": "勇敢者之试炼 : Invokyr v0.44.9官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4104ded153f7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3dLOFVsmKV80H06zi4wOsLA1?pwd=ydmu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1TacWx2k80unl_S3_SPuTZg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-11T05:19:39.369Z",
+    "id": 2907
+  },
+  {
+    "name": "永冻纪元v0.44.2.4649官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3d77dbc001dc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3e362UBaHb6eabVlNOS0vgA1?pwd=4877"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nHehDyBHhiPW-15X0UKMdw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-11T09:01:55.101Z",
+    "id": 2908
+  },
+  {
+    "name": "最终幻想15口袋版UWP官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/05ff96c4bb1e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3fEJtUdcjQ1V8rZYQYqAg1A1?pwd=qxru"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wayduRdl7WpbGxDXBUzwSg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-11T14:18:30.084Z",
+    "id": 2909
+  },
+  {
+    "name": "日本拉面模拟器v0.1.50.17746官方中文全DLC 免安装解压既玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d57bb6b7c3fc"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3fO1-TwQijg9bKz8AOitN5A1?pwd=ciy7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1zh4YueCDcfqdT2tELHha4g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-11T14:38:57.470Z",
+    "id": 2910
+  },
+  {
+    "name": "除暴战警3 v1.0.3162.2全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bba882902a8d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3g8FNiup-f91kbkAGzyHeAA1?pwd=6i4s"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17LfWvHyGA2JgSeWrg1STLg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-11T18:11:00.300Z",
+    "id": 2911
   }
 ]
