@@ -1,5 +1,27 @@
 [
   {
+    "name": "不朽遗志 豪华版v20261013官方中文全DLC",
+    "shortName": "不朽遗志|豪华版|v20261013",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/2828710/db9b0a13bdadac60a7b744514d60f41674d95787/header_schinese.jpg?t=1791911208",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/18a7f154790c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3qRuuJ622PuFDK78_GO8uhA1?pwd=nssq"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1l8ILZ7KptNk4kt_b_DDX6g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T18:12:05.989Z",
+    "id": 2921
+  },
+  {
     "name": "全面战争：幕府将军2完全版v1.0.0官方中文全DLC+国语配音",
     "shortName": "全面战争|幕府将军2|完全版|v1.0.0",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/3846830/d0ee9f67d5afcf19e5e8d7955fc831d5d197bdb0/header.jpg?t=1791903651",
@@ -40863,7 +40885,7 @@
     "id": 2805
   },
   {
-    "name": "（Switch）另一个伊甸：起源Another Eden Begins官方中文+v1.1.0升补",
+    "name": "（Switch）另一个伊甸：起源Another Eden Begins官方中文+v1.1.2升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -40875,11 +40897,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1gD6EYYLNeAq9Ica_1uqhRg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Bwh4ImygjkuWYZUR1dsDxw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-17T17:16:23.883Z",
+    "lastChange": "2026-10-13T19:35:21.351Z",
     "id": 2806
   },
   {
@@ -42801,5 +42823,25 @@
     ],
     "lastChange": "2026-10-13T07:33:32.709Z",
     "id": 2917
+  },
+  {
+    "name": "（Switch）海绵宝宝潮汐巨神SpongeBob SquarePants官方中文v1.4.0+5DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/532b86358673"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3qjT-C34Ci2g88pFpfXPkbA1?pwd=cb27"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1No2vuKiKM8Fei_QnQrR08A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T19:31:02.717Z",
+    "id": 2922
   }
 ]
