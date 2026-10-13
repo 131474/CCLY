@@ -1,5 +1,27 @@
 [
   {
+    "name": "战神3官方中文PC移植版4K240帧v2.1.7 已修复声音及帧率 内附教程",
+    "shortName": "战神3|PC移植版|v2.1.7",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/800bba4d8e77"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3orNre9obWxD5_DeyCq5UrA1?pwd=22cy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tBvhQaLvtAcWCcg_LXkX6Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T10:47:09.020Z",
+    "id": 2918
+  },
+  {
     "name": "沉星之序v67006官方中文全DLC 免安装解压即玩",
     "shortName": "沉星之序|v67006",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/499170/8e4b79f6886648fe2b9b4fd36824146559b047ec/header_schinese.jpg?t=1791478652",
@@ -8236,16 +8258,25 @@
     "id": 453
   },
   {
-    "name": "鸦卫奇旅 v1.05 新加DLC 佣兵皮肤包 豪华中文版 全DLC",
+    "name": "鸦卫奇旅v1.06官方中文全DLC+金太郎DLC+原声原画集",
     "shortName": "鸦卫奇旅",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/10156bbcb75d"
+        "url": "https://pan.quark.cn/s/98daea247f4c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3oHOJ0tX8VaIOzAIlTc8W3A1?pwd=6y4j"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_9jCnWt__LeZLfRLI2OdZA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-05-29T16:14:04.724Z",
+    "lastChange": "2026-10-13T08:12:22.028Z",
     "id": 454
   },
   {
@@ -42527,7 +42558,7 @@
     "id": 2907
   },
   {
-    "name": "永冻纪元v0.44.2.4649官方中文全DLC",
+    "name": "永冻纪元v0.44.3.4666官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -42543,7 +42574,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-11T09:01:55.101Z",
+    "lastChange": "2026-10-13T08:14:50.549Z",
     "id": 2908
   },
   {
@@ -42665,5 +42696,65 @@
     ],
     "lastChange": "2026-10-12T11:26:42.324Z",
     "id": 2914
+  },
+  {
+    "name": "最终幻想15豪华中文 Win版v1.1.605.2全DLC+亚丹章DLC+4K材质包",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/52e5e6f1df81"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3nX4ILi3jNXcpqKBSByVS3A1?pwd=u5rj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1yteJnQeNC6TOwt74nEGABg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T04:51:44.293Z",
+    "id": 2915
+  },
+  {
+    "name": "铸剑纳贡v20261012官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d3f5bbf46b8a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3nfW2GjuZOQd0lnLA5VG_YA1?pwd=bnnw"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17bcU0f5YboYWqcOAkKVm-A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T05:17:51.366Z",
+    "id": 2916
+  },
+  {
+    "name": "幻想放置远征队 豪华版v1.0.7Fix官方中文全DLC+新手包+支持者包",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/02037dd81f59"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3o9ymGu-q6GH0o1uaSt-WxA1?pwd=tksx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1DbGzQuuPEQAMzdGzSDWzpQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-13T07:33:32.709Z",
+    "id": 2917
   }
 ]
