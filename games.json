@@ -66,8 +66,8 @@
     "id": 2919
   },
   {
-    "name": "不朽遗志 豪华版v20261013官方中文全DLC",
-    "shortName": "不朽遗志|豪华版|v20261013",
+    "name": "不朽遗志 豪华版v20261014官方中文全DLC",
+    "shortName": "不朽遗志|豪华版|v20261014",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/2828710/db9b0a13bdadac60a7b744514d60f41674d95787/header_schinese.jpg?t=1791911208",
     "links": [
       {
@@ -84,7 +84,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-13T18:12:05.989Z",
+    "lastChange": "2026-10-14T05:55:31.999Z",
     "id": 2921
   },
   {
@@ -746,8 +746,8 @@
     "id": 1489
   },
   {
-    "name": "（Switch）马里奥赛车8 官方中文+v4.0.0+1DLC+20个amiibo+全解锁存档",
-    "shortName": "马里奥赛车8|v4.0.0",
+    "name": "（Switch）马里奥赛车8豪华版 Mario Kart 8 Deluxe 美版中文本体+v4.0.1+1DLC",
+    "shortName": "马里奥赛车8|v4.0.1",
     "cover": "https://img.3dmgame.com/uploads/allimg/171213/382_171213102716_1_lit.jpg",
     "links": [
       {
@@ -760,11 +760,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1fcBbeEuEk-yaZ4d8NOgQGg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1Gc9a7Rzg-9-3iTnMDkE9cg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-02T05:32:13.344Z",
+    "lastChange": "2026-10-14T07:20:21.793Z",
     "id": 1465
   },
   {
@@ -7841,7 +7841,7 @@
     "id": 419
   },
   {
-    "name": "（Switch）饥荒联机版官方中文本体+v1.29.0升补",
+    "name": "（Switch）饥荒联机版Don t Starve together官方中文本体+v1.30.0升补",
     "shortName": "Switch",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7855,11 +7855,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1xOnn_Yog96P33bK_lOsC0w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1HL0j0qop0wxDPwny_X96ag?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-15T04:45:02.814Z",
+    "lastChange": "2026-10-14T07:03:18.727Z",
     "id": 420
   },
   {
@@ -42843,5 +42843,65 @@
     ],
     "lastChange": "2026-10-13T19:31:02.717Z",
     "id": 2922
+  },
+  {
+    "name": "深馅地牢v1.0.44.0官方中文全DLC 免安装解压既玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/0e5a7ebc345e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3t6o8TKBixl-bhDkMcvqkVA1?pwd=azaa"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1aTaMANmoc2mntyrMbmASAw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-14T06:38:08.574Z",
+    "id": 2923
+  },
+  {
+    "name": "死灵防线v1.0.0官方中文全DLC 免安装解压既玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/96819064166a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3t9-wIeAr2B5spel5WLvj-A1?pwd=vqj5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1QvpHSRBposZScSI15-YLDw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-14T06:46:40.151Z",
+    "id": 2924
+  },
+  {
+    "name": "街区战争2 v1.0.1.4全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/52717e3058ae"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3tIK8Lc2SaQfGCNsuxpTNZA1?pwd=qyec"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_WUCnzkD9LUJfUL-JdDHZA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-14T07:40:10.638Z",
+    "id": 2925
   }
 ]
