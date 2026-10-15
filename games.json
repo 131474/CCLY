@@ -11986,7 +11986,7 @@
     "id": 721
   },
   {
-    "name": "（switch）双人成行It Takes Two官方中文v1.0.3+2DLC",
+    "name": "（switch）双人成行It Takes Two官方中文v1.0.4+2DLC",
     "shortName": "双人成行官方",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -12000,11 +12000,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1zzxRFguyNRwfZx29lkOxQQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1p0zrIxHMMmYjSwX9cLd_vA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-02T16:34:15.394Z",
+    "lastChange": "2026-10-15T17:20:29.844Z",
     "id": 722
   },
   {
@@ -41707,7 +41707,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界v1.6.4871豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界1.7.4979豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -41723,7 +41723,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-23T16:38:36.629Z",
+    "lastChange": "2026-10-15T16:56:40.877Z",
     "id": 2849
   },
   {
@@ -42467,7 +42467,7 @@
     "id": 2897
   },
   {
-    "name": "克里夫·巴克猛鬼追魂：复苏v1.0.1.227219官方中文全DLC",
+    "name": "克里夫·巴克猛鬼追魂：复苏豪华版v1.1.1.227384官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -42479,11 +42479,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1MmQqcVKeF7jBAPb1GOkH0w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1VVUjXV7JhyQjj7vC_xBuKg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-08T16:13:50.279Z",
+    "lastChange": "2026-10-15T17:08:33.929Z",
     "id": 2898
   },
   {
@@ -43165,5 +43165,45 @@
     ],
     "lastChange": "2026-10-15T16:21:55.330Z",
     "id": 2938
+  },
+  {
+    "name": "（Switch）超级冲锋 开箱HYPERCHARGE Unboxed官方中文本体+v0.2.4261.107升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7bc04c0154ba"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4-c8z-YudTQGL7FRxHU1AFA1?pwd=ejp2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fICz_7Fxy4copgTPu3FjRg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-15T17:35:01.014Z",
+    "id": 2939
+  },
+  {
+    "name": "（Switch）丰收之月：特拉迪亚回声Harvest Moon Echoes of Teradea官方中文本体+v1.2.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/055e32c245cb"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP40-nE8rf7MvvVY4TejJaBiA1?pwd=bkmv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1b1wbp7NrUO6cpFSK7Klvkw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-15T19:22:11.496Z",
+    "id": 2940
   }
 ]
