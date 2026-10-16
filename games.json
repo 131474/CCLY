@@ -1,7 +1,7 @@
 [
   {
-    "name": "恶魔城：贝尔蒙特的诅咒 豪华版v20261015官方中文全DLC",
-    "shortName": "恶魔城|贝尔蒙特的诅咒|v20261015",
+    "name": "恶魔城：贝尔蒙特的诅咒 豪华版v1.1.3官方中文全DLC 修复黑屏",
+    "shortName": "恶魔城|贝尔蒙特的诅咒|v1.1.3",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1792036946",
     "links": [
       {
@@ -18,12 +18,12 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-15T09:13:32.064Z",
+    "lastChange": "2026-10-16T15:29:10.526Z",
     "id": 2933
   },
   {
-    "name": "战神3重制版 v2.2.0官方中文PC移植版4K240帧 已修复图形错误及闪退",
-    "shortName": "战神3|PC移植版|v2.2.0",
+    "name": "战神3重制版 v2.4.0官方中文PC移植版4K240帧+安卓移植版 新增超宽屏",
+    "shortName": "战神3|PC移植版|v2.4.0",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
     "links": [
       {
@@ -40,7 +40,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-14T04:34:33.977Z",
+    "lastChange": "2026-10-16T16:06:28.215Z",
     "id": 2918
   },
   {
@@ -110,8 +110,8 @@
     "id": 2921
   },
   {
-    "name": "沉星之序v67121官方中文全DLC 免安装解压即玩",
-    "shortName": "沉星之序|v67006",
+    "name": "沉星之序v67179官方中文全DLC 免安装解压即玩",
+    "shortName": "沉星之序|v67179",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/499170/8e4b79f6886648fe2b9b4fd36824146559b047ec/header_schinese.jpg?t=1791478652",
     "links": [
       {
@@ -128,7 +128,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-15T12:56:39.215Z",
+    "lastChange": "2026-10-16T13:48:32.026Z",
     "id": 2900
   },
   {
@@ -724,8 +724,8 @@
     "id": 2711
   },
   {
-    "name": "龙之信条2白金版v4.0.0.0官方中文全DLC+黑暗觉者DLC+去除D加密+联机补丁+原声音乐集",
-    "shortName": "龙之信条2|去除D加密|v3.2.0.0",
+    "name": "龙之信条2豪华版v4.1.0.0官方中文全DLC+黑暗觉者DLC+单独升级补丁+去除D加密+联机补丁+原声音乐集",
+    "shortName": "龙之信条2|黑暗觉者|v4.1.0.0",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2054970/header.jpg?t=1788308490",
     "links": [
       {
@@ -738,11 +738,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1BEcpXaE1IPjcUqpAdE6zRg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1OwzLSCShwz4xfiNFhxNBSQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-09T12:01:45.966Z",
+    "lastChange": "2026-10-16T15:51:38.793Z",
     "id": 1311
   },
   {
@@ -3741,7 +3741,7 @@
     "id": 130
   },
   {
-    "name": "十字军之王3豪华版v1.20.1官方中文DLC+唯独上帝DLC+联机补丁+漫画集",
+    "name": "十字军之王3豪华版v1.20.1.1官方中文DLC+唯独上帝DLC+联机补丁+漫画集",
     "shortName": "十字军之王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -3759,7 +3759,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-13T15:07:47.200Z",
+    "lastChange": "2026-10-16T13:31:48.977Z",
     "id": 131
   },
   {
@@ -27209,7 +27209,7 @@
     "id": 1935
   },
   {
-    "name": "（Switch）终极幸运之塔 官方中文本体+v1.0.14升补",
+    "name": "（Switch）终极幸运之塔Lucky Tower Ultimate官方中文本体+v1.2.3升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -27221,11 +27221,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1oEVSVNscfymWx0BdI2wwuw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1HZNpqI4EMykPPYxLVsGLlA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-26T11:16:46.523Z",
+    "lastChange": "2026-10-16T14:09:56.728Z",
     "id": 1936
   },
   {
@@ -40856,7 +40856,7 @@
     "id": 2800
   },
   {
-    "name": "另一个伊甸：起源v1.1.2官方中文全DLC",
+    "name": "另一个伊甸：起源v1.1.3官方中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -40872,7 +40872,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-02T14:52:21.602Z",
+    "lastChange": "2026-10-16T14:03:36.410Z",
     "id": 2803
   },
   {
@@ -40936,7 +40936,7 @@
     "id": 2806
   },
   {
-    "name": "（Switch）秋叶原迷踪AKIBA LOST官方中文本体+v1.0.2升补",
+    "name": "（Switch）秋叶原迷踪AKIBA LOST官方中文本体+v1.0.4升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -40948,11 +40948,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1cAQZnTAVYrt_yFp8aVAFWA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ZnYacxwkocXF2Qsq9kYEfw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-25T15:24:21.011Z",
+    "lastChange": "2026-10-16T14:15:46.591Z",
     "id": 2807
   },
   {
@@ -43254,5 +43254,65 @@
     ],
     "lastChange": "2026-10-16T05:50:09.064Z",
     "id": 2942
+  },
+  {
+    "name": "幽灵线：东京豪华版v20240417官方中文全DLC+原声音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ff9b93700e12"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP43ZdhWR-faek7qjhFnYjL7A1?pwd=i7mx"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13_AIa-ohNY01ZkpqDX2y2Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-16T12:02:32.611Z",
+    "id": 2943
+  },
+  {
+    "name": "链兽角斗v1.0.1官方中文全DLC 免安装解压即玩",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5fbe11fbebb9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP43gIcmSbDLcwVTUdx0nUPbA1?pwd=4u7q"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GJor7YaRbfkEMW7NnesMnQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-16T12:50:18.046Z",
+    "id": 2944
+  },
+  {
+    "name": "（Switch）黑暗之梦tenebris somnia英文版v1.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bcec72ecc859"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP44ggX2t_OqkBIvA7O9VrXEA1?pwd=rtjs"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pt64iwyiKIL_JOngHhW6bQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-16T17:12:31.693Z",
+    "id": 2945
   }
 ]
