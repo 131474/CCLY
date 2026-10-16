@@ -1296,8 +1296,8 @@
     "id": 2548
   },
   {
-    "name": "龙之剑：觉醒 豪华版v1.1.0官方中文全DLC+单独升级补丁+原声原画集+国语配音mod",
-    "shortName": "龙之剑：觉醒|v1.1.0",
+    "name": "龙之剑：觉醒 豪华版v1.1.1 官方中文全DLC+单独升级补丁+原声原画集+国语配音mod",
+    "shortName": "龙之剑：觉醒|v1.1.1",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
       {
@@ -1314,7 +1314,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-15T10:59:57.477Z",
+    "lastChange": "2026-10-16T06:35:27.446Z",
     "id": 2537
   },
   {
@@ -23351,16 +23351,25 @@
     "id": 1612
   },
   {
-    "name": "双人成行 v20241213 最新 豪华中文版（12月13号更新）",
+    "name": "双人成行 完整版 v20261015官方中文全DLC+联机补丁+原声音乐集",
     "shortName": "双人成行",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b2bd16abddc2"
+        "url": "https://pan.quark.cn/s/dc462f4160ef"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP42UNbumrGQ1RScpHg_dzJTA1?pwd=8ed2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qAk1aQoox8HtZkGw7fShYA?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.825Z",
+    "lastChange": "2026-10-16T06:58:41.773Z",
     "id": 1613
   },
   {
@@ -43205,5 +43214,45 @@
     ],
     "lastChange": "2026-10-15T19:22:11.496Z",
     "id": 2940
+  },
+  {
+    "name": "永恒传说：重制版 数字豪华版v2.0.0官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2f0d33ced71d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP41wqaMxa3oNn9XGMyQw3cnA1?pwd=ifxj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nBohVAShfWbnama73fs0IQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-16T04:37:46.959Z",
+    "id": 2941
+  },
+  {
+    "name": "（Switch）链兽角斗Chained Beasts官方中文本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5c5e6180734a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP42FAVxUi7Mmu5C55dsyBgXA1?pwd=b3ih"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/114ewLKSGW_rS2DVRPBohoQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-16T05:50:09.064Z",
+    "id": 2942
   }
 ]
