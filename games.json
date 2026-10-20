@@ -856,7 +856,7 @@
     "id": 2660
   },
   {
-    "name": "艾尔登法环  v1.17.1 豪华中文全DLC+单独补丁+黄金树幽影 +褪色者组合包DLC+联机补丁+原声原画集",
+    "name": "艾尔登法环  v1.17.2 豪华中文全DLC+单独补丁+黄金树幽影 +褪色者组合包DLC+联机补丁+原声原画集",
     "shortName": "艾尔登法环|v1.17.1|褪色者组合包DLC",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/1245620/header.jpg?t=1787868578",
     "links": [
@@ -870,11 +870,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ZbY_1qgs6IXXsHte_RZ9uw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1xMNsI92rQeCGVhcGhC8DWw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-08T14:12:51.286Z",
+    "lastChange": "2026-10-20T14:30:13.842Z",
     "id": 1693
   },
   {
@@ -38060,7 +38060,7 @@
     "id": 2643
   },
   {
-    "name": "又一个僵尸幸存者 正式版v1.0.1b 官方中文全DLC+单独升级补丁",
+    "name": "又一个僵尸幸存者 正式版 v1.0.2_S 豪华中文全DLC+单独升级补丁+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -38072,11 +38072,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Yq6tUPvBgLmoGUOSXjX6Pw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1inQ9UpkRvVkC5qfMK7_19Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-24T05:22:20.084Z",
+    "lastChange": "2026-10-20T08:49:21.585Z",
     "id": 2644
   },
   {
@@ -41760,7 +41760,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界1.7.4981豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界v1.7.4982豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -41772,11 +41772,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16tliqbaz5lnTydl1pfB_6Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1vD-ieNLaQ_7aBoeSLrwupQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-17T15:19:58.115Z",
+    "lastChange": "2026-10-20T08:28:14.872Z",
     "id": 2849
   },
   {
@@ -43080,7 +43080,7 @@
     "id": 2931
   },
   {
-    "name": "越过山丘v20261016官方中文全DLC 免安装解压既玩",
+    "name": "越过山丘v20261019Fix官方中文全DLC+联机补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -43096,7 +43096,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-17T07:26:33.613Z",
+    "lastChange": "2026-10-20T15:09:59.554Z",
     "id": 2932
   },
   {
@@ -43438,5 +43438,45 @@
     ],
     "lastChange": "2026-10-19T17:34:18.000Z",
     "id": 2951
+  },
+  {
+    "name": "（Switch）我的小绿屋Urban Jungle官方中文v1.0.1+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4f281013c2ee"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4Ng1qlGGbg0e8lSqtu0u6CA1?pwd=39nj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1F7eu4RqqmFcUBypXQQPUQw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-20T09:42:17.125Z",
+    "id": 2952
+  },
+  {
+    "name": "（Switch）我是你的野兽 I am Your Beast英文版v1.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8b166a976fb0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4OvtAMmjXhDDETxxPJFGKXA1?pwd=p4fm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ApfqvH361D92szbYyvNCXQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-20T15:32:37.612Z",
+    "id": 2953
   }
 ]
