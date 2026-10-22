@@ -1,27 +1,5 @@
 [
   {
-    "name": "使命召唤：现代战争4 豪华版13.1.29465156官方中文全DLC+多国语言包+国语配音",
-    "shortName": "使命召唤|现代战争4|13.1.29465156",
-    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4435490/79d905167ca63114aea0e52cf12111c3c3f5b81e/header_schinese.jpg?t=1792214069",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/3d4040720e89"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP4C6JeTBGUq9LsOEYq7-I4TA1?pwd=wacn"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16T94hp0NkrrWK-QG6vc0cg?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-10-18T03:54:17.614Z",
-    "id": 2948
-  },
-  {
     "name": "赛博朋克2077终极版v2.5 豪华中文全DLC+边缘行者2+往日之影+原声原画集+国语配音",
     "shortName": "赛博朋克2077|v2.5|新增边缘行者2",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/1091500/33086f30470a5f4921c913561a0a5c05b583e292/header_alt_assets_9_schinese.jpg?t=1792663801",
@@ -42,6 +20,28 @@
     ],
     "lastChange": "2026-10-22T12:22:30.403Z",
     "id": 1467
+  },
+  {
+    "name": "使命召唤：现代战争4 豪华版13.1.29465156官方中文全DLC+多国语言包+国语配音",
+    "shortName": "使命召唤|现代战争4|13.1.29465156",
+    "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4435490/79d905167ca63114aea0e52cf12111c3c3f5b81e/header_schinese.jpg?t=1792214069",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3d4040720e89"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4C6JeTBGUq9LsOEYq7-I4TA1?pwd=wacn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16T94hp0NkrrWK-QG6vc0cg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-18T03:54:17.614Z",
+    "id": 2948
   },
   {
     "name": "（Switch）最终幻想共鸣FINAL FANTASY RESONANCE官方中文v1.0.1+1DLC",
@@ -110,8 +110,8 @@
     "id": 2933
   },
   {
-    "name": "战神3重制版 v2.6.0官方中文PC移植版8K240帧+安卓移植版 新增8K分辨率",
-    "shortName": "战神3|PC移植版|v2.6.0",
+    "name": "战神3重制版 v2.7.0官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
+    "shortName": "战神3|PC移植版|v2.7.0",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
     "links": [
       {
@@ -128,7 +128,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-20T07:47:10.707Z",
+    "lastChange": "2026-10-22T16:58:20.509Z",
     "id": 2918
   },
   {
@@ -43539,5 +43539,45 @@
     ],
     "lastChange": "2026-10-20T18:57:37.765Z",
     "id": 2954
+  },
+  {
+    "name": "（Switch）恶魔夜疯狂DEMONS' NIGHT FEVER官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/aefdccf84458"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4ZAHkp5jbz5NFuzuw86jPjA1?pwd=ykje"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Rq93Uytbp8KVsLWBigpCkQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-22T15:35:45.594Z",
+    "id": 2956
+  },
+  {
+    "name": "使命召唤19：现代战争2豪华终极版v9.7.23096551全DLC 单人剧情+多人合作",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c47295b48a85"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4ZrBQCRsjGH9gT-BgUKjEeA1?pwd=u8r2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AAEy_IETspZe6KpFeWZEeA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-22T18:34:32.831Z",
+    "id": 2957
   }
 ]
