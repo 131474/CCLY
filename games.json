@@ -1,5 +1,27 @@
 [
   {
+    "name": "无主之地4超级豪华版v1.11.0官方中文全DLC+故事包2：FL4K+黑客无爱+国语配音 去除D加密",
+    "shortName": "无主之地4|去除D加密|v1.11.0",
+    "cover": "https://clan.cdn.queniuqe.com/images//45157740/d4eb55dd4450d400a652699c0c420af530e31ac7.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e92f3cc9d8a9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4bF8TPWDkm_988XB3JOSioA1?pwd=cyuu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1wHJTzB8x5wukN7FeKwYMtw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-23T05:40:11.639Z",
+    "id": 228
+  },
+  {
     "name": "赛博朋克2077终极版v2.5 豪华中文全DLC+边缘行者2+往日之影+原声原画集+国语配音",
     "shortName": "赛博朋克2077|v2.5|新增边缘行者2",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/1091500/33086f30470a5f4921c913561a0a5c05b583e292/header_alt_assets_9_schinese.jpg?t=1792663801",
@@ -286,8 +308,8 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261014官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
-    "shortName": "战争机器：事变日|v20261014",
+    "name": "战争机器：事变日高级版v20261022官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "shortName": "战争机器：事变日|v20261022",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
       {
@@ -304,7 +326,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-15T10:05:42.377Z",
+    "lastChange": "2026-10-23T04:50:08.994Z",
     "id": 2890
   },
   {
@@ -5153,28 +5175,6 @@
     ],
     "lastChange": "2026-04-07T13:16:39.823Z",
     "id": 227
-  },
-  {
-    "name": "无主之地4超级豪华版  v1.10.2 中文全DLC+黑客无爱+国语配音（VBS1.9一键启动）",
-    "shortName": "无主之地4",
-    "cover": "https://via.placeholder.com/80x80?text=Game",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f332b06f5fe5"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP2w-oG6oml32u08hZ40fJVVA1?pwd=b5bq"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/18stPs9enof4CYrUkUNYCpA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-10-02T10:07:49.811Z",
-    "id": 228
   },
   {
     "name": "怪物猎人：荒野 v1.041.03.00 豪华中文版 全DLC（个人修复手柄直连VBS一键启动版）",
@@ -43579,5 +43579,45 @@
     ],
     "lastChange": "2026-10-22T18:34:32.831Z",
     "id": 2957
+  },
+  {
+    "name": "（Switch）星球田园诗Farlands官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c4a3d54eeb15"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4azvRQ-Zb72byJaUF3NEpxA1?pwd=dj6d"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1e0RXJJ7q7YcfHPeqRFqo9w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-23T04:24:23.600Z",
+    "id": 2958
+  },
+  {
+    "name": "（Switch）魂识界Tamashika官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2b2018689080"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4b1GbL-43-AsBovUvfHTqPA1?pwd=j3qw"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fc_SKmZIxAbNrhOuDO4SKA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-23T04:35:21.484Z",
+    "id": 2959
   }
 ]
