@@ -1,5 +1,27 @@
 [
   {
+    "name": "最终幻想共鸣数字豪华版v1.0.1.0官方中文全DLC 解压即玩 免重启版",
+    "shortName": "最终幻想共鸣|解压即玩|免重启版",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/445cb18583fa"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4ntMAA9p4rkbu3uKwZ4P7DA1?pwd=evtc"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1h1hN2Y5sq0KVq5F8ROS9EA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-25T16:34:59.322Z",
+    "id": 2970
+  },
+  {
     "name": "最终幻想共鸣数字豪华版v1.0.1.0官方中文全DLC（VBS1.9一键启动）",
     "shortName": "最终幻想共鸣|v1.0.1.0|VBS一键启动",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1792758611",
@@ -43801,5 +43823,25 @@
     ],
     "lastChange": "2026-10-25T11:24:51.522Z",
     "id": 2968
+  },
+  {
+    "name": "宇宙机器人v1.019PC移植版4K240帧官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/740265e560fe"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4nkAUSc6cTBbwxKg-5nUn9A1?pwd=w5fn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pYz8S8b6esOKJShIpNYXkw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-25T15:56:18.418Z",
+    "id": 2969
   }
 ]
