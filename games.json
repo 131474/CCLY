@@ -3674,20 +3674,25 @@
     "id": 113
   },
   {
-    "name": "砰！砰！土匪官方中文本体+2.0.1升补",
+    "name": "（Switch）砰！砰！怪兽帮BANG! BANG! BANDITS官方中文本体+v2.0.2升补",
     "shortName": "砰砰土匪官方",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/ae78ad93c1dd"
+        "url": "https://pan.quark.cn/s/3d9e56386f65"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOngPDN5RODisCHDF_v9PSd4A1?pwd=dxqu#"
+        "url": "https://pan.xunlei.com/s/VP4oCy8xWDkm_988XB3WEo0GA1?pwd=supn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/165n55-edYtoImaJo3w9PIw?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.823Z",
+    "lastChange": "2026-10-25T18:00:41.688Z",
     "id": 114
   },
   {
@@ -9201,7 +9206,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2113豪华中文全DLC+丛林DLC+原声原画集",
+    "name": "潜水员戴夫v1.0.6.2118豪华中文全DLC+丛林DLC+原声原画集",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -9215,11 +9220,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1AsmGVtdS_bEGdK1THYEDUA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1W3SSd7LYDe97W6H2rVCi-A?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-15T11:33:03.991Z",
+    "lastChange": "2026-10-26T15:07:03.360Z",
     "id": 508
   },
   {
@@ -34568,7 +34573,7 @@
     "id": 2452
   },
   {
-    "name": "饥荒联机版v756039豪华中文全DLC",
+    "name": "饥荒联机版v759671豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -34584,7 +34589,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-02T09:25:24.349Z",
+    "lastChange": "2026-10-26T11:09:52.039Z",
     "id": 2453
   },
   {
@@ -42225,7 +42230,7 @@
     "id": 2875
   },
   {
-    "name": "狂热运输3豪华版v40423官方中文全DLC+单独升级补丁",
+    "name": "狂热运输3豪华版v40425官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -42241,7 +42246,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-23T06:48:10.007Z",
+    "lastChange": "2026-10-26T16:27:59.072Z",
     "id": 2876
   },
   {
@@ -42925,7 +42930,7 @@
     "id": 2915
   },
   {
-    "name": "铸剑纳贡v20261012官方中文全DLC 免安装解压即玩",
+    "name": "铸剑纳贡v20261024官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -42937,11 +42942,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17bcU0f5YboYWqcOAkKVm-A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1qTakcA2fBLyk5_8tzLX9PQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-13T05:17:51.366Z",
+    "lastChange": "2026-10-26T13:08:48.827Z",
     "id": 2916
   },
   {
@@ -43843,5 +43848,105 @@
     ],
     "lastChange": "2026-10-25T15:56:18.418Z",
     "id": 2969
+  },
+  {
+    "name": "圣兽之王PC移植版4K60帧v1.0.5官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/302b7a9f5919"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4rKNm5fDF0b1wvK0AC0ZX5A1?pwd=jpj3"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1PzoM40eCCI0zgDYBADsssQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-26T08:34:59.029Z",
+    "id": 2971
+  },
+  {
+    "name": "教团：1886官方中文PC移植版v0.7.8全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f9067642f57f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4rk816CA5pya3w7feqSmLaA1?pwd=tkf9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JC8HWT0_G-Oct7CkwyumAg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-26T10:38:03.562Z",
+    "id": 2972
+  },
+  {
+    "name": "（Switch）四叶草深渊CloverPit官方中文v1.4.2+1DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/699eef9ca408"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4sF6VXaZZAT7q3zutp_yaPA1?pwd=7ujf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1VGULIhglAgq5RLttrR_UrA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-26T12:49:28.481Z",
+    "id": 2973
+  },
+  {
+    "name": "塞尔达传说旷野之息PC移植版v1.9.0官方中文全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/71c7741911af"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4sxKUJcrmGJc7R0PK_HawVA1?pwd=zrg7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/15nVZtNp_lE3lQ1i359MN4Q?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-26T16:10:50.625Z",
+    "id": 2974
+  },
+  {
+    "name": "猎天使魔女2官方中文1.3.0全DLC PC移植版4K240帧+完美存档",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f2323efd8b1e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4szXNJoDiG2ULoCjWmqqY2A1?pwd=44pv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12vkqSyYmcJfAwLrTKrgGIQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-26T16:23:07.960Z",
+    "id": 2975
   }
 ]
