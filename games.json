@@ -1450,8 +1450,8 @@
     "id": 2548
   },
   {
-    "name": "龙之剑：觉醒 豪华版v1.1.1 官方中文全DLC+单独升级补丁+原声原画集+国语配音mod",
-    "shortName": "龙之剑：觉醒|v1.1.1",
+    "name": "龙之剑：觉醒 豪华版v1.1.2 官方中文全DLC+单独升级补丁+原声原画集+国语配音mod",
+    "shortName": "龙之剑：觉醒|v1.1.2",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20260417/1776391247_869132.jpg",
     "links": [
       {
@@ -1464,11 +1464,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/13cSTV_C1j12qMKaMae0oRA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1z36YRLeDLtpwBxTf-FedOw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-16T06:35:27.446Z",
+    "lastChange": "2026-10-27T08:40:42.011Z",
     "id": 2537
   },
   {
@@ -43948,5 +43948,105 @@
     ],
     "lastChange": "2026-10-26T16:23:07.960Z",
     "id": 2975
+  },
+  {
+    "name": "使命召唤22黑色行动7最新版本bot7 无需输入代码+战区模式+多人BOT+僵尸模式",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/65d83f6a783d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4vnylwxdGteRbAxZOCY3K1A1?pwd=nju4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/10plgTYul_rPeA-u8lI0l3A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-27T05:36:26.478Z",
+    "id": 2976
+  },
+  {
+    "name": "塞尔达传说 织梦岛PC移植版1.1.0官方中文全DLC-4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fad88cfb17a5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4wHXTzoEuZEuQVZ1p-eV75A1?pwd=r6ab"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fNxyUVSAOJSmUGm0tMVdoQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-27T07:57:51.955Z",
+    "id": 2977
+  },
+  {
+    "name": "勇者斗恶龙4被选中的人们 重制版PC移植版v1.4A官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/edd2a9d6570f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4wt500MFXL541KqF8acmvRA1?pwd=aegb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AhB98QZizPQsf2AKRkhYMw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-27T10:35:44.691Z",
+    "id": 2978
+  },
+  {
+    "name": "恶魔之魂 重制版PC移植版v1.007.000官方中文全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1de8487532d8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4wyeLPm0hnqfcc98ISskFyA1?pwd=m7xh"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qAA8yzqv3VHWX6boxKThLQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-27T11:44:23.255Z",
+    "id": 2979
+  },
+  {
+    "name": "旺达与巨像 重制版PC移植版v1.01官方中文全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/863d3f69f84e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4xdTGXCg5hcNM1NPOnTgYrA1?pwd=8rjp"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1sWXKQxeafCrpWf8q7ix9tA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-27T14:01:39.343Z",
+    "id": 2980
   }
 ]
