@@ -1,5 +1,26 @@
 [
   {
+    "name": "YZR RE",
+    "shortName": "YZR RE|免重启",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/90665945a089"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-10-29T17:07:13.836Z",
+    "id": 2993
+  },
+  {
     "name": "YZR",
     "shortName": "YZR",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
@@ -1361,8 +1382,8 @@
     "id": 2622
   },
   {
-    "name": "超级机器人大战Y豪华版 v1.4.0 官方中文全DLC+集成周年纪念扩充组合包",
-    "shortName": "超级机器人大战Y|v1.4.0|集成周年纪念包",
+    "name": "超级机器人大战Y豪华版 v1.4.1官方中文全DLC+集成周年纪念扩充组合包",
+    "shortName": "超级机器人大战Y|v1.4.1|集成周年纪念包",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250513/12/28/bf43c63c2dcd41faed016dcd20f61b42.jpg",
     "links": [
       {
@@ -1375,11 +1396,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1si_iAwk5P3hoMbhGiY4zmQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/13d2IycATA5m2x51O6jZ9rg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-05T06:10:45.702Z",
+    "lastChange": "2026-10-29T16:05:56.460Z",
     "id": 1951
   },
   {
@@ -30442,7 +30463,7 @@
     "id": 2175
   },
   {
-    "name": "（Switch）西瓜游戏 合成大西瓜 官方中文本体+2.3.6升补+29DLC",
+    "name": "（Switch）西瓜游戏 合成大西瓜 官方中文本体+2.4.1升补+30DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -30454,11 +30475,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1q5_NGWtr30ieaXLfowRl7A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1twDT5YLFdKh6SI9vRZ9JkQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-03T05:49:37.706Z",
+    "lastChange": "2026-10-29T16:42:11.030Z",
     "id": 2176
   },
   {
@@ -37257,7 +37278,7 @@
     "id": 2588
   },
   {
-    "name": "（Switch）梦塔比Montabimb官方中文+v1.1.2升补",
+    "name": "（Switch）梦塔比Montabimb官方中文+v1.1.3升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -37269,11 +37290,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1MDe8GYcGHxPWEC4rzEicHQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1_XPnpDduwPf0IemtM1s22g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-17T16:42:31.811Z",
+    "lastChange": "2026-10-29T16:37:21.255Z",
     "id": 2589
   },
   {
@@ -44275,5 +44296,25 @@
     ],
     "lastChange": "2026-10-28T17:35:39.497Z",
     "id": 2987
+  },
+  {
+    "name": "（Switch）立体绘图方块Voxelgram官方中文本体+v2.1.11升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f55a3b037089"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP578TbVNH3Fpm7Uo6H3hJehA1?pwd=pgsa"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1eu-IA0XuD6ZnclYIiHyZPw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-29T14:53:54.038Z",
+    "id": 2992
   }
 ]
