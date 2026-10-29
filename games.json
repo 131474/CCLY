@@ -1,25 +1,16 @@
 [
   {
-    "name": "深空当铺：可能是偷的 支持者版v1.0.0.3官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v1.0.0.3",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
+    "name": "YZR",
+    "shortName": "YZR",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
     "links": [
       {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/53c0502e3343"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP52cJZpUfGZ57lCejCnDN8oA1?pwd=eft8"
-      },
-      {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1W1y_Z6NXn9HasXp6krQomA?pwd=8888",
-        "code": "8888"
+        "url": "https://pan.baidu.com/s/1A-ZnfxFLD461vGmyULZ4Iw?pwd=8888"
       }
     ],
-    "lastChange": "2026-10-29T04:31:08.766Z",
-    "id": 2988
+    "lastChange": "2026-10-29T08:34:35.520Z",
+    "id": 2991
   },
   {
     "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC（VBS2.0一键启动）",
@@ -42,6 +33,28 @@
     ],
     "lastChange": "2026-10-29T03:47:33.541Z",
     "id": 2989
+  },
+  {
+    "name": "深空当铺：可能是偷的 支持者版v1.0.0.3官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v1.0.0.3",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/53c0502e3343"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP52cJZpUfGZ57lCejCnDN8oA1?pwd=eft8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1W1y_Z6NXn9HasXp6krQomA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-10-29T04:31:08.766Z",
+    "id": 2988
   },
   {
     "name": "星球大战：银河赛车手 豪华版v38591600官方中文全DLC+艺术画册（VBS2.0一键启动）",
@@ -572,7 +585,7 @@
     "id": 2866
   },
   {
-    "name": "王国保卫战 6：新启程v1.02.002官方中文全DLC 免安装解压即玩",
+    "name": "王国保卫战 6：新启程v1.02.004官方中文全DLC 免安装解压即玩",
     "shortName": "王国保卫战6|新启程|v1.02.002",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/4259190/9f7d11479e98db4e5798ed936ca69f1ebb5cebe4/header.jpg?t=1790253263",
     "links": [
@@ -586,11 +599,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/10Nn7IwlQYcfyPhupcYQfZw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1PkY6MmyPt59NOdPQbin9Ug?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-24T05:04:36.606Z",
+    "lastChange": "2026-10-29T06:35:49.821Z",
     "id": 2852
   },
   {
@@ -3988,13 +4001,13 @@
     "id": 131
   },
   {
-    "name": "（Switch）鬼灭之刃火之神血风谭2 中文v1.81（PC+安卓）+12DLC",
+    "name": "（Switch）鬼灭之刃火之神血风谭2官方中文v2.01+12DLC（PC+安卓）",
     "shortName": "鬼灭之刃火之",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9878936141ab"
+        "url": "https://pan.quark.cn/s/3cd3adf1be91"
       },
       {
         "name": "迅雷网盘",
@@ -4002,11 +4015,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1C-XjxBB78uWWgcoUrajbNQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ZLdJ15MsPkae-5stsfyhew?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-08T14:14:36.120Z",
+    "lastChange": "2026-10-29T08:30:11.251Z",
     "id": 132
   },
   {
