@@ -1,5 +1,89 @@
 [
   {
+    "name": "（Switch2）马里奥赛车世界 Mario Kart World官方中文v1.8.0",
+    "shortName": "Switch2|马里奥赛车世界",
+    "cover": "https://ts1.tc.mm.bing.net/th/id/R-C.5533f076678854b57e5e70f5351eff4e?rik=krsJCtFSkLcCyg&riu=http%3a%2f%2fi2.cdn.yzz.cn%2fpub%2fimgx2025%2f04%2f03%2f503_100535_8b2a9.jpg&ehk=TRlbBd2kBrBQ8R1IwyKXPiQpKuL6%2f%2fbag59YFxhukok%3d&risl=&pid=ImgRaw&r=0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b99eae1865ea"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5RxZEtNc4juhu6e12R33ZdA1?pwd=wfei"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fSOKX8Qaj8CTT3XTXX2s4A?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-02T15:54:01.266Z",
+    "id": 3006
+  },
+  {
+    "name": "（Switch2）宝可梦Pokopia官方中文v2.0.1",
+    "shortName": "Switch2|宝可梦|Pokopia",
+    "cover": "https://q3.itc.cn/q_70/images03/20250912/45ae91014f4c432ebc27651ce32933fb.jpeg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/8a332923a971"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5RyF-3o_vsfBN9WRaNKCVnA1?pwd=mvtw"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/19G2h1mBfHV0dWSS8_xfI2g?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-02T15:55:58.442Z",
+    "id": 3007
+  },
+  {
+    "name": "（Switch2）咚奇刚：蕉力全开 Donkey Kong Bananza官方中文",
+    "shortName": "Switch2|咚奇刚|蕉力全开",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/2/2/7302cfaa29de0d1d8ae43db4f63a3c83.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ee0390eb1720"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5Rymp7IgpflmugaRqKe4cYA1?pwd=cms6"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1S19-I7gW651s3FSHKRfizQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-02T15:58:10.099Z",
+    "id": 3008
+  },
+  {
+    "name": "（Switch2）喷射战士：涂击队.Splatoon Raiders官方中文",
+    "shortName": "Switch2|喷射战士|涂击队",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/2/2/7302cfaa29de0d1d8ae43db4f63a3c83.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/a03e5396d1d5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5RzP-2sQZQn3E5RWTD9USRA1?pwd=zfdt"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tagYDisXc25b58Z3v4Gk6Q?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-02T16:03:02.885Z",
+    "id": 3009
+  },
+  {
     "name": "鬼武者 剑之道 豪华版v01.000.001官方中文全DLC+崩溃修复补丁+国语配音 voices38解压即玩",
     "shortName": "鬼武者 剑之道|v01.000.001|voices38|崩溃修复",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2638890/ce31174fea86d0bafa21b26e853dcd0b7326e36f/header.jpg?t=1788494549",
@@ -86,8 +170,8 @@
     "id": 2989
   },
   {
-    "name": "深空当铺：可能是偷的 支持者版v100 REV7官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v100 REV7",
+    "name": "深空当铺：可能是偷的 支持者版v100 REV8官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v100 REV8",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
     "links": [
       {
@@ -104,7 +188,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-01T08:03:38.037Z",
+    "lastChange": "2026-11-02T11:27:28.248Z",
     "id": 2988
   },
   {
@@ -4196,25 +4280,25 @@
     "id": 142
   },
   {
-    "name": "帝国时代4：年度版 v16.3.11308.0豪华中文全DLC+岳飞传DLC",
+    "name": "帝国时代4：年度版v17.0.12182.0豪华版中文全DLC+北方劫掠者DLC+4K材质+国语配音",
     "shortName": "帝国时代4周",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9f94741eb7a2"
+        "url": "https://pan.quark.cn/s/ccbe5795487d"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOy4PtVyd68exhyzHDyNRie3A1?pwd=kcww#"
+        "url": "https://pan.xunlei.com/s/VP5Pjt_CFK15HFOZc_O9cFyMA1?pwd=v5dw"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1osLXfoR5O8Lp-GHhTsxSiw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ehzBDUo3RwlfocrFTZXCYw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-21T16:06:00.607Z",
+    "lastChange": "2026-11-02T05:56:38.800Z",
     "id": 143
   },
   {
@@ -5243,7 +5327,7 @@
     "id": 218
   },
   {
-    "name": "无人深空：宇宙v7.11-183877豪华中文全DLC+单独升级补丁+联机补丁",
+    "name": "无人深空：宇宙v7.12-184074豪华中文全DLC+单独升级补丁+联机补丁",
     "shortName": "无人深空",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5261,7 +5345,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-31T16:52:55.001Z",
+    "lastChange": "2026-11-02T09:43:39.448Z",
     "id": 219
   },
   {
@@ -44536,5 +44620,25 @@
     ],
     "lastChange": "2026-11-01T18:18:08.316Z",
     "id": 3004
+  },
+  {
+    "name": "塞尔达传说 王国之泪PC移植版v1.4.3官方中文4K240帧 最稳定版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7c8172e10a8e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5QW4l9sQZQn3E5RWTBWk0xA1?pwd=9wy8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1YF9uOiTvanoqlxm6-0cuiA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-02T09:14:42.395Z",
+    "id": 3005
   }
 ]
