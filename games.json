@@ -1,5 +1,26 @@
 [
   {
+    "name": "火焰纹章：万缕千丝PC移植版v1.0.0官方中文全DLC 解压即玩",
+    "shortName": "火焰纹章|万缕千丝|PC移植版",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/93f7a7f08f2d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5XhPg2oM0sJQRhLST7fmuHA1?pwd=md4b"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16hzh2pSuF4G-XaccFMsB3A?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-03T18:39:59.941Z",
+    "id": 3012
+  },
+  {
     "name": "（Switch2）马里奥赛车世界 Mario Kart World官方中文v1.8.0",
     "shortName": "Switch2|马里奥赛车世界",
     "cover": "https://img.3dmgame.com/uploads/images/news/20250402/1743605738_498956_jpg_r.jpg",
@@ -65,7 +86,7 @@
   {
     "name": "（Switch2）喷射战士：涂击队.Splatoon Raiders官方中文",
     "shortName": "Switch2|喷射战士|涂击队",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/2/2/7302cfaa29de0d1d8ae43db4f63a3c83.jpg",
+    "cover": "https://a.zdmimg.com/202607/07/6a4bde34bf4234520.jpg_fo742.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -82,6 +103,69 @@
     ],
     "lastChange": "2026-11-02T16:03:02.885Z",
     "id": 3009
+  },
+  {
+    "name": "（Switch2）火焰纹章：万缕千丝.Fire Emblem Fortune’s Weave官方中文",
+    "shortName": "Switch2|火焰纹章|万缕千丝",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5600ad30c2ba"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5XK4PuJtGkaGRYQILkFauuA1?pwd=jz9z"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1v1lP-eprM9ktxwUa_RXBRQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-03T16:55:03.002Z",
+    "id": 3011
+  },
+  {
+    "name": "（Switch2）马里奥网球：狂热.Mario Tennis Fever官方中文v1.1.1",
+    "shortName": "Switch2|马里奥网球|狂热",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260216/3/3/8d22ae2f6ab48f8c8b8b75b2b698baaa.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d305bb946882"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5Xhpa9UAMDU4r4S94N3wN9A1?pwd=e96x"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1RPoUEAWheHdrBSbEktJ-vQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-03T18:42:32.078Z",
+    "id": 3013
+  },
+  {
+    "name": "（Switch2）塞尔达无双：封印战纪.Hyrule Warriors Age of Imprisonment官方中文",
+    "shortName": "Switch2|塞尔达无双|封印战纪",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251106/3/3/67bd94afabced9866a81af87232c0a71.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f731b436023a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5Xih5Juv7I_aymNDZMeb00A1?pwd=4xwe"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1JXzvQ4i52HUFEVGlK7B4QQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-03T18:45:38.719Z",
+    "id": 3014
   },
   {
     "name": "鬼武者 剑之道 豪华版v01.000.001官方中文全DLC+崩溃修复补丁+国语配音 voices38解压即玩",
@@ -148,7 +232,7 @@
     "id": 2991
   },
   {
-    "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC（VBS2.0一键启动）",
+    "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC+修复补丁（VBS2.0.1一键启动）",
     "shortName": "动物园之星2|豪华版|v1.0.7.1031590|虚拟机",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/3219030/fbb25f7da79e75dc595a72534a53ac02bbec854f/header_schinese.jpg?t=1793011606",
     "links": [
@@ -166,7 +250,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-29T03:47:33.541Z",
+    "lastChange": "2026-11-03T13:06:39.728Z",
     "id": 2989
   },
   {
@@ -566,7 +650,7 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261022官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "name": "战争机器：事变日高级版v20261102官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
     "shortName": "战争机器：事变日|v20261022",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
@@ -580,11 +664,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1nog2n92P9u8U-AVp-P3Wcw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1hVCATuSFi7M_mLbYVZesrw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-23T04:50:08.994Z",
+    "lastChange": "2026-11-03T04:56:41.491Z",
     "id": 2890
   },
   {
@@ -1180,25 +1264,25 @@
     "id": 1693
   },
   {
-    "name": "队长小翼2 世界群星v1.05官方中文全DLC+单独升级补丁",
+    "name": "队长小翼2 世界群星v1.06官方中文全DLC+单独升级补丁",
     "shortName": "队长小翼2|世界群星|v1.03",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2172910/805b6f4f3293ce549141b60d45d4e0c8ea6c8791/header_schinese.jpg?t=1787868212",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d8dd650e1fba"
+        "url": "https://pan.quark.cn/s/da253a239462"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP05XITT-c4REjzbNbM0vSJNA1?pwd=mp67"
+        "url": "https://pan.xunlei.com/s/VP5UnpiXVkDqMK1fhULj_srlA1?pwd=nux7"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16YrR8pSuBfm47l7jVn8t0w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1cnNKbbJJ6AknJGJGi5yOiA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-16T10:39:46.639Z",
+    "lastChange": "2026-11-03T06:04:04.396Z",
     "id": 2684
   },
   {
@@ -1818,8 +1902,8 @@
     "id": 1922
   },
   {
-    "name": "极限竞速：地平线6尊享版v461.691全DLC+单独升级补丁+联机补丁+完美614存档+修改器",
-    "shortName": "极限竞速|地平线6|v382.893",
+    "name": "极限竞速：地平线6尊享版v479.874全DLC+单独升级补丁+联机补丁+完美614存档+修改器",
+    "shortName": "极限竞速|地平线6|v479.874",
     "cover": "https://img.3dmgame.com/uploads/images/news/20260123/1769128063_397595_jpg_r.jpg",
     "links": [
       {
@@ -1832,11 +1916,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ZMA54_3syMX5OZxPAYYjow?pwd=8888",
+        "url": "https://pan.baidu.com/s/1FMTZ7Cg1CfAXDxIThmgbtA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-06T07:28:21.839Z",
+    "lastChange": "2026-11-03T06:52:48.468Z",
     "id": 2060
   },
   {
@@ -33095,23 +33179,23 @@
     "id": 2349
   },
   {
-    "name": "奇迹时代4 高级版v1.016.001.125730官方中文全DLC+单独升级补丁",
+    "name": "奇迹时代4高级版v1.017.001.126767官方中文全DLC+银海DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/03b262081dc5"
+        "url": "https://pan.quark.cn/s/11d417e9c985"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP36DY4VRModda_5HEwWRMs4A1?pwd=upf6"
+        "url": "https://pan.xunlei.com/s/VP5XHuvjFWwVUF9_FOvtWiTNA1?pwd=32je"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1bJoIrUrd2xe-nzlTKS8xVw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1RomGYWCcnlmT1eQpfwXT_g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-04T14:30:28.688Z",
+    "lastChange": "2026-11-03T16:51:40.662Z",
     "id": 2350
   },
   {
@@ -42122,7 +42206,7 @@
     "id": 2854
   },
   {
-    "name": "（Switch）EA SPORTS FC 27 CUSA57220官方中文v1.8c.fd45+1DLC",
+    "name": "（Switch）EA SPORTS FC 27官方中文v1.8d.6523+1DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -42134,11 +42218,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/18YDmg8Hnl1-kvQaINiGQDw?pwd=8888",
+        "url": "https://pan.baidu.com/s/10GpfhpLpQObSCLurz3m99w?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-03T04:44:30.121Z",
+    "lastChange": "2026-11-03T07:34:11.192Z",
     "id": 2855
   },
   {
@@ -43522,7 +43606,7 @@
     "id": 2940
   },
   {
-    "name": "永恒传说：重制版 数字豪华版v2.0.0官方中文全DLC",
+    "name": "永恒传说：重制版 数字豪华版v2.1.0官方中文全DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -43534,11 +43618,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1nBohVAShfWbnama73fs0IQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/10GpfhpLpQObSCLurz3m99w?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-16T04:37:46.959Z",
+    "lastChange": "2026-11-03T07:09:44.395Z",
     "id": 2941
   },
   {
@@ -44640,5 +44724,25 @@
     ],
     "lastChange": "2026-11-02T09:14:42.395Z",
     "id": 3005
+  },
+  {
+    "name": "星球大战：银河赛车手 豪华版v38591600官方中文全DLC+艺术画册 免安装 免重启版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/fcf24fb86f1e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5Vg8xXT2ZKo0i_AKb-C5oYA1?pwd=thqf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1C5hp5euQXh9V4cI2iLONnw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-03T09:22:21.680Z",
+    "id": 3010
   }
 ]
