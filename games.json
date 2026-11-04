@@ -1,5 +1,26 @@
 [
   {
+    "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
+    "shortName": "Switch2|卡比驭天飞行者|v1.3.3",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251121/2/2/f782a9ab7881b31b6d9baa4f075b469b.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d62624c2985c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5bh9xHSYHZuYJTQjBAKO9PA1?pwd=2dc2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/13-2L1vwD9qfxEbqvawXQcA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-04T17:57:31.022Z",
+    "id": 3016
+  },
+  {
     "name": "火焰纹章：万缕千丝PC移植版v1.0.0官方中文全DLC 解压即玩",
     "shortName": "火焰纹章|万缕千丝|PC移植版",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
@@ -105,25 +126,25 @@
     "id": 3009
   },
   {
-    "name": "（Switch2）火焰纹章：万缕千丝.Fire Emblem Fortune’s Weave官方中文",
-    "shortName": "Switch2|火焰纹章|万缕千丝",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "name": "YZR RE",
+    "shortName": "YZR RE|免重启",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/5600ad30c2ba"
+        "url": "https://pan.quark.cn/s/90665945a089"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5XK4PuJtGkaGRYQILkFauuA1?pwd=jz9z"
+        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1v1lP-eprM9ktxwUa_RXBRQ?pwd=8888"
+        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-03T16:55:03.002Z",
-    "id": 3011
+    "lastChange": "2026-10-29T17:07:13.836Z",
+    "id": 2993
   },
   {
     "name": "（Switch2）马里奥网球：狂热.Mario Tennis Fever官方中文v1.1.1",
@@ -190,25 +211,25 @@
     "id": 2723
   },
   {
-    "name": "YZR RE",
-    "shortName": "YZR RE|免重启",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+    "name": "（Switch2）火焰纹章：万缕千丝.Fire Emblem Fortune’s Weave官方中文",
+    "shortName": "Switch2|火焰纹章|万缕千丝",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/90665945a089"
+        "url": "https://pan.quark.cn/s/5600ad30c2ba"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
+        "url": "https://pan.xunlei.com/s/VP5XK4PuJtGkaGRYQILkFauuA1?pwd=jz9z"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
+        "url": "https://pan.baidu.com/s/1v1lP-eprM9ktxwUa_RXBRQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-10-29T17:07:13.836Z",
-    "id": 2993
+    "lastChange": "2026-11-03T16:55:03.002Z",
+    "id": 3011
   },
   {
     "name": "YZR",
@@ -254,8 +275,8 @@
     "id": 2989
   },
   {
-    "name": "深空当铺：可能是偷的 支持者版v100 REV8官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v100 REV8",
+    "name": "深空当铺：可能是偷的 支持者版v100 REV9官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v100 REV9",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
     "links": [
       {
@@ -272,7 +293,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-02T11:27:28.248Z",
+    "lastChange": "2026-11-04T05:48:26.345Z",
     "id": 2988
   },
   {
@@ -474,8 +495,8 @@
     "id": 2933
   },
   {
-    "name": "战神3重制版 v2.7.0官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
-    "shortName": "战神3|PC移植版|v2.7.0",
+    "name": "战神3重制版 v3.0.0正式版官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
+    "shortName": "战神3|PC移植版|v3.0.0",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
     "links": [
       {
@@ -488,11 +509,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1tBvhQaLvtAcWCcg_LXkX6Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1iTcKfwyAa8yze2hoPHxGGw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-22T16:58:20.509Z",
+    "lastChange": "2026-11-04T14:10:32.193Z",
     "id": 2918
   },
   {
@@ -890,8 +911,8 @@
     "id": 2844
   },
   {
-    "name": "守墓人2豪华版v1.011官方中文全DLC",
-    "shortName": "守墓人2|v1.011",
+    "name": "守墓人2豪华版v1.011.1官方中文全DLC",
+    "shortName": "守墓人2|v1.011.1",
     "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4358690/8bfd6d4cd1ae84a26860992c4aac8c05458b123c/header_alt_assets_1_schinese.jpg?t=1790131843",
     "links": [
       {
@@ -908,7 +929,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-31T04:48:05.376Z",
+    "lastChange": "2026-11-04T06:47:40.544Z",
     "id": 2839
   },
   {
@@ -42127,7 +42148,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界v1.7.4995豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界v1.7.4998 豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -42143,7 +42164,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-01T09:18:32.124Z",
+    "lastChange": "2026-11-04T07:46:57.039Z",
     "id": 2849
   },
   {
@@ -42887,7 +42908,7 @@
     "id": 2897
   },
   {
-    "name": "克里夫·巴克猛鬼追魂：复苏豪华版v1.1.1.227384官方中文全DLC+单独升级补丁",
+    "name": "克里夫·巴克猛鬼追魂：复苏豪华版v1.2.0.227791官方中文全DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -42899,11 +42920,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1VVUjXV7JhyQjj7vC_xBuKg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1d2c-N97ZBFKg8c_AETm9dA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-15T17:08:33.929Z",
+    "lastChange": "2026-11-04T17:35:39.209Z",
     "id": 2898
   },
   {
@@ -44745,5 +44766,25 @@
     ],
     "lastChange": "2026-11-03T09:22:21.680Z",
     "id": 3010
+  },
+  {
+    "name": "F1 25赛季版v1.26.1417865官方中文全DLC（VBS2.0.1一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ea230dc6d659"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5bdoKhZ9yf_ancbjnVESbFA1?pwd=5erb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1H8YIj61I8a0mtn8HdYHdyg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-04T17:43:38.944Z",
+    "id": 3015
   }
 ]
