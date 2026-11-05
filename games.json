@@ -1,5 +1,26 @@
 [
   {
+    "name": "【游戏必用】永久免费加速器",
+    "shortName": "永久免费加速器|附兑换码",
+    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b658fe92d528"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:30:37.595Z",
+    "id": 3018
+  },
+  {
     "name": "（Switch2）塞尔达传说：时之笛 重制版.The Legend of Zelda Ocarina of Time官方中文",
     "shortName": "Switch2|塞尔达传说|时之笛 重制版",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -21,6 +42,48 @@
     "id": 3017
   },
   {
+    "name": "（Switch2）宝可梦传说Z-A Pokemon LEGENDS Z-A官方中文NS2版",
+    "shortName": "Switch2|宝可梦传说Z-A|NS2版",
+    "cover": "https://ts1.tc.mm.bing.net/th/id/OIP-C.Iu2YIX2LKGXazRtWgcauegAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/47860cbfda1a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fUyNnJWI0nOqJkFaUn1zyA1?pwd=uscb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1LKiH2b8fS1TNf6LgVy9Bjw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:38:52.114Z",
+    "id": 3020
+  },
+  {
+    "name": "（Switch2）超级马力欧兄弟：惊奇 + 同游铃铃公园 官方中文NS2版",
+    "shortName": "Switch2|超级马力欧兄弟|惊奇NS2版",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20230901/0/0/3b56efa0086a79dc5cf4af30ec271d42.gif",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/db4188f5e768"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fVhWCT5zpI5QfmWD-gWOPA1?pwd=j8bt"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xto5rO6HbhgWcuSXLWB7sQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:41:25.332Z",
+    "id": 3021
+  },
+  {
     "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
     "shortName": "Switch2|卡比驭天飞行者|v1.3.3",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251121/2/2/f782a9ab7881b31b6d9baa4f075b469b.jpg",
@@ -40,6 +103,27 @@
     ],
     "lastChange": "2026-11-04T17:57:31.022Z",
     "id": 3016
+  },
+  {
+    "name": "（Switch2）星际火狐 Star Fox官方中文",
+    "shortName": "Switch2|星际火狐",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260512/10/26/143f496204b2c0a2496c954c1684355e.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/042f6505d1ed"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fUQCdcb2xfDxfErIOXn_rA1?pwd=wr4v"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1TRhIxXPVoEk1ZwR6SGIF-Q?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:35:57.270Z",
+    "id": 3019
   },
   {
     "name": "火焰纹章：万缕千丝PC移植版v1.0.0官方中文全DLC 解压即玩",
@@ -296,8 +380,8 @@
     "id": 2989
   },
   {
-    "name": "深空当铺：可能是偷的 支持者版v100 REV9官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v100 REV9",
+    "name": "深空当铺：可能是偷的 支持者版v100 REV10 官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v100 REV10",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
     "links": [
       {
@@ -314,7 +398,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-04T05:48:26.345Z",
+    "lastChange": "2026-11-05T08:05:24.107Z",
     "id": 2988
   },
   {
@@ -5236,7 +5320,7 @@
     "id": 200
   },
   {
-    "name": "骑马与砍杀2：霸主v1.5.6.125053豪华中文全DLC+战帆DLC",
+    "name": "骑马与砍杀2：霸主v1.5.6.125270豪华中文全DLC+战帆DLC",
     "shortName": "骑马与砍杀2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -5254,7 +5338,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-01T16:56:50.930Z",
+    "lastChange": "2026-11-05T06:55:47.140Z",
     "id": 201
   },
   {
