@@ -42,6 +42,27 @@
     "id": 3017
   },
   {
+    "name": "YZR v302256",
+    "shortName": "YZR v302256",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/dc256cda412a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP56AwiBTWKSFQyCSU-t4g_WA1?pwd=fae7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1A-ZnfxFLD461vGmyULZ4Iw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T16:09:11.421Z",
+    "id": 2991
+  },
+  {
     "name": "（Switch2）宝可梦传说Z-A Pokemon LEGENDS Z-A官方中文NS2版",
     "shortName": "Switch2|宝可梦传说Z-A|NS2版",
     "cover": "https://ts1.tc.mm.bing.net/th/id/OIP-C.Iu2YIX2LKGXazRtWgcauegAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
@@ -82,6 +103,27 @@
     ],
     "lastChange": "2026-11-05T11:41:25.332Z",
     "id": 3021
+  },
+  {
+    "name": "（Switch2）耀西与不可思议的图鉴Yoshi and the Mysterious Book官方中文",
+    "shortName": "Switch2|耀西与不可思议|的图鉴",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260312/15/15/e4657b0511fd92bbefbfd99e82e28ecf.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/67d6c030a456"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5gRfPzVbRIjGlc5W-GYi4gA1?pwd=5kv5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pvF_ArRGA9NtO2yPfWUs6A?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T16:04:11.074Z",
+    "id": 3022
   },
   {
     "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
@@ -335,27 +377,6 @@
     ],
     "lastChange": "2026-11-03T16:55:03.002Z",
     "id": 3011
-  },
-  {
-    "name": "YZR",
-    "shortName": "YZR",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dc256cda412a"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP56AwiBTWKSFQyCSU-t4g_WA1?pwd=fae7"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1A-ZnfxFLD461vGmyULZ4Iw?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-10-29T08:34:35.520Z",
-    "id": 2991
   },
   {
     "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC+修复补丁（VBS2.0.1一键启动）",
@@ -2355,8 +2376,8 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.82.07官方中文全DLC+联机补丁",
-    "shortName": "魔法门英雄无敌|上古纪元|v0.82.07",
+    "name": "魔法门之英雄无敌：上古纪元v0.82.08官方中文全DLC+联机补丁",
+    "shortName": "魔法门英雄无敌|上古纪元|v0.82.08",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -2373,7 +2394,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-30T16:55:31.181Z",
+    "lastChange": "2026-11-05T12:23:25.370Z",
     "id": 224
   },
   {
@@ -40033,23 +40054,23 @@
     "id": 2726
   },
   {
-    "name": "红色沙漠增强版v2.03.02豪华中文全DLC+单独升级补丁（VBS1.9一键启动）",
+    "name": "红色沙漠增强版v2.04.06豪华中文全DLC+未知征途DLC（VBS2.0.1一键启动）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9b0d80eab491"
+        "url": "https://pan.quark.cn/s/c06023574740"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP0qHi9X0K2igf0cvE2WxFaPA1?pwd=bkgm"
+        "url": "https://pan.xunlei.com/s/VP5gP73tVbRIjGlc5W-GUqKMA1?pwd=aay8"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/11btCkfYYKP8jTfy2mZF6HA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1LzwrAJ-7_7I46mCa1iXwUw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-04T08:53:34.837Z",
+    "lastChange": "2026-11-05T15:58:09.277Z",
     "id": 2729
   },
   {
