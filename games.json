@@ -1,5 +1,26 @@
 [
   {
+    "name": "（Switch2）塞尔达传说：时之笛 重制版.The Legend of Zelda Ocarina of Time官方中文",
+    "shortName": "Switch2|塞尔达传说|时之笛 重制版",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/195dc4241986"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5derXN_bO0q-At3jDqboqIA1?pwd=b9yj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1namdC1QAFmjXFgitDuJEYA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T03:08:04.377Z",
+    "id": 3017
+  },
+  {
     "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
     "shortName": "Switch2|卡比驭天飞行者|v1.3.3",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20251121/2/2/f782a9ab7881b31b6d9baa4f075b469b.jpg",
@@ -39888,23 +39909,23 @@
     "id": 2724
   },
   {
-    "name": "刺客信条：黑旗 记忆重置v1.0.7 豪华中文全DLC+单独升级补丁（VBS1.9一键启动）",
+    "name": "刺客信条：黑旗 记忆重置豪华版v1.0.8 豪华中文全DLC+单独升级补丁（VBS2.0.1一键启动）",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/59bd202bdf9d"
+        "url": "https://pan.quark.cn/s/3406eed978ee"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP0m9j-KTfqcYUFum1XmiDOuA1?pwd=xbkn"
+        "url": "https://pan.xunlei.com/s/VP5dQBVJ8Jvp00-OkprREnDAA1?pwd=jkjr"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Buq5Jx4wpmIhZfRF7v-2BQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1MIPdEp31YPhKuopY81Sqsg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-05T15:34:28.775Z",
+    "lastChange": "2026-11-05T02:21:18.903Z",
     "id": 2725
   },
   {
