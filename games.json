@@ -63,6 +63,27 @@
     "id": 3023
   },
   {
+    "name": "YZR v302256 免重启版",
+    "shortName": "YZR v302256|免重启版",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/90665945a089"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-07T13:33:55.519Z",
+    "id": 2993
+  },
+  {
     "name": "YZR v302256",
     "shortName": "YZR v302256",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
@@ -292,27 +313,6 @@
     ],
     "lastChange": "2026-11-02T16:03:02.885Z",
     "id": 3009
-  },
-  {
-    "name": "YZR RE",
-    "shortName": "YZR RE|免重启",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/90665945a089"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-10-29T17:07:13.836Z",
-    "id": 2993
   },
   {
     "name": "（Switch2）马里奥网球：狂热.Mario Tennis Fever官方中文v1.1.1",
@@ -818,8 +818,8 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261102官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
-    "shortName": "战争机器：事变日|v20261022",
+    "name": "战争机器：事变日高级版v20261106官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "shortName": "战争机器：事变日|v20261106",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
       {
@@ -836,7 +836,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-03T04:56:41.491Z",
+    "lastChange": "2026-11-07T11:04:01.638Z",
     "id": 2890
   },
   {
