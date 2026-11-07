@@ -42,6 +42,27 @@
     "id": 3017
   },
   {
+    "name": "塞尔达传说时之笛PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "shortName": "塞尔达传说|时之笛 重制版|PC移植版|非模拟器",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f18caf9f1124"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5pY332gESwDbYxe-4AwO2HA1?pwd=33ga"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-07T10:28:14.309Z",
+    "id": 3023
+  },
+  {
     "name": "YZR v302256",
     "shortName": "YZR v302256",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
@@ -1301,7 +1322,7 @@
     "id": 2711
   },
   {
-    "name": "龙之信条2豪华版v4.1.0.0官方中文全DLC+黑暗觉者DLC+单独升级补丁+去除D加密+联机补丁+原声音乐集",
+    "name": "龙之信条2豪华版v4.2.0.0官方中文全DLC+黑暗觉者DLC+单独升级补丁+去除D加密+联机补丁+原声音乐集",
     "shortName": "龙之信条2|黑暗觉者|v4.1.0.0",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/2054970/header.jpg?t=1788308490",
     "links": [
@@ -1315,11 +1336,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1OwzLSCShwz4xfiNFhxNBSQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1KJOe5wTtp9UPI-gG_3nnzQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-16T15:51:38.793Z",
+    "lastChange": "2026-11-07T07:43:34.826Z",
     "id": 1311
   },
   {
