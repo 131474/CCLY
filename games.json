@@ -44767,23 +44767,23 @@
     "id": 2999
   },
   {
-    "name": "但丁地狱PC移植版v0.8.5全DLC 4K240帧",
+    "name": "但丁地狱PC移植版v0.8.6简体中文全DLC 6K240帧",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/9f67f7547b50"
+        "url": "https://pan.quark.cn/s/9e6bf519e9cf"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5HuzYXavWaqridpH2Zt6C9A1?pwd=hp9v"
+        "url": "https://pan.xunlei.com/s/VP5vquJuddQHGb4sNHVKDueDA1?pwd=j3jb"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1jQgwT_NSBO7556SZ3A6uWA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ZBlo3R7C3p-HU03UscbJlA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-31T17:10:50.125Z",
+    "lastChange": "2026-11-08T15:57:45.658Z",
     "id": 3000
   },
   {
@@ -44925,5 +44925,85 @@
     ],
     "lastChange": "2026-11-04T17:43:38.944Z",
     "id": 3015
+  },
+  {
+    "name": "英雄连3终极版v3.0.0.52071豪华中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/63ea05b50a3d"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5tj_rlubr8iYVzlBcwQ77FA1?pwd=mxs4"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ljokKyf389OHL-WcpRSqlg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T06:06:55.440Z",
+    "id": 3024
+  },
+  {
+    "name": "（Switch）戴帽子的猫：雨天大乱斗 官方中文本体+v1.0.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f9773dbf7c33"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5uAH9ZZRumchzScYHaUlgsA1?pwd=i666"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jFs9t8LIl3_azEs-KZwjMw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T08:02:36.175Z",
+    "id": 3025
+  },
+  {
+    "name": "（Switch）K-Pop新星——梦想闪耀官方中文本体+v1.0.6962升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3667cf67362e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5umYntubr8iYVzlBcxWk-JA1?pwd=5eqj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1FKAZ2kM-6Y03KmiCory5Cw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T10:59:40.863Z",
+    "id": 3026
+  },
+  {
+    "name": "纪元 117：罗马和平黄金版v2.1.0.1711091 豪华中文全DLC+国语配音 免重启版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/93b3cf232884"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5v8JMLqhmWjr3AreDgwxxiA1?pwd=wnc2"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12rHJvCigDz3NZHDyeCy19w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T12:43:58.940Z",
+    "id": 3027
   }
 ]
