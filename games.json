@@ -21,6 +21,27 @@
     "id": 3018
   },
   {
+    "name": "塞尔达传说时之笛PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f18caf9f1124"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5pY332gESwDbYxe-4AwO2HA1?pwd=33ga"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-07T10:28:14.309Z",
+    "id": 3023
+  },
+  {
     "name": "（Switch2）塞尔达传说：时之笛 重制版.The Legend of Zelda Ocarina of Time官方中文",
     "shortName": "Switch2|塞尔达传说|时之笛 重制版|最新v3版",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -40,27 +61,6 @@
     ],
     "lastChange": "2026-11-05T03:08:04.377Z",
     "id": 3017
-  },
-  {
-    "name": "塞尔达传说时之笛PC移植版v1.1.1官方中文全DLC 4K240帧",
-    "shortName": "塞尔达传说|时之笛 重制版|PC移植版|非模拟器",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/f18caf9f1124"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5pY332gESwDbYxe-4AwO2HA1?pwd=33ga"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-07T10:28:14.309Z",
-    "id": 3023
   },
   {
     "name": "YZR v302256 免重启版",
@@ -422,8 +422,8 @@
     "id": 2989
   },
   {
-    "name": "深空当铺：可能是偷的 支持者版v100 REV12 官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v100 REV11",
+    "name": "深空当铺：可能是偷的 支持者版v100 REV13 官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v100 REV13",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
     "links": [
       {
@@ -440,7 +440,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-07T04:13:21.474Z",
+    "lastChange": "2026-11-09T05:20:36.887Z",
     "id": 2988
   },
   {
@@ -45005,5 +45005,65 @@
     ],
     "lastChange": "2026-11-08T12:43:58.940Z",
     "id": 3027
+  },
+  {
+    "name": "全面战争：战锤3豪华中文v9.0.2全DLC+纳迦什DLC+国语配音 免重启版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1416aec3745f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5wA5GrPr2v4yk1tus77id4A1?pwd=v8t7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1s6YCceXiRfvm8EDnwNxXvw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T17:24:56.856Z",
+    "id": 3028
+  },
+  {
+    "name": "（Switch）狡猾的幸存者Crafty Survivors官方中文本体+v1.1.1升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6a88547f9930"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5wBzF9FR2jzGEeNA1fB4AgA1?pwd=uw3n"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1CtS45Ppr_IqOgxsmRHZjbQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T17:29:15.833Z",
+    "id": 3029
+  },
+  {
+    "name": "三国志14威力加强传承版v20261105官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/bee0e9e950d8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP1AYkKWLaHXkUtKPKYw-adMA1?pwd=ijyu"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1KJzt3b0lGSy7vJh-BcJ4wg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-08T17:54:54.914Z",
+    "id": 3030
   }
 ]
