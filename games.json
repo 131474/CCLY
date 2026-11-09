@@ -1,26 +1,5 @@
 [
   {
-    "name": "【游戏必用】永久免费加速器",
-    "shortName": "永久免费加速器|附兑换码",
-    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b658fe92d528"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-05T11:30:37.595Z",
-    "id": 3018
-  },
-  {
     "name": "塞尔达传说时之笛PC移植版v1.1.1官方中文全DLC 4K240帧",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -61,6 +40,48 @@
     ],
     "lastChange": "2026-11-09T10:29:07.593Z",
     "id": 3031
+  },
+  {
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|非模拟器",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/388255bbd92c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6-YleEuEZQzL3FpAq1v0XZA1?pwd=t8ys"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mU4OUcT-gxjWYYwRFnUB-w?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-09T13:46:44.687Z",
+    "id": 3012
+  },
+  {
+    "name": "（Switch2）耀西与不可思议的图鉴Yoshi and the Mysterious Book官方中文",
+    "shortName": "Switch2|耀西与不可思议|的图鉴",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260312/15/15/e4657b0511fd92bbefbfd99e82e28ecf.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/67d6c030a456"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5gRfPzVbRIjGlc5W-GYi4gA1?pwd=5kv5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pvF_ArRGA9NtO2yPfWUs6A?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T16:04:11.074Z",
+    "id": 3022
   },
   {
     "name": "（Switch2）塞尔达传说：时之笛 重制版.The Legend of Zelda Ocarina of Time官方中文",
@@ -168,25 +189,46 @@
     "id": 3021
   },
   {
-    "name": "（Switch2）耀西与不可思议的图鉴Yoshi and the Mysterious Book官方中文",
-    "shortName": "Switch2|耀西与不可思议|的图鉴",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260312/15/15/e4657b0511fd92bbefbfd99e82e28ecf.png",
+    "name": "（Switch2）马里奥赛车世界 Mario Kart World官方中文v1.8.0",
+    "shortName": "Switch2|马里奥赛车世界",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20250402/1743605738_498956_jpg_r.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/67d6c030a456"
+        "url": "https://pan.quark.cn/s/b99eae1865ea"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5gRfPzVbRIjGlc5W-GYi4gA1?pwd=5kv5"
+        "url": "https://pan.xunlei.com/s/VP5RxZEtNc4juhu6e12R33ZdA1?pwd=wfei"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1pvF_ArRGA9NtO2yPfWUs6A?pwd=8888"
+        "url": "https://pan.baidu.com/s/1fSOKX8Qaj8CTT3XTXX2s4A?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-05T16:04:11.074Z",
-    "id": 3022
+    "lastChange": "2026-11-02T15:54:01.266Z",
+    "id": 3006
+  },
+  {
+    "name": "【游戏必用】永久免费加速器",
+    "shortName": "永久免费加速器|附兑换码",
+    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b658fe92d528"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:30:37.595Z",
+    "id": 3018
   },
   {
     "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
@@ -229,48 +271,6 @@
     ],
     "lastChange": "2026-11-05T11:35:57.270Z",
     "id": 3019
-  },
-  {
-    "name": "火焰纹章：万缕千丝PC移植版v1.0.0官方中文全DLC 解压即玩",
-    "shortName": "火焰纹章|万缕千丝|PC移植版",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/93f7a7f08f2d"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5XhPg2oM0sJQRhLST7fmuHA1?pwd=md4b"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16hzh2pSuF4G-XaccFMsB3A?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-03T18:39:59.941Z",
-    "id": 3012
-  },
-  {
-    "name": "（Switch2）马里奥赛车世界 Mario Kart World官方中文v1.8.0",
-    "shortName": "Switch2|马里奥赛车世界",
-    "cover": "https://img.3dmgame.com/uploads/images/news/20250402/1743605738_498956_jpg_r.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b99eae1865ea"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5RxZEtNc4juhu6e12R33ZdA1?pwd=wfei"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1fSOKX8Qaj8CTT3XTXX2s4A?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-02T15:54:01.266Z",
-    "id": 3006
   },
   {
     "name": "（Switch2）宝可梦Pokopia官方中文v2.0.1",
