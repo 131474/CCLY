@@ -1,5 +1,26 @@
 [
   {
+    "name": "【游戏必用】永久免费加速器",
+    "shortName": "永久免费加速器|附兑换码",
+    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b658fe92d528"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:30:37.595Z",
+    "id": 3018
+  },
+  {
     "name": "塞尔达传说时之笛PC移植版v2.0.11官方中文全DLC 4K480帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -208,27 +229,6 @@
     ],
     "lastChange": "2026-11-02T15:54:01.266Z",
     "id": 3006
-  },
-  {
-    "name": "【游戏必用】永久免费加速器",
-    "shortName": "永久免费加速器|附兑换码",
-    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b658fe92d528"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-05T11:30:37.595Z",
-    "id": 3018
   },
   {
     "name": "（Switch2）卡比的驭天飞行者.Kirby Air Riders官方中文v1.3.3",
@@ -443,8 +443,8 @@
     "id": 2989
   },
   {
-    "name": "深空当铺：可能是偷的 支持者版v100 REV13 官方中文全DLC+原声音乐集",
-    "shortName": "深空当铺|可能是偷的|v100 REV13",
+    "name": "深空当铺：可能是偷的 支持者版v100 REV14 官方中文全DLC+原声音乐集",
+    "shortName": "深空当铺|可能是偷的|v100 REV14",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4348910/d9938fa30354c82c9549c17864145e3e92e23847/header_alt_assets_3_schinese.jpg?t=1793194696",
     "links": [
       {
@@ -461,7 +461,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-09T05:20:36.887Z",
+    "lastChange": "2026-11-10T08:27:26.689Z",
     "id": 2988
   },
   {
@@ -663,8 +663,8 @@
     "id": 2933
   },
   {
-    "name": "战神3重制版 v3.0.0正式版官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
-    "shortName": "战神3|PC移植版|v3.0.0",
+    "name": "战神3重制版 v3.1.0t1正式版官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
+    "shortName": "战神3|PC移植版|v3.1.0t1",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
     "links": [
       {
@@ -681,7 +681,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-04T14:10:32.193Z",
+    "lastChange": "2026-11-10T05:29:06.293Z",
     "id": 2918
   },
   {
@@ -4553,7 +4553,7 @@
     "id": 142
   },
   {
-    "name": "帝国时代4：年度版v17.0.12182.0豪华版中文全DLC+北方劫掠者DLC+4K材质+国语配音",
+    "name": "帝国时代4：年度版v17.0.12260.0豪华版中文全DLC+北方劫掠者DLC+4K材质+国语配音",
     "shortName": "帝国时代4周",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -4571,7 +4571,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-02T05:56:38.800Z",
+    "lastChange": "2026-11-10T10:15:04.751Z",
     "id": 143
   },
   {
@@ -20498,16 +20498,25 @@
     "id": 1343
   },
   {
-    "name": "为了吾王2 v1.13.4  豪华中文版 全DLC",
+    "name": "为了吾王2豪华版v1.15.16官方中文全DLC+尘埃落定角色包DLC",
     "shortName": "为了吾王2",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7a5c75504142"
+        "url": "https://pan.quark.cn/s/e6dbafd2c62c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP63TcseKRcvmj3wQpF4PSv2A1?pwd=ths7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1bqqXDcedxPSdmb0Mg6m47g?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-06-25T16:00:39.089Z",
+    "lastChange": "2026-11-10T08:11:07.546Z",
     "id": 1344
   },
   {
@@ -45106,5 +45115,25 @@
     ],
     "lastChange": "2026-11-09T18:35:53.358Z",
     "id": 3032
+  },
+  {
+    "name": "猎天使魔女3/蓓优妮塔3简体中文PC移植版v1.2.0全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/696c1b9f4c4e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP63mWdlF-ghx8j3WnEJr7ffA1?pwd=sarv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17mK-jh8g2I73lj9GcsW9ZA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-10T09:42:24.403Z",
+    "id": 3033
   }
 ]
