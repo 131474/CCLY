@@ -1,6 +1,6 @@
 [
   {
-    "name": "塞尔达传说时之笛PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "name": "塞尔达传说时之笛PC移植版v2.0.11官方中文全DLC 4K480帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
@@ -17,7 +17,7 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-07T10:28:14.309Z",
+    "lastChange": "2026-11-10T03:40:11.205Z",
     "id": 3023
   },
   {
@@ -45086,5 +45086,25 @@
     ],
     "lastChange": "2026-11-08T17:54:54.914Z",
     "id": 3030
+  },
+  {
+    "name": "异度之刃2/异度神剑2 PC移植版v3.0.1官方中文全DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/991809d7c11c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP60KTyoFMAYYn5LJnWCp4xQA1?pwd=89sb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qgTYzRDOs_FZNG84GZ-ifw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-09T18:35:53.358Z",
+    "id": 3032
   }
 ]
