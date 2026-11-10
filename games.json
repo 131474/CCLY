@@ -21,7 +21,7 @@
     "id": 3018
   },
   {
-    "name": "塞尔达传说时之笛PC移植版v2.0.11官方中文全DLC 4K480帧 支持8倍帧生成",
+    "name": "塞尔达传说时之笛PC移植版v2.0.12官方中文全DLC 4K480帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
@@ -38,7 +38,7 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-10T03:40:11.205Z",
+    "lastChange": "2026-11-10T14:35:31.625Z",
     "id": 3023
   },
   {
@@ -82,6 +82,50 @@
     ],
     "lastChange": "2026-11-09T13:46:44.687Z",
     "id": 3012
+  },
+  {
+    "name": "异度之刃2/异度神剑2 PC移植版v3.0.1官方中文全DLC 4K240帧",
+    "shortName": "异度之刃2|异度神剑2|PC移植版|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbnews/20190628/1561717686_232216.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/991809d7c11c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP60KTyoFMAYYn5LJnWCp4xQA1?pwd=89sb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qgTYzRDOs_FZNG84GZ-ifw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-09T18:35:53.358Z",
+    "id": 3032
+  },
+  {
+    "name": "猎天使魔女3/蓓优妮塔3简体中文PC移植版v1.2.0全DLC 4K240帧",
+    "shortName": "猎天使魔女3|PC移植版|4K240帧",
+    "cover": "https://img1.gamersky.com/image2021/10/20211030WY_8/gamersky_06small_12_202110301434A1C.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/696c1b9f4c4e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP63mWdlF-ghx8j3WnEJr7ffA1?pwd=sarv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17mK-jh8g2I73lj9GcsW9ZA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-10T09:42:24.403Z",
+    "id": 3033
   },
   {
     "name": "（Switch2）耀西与不可思议的图鉴Yoshi and the Mysterious Book官方中文",
@@ -45095,45 +45139,5 @@
     ],
     "lastChange": "2026-11-08T17:54:54.914Z",
     "id": 3030
-  },
-  {
-    "name": "异度之刃2/异度神剑2 PC移植版v3.0.1官方中文全DLC 4K240帧",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/991809d7c11c"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP60KTyoFMAYYn5LJnWCp4xQA1?pwd=89sb"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1qgTYzRDOs_FZNG84GZ-ifw?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-11-09T18:35:53.358Z",
-    "id": 3032
-  },
-  {
-    "name": "猎天使魔女3/蓓优妮塔3简体中文PC移植版v1.2.0全DLC 4K240帧",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/696c1b9f4c4e"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP63mWdlF-ghx8j3WnEJr7ffA1?pwd=sarv"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17mK-jh8g2I73lj9GcsW9ZA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-11-10T09:42:24.403Z",
-    "id": 3033
   }
 ]
