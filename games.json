@@ -84,6 +84,28 @@
     "id": 3012
   },
   {
+    "name": "塞尔达传说旷野之息PC移植版v1.9.0-0.5.0官方中文全DLC 4K360帧",
+    "shortName": "塞尔达传说|旷野之息|PC移植版|4K360帧",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20200706/1594038326_159390.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/71c7741911af"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP4sxKUJcrmGJc7R0PK_HawVA1?pwd=zrg7"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16rz1jGWgPb_F8jwNLzDRNg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-10T16:25:36.950Z",
+    "id": 2974
+  },
+  {
     "name": "异度之刃2/异度神剑2 PC移植版v3.0.1官方中文全DLC 4K240帧",
     "shortName": "异度之刃2|异度神剑2|PC移植版|4K240帧",
     "cover": "https://img.3dmgame.com/uploads/images/thumbnews/20190628/1561717686_232216.jpg",
@@ -22196,7 +22218,7 @@
     "id": 1477
   },
   {
-    "name": "文明6豪华终极版v1.0.12.68官方中文全DLC+原声音乐集+联机补丁+国语配音",
+    "name": "文明6豪华终极版v1.0.12.72官方中文全DLC+原声音乐集+联机补丁+国语配音",
     "shortName": "文明6",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -22210,11 +22232,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1nPLbQdWD09bS8Re4Mo089w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1oG5Ki1QbVCyNf4g7YipccQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-27T12:27:07.839Z",
+    "lastChange": "2026-11-10T16:23:31.508Z",
     "id": 1479
   },
   {
@@ -44419,26 +44441,6 @@
     ],
     "lastChange": "2026-10-26T12:49:28.481Z",
     "id": 2973
-  },
-  {
-    "name": "塞尔达传说旷野之息PC移植版v1.9.0官方中文全DLC 4K240帧",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/71c7741911af"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP4sxKUJcrmGJc7R0PK_HawVA1?pwd=zrg7"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/15nVZtNp_lE3lQ1i359MN4Q?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-10-26T16:10:50.625Z",
-    "id": 2974
   },
   {
     "name": "猎天使魔女2官方中文1.3.0全DLC PC移植版4K240帧+完美存档",
