@@ -21,7 +21,7 @@
     "id": 3018
   },
   {
-    "name": "塞尔达传说时之笛PC移植版v2.0.12官方中文全DLC 4K480帧 支持8倍帧生成",
+    "name": "塞尔达传说时之笛PC移植版v2.1.0官方中文全DLC 4K480帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
@@ -38,7 +38,7 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-10T14:35:31.625Z",
+    "lastChange": "2026-11-11T04:15:01.079Z",
     "id": 3023
   },
   {
@@ -905,8 +905,8 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261106官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
-    "shortName": "战争机器：事变日|v20261106",
+    "name": "战争机器：事变日高级版v20261110官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "shortName": "战争机器：事变日|v20261110",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
       {
@@ -923,7 +923,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-07T11:04:01.638Z",
+    "lastChange": "2026-11-11T09:56:20.893Z",
     "id": 2890
   },
   {
@@ -23922,7 +23922,7 @@
     "id": 1606
   },
   {
-    "name": "尼尔：机械纪元年度版v20261105官方中文全DLC+原声原画集 免安装",
+    "name": "尼尔：机械纪元 年度版v20261109官方中文全DLC+单独升级补丁+原声原画集",
     "shortName": "尼尔机械纪元",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -23940,7 +23940,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-07T17:14:06.498Z",
+    "lastChange": "2026-11-10T17:48:35.411Z",
     "id": 1607
   },
   {
@@ -45141,5 +45141,65 @@
     ],
     "lastChange": "2026-11-08T17:54:54.914Z",
     "id": 3030
+  },
+  {
+    "name": "剑星完整版v1.5.0豪华中文全DLC+国语配音+猎天使魔女服装（VBS2.0.1一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/738cc5c575f3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP68BQtSnuS13W5X6HXzLqQNA1?pwd=hxpy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IlrPMbHoUZJ6lN0DW1LXQw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T06:30:42.997Z",
+    "id": 3034
+  },
+  {
+    "name": "足球经理27官方中文v27.0.1全DLC+游戏内编辑器（VBS1.9一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/cb7b683307a1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP68mUZUJnOX_SeOUBZhid94A1?pwd=hc2k"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1gcTcF6B6QHXEUd5M1hnp0g?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T08:55:26.571Z",
+    "id": 3035
+  },
+  {
+    "name": "凯蒂猫的岛屿冒险 豪华版v2.18.1官方中文全DLC（VBS1.9一键启动）",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6bcb68af218a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP68r77Y737tCK-0RPneXp4KA1?pwd=vubd"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1H4YOC04siYKj7-Rywlzo3A?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T09:40:05.781Z",
+    "id": 3036
   }
 ]
