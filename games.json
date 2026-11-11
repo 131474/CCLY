@@ -42,6 +42,28 @@
     "id": 3023
   },
   {
+    "name": "宝可梦Pokopia官方中文PC移植版v2.0.1全DLC 4K360帧",
+    "shortName": "宝可梦Pokopia|PC移植版|4K360帧",
+    "cover": "https://q3.itc.cn/q_70/images03/20250912/45ae91014f4c432ebc27651ce32933fb.jpeg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/4913dde04540"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6AhqHuykMUD1xKmI0JJkowA1?pwd=tdzy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1f0r4SgBgRoxvmrqj-DXFGQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T17:48:30.828Z",
+    "id": 3038
+  },
+  {
     "name": "咚奇刚：蕉力全开PC移植版v3.2.0官方中文全DLC 4K240帧 解压即玩",
     "shortName": "咚奇刚蕉力全开|PC移植版|4K240帧|非模拟器|v3.2.0",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/2/2/7302cfaa29de0d1d8ae43db4f63a3c83.jpg",
@@ -104,6 +126,28 @@
     ],
     "lastChange": "2026-11-10T16:25:36.950Z",
     "id": 2974
+  },
+  {
+    "name": "塞尔达传说 王国之泪PC移植版v1.4.3-0.4.0官方中文4K240帧 最稳定版",
+    "shortName": "塞尔达传说|王国之泪|PC移植版|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/news/20220914/1663104992_905883.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/7c8172e10a8e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5QW4l9sQZQn3E5RWTBWk0xA1?pwd=9wy8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IjquFNaKlqSRP-jvQKZxHQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T12:16:45.399Z",
+    "id": 3005
   },
   {
     "name": "异度之刃2/异度神剑2 PC移植版v3.0.1官方中文全DLC 4K240帧",
@@ -487,7 +531,7 @@
     "id": 3011
   },
   {
-    "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC+修复补丁（VBS2.0.1一键启动）",
+    "name": "动物园之星2豪华版v1.0.10.1044119官方中文全DLC（VBS2.0.2一键启动）",
     "shortName": "动物园之星2|豪华版|v1.0.7.1031590|虚拟机",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/3219030/fbb25f7da79e75dc595a72534a53ac02bbec854f/header_schinese.jpg?t=1793011606",
     "links": [
@@ -501,11 +545,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16YaiMl4E0iYD3eiMZ9GOLA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ZsSnzqFPDg0CZ5GivDTJFQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-03T13:06:39.728Z",
+    "lastChange": "2026-11-11T15:45:42.116Z",
     "id": 2989
   },
   {
@@ -9737,7 +9781,7 @@
     "id": 507
   },
   {
-    "name": "潜水员戴夫v1.0.6.2125豪华中文全DLC+丛林DLC+原声原画集",
+    "name": "潜水员戴夫v1.0.6.2132豪华中文全DLC+丛林DLC+原声原画集",
     "shortName": "潜水员戴夫",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -9755,7 +9799,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-06T06:24:01.585Z",
+    "lastChange": "2026-11-11T14:08:55.156Z",
     "id": 508
   },
   {
@@ -33436,7 +33480,7 @@
     "id": 2349
   },
   {
-    "name": "奇迹时代4高级版v1.017.001.126767官方中文全DLC+银海DLC+单独升级补丁",
+    "name": "奇迹时代4高级版v1.017.004.127255官方中文全DLC+银海DLC+单独升级补丁",
     "links": [
       {
         "name": "夸克网盘",
@@ -33452,7 +33496,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-03T16:51:40.662Z",
+    "lastChange": "2026-11-11T16:33:17.931Z",
     "id": 2350
   },
   {
@@ -40163,7 +40207,7 @@
     "id": 2726
   },
   {
-    "name": "红色沙漠增强版v2.04.06豪华中文全DLC+未知征途DLC（VBS2.0.1一键启动）",
+    "name": "红色沙漠增强版v2.04.08豪华中文全DLC+单独升级补丁+未知征途DLC（VBS2.0.1一键启动）",
     "links": [
       {
         "name": "夸克网盘",
@@ -40179,7 +40223,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-05T15:58:09.277Z",
+    "lastChange": "2026-11-11T14:22:48.937Z",
     "id": 2729
   },
   {
@@ -41523,7 +41567,7 @@
     "id": 2800
   },
   {
-    "name": "另一个伊甸：起源v1.1.3官方中文全DLC",
+    "name": "另一个伊甸：起源v1.1.4官方中文全DLC+角色包3",
     "links": [
       {
         "name": "夸克网盘",
@@ -41539,7 +41583,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-16T14:03:36.410Z",
+    "lastChange": "2026-11-11T17:56:17.596Z",
     "id": 2803
   },
   {
@@ -44723,7 +44767,7 @@
     "id": 2992
   },
   {
-    "name": "动物园之星2豪华版v1.0.7.1031590官方中文全DLC 免安装 免重启版",
+    "name": "动物园之星2豪华版v1.0.10.1044119官方中文全DLC 免安装 免重启版",
     "links": [
       {
         "name": "夸克网盘",
@@ -44735,11 +44779,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1CLFG4Oc-vSImTcubyDUT-g?pwd=8888",
+        "url": "https://pan.baidu.com/s/19en_1P2ILkHyL2w1eo4ATg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-30T07:47:05.336Z",
+    "lastChange": "2026-11-11T17:18:31.035Z",
     "id": 2994
   },
   {
@@ -44941,26 +44985,6 @@
     ],
     "lastChange": "2026-11-06T16:07:51.448Z",
     "id": 3004
-  },
-  {
-    "name": "塞尔达传说 王国之泪PC移植版v1.4.3官方中文4K240帧 最稳定版",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/7c8172e10a8e"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5QW4l9sQZQn3E5RWTBWk0xA1?pwd=9wy8"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1YF9uOiTvanoqlxm6-0cuiA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-11-02T09:14:42.395Z",
-    "id": 3005
   },
   {
     "name": "星球大战：银河赛车手 豪华版v38591600官方中文全DLC+艺术画册 免安装 免重启版",
@@ -45201,5 +45225,25 @@
     ],
     "lastChange": "2026-11-11T09:40:05.781Z",
     "id": 3036
+  },
+  {
+    "name": "未知伤亡v1.0官方中文全DLC+原声音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/23f4b4f27730"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP69quDOv3OIqXCFSwvnRSBCA1?pwd=98gn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rfGje-lNy-qVi9WIWUHSfw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-11T13:51:57.439Z",
+    "id": 3037
   }
 ]
