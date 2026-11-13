@@ -42,6 +42,28 @@
     "id": 3023
   },
   {
+    "name": "马里奥赛车世界PC移植版v1.8.0官方中文全DLC 4K240帧 支持4倍帧生成",
+    "shortName": "马里奥赛车世界|PC移植版|4K240帧|4倍帧生成",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20250403/1743646529_630363.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/094074a850b4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6JJlR3oSMUD8LGan5sfIXbA1?pwd=22tt"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1-VNTRn7T0pqZAMbULeGCUg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-13T09:54:37.904Z",
+    "id": 3045
+  },
+  {
     "name": "宝可梦Pokopia官方中文PC移植版v2.0.1全DLC 4K360帧",
     "shortName": "宝可梦Pokopia|PC移植版|4K360帧",
     "cover": "https://q3.itc.cn/q_70/images03/20250912/45ae91014f4c432ebc27651ce32933fb.jpeg",
@@ -575,25 +597,25 @@
     "id": 2988
   },
   {
-    "name": "星球大战：银河赛车手 豪华版v38591600官方中文全DLC+艺术画册（VBS2.0一键启动）",
+    "name": "星球大战：银河赛车手 豪华版v38591600官方中文全DLC+艺术画册 voices38免安装解压即玩",
     "shortName": "星球大战|银河赛车手|v38591600|虚拟机",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4078430/ad01abbb5196432a7ec9cd4656fa2ce0f735c3d7/header_schinese.jpg?t=1791388584",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c31047782231"
+        "url": "https://pan.quark.cn/s/711c0a6e6aeb"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP54mlIV6mz0296gvSuMrpU9A1?pwd=p3s3"
+        "url": "https://pan.xunlei.com/s/VP6IYyYfpShsD-CZr1SfNq2PA1?pwd=f39z"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/13wXjJiCJSTc4VQ87qe7Y4Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1oDCO1rXZQH5InVfBIZVH7g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-29T03:58:13.938Z",
+    "lastChange": "2026-11-13T06:36:47.428Z",
     "id": 2990
   },
   {
@@ -45341,5 +45363,47 @@
     ],
     "lastChange": "2026-11-12T17:33:24.490Z",
     "id": 3042
+  },
+  {
+    "name": "（Switch2）轨道双子星：数字豪华版Orbitals Digital Deluxe官方中文",
+    "shortName": "Switch2|轨道双子星|数字豪华版",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20251213/1765588223_349493.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/5f43463ded60"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6JFHyEdaCLVySgWCYOEwOqA1?pwd=mhfv#"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1fq_xEIHOrOc1DsrvXK_y6g?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-13T09:34:18.536Z",
+    "id": 3043
+  },
+  {
+    "name": "（Switch2）星之卡比探索发现星耀世界Switch 2 Edition官方中文",
+    "shortName": "Switch2|星之卡比|探索发现|星耀世界",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/7/7/a387dac037ad16cd55b0225ce64e8a63.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2236c0207fdf"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6JJAn9UgzYdiie5eSLYRVwA1?pwd=mjc8"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qoMNSrQ9T2ZCGFyGXJswqw?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-13T09:51:09.303Z",
+    "id": 3044
   }
 ]
