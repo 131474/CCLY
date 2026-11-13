@@ -44,7 +44,6 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
         
-        /* ===== 解决闪烁：将大背景移入伪元素并固定 ===== */
         body {
             min-height: 100vh;
             background-color: #1a2a3a;
@@ -85,7 +84,6 @@
             }
         }
         
-        /* 首页大卡片 */
         .query-card {
             width: 95%;
             max-width: 1600px;
@@ -184,7 +182,6 @@
         hr { border: 0.5px solid rgba(80, 150, 220, 0.3); margin: 1rem 0; }
         .footer-note { text-align: center; font-size: 0.75rem; color: #6589a8; margin-top: 0.5rem; line-height: 1.3; }
         
-        /* ===== 模态框：去掉 backdrop-filter，修复重绘闪烁 ===== */
         .modal-overlay { 
             position: fixed; 
             top: 0; left: 0; width: 100%; height: 100%; 
@@ -201,7 +198,6 @@
         #collectionModal { z-index: 1001; }
         #libraryModal { z-index: 1000; }
         
-        /* 模态框容器：去掉 blur，使用纯色，防止 GPU 闪烁 */
         .modal-container { 
             background: rgba(248, 250, 252, 0.98); 
             width: 90%; max-width: 950px; max-height: 85vh; 
@@ -277,12 +273,6 @@
         .switch2-btn { background: linear-gradient(135deg, #ff4e50, #f9d423); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
         .pc-btn { background: linear-gradient(135deg, #00c6ff, #0072ff); color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
         
-        @media (max-width: 768px) {
-            .hot-title-bar { flex-direction: column; align-items: flex-start; }
-            .new-buttons-group { width: 100%; justify-content: flex-start; }
-            .hot-title::after { content: "（左滑显示更多）"; margin-left: 8px; font-size: 0.75rem; font-weight: normal; color: #ff5722; }
-        }
-        
         .hot-scroll { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: thin; }
         .hot-item { flex: 0 0 auto; width: 100px; text-align: center; cursor: pointer; transition: transform 0.15s; }
         .hot-item:hover { transform: translateY(-2px); }
@@ -295,35 +285,112 @@
         .pc { font-size: 0.75rem; color: #2b8dcc; margin-top: 0.2rem; }
         
         .zoom-red-notice { color: #ff0000; font-weight: bold; font-size: 0.85rem; margin-top: 12px; padding: 4px 16px; background: rgba(255,255,255,0.85); border-radius: 20px; text-align: center; line-height: 1.4; }
-        @media (max-width: 768px) {
-            .zoom-red-notice { font-size: 0.75rem; padding: 4px 10px; }
-        }
         
-        @media (hover: none) and (pointer: coarse), (max-width: 768px) {
+        /* ========================================================= */
+        /* ========== 手机端专项优化（< 768px） ========== */
+        /* ========================================================= */
+        @media (max-width: 768px) {
+            body { padding: 0.5rem 0.5rem; }
+            .query-card { padding: 1.5rem 1rem; border-radius: 1.5rem; gap: 0.5rem; }
+            .header { margin-bottom: 0.3rem; gap: 0.2rem; }
+            .game-house { font-size: 1.6rem; }
+            
+            /* 登录按钮和跑马灯压缩 */
+            .login-btn-header { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
+            .marquee-container { margin: 0.3rem 0; padding: 0.3rem 0; }
+            .marquee-text { font-size: 0.85rem; }
+            .publisher-line { font-size: 0.85rem; margin-bottom: 0.3rem; padding-left: 0.5rem; }
+            
+            /* 实时查询区极度瘦身 */
+            .search-hint { font-size: 0.8rem; margin-bottom: 0.3rem; padding: 0.1rem 0; border-bottom: none; }
+            .input-wrapper { margin: 0.3rem 0 0.5rem 0; border-width: 1px; }
+            .game-input { padding: 0.6rem 0 0.6rem 1rem; font-size: 0.9rem; }
+            .game-input::placeholder { font-size: 0.85rem; }
+            .query-btn { padding: 0 1rem; font-size: 0.85rem; }
+            .demo-hint { margin: 0 0 0.5rem 0; padding: 0; font-size: 0.75rem; gap: 0.4rem; }
+            .mock-link { padding: 0.15rem 0.5rem; font-size: 0.75rem; }
+            
+            /* 两个合集按钮居中铺满 */
+            .hot-title-bar { flex-direction: column; align-items: center; margin-bottom: 0.5rem; gap: 0.5rem; }
+            .hot-title { font-size: 1rem; }
+            .hot-title::after { content: ""; } 
+            .new-buttons-group { width: 100%; justify-content: center; gap: 10px; }
+            .special-btn { flex: 1; padding: 10px 0; font-size: 0.95rem; font-weight: 800; }
+            
+            /* 手机端热门区：5列自适应，图片与文字均不溢出，文字每行居中 */
+            .hot-scroll {
+                display: grid;
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                justify-content: center;
+                gap: 0.9rem 0.3rem;
+                overflow-x: visible !important;
+                padding-bottom: 0;
+                justify-items: stretch;
+                align-items: stretch;
+                width: 100%;
+            }
+            .hot-item {
+                width: 100%;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                text-align: center;
+                overflow: hidden;
+            }
+            .hot-item img {
+                display: block;
+                width: 100%;
+                max-width: 72px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 14px;
+                margin: 0 auto;
+                object-fit: cover;
+            }
+            .hot-item span {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: clamp(0.6rem, 2.4vw, 0.7rem);
+                line-height: 1.25;
+                min-height: 3.75em;
+                max-height: 3.75em;
+                width: 100%;
+                max-width: 100%;
+                margin-top: 0.25rem;
+                text-align: center;
+                word-break: break-word;
+                overflow-wrap: anywhere;
+                white-space: normal;
+                box-sizing: border-box;
+            }
+            
+            /* 底部工具按钮压缩 */
+            .tool-buttons { margin: 0.5rem 0 1rem 0; gap: 0.5rem; }
+            .tool-btn { min-width: 80px; padding: 0.4rem 0.5rem; font-size: 0.8rem; }
             .Dict { display: inline-block; } .pc { display: none; }
+            
+            /* 弹窗内排版 */
             .game-title-row { flex-direction: column; align-items: flex-start; }
             .update-date-badge { align-self: flex-end; margin-top: 0.2rem; }
-            .game-name { width: 100%; } .game-stats { width: 100%; justify-content: flex-start; }
+            .game-name { width: 100%; } 
+            .game-stats { width: 100%; justify-content: flex-start; }
             .sort-buttons { flex-wrap: wrap; gap: 0.5rem; }
             .header-right { flex-direction: column; width: 100%; gap: 0.5rem; }
             .library-btn-group { width: 100%; }
             #gameLibraryBtn { width: 100%; justify-content: center; padding: 0.9rem 1.6rem; font-size: 1.2rem; min-width: 150px; }
-            .today-update-badge { font-size: 0.75rem; padding: 0.1rem 0.6rem; }
-            .login-btn-header { padding: 0.6rem 1rem; font-size: 0.9rem; width: 100%; text-align: center; }
-            @media (max-width: 400px) {
-                #gameLibraryBtn { padding: 0.7rem 1.2rem; font-size: 1.1rem; min-width: 130px; }
-                .login-btn-header { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
-                .header-right { gap: 0.3rem; }
-            }
-            .game-input { padding: 1rem 0 1rem 1.4rem; font-size: 1.05rem; }
-            .game-input::placeholder { font-size: 0.95rem; }
-            .query-btn { padding: 0 1.4rem; font-size: 1rem; }
             .modal-qr-group { gap: 0.5rem; }
             .modal-qr-item { max-width: 85px; margin: 0 auto; }
             .qr-code-box { max-width: 85px; margin: 0 auto; }
             .qr-label { font-size: clamp(0.75rem, 3vw, 0.85rem); padding: 0.2rem 0.5rem; white-space: nowrap; max-width: 85px; }
             .netdisk-icon-fallback { font-size: 1.4rem; }
+            .zoom-red-notice { font-size: 0.75rem; padding: 4px 10px; }
         }
+        
         @media (min-width: 500px) and (max-width: 768px) {
             .modal-qr-group { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 0.4rem; }
             .modal-qr-item { flex: 0 0 auto; min-width: 70px; max-width: 70px; margin: 0; }
@@ -331,6 +398,7 @@
             .qr-label { font-size: 0.75rem; max-width: 70px; }
         }
         
+        /* ========== 电脑端保持原样（> 768px），未做任何改动 ========== */
         @media (min-width: 769px) {
             .hot-scroll {
                 display: grid;
@@ -380,7 +448,6 @@
         .like-toast { position: fixed; background: rgba(0,0,0,0.7); color: #ffdd99; padding: 4px 10px; border-radius: 20px; font-size: 12px; white-space: nowrap; pointer-events: none; z-index: 10000; animation: floatUp 0.8s ease-out forwards; }
         @keyframes floatUp { 0% { opacity: 0; transform: translateY(0); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-30px); } }
         
-        /* 二维码放大弹窗：去掉 blur */
         .zoom-modal-overlay { 
             position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
             background: rgba(10, 25, 40, 0.85); 
@@ -475,7 +542,7 @@
         <span style="opacity:0.9;">⚡试试查询：</span>
         <span class="mock-link" data-demo="Switch2">Switch2</span>
         <span class="mock-link" data-demo="PC移植版">PC移植版</span>
-        <span class="mock-link" data-demo="时之笛重制版">时之笛重制版</span>
+        <span class="mock-link" data-demo="时之笛">时之笛</span>
         <span class="mock-link" data-demo="最终幻想">最终幻想</span>
         <span class="mock-link" data-demo="战神">战神</span>
     </div>
@@ -1378,13 +1445,18 @@
         if (!gameDB.length) { hotSection.style.display = 'none'; return; }
         const hotGames = gameDB.slice(0, 20);
         if (!hotGames.length) { hotSection.style.display = 'none'; return; }
+        const isMobile = window.innerWidth <= 768;
         hotScroll.innerHTML = hotGames.map((game, idx) => {
             let rawName = game.shortName || game.name;
             let displayName = rawName;
-            if (rawName.includes('|')) displayName = rawName.split('|').join('<br>');
-            else if (rawName.length > 5) {
-                const mid = Math.ceil(rawName.length / 2);
-                displayName = rawName.slice(0, mid) + '<br>' + rawName.slice(mid);
+            if (isMobile) {
+                displayName = rawName.replace(/\|/g, ' ');
+            } else {
+                if (rawName.includes('|')) displayName = rawName.split('|').join('<br>');
+                else if (rawName.length > 5) {
+                    const mid = Math.ceil(rawName.length / 2);
+                    displayName = rawName.slice(0, mid) + '<br>' + rawName.slice(mid);
+                }
             }
             const coverUrl = game.cover || 'https://via.placeholder.com/80x80?text=🎮';
             const loadingAttr = idx < 3 ? 'eager' : 'lazy';
@@ -1392,9 +1464,9 @@
             if (idx === 0) medalClass = ' gold';
             else if (idx === 1) medalClass = ' silver';
             else if (idx === 2) medalClass = ' bronze';
-            return `<div class="hot-item${medalClass}" data-name="${escapeHtml(game.name)}">
+            return `<div class="hot-item${medalClass}" data-name="${escapeHtml(game.name)}" title="${escapeHtml(rawName)}">
                         <img src="${coverUrl}" alt="${escapeHtml(rawName)}" loading="${loadingAttr}" decoding="async" onerror="this.src='https://via.placeholder.com/80x80?text=🎮'">
-                        <span>${displayName}</span>
+                        <span title="${escapeHtml(rawName)}">${displayName}</span>
                     </div>`;
         }).join('');
         hotSection.style.display = 'block';
@@ -1485,6 +1557,14 @@
         if (searchPopBtn) { searchPopBtn.addEventListener('click', () => { currentSearchSort = 'popularity'; loadGamePage(1); }); }
 
         updateSortButtonsUI();
+
+        let hotResizeTimer = null;
+        window.addEventListener('resize', () => {
+            clearTimeout(hotResizeTimer);
+            hotResizeTimer = setTimeout(() => {
+                if (dataLoaded) renderHotGames();
+            }, 200);
+        });
     }
 
     loadStatsFromLocal();
