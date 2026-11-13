@@ -21,7 +21,7 @@
     "id": 3018
   },
   {
-    "name": "塞尔达传说时之笛PC移植版v2.1.0官方中文全DLC 4K480帧 支持8倍帧生成",
+    "name": "塞尔达传说时之笛PC移植版v2.2.0-rc.1官方中文全DLC 4K480帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
@@ -38,8 +38,96 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-11T04:15:01.079Z",
+    "lastChange": "2026-11-13T12:19:24.637Z",
     "id": 3023
+  },
+  {
+    "name": "异界锁链PC移植版v1.0.1官方中文全DLC 4K240帧",
+    "shortName": "异界锁链|PC移植版|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20190807/1565161116_466517.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/61f8c17fc481"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6L2o7CHOGEUFOgp560EhRdA1?pwd=au4i"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_rBkkXbPZ3N8BK-_ks_0jg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-13T18:00:58.324Z",
+    "id": 3049
+  },
+  {
+    "name": "喷射战士：涂击队PC移植版v0.2.6官方中文全DLC 4K240帧",
+    "shortName": "喷射战士涂击队|PC移植版|4K240帧",
+    "cover": "https://img1.gamersky.com/upimg/pic/2025/06/11/202506110927231053.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/f755ed608bf5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6KvAq5lXslo0iSuodgu6UzA1?pwd=tn2h"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Jr_nCEJkt03lG1ylczbcug?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-13T17:21:39.564Z",
+    "id": 3048
+  },
+  {
+    "name": "马里奥网球：狂热PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "shortName": "马里奥网球狂热|PC移植版|4K240帧",
+    "cover": "https://tse1.mm.bing.net/th/id/OIP.dnt6yTl4IgFsd3eGLXtUsAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d55ce90bf33a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6KXUXoCBNNR9UP7cmiGMhjA1?pwd=ic6h"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rSii-NQQpL3gcZA3iptZEQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-13T15:37:24.222Z",
+    "id": 3047
+  },
+  {
+    "name": "宝可梦传说Z-A官方中文PC移植版v2.0.2全DLC 4K240帧",
+    "shortName": "宝可梦传说ZA|PC移植版|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20240228/1709089528_832333.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/e8eba2ac06b1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6JojCtodNO4gr8JKBIjbAVA1?pwd=tf64"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1x2xyzWbuzkmO_nGU25nNHA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-13T12:14:05.009Z",
+    "id": 3046
   },
   {
     "name": "马里奥赛车世界PC移植版v1.8.0官方中文全DLC 4K240帧 支持4倍帧生成",
@@ -2572,8 +2660,8 @@
     "id": 224
   },
   {
-    "name": "杀戮尖塔2 v0.111.0 官方中文（PC+安卓+苹果ios） 联机+修改器+MOD合集",
-    "shortName": "杀戮尖塔2|0.111.0",
+    "name": "杀戮尖塔2 v0.113.0 官方中文（PC+安卓+苹果ios） 联机+修改器+MOD合集",
+    "shortName": "杀戮尖塔2|v0.113.0",
     "cover": "https://doc-fd.zol-img.com.cn/t_s2000x2000/g7/M00/0B/02/ChMkLGdbjCiILbNIAAMf7UEMSokAAmsfQD2f2UAAyAF841.jpg",
     "links": [
       {
@@ -2586,11 +2674,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/11CGqGt-h9cX6AuGHG5piMQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/13jWjzgqGZRx5HGGc8M88wg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-14T10:23:00.751Z",
+    "lastChange": "2026-11-13T17:45:11.524Z",
     "id": 36
   },
   {
@@ -25067,7 +25155,7 @@
     "id": 1688
   },
   {
-    "name": "纪元 117：罗马和平黄金版v2.1.0.1711091 豪华中文全DLC（VBS1.9一键启动）",
+    "name": "纪元117：罗马和平 黄金版v3.0.1733841豪华中文全DLC+三角洲的黎明DLC（VBS2.0.2一键启动）",
     "links": [
       {
         "name": "夸克网盘",
@@ -25079,11 +25167,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1T9WEsYpQveDwkrvKajSoaQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ZI9zMOes2zQcUmgCaK-8Lg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-02T18:02:44.154Z",
+    "lastChange": "2026-11-13T16:55:01.362Z",
     "id": 1689
   },
   {
@@ -30305,11 +30393,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1sirgBSN8vh_3Hc7etu9cfA?pwd=8888",
+        "url": "https://pan.baidu.com/s/1LZywtUOIMoPyTXxp_wzO_g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-19T03:58:41.331Z",
+    "lastChange": "2026-11-13T16:50:00.889Z",
     "id": 2131
   },
   {
@@ -44350,6 +44438,7 @@
   },
   {
     "name": "声名狼藉：次子PC移植版 v20261022官方中文全DLC 免安装解压即玩",
+    "cover": "https://imgs.gamersky.com/ku/2017/ku_infamous.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44410,6 +44499,7 @@
   },
   {
     "name": "神秘海域：德雷克三部曲合集PC移植版v0.6.2官方中文全DLC 4K120帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180604/1528094274_153879.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44452,6 +44542,7 @@
   },
   {
     "name": "圣兽之王PC移植版4K60帧v1.0.5官方中文全DLC",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2024/02/22/2024022292539920.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44472,6 +44563,7 @@
   },
   {
     "name": "教团：1886官方中文PC移植版v0.7.8全DLC 4K240帧",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2014/06/03/20146318424122031024.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44574,6 +44666,7 @@
   },
   {
     "name": "勇者斗恶龙4被选中的人们 重制版PC移植版v1.4A官方中文全DLC",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180531/1527754144_262105.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44616,6 +44709,7 @@
   },
   {
     "name": "旺达与巨像 重制版PC移植版v1.01官方中文全DLC 4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180719/1531981452_325695.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44636,6 +44730,8 @@
   },
   {
     "name": "塞尔达传说 天空之剑HD高清PC移植版v2.0.2官方中文全DLC 4K240帧",
+    "shortName": "塞尔达传说|天空之剑|PC移植版|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20210218/1613638806_853973.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44964,6 +45060,7 @@
   },
   {
     "name": "怪物猎人GU官方中文PC移植版v1.4.0-0.13.0全DLC 4K240帧",
+    "cover": "https://imgs.gamersky.com/ku/2017/ku_monsterhunterxx.jpg",
     "links": [
       {
         "name": "夸克网盘",
