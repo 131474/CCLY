@@ -42,6 +42,28 @@
     "id": 3023
   },
   {
+    "name": "战神升天PC移植版v0.1.26官方中文全DLC 4K120帧 帧生成",
+    "shortName": "战神升天|PC移植版|官方中文|4K120帧",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2026/04/30/2026043034817366.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/332e6174de6f"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6QMefqW38Zr7qhc_RSYOebA1?pwd=g547"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1EQG6LneqI4_y8PNjizM_tQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-14T18:46:36.323Z",
+    "id": 3055
+  },
+  {
     "name": "超级马里奥：奥德赛PC移植版v1.4.1官方中文全DLC 4K240帧",
     "shortName": "马里奥奥德赛|PC移植版|4K240帧",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180719/1531980173_716207.png",
@@ -7928,7 +7950,7 @@
     "id": 364
   },
   {
-    "name": "僵尸世界大战：劫后余生v20261005豪华中文全DLC+行尸走肉联动DLC",
+    "name": "僵尸世界大战：劫后余生v2.51豪华中文全DLC+佛罗里达章节DLC",
     "shortName": "僵尸世界大战",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -7942,11 +7964,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1TvPROX6Aeh79eD9H2pn60A?pwd=8888",
+        "url": "https://pan.baidu.com/s/1tpJaSGJQAGc92e1qpcMDTA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-06T12:06:34.590Z",
+    "lastChange": "2026-11-14T17:08:11.037Z",
     "id": 365
   },
   {
@@ -45242,7 +45264,7 @@
     "id": 3026
   },
   {
-    "name": "纪元 117：罗马和平黄金版v2.1.0.1711091 豪华中文全DLC+国语配音 免重启版",
+    "name": "纪元117：罗马和平 黄金版v3.0.1733841豪华中文全DLC+三角洲的黎明DLC 免重启版",
     "links": [
       {
         "name": "夸克网盘",
@@ -45254,11 +45276,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/12rHJvCigDz3NZHDyeCy19w?pwd=8888",
+        "url": "https://pan.baidu.com/s/1J7iEWaiwhXj74zMIc3eRlA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-08T12:43:58.940Z",
+    "lastChange": "2026-11-14T18:27:45.993Z",
     "id": 3027
   },
   {
@@ -45564,5 +45586,45 @@
     ],
     "lastChange": "2026-11-14T13:21:06.551Z",
     "id": 3052
+  },
+  {
+    "name": "艾诺提亚：失落之歌v1.011.29684官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/82a881508488"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6PzOOJcwDI3zZjmtENxVFOA1?pwd=xphp"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xIzwLwAnAzBvJgruLbXopA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-14T17:01:52.967Z",
+    "id": 3053
+  },
+  {
+    "name": "剑星完整版v1.5.0豪华中文全DLC+国语配音+猎天使魔女服装 免重启版",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/2a4d4a4c00f5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6QKtuOpShsD-CZr1SnapVKA1?pwd=fvfb"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Qi8fsZLQytjlDJWSfysocA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-14T18:40:19.831Z",
+    "id": 3054
   }
 ]
