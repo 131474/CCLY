@@ -21,7 +21,7 @@
     "id": 3018
   },
   {
-    "name": "塞尔达传说时之笛PC移植版v2.2.0-rc.1官方中文全DLC 4K480帧 支持8倍帧生成",
+    "name": "塞尔达传说时之笛PC移植版v2.3.1官方中文全DLC 4K1920帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
@@ -38,8 +38,51 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-13T12:19:24.637Z",
+    "lastChange": "2026-11-15T11:00:02.974Z",
     "id": 3023
+  },
+  {
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.0官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.0",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/388255bbd92c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6-YleEuEZQzL3FpAq1v0XZA1?pwd=t8ys"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mU4OUcT-gxjWYYwRFnUB-w?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-15T10:51:02.358Z",
+    "id": 3012
+  },
+  {
+    "name": "战神3重制版 v3.2.0正式版官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
+    "shortName": "战神3|PC移植版|v3.2.0|8K240帧",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/800bba4d8e77"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP3orNre9obWxD5_DeyCq5UrA1?pwd=22cy"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iTcKfwyAa8yze2hoPHxGGw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-15T10:27:54.574Z",
+    "id": 2918
   },
   {
     "name": "战神升天PC移植版v0.1.26官方中文全DLC 4K120帧 帧生成",
@@ -237,27 +280,6 @@
     ],
     "lastChange": "2026-11-09T10:29:07.593Z",
     "id": 3031
-  },
-  {
-    "name": "火焰纹章：万缕千丝PC移植版v1.1.1官方中文全DLC 4K240帧",
-    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|非模拟器",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/388255bbd92c"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6-YleEuEZQzL3FpAq1v0XZA1?pwd=t8ys"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1mU4OUcT-gxjWYYwRFnUB-w?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-09T13:46:44.687Z",
-    "id": 3012
   },
   {
     "name": "塞尔达传说旷野之息PC移植版v1.9.0-0.5.0官方中文全DLC 4K360帧",
@@ -925,28 +947,6 @@
     ],
     "lastChange": "2026-11-06T14:44:42.930Z",
     "id": 2933
-  },
-  {
-    "name": "战神3重制版 v3.1.0t1正式版官方中文PC移植版8K240帧+安卓移植版 启动器完全中文化",
-    "shortName": "战神3|PC移植版|v3.1.0t1",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20231030/14/30/1480d30e9cd80362e707eb1a5ac3e282.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/800bba4d8e77"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP3orNre9obWxD5_DeyCq5UrA1?pwd=22cy"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1iTcKfwyAa8yze2hoPHxGGw?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-11-10T05:29:06.293Z",
-    "id": 2918
   },
   {
     "name": "全面战争：幕府将军2完全版v1.0.0官方中文全DLC+国语配音",
@@ -29879,6 +29879,7 @@
   },
   {
     "name": "塞尔达传说黄昏公主PC移植版dusklight（暮色之光）",
+    "cover": "https://img.3dmgame.com/uploads/allimg/170607/321-1F60G95224.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -33258,6 +33259,7 @@
   },
   {
     "name": "塞尔达传说：众神的三角力量1PC移植版汉化中文",
+    "cover": "https://moegirl.uk/images/a/ad/Super_Famicom_JP_-_The_Legend_of_Zelda_A_Link_to_the_Past.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -42581,7 +42583,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界v1.7.5000 豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界v1.7.5005 豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -42597,7 +42599,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-06T06:02:40.061Z",
+    "lastChange": "2026-11-15T05:28:22.526Z",
     "id": 2849
   },
   {
@@ -42941,7 +42943,7 @@
     "id": 2874
   },
   {
-    "name": "（Switch）守墓人2 Graveyard Keeper 2 官方中文本体+v1.0.2升补",
+    "name": "（Switch）守墓人2 Graveyard Keeper 2 官方中文v1.0.5+1DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -42953,11 +42955,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1eLF1nelD6WLUg8EznZhrfQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1VCt7Xsz9fv7St0xOt486ZA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-30T10:08:34.784Z",
+    "lastChange": "2026-11-15T05:10:02.022Z",
     "id": 2875
   },
   {
@@ -44482,7 +44484,7 @@
   },
   {
     "name": "声名狼藉：次子PC移植版 v20261022官方中文全DLC 免安装解压即玩",
-    "cover": "https://imgs.gamersky.com/ku/2017/ku_infamous.jpg",
+    "cover": "https://img.3dmgame.com/uploads/allimg/140130/235_140130201452_1_lit.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -44648,6 +44650,7 @@
   },
   {
     "name": "猎天使魔女2官方中文1.3.0全DLC PC移植版4K240帧+完美存档",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180720/1532078221_347858.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -45104,7 +45107,7 @@
   },
   {
     "name": "怪物猎人GU官方中文PC移植版v1.4.0-0.13.0全DLC 4K240帧",
-    "cover": "https://imgs.gamersky.com/ku/2017/ku_monsterhunterxx.jpg",
+    "cover": "https://image.9game.cn/2020/4/24/150183821.jpg",
     "links": [
       {
         "name": "夸克网盘",
