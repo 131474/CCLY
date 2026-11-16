@@ -107,7 +107,7 @@
     "id": 2918
   },
   {
-    "name": "战神升天PC移植版v0.1.26官方中文全DLC 4K120帧 帧生成",
+    "name": "战神升天PC移植版v0.1.34官方中文全DLC 4K120帧 帧生成",
     "shortName": "战神升天|PC移植版|官方中文|4K120帧",
     "cover": "https://imgs.ali213.net/oday/uploadfile/2026/04/30/2026043034817366.jpg",
     "links": [
@@ -125,7 +125,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-14T18:46:36.323Z",
+    "lastChange": "2026-11-16T06:21:46.149Z",
     "id": 3055
   },
   {
@@ -43845,7 +43845,7 @@
     "id": 2927
   },
   {
-    "name": "（Switch）恶魔城：贝尔蒙特的诅咒Castlevania Belmont's Curse官方中文本体+v1.1.0升补",
+    "name": "（Switch）恶魔城：贝尔蒙特的诅咒 午夜版Castlevania Belmont's Curse官方中文v1.1.4+2DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -43857,11 +43857,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1zUGrw5mxBRpzb1ztq5UEyw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1SoUfdqGy2sLrG-cBYE3LQg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-14T14:33:49.728Z",
+    "lastChange": "2026-11-16T06:51:58.294Z",
     "id": 2928
   },
   {
@@ -45632,7 +45632,7 @@
   },
   {
     "name": "（Switch2）极速融合 Fast Fusion官方中文v1.4",
-    "cover": "https://bkimg.cdn.bcebos.com/pic/aa18972bd40735fae6cdd85fb80b18b30f2443a7a299?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080",
+    "cover": "https://imgs.gamersky.com/upimg/new_preview/2025/05/30/origin_b_202505301419597779.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -45652,7 +45652,7 @@
   },
   {
     "name": "（Switch2）黄昏血族 The Duskbloods官方中文",
-    "cover": "https://imgs.gamersky.com/upimg/new_preview/2025/04/03/origin_b_202504031109148195.jpg",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2025/12/16/2025121645515810.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -45669,5 +45669,25 @@
     ],
     "lastChange": "2026-11-15T15:56:33.304Z",
     "id": 3057
+  },
+  {
+    "name": "集合啦动物森友会PC移植版v3.0.3+3DLC 4K240帧",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b0f39a3d3fa7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6XxLHiNrIIfyLJjsfRIgTVA1?pwd=t8sv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12vL2eFVy2OyIPTOzYd3FnA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-16T06:08:24.711Z",
+    "id": 3058
   }
 ]
