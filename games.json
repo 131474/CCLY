@@ -42,6 +42,50 @@
     "id": 3023
   },
   {
+    "name": "宝可梦剑盾PC移植版v1.3.2+2DLC官方中文 4K60帧",
+    "shortName": "宝可梦剑盾|PC移植版|v1.3.2+2DLC|4K60帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20190802/1564708787_271757.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d105c7c3e9d5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6YGk5G21ETznp0znRDDXS3A1?pwd=gicr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12wxsEjmcar3n8IwNLPIBcw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-16T07:36:00.584Z",
+    "id": 3059
+  },
+  {
+    "name": "集合啦动物森友会PC移植版v3.0.3+3DLC官方中文 4K240帧",
+    "shortName": "动物森友会|PC移植版|v3.0.3+3DLC|4K240帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbpicfirst/20200323/1584941778_662343.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b0f39a3d3fa7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6XxLHiNrIIfyLJjsfRIgTVA1?pwd=t8sv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12vL2eFVy2OyIPTOzYd3FnA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-16T07:39:42.223Z",
+    "id": 3058
+  },
+  {
     "name": "宇宙机器人真PC移植版v1.0.9官方中文全DLC 4K240帧 支持帧生成",
     "shortName": "宇宙机器人|PC移植版|4K240帧|帧生成",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20240607/1717730453_552599.jpg",
@@ -45632,7 +45676,7 @@
   },
   {
     "name": "（Switch2）极速融合 Fast Fusion官方中文v1.4",
-    "cover": "https://imgs.gamersky.com/upimg/new_preview/2025/05/30/origin_b_202505301419597779.jpg",
+    "cover": "https://img1.wywyx.com/uploads/allimg/250409/38-250409111G9.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -45669,25 +45713,5 @@
     ],
     "lastChange": "2026-11-15T15:56:33.304Z",
     "id": 3057
-  },
-  {
-    "name": "集合啦动物森友会PC移植版v3.0.3+3DLC 4K240帧",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b0f39a3d3fa7"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6XxLHiNrIIfyLJjsfRIgTVA1?pwd=t8sv"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/12vL2eFVy2OyIPTOzYd3FnA?pwd=8888",
-        "code": "8888"
-      }
-    ],
-    "lastChange": "2026-11-16T06:08:24.711Z",
-    "id": 3058
   }
 ]
