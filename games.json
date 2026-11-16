@@ -21,8 +21,8 @@
     "id": 3018
   },
   {
-    "name": "塞尔达传说时之笛PC移植版v2.3.1官方中文全DLC 4K1920帧 支持8倍帧生成",
-    "shortName": "塞尔达传说|时之笛 重制版|PC移植版|4K480帧|支持8倍帧生成",
+    "name": "塞尔达传说时之笛PC移植版v2.3.2官方中文全DLC 4K1920帧 支持8倍帧生成",
+    "shortName": "塞尔达传说|时之笛 重制版|v2.3.2|PC移植版|4K1920帧|8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
       {
@@ -38,8 +38,30 @@
         "url": "https://pan.baidu.com/s/1AoNGuIHsYIOq29NmR-G-Og?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-15T11:00:02.974Z",
+    "lastChange": "2026-11-16T10:39:55.295Z",
     "id": 3023
+  },
+  {
+    "name": "宝可梦朱紫PC移植版v4.0.0+2DLC官方中文 4K240帧",
+    "shortName": "宝可梦朱紫|PC移植版|v4.0.0+2DLC|4K240帧",
+    "cover": "https://imgs.ali213.net/Spe/2023/02/17/20230217115659469.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/eb5320f598bd"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6Z64PFBdqjqDZBv1jgw3-QA1?pwd=dtty"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ChQ-KwMTG-dEFWz9A1jnbA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-16T11:29:04.462Z",
+    "id": 3060
   },
   {
     "name": "宝可梦剑盾PC移植版v1.3.2+2DLC官方中文 4K60帧",
@@ -2748,8 +2770,8 @@
     "id": 1901
   },
   {
-    "name": "魔法门之英雄无敌：上古纪元v0.82.08官方中文全DLC+联机补丁",
-    "shortName": "魔法门英雄无敌|上古纪元|v0.82.08",
+    "name": "魔法门之英雄无敌：上古纪元v0.82.10官方中文全DLC+联机补丁",
+    "shortName": "魔法门英雄无敌|上古纪元|v0.82.10",
     "cover": "https://ts2.tc.mm.bing.net/th/id/OIP-C.P8EPdYxe18-_n19MujvUFAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "links": [
       {
@@ -2766,7 +2788,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-05T12:23:25.370Z",
+    "lastChange": "2026-11-16T10:30:53.224Z",
     "id": 224
   },
   {
