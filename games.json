@@ -42,6 +42,28 @@
     "id": 3012
   },
   {
+    "name": "转运军团 正式版v1.0.1Fix官方中文全DLC",
+    "shortName": "转运军团|正式版|v1.0.1Fix",
+    "cover": "https://imgs.ali213.net/Spe/2026/11/17/202611175505573.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/466f65a46c11"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6jzHlG2yXTTyKh4vq1_8TNA1?pwd=i734"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1oDhdUhC3aRbGcCWSX6Q6mw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-18T18:51:23.006Z",
+    "id": 3068
+  },
+  {
     "name": "喷射战士3官方中文PC移植版v11.3.0全DLC 4K240帧",
     "shortName": "喷射战士3|PC移植版|4K240帧",
     "cover": "https://imgs.gamersky.com/upimg/new_preview/2021/02/18/origin_b_202102181036182017.jpg",
@@ -45863,5 +45885,25 @@
     ],
     "lastChange": "2026-11-18T08:40:08.218Z",
     "id": 3064
+  },
+  {
+    "name": "（Switch）泪之境Tearscape官方中文本体+1.0.2升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d7d3e2219f55"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6jmWyFNvUoOJTZ2r0BakG1A1?pwd=9nah"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1tt4nZpABvHqnGG_YErjyQw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-18T18:00:55.427Z",
+    "id": 3067
   }
 ]
