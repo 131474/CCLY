@@ -1,26 +1,5 @@
 [
   {
-    "name": "【游戏必用】永久免费加速器",
-    "shortName": "永久免费加速器|附兑换码",
-    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b658fe92d528"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-05T11:30:37.595Z",
-    "id": 3018
-  },
-  {
     "name": "塞尔达传说时之笛PC移植版v2.3.2官方中文全DLC 4K1920帧 支持8倍帧生成",
     "shortName": "塞尔达传说|时之笛 重制版|v2.3.2|PC移植版|4K1920帧|8倍帧生成",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -40,6 +19,49 @@
     ],
     "lastChange": "2026-11-16T10:39:55.295Z",
     "id": 3023
+  },
+  {
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.6官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.6",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/388255bbd92c"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6-YleEuEZQzL3FpAq1v0XZA1?pwd=t8ys"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1mU4OUcT-gxjWYYwRFnUB-w?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-18T13:34:46.589Z",
+    "id": 3012
+  },
+  {
+    "name": "喷射战士3官方中文PC移植版v11.3.0全DLC 4K240帧",
+    "shortName": "喷射战士3|PC移植版|4K240帧",
+    "cover": "https://imgs.gamersky.com/upimg/new_preview/2021/02/18/origin_b_202102181036182017.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c9be5cfcc63e"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6j6kDDlOOuaaYSL3069tUQA1?pwd=3y2a"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1qfZ5N2bEpjjR2lKS2K06hA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-18T14:46:31.526Z",
+    "id": 3066
   },
   {
     "name": "王国保卫战6：新启程v2.00.022官方中文全DLC+皇室大劫案",
@@ -64,25 +86,48 @@
     "id": 2852
   },
   {
-    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.4官方中文全DLC 4K240帧",
-    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.4",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "name": "马里奥赛车8豪华版PC移植版v4.0.1全DLC+联机 4K240帧",
+    "shortName": "马里奥赛车8|PC移植版|4K240帧",
+    "cover": "https://imgs.gamersky.com/ku/2017/ku_mariokart8deluxe.jpg",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/388255bbd92c"
+        "url": "https://pan.quark.cn/s/c3890ac27fdb"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6-YleEuEZQzL3FpAq1v0XZA1?pwd=t8ys"
+        "url": "https://pan.xunlei.com/s/VP6iqVtWPX0WiB62BD3DXDyhA1?pwd=sees"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1mU4OUcT-gxjWYYwRFnUB-w?pwd=8888"
+        "url": "https://pan.baidu.com/s/1zeqYDSRCIOANyJY2nEd0sQ?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-11-17T17:05:56.876Z",
-    "id": 3012
+    "lastChange": "2026-11-18T13:32:45.866Z",
+    "id": 3065
+  },
+  {
+    "name": "宝可梦剑盾PC移植版v1.3.2+2DLC官方中文 4K60帧",
+    "shortName": "宝可梦剑盾|PC移植版|v1.3.2+2DLC|4K60帧",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20190802/1564708787_271757.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d105c7c3e9d5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6YGk5G21ETznp0znRDDXS3A1?pwd=gicr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12wxsEjmcar3n8IwNLPIBcw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-16T07:36:00.584Z",
+    "id": 3059
   },
   {
     "name": "异度之刃X异度神剑X决定版PC移植版v2.0.0官方中文全DLC 4K240帧",
@@ -172,26 +217,25 @@
     "id": 2991
   },
   {
-    "name": "宝可梦剑盾PC移植版v1.3.2+2DLC官方中文 4K60帧",
-    "shortName": "宝可梦剑盾|PC移植版|v1.3.2+2DLC|4K60帧",
-    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20190802/1564708787_271757.jpg",
+    "name": "【游戏必用】永久免费加速器",
+    "shortName": "永久免费加速器|附兑换码",
+    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/d105c7c3e9d5"
+        "url": "https://pan.quark.cn/s/b658fe92d528"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6YGk5G21ETznp0znRDDXS3A1?pwd=gicr"
+        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/12wxsEjmcar3n8IwNLPIBcw?pwd=8888",
-        "code": "8888"
+        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-16T07:36:00.584Z",
-    "id": 3059
+    "lastChange": "2026-11-05T11:30:37.595Z",
+    "id": 3018
   },
   {
     "name": "集合啦动物森友会PC移植版v3.0.3+3DLC官方中文 4K240帧",
@@ -3369,7 +3413,7 @@
     "id": 29
   },
   {
-    "name": "（Switch）喷射战士3 Splatoon3官方中文本体+v11.3.0升补+3DLC",
+    "name": "（Switch）喷射战士3 Splatoon3官方中文v12.0.0+3DLC",
     "shortName": "喷射战士3官",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -3383,11 +3427,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Zz_-CCjFJFMFbtqAt051gg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1tmi6G10iLYhBHqE_EEUIbQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-08-20T07:35:50.602Z",
+    "lastChange": "2026-11-18T10:30:20.816Z",
     "id": 30
   },
   {
@@ -4761,25 +4805,25 @@
     "id": 130
   },
   {
-    "name": "十字军之王3豪华版v1.20.1.2官方中文DLC+唯独上帝DLC+联机补丁+漫画集",
+    "name": "十字军之王3豪华版v1.21.0官方中文DLC+丝绸和白银DLC+单独升级补丁+联机补丁+漫画集",
     "shortName": "十字军之王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6ac8df3a5219"
+        "url": "https://pan.quark.cn/s/c7ae2c276052"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP1BEmTByw6hBhpBcKwyaPw7A1?pwd=idpa"
+        "url": "https://pan.xunlei.com/s/VP6h5YFp9JWCpHwHEWnri4fDA1?pwd=w2sd"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1w7UDGfTh2ZZAdoKZRPLjeQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1kr46ECm1sAWjVRZsapFQGg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-21T14:38:36.999Z",
+    "lastChange": "2026-11-18T05:35:07.101Z",
     "id": 131
   },
   {
@@ -38855,7 +38899,7 @@
     "id": 2632
   },
   {
-    "name": "（Switch）忍者神龟 斯普林特的命运Teenage Mutant官方中文v2.0.3+4DLC",
+    "name": "（Switch）忍者神龟 斯普林特的命运Teenage Mutant官方中文v2.1.1+4DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -38867,11 +38911,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1wPhYewUcCOOfTDFUHZhKPg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1H8CTv0JSHmqVsAC0chY_jQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-01T04:53:10.975Z",
+    "lastChange": "2026-11-18T10:24:29.713Z",
     "id": 2633
   },
   {
@@ -42715,7 +42759,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界v1.7.5005 豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界v1.7.5011豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -42731,7 +42775,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-15T05:28:22.526Z",
+    "lastChange": "2026-11-17T18:06:36.884Z",
     "id": 2849
   },
   {
@@ -42795,7 +42839,7 @@
     "id": 2854
   },
   {
-    "name": "（Switch）EA SPORTS FC 27 官方中文v1.8d.f570+1DLC",
+    "name": "（Switch）EA SPORTS FC 27 官方中文v1.8e.50bc+1DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -42807,11 +42851,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1t9rFu25mMreeKd9IAnP9kw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1F9_tCa7Dr9Gz923f3J5M5Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-12T15:59:09.429Z",
+    "lastChange": "2026-11-18T10:34:57.653Z",
     "id": 2855
   },
   {
@@ -43795,7 +43839,7 @@
     "id": 2915
   },
   {
-    "name": "铸剑纳贡v20261024官方中文全DLC 免安装解压即玩",
+    "name": "铸剑纳贡v20261117官方中文全DLC 免安装解压即玩",
     "links": [
       {
         "name": "夸克网盘",
@@ -43807,11 +43851,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1qTakcA2fBLyk5_8tzLX9PQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/14NWI0g1_9dkSa-FdQhu_Kg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-26T13:08:48.827Z",
+    "lastChange": "2026-11-18T10:01:30.637Z",
     "id": 2916
   },
   {
@@ -45799,5 +45843,25 @@
     ],
     "lastChange": "2026-11-17T10:44:15.114Z",
     "id": 3063
+  },
+  {
+    "name": "猫头鹰男孩v1.4.138-4809官方中文全DLC+原声音乐集",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/12cb570fe719"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6hiQhtTl5mboQ74scij8sCA1?pwd=nzii"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1GEKaq5NdkDPgDsjMoZjXkg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-18T08:40:08.218Z",
+    "id": 3064
   }
 ]
