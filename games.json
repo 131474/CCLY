@@ -1,7 +1,50 @@
 [
   {
-    "name": "塞尔达传说时之笛PC移植版v2.3.2官方中文全DLC 4K1920帧 支持8倍帧生成",
-    "shortName": "塞尔达传说|时之笛 重制版|v2.3.2|PC移植版|4K1920帧|8倍帧生成",
+    "name": "【游戏必用】永久免费加速器",
+    "shortName": "永久免费加速器|附兑换码",
+    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/b658fe92d528"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-05T11:30:37.595Z",
+    "id": 3018
+  },
+  {
+    "name": "塞尔达传说时之笛重制版PC移植版Longshot版v3.0.0正式版官方中文全DLC 4K480帧 支持帧生成",
+    "shortName": "塞尔达传说|时之笛重制版|Longshot版|v3.0.0|4K480帧",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/47033fb0e1c1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6tgobVlbYW66XtGkOIKvihA1?pwd=jnwr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1B1IYMW3ZqoL3Rh3IwV2KJg?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-20T16:07:53.244Z",
+    "id": 3072
+  },
+  {
+    "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v2.3.2官方中文全DLC 4K1920帧 支持8倍帧生成",
+    "shortName": "塞尔达传说|时之笛 重制版|Hookshot|v2.3.2|PC移植版|4K1920帧",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
       {
@@ -17,12 +60,12 @@
         "url": "https://pan.baidu.com/s/1ddWjzG1ux2pM1zHBXdADJQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-16T10:39:55.295Z",
+    "lastChange": "2026-11-20T16:09:09.376Z",
     "id": 3023
   },
   {
-    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.6官方中文全DLC 4K240帧",
-    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.6",
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.9官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.9",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
     "links": [
       {
@@ -38,12 +81,12 @@
         "url": "https://pan.baidu.com/s/1Mx8gtX9H1vOgHmeQ9moxfQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-18T13:34:46.589Z",
+    "lastChange": "2026-11-20T18:00:13.667Z",
     "id": 3012
   },
   {
-    "name": "转运军团 正式版v1.0.1Fix官方中文全DLC",
-    "shortName": "转运军团|正式版|v1.0.1Fix",
+    "name": "转运军团 正式版v1.0.2官方中文全DLC+安卓移植版",
+    "shortName": "转运军团|正式版|v1.0.2|新增安卓移植版",
     "cover": "https://imgs.ali213.net/Spe/2026/11/17/202611175505573.jpg",
     "links": [
       {
@@ -60,7 +103,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-18T18:51:23.006Z",
+    "lastChange": "2026-11-20T13:22:09.303Z",
     "id": 3068
   },
   {
@@ -281,27 +324,6 @@
     ],
     "lastChange": "2026-11-05T16:09:11.421Z",
     "id": 2991
-  },
-  {
-    "name": "【游戏必用】永久免费加速器",
-    "shortName": "永久免费加速器|附兑换码",
-    "cover": "https://cdn.ourplay.net/jiujiuweb/news/e21181abbaeb0f37d43cb8a858b30eac.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b658fe92d528"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP5fSChVPDrTj0umJ0YiPAr6A1?pwd=nw4w"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/16_2Vqcw6c6DQTpmGSkH8mg?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-05T11:30:37.595Z",
-    "id": 3018
   },
   {
     "name": "集合啦动物森友会PC移植版v3.0.3+3DLC官方中文 4K240帧",
@@ -4827,7 +4849,7 @@
     "id": 130
   },
   {
-    "name": "十字军之王3豪华版v1.21.0Fix官方中文DLC+丝绸和白银DLC+单独升级补丁+联机补丁+漫画集",
+    "name": "十字军之王3豪华版v1.21.0.3官方中文DLC+丝绸和白银DLC+单独升级补丁+联机补丁+漫画集",
     "shortName": "十字军之王3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -4845,7 +4867,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-19T09:01:02.302Z",
+    "lastChange": "2026-11-20T14:40:04.443Z",
     "id": 131
   },
   {
@@ -15836,16 +15858,25 @@
     "id": 932
   },
   {
-    "name": "山羊模拟器3 v1.2.0.0 新加DLC 狂兽之路 豪华中文版 全DLC",
+    "name": "山羊模拟器3官方中文v1.3.0.0全DLC+眩晕世界门票DLC",
     "shortName": "山羊模拟器3",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/b0b50f83e798"
+        "url": "https://pan.quark.cn/s/b985a5f2b2c1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6tG_MLuQ63cAmTgVLk7vw1A1?pwd=r55j"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1iXIzzG-2D8IN8FxjV07M8A?pwd=8888",
+        "code": "8888"
       }
     ],
-    "lastChange": "2026-04-07T13:16:39.824Z",
+    "lastChange": "2026-11-20T14:19:57.462Z",
     "id": 933
   },
   {
@@ -32810,23 +32841,23 @@
     "id": 2278
   },
   {
-    "name": "（Switch）星之海官方中文本体+3.0.60151升补+1DLC",
+    "name": "（Switch）星之海Sea of Stars官方中文v3.0.60151a+1DLC",
     "links": [
       {
         "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/18955ba91899"
+        "url": "https://pan.quark.cn/s/017645ca4495"
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VOufPB6x9xlNiPx55SIIkMsyA1?pwd=3yxh#"
+        "url": "https://pan.xunlei.com/s/VP6s6IB0s_c2XeThMPwXgHVcA1?pwd=i4c9"
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1jUEBX0XGHVjAo1tRngTz5w?pwd=8888",
+        "url": "https://pan.baidu.com/s/11rBCVMUjgGiyUAT0kbOBXw?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-06-09T08:10:02.476Z",
+    "lastChange": "2026-11-20T08:42:59.455Z",
     "id": 2279
   },
   {
@@ -36941,7 +36972,7 @@
     "id": 2527
   },
   {
-    "name": "（Switch）异度之刃3 官方中文v2.2.1+4DLC+国语配音mod",
+    "name": "（Switch）异度之刃3异度神剑3 官方中文v3.0.0+4DLC+国语配音mod",
     "links": [
       {
         "name": "夸克网盘",
@@ -36953,11 +36984,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1MG4WrJD6Jzoyqp5E7bYPkg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1yBxJcsmfXqVe5Cj4ID4v6Q?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-07-19T04:46:09.515Z",
+    "lastChange": "2026-11-20T07:09:28.000Z",
     "id": 2528
   },
   {
@@ -42781,7 +42812,7 @@
     "id": 2848
   },
   {
-    "name": "边缘世界/环世界v1.7.5011豪华中文全DLC+奥德赛DLC+原声音乐集",
+    "name": "边缘世界/环世界v1.7.5014 豪华中文全DLC+奥德赛DLC+原声音乐集",
     "links": [
       {
         "name": "夸克网盘",
@@ -42797,7 +42828,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-17T18:06:36.884Z",
+    "lastChange": "2026-11-20T15:37:14.898Z",
     "id": 2849
   },
   {
@@ -45383,7 +45414,7 @@
     "id": 3015
   },
   {
-    "name": "英雄连3终极版v3.0.1.52223豪华中文全DLC",
+    "name": "英雄连3终极版v3.0.2.52426豪华中文全DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -45399,7 +45430,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-17T13:58:36.667Z",
+    "lastChange": "2026-11-20T16:03:18.236Z",
     "id": 3024
   },
   {
