@@ -21,6 +21,27 @@
     "id": 3018
   },
   {
+    "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v3.0.1官方中文全DLC 4K1920帧 支持8倍帧生成",
+    "shortName": "塞尔达传说|时之笛 重制版|Hookshot|v3.0.1|PC移植版|可添加MOD",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6e160e466cd0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6k4jE--1jrJovPW2R6l6giA1?pwd=i5uf"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1ddWjzG1ux2pM1zHBXdADJQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-21T11:01:51.672Z",
+    "id": 3023
+  },
+  {
     "name": "塞尔达传说时之笛重制版PC移植版Longshot版v3.0.0正式版官方中文全DLC 4K480帧 支持帧生成",
     "shortName": "塞尔达传说|时之笛重制版|Longshot版|v3.0.0|4K480帧",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -43,29 +64,8 @@
     "id": 3072
   },
   {
-    "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v2.3.2官方中文全DLC 4K1920帧 支持8倍帧生成",
-    "shortName": "塞尔达传说|时之笛 重制版|Hookshot|v2.3.2|PC移植版|4K1920帧",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/6e160e466cd0"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6k4jE--1jrJovPW2R6l6giA1?pwd=i5uf"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ddWjzG1ux2pM1zHBXdADJQ?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-20T16:09:09.376Z",
-    "id": 3023
-  },
-  {
-    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.9官方中文全DLC 4K240帧",
-    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.9",
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.10官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.10",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
     "links": [
       {
@@ -81,7 +81,7 @@
         "url": "https://pan.baidu.com/s/1Mx8gtX9H1vOgHmeQ9moxfQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-20T18:00:13.667Z",
+    "lastChange": "2026-11-21T10:55:57.489Z",
     "id": 3012
   },
   {
@@ -1279,8 +1279,8 @@
     "id": 2921
   },
   {
-    "name": "沉星之序v67612官方中文全DLC+单独升级补丁",
-    "shortName": "沉星之序|v67271",
+    "name": "沉星之序v68307官方中文全DLC+单独升级补丁",
+    "shortName": "沉星之序|v68307",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/499170/8e4b79f6886648fe2b9b4fd36824146559b047ec/header_schinese.jpg?t=1791478652",
     "links": [
       {
@@ -1297,7 +1297,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-30T15:52:58.359Z",
+    "lastChange": "2026-11-21T12:27:50.514Z",
     "id": 2900
   },
   {
@@ -46038,5 +46038,25 @@
     ],
     "lastChange": "2026-11-21T05:38:42.286Z",
     "id": 3073
+  },
+  {
+    "name": "GTA4侠盗猎车手4完全版v1.2.0.59简体中文全DLC+自由城之章DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/25ba581cc569"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6xfxadaifqyrnzz5m1xzmAA1?pwd=axkm"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1nJ6Zru_Gqu6zzpMJ1gJR2w?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-21T10:50:52.302Z",
+    "id": 3075
   }
 ]
