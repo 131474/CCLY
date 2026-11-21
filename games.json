@@ -85,6 +85,28 @@
     "id": 3012
   },
   {
+    "name": "忍者龙剑传2官方中文Xbox版PC移植版v0.6.13全DLC 8K240帧+金手指",
+    "shortName": "忍者龙剑传2|PC移植版|8K240帧|v0.6.13",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2024/11/05/2024110544955669.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/baba46ee9d7b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6xD15LrwU2Yxkdge6V0q02A1?pwd=djtn"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1pR-HQ2tJTXAgc-exqcvjRA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-21T08:35:29.426Z",
+    "id": 3074
+  },
+  {
     "name": "转运军团 正式版v1.0.2官方中文全DLC+安卓移植版",
     "shortName": "转运军团|正式版|v1.0.2|新增安卓移植版",
     "cover": "https://imgs.ali213.net/Spe/2026/11/17/202611175505573.jpg",
@@ -107,8 +129,8 @@
     "id": 3068
   },
   {
-    "name": "宇宙机器人真PC移植版v1.2.4官方中文全DLC 4K240帧 支持帧生成",
-    "shortName": "宇宙机器人|PC移植版|4K240帧|v1.2.4",
+    "name": "宇宙机器人真PC移植版v1.2.10官方中文全DLC 4K240帧 支持帧生成",
+    "shortName": "宇宙机器人|PC移植版|4K240帧|v1.2.10",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20240607/1717730453_552599.jpg",
     "links": [
       {
@@ -117,7 +139,7 @@
       },
       {
         "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP4nkAUSc6cTBbwxKg-5nUn9A1?pwd=w5fn"
+        "url": "https://pan.xunlei.com/s/VP6wwqsCS_Wd7WS63YrY6Qy9A1?pwd=3ahc"
       },
       {
         "name": "百度网盘",
@@ -125,7 +147,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-19T04:18:38.713Z",
+    "lastChange": "2026-11-21T07:14:19.678Z",
     "id": 2969
   },
   {
@@ -153,7 +175,7 @@
   {
     "name": "喷射战士3官方中文PC移植版v11.3.0全DLC 4K240帧",
     "shortName": "喷射战士3|PC移植版|4K240帧|v11.3.0",
-    "cover": "https://imgs.gamersky.com/upimg/new_preview/2025/03/04/origin_202503041104354004.jpg",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2021/02/19/2021021920326509.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -197,7 +219,7 @@
   {
     "name": "马里奥赛车8豪华版PC移植版v4.0.1全DLC+联机 4K240帧",
     "shortName": "马里奥赛车8|PC移植版|4K240帧|v4.0.1",
-    "cover": "https://imgs.gamersky.com/upimg/new_preview/2025/03/07/origin_202503071126524196.jpg",
+    "cover": "https://images.ali213.net/picfile/pic/2022/02/28/2022022815416656.jpg",
     "links": [
       {
         "name": "夸克网盘",
@@ -24730,7 +24752,7 @@
     "id": 1634
   },
   {
-    "name": "（Switch）迪士尼梦幻星谷官方中文v1.26.1+4DLC",
+    "name": "（Switch）迪士尼梦幻星谷官方中文v1.26.2+4DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -24746,7 +24768,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-19T08:38:51.392Z",
+    "lastChange": "2026-11-21T07:04:56.222Z",
     "id": 1635
   },
   {
@@ -45996,5 +46018,25 @@
     ],
     "lastChange": "2026-11-19T14:10:28.845Z",
     "id": 3071
+  },
+  {
+    "name": "（Switch）CROSS†CHANNEL 交錯頻道 官方中文v1.0.0",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/59e6e2b1ab47"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6waYXH2oMoRR46UYLejtYCA1?pwd=4q74"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1rlAierwX_4LtatlcLLK1IA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-21T05:38:42.286Z",
+    "id": 3073
   }
 ]
