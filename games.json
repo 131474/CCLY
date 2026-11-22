@@ -43,8 +43,8 @@
     "id": 3072
   },
   {
-    "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v3.0.1官方中文全DLC 4K1920帧 支持8倍帧生成",
-    "shortName": "塞尔达传说|时之笛 重制版|Hookshot|v3.0.1|PC移植版|可添加MOD",
+    "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v3.0.2官方中文全DLC 4K1920帧 支持8倍帧生成",
+    "shortName": "塞尔达传说|时之笛 重制版|Hookshot|v3.0.2|PC移植版|可添加MOD",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
       {
@@ -60,7 +60,7 @@
         "url": "https://pan.baidu.com/s/1ddWjzG1ux2pM1zHBXdADJQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-21T11:01:51.672Z",
+    "lastChange": "2026-11-22T15:21:13.148Z",
     "id": 3023
   },
   {
@@ -83,6 +83,28 @@
     ],
     "lastChange": "2026-11-22T06:55:30.030Z",
     "id": 3012
+  },
+  {
+    "name": "火焰纹章 风花雪月PC移植版v1.2.0官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|风花雪月|PC移植版|v1.2.0",
+    "cover": "https://imgs.ali213.net/oday/uploadfile/2019/07/05/2019070525246767.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9a503140960a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7313PxPYlqiC_QphVgEI2nA1?pwd=tiqj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/154k6ubloDw3Vfnf7_SkIWw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-22T16:15:25.042Z",
+    "id": 3077
   },
   {
     "name": "宇宙机器人真PC移植版v1.2.14官方中文全DLC 4K240帧 支持帧生成",
@@ -1367,8 +1389,8 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261110官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
-    "shortName": "战争机器：事变日|v20261110",
+    "name": "战争机器：事变日高级版v20261116官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "shortName": "战争机器：事变日|v20261116",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
       {
@@ -1385,7 +1407,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-11T09:56:20.893Z",
+    "lastChange": "2026-11-22T09:08:34.412Z",
     "id": 2890
   },
   {
