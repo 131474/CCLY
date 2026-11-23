@@ -21,6 +21,27 @@
     "id": 3018
   },
   {
+    "name": "GTA6 xbox版PC移植版",
+    "shortName": "GTA6|PC移植版",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c00ea9554b69"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP775p1sq9ukuq93F5EnV9kaA1?pwd=nbwv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17tdhtjtMaMCwoE31alvhAQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-23T11:12:48.979Z",
+    "id": 3081
+  },
+  {
     "name": "YZR v38",
     "shortName": "YZR|v38",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
@@ -739,27 +760,6 @@
     ],
     "lastChange": "2026-11-05T03:08:04.377Z",
     "id": 3017
-  },
-  {
-    "name": "YZR v302256 免重启版",
-    "shortName": "YZR v302256|免重启版",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/90665945a089"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP57cDpgduxpF_9saHLOgin6A1?pwd=7est"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1gVNiI4kF-TzUnPGnZBE0HA?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-07T13:33:55.519Z",
-    "id": 2993
   },
   {
     "name": "（Switch2）宝可梦传说Z-A Pokemon LEGENDS Z-A官方中文NS2版",
@@ -46122,5 +46122,45 @@
     ],
     "lastChange": "2026-11-22T05:44:14.329Z",
     "id": 3076
+  },
+  {
+    "name": "（Switch）未来骑士Future Knight官方中文本体+v1.5.0升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/20d70951e3d8"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP76XPm8xvHUjhs5lP5YUQuXA1?pwd=yg33"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/196ik2aB2Np7YsujxWq0wQQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-23T08:37:03.944Z",
+    "id": 3079
+  },
+  {
+    "name": "（Switch）东方少女绮想谭Touhou Shoujo Tale of Beautiful Memories官方中文本体+v1.0.5升补",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/1f23367872c0"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP76_KAkF_37sbE9s5m7bl3pA1?pwd=5tqr"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1jl9fhhm3cS46KgjfCtnKsA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-23T08:48:50.664Z",
+    "id": 3080
   }
 ]
