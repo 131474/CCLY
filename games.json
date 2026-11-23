@@ -21,6 +21,27 @@
     "id": 3018
   },
   {
+    "name": "YZR v38",
+    "shortName": "YZR|v38",
+    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/49015e4d62c1"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP766X56UCmvecbjNKLSJ3WmA1?pwd=7wzh"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1_Zj7xaj3bloBNMGkusoODA?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-23T06:36:11.865Z",
+    "id": 2991
+  },
+  {
     "name": "塞尔达传说时之笛重制版PC移植版Longshot版v3.1.1正式版官方中文全DLC 4K480帧 支持帧生成",
     "shortName": "塞尔达传说|时之笛重制版|Longshot版|v3.1.1|4K480帧",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
@@ -85,6 +106,28 @@
     "id": 3012
   },
   {
+    "name": "宝可梦传说阿尔宙斯PC移植版v1.1.1官方中文全DLC 4K240帧",
+    "shortName": "宝可梦传说|阿尔宙斯|PC移植版|v1.1.1",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20210227/1614437964_567652.png",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9d3ff64220b3"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7620Vg4pc6uiTeJ_j3O5dEA1?pwd=2kqk"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1x4P3E2gerLNjeDiKm-uEiw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-23T06:19:25.491Z",
+    "id": 3078
+  },
+  {
     "name": "火焰纹章 风花雪月PC移植版v1.2.0官方中文全DLC 4K240帧",
     "shortName": "火焰纹章|风花雪月|PC移植版|v1.2.0",
     "cover": "https://imgs.ali213.net/oday/uploadfile/2019/07/05/2019070525246767.jpg",
@@ -129,8 +172,8 @@
     "id": 2969
   },
   {
-    "name": "转运军团 正式版v1.0.2官方中文全DLC+安卓移植版",
-    "shortName": "转运军团|正式版|v1.0.2|新增安卓移植版",
+    "name": "转运军团 正式版v1.0.3官方中文全DLC+安卓移植版",
+    "shortName": "转运军团|正式版|v1.0.3|新增安卓移植版",
     "cover": "https://imgs.ali213.net/Spe/2026/11/17/202611175505573.jpg",
     "links": [
       {
@@ -147,7 +190,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-20T13:22:09.303Z",
+    "lastChange": "2026-11-23T05:55:49.103Z",
     "id": 3068
   },
   {
@@ -347,27 +390,6 @@
     ],
     "lastChange": "2026-11-16T11:29:04.462Z",
     "id": 3060
-  },
-  {
-    "name": "YZR v302256",
-    "shortName": "YZR v302256",
-    "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/dc256cda412a"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP56AwiBTWKSFQyCSU-t4g_WA1?pwd=fae7"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1A-ZnfxFLD461vGmyULZ4Iw?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-05T16:09:11.421Z",
-    "id": 2991
   },
   {
     "name": "集合啦动物森友会PC移植版v3.0.3+3DLC官方中文 4K240帧",
