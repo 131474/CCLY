@@ -42,6 +42,27 @@
     "id": 3081
   },
   {
+    "name": "星之卡比：探索发现+星耀世界PC移植版v0.5.1官方中文全DLC 5K480帧 8倍帧生成",
+    "shortName": "星之卡比探索发现|星耀世界v0.5.1|PC移植版|5K480帧",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/7/7/a387dac037ad16cd55b0225ce64e8a63.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/3d20b1edbd0a"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7CZ1pArd9Ht0vfdf5BjsvtA1?pwd=d324"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1upYjgdH52PXBqe1lr6Wv5Q?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-24T12:38:19.521Z",
+    "id": 3084
+  },
+  {
     "name": "YZR v38",
     "shortName": "YZR|v38",
     "cover": "https://shared.st.dl.eccdnx.com/store_item_assets/steam/apps/4115450/40b2044606b59e0cdd9fb89738895fea8a22067c/header_schinese.jpg?t=1793261976",
@@ -63,8 +84,8 @@
     "id": 2991
   },
   {
-    "name": "塞尔达传说时之笛重制版PC移植版Longshot版v3.1.1正式版官方中文全DLC 4K480帧 支持帧生成",
-    "shortName": "塞尔达传说|时之笛重制版|Longshot版|v3.1.1|4K480帧",
+    "name": "塞尔达传说时之笛重制版PC移植版Longshot版v3.2.0正式版官方中文全DLC 4K480帧 支持帧生成",
+    "shortName": "塞尔达传说|时之笛重制版|Longshot版|v3.2.0|4K480帧",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260508/2/2/93c28b454d8adb9a9b4afd6bb7a7f0ff.png",
     "links": [
       {
@@ -81,8 +102,51 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-22T06:08:28.286Z",
+    "lastChange": "2026-11-24T12:41:56.335Z",
     "id": 3072
+  },
+  {
+    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.13官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.13",
+    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/146d4d599b66"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP6k50qlKgj78Lf5xSxUBGbVA1?pwd=bpb5"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1Mx8gtX9H1vOgHmeQ9moxfQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-24T12:41:12.018Z",
+    "id": 3012
+  },
+  {
+    "name": "火焰纹章：结合PC移植版v2.0.0官方中文全DLC 4K240帧",
+    "shortName": "火焰纹章：结合|PC移植版|v2.0.0",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20220914/1663117942_199778.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/d03cde0ce0b7"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7Bej5U5QL7gM9T1WJYo_N6A1?pwd=jyri"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1xFXD-xg6kI1Te_w50I8zyw?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-24T08:29:54.917Z",
+    "id": 3083
   },
   {
     "name": "塞尔达传说时之笛重制版PC移植版Hookshot版v3.0.2官方中文全DLC 4K1920帧 支持8倍帧生成",
@@ -104,27 +168,6 @@
     ],
     "lastChange": "2026-11-22T15:21:13.148Z",
     "id": 3023
-  },
-  {
-    "name": "火焰纹章：万缕千丝PC移植版v1.1.1-0.2.11官方中文全DLC 4K240帧",
-    "shortName": "火焰纹章|万缕千丝|PC移植版|4K240帧|v1.1.1-0.2.11",
-    "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20260615/2/18/aa34cafb0cd47e41f26fd2d8859d0763.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/146d4d599b66"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP6k50qlKgj78Lf5xSxUBGbVA1?pwd=bpb5"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1Mx8gtX9H1vOgHmeQ9moxfQ?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-22T06:55:30.030Z",
-    "id": 3012
   },
   {
     "name": "宝可梦传说阿尔宙斯PC移植版v1.1.1官方中文全DLC 4K240帧",
@@ -9015,7 +9058,7 @@
     "id": 419
   },
   {
-    "name": "（Switch）饥荒联机版Don t Starve together官方中文本体+v1.30.0升补",
+    "name": "（Switch）饥荒联机版Don t Starve together官方中文本体+v1.31.0升补",
     "shortName": "Switch",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -9029,11 +9072,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1HL0j0qop0wxDPwny_X96ag?pwd=8888",
+        "url": "https://pan.baidu.com/s/1JwQil8nAz7BWsMtHcCNYcQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-14T07:03:18.727Z",
+    "lastChange": "2026-11-24T08:15:21.348Z",
     "id": 420
   },
   {
@@ -25494,7 +25537,7 @@
     "id": 1688
   },
   {
-    "name": "纪元117：罗马和平 黄金版v3.0.1733841豪华中文全DLC+三角洲的黎明DLC（VBS2.0.2一键启动）",
+    "name": "纪元 117：罗马和平 黄金版v3.0.1.1743890豪华中文全DLC+三角洲的黎明DLC（VBS2.0.2一键启动）",
     "links": [
       {
         "name": "夸克网盘",
@@ -25506,11 +25549,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ZI9zMOes2zQcUmgCaK-8Lg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1bXAIHBGSEyL51DzXCwY23g?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-13T16:55:01.362Z",
+    "lastChange": "2026-11-24T12:16:05.733Z",
     "id": 1689
   },
   {
@@ -31382,7 +31425,7 @@
     "id": 2175
   },
   {
-    "name": "（Switch）西瓜游戏 合成大西瓜 官方中文本体+2.4.1升补+30DLC",
+    "name": "（Switch）西瓜游戏 合成大西瓜 官方中文本体+2.4.3升补+30DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -31394,11 +31437,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1twDT5YLFdKh6SI9vRZ9JkQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1rhIe-JcqfoI5WtLj62GWiA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-29T16:42:11.030Z",
+    "lastChange": "2026-11-24T04:58:12.164Z",
     "id": 2176
   },
   {
@@ -41178,7 +41221,7 @@
     "id": 2757
   },
   {
-    "name": "（Switch）顶尖决胜+ Ace版Tiebreak Grand官方中文本体+v1.5.0升补",
+    "name": "（Switch）顶尖决胜+ Ace版Tiebreak Grand官方中文本体+v1.6.0升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -41190,11 +41233,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1mosqK8Gm3cv_7EQfYT1SnQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1OrkzO2aQ4gCXuADAx4LYMQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-09T18:23:54.206Z",
+    "lastChange": "2026-11-24T12:36:43.301Z",
     "id": 2758
   },
   {
@@ -46162,5 +46205,25 @@
     ],
     "lastChange": "2026-11-23T08:48:50.664Z",
     "id": 3080
+  },
+  {
+    "name": "（Switch）星矿公司Star Ores Inc官方中文v1.0.43+2DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/6b9c25a6204b"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7B1_oOsdHym5KdfGyQp7RHA1?pwd=9g2e"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1MR-1jkTRcfSCM_pcan8vAA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-24T05:33:32.305Z",
+    "id": 3082
   }
 ]
