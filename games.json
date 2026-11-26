@@ -21,8 +21,30 @@
     "id": 3018
   },
   {
-    "name": "GTA6 xbox版PC移植版",
-    "shortName": "GTA6|PC移植版",
+    "name": "GTA6侠盗猎车手6的PS5版 PPSA38500 v01.002 12.xx系统+9降级补丁+DLC",
+    "shortName": "GTA6|侠盗猎车手6|PS5版|折腾机或模拟器",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/69b2068ddbc4"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7KqHOZzHhb_funDLT-hghpA1?pwd=tas9"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1dZ-g4Bt4_69JAN58TImWEA?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-26T03:37:34.704Z",
+    "id": 3089
+  },
+  {
+    "name": "GTA6 xbox版PC移植版（可以进入界面）",
+    "shortName": "GTA6|PC移植版|可以进入界面",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
     "links": [
       {
@@ -38,7 +60,7 @@
         "url": "https://pan.baidu.com/s/17tdhtjtMaMCwoE31alvhAQ?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-23T11:12:48.979Z",
+    "lastChange": "2026-11-25T18:15:24.469Z",
     "id": 3081
   },
   {
