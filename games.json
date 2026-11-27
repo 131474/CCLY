@@ -21,6 +21,27 @@
     "id": 3018
   },
   {
+    "name": "GTA6 xbox版PC移植版v1.0.2.1+启动器 6倍帧生成 60帧左右",
+    "shortName": "GTA6|PC移植版|v1.0.2.16倍帧生成|60帧左右",
+    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/c00ea9554b69"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP775p1sq9ukuq93F5EnV9kaA1?pwd=nbwv"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/17tdhtjtMaMCwoE31alvhAQ?pwd=8888"
+      }
+    ],
+    "lastChange": "2026-11-27T16:03:33.695Z",
+    "id": 3081
+  },
+  {
     "name": "GTA6侠盗猎车手6的PS5版 PPSA38500 v01.002 12.xx系统+9降级补丁+DLC",
     "shortName": "GTA6|侠盗猎车手6|PS5版|折腾机或模拟器",
     "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
@@ -43,29 +64,8 @@
     "id": 3089
   },
   {
-    "name": "GTA6 xbox版PC移植版（可以进入界面）",
-    "shortName": "GTA6|PC移植版|可以进入界面",
-    "cover": "https://img.3dmgame.com/uploads/images/thumbkwdfirst/20231206/1701829632_433322.jpg",
-    "links": [
-      {
-        "name": "夸克网盘",
-        "url": "https://pan.quark.cn/s/c00ea9554b69"
-      },
-      {
-        "name": "迅雷网盘",
-        "url": "https://pan.xunlei.com/s/VP775p1sq9ukuq93F5EnV9kaA1?pwd=nbwv"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/17tdhtjtMaMCwoE31alvhAQ?pwd=8888"
-      }
-    ],
-    "lastChange": "2026-11-25T18:15:24.469Z",
-    "id": 3081
-  },
-  {
-    "name": "星之卡比：探索发现+星耀世界PC移植版v0.6.0官方中文全DLC 5K480帧 8倍帧生成",
-    "shortName": "星之卡比|探索发现|星耀世界v0.6.0|PC移植版|5K480帧",
+    "name": "星之卡比：探索发现+星耀世界PC移植版v0.7.0官方中文全DLC 5K480帧 8倍帧生成",
+    "shortName": "星之卡比|探索发现|星耀世界v0.7.0|PC移植版|5K480帧",
     "cover": "https://media.9game.cn/gamebase/ieu-gdc-pre-process/images/20250403/7/7/a387dac037ad16cd55b0225ce64e8a63.jpg",
     "links": [
       {
@@ -81,7 +81,7 @@
         "url": "https://pan.baidu.com/s/1upYjgdH52PXBqe1lr6Wv5Q?pwd=8888"
       }
     ],
-    "lastChange": "2026-11-25T16:13:03.812Z",
+    "lastChange": "2026-11-27T14:02:05.984Z",
     "id": 3084
   },
   {
@@ -301,8 +301,8 @@
     "id": 2969
   },
   {
-    "name": "转运军团 正式版v1.0.4官方中文全DLC+安卓移植版",
-    "shortName": "转运军团|正式版|v1.0.4|新增安卓移植版",
+    "name": "转运军团 正式版v1.0.4（1）官方中文全DLC+安卓移植版",
+    "shortName": "转运军团|正式版|v1.0.4（1）|新增安卓移植版",
     "cover": "https://imgs.ali213.net/Spe/2026/11/17/202611175505573.jpg",
     "links": [
       {
@@ -319,7 +319,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-25T09:45:31.179Z",
+    "lastChange": "2026-11-26T17:00:49.514Z",
     "id": 3068
   },
   {
@@ -1519,7 +1519,7 @@
     "id": 531
   },
   {
-    "name": "战争机器：事变日高级版v20261116官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
+    "name": "战争机器：事变日高级版v20261125官方中文全DLC+单独升级补丁+联机补丁+国语配音+原声音乐集",
     "shortName": "战争机器：事变日|v20261116",
     "cover": "https://shared.cdn.queniuqe.com/store_item_assets/steam/apps/3010850/1abb0c5ef76c14f463dd6e3964adb64f984237d2/header.jpg?t=1790871278",
     "links": [
@@ -1533,11 +1533,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1hVCATuSFi7M_mLbYVZesrw?pwd=8888",
+        "url": "https://pan.baidu.com/s/1ELcFjG3veXTDnh8PJnDURA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-22T09:08:34.412Z",
+    "lastChange": "2026-11-27T06:15:52.335Z",
     "id": 2890
   },
   {
@@ -8652,7 +8652,7 @@
     "id": 384
   },
   {
-    "name": "群星 银河版v4.5.1豪华中文全DLC+原声原画集+超清壁纸",
+    "name": "群星 银河版v4.6.0豪华中文全DLC+原声原画集+超清壁纸",
     "shortName": "群星",
     "cover": "https://via.placeholder.com/80x80?text=Game",
     "links": [
@@ -8666,11 +8666,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1I4o7y2lU2C392Q0JndfizQ?pwd=8888",
+        "url": "https://pan.baidu.com/s/1l3K4LDmKfwnkQRZDKj07rQ?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-09-26T09:03:41.703Z",
+    "lastChange": "2026-11-27T15:44:18.801Z",
     "id": 386
   },
   {
@@ -38306,7 +38306,7 @@
     "id": 2588
   },
   {
-    "name": "（Switch）梦塔比Montabimb官方中文+v1.1.3升补",
+    "name": "（Switch）梦塔比Montabimb官方中文+v1.1.3.1升补",
     "links": [
       {
         "name": "夸克网盘",
@@ -38318,11 +38318,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1_XPnpDduwPf0IemtM1s22g?pwd=8888",
+        "url": "https://pan.baidu.com/s/1tYyMbpfQHjjEYB3x_VNBtA?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-10-29T16:37:21.255Z",
+    "lastChange": "2026-11-26T11:50:59.558Z",
     "id": 2589
   },
   {
@@ -40766,7 +40766,7 @@
     "id": 2726
   },
   {
-    "name": "红色沙漠增强版v2.05.00豪华中文全DLC+单独升级补丁+未知征途DLC（VBS2.0.1一键启动）",
+    "name": "红色沙漠增强版v2.05.01豪华中文全DLC+单独升级补丁+未知征途DLC（VBS2.0.1一键启动）",
     "links": [
       {
         "name": "夸克网盘",
@@ -40782,7 +40782,7 @@
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-19T05:28:58.932Z",
+    "lastChange": "2026-11-27T13:23:36.220Z",
     "id": 2729
   },
   {
@@ -43066,7 +43066,7 @@
     "id": 2854
   },
   {
-    "name": "（Switch）EA SPORTS FC 27 官方中文v1.8e.50bc+1DLC",
+    "name": "（Switch）EA SPORTS FC 27 官方中文v1.8f.2caf+1DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -43078,11 +43078,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1F9_tCa7Dr9Gz923f3J5M5Q?pwd=8888",
+        "url": "https://pan.baidu.com/s/1RcV31aKLVaPOeAlD5KXDJg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-18T10:34:57.653Z",
+    "lastChange": "2026-11-27T12:15:58.156Z",
     "id": 2855
   },
   {
@@ -45588,7 +45588,7 @@
     "id": 3015
   },
   {
-    "name": "英雄连3终极版v3.0.2.52426豪华中文全DLC",
+    "name": "英雄连3终极版v3.0.3.52620豪华中文全DLC+火炬行动DLC",
     "links": [
       {
         "name": "夸克网盘",
@@ -45600,11 +45600,11 @@
       },
       {
         "name": "百度网盘",
-        "url": "https://pan.baidu.com/s/1ljokKyf389OHL-WcpRSqlg?pwd=8888",
+        "url": "https://pan.baidu.com/s/1p6d5LSKZ08pwlVkuIOXeYg?pwd=8888",
         "code": "8888"
       }
     ],
-    "lastChange": "2026-11-20T16:03:18.236Z",
+    "lastChange": "2026-11-27T09:32:01.768Z",
     "id": 3024
   },
   {
@@ -46330,5 +46330,45 @@
     ],
     "lastChange": "2026-11-24T17:21:42.242Z",
     "id": 3086
+  },
+  {
+    "name": "（Switch）冥狱战术Hadean Tactics官方中文v2.1.24",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/9140070d70a9"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7RwgUWA4GgH7rUhviOfXjwA1?pwd=4txc"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/1IjNcJ3QMQkFRysSKRpxNrQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-27T12:22:15.322Z",
+    "id": 3090
+  },
+  {
+    "name": "小行星清除计划/小行星粉碎者 正式版1.0.8官方中文全DLC",
+    "links": [
+      {
+        "name": "夸克网盘",
+        "url": "https://pan.quark.cn/s/ca07f12d2bf5"
+      },
+      {
+        "name": "迅雷网盘",
+        "url": "https://pan.xunlei.com/s/VP7ScaY-2CmSlYXBJ47LDBu5A1?pwd=udwj"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://pan.baidu.com/s/12Oc8csGnv8kGHl0yelqdJQ?pwd=8888",
+        "code": "8888"
+      }
+    ],
+    "lastChange": "2026-11-27T15:36:07.682Z",
+    "id": 3091
   }
 ]
